@@ -533,3 +533,5 @@ X Protocol Version 11, Revision 0
 [    32.077] (II) This device may have been added with another device file.
 [    91.902] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
 See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[   575.586] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details

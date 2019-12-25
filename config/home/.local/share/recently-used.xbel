@@ -11617,16 +11617,16 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/tools/sync/git/git-remote-add" added="2019-12-25T10:51:39Z" modified="2019-12-25T11:38:09Z" visited="2019-12-25T10:51:40Z">
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/tools/sync/git/git-remote-add" added="2019-12-25T10:51:39Z" modified="2019-12-25T20:10:09Z" visited="2019-12-25T10:51:40Z">
     <info>
       <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/octet-stream"/>
+        <mime:mime-type type="text/plain"/>
         <bookmark:groups>
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-25T11:38:09Z" count="3"/>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-25T11:21:00Z" count="19"/>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-25T20:10:09Z" count="4"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-25T20:10:09Z" count="20"/>
         </bookmark:applications>
       </metadata>
     </info>
