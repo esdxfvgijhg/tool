@@ -1,0 +1,93 @@
+Delivered-To: aghilesdjoudi@gmail.com
+Received: by 2002:ad5:54e6:0:0:0:0:0 with SMTP id q6csp8113968imm;
+        Mon, 2 Dec 2019 06:06:58 -0800 (PST)
+X-Received: by 2002:a37:b044:: with SMTP id z65mr31791099qke.424.1575295618735;
+        Mon, 02 Dec 2019 06:06:58 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1575295618; cv=none;
+        d=google.com; s=arc-20160816;
+        b=GSrrr44dIS5garUZJGFeQny3xSJQKdYOks75oPmAwpqy7iaJsfFFHyMBWgw4ICePgX
+         c/xU7rXHv/o44MapvZJeAntkp0tr0GJvpl1jTOfoZ5BuUvy46ukzW83w7tS8gOdOaAof
+         8S+voGC+kCrZbboKj4CjTlFNf/5FtothrcW+5Hl7mthvNocBuARK1RZla4Ces/JbhaMm
+         Pc2wv/zmtas6C0MOslh01EaWZweQ+sVlH4Q5YGstuCSMDOO3jnmaJ6XMkyfuHKjTorTA
+         b7XJR4eSwyw7Z2scXjREvqKINLX7AqcyjqmijQeX21yA9L0CcaPK14eYc6hPvCr8gDVQ
+         CHig==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=Y9mhXFDo8mdXYMwBdL2NoL7NpXwqe2rWZR6ysmStum8=;
+        b=v33uBWAy+Jy6H4yyvFbgXlAED96qsZQF5vI8X78ad4tRSHcbjedHNILPaaWejwL1zR
+         RAIVTz3KlCXhGfoVbcbJir2gpBxjtQsQAcXe8LjS7WOlgoiWBlGVi+5TOqJQ2q0aUNjC
+         F0tKe0AGzlX2R1Mv/x5Dr3fUCva34AeMnH8jdxhw4SS9KJxEo6xYEdXasS+WPNMbDMJB
+         1MEGPySR6PFJ5UMLtu4A/GozE4xisbFChG7JtB8q9veuK+V0ZTuTWHfhZdiKm6mWlfWp
+         M61x3gu2UJy4sUq5xoyy1KDv5CA/NqyxZIv5NvHoT4xZulUNmEQz/hZp8Yr7CDmK/zZS
+         vcMw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@esiee-fr.20150623.gappssmtp.com header.s=20150623 header.b="gsU2/678";
+       spf=pass (google.com: domain of nawel.zangar@esiee.fr designates 209.85.220.41 as permitted sender) smtp.mailfrom=nawel.zangar@esiee.fr
+Return-Path: <nawel.zangar@esiee.fr>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id t4sor39505815qtp.8.2019.12.02.06.06.58
+        for <aghilesdjoudi@gmail.com>
+        (Google Transport Security);
+        Mon, 02 Dec 2019 06:06:58 -0800 (PST)
+Received-SPF: pass (google.com: domain of nawel.zangar@esiee.fr designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@esiee-fr.20150623.gappssmtp.com header.s=20150623 header.b="gsU2/678";
+       spf=pass (google.com: domain of nawel.zangar@esiee.fr designates 209.85.220.41 as permitted sender) smtp.mailfrom=nawel.zangar@esiee.fr
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=esiee-fr.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=Y9mhXFDo8mdXYMwBdL2NoL7NpXwqe2rWZR6ysmStum8=;
+        b=gsU2/678YDgJyLEdMQ65UZbPF7F0wF8GfdaglTDH3i3aE66ai0OWMwBXP/LGY16kmb
+         NhElDd0yh0WBLoywxrNauySLr/IEHTD5T5Bux1/XJsPs1BSeXrOuxY17fy7E9pSSMA+D
+         BEyMWRGKxWLmr7IUwg5RrHgcwwldCYMjrkmVaicGu3RRRb8wfwjKGj0+w7mqPfkKwtyT
+         /+Xj+4fIE2bMieu+o3KQM6L0O7uvgDHZGtnHHgr+5jU/ETY2XBr5cfn5ZZlKoE+Fmzg3
+         I66lh99mmI5CJPtAl+t3G0uEsyb9y/3v8iq+WQpqXdCRdue6WkEJlYtWrgljUDNf+vpY
+         LG6A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=Y9mhXFDo8mdXYMwBdL2NoL7NpXwqe2rWZR6ysmStum8=;
+        b=bEUFCZucWZ7+VvnmEA1zEBHQikJSN99I7StvL5WLpMO77YCgLx3t164Duug7aWIWFX
+         IPwu5qWx3N57umj9QS11BDFJ93yLFMCQQNb+prA2b0qZPalUN8o10QfJTYzFBFop4BAz
+         BDEC+3UCVhv1v96m2/4t1PGChYmjyoKQoQ6AgShrd7ZJQ56SIjzzFim4PjeM5NEzyIkw
+         ycFXoLiDGlke4O//aUOHiLxOSdOnSqNb9bLM7xyvF+LN/zy7oshW+K1HHvoWMR2pDwWg
+         Fgoxr3kol8z3xPMqy5JRpHvQ8f8XlvaszXw5u7giwfuNnfPMBthFuK0zsI9vHrG+MktG
+         XG7w==
+X-Gm-Message-State: APjAAAVKc7oO2Tw8qf8Mid+kJFg8KbEkY3tHn99t6clQCgmei5glXXtT
+	fG/rDR5krTIjis9N78Io9CqNlYnnYeLaUFQ9HPP/l0Zv
+X-Google-Smtp-Source: APXvYqyct0Mrjhof16wwCB2GWAgUA3A7Ag8ra/DUOrhPRFFDV4+q0rOmLZ6lBI0lUci+JZ4wEoREhNmTc2fOho4gQEo=
+X-Received: by 2002:aed:376a:: with SMTP id i97mr33861261qtb.44.1575295618090;
+ Mon, 02 Dec 2019 06:06:58 -0800 (PST)
+MIME-Version: 1.0
+From: "ZANGAR, Nawel" <nawel.zangar@esiee.fr>
+Date: Mon, 2 Dec 2019 15:06:47 +0100
+Message-ID: <CA+B05Ssp7pAEKXzEvVJ8O+c6+FSqzuTNMoheEgy2kQMyR+XAQQ@mail.gmail.com>
+Subject: KeyWord et soumission
+To: Aghiles DJOUDI <aghilesdjoudi@gmail.com>, ZITOUNI Rafik <rafik.zitouni@ece.fr>, 
+	Laurent George <Laurent.George@esiee.fr>
+Content-Type: multipart/alternative; boundary="000000000000bba7ce0598b917d4"
+
+--000000000000bba7ce0598b917d4
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour =C3=A0 tous,
+
+Je viens de soumettre le papier, merci de v=C3=A9rifier que c'est ok de vot=
+re
+cot=C3=A9.
+Par ailleurs, aghiles peux tu rajouter les keyword et me le r=C3=A9 envoyer=
+.
+Bien cordialement
+NZA
+
+--000000000000bba7ce0598b917d4
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Bonjour =C3=A0 tous,<div><br></div><div>Je viens de soumet=
+tre le papier, merci de v=C3=A9rifier que c&#39;est ok de votre cot=C3=A9.<=
+/div><div>Par ailleurs, aghiles peux tu rajouter les keyword et me le r=C3=
+=A9 envoyer.</div><div>Bien cordialement</div><div>NZA</div></div>
+
+--000000000000bba7ce0598b917d4--

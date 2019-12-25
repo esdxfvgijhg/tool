@@ -1,0 +1,80 @@
+#!/bin/sh
+
+
+cd $WRITINGPATH/src/L-Library
+library ~/Aghiles/Research/Writing/ref/iot.bib > l.txt
+
+
+
+
+#echo "
+#\\\newgeometry{top=.5cm, bottom=.5cm, left=.5cm, right=.5cm}
+#\\onecolumn
+#" > 05_state.tex
+
+#awk  '{
+#				z1=$1; z2=$2; z3=$3; z4=$4; for(i=5;i<=NF;i++){z4=z4" "$i}; 
+#        a[z1][z2][z3] ? 
+#            a[z1][z2][z3]=a[z1][z2][z3]"\n\t\t\t"z4 :
+#            a[z1][z2][z3]=""z4 ;
+#      }
+#      END{
+#        for(cont in a){
+#            printf "\n\\textbf{%s}\\newline", cont;
+#            for(count in a[cont]){
+#                for(city in a[cont][count]){
+##                    printf "%s", count;
+#                    printf " " count " " city " " a[cont][count][city]
+#      }
+#      }}}' l.txt | sort >> 05_state.tex
+
+#echo "
+#\\\restoregeometry" >> 05_state.tex
+
+
+
+library2 ~/Aghiles/Research/Writing/ref/iot.bib | sed -E "s/^(.*)/sed \-ie \'s\/\\1\/ytre\/g\' l.txt; sed \-ie \'0,\/ytre\/\{s\/ytre\/\\1\\/\}\' l.txt; sed \-ie \'s\/ytre\/\/g\' l.txt/g" > m
+chmod u+x m
+./m
+
+
+echo "
+\\\newgeometry{top=.5cm, bottom=.5cm, left=.5cm, right=.5cm}
+\\onecolumn
+" > 01_papers.tex
+
+sed -E 's/^([^ ]+)/\\textbf{\1} \\newline /g' l.txt >> 01_papers.tex
+
+
+echo "
+\\\restoregeometry" >> 01_papers.tex
+
+
+
+#sed \-e \'s\/\\1\/ytre\/g\' \-e \'0,\/ytre\/\{s\/ytre\/\\1\\/\}\' \-e \'s\/ytre\/\/g\' l.txt
+#sed -e 's/\1/ytre/g' -e '0,/ytre/{s/ytre/\1/}' -e 's/ytre//g' l.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+library2 ~/Aghiles/Research/Writing/ref/iot.bib | sed -E "s/^(.*)/\\\aghiles{\1}/g" > ref.tex
+echo "\\printbibliography[heading=subbibliography," >> ref.tex
+library2 ~/Aghiles/Research/Writing/ref/iot.bib | sed -E "s/^(.*)/notkeyword={\1},/g" >> ref.tex
+echo "title=Others]" >> ref.tex
+
+

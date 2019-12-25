@@ -1,0 +1,11 @@
+#!/bin/bash
+
+ls /dev | grep ACM
+
+read usb
+echo $usb
+
+arduino-cli compile --fqbn arduino:avr:uno `basename $PWD.ino` -o `basename $PWD.arduino.avr.uno`
+arduino-cli upload -p /dev/ttyACM$usb --fqbn arduino:avr:uno $PWD
+#screen /dev/ttyACM$usb 38400
+tio -b 38400 /dev/ttyACM$usb

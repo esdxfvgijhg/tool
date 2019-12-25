@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cd "/tmp/$1" && shnjoin -r none `for f in *.wav; do echo "$f"; done | sort -V ` && mv "/tmp/$1/joined.wav" "/home/aghiles/$1.wav"

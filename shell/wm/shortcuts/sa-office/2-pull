@@ -1,0 +1,18 @@
+#!/bin/sh
+
+cmd="
+echo 3
+read
+echo 2
+read
+echo 1
+read
+pull"
+
+gnome-terminal \
+				--tab --title="$ADMINPATH"    --command="bash -c 'cd $ADMINPATH;   $cmd; $SHELL'" \
+				--tab --title="$TEACHINGPATH" --command="bash -c 'cd $TEACHINGPATH;    $cmd; $SHELL'" \
+				--tab --title="$PROGRAMPATH"  --command="bash -c 'cd $PROGRAMPATH; $cmd; $SHELL'" \
+				--tab --title="$READINGPATH"  --command="bash -c 'cd $READINGPATH; $cmd; $SHELL'" \
+				--tab --title="$WRITINGPATH"  --command="bash -c 'cd $WRITINGPATH; $cmd; $SHELL'" \
+				--tab --title="$TOOLPATH"     --command="bash -c 'cd $TOOLPATH;    $cmd; $SHELL'" 

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+mypath="$NAUTILUS_SCRIPT_SELECTED_FILE_PATHS"
+directory=`dirname "$mypath"`
+file=`basename "$mypath"`
+extension="${file##*.}"
+filename="${file%.*}"
+echo $filename
+
+#/home/aghiles/.local/share/nautilus/scripts/sql "$NAUTILUS_SCRIPT_SELECTED_FILE_PATHS"
+ty="$NAUTILUS_SCRIPT_SELECTED_FILE_PATHS"
+
+cd "$directory"
+gnome-terminal --title="Serveur Mysql" -e "/home/aghiles/.local/share/nautilus/scripts/sql ./$file"

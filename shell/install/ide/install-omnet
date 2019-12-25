@@ -1,0 +1,7 @@
+#!/bin/sh
+
+#Omnet++
+	installx build-essential gcc g++ bison flex perl python python3 qt5-default libqt5opengl5-dev tcl-dev tk-dev libxml2-dev zlib1g-dev default-jre doxygen graphviz libwebkitgtk-1.0
+	installx openscenegraph-plugin-osgearth libosgearth-dev libpcap-dev
+
+

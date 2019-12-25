@@ -1,0 +1,8 @@
+#!/bin/sh
+
+
+mkdir $TMPPATH
+
+	wget https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.2.1555-amd64.deb -P $TMPPATH
+	installx $TMPPATH/rstudio-1.2.1555-amd64.deb
+

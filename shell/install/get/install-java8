@@ -1,0 +1,13 @@
+#!/bin/sh
+
+
+mkdir $TMPPATH
+
+
+# Java8
+xdg-open https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html
+sudo mkdir /opt/jdk
+sudo tar -zxf $TMPPATH/jdk-8u202-linux-i586.tar.gz -C /opt/jdk
+sudo update-alternatives --config java
+sudo update-alternatives --config javac
+

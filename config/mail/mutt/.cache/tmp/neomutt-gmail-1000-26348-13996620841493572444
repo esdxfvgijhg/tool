@@ -1,0 +1,154 @@
+Delivered-To: djaghiles@gmail.com
+Received: by 2002:a2e:9dc7:0:0:0:0:0 with SMTP id x7csp5977183ljj;
+        Tue, 10 Dec 2019 07:03:44 -0800 (PST)
+X-Received: by 2002:a0d:c303:: with SMTP id f3mr25046172ywd.364.1575990224685;
+        Tue, 10 Dec 2019 07:03:44 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1575990224; cv=none;
+        d=google.com; s=arc-20160816;
+        b=YVTEeld4Nun/fr7Ny7dJiL87NJCj+CDYurr5+8tEc/WxaEGRsId29XPYWlEDNLMM+Q
+         cYJiTn8McfDLwmTYxixFzKDBcf3hM9b3tlg1w4IjECA1S6fww1IJ48zt7t5WJ1Q1TK3q
+         QwfUgrRjuhC0dE6/NvXZFaOAb7dGadwL3udldWDDkDFBkNeAfdPB6gQ5R1MoxqEi+NR6
+         JSq5sWOe+W0AalowKHsmMFTEL83DtQIEdKVYU9gZFEW5rQNhvZAo9LSr6rDxuUuY43c2
+         qq7/iItqAEDSOTlsJXL+S8PFLItmlzBYFImKufR6CwjJMa7/PrjFNmI8a5Br45gxM1Oi
+         uH9g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=6N//VbPxLCJa4nvqIwM7ZI74bvetFUmoPkdbjNrM8lM=;
+        b=ESCe241j917PyiJtdzXS0iTShKFkTz/guP031BFUynfUBfSXBa0NwJk/KYv52KRif+
+         mNtF88IBcmXPTav7VXvnCpgY3FCUdcG6OoWrBeCazGi4VpGUtBjVKD03VgrWbAzKNp98
+         iWvzOwShoEZQ0lIAR1InOsUzx0Y1tvmQgH7CtYq3N9LBdkGYN6Sj5K3xjhxtx7JCxcim
+         BPyGrXW6QHqAtiQiUvy/Ychz+0db1Pdj/up7GR0QRr1XQt5UR29t6xorMVtEzjJ4Osqa
+         e4ahoP2BsBvKjfF9fv2IiXdjN3QfvCIMuLkE6ZPy6cJbGnnV7pE6i/1cFNQtL3VVqyJl
+         j3yw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@univ-paris-est-fr.20150623.gappssmtp.com header.s=20150623 header.b=DxHD91Qo;
+       spf=neutral (google.com: 209.85.220.65 is neither permitted nor denied by best guess record for domain of bici.groupe@univ-paris-est.fr) smtp.mailfrom=bici.groupe@univ-paris-est.fr
+Return-Path: <bici.groupe@univ-paris-est.fr>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])
+        by mx.google.com with SMTPS id v15sor2036644ybp.62.2019.12.10.07.03.44
+        for <djaghiles@gmail.com>
+        (Google Transport Security);
+        Tue, 10 Dec 2019 07:03:44 -0800 (PST)
+Received-SPF: neutral (google.com: 209.85.220.65 is neither permitted nor denied by best guess record for domain of bici.groupe@univ-paris-est.fr) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@univ-paris-est-fr.20150623.gappssmtp.com header.s=20150623 header.b=DxHD91Qo;
+       spf=neutral (google.com: 209.85.220.65 is neither permitted nor denied by best guess record for domain of bici.groupe@univ-paris-est.fr) smtp.mailfrom=bici.groupe@univ-paris-est.fr
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=univ-paris-est-fr.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=6N//VbPxLCJa4nvqIwM7ZI74bvetFUmoPkdbjNrM8lM=;
+        b=DxHD91QoLbEJYsaPOjU0y1js0Dvn4JslGizOOXLn39spszcwF71BTJXLszF6KKqDb6
+         1AAMylPOtrQwoIvmn07xdk/t/ge9CFgY4b4ykuYfA6lciXmqHTEpc7KiJkcoqHSPOs9t
+         puDIgFcpPZRwl/M5Vu/J9sp6GNAhD71WKPTtapkOCdE0/MrQO0fhys4Ssbqz6cfzILn0
+         QF5+lBEAqrQMWxKbBhnjad2VWmBPo8N8fCjlPVdM9pD7lTYmxxoMaYmx7xBAAEDQ14th
+         //fz0kdQYXAcwGAN/8VoP6ifAiknAH1LZ6+xufTrtOaCXhhwIJNASf+Ina1AWWutv4tR
+         EcBg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=6N//VbPxLCJa4nvqIwM7ZI74bvetFUmoPkdbjNrM8lM=;
+        b=mf9TtTRuR0k880w4yXI/rO+W/Od4gABC5XwRQQW90C0cSIX7s9VtqLlhRt+ZvDxiBK
+         kTn7dHq3E+39WUbN2gfxotoz7pQlSzRMtyeOyOa/nT+rqXIqBPb1TUbsMr0rSClNNeeq
+         D01Of7IK2hTDhCohK75yHvAGpe60s23HXtTi4MyVLtMXcTHKnE1TO5XzCI1WWq06PxGP
+         cjnKob2A7Pm8Pu0j2VsrWbeoQCubE7/9TMalg5KHo3p4Lm0pzgoKOOMGWU5Mf6WFRSWu
+         W44p+qGs+dvsxl+pOy4nvlHCq1lpnS9AR/Dp1NuLcbl3Pr11GnsdDtW6rHBE+sqLHq46
+         58qQ==
+X-Gm-Message-State: APjAAAXz9MFoZw/F1d2XAU5FPAcdVq0W8OgAa0YEC8rOwKWdN/fHdbra
+	Uln/pxaGTttKQQjFvIneJgTUXp7HbMXnq9A4V8Iv
+X-Google-Smtp-Source: APXvYqwl6aFU9jvFitRwy0X4SqckunkTIqLT4xMeVSCGTcIQGy+YFB5OBO90nczuTvQcB4L2obnMbGE6LWI1Ggztm7A=
+X-Received: by 2002:a25:c887:: with SMTP id y129mr24781591ybf.510.1575990224095;
+ Tue, 10 Dec 2019 07:03:44 -0800 (PST)
+MIME-Version: 1.0
+References: <CAE9b0WNx-D1zT8yTHwMfLt1-ZabkGsBnV2RD+0quKHwShRQ56Q@mail.gmail.com>
+In-Reply-To: <CAE9b0WNx-D1zT8yTHwMfLt1-ZabkGsBnV2RD+0quKHwShRQ56Q@mail.gmail.com>
+From: "acc&ss Paris-Est" <access@univ-paris-est.fr>
+Date: Tue, 10 Dec 2019 15:57:43 +0100
+Message-ID: <CAE9b0WOpiVo9zj=2xpJ_502=Wb85AdoOr+2saWr_qahV+5MBAg@mail.gmail.com>
+Subject: (acc&ss) Confirmation Vaux-le-Vicomte (14/12/2019)
+To: "acc&ss Paris-Est" <access@univ-paris-est.fr>
+Content-Type: multipart/alternative; boundary="0000000000007a1aa205995ad1dd"
+Bcc: djaghiles@gmail.com
+
+--0000000000007a1aa205995ad1dd
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour =C3=A0 tous,
+
+Nous vous confirmons votre inscription =C3=A0 la *visite du Ch=C3=A2teau de=
+ *Vaux*-*le
+*-*Vicomte le *samedi *14 d=C3=A9cembre.
+Vous avez =C3=A9t=C3=A9 nombreux =C3=A0 vous inscrire pour cette sortie, le=
+s 60 places de
+disponibles ont donc vite =C3=A9t=C3=A9 prises.
+Nous avons une longue liste d'attente de doctorants et chercheurs d=C3=A9si=
+rant
+se joindre =C3=A0 nous. Nous vous prions donc de* nous informer au plus t=
+=C3=B4t de
+toute annulation de votre part par e-mail*, afin que quelqu'un d'autre
+puisse profiter de cette sortie.
+
+Cordialement,
+*Equipe d'**acc&ss Paris-Est *
+__________________________________________________________
+
+Dear all,
+
+We confirm you your registration for the* visit** of the Castle
+of Vaux-le-Vicomte, Saturday 14th of December*.
+Many of you contacted us to take part of this event, so the
+60 available places were quickly taken.
+We have a long waiting list of PhD students and researchers wishing to join
+us. So please *inform us as soon as possible of any cancellation by e-mail*=
+, so
+that someone else can take your place.
+
+Best regards,
+*acc&ss Paris-Est team *
+
+--0000000000007a1aa205995ad1dd
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div class=3D"gmail_default" style=3D""><font face=3D"geor=
+gia, serif">Bonjour =C3=A0 tous,<br></font></div><div class=3D"gmail_quote"=
+><div dir=3D"ltr"><font face=3D"georgia, serif"><br style=3D"">Nous vous co=
+nfirmons votre inscription =C3=A0 la=C2=A0<b>visite du Ch=C3=A2teau de=C2=
+=A0</b><span style=3D"font-weight:bold">Vaux</span><b>-</b><span style=3D"f=
+ont-weight:bold">le</span><b>-</b><span style=3D"font-weight:bold">Vicomte<=
+/span><b>=C2=A0</b><span style=3D"font-weight:bold">le=C2=A0<span class=3D"=
+gmail_default" style=3D""></span></span><b>samedi=C2=A0</b><span class=3D"g=
+mail_default" style=3D"font-weight:bold">14</span><b>=C2=A0</b><span class=
+=3D"gmail_default" style=3D"font-weight:bold">d=C3=A9cembre</span>.<br>Vous=
+ avez =C3=A9t=C3=A9 nombreux =C3=A0 vous inscrire pour cette sortie, les 60=
+ places de disponibles ont donc vite =C3=A9t=C3=A9 prises.=C2=A0<br>Nous av=
+ons une longue liste d&#39;attente de doctorants et chercheurs d=C3=A9siran=
+t se joindre =C3=A0 nous. Nous vous prions donc de<b>=C2=A0<font color=3D"#=
+9900ff">nous informer au plus t=C3=B4t de toute annulation de votre part pa=
+r e-mail</font></b>, afin que quelqu&#39;un d&#39;autre puisse profiter de =
+cette sortie.=C2=A0<br><br>Cordialement,=C2=A0=C2=A0<br><span class=3D"gmai=
+l_default" style=3D"font-family:georgia,serif"></span></font><b style=3D"fo=
+nt-family:garamond,serif">Equipe d&#39;</b><b style=3D"color:rgb(0,0,0);fon=
+t-family:garamond,serif">acc&amp;ss Paris-Est=C2=A0</b><span style=3D"font-=
+family:georgia,serif"></span></div><div dir=3D"ltr"><font face=3D"georgia, =
+serif">__________________________________________________________<br><br>De=
+ar all,=C2=A0<span lang=3D"en" style=3D""><br><br>We=C2=A0confirm=C2=A0you =
+your=C2=A0registration for the<b style=3D"">=C2=A0visit</b><b style=3D"">=
+=C2=A0of the Castle of=C2=A0<span>Vaux</span>-<span>le</span>-<span>Vicomte=
+</span>, Saturday <span class=3D"gmail_default" style=3D"">14</span>th of <=
+span class=3D"gmail_default" style=3D"">December</span></b>.<br>Many of you=
+ contacted us to take part of=C2=A0this event, so the 60=C2=A0available=C2=
+=A0places=C2=A0were=C2=A0quickly taken.<br>We have a long=C2=A0waiting list=
+=C2=A0of PhD students=C2=A0and=C2=A0researchers wishing=C2=A0to join us.=C2=
+=A0So please=C2=A0<b style=3D""><font color=3D"#9900ff">inform us=C2=A0as s=
+oon as possible=C2=A0of any=C2=A0cancellation by e-mail</font></b>,=C2=A0so=
+ that=C2=A0someone else can=C2=A0take your place.<br><br>Best regards,</spa=
+n></font></div><div dir=3D"ltr"><b style=3D"color:rgb(0,0,0);font-family:ga=
+ramond,serif">acc&amp;ss Paris-Est team=C2=A0</b><div><br>
+<br>
+<br></div></div>
+</div></div>
+
+--0000000000007a1aa205995ad1dd--

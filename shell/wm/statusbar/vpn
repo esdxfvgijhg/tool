@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if ip addr|grep -q tun0; then
+  echo -e '\uf817'
+else
+  echo ''
+fi

@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+
+from i3ipc import Connection
+import time
+
+# connect to i3
+i3 = Connection()
+# retrieve only active outputs
+workspaces = [o.current_workspace for o in i3.get_outputs() if o.active]
+focused = [w.name for w in i3.get_workspaces() if w.focused]
+
+print(workspaces)
+
+if len(workspaces) == 2:
+    i3.command("workspace " + workspaces[0])
+    i3.command("move workspace to output right")
+
+    time.sleep(0.01)
+
+    i3.command("workspace " + workspaces[1])
+    i3.command("move workspace to output left")
+
+    i3.command("workspace " + focused[0])
+elif len(workspaces) < 2:
+    print("Not enough outputs")
+else:
+    print("Too many outputs")

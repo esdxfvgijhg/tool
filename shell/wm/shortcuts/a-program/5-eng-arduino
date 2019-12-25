@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cmd="cd $PROGRAM/boards/arduino; ls"
+gnome-terminal --title="$cmd"    --command="bash -ci '$cmd; $SHELL'" 
+

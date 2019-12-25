@@ -1,0 +1,10 @@
+#!/bin/sh
+
+
+xdotool key --clearmodifiers Ctrl+W key --clearmodifiers KP_Enter
+
+
+#cmd="vifm"
+
+#gnome-terminal --title="vifm"    --command="bash -c '$cmd; $SHELL'"
+

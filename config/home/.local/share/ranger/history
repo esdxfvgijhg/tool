@@ -1,0 +1,50 @@
+rename Library_Wiley.w
+rename Library_WebOfScience.w
+rename Library_Taylor.w
+rename Library_SAGE Journals.w
+rename Library_PNAS.w
+rename Library_MIT.w
+rename Library_SAGE.w
+rename Library_HAL.w
+rename web-iotlab.w
+open_with q
+rename matlab2
+rename aghiles.qcc
+rename www
+rename admin.sh
+rename ssh.sh
+rename 6lbr-start.sh
+rename 6lbr-stop.sh
+rename install-6lbr
+rename admin.
+rename admin.w
+rename pull.sh
+rename push.sh
+touch l
+touch iaria.w
+shell new-letter esd
+rename x-iot-lab2
+rename x-R2
+rename x-iot
+open_with t  0
+open_with t  4
+open_with t  3
+rename ece.w
+rename install-terminal
+rename x2-deepl
+open_with t  
+open_with t  gedit "$@"
+
+shell gedit "s
+shell gedit %s
+search evince
+shell %s $
+shell %s &
+shell %s
+shell nvim %s
+shell 
+rename Agiwal et al. - 2016 - Next Generation 5G Wireless Networks A Comprehens.wav
+open_with 
+delete
+open_with t  gedit %s
+open_with t  gedir "$@"

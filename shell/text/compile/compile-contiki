@@ -1,0 +1,24 @@
+#!/bin/sh
+
+file=$1
+filename="${file%.*}"
+	
+	ls /dev | grep USB
+	
+	read -p "Port: " usb
+	echo $usb
+	
+	targ=zoul
+	read -p "Target zoul: " targ
+	echo $targ
+	
+	board=firely
+	read -p "Board firely: " board
+	echo $board
+	
+#	make $filename TARGET=zoul BOARD=firefly
+	make $filename.upload TARGET=$targ BOARD=$board PORT=/dev/ttyUSB$usb
+	read -p "OK!" a
+	mkdir obj_zoul/bin
+	mv *.bin *.map *.zoul *.elf *.hex obj_zoul/bin/ 2>~/nul
+	make TARGET=$targ BOARD=$board PORT=/dev/ttyUSB$usb login

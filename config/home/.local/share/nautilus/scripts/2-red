@@ -1,0 +1,12 @@
+#!/bin/bash
+
+IFS='
+'
+for arg in $NAUTILUS_SCRIPT_SELECTED_FILE_PATHS
+do
+	gio set $arg 'metadata::custom-icon' 'file:///home/aghiles/.config/icons/red.svg'
+		fz=${arg//\/home\/aghiles\/Aghiles\//}
+	echo "[0] $fz" >> ~/.calcurse/todo
+	touch "$arg"
+done
+

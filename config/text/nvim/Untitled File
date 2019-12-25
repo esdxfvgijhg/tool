@@ -1,0 +1,42 @@
+let g:Tex_DefaultTargetFormat='pdf'
+let g:Tex_CompileRule_pdf = 'latexmk -lualatex -output-directory=.bin -shell-escape -synctex=1 $*'
+
+
+let g:vimtex_compiler_latexrun = { 
+        \ 'background' : 1,
+        \ 'build_dir' : 'latex.out',
+        \ 'options' : [ 
+        \   '--verbose-cmds',
+        \   '--latex-cmd="latexmk"',
+        \   '--latex-args="-lualatex -shell-escape"',
+        \ ],
+        \}
+let g:vimtex_compiler_latexmk = {
+    \ 'options' : [
+    \   '-lualatex',
+    \   '-shell-escape',
+    \   '-verbose',
+    \   '-file-line-error',
+    \   '-synctex=1',
+    \   '-interaction=nonstopmode',
+    \ ],
+    \}
+let g:vimtex_compiler_latexmk = {
+    \ 'options' : [
+    \   '-pdf',
+    \   '-pdflatex="lualatex --shell-escape %O %S"',
+    \   '-verbose',
+    \   '-file-line-error',
+    \   '-synctex=1',
+    \   '-interaction=nonstopmode',
+    \ ]
+    \}
+    
+let g:vimtex_compiler_engine = 'latexmk -lualatex -output-directory=.bin -shell-escape -synctex=1'
+
+
+
+
+
+
+let g:vimtex_latexmk_options = '-lualatex -shell-escape -verbose -file-line-error -synctex=1 -interaction=nonstopmode'

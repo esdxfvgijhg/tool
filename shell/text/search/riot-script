@@ -1,0 +1,10 @@
+#!/bin/sh
+
+sed -ir 's/RIOTBASE .=.*/RIOTBASE ?=\$\(shell targetos\)\/RIOT/' */Makefile
+sed -ir 's/RIOTBASE .=.*/RIOTBASE ?=\$\(shell targetos\)\/RIOT/' */*/Makefile
+sed -ir 's/RIOTBASE .=.*/RIOTBASE ?=\$\(shell targetos\)\/RIOT/' */*/*/Makefile
+sed -ir 's/RIOTBASE .=.*/RIOTBASE ?=\$\(shell targetos\)\/RIOT/' */*/*/*/Makefile
+
+
+
+

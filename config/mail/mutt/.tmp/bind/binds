@@ -1,0 +1,73 @@
+bind generic,alias,attach,browser,editor,index,compose,pager,pgp,postpone ':' noop
+bind generic,index,pager / search
+
+
+bind pager                 \031            previous-line   # Mouse wheel
+bind index                  \031           previous-undeleted	# Mouse wheel
+bind index,pager            B              sidebar-toggle-visible
+bind index                  c              change-folder
+bind index,pager,browser    \Cd            half-down
+bind browser                \Cn            check-new
+bind index                  \Cn            next-new-then-unread
+bind index,pager            \Cn            next-unread
+bind index,pager            \Cn            sidebar-next-new
+bind index,pager            \Cn            sidebar-prev-new
+bind index                  _              collapse-all
+bind index                  -              collapse-thread
+bind index,pager            @              compose-to-sender
+bind index,pager            \Co          sync-mailbox
+bind index,pager,browser    \Cu            half-up
+bind index,pager            \Cu            previous-unread
+bind index                  D              delete-message
+bind index,pager            <Down>         next-entry
+bind pager                  <Down>         next-line
+bind index,pager            D              purge-message
+bind pager                  G              bottom
+#bind pager,browser          G              bottom-page
+bind index                  gg             first-entry
+bind pager                  gg             top
+#bind pager,browser          gg             top-page
+bind index                  G              imap-fetch-mail
+bind index                  G              last-entry
+bind index                  l              display-message
+bind index                  L              limit
+bind browser                l              select-entry
+bind pager                  l              view-attachments
+bind attach                 l              view-mailcap
+bind browser                N              select-new
+bind index,pager            <PageDown>     sidebar-next
+bind index,pager            <PageUp>       sidebar-prev
+bind compose                p              pgp-menu
+bind compose                P              postpone-message
+bind index                  P              previous-new-then-unread
+bind index                  p              recall-message
+bind pager,attach           q              exit
+bind index,pager            R              group-reply
+bind index,pager            <right>        sidebar-open
+bind editor                 <Tab>          complete-query
+bind index                  t              read-thread
+bind index,pager            <Up>           previous-entry
+bind pager                  <Up>           previous-line
+bind index                  U              undelete-message
+bind index                  W              clear-flag
+bind index                  w              set-flag
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,941 @@
+{
+	"folder_history":
+	[
+	],
+	"last_version": 3211,
+	"last_window_id": 209,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 0.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"colle",
+						"collection-title"
+					],
+					[
+						"coll",
+						"getCollections"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Packages/LaTeXTools/LaTeX.sublime-build",
+							""
+						],
+						[
+							"Packages/LaTeXTools/LaTeX.sublime-build",
+							"Traditional"
+						],
+						[
+							"Packages/LaTeXTools/LaTeX.sublime-build",
+							"PdfLaTeX"
+						],
+						[
+							"Packages/LaTeXTools/LaTeX.sublime-build",
+							"XeLaTeX"
+						],
+						[
+							"Packages/LaTeXTools/LaTeX.sublime-build",
+							"LuaLaTeX"
+						],
+						[
+							"Packages/LaTeXTools/LaTeX.sublime-build",
+							"Basic Builder"
+						],
+						[
+							"Packages/LaTeXTools/LaTeX.sublime-build",
+							"Basic Builder - PdfLaTeX"
+						],
+						[
+							"Packages/LaTeXTools/LaTeX.sublime-build",
+							"Basic Builder - XeLaTeX"
+						],
+						[
+							"Packages/LaTeXTools/LaTeX.sublime-build",
+							"Basic Builder - LuaLaTeX"
+						],
+						[
+							"Packages/LaTeXTools/LaTeX.sublime-build",
+							"Script Builder"
+						]
+					],
+					[
+						"Packages/LaTeXTools/LaTeX.sublime-build",
+						"LuaLaTeX"
+					]
+				]
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"lan",
+						"LanguageTool: Change Language"
+					],
+					[
+						"prv",
+						"PackageResourceViewer: Extract Package"
+					],
+					[
+						"inst",
+						"Package Control: Install Package"
+					],
+					[
+						"my cu",
+						"FilterPipes: My Custom Filters Plugin"
+					],
+					[
+						"agh",
+						"aghilesuuu"
+					],
+					[
+						"a",
+						"aghiles"
+					],
+					[
+						"word",
+						"Word Count"
+					],
+					[
+						"wor",
+						"Word Count"
+					],
+					[
+						"shell",
+						"ShellCommand"
+					],
+					[
+						"Package Control: ins",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Install Package"
+					],
+					[
+						"write",
+						"Gmail: Write E-Mail"
+					],
+					[
+						"gmail",
+						"Gmail: Send E-Mail"
+					],
+					[
+						"mail",
+						"Gmail: Show E-Mail"
+					],
+					[
+						"send",
+						"Gmail: Send E-Mail"
+					],
+					[
+						"wr",
+						"Gmail: Write E-Mail"
+					],
+					[
+						"show",
+						"Gmail: Show E-Mail"
+					],
+					[
+						"Package Control: in",
+						"Package Control: Install Package"
+					],
+					[
+						"sho",
+						"Gmail: Show E-Mail"
+					],
+					[
+						"Package Control: inst",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: insta",
+						"Package Control: Install Package"
+					],
+					[
+						"",
+						"About"
+					],
+					[
+						"install",
+						"Install Package Control"
+					],
+					[
+						"Snippet: ",
+						"Snippet: Lorem ipsum"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 339.0,
+				"history":
+				[
+					"ls",
+					"help",
+					"install"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/aghiles/Aghiles/Research/Writing/02-Survey/00_all.tex",
+				"/home/aghiles/Aghiles/Research/Writing/main.tex",
+				"/home/aghiles/Aghiles/Research/Writing/A-Protocols/04_frame.tex",
+				"/home/aghiles/Aghiles/Research/Writing/A-Protocols/02_sensors.tex",
+				"/home/aghiles/Aghiles/Research/Writing/02-Survey/02_standards.tex",
+				"/home/aghiles/Aghiles/Research/Writing/02-Survey/01_usecases.tex",
+				"/home/aghiles/Aghiles/Research/Writing/02-Survey/03_papers_network.tex",
+				"/home/aghiles/Aghiles/Research/Writing/02-Survey/04_standards.tex",
+				"/home/aghiles/Aghiles/Research/Writing/.bin/these.mtc11",
+				"/home/aghiles/Aghiles/Research/Writing/01-Introduction/10_introduction.tex",
+				"/run/user/1000/gvfs/mtp:host=Android_Android_288b967b/Internal shared storage/DCIM/.thumbnails/.thumbdata3-1763508120",
+				"/home/aghiles/Aghiles/Research/Writing/02-Survey/58_challenfes.tex",
+				"/home/aghiles/Aghiles/Research/Writing/03-Genetic Algorithm For LoRa Transmission Parameter Selection/17_discussion.tex",
+				"/home/aghiles/Aghiles/Research/Writing/03-Genetic Algorithm For LoRa Transmission Parameter Selection/14_method.tex",
+				"/home/aghiles/Aghiles/Research/Writing/03-Genetic Algorithm For LoRa Transmission Parameter Selection/13_background.tex",
+				"/home/aghiles/Aghiles/Research/Writing/02-Survey/08_challenfes.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/02-State of the art/04_standards.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/01-Introduction/10_introduction.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/main.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/03-Genetic Algorithm For LoRa Transmission Parameter Selection/21_poster.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/02-State of the art/58_challenfes.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/02-State of the art/08_challenfes.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/21-CR/01-12-11-19.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/02-State of the art/02_standards.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/01-Introduction/00_introduction.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/00/01_1_abstract_english.tex",
+				"/home/aghiles/Aghiles/Tool/config/text/sublime-text-3/Packages/LaTeXTools/LaTeXTools.sublime-settings",
+				"/home/aghiles/Aghiles/Tool/config/text/sublime-text-3/Packages/User/LaTeXTools.sublime-settings",
+				"/home/aghiles/Aghiles/Research/Writing/These/03-Genetic Algorithm For LoRa Transmission Parameter Selection/13_background.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/08-x-Testbed/13_method.tex",
+				"/home/aghiles/Aghiles/Research/Writing/Report/01-CR/01_introduction.tex",
+				"/home/aghiles/Aghiles/Research/Writing/Report/main.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/03-Genetic Algorithm For LoRa Transmission Parameter Selection/15_experimentation.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/06-Genetic Algorithm For LoRa Transmission Parameter Selection/15_experimentation.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/04-Template/02_related.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/04-Template/00_abstract.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/A-Survey IoT/04_frame.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/A-Survey IoT/02_sensors.tex",
+				"/home/aghiles/Aghiles/Research/Writing/.lib/plot.tex",
+				"/home/aghiles/Aghiles/Research/Writing/.lib/paper.tex",
+				"/home/aghiles/Aghiles/Research/Writing/.lib/setup.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/05-Background/12_related.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/06-Genetic Algorithm For LoRa Transmission Parameter Selection/21_poster.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/02-State of the art/13_relay.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/06-Genetic Algorithm For LoRa Transmission Parameter Selection/13_background.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/06-Genetic Algorithm For LoRa Transmission Parameter Selection/11_introduction.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/02-State of the art/06_security.tex",
+				"/home/aghiles/Aghiles/Research/Writing/.lib/nomenclature.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/06-Genetic Algorithm For LoRa Transmission Parameter Selection/03_background.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/06-Genetic Algorithm For LoRa Transmission Parameter Selection/01_introduction.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/06-Genetic Algorithm For LoRa Transmission Parameter Selection/04_approach.tex",
+				"/home/aghiles/Aghiles/Tool/aghiles/config/1-web/mutt/.cacheij/headers",
+				"/home/aghiles/Aghiles/Research/Writing/These/A-Survey IoT/02_technologies.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/A-Survey IoT/09_divers.tex",
+				"/These/main.tex",
+				"/home/aghiles/Aghiles/Research/Writing/.lib/slide.tex",
+				"/home/aghiles/Aghiles/Research/Writing*/src/main.tex",
+				"/home/aghiles/Aghiles/Research/Writing/src/main.tex",
+				"/home/aghiles/Aghiles/Research/Writing/src/02-State of the art/12_related.tex",
+				"/home/aghiles/Aghiles/Research/Writing/src/02-State of the art/16_discussion.tex",
+				"/home/aghiles/Aghiles/Research/Writing/lib/commands.tex",
+				"/home/aghiles/Aghiles/Research/Writing/src/01-Introduction/10_introduction.tex",
+				"/home/aghiles/Aghiles/Research/Writing/lib/nomenclature.tex",
+				"/home/aghiles/Aghiles/Research/Writing/lib/tikzset.tex",
+				"/home/aghiles/Aghiles/Research/Writing/res/plot.tex",
+				"/home/aghiles/Aghiles/Research/Writing/res/plot/slice1.tex",
+				"/home/aghiles/Aghiles/Research/Writing/res/plot/slice.tex",
+				"/home/aghiles/Aghiles/Research/Writing/res/plot/marcov.tex",
+				"/home/aghiles/Aghiles/Research/Writing/res/plot/genetic.tex",
+				"/home/aghiles/Aghiles/Research/Writing/res/plot/qlearning.tex",
+				"/home/aghiles/Aghiles/Research/Writing/lib/plot.tex",
+				"/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex",
+				"/home/aghiles/Aghiles/Research/Writing/src/plot.tex",
+				"/home/aghiles/Aghiles/Research/Writing/src/slide.tex",
+				"/home/aghiles/Aghiles/Research/Writing/lib/slide.tex",
+				"/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/graphs/tikzlibrarygraphs.standard.code.tex",
+				"/home/aghiles/Aghiles/Redaction/src/slide.tex",
+				"/home/aghiles/Downloads/calcursem/src/calcurse",
+				"/home/aghiles/.config/mutt/.cache/tmp/mutt-dell-1000-32431-5918117606302234234",
+				"/home/aghiles/.config/mutt/.cache/tmp/mutt-dell-1000-32431-3957175536653635214",
+				"/home/aghiles/Aghiles/Redaction/src/poster.tex",
+				"/home/aghiles/Downloads/IEEE_CS_Latex/bare_conf.tex",
+				"/home/aghiles/Downloads/IEEE_CS_Latex/bibtemplate.tex",
+				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/12_related.tex",
+				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/13_background.tex",
+				"/home/aghiles/Aghiles/Redaction/src/09-Conclusion/10_conclusion.tex",
+				"/home/aghiles/Aghiles/Redaction/src/01-Introduction/10_introduction.tex",
+				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/14_experimentation.tex",
+				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/15_results.tex",
+				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/13_method.tex",
+				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/11_introduction.tex",
+				"/home/aghiles/Aghiles/Redaction/src/08-UTLC/13_method.tex",
+				"/home/aghiles/Aghiles/Redaction/src/02-State of the art/16_discussion.tex",
+				"/home/aghiles/Aghiles/Redaction/src/99-PSE1/11_introduction.tex",
+				"/home/aghiles/Aghiles/Redaction/src/setup/setup_slide.tex",
+				"/home/aghiles/Aghiles/Redaction/src/setup/setup_tikz.tex",
+				"/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex",
+				"/home/aghiles/Aghiles/Redaction/src/setup/setup_command.tex",
+				"/home/aghiles/Aghiles/Redaction/src/02-State of the art/12_related.tex",
+				"/home/aghiles/untitled.tex",
+				"/home/aghiles/Aghiles/Redaction/src/05-x-Long paper/11_introduction.tex",
+				"/home/aghiles/Aghiles/Redaction/src/05-x-Long paper/12_related.tex",
+				"/home/aghiles/Aghiles/Redaction/src/03-x-Testbed/11_introduction.tex",
+				"/home/aghiles/Aghiles/Redaction/src/08-UTLC/14_experimentation.tex",
+				"/home/aghiles/Aghiles/Redaction/src/11-Privacy Framework/13_method.tex",
+				"/home/aghiles/Aghiles/Redaction/slide.tex",
+				"/home/aghiles/Aghiles/Redaction/slide/slide.tex",
+				"/home/aghiles/Aghiles/Redaction/slide/src/1/3_0_method.tex",
+				"/home/aghiles/Aghiles/Redaction/common/setup/setup_tikz.tex",
+				"/home/aghiles/Aghiles/Redaction/setup/setup.tex",
+				"/home/aghiles/Aghiles/Redaction/slide/src/11/3_method.tex",
+				"/home/aghiles/Aghiles/Redaction/res/accronyme/nomenclature.tex",
+				"/home/aghiles/Aghiles/Redaction/slide/src/1_introduction.tex",
+				"/home/aghiles/Aghiles/Redaction/slide/src/11/1_introduction.tex",
+				"/home/aghiles/Aghiles/Redaction/slide/src/1/2_0_related.tex",
+				"/home/aghiles/Aghiles/Redaction/slide/src/11/7_conclusion.tex",
+				"/home/aghiles/Aghiles/Redaction/slide/src/11/5_results.tex",
+				"/home/aghiles/Aghiles/Redaction/slide/src/11/2_related.tex",
+				"/home/aghiles/Aghiles/Redaction/slide/bin/slide.vrb",
+				"/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.code.tex",
+				"/home/aghiles/Aghiles/Redaction/paper/paper.tex",
+				"/home/aghiles/Aghiles/Redaction/paper/src/4/1_introduction.tex",
+				"/home/aghiles/Aghiles/Redaction/paper/src/4/4_approach.tex",
+				"/home/aghiles/Aghiles/Redaction/paper/src/4/2_related.tex",
+				"/home/aghiles/Aghiles/Redaction/paper/src/4/7_conclusion.tex",
+				"/home/aghiles/Aghiles/Redaction/paper/src/4/0_abstract.tex",
+				"/home/aghiles/Aghiles/Redaction/paper/src/4/5_experimentation.tex",
+				"/home/aghiles/Aghiles/Redaction/setup/setup_tikz.tex"
+			],
+			"find":
+			{
+				"height": 38.0
+			},
+			"find_in_files":
+			{
+				"height": 112.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"kim_adaptive_2017-1",
+					"augustin_study_2016-1",
+					"petajajarvi_evaluation_2017-1",
+					"petajajarvi",
+					"\\[[A-Za-z]",
+					"LoRa spe",
+					"\\[[a-zA-Z\\]",
+					"&",
+					"_",
+					"paper"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": true,
+				"replace_history":
+				[
+					"kim_adaptive_2017",
+					"augustin_study_2016",
+					"petajajarvi_evaluation_2017",
+					"\\\\&",
+					"\\&",
+					"-"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 25.0
+			},
+			"input":
+			{
+				"height": 40.0
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.latextools":
+			{
+				"height": 430.0
+			},
+			"pinned_build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
+			"replace":
+			{
+				"height": 72.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"",
+						"~/Aghiles/Research/Writing/CV/.cl.sublime-project"
+					],
+					[
+						"0",
+						"~/Aghiles/Redaction/0/0_paper.sublime-project"
+					],
+					[
+						"1",
+						"~/Aghiles/Redaction/1/1.sublime-project"
+					]
+				],
+				"width": 380.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": false,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 163.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 0.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"colle",
+						"collection-title"
+					],
+					[
+						"coll",
+						"getCollections"
+					]
+				]
+			},
+			"buffers":
+			[
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Packages/LaTeXTools/LaTeX.sublime-build",
+							""
+						],
+						[
+							"Packages/LaTeXTools/LaTeX.sublime-build",
+							"Traditional"
+						],
+						[
+							"Packages/LaTeXTools/LaTeX.sublime-build",
+							"PdfLaTeX"
+						],
+						[
+							"Packages/LaTeXTools/LaTeX.sublime-build",
+							"XeLaTeX"
+						],
+						[
+							"Packages/LaTeXTools/LaTeX.sublime-build",
+							"LuaLaTeX"
+						],
+						[
+							"Packages/LaTeXTools/LaTeX.sublime-build",
+							"Basic Builder"
+						],
+						[
+							"Packages/LaTeXTools/LaTeX.sublime-build",
+							"Basic Builder - PdfLaTeX"
+						],
+						[
+							"Packages/LaTeXTools/LaTeX.sublime-build",
+							"Basic Builder - XeLaTeX"
+						],
+						[
+							"Packages/LaTeXTools/LaTeX.sublime-build",
+							"Basic Builder - LuaLaTeX"
+						],
+						[
+							"Packages/LaTeXTools/LaTeX.sublime-build",
+							"Script Builder"
+						]
+					],
+					[
+						"Packages/LaTeXTools/LaTeX.sublime-build",
+						"LuaLaTeX"
+					]
+				]
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"lan",
+						"LanguageTool: Change Language"
+					],
+					[
+						"prv",
+						"PackageResourceViewer: Extract Package"
+					],
+					[
+						"inst",
+						"Package Control: Install Package"
+					],
+					[
+						"my cu",
+						"FilterPipes: My Custom Filters Plugin"
+					],
+					[
+						"agh",
+						"aghilesuuu"
+					],
+					[
+						"a",
+						"aghiles"
+					],
+					[
+						"word",
+						"Word Count"
+					],
+					[
+						"wor",
+						"Word Count"
+					],
+					[
+						"shell",
+						"ShellCommand"
+					],
+					[
+						"Package Control: ins",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Install Package"
+					],
+					[
+						"write",
+						"Gmail: Write E-Mail"
+					],
+					[
+						"gmail",
+						"Gmail: Send E-Mail"
+					],
+					[
+						"mail",
+						"Gmail: Show E-Mail"
+					],
+					[
+						"send",
+						"Gmail: Send E-Mail"
+					],
+					[
+						"wr",
+						"Gmail: Write E-Mail"
+					],
+					[
+						"show",
+						"Gmail: Show E-Mail"
+					],
+					[
+						"Package Control: in",
+						"Package Control: Install Package"
+					],
+					[
+						"sho",
+						"Gmail: Show E-Mail"
+					],
+					[
+						"Package Control: inst",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: insta",
+						"Package Control: Install Package"
+					],
+					[
+						"",
+						"About"
+					],
+					[
+						"install",
+						"Install Package Control"
+					],
+					[
+						"Snippet: ",
+						"Snippet: Lorem ipsum"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 339.0,
+				"history":
+				[
+					"ls",
+					"help",
+					"install"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/aghiles/.sh_history",
+				"/home/aghiles/Aghiles/job/txt/main.tex",
+				"/home/aghiles/Aghiles/job/txt/03-ICSNC-2019/00_abstract.tex",
+				"/home/aghiles/Aghiles/job/txt/088/07_conclusion.tex",
+				"/home/aghiles/Aghiles/job/txt/05-ICC/01_introduction.tex",
+				"/home/aghiles/Aghiles/Research/txt/02-Survey/00_all.tex",
+				"/home/aghiles/Aghiles/Job/txt/05-ICC/01_introduction.tex",
+				"/home/aghiles/Aghiles/Job/txt/05-ICC/07_conclusion.tex",
+				"/home/aghiles/Aghiles/Job/txt/04-ICT-DM/01_introduction.tex",
+				"/home/aghiles/Aghiles/Research/txt/06-InfoCom/01_introduction.tex",
+				"/home/aghiles/Aghiles/Research/txt/04-ICT-DM/02_related.tex",
+				"/home/aghiles/Aghiles/Research/txt/04-ICT-DM/00_abstract.tex",
+				"/home/aghiles/Aghiles/Job/txt/04-ICT-DM/07_conclusion.tex",
+				"/home/aghiles/.Xauthority2",
+				"/home/aghiles/Aghiles/Job/txt/04-ICT-DM/21_poster.tex",
+				"/home/aghiles/Aghiles/Research/txt/03-ICSNC-2019/07_conclusion.tex",
+				"/home/aghiles/Aghiles/Research/txt/03-ICSNC-2019/01_introduction.tex",
+				"/home/aghiles/Aghiles/Research/txt/04-ICT-DM/these.tex",
+				"/home/aghiles/Aghiles/Research/txt/these.tex",
+				"/home/aghiles/Aghiles/Research/Writing/02-Survey/00_all.tex",
+				"/home/aghiles/Aghiles/Research/Writing/main.tex",
+				"/home/aghiles/Aghiles/Research/Writing/A-Protocols/04_frame.tex",
+				"/home/aghiles/Aghiles/Research/Writing/A-Protocols/02_sensors.tex",
+				"/home/aghiles/Aghiles/Research/Writing/02-Survey/02_standards.tex",
+				"/home/aghiles/Aghiles/Research/Writing/02-Survey/01_usecases.tex",
+				"/home/aghiles/Aghiles/Research/Writing/02-Survey/03_papers_network.tex",
+				"/home/aghiles/Aghiles/Research/Writing/02-Survey/04_standards.tex",
+				"/home/aghiles/Aghiles/Research/Writing/.bin/these.mtc11",
+				"/home/aghiles/Aghiles/Research/Writing/01-Introduction/10_introduction.tex",
+				"/run/user/1000/gvfs/mtp:host=Android_Android_288b967b/Internal shared storage/DCIM/.thumbnails/.thumbdata3-1763508120",
+				"/home/aghiles/Aghiles/Research/Writing/02-Survey/58_challenfes.tex",
+				"/home/aghiles/Aghiles/Research/Writing/03-Genetic Algorithm For LoRa Transmission Parameter Selection/17_discussion.tex",
+				"/home/aghiles/Aghiles/Research/Writing/03-Genetic Algorithm For LoRa Transmission Parameter Selection/14_method.tex",
+				"/home/aghiles/Aghiles/Research/Writing/03-Genetic Algorithm For LoRa Transmission Parameter Selection/13_background.tex",
+				"/home/aghiles/Aghiles/Research/Writing/02-Survey/08_challenfes.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/02-State of the art/04_standards.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/01-Introduction/10_introduction.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/main.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/03-Genetic Algorithm For LoRa Transmission Parameter Selection/21_poster.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/02-State of the art/58_challenfes.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/02-State of the art/08_challenfes.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/21-CR/01-12-11-19.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/02-State of the art/02_standards.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/01-Introduction/00_introduction.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/00/01_1_abstract_english.tex",
+				"/home/aghiles/Aghiles/Tool/config/text/sublime-text-3/Packages/LaTeXTools/LaTeXTools.sublime-settings",
+				"/home/aghiles/Aghiles/Tool/config/text/sublime-text-3/Packages/User/LaTeXTools.sublime-settings",
+				"/home/aghiles/Aghiles/Research/Writing/These/03-Genetic Algorithm For LoRa Transmission Parameter Selection/13_background.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/08-x-Testbed/13_method.tex",
+				"/home/aghiles/Aghiles/Research/Writing/Report/01-CR/01_introduction.tex",
+				"/home/aghiles/Aghiles/Research/Writing/Report/main.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/03-Genetic Algorithm For LoRa Transmission Parameter Selection/15_experimentation.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/06-Genetic Algorithm For LoRa Transmission Parameter Selection/15_experimentation.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/04-Template/02_related.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/04-Template/00_abstract.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/A-Survey IoT/04_frame.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/A-Survey IoT/02_sensors.tex",
+				"/home/aghiles/Aghiles/Research/Writing/.lib/plot.tex",
+				"/home/aghiles/Aghiles/Research/Writing/.lib/paper.tex",
+				"/home/aghiles/Aghiles/Research/Writing/.lib/setup.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/05-Background/12_related.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/06-Genetic Algorithm For LoRa Transmission Parameter Selection/21_poster.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/02-State of the art/13_relay.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/06-Genetic Algorithm For LoRa Transmission Parameter Selection/13_background.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/06-Genetic Algorithm For LoRa Transmission Parameter Selection/11_introduction.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/02-State of the art/06_security.tex",
+				"/home/aghiles/Aghiles/Research/Writing/.lib/nomenclature.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/06-Genetic Algorithm For LoRa Transmission Parameter Selection/03_background.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/06-Genetic Algorithm For LoRa Transmission Parameter Selection/01_introduction.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/06-Genetic Algorithm For LoRa Transmission Parameter Selection/04_approach.tex",
+				"/home/aghiles/Aghiles/Tool/aghiles/config/1-web/mutt/.cacheij/headers",
+				"/home/aghiles/Aghiles/Research/Writing/These/A-Survey IoT/02_technologies.tex",
+				"/home/aghiles/Aghiles/Research/Writing/These/A-Survey IoT/09_divers.tex",
+				"/These/main.tex",
+				"/home/aghiles/Aghiles/Research/Writing/.lib/slide.tex",
+				"/home/aghiles/Aghiles/Research/Writing*/src/main.tex",
+				"/home/aghiles/Aghiles/Research/Writing/src/main.tex",
+				"/home/aghiles/Aghiles/Research/Writing/src/02-State of the art/12_related.tex",
+				"/home/aghiles/Aghiles/Research/Writing/src/02-State of the art/16_discussion.tex",
+				"/home/aghiles/Aghiles/Research/Writing/lib/commands.tex",
+				"/home/aghiles/Aghiles/Research/Writing/src/01-Introduction/10_introduction.tex",
+				"/home/aghiles/Aghiles/Research/Writing/lib/nomenclature.tex",
+				"/home/aghiles/Aghiles/Research/Writing/lib/tikzset.tex",
+				"/home/aghiles/Aghiles/Research/Writing/res/plot.tex",
+				"/home/aghiles/Aghiles/Research/Writing/res/plot/slice1.tex",
+				"/home/aghiles/Aghiles/Research/Writing/res/plot/slice.tex",
+				"/home/aghiles/Aghiles/Research/Writing/res/plot/marcov.tex",
+				"/home/aghiles/Aghiles/Research/Writing/res/plot/genetic.tex",
+				"/home/aghiles/Aghiles/Research/Writing/res/plot/qlearning.tex",
+				"/home/aghiles/Aghiles/Research/Writing/lib/plot.tex",
+				"/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex",
+				"/home/aghiles/Aghiles/Research/Writing/src/plot.tex",
+				"/home/aghiles/Aghiles/Research/Writing/src/slide.tex",
+				"/home/aghiles/Aghiles/Research/Writing/lib/slide.tex",
+				"/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/graphs/tikzlibrarygraphs.standard.code.tex",
+				"/home/aghiles/Aghiles/Redaction/src/slide.tex",
+				"/home/aghiles/Downloads/calcursem/src/calcurse",
+				"/home/aghiles/.config/mutt/.cache/tmp/mutt-dell-1000-32431-5918117606302234234",
+				"/home/aghiles/.config/mutt/.cache/tmp/mutt-dell-1000-32431-3957175536653635214",
+				"/home/aghiles/Aghiles/Redaction/src/poster.tex",
+				"/home/aghiles/Downloads/IEEE_CS_Latex/bare_conf.tex",
+				"/home/aghiles/Downloads/IEEE_CS_Latex/bibtemplate.tex",
+				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/12_related.tex",
+				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/13_background.tex",
+				"/home/aghiles/Aghiles/Redaction/src/09-Conclusion/10_conclusion.tex",
+				"/home/aghiles/Aghiles/Redaction/src/01-Introduction/10_introduction.tex",
+				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/14_experimentation.tex",
+				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/15_results.tex",
+				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/13_method.tex",
+				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/11_introduction.tex",
+				"/home/aghiles/Aghiles/Redaction/src/08-UTLC/13_method.tex",
+				"/home/aghiles/Aghiles/Redaction/src/02-State of the art/16_discussion.tex",
+				"/home/aghiles/Aghiles/Redaction/src/99-PSE1/11_introduction.tex",
+				"/home/aghiles/Aghiles/Redaction/src/setup/setup_slide.tex",
+				"/home/aghiles/Aghiles/Redaction/src/setup/setup_tikz.tex",
+				"/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex",
+				"/home/aghiles/Aghiles/Redaction/src/setup/setup_command.tex",
+				"/home/aghiles/Aghiles/Redaction/src/02-State of the art/12_related.tex",
+				"/home/aghiles/untitled.tex",
+				"/home/aghiles/Aghiles/Redaction/src/05-x-Long paper/11_introduction.tex",
+				"/home/aghiles/Aghiles/Redaction/src/05-x-Long paper/12_related.tex",
+				"/home/aghiles/Aghiles/Redaction/src/03-x-Testbed/11_introduction.tex",
+				"/home/aghiles/Aghiles/Redaction/src/08-UTLC/14_experimentation.tex",
+				"/home/aghiles/Aghiles/Redaction/src/11-Privacy Framework/13_method.tex",
+				"/home/aghiles/Aghiles/Redaction/slide.tex",
+				"/home/aghiles/Aghiles/Redaction/slide/slide.tex",
+				"/home/aghiles/Aghiles/Redaction/slide/src/1/3_0_method.tex",
+				"/home/aghiles/Aghiles/Redaction/common/setup/setup_tikz.tex"
+			],
+			"find":
+			{
+				"height": 38.0
+			},
+			"find_in_files":
+			{
+				"height": 112.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"ac{CF",
+					"sea",
+					"algor"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": true,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"sheets":
+					[
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 25.0
+			},
+			"input":
+			{
+				"height": 40.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.latextools":
+			{
+				"height": 25.0
+			},
+			"pinned_build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
+			"position": "0,0,0,0,0,0,19,958,1058,1920,1080",
+			"project": "/home/aghiles/Aghiles/Research/txt/.main.sublime-project",
+			"replace":
+			{
+				"height": 46.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"",
+						"~/Aghiles/Research/Writing/CV/.cl.sublime-project"
+					],
+					[
+						"0",
+						"~/Aghiles/Redaction/0/0_paper.sublime-project"
+					],
+					[
+						"1",
+						"~/Aghiles/Redaction/1/1.sublime-project"
+					]
+				],
+				"width": 380.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": false,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 163.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 209,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+			"/home/aghiles/Aghiles/Research/txt/.main.sublime-workspace",
+			"/home/aghiles/Aghiles/Research/Writing/.main.sublime-workspace",
+			"/home/aghiles/Aghiles/Research/Writing/These/.these.sublime-workspace",
+			"/home/aghiles/Aghiles/Research/Writing/Plot/.plot.sublime-workspace",
+			"/home/aghiles/Aghiles/Research/Writing/Report/.report.sublime-workspace",
+			"/home/aghiles/Aghiles/Research/Writing/CV/.cl.sublime-workspace",
+			"/home/aghiles/Aghiles/Research/Writing/CV/.cv.sublime-workspace",
+			"/home/aghiles/Aghiles/Research/Writing/plot.sublime-workspace",
+			"/home/aghiles/Aghiles/Research/Writing/main.sublime-workspace"
+		]
+	}
+}

@@ -1,0 +1,87 @@
+Xsession: X session started for aghiles at Fri 20 Dec 2019 10:35:40 AM CET
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/run/user/1000/gdm/Xauthority
+localuser:aghiles being added to access control list
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+Failed to open /dev/input/by-path/pci-0000:00:14.0-usb-0:5:1.0-event
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting LESS_TERMCAP_se=[0m
+dbus-update-activation-environment: setting INPUTRC=/home/aghiles/.config/inputrc
+dbus-update-activation-environment: setting USER=aghiles
+dbus-update-activation-environment: setting LESS_TERMCAP_ue=[0m
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=x11
+dbus-update-activation-environment: setting FILE=ranger
+dbus-update-activation-environment: setting FZF_DEFAULT_OPTS=--layout=reverse --height 40%
+dbus-update-activation-environment: setting LF_ICONS=di=:fi=:ln=:or=:ex=:*.c=:*.cc=:*.clj=:*.coffee=:*.cpp=:*.css=:*.d=:*.dart=:*.erl=:*.exs=:*.fs=:*.go=:*.h=:*.hh=:*.hpp=:*.hs=:*.html=:*.java=:*.jl=:*.js=:*.json=:*.lua=:*.md=:*.php=:*.pl=:*.pro=:*.py=:*.rb=:*.rs=:*.scala=:*.ts=:*.vim=:*.cmd=:*.ps1=:*.sh=:*.bash=:*.zsh=:*.fish=:*.tar=:*.tgz=:*.arc=:*.arj=:*.taz=:*.lha=:*.lz4=:*.lzh=:*.lzma=:*.tlz=:*.txz=:*.tzo=:*.t7z=:*.zip=:*.z=:*.dz=:*.gz=:*.lrz=:*.lz=:*.lzo=:*.xz=:*.zst=:*.tzst=:*.bz2=:*.bz=:*.tbz=:*.tbz2=:*.tz=:*.deb=:*.rpm=:*.jar=:*.war=:*.ear=:*.sar=:*.rar=:*.alz=:*.ace=:*.zoo=:*.cpio=:*.7z=:*.rz=:*.cab=:*.wim=:*.swm=:*.dwm=:*.esd=:*.jpg=:*.jpeg=:*.mjpg=:*.mjpeg=:*.gif=:*.bmp=:*.pbm=:*.pgm=:*.ppm=:*.tga=:*.xbm=:*.xpm=:*.tif=:*.tiff=:*.png=:*.svg=:*.svgz=:*.mng=:*.pcx=:*.mov=:*.mpg=:*.mpeg=:*.m2v=:*.mkv=:*.webm=:*.ogm=:*.mp4=:*.m4v=:*.mp4v=:*.vob=:*.qt=:*.nuv=:*.wmv=:*.asf=:*.rm=:*.rmvb=:*.flc=:*.avi=:*.fli=:*.flv=:*.gl=:*.dl=:*.xcf=:*.xwd=:*.yuv=:*.cgm=:*.emf=:*.ogv=:*.ogx=:*.aac=:*.au=:*.flac=:*.m4a=:*.mid=:*.midi=:*.mka=:*.mp3=:*.mpc=:*.ogg=:*.ra=:*.wav=:*.oga=:*.opus=:*.spx=:*.xspf=:*.pdf=
+dbus-update-activation-environment: setting SSH_AGENT_PID=2589
+dbus-update-activation-environment: setting BROWSER=brave
+dbus-update-activation-environment: setting HOME=/home/aghiles
+dbus-update-activation-environment: setting LESS=-R
+dbus-update-activation-environment: setting QT4_IM_MODULE=ibus
+dbus-update-activation-environment: setting DESKTOP_SESSION=user-session
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting SUDO_ASKPASS=/home/aghiles/.local/bin/dmenupass
+dbus-update-activation-environment: setting LESS_TERMCAP_so=[01;44;33m
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DICS=/usr/share/stardict/dic/
+dbus-update-activation-environment: setting LOGNAME=aghiles
+dbus-update-activation-environment: setting GTK_IM_MODULE=ibus
+dbus-update-activation-environment: setting LESS_TERMCAP_us=[1;32m
+dbus-update-activation-environment: setting XDG_SESSION_CLASS=user
+dbus-update-activation-environment: setting USERNAME=aghiles
+dbus-update-activation-environment: setting WINDOWPATH=2
+dbus-update-activation-environment: setting GTK2_RC_FILES=/home/aghiles/.config/gtk-2.0/gtkrc-2.0
+dbus-update-activation-environment: setting PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin:
+dbus-update-activation-environment: setting GDM_LANG=en_US.UTF-8
+dbus-update-activation-environment: setting LESSHISTFILE=-
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/1000
+dbus-update-activation-environment: setting NOTMUCH_CONFIG=/home/aghiles/.config/notmuch-config
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting LANG=en_US.UTF-8
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=user-session
+dbus-update-activation-environment: setting XAUTHORITY=/run/user/1000/gdm/Xauthority
+dbus-update-activation-environment: setting XMODIFIERS=@im=ibus
+dbus-update-activation-environment: setting PASSWORD_STORE_DIR=/home/aghiles/.local/share/password-store
+dbus-update-activation-environment: setting SSH_AUTH_SOCK=/tmp/ssh-0lkezqoo8rb6/agent.2452
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting GDMSESSION=user-session
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting LESS_TERMCAP_mb=[1;31m
+dbus-update-activation-environment: setting READER=zathura
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting LESS_TERMCAP_md=[1;36m
+dbus-update-activation-environment: setting QT_IM_MODULE=ibus
+dbus-update-activation-environment: setting PWD=/home/aghiles
+dbus-update-activation-environment: setting LESS_TERMCAP_me=[0m
+dbus-update-activation-environment: setting XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+dbus-update-activation-environment: setting ZDOTDIR=/home/aghiles/.config/zsh
+dbus-update-activation-environment: setting CLUTTER_IM_MODULE=ibus
+dbus-update-activation-environment: setting LARBSWM=i3
+dbus-update-activation-environment: setting STATUSBAR=i3blocks
+dbus-update-activation-environment: setting TERMINAL=st
+dbus-update-activation-environment: setting EDITOR=nvim
+dbus-update-activation-environment: warning: error sending to systemd: org.freedesktop.DBus.Error.InvalidArgs: Invalid environment assignments
+date: extra operand ‘%F %I:%M %p’
+Try 'date --help' for more information.
+/usr/bin/unclutter: someone created a sub-window to my sub-window! giving up
+date: extra operand ‘%F %I:%M %p’
+Try 'date --help' for more information.
+date: extra operand ‘%F %I:%M %p’
+Try 'date --help' for more information.
+date: extra operand ‘%F %I:%M %p’
+Try 'date --help' for more information.
+date: extra operand ‘%F %I:%M %p’
+Try 'date --help' for more information.
+date: extra operand ‘%F %I:%M %p’
+Try 'date --help' for more information.
+date: extra operand ‘%F %I:%M %p’
+Try 'date --help' for more information.
+date: extra operand ‘%F %I:%M %p’
+Try 'date --help' for more information.
+date: extra operand ‘%F %I:%M %p’
+Try 'date --help' for more information.
+date: extra operand ‘%F %I:%M %p’
+Try 'date --help' for more information.
+date: extra operand ‘%F %I:%M %p’
+Try 'date --help' for more information.

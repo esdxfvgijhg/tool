@@ -1,0 +1,10 @@
+#!/bin/sh
+
+mkdir $TMPPATH
+
+
+#Color Folder
+	wget http://download.opensuse.org/repositories/home:/tangerine:/deb9-xfce-4.12/Debian_9.0/amd64/folder-color_0.0.86-7_amd64.deb -O $TMPPATH/folder-color_0.0.86-7_amd64.deb
+	installx $TMPPATH/folder-color_0.0.86-7_amd64.deb
+
+

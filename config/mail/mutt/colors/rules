@@ -1,0 +1,61 @@
+
+# ## LISTES DE DIFFUSION
+#subscribe awesome@naquadah.org
+#subscribe dev@suckless.org
+#subscribe frugalware-devel@frugalware.org
+#subscribe arch-general arch-announce arch-projects arch-security
+#subscribe neomutt-users@neomutt.org
+
+
+
+#List GRIS
+subscribe rsd-forum@cines.fr
+subscribe rsd-forum@groupes.renater.fr
+subscribe gdr-securite.forum@irisa.fr
+subscribe perm-labinfo@univ-mlv.fr
+subscribe semigm-info@univ-mlv.fr
+
+color index color243 default "~f .*abg.*"
+color index color243 default "~f .*researchgatemail.*"
+color index color243 default "~f .*linkedin.*"
+color index color243 default "~f .*cnrs.*"
+color index color243 default "~f .*elsevier.*"
+color index color243 default "~f .*sorbonne-universite.*"
+color index color243 default "~f .*adum.*"
+color index color243 default "~f .*univ-paris-est.*"
+
+
+# Job BLEU
+color index blue default "~f .*ece.*"
+color index magenta default "~f .*esiee.*"
+color index blue default "~f aghiles ~t .*ece.*"
+color index magenta default "~f aghiles ~t .*esiee.*"
+
+# Service
+color index color6 default "~f .*google.*"
+color index color6 default "~f .*doodle.*"
+color index color6 default "~f .*enquetesenligne.*"
+color index color6 default "~f .*bnpparibas.*"
+color index color6 default "~f .*paypal.*"
+
+
+
+# State VIOLET
+color index color13 default "~f .*caf.*"
+color index color13 default "~f .*gouv.*"
+
+
+
+
+
+
+
+#color index red default "~f .*doodle.*"
+#color index red default "~f .*doodle.*"
+#color index red default "~f .*doodle.*"
+#color index red default "~f .*doodle.*"
+
+
+
+
+

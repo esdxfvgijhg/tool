@@ -1,0 +1,194 @@
+Create Both  # Automatically create missing mailboxes, both locally and on the server
+Expunge Both # Automatically delete messages on either side if they are found deleted on the other.
+SyncState *  # Save the synchronization state files in the relevant directory
+
+# djaghiles -------------------------------------------------------------------
+IMAPAccount djaghiles
+Host imap.gmail.com
+Port  993
+User djaghiles@gmail.com
+PassCmd "pass djaghiles"
+SSLType IMAPS
+SSLVersions TLSv1.2
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+# Remote storage
+IMAPStore djaghiles-Remote
+Account djaghiles
+
+# Local storage
+MaildirStore djaghiles-Local
+#Subfolders Verbatim
+Path ~/Aghiles/Mail/djaghiles@gmail.com/
+Inbox ~/Aghiles/Mail/djaghiles@gmail.com/INBOX
+Flatten .
+
+
+Channel djaghiles-inbox
+Master :djaghiles-Remote:"[Gmail]/Tous les messages"
+Slave  :djaghiles-Local:"[Gmail]/Tous les messages"
+Patterns * !"[Gmail]/Tous les messages"
+Create Both  # Automatically create missing mailboxes, both locally and on the server
+Expunge Both # Automatically delete messages on either side if they are found deleted on the other.
+SyncState *  # Save the synchronization state files in the relevant directory
+
+Group djaghiles
+Channel djaghiles-inbox
+
+
+# aghilesdjoudi -------------------------------------------------------------------
+IMAPAccount aghilesdjoudi
+Host imap.gmail.com
+Port  993
+User aghilesdjoudi@gmail.com
+PassCmd "pass aghilesdjoudi"
+SSLType IMAPS
+SSLVersions TLSv1.2
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+# Remote storage
+IMAPStore aghilesdjoudi-Remote
+Account aghilesdjoudi
+
+# Local storage
+MaildirStore aghilesdjoudi-Local
+#Subfolders Verbatim
+Path ~/Aghiles/Mail/aghilesdjoudi@gmail.com/
+Inbox ~/Aghiles/Mail/aghilesdjoudi@gmail.com/INBOX
+Flatten .
+
+Create Both  # Automatically create missing mailboxes, both locally and on the server
+Expunge Both # Automatically delete messages on either side if they are found deleted on the other.
+SyncState *  # Save the synchronization state files in the relevant directory
+
+
+# isiee -------------------------------------------------------------------
+IMAPAccount isiee
+Host imap.gmail.com
+Port  993
+User aghiles.djoudi@isiee.com
+PassCmd "pass isiee"
+SSLType IMAPS
+SSLVersions TLSv1.2
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+# Remote storage
+IMAPStore isiee-Remote
+Account isiee
+
+# Local storage
+MaildirStore isiee-Local
+#Subfolders Verbatim
+Path ~/Aghiles/Mail/aghiles.djoudi@isiee.com/
+Inbox ~/Aghiles/Mail/aghiles.djoudi@isiee.com/INBOX
+Flatten .
+
+# upe -------------------------------------------------------------------
+IMAPAccount upe
+Host imap.gmail.com
+Port  993
+User aghiles.djoudi@univ-paris-est.fr
+PassCmd "pass upe"
+SSLType IMAPS
+SSLVersions TLSv1.2
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+# Remote storage
+IMAPStore upe-Remote
+Account upe
+
+# Local storage
+MaildirStore upe-Local
+#Subfolders Verbatim
+Path ~/Aghiles/Mail/aghiles.djoudi@univ-paris-est.fr/
+Inbox ~/Aghiles/Mail/aghiles.djoudi@univ-paris-est.fr/INBOX
+Flatten .
+
+Create Both  # Automatically create missing mailboxes, both locally and on the server
+Expunge Both # Automatically delete messages on either side if they are found deleted on the other.
+SyncState *  # Save the synchronization state files in the relevant directory
+
+
+# inseec -------------------------------------------------------------------
+IMAPAccount inseec
+Host outlook.office365.com
+Port  993
+User adjoudi@inseec-edu.com
+PassCmd "pass inseec"
+SSLType IMAPS
+SSLVersions TLSv1.2
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+# Remote storage
+IMAPStore inseec-Remote
+Account inseec
+
+# Local storage
+MaildirStore inseec-Local
+#Subfolders Verbatim
+Path ~/Aghiles/Mail/adjoudi@inseec-edu.com/
+Inbox ~/Aghiles/Mail/adjoudi@inseec-edu.com/INBOX
+Flatten .
+
+Create Both  # Automatically create missing mailboxes, both locally and on the server
+Expunge Both # Automatically delete messages on either side if they are found deleted on the other.
+SyncState *  # Save the synchronization state files in the relevant directory
+
+
+#Channel djaghiles-inbox
+#Master :djaghiles-Remote:"INBOX"
+#Slave :djaghiles-Local:INBOX
+#Patterns * !"[Gmail]/All Mail"
+#Create Both
+#Expunge Both
+#SyncState *
+
+#Channel djaghiles-archive
+#Master :djaghiles-Remote:"Archiv"
+#Slave :djaghiles-Local:archive
+#Patterns * !"[Gmail]/Archive"
+#Create Both
+#Expunge Both
+#SyncState *
+
+#Channel djaghiles-drafts
+#Master :djaghiles-Remote:"Entw&APw-rfe"
+#Slave :djaghiles-Local:drafts
+#Patterns * !"[Gmail]/Drafts"
+#Create Both
+#Expunge Both
+#SyncState *
+
+#Channel djaghiles-sent
+#Master :djaghiles-Remote:"Gesendete Objekte"
+#Slave :djaghiles-Local:sent
+#Patterns * !"[Gmail]/Sent"
+#Create Both
+#Expunge Both
+#SyncState *
+
+#Channel djaghiles-trash
+#Master :djaghiles-Remote:"Papierkorb"
+#Slave :djaghiles-Local:trash
+#Patterns * !"[Gmail]/Trash"
+#Create Both
+#Expunge Both
+#SyncState *
+
+##Channel djaghiles-junk
+##Master :djaghiles-Remote:"Spam"
+##Patterns * !"[Gmail]/All Mail"
+##Slave :djaghiles-Local:junk
+##Create Both
+##Expunge Both
+
+#Group djaghiles
+#Channel djaghiles-inbox
+#Channel djaghiles-archive
+#Channel djaghiles-drafts
+#Channel djaghiles-sent
+#Channel djaghiles-trash
+##Channel djaghiles-junk
+
+
+

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+IFS='
+'
+for arg in $NAUTILUS_SCRIPT_SELECTED_FILE_PATHS
+do
+	gvfs-set-attribute -t string $arg 'metadata::custom-icon' 'file:///home/aghiles/.config/icons/green.svg'
+	fz=${arg//\/home\/aghiles\/Aghiles\//}
+	ff=${fz//\//\\\/}
+	sed -i "/\[0\] $ff/d" ~/.calcurse/todo
+#	sed -i "s|\[0\] $arg||g" ~/Aghiles/Tool/config/office/mail/.calcurse/todo
+	touch "$arg"
+done
+
+
+#/home/aghiles/.local/share/folder-color/icons/

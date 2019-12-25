@@ -1,0 +1,48 @@
+{
+	"added_words":
+	[
+		"Arduino",
+		"Sigfox",
+		"Tx",
+		"uplink",
+		"downlink"
+	],
+	"bold_folder_labels": true,
+	"caret_extra_bottom": 2,
+	"caret_extra_top": 2,
+	"caret_extra_width": 3,
+	"caret_style": "phase",
+	"color_scheme": "Packages/Theme - Cobalt2/cobalt2.tmTheme",
+	"font_face": "Courier New",
+	"font_size": 9,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"open_externally_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.zip",
+		"*.pdf"
+	],
+	"sidebar_font_small": true,
+	"sidebar_large": true,
+	"sidebar_medium": true,
+	"sidebar_xlarge": true,
+	"spell_check": true,
+	"theme": "DefaultPlus Cobalt.sublime-theme",
+	"wide_caret": true,
+	"word_wrap": false
+}

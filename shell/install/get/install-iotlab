@@ -1,0 +1,23 @@
+#!/bin/sh
+
+
+mkdir $TMPPATH
+
+# IoT-lab
+cd $TOOLSPATH
+git clone https://github.com/iot-lab/iot-lab.git $TOOLSPATH/iot-lab
+cd $TOOLSPATH/iot-lab
+make \
+	setup-aggregation-tools \
+	setup-cli-tools \
+	setup-contiki \
+	setup-iot-lab-contiki-ng \
+	setup-iot-lab.wiki \
+	setup-oml-plot-tools \
+	setup-openlab \
+	setup-riot \
+	setup-wsn430 \
+	setup-zephyr 
+	
+cd $TOOLSPATH
+

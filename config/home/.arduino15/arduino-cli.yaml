@@ -1,0 +1,4 @@
+proxy_type: auto
+sketchbook_path: /home/aghiles/Aghiles/Tool/tools/arduino
+arduino_data: /home/aghiles/Aghiles/Tool/tools/arduino/arduino
+board_manager: {}

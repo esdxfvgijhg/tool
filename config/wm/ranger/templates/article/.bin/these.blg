@@ -1,0 +1,11 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is '.bin/these.blg'
+[23] biber:315> INFO - === Thu Dec 12, 2019, 21:27:14
+[42] Biber.pm:371> INFO - Reading '.bin/these.bcf'
+[97] Biber.pm:889> INFO - Found 0 citekeys in bib section 0
+[97] Biber.pm:889> INFO - Found 0 citekeys in bib section 1
+[97] Biber.pm:889> INFO - Found 0 citekeys in bib section 0
+[107] Utils.pm:193> WARN - The file '.bin/these.bcf' does not contain any citations!
+[113] bbl.pm:636> INFO - Writing '.bin/these.bbl' with encoding 'UTF-8'
+[113] bbl.pm:739> INFO - Output to .bin/these.bbl
+[113] Biber.pm:110> INFO - WARNINGS: 1

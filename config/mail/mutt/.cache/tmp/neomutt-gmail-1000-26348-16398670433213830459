@@ -1,0 +1,352 @@
+Delivered-To: djaghiles@gmail.com
+Received: by 2002:a2e:9dc7:0:0:0:0:0 with SMTP id x7csp1235740ljj;
+        Wed, 11 Dec 2019 10:42:18 -0800 (PST)
+X-Google-Smtp-Source: APXvYqzyzIyu3ybV/QUGYPu0qWf8Il2knFIXr84jnk4bCNkZxpExRo+P0IMI+lSOib2EWVNJgi23
+X-Received: by 2002:a6b:7708:: with SMTP id n8mr3961229iom.223.1576089738589;
+        Wed, 11 Dec 2019 10:42:18 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1576089738; cv=none;
+        d=google.com; s=arc-20160816;
+        b=kBdY1g78YkUzh6jkXSgzSHzC1186wtGncYLMVz7rNuCFYiTdsrIVWsOWsW0gaUzgp1
+         8uzZErOLkxbD/piF3VUr2CM2gemhxnEdPa0hmLHdat4qi5RiQWHcUa2KuwCxg1ec3QF6
+         +aiqyeSDrGCu/hinOCK/7JlMxwdqgqCSSIgDw9DQ76ZljcLoTFlj58uskod/QYn6pBMy
+         yZLKQUEN001GPaYIRJkiYAdE5QzlOUWO0uIrPUs0swrsQTqlQRroxtujJIEKNNDFwfA+
+         dehGZKbmU6AghSDV+91IdKVBDPq1pszlE0FDmmLZSXoRnDKOElfXQEzawrBVUN79UyCA
+         CyqA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=organization:content-transfer-encoding:mime-version:subject
+         :message-id:to:reply-to:from:date:dkim-signature;
+        bh=c4mZjCbM/UxksWhGbTONKGR4D1+9PPgr9SjL/e5uflQ=;
+        b=RxDfLqnbUqV+3NPzVa4IWQyYZ6AIemakvOQo7SaE/7t+h2vMdwf8DDcfZcwelIjQkt
+         e+7N2H1zKJvAKSas6W9fwXik9kWZrwtUG57sBhvFUBGtoaeC3nNM615+Q7/0ygPqFl9j
+         YOw3CzQ5nt29F5eao61CbdVqdZNnGTdamfMvIq2UJ2RSV9upPFk0KLe03cPwOYxM88rU
+         2dUzY+ImAM4JWkL8skdbYbAdrVY+vm+TmoDrEoZLqUeAYQix6S+ytbzudfrETFOV2iwk
+         sa5QmKNgDRIn9aiZxfhERKo8LL4Ym331Q0tQUMdobO57Ze9zGEN6MzsoT9kOyneE4X5Z
+         OUMA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@oracle.com header.s=corp-2019-08-05 header.b=lodPaH87;
+       spf=pass (google.com: domain of oracle-acct_ww@oracle.com designates 141.146.126.78 as permitted sender) smtp.mailfrom=oracle-acct_ww@oracle.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=oracle.com
+Return-Path: <oracle-acct_ww@oracle.com>
+Received: from aserp2120.oracle.com (aserp2120.oracle.com. [141.146.126.78])
+        by mx.google.com with ESMTPS id s80si2510346ios.154.2019.12.11.10.42.18
+        for <djaghiles@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 11 Dec 2019 10:42:18 -0800 (PST)
+Received-SPF: pass (google.com: domain of oracle-acct_ww@oracle.com designates 141.146.126.78 as permitted sender) client-ip=141.146.126.78;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@oracle.com header.s=corp-2019-08-05 header.b=lodPaH87;
+       spf=pass (google.com: domain of oracle-acct_ww@oracle.com designates 141.146.126.78 as permitted sender) smtp.mailfrom=oracle-acct_ww@oracle.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=oracle.com
+Received: from pps.filterd (aserp2120.oracle.com [127.0.0.1])
+	by aserp2120.oracle.com (8.16.0.27/8.16.0.27) with SMTP id xBBIe2Tu108137
+	for <djaghiles@gmail.com>; Wed, 11 Dec 2019 18:42:18 GMT
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=oracle.com; h=date : from :
+ reply-to : to : message-id : subject : mime-version : content-type :
+ content-transfer-encoding; s=corp-2019-08-05;
+ bh=c4mZjCbM/UxksWhGbTONKGR4D1+9PPgr9SjL/e5uflQ=;
+ b=lodPaH879dA+DJUVunjUQjic0jkPAk3Fze+cNaJiNLwqYj3Qpet+8bDq6w8oQTPM2Okh
+ bmVfR05NzjT3zaebe6pV/5swOWq4b0QMAsVQGOOuCokF2xiF8bxwA+ARyFdZjaud/ymh
+ NyIzcqWIaqvY/Kce8sJr3sXrUjO7YUXvgJBSnuu6lg7WluHmxbVA4t5Xn0EpWzRwZPum
+ 7eQC3htRwSyOKenZ+ypphqVpcE1ODhAhdfjkA6SNTj8lBI/3ATlA2MiiitN1VuxSPtng
+ FED8rJFd+rEjptpajDgyNnZvn+710VPr+leHrTWk72flOB19N2NLXXFCLpFzR5T2crQ5 +w== 
+Received: from userp3030.oracle.com (userp3030.oracle.com [156.151.31.80])
+	by aserp2120.oracle.com with ESMTP id 2wr41qeh84-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=OK)
+	for <djaghiles@gmail.com>; Wed, 11 Dec 2019 18:42:17 +0000
+Received: from pps.filterd (userp3030.oracle.com [127.0.0.1])
+	by userp3030.oracle.com (8.16.0.27/8.16.0.27) with SMTP id xBBIXdtW034961
+	for <djaghiles@gmail.com>; Wed, 11 Dec 2019 18:42:17 GMT
+Received: from acmmv0113.oracle.com (acmmv0113.oracle.com [137.254.18.150])
+	by userp3030.oracle.com with ESMTP id 2wu3jyqcng-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NO)
+	for <djaghiles@gmail.com>; Wed, 11 Dec 2019 18:42:17 +0000
+Received: from acmmv0113.oracle.com (localhost.localdomain [127.0.0.1])
+	by acmmv0113.oracle.com (8.14.4/8.13.8) with ESMTP id xBBIfGLe010970
+	for <djaghiles@gmail.com>; Wed, 11 Dec 2019 18:41:16 GMT
+Date: Wed, 11 Dec 2019 18:41:16 +0000 (UTC)
+From: oracle-acct_ww@oracle.com
+Reply-To: oracle-acct_ww@oracle.com
+To: djaghiles@gmail.com
+Message-ID: <1939310041.308312.1576089676345@oracle.com>
+Subject: Reset Your Oracle Account Password
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Organization: Oracle Corporation
+X-Priority: 3
+X-Proofpoint-Virus-Version: vendor=nai engine=6000 definitions=9468 signatures=668685
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 suspectscore=0 malwarescore=0
+ phishscore=0 bulkscore=0 spamscore=0 mlxscore=0 mlxlogscore=999
+ adultscore=0 classifier=spam adjust=0 reason=mlx scancount=1
+ engine=8.0.1-1911140001 definitions=main-1912110153
+X-Proofpoint-Virus-Version: vendor=nai engine=6000 definitions=9468 signatures=668685
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8"/>
+<meta name=3D"format-detection" content=3D"telephone=3Dno">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width; initial-scale=3D1.=
+0; maximum-scale=3D1.0; user-scalable=3Dno;">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3D9; IE=3D8; IE=3D7; IE=
+=3DEDGE" />
+
+    <title>Reset password</title>
+
+    <style type=3D"text/css">
+=09body{
+=09=09margin:0;
+=09=09padding:0;
+=09=09font-family:Arial, Helvetica, sans-serif;
+=09}
+      =09@media screen and (min-width: 320px) and (max-width: 611px){
+=09=09=09td[class=3D"100p-red"]{width:100%!important;text-align:center!impo=
+rtant;display:block!important;padding-left:0!important;padding-right:0!impo=
+rtant;background:#E81500!important;}
+=09=09=09 td[class=3D"100p-gray"]{width:100%!important;text-align:center!im=
+portant;display:block!important;padding-left:0!important;padding-right:0!im=
+portant;background:#F0F0F0!important;padding-top:10px!important;padding-bot=
+tom:10px!important;}
+=09=09=09 table[class=3D"full-width-center"]{width:100%!important;text-alig=
+n:center!important;}
+=09=09=09 table[class=3D"full-width-center-mobile"]{width:80%!important;tex=
+t-align:center!important;}
+=09=09=09td[class=3D"full-width-center"]{width:100%!important;text-align:ce=
+nter!important;display:block!important;}
+=09=09=09div[class=3D"gray-small-text"]{width:100%!important;}
+=09=09=09td[class=3D"gray-text-wrap"]{text-align:center!important;}
+=09=09}
+=09=09@media screen and (min-width: 613px) {
+=09=09=09.container {
+=09=09=09=09width: 612px!important;
+=09=09=09}
+=09=09}
+
+    </style>
+
+
+  <script>!function(){function o(n,i){if(n&&i)for(var r in i)i.hasOwnProper=
+ty(r)&&(void 0=3D=3D=3Dn[r]?n[r]=3Di[r]:n[r].constructor=3D=3D=3DObject&&i[=
+r].constructor=3D=3D=3DObject?o(n[r],i[r]):n[r]=3Di[r])}try{var n=3DdecodeU=
+RIComponent("");if(n.length>0&&window.JSON&&"function"=3D=3Dtypeof window.J=
+SON.parse){var i=3DJSON.parse(n);void 0!=3D=3Dwindow.BOOMR_config?o(window.=
+BOOMR_config,i):window.BOOMR_config=3Di}}catch(r){window.console&&"function=
+"=3D=3Dtypeof window.console.error&&console.error("mPulse: Could not parse =
+configuration",r)}}();</script>
+  <script>!function(e){var a=3D"https://s.go-mpulse.net/boomerang/",t=3D"ad=
+dEventListener";if("False"=3D=3D"True")e.BOOMR_config=3De.BOOMR_config||{},=
+e.BOOMR_config.PageParams=3De.BOOMR_config.PageParams||{},e.BOOMR_config.Pa=
+geParams.pci=3D!0,a=3D"https://s2.go-mpulse.net/boomerang/";if(window.BOOMR=
+_API_key=3D"DXNLE-YBWWY-AR74T-WMD99-77VRA",function(){function n(a){e.BOOMR=
+_onload=3Da&&a.timeStamp||(new Date).getTime()}if(!e.BOOMR||!e.BOOMR.versio=
+n&&!e.BOOMR.snippetExecuted){e.BOOMR=3De.BOOMR||{},e.BOOMR.snippetExecuted=
+=3D!0;var i,o,r,_=3Ddocument.createElement("iframe");if(e[t])e[t]("load",n,=
+!1);else if(e.attachEvent)e.attachEvent("onload",n);_.src=3D"javascript:voi=
+d(0)",_.title=3D"",_.role=3D"presentation",(_.frameElement||_).style.cssTex=
+t=3D"width:0;height:0;border:0;display:none;",r=3Ddocument.getElementsByTag=
+Name("script")[0],r.parentNode.insertBefore(_,r);try{o=3D_.contentWindow.do=
+cument}catch(O){i=3Ddocument.domain,_.src=3D"javascript:var d=3Ddocument.op=
+en();d.domain=3D'"+i+"';void(0);",o=3D_.contentWindow.document}o.open()._l=
+=3Dfunction(){var e=3Dthis.createElement("script");if(i)this.domain=3Di;e.i=
+d=3D"boomr-if-as",e.src=3Da+"DXNLE-YBWWY-AR74T-WMD99-77VRA",BOOMR_lstart=3D=
+(new Date).getTime(),this.body.appendChild(e)},o.write("<bo"+'dy onload=3D"=
+document._l();">'),o.close()}}(),"".length>0)if(e&&"performance"in e&&e.per=
+formance&&"function"=3D=3Dtypeof e.performance.setResourceTimingBufferSize)=
+e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=3De.BOOMR|=
+|{},BOOMR.plugins=3DBOOMR.plugins||{},!BOOMR.plugins.AK){var a=3D""=3D=3D"t=
+rue"?1:0,t=3D"",n=3D"rh7aotaxjcsn6xont7uq-f-cfffc9228-clientnsv4-s.akamaihd=
+.net",i=3D{"ak.v":25,"ak.cp":"82485","ak.ai":parseInt("165266",10),"ak.ol":=
+"0","ak.cr":7,"ak.ipv":4,"ak.proto":"","ak.rid":"46f3b4ee","ak.r":19509,"ak=
+.a2":a,"ak.m":"dscx","ak.n":"essl","ak.bpcip":"137.254.7.0","ak.cport":5391=
+1,"ak.gh":"184.28.23.6","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.c=
+src":"-","ak.acc":"reno","ak.t":"1573756905"};if(""!=3D=3Dt)i["ak.ruds"]=3D=
+t;var o=3D{i:!1,av:function(a){var t=3D"http.initiator";if(a&&(!a[t]||"spa_=
+hard"=3D=3D=3Da[t]))i["ak.feo"]=3Dvoid 0!=3D=3De.aFeoApplied?1:0,BOOMR.addV=
+ar(i)},rv:function(){var e=3D["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.g=
+h","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt"=
+,"ak.r","ak.acc","ak.t"];BOOMR.removeVar(e)}};BOOMR.plugins.AK=3D{akVars:i,=
+akDNSPreFetchDomain:n,init:function(){if(!o.i){var e=3DBOOMR.subscribe;e("b=
+efore_beacon",o.av,null,null),e("onbeacon",o.rv,null,null),o.i=3D!0}return =
+this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body style=3D"padding:0; margin:0 auto;font-size:14px;font-family:arial;">
+
+<!--[if (gte mso 9)|(IE)]>
+<table width=3D"612" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" b=
+order=3D"0">
+=09<tr>
+=09=09<td>
+<![endif]-->
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" styl=
+e=3D"margin: 0 auto; padding: 0;max-width:612px;" class=3D"container" align=
+=3D"center">
+    <tr>
+        <td align=3D"center" valign=3D"top">
+
+=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"m=
+argin: 0; padding: 0;width:100%;background:#f0f0f0;" class=3D"100p">
+            =09<tr>
+                =09<td style=3D"width:30%;padding:0 20px;" class=3D"100p-re=
+d">
+                    =09<img src=3D"https://www.oracleimg.com/us/assets/orac=
+le-logo-email.jpg" alt=3D"oracle" style=3D"" />
+                    </td>
+                    <td style=3D"width:70%;padding:0 20px;text-align:right;=
+" valign=3D"middle" class=3D"100p-gray">
+                    =09<a href=3D"https://profile.oracle.com/myprofile/acco=
+unt/secure/update-account.jspx?section=3Dsubscriptions" style=3D"font-famil=
+y:Helvetica;font-weight:bold;font-size:12px;color:#1f4f82;text-decoration:n=
+one;">SUBSCRIBE</a> &nbsp; | &nbsp;
+                        <a href=3D"https://profile.oracle.com/myprofile/acc=
+ount/secure/update-account.jspx?section=3Daccount" style=3D"font-family:Hel=
+vetica;font-weight:bold;font-size:12px;color:#1f4f82;text-decoration:none;"=
+>MY ACCOUNT</a> &nbsp; | &nbsp;
+                        <a href=3D"https://www.oracle.com/corporate/contact=
+/help.html" style=3D"font-family:Helvetica;font-weight:bold;font-size:12px;=
+color:#1f4f82;text-decoration:none;">HELP</a>
+                    </td>
+                </tr>
+            </table> <!-- header end here -->
+        </td>
+    </tr>
+
+=09<tr>
+    =09<td style=3D"padding:30px 0 20px 20px;">Dear DJOUDI,</td>
+    </tr>
+    <tr>
+    =09<td style=3D"padding:0 20px 20px;">Did you forget your password? </t=
+d>
+    </tr>
+
+
+    <tr>
+    =09<td style=3D"padding:0;">
+        =09<table border=3D"0" cellpadding=3D"0" width=3D"100%" cellspacing=
+=3D"0" style=3D"margin: 0; padding: 0;max-width:612px;border:1px solid #edf=
+1f1;color:#5f5f5f;" class=3D"container" >
+
+     <tr style=3D"background:#edf1f1;">
+        <td style=3D"text-align: center; vertical-align: top; font-size: 0;=
+padding:15px 0;">
+            <!--[if (gte mso 9)|(IE)]>
+            <table width=3D"100%" align=3D"center" cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0">
+                <tr>
+                    <td style=3D"width:50%;text-align:center;" align=3D"cen=
+ter">
+            <![endif]-->
+            <div style=3D"width: 300px; display: inline-block; vertical-ali=
+gn: middle;">
+                <table width=3D"80%" align=3D"center">
+                    <tr>
+                        <td style=3D"background:#1F4F82;padding:13px 0;" al=
+ign=3D"center"><a href=3D"https://profile.oracle.com/myprofile/account/rese=
+t-password.jspx?key=3DE36E03EAD8A44330806DD7A7221E3E27FE19A4EE6AF1A823FA0ED=
+9B766BDF918580FDB58DBFA35C61BDC875B6EB0E6A14127CF32D2102ACD970E1C6321DDE2B8=
+DFC50626E698C33E9A239C8E071E034F" style=3D"text-decoration:none;color:#fff;=
+font-size:16px;font-weight:bold;display:block;text-align:center;">Reset Pas=
+sword &raquo;</a></td>
+                    </tr>
+                </table>
+            </div>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            <td style=3D"width:50%;">
+            <![endif]-->
+            <div style=3D"width: 300px; display: inline-block; vertical-ali=
+gn: middle;" class=3D"gray-small-text">
+                <table width=3D"100%">
+                    <tr>
+                        <td style=3D"font-size:14px;vertical-align:middle;t=
+ext-align:left;" class=3D"gray-text-wrap">This link will expire in 24 hours=
+ and can be used only once.</a></td>
+                    </tr>
+                </table>
+            </div>
+            <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+
+            </table>
+        </td>
+    </tr>
+
+   <tr>
+    =09<td style=3D"padding:20px 20px 0;">If you don't want to change your =
+password or didn't request this, please ignore and delete this message. </t=
+d>
+    </tr>
+
+    <tr>
+    =09<td style=3D"padding:16px 20px 25px;">Thank you, <br />
+=09=09=09The Oracle Account Team
+        </td>
+    </tr>
+
+
+    <tr>
+    =09<td><img src=3D"https://www.oracleimg.com/us/assets/footer-shadow-em=
+ail.jpg" alt=3D"shadow" style=3D"width:100%;" /></td>
+    </tr>
+
+
+    <tr>
+    =09<td style=3D"padding:0 20px;" class=3D"nopadding">
+        =09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D=
+"margin: 0; padding: 0;width:100%;" class=3D"">
+            =09<tr>
+                =09<td style=3D"width:25%;padding-bottom:10px;" class=3D"fu=
+ll-width-center"><img src=3D"https://www.oracleimg.com/us/assets/oracle-tag=
+line-email.png" alt=3D"Oracle Tagline" /></td>
+                    <td valign=3D"middle" style=3D"text-align:right;width:7=
+5%;font-size:10px;padding-bottom:10px;" class=3D"full-width-center">
+                    =09<a href=3D"https://www.oracle.com/corporate/contact/=
+help.html" style=3D"font-size:10px;color:#1f4f82;text-decoration:none;">Acc=
+ount Help</a> |
+                        <a href=3D"https://go.oracle.com/unsubscribe?l_code=
+=3Den-us&vn=3DMPRF" style=3D"font-size:10px;color:#1f4f82;text-decoration:n=
+one;">Unsubscribe</a> |
+
+                        <a href=3D"https://www.oracle.com/legal/terms.html"=
+ style=3D"font-size:10px;color:#1f4f82;text-decoration:none;">Terms of Use<=
+/a> |
+                        <a href=3D"https://www.oracle.com/legal/privacy/" s=
+tyle=3D"font-size:10px;color:#1f4f82;text-decoration:none;">Privacy</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+    =09<td style=3D"padding:10px 20px 0;" class=3D"nopadding">
+        =09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D=
+"margin: 0; padding: 0;width:100%;" class=3D"footer-wrap">
+            =09<tr>
+                =09<td style=3D"width:45%;font-size:10px;padding-bottom:10p=
+x;" class=3D"full-width-center">Copyright @ 2019, Oracle and/or its affilia=
+tes. <br />
+                    =09All rights reserved.
+                    </td>
+
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+</table>
+
+<!--[if (gte mso 9)|(IE)]>
+=09=09</td>
+=09</tr>
+</table>
+<![endif]-->
+
+</body>
+</html>

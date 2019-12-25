@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<history>
+<session>
+<command time_stamp="16e4b112d49">%-- 08/11/19 12:50:47 pm GMT --%</command>
+<command error="true" execution_time="1766">LoRa_Simulator_01</command>
+<command error="true" execution_time="472">LoRa_Simulator_02</command>
+</session>
+<session>
+<command time_stamp="16e4b149b6b">%-- 08/11/19 12:54:32 pm GMT --%</command>
+<command error="true" execution_time="35" repeat="2">LoRa_Simulator_02</command>
+<command error="true" execution_time="1950">LoRa_Simulator_07_Wrong_SF</command>
+<command execution_time="27449">LoRa_Simulator_05_BERvsSNR_SF_Compare</command>
+</session>
+<session>
+<command time_stamp="16e4b1b28de">%-- 08/11/19  1:01:41 pm GMT --%</command>
+<command error="true" execution_time="529" repeat="3">LoRa_Simulator_07_Wrong_SF</command>
+</session>
+<session>
+<command time_stamp="16e84a1e546">%-- 19/11/19  5:07:13 pm GMT --%</command>
+<command error="true" execution_time="1654">LoRa_Simulator_01</command>
+</session>
+<session>
+<command time_stamp="16ef07f117e">%-- 10/12/19  4:48:10 pm CET --%</command>
+<command error="true" execution_time="40">LoRa_Simulator_02</command>
+<command error="true" execution_time="1625">LoRa_Simulator_01</command>
+<command error="true" execution_time="387">LoRa_Decoding</command>
+</session>
+<session>
+<command time_stamp="16ef086d8ff">%-- 10/12/19  4:56:40 pm CET --%</command>
+<command error="true" execution_time="1843">LoRa_Decoding</command>
+<command error="true" execution_time="1844">LoRa_SF_Comparasion</command>
+<command error="true" execution_time="21">binary2gray</command>
+<command error="true" execution_time="1559">Lora_Symbol_Generation</command>
+</session>
+<session>
+<command time_stamp="16ef08a624d">%-- 10/12/19  5:00:31 pm CET --%</command>
+<command error="true" execution_time="8112">LoRa_Simulator_03_BERvsSNR</command>
+</session>
+<session>
+<command time_stamp="16ef08ee818">%-- 10/12/19  5:05:28 pm CET --%</command>
+<command error="true" execution_time="7419">LoRa_Simulator_03_BERvsSNR</command>
+</session>
+<session>
+<command time_stamp="16ef097f0b7">%-- 10/12/19  5:15:20 pm CET --%</command>
+<command error="true" execution_time="7549">LoRa_Simulator_03_BERvsSNR</command>
+</session>
+<session>
+<command time_stamp="16ef09985c6">%-- 10/12/19  5:17:03 pm CET --%</command>
+<command error="true" execution_time="7588">LoRa_Simulator_03_BERvsSNR</command>
+</session>
+<session>
+<command time_stamp="16ef09be9da">%-- 10/12/19  5:19:40 pm CET --%</command>
+<command error="true" execution_time="7439">LoRa_Simulator_03_BERvsSNR</command>
+</session>
+<session>
+<command time_stamp="16ef09e4733">%-- 10/12/19  5:22:15 pm CET --%</command>
+<command execution_time="7952">LoRa_Simulator_03_BERvsSNR</command>
+<command execution_time="17952">LoRa_Simulator_04_BERvsSNR_GrayCoded</command>
+</session>
+<session>
+<command time_stamp="16ef0a12f2a">%-- 10/12/19  5:25:26 pm CET --%</command>
+<command execution_time="3900">LoRa_Simulator_01</command>
+</session>
+<session>
+<command time_stamp="16ef0d4f896">%-- 10/12/19  6:21:59 pm CET --%</command>
+<command execution_time="8263">LoRa_Simulator_03_BERvsSNR</command>
+</session>
+<session>
+<command time_stamp="16ef0dce60b">%-- 10/12/19  6:30:39 pm CET --%</command>
+<command execution_time="8981">LoRa_Simulator_03_BERvsSNR</command>
+</session>
+<session>
+<command time_stamp="16ef0df6ea9">%-- 10/12/19  6:33:25 pm CET --%</command>
+<command execution_time="8027">LoRa_Simulator_03_BERvsSNR</command>
+</session>
+<session>
+<command time_stamp="16ef0e859b8">%-- 10/12/19  6:43:09 pm CET --%</command>
+<command error="true" execution_time="8763">LoRa_Simulator_03_BERvsSNR</command>
+</session>
+<session>
+<command time_stamp="16ef0eb80e4">%-- 10/12/19  6:46:36 pm CET --%</command>
+<command error="true" execution_time="7513">LoRa_Simulator_03_BERvsSNR</command>
+</session>
+<session>
+<command time_stamp="16ef0ecada5">%-- 10/12/19  6:47:53 pm CET --%</command>
+<command error="true" execution_time="7788">LoRa_Simulator_03_BERvsSNR</command>
+</session>
+<session>
+<command time_stamp="16ef0ef7a4f">%-- 10/12/19  6:50:57 pm CET --%</command>
+<command execution_time="7966">LoRa_Simulator_03_BERvsSNR</command>
+</session>
+<session>
+<command time_stamp="16ef10a23c4">%-- 10/12/19  7:20:04 pm CET --%</command>
+<command execution_time="8282">LoRa_Simulator_03_BERvsSNR</command>
+</session>
+<session>
+<command time_stamp="16f034b105d">%-- 14/12/19  8:24:09 am CET --%</command>
+<command execution_time="6977">LoRa_Simulator_03_BERvsSNR</command>
+<command batch="1">LoRa_Simulator_05_BERvsSNR_SF_Compare</command>
+</session>
+</history>

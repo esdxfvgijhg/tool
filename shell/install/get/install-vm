@@ -1,0 +1,16 @@
+#!/bin/sh
+
+
+mkdir $TMPPATH
+
+
+#Virtualbox-ext
+	vboxversion=$(wget -qO - https://download.virtualbox.org/virtualbox/LATEST.TXT)
+	wget "https://download.virtualbox.org/virtualbox/$vboxversion/Oracle_VM_VirtualBox_Extension_Pack-$vboxversion.vbox-extpack" -P $TMPPATH
+	sudo vboxmanage extpack install --replace $TMPPATH/Oracle_VM_VirtualBox_Extension_Pack-$vboxversion.vbox-extpack
+	#sudo modprobe usbserial
+	#sudo dmesg
+	#lsusb
+	#usermod -a -G dialout aghiles
+	#sudo usermod -a -G lpadmin aghiles
+

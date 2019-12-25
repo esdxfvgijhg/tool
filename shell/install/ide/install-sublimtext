@@ -1,0 +1,6 @@
+#!/bin/sh
+
+#SublimText
+installx sublime-text
+installx sublime-merge
+

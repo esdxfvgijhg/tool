@@ -1,0 +1,119 @@
+[
+    /*********************************************************
+    * The following example commands show you the basics of  *
+    * working with filter pipes. Delete, modify, rename, and *
+    * use as you see fit.                                    *
+    **********************************************************/
+
+    // ###########################################################
+    // Translate filters. Translates characters in the "before"
+    // string to the corresponding (by position) character in
+    // the "after" string.
+    {
+        "caption": "FilterPipes Example: Swap Quotes",
+        "command": "filter_pipes_translate",
+        "args": {
+            "before": "'\"",
+            "after": "\"'"
+        }
+    },
+
+    {
+        "caption": "FilterPipes Example: Convert to Straight Quotes",
+        "command": "filter_pipes_translate",
+        "args": {
+            "before": "\u201c\u201d\u201f\u301d\u301e\uff02\u201e\u301f\u2018\u2019\u201b\uff07\u201a",
+            "after": "\"\"\"\"\"\"\"\"'''''"
+        }
+    },
+    // ###########################################################
+    // Regex filters. Runs the selection through a regular
+    // expression replacement.
+    //
+    // You can specify
+    //      "lines": true
+    // to add the MULTILINE flag to replacement function --
+    // this makes ^ and $ match the beginning and end of each
+    // individual line instead of the whole string.
+
+    {
+        "caption": "FilterPipes Example: collapse spaces",
+        "command": "filter_pipes_regex",
+        "args": {
+            "regex": "\\s+",
+            "replacement": " "
+        }
+    },
+    // ###########################################################
+    // Process filters. Runs the selection through an external
+    // program as a filter instead. Remember you can specify
+    //      "use_selections": false
+    // if you want to always process the whole file, regardless of
+    // selections.
+    //
+    // Also note that if command is a list, then the first element
+    // is the executable, and the other elements are parameters.
+    // If it's instead simply a string, then, then that string is
+    // interpreted as a shell command.
+
+    // "pip install jsbeautifier" to make this one work
+    {
+        "caption": "FilterPipes Example: Beautify JS (js-beautify)",
+        "command": "filter_pipes_process",
+        "args": {
+            "command": ["js-beautify", "-i"]
+        }
+    },
+    {
+        "caption": "FilterPipes Example: Minify JS (uglifyjs)",
+        "command": "filter_pipes_process",
+        "args": {
+            "command": ["uglifyjs"]
+        }
+    },
+
+    // ###########################################################
+    // Python Filters. These have corresponding entries in the
+    // myfilters.py file, where the command name is translated to
+    // camelcase with the word "Command" appended. So for example
+    // "camel_case_filter" is the class "CamelCaseFilterCommand"
+    // in myfilters.py. The filter() function determines what the
+    // filter does. Finally, any args provided here get automatically
+    // set as class object instance variables; usually overriding
+    // a Default setting.
+
+    {   /* See ReverseWordsCommand */
+        "caption": "FilterPipes Example: Reverse Words",
+        "command": "reverse_words"
+    },
+
+    {   /* See CamelCaseFilterCommand */
+        "caption": "FilterPipes Example: to CamelCase",
+        "command": "camel_case_filter",
+        "args": {
+            "initial_caps": true
+        }
+    },
+
+    {   /* See CamelCaseFilterCommand */
+        "caption": "FilterPipes Example: to mixedCase",
+        "command": "camel_case_filter",
+        "args": {
+            "initial_caps": false
+        }
+    },
+
+    {   /* See UnderscoreCaseFilterCommand */
+        "caption": "FilterPipes Example: to underscore_case",
+        "command": "underscore_case_filter"
+    },
+
+		{
+				"caption": "Double Power Bracket",
+				"command": "surround_selection",
+				"args": {
+				    "prepend": ".:[[",
+				    "append": "]]:."
+				}
+		}
+]

@@ -1,0 +1,174 @@
+Delivered-To: aghilesdjoudi@gmail.com
+Received: by 2002:ad5:54e6:0:0:0:0:0 with SMTP id q6csp1796896imm;
+        Tue, 3 Dec 2019 09:15:11 -0800 (PST)
+X-Received: by 2002:a2e:8916:: with SMTP id d22mr3310816lji.19.1575393280744;
+        Tue, 03 Dec 2019 09:14:40 -0800 (PST)
+X-Google-Smtp-Source: APXvYqxQwq1x6vfD4o8Xkz1puhoG0f/HXXMuFFbLwGpAE6+dSab659AZ00Tq6LisBdOcyhFdXD0G
+X-Received: by 2002:a2e:8916:: with SMTP id d22mr3310769lji.19.1575393279707;
+        Tue, 03 Dec 2019 09:14:39 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1575393279; cv=none;
+        d=google.com; s=arc-20160816;
+        b=tpNtl1z+2zb88Kv0azBfz3un212zqAy65Ax1T+fuSzOD66JW0VhMn3uqG+eNYhG15t
+         rCH9Fhi9I7NE9rpk1vRe1zk4eZ5f/YYGpCzYzBDm5ePBCRZ8KKfYIBtC17K5gUcGzb5T
+         at5PbR+TRTTrIYXD62ZT+fyOJ6GoVoDt+lZbqBfi1d4s9u6m5vSi1b/j7ligZiVzSnxo
+         vAtu6OKeUQ5FAXeVSG3xwcgQqRFBrva85Js9SyWyYItEcTV5yy723GGBcrpGcFGNgmv4
+         w1DpceQFCUrZlLkc5ZO2RTZq5I6KfwVI8Wf9owSigyOaTkHqKuG7mrskK/qRRt3XBvOd
+         qhVA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=archived-at:list-archive:list-owner:list-post:list-unsubscribe
+         :list-subscribe:list-help:list-id:sender:precedence:precedence
+         :errors-to:reply-to:subject:to:message-id:date:from:mime-version
+         :dkim-signature;
+        bh=R6Nf1u7ertdu6UUS464sLv0I/PNTI8EXOZLahFgFxHs=;
+        b=JcRuByZsBJbLQZd1k9U8Y0qkaZ5/J1DfGrtiRc/bgpX4ebpMnC4H5Jfvo8i3Nx0cCM
+         2BErd4F18VNsn2YFfzXStt541K2DrgX1KQdeonnBtbeQKIhjFZ0lv6oXY32f4f109eQB
+         EDmQfd92GrufGmK4DPacok1eIkKbA+JNG9B/tUk6AEoWFHGw/Ko8Tu4msLhzZvLq9qNn
+         jog+Uni0TTeeC4eQgWD/PotwVVlotTQ9Gj/62W8EYesCU5me6ZvBMRnL7w2QUy69haWZ
+         1NGmCkXHalIOHo22/y8Tc49YVy9M9Hp+yiqBYcLdTnc+DLYgy+IYXFMexUMZ0otl091C
+         T+Zw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass (test mode) header.i=@groupes.renater.fr header.s=lists header.b=VUj2dHO2;
+       spf=pass (google.com: domain of rsd-forum-owner@groupes.renater.fr designates 195.220.94.131 as permitted sender) smtp.mailfrom=rsd-forum-owner@groupes.renater.fr;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=renater.fr
+Return-Path: <rsd-forum-owner@groupes.renater.fr>
+Received: from smtp1.cru.fr (smtp1.cru.fr. [195.220.94.131])
+        by mx.google.com with ESMTPS id q4si2032263lfn.102.2019.12.03.09.14.39
+        (version=TLS1 cipher=AES128-SHA bits=128/128);
+        Tue, 03 Dec 2019 09:14:39 -0800 (PST)
+Received-SPF: pass (google.com: domain of rsd-forum-owner@groupes.renater.fr designates 195.220.94.131 as permitted sender) client-ip=195.220.94.131;
+Authentication-Results: mx.google.com;
+       dkim=pass (test mode) header.i=@groupes.renater.fr header.s=lists header.b=VUj2dHO2;
+       spf=pass (google.com: domain of rsd-forum-owner@groupes.renater.fr designates 195.220.94.131 as permitted sender) smtp.mailfrom=rsd-forum-owner@groupes.renater.fr;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=renater.fr
+Received: from ix1-pv-u16-Universalistessympa-01 (ix1-pv-u16-universalistessympa-01.renater.fr [194.57.4.99])
+	by smtp1.cru.fr (8.13.8/8.13.8) with ESMTP id xB3HEXc6001863;
+	Tue, 3 Dec 2019 18:14:33 +0100
+Received: by ix1-pv-u16-Universalistessympa-01 (Postfix, from userid 50002)
+	id 702041F705; Tue,  3 Dec 2019 18:14:32 +0100 (CET)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; d=groupes.renater.fr; h=
+	mime-version:from:date:message-id:to:content-type:subject
+	:reply-to:sender:list-id:list-help:list-subscribe
+	:list-unsubscribe:list-post:list-owner:list-archive; s=lists; i=
+	rsd-forum-request@groupes.renater.fr; bh=0JAVYHP+kh+PM2PR5E3iapk
+	ljDs=; b=VUj2dHO2CBEU5/GlnH929gGg++spzK/9sSi09CuWeFPQh3Vi63EF+cV
+	uqH5bWxPZqO7RCcwES85KCh77PEok6lrnalWkeCypj2De4I8MBAlI1EcdJqMwXNr
+	fEf1U3CXKBEU9NWB7lSepUhXyy8wDvYXzU3N5H944wH81EOAOMoE=
+Received: from mx.cru.fr (mx.cru.fr [195.220.94.133])
+	by ix1-pv-u16-Universalistessympa-01 (Postfix) with ESMTPS id 89BC11F6F0
+	for <rsd-forum@groupes.renater.fr>; Tue,  3 Dec 2019 18:07:35 +0100 (CET)
+Received: from mxb2-1.relay.renater.fr (mxb2-1.relay.renater.fr [194.214.200.8])
+	by mx.cru.fr (8.13.8/8.13.8/8.12-CW) with ESMTP id xB3H7ZHX018517
+	for <rsd-forum@groupes.renater.fr>; Tue, 3 Dec 2019 18:07:35 +0100
+Received: from mail-oi1-x243.google.com (mail-oi1-x243.google.com [IPv6:2607:f8b0:4864:20::243])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mxb2-1.relay.renater.fr (asm) with ESMTPS id 20BDD606DF
+	for <rsd-forum@groupes.renater.fr>; Tue,  3 Dec 2019 18:07:35 +0100 (CET)
+Received: by mail-oi1-x243.google.com with SMTP id a124so3933532oii.13
+        for <rsd-forum@groupes.renater.fr>; Tue, 03 Dec 2019 09:07:35 -0800 (PST)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=R6Nf1u7ertdu6UUS464sLv0I/PNTI8EXOZLahFgFxHs=;
+        b=F/Vzc5CZb3doaJ0s82+wOwue9My1NtY/NuOcvpY04qdx+pG2TnR3bFgDw/bwTUB0Na
+         313NJzpJEnOtTXjOk8RPsURcMZnFONxplbmPjPz8mhjZXJ1iqL+K7eE3tWWmBJZKGmvG
+         YKSXkSljf6r05DObvIxqYx5PeZjx9FSpxGM7/DwjwpEIsrPH17N5et7LEqG+O3aMUxUA
+         CL3XMwV9hfY78LwmoAAYNh4hBHDwrpZbe37UsR5+WtAC6UL8rZu3ui/2eQxqgxvv9zam
+         cSIBu7BAB9X3sCk8jWP+fwt56ioFJ+Gcfg2pg7Dr06DgY149YAsTilnkcesNkifYUakC
+         yTUA==
+X-Gm-Message-State: APjAAAVumtNmMNkaBxQrNilafrqiq1CkBuClXylB4pbblBlGM2fLGOxq
+	EqKpkTQQh7b6TVbJnDQeR9jv48zHTX+Yna8KpwuhG0h5
+X-Received: by 2002:aca:b708:: with SMTP id h8mr4705274oif.126.1575392853241;
+ Tue, 03 Dec 2019 09:07:33 -0800 (PST)
+MIME-Version: 1.0
+From: "Btissam Er-Rahmadi" (via rsd-forum Mailing List) <rsd-forum@groupes.renater.fr>
+Date: Tue, 3 Dec 2019 17:06:57 +0000
+Message-ID: <CABo3L8_R1Cbx3bMjHa=sOuDGNpTkfvUnNPnZHJM2fHbc--674w@mail.gmail.com>
+To: rsd-forum@groupes.renater.fr
+Content-Type: multipart/alternative; boundary="00000000000066328b0598cfbb4d"
+X-Original-Source-IP: 2607:f8b0:4864:20::243
+X-Renater-SpamState: 0
+X-Renater-SpamScore: 49
+X-Renater-SpamCause: gggruggvucftvghtrhhoucdtuddrgedufedrudejjedgleekucetufdoteggodetrfdotffvucfrrhhofhhilhgvmecutffgpfetvffgtfdpggftfghnshhusghstghrihgsvgenuceurghilhhouhhtmecufedttdenucgoufhushhpvggtthffohhmrghinhculdegledmnecujfgurhepggfhfffkuffvtgesrgdtreertddtjeenucfhrhhomhepuehtihhsshgrmhcugfhrqdftrghhmhgrughiuceosghtihhsshgrmhdrvghrrhgrhhhmrgguihesghhmrghilhdrtghomheqnecuffhomhgrihhnpehtihhnhihurhhlrdgtohhmnecukfhppedviedtjeemfheksgdtmeegkeeigeemvddtmeemvdegfeenucfrrghrrghmpehmohguvgepshhmthhppdhhvghlohepmhgrihhlqdhoihduqdigvdegfedrghhoohhglhgvrdgtohhmpdhinhgvthepvdeitdejmehfkegstdemgeekieegmedvtdemmedvgeefpdhmrghilhhfrhhomhepsghtihhsshgrmhgvrhhrrghhmhgrughisehgmhgrihhlrdgtohhmpdhrtghpthhtoheprhhsugdqfhhorhhumhesghhrohhuphgvshdrrhgvnhgrthgvrhdrfhhrnecuvehluhhsthgvrhfuihiivgeptd 
+X-Renater-ServerName: mxb2-1.relay.renater.fr
+X-Bizanga: IMP - mxb2-1.relay.renater.fr
+X-Validation-by: david.coudert@inria.fr
+Subject: [rsd-forum] Internship Opportunity in AI
+Reply-To: rsd-forum@groupes.renater.fr
+X-Loop: rsd-forum@groupes.renater.fr
+X-Sequence: 264
+Errors-To: rsd-forum-owner@groupes.renater.fr
+Precedence: list
+Precedence: bulk
+Sender: rsd-forum-request@groupes.renater.fr
+X-no-archive: yes
+List-Id: <rsd-forum.groupes.renater.fr>
+List-Help: <mailto:sympa@groupes.renater.fr?subject=help>
+List-Subscribe: <mailto:sympa@groupes.renater.fr?subject=subscribe%20rsd-forum>
+List-Unsubscribe: <mailto:sympa@groupes.renater.fr?subject=unsubscribe%20rsd-forum>
+List-Post: <mailto:rsd-forum@groupes.renater.fr>
+List-Owner: <mailto:rsd-forum-request@groupes.renater.fr>
+List-Archive: <https://groupes.renater.fr/sympa/arc/rsd-forum>
+Archived-At: <https://groupes.renater.fr/sympa/arcsearch_id/rsd-forum/2019-12/CABo3L8_R1Cbx3bMjHa%3DsOuDGNpTkfvUnNPnZHJM2fHbc--674w%40mail.gmail.com>
+X-Original-DMARC-Record: domain=gmail.com; _dmarc.gmail.com.	210	IN	TXT	"v=DMARC1; p=none; sp=quarantine; rua=mailto:mailauth-reports@google.com"
+X-Original-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=R6Nf1u7ertdu6UUS464sLv0I/PNTI8EXOZLahFgFxHs=;
+        b=nxt6MOObGQxlHNKUz19KOvFEDs+OVycvsrw6HJWBbIm7akTIOhaJ6WoUtr4ECPG+/U
+         qqTxdoTo9cls9pFn1Iqp1tLp6p8FpRt/7FyfWNXGjETYWYVCcL/n/6m2nUhIxsCdN19R
+         iSiagujy2EwbbQNclwcvoTXsrskHKI5axJGA+HvVc6iAkdQj+rmHF2NqxfiZJc41lXfR
+         l1pU4QuA9Ct3vJxVjjiSgdsvE8zZ8AA6HJI+iMRIog1u8KG6PLx24D7ttEJ0B2yjkGGg
+         imK62fPkyb4AmsTIeBxZGYG1or86WUuXfcwFbQLBUjJ/EcdLb1oQ9teXlnuqxtYUGFUt
+         MGag==
+X-Original-From: Btissam Er-Rahmadi <btissam.errahmadi@gmail.com>
+
+--00000000000066328b0598cfbb4d
+Content-Type: text/plain; charset="UTF-8"
+
+Dear All,
+
+We are actively looking for Research interns for minimum 3-months
+internship (could be longer), on the topic of  Graph Neural Networks for
+Knowledge Graph Embedding. The internships are available in Huawei
+Edinburgh Research Centre, Edinburgh, Scotland.
+
+Applications should be sent to: ukrdjobs@huawei.com
+
+
+Please find more details here: https://tinyurl.com/w4wutda
+
+
+Please bear in mind that *"All applicants should hold the Right to Work in
+the UK without the requirement for work sponsorship"*.
+
+
+Best regards,
+-- 
+Btissam Er-Rahmadi
+
+--00000000000066328b0598cfbb4d
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Dear All,<div><br></div><div>We are actively looking for R=
+esearch interns for minimum 3-months internship (could be longer), on the t=
+opic of=C2=A0 Graph Neural Networks for Knowledge Graph Embedding. The inte=
+rnships are available in Huawei Edinburgh Research Centre, Edinburgh, Scotl=
+and.</div><div><br></div><div>Applications should be sent to: <font color=
+=3D"#ff0000"><a href=3D"mailto:ukrdjobs@huawei.com">ukrdjobs@huawei.com</a>=
+</font></div><div><br></div><div><br></div><div>Please find more details he=
+re:=C2=A0<a href=3D"https://tinyurl.com/w4wutda">https://tinyurl.com/w4wutd=
+a</a></div><div><br></div><div><div><br></div><div>Please bear in mind that=
+ <b><font color=3D"#ff0000">&quot;All applicants should hold the Right to W=
+ork in the UK without the requirement for work sponsorship&quot;</font></b>=
+.</div><div><div>
+
+<p class=3D"MsoNormal" style=3D"text-indent:0in;line-height:115%;margin:0in=
+ 0in 0.0001pt;font-size:10.5pt;font-family:&quot;Times New Roman&quot;,seri=
+f"><span style=3D"font-size:11pt;line-height:115%;font-family:Arial,sans-se=
+rif">=C2=A0</span></p></div><div>Best regards,</div>-- <br><div dir=3D"ltr"=
+ data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><span>Btissam Er-Rahma=
+di<br></span></div></div></div></div></div>
+
+--00000000000066328b0598cfbb4d--

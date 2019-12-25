@@ -1,0 +1,10 @@
+[
+	{
+		"caption": "Double Power Bracket",
+		"command": "surround_selection",
+		"args": {
+			"prepend": ".:[[",
+			"append": "]]:."
+		}
+	}
+]

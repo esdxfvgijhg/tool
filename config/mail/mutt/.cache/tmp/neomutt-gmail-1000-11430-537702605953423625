@@ -1,0 +1,248 @@
+Delivered-To: aghilesdjoudi@gmail.com
+Received: by 2002:ab3:5a8c:0:0:0:0:0 with SMTP id l12csp4714316lte;
+        Tue, 29 Oct 2019 06:38:21 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqyWxr/gHjD5aJFagAZClfkncpUob+rsyxh66hkVPlL8E/D6PUZXDWFz4VaGD8HhBfrahPF9
+X-Received: by 2002:a17:906:70d2:: with SMTP id g18mr3472474ejk.18.1572356301616;
+        Tue, 29 Oct 2019 06:38:21 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1572356301; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=Y5cTHF8K1JVyo5Sg/S5bT/i7a2KkQSmiLDRNPWNZdSC07j2U874tToklHAr33JA6tS
+         7PQntRnAUdo2Ss21u6Y1M8Ug6BjQ2CBorj1qfGXsgNh6f7UDEJmDFccpT/7oX6oHr+DQ
+         loR9QnM0ovEt8H2ZQgLRZNYs/vSe3bs/Rb287K2QCu8Q9yThsMQ3uZld8Dxjyfxxl9AR
+         6XGwBXEAs9BZGac7MHUkMUGP6qlVCNpVsUK/gpXwLNhOqVbE9W+09qAFdCdN00nJAbUv
+         o0ijfWYWMM8Wf3mVs6hUsM8yp2odyF+M2s58qkCTMtO7WBuizHACdb+4txnQNXOjjODc
+         nskw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:content-language:accept-language:in-reply-to
+         :references:message-id:date:thread-index:thread-topic:subject:to
+         :from:dkim-signature;
+        bh=1zGoZvPGoZl1/oI+IE4+Dz1DEyYQqexdXvIz8mWPeHg=;
+        b=UfEY4dFNDNrai12as7UFe06JmvVENP3wKVNm+bA0DT9+hbVen6diGB53Z8JT9cCZsz
+         rIi50k69AZN/3piV78HJbNHFCsnkVyd5Y7l6lzTVrgcZLWkgAo45iB+cpCet81QFTjuo
+         sSUGjMLgfQMnRID/ovXTQM3ZAvIQEzHAmxQ9xTKGRzMjgNt2PIA4AVwg72DVmEIclxuD
+         /s2fCJQL5Z/cNwvOcvG4RB05mF9/gD7cRYi04XLivSs+HKJ9GmTswzDy6cxm70iClhjB
+         0vSLvJhZ6u5aRk/rZsL4SJuJGqzL8sL/yGRU2GLrZSWRW6OUv63AaERL7TzwCqWpG72E
+         4jYg==
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@poce.onmicrosoft.com header.s=selector2-poce-onmicrosoft-com header.b=CYd8WmC0;
+       arc=pass (i=1 spf=pass spfdomain=edu.ece.fr dkim=pass dkdomain=edu.ece.fr dmarc=pass fromdomain=edu.ece.fr);
+       spf=pass (google.com: domain of amandine.ducruet@edu.ece.fr designates 40.107.3.48 as permitted sender) smtp.mailfrom=amandine.ducruet@edu.ece.fr
+Return-Path: <amandine.ducruet@edu.ece.fr>
+Received: from EUR03-AM5-obe.outbound.protection.outlook.com (mail-eopbgr30048.outbound.protection.outlook.com. [40.107.3.48])
+        by mx.google.com with ESMTPS id x26si9191075eda.404.2019.10.29.06.38.21
+        for <aghilesdjoudi@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 29 Oct 2019 06:38:21 -0700 (PDT)
+Received-SPF: pass (google.com: domain of amandine.ducruet@edu.ece.fr designates 40.107.3.48 as permitted sender) client-ip=40.107.3.48;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@poce.onmicrosoft.com header.s=selector2-poce-onmicrosoft-com header.b=CYd8WmC0;
+       arc=pass (i=1 spf=pass spfdomain=edu.ece.fr dkim=pass dkdomain=edu.ece.fr dmarc=pass fromdomain=edu.ece.fr);
+       spf=pass (google.com: domain of amandine.ducruet@edu.ece.fr designates 40.107.3.48 as permitted sender) smtp.mailfrom=amandine.ducruet@edu.ece.fr
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=Svu0EKDrT1CvlWozXSXP8xp368YZBZjop7eFrDWp4vNwdE7WxmCCuIyOMtBHauIdvRi5FyDAS7JitQf4hp8OnwpuNmVxWSicD/zBABQO9uZfaQtVwQ8MMvo/5L/pbwqWKogcHQ7lA8KXhcyLP3zVXsXe0iNRwNmgHyAUtx3fchxrSBpn/yiMVn5m/EjTRyODq2opl91+uCSh1DDlomMgOeLxWX9tr2VwbZH1CE3vUfkNyobv3dkelhn3ZfCA1ff3AjKQ/o5dmcjnjuFsvM2lFsK1iOvbgqRX9G0LA032j8WwSRhS4VXaBPzP0QfsC5s/dyLp6ZZqJKB8JINP6aClCg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=1zGoZvPGoZl1/oI+IE4+Dz1DEyYQqexdXvIz8mWPeHg=;
+ b=TI7KcYcrtz+19fEmaiUg23nLoQM5EIaVEaG3+WzwvnhzprWdCilh3mKxdKlMWCUUCdQomrPtmmSOWDNfOXbgJoCfidY2ShE72CKP7SebyDZfjt5C1XjAUctcOM2HPgHUG6SPmScLCVFJtyGv7WdaotqdD0kugGMyqxMyRy5pxM3TiYBhcRFhJw864UEBI6J0tH6HfTBbKPxky9YCfWB46WrWNObuapBQq++mv8wGsE4AlOG9/sTb7jOOJs0KL8q4ufU8qt49qFp65qds1/bIKjcZAu2z+Tgrx+CHDEMaofb+M6zOkkqp3fgAIAU3Q7+2kGAiZLuX/BzXGHeHJ7Ky3Q==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=edu.ece.fr; dmarc=pass action=none header.from=edu.ece.fr;
+ dkim=pass header.d=edu.ece.fr; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=poce.onmicrosoft.com;
+ s=selector2-poce-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=1zGoZvPGoZl1/oI+IE4+Dz1DEyYQqexdXvIz8mWPeHg=;
+ b=CYd8WmC0dTfTQK7ZZnXtF2T6OzgsnUaIEIAkIHn+W41l0UVo2e42ebayBzhNrFSw6FxpgUrXAHjh6Wq8AqUny53CR/DCA6P2csBeM/HuwlNVwhp6PPeMhodUYu7ta7dHJiFDVaTmWNxX3Rhj3zPF5a1qFKF+wL+jS1XocJi0Uxw=
+Received: from AM4PR05MB3155.eurprd05.prod.outlook.com (10.170.126.24) by
+ AM4PR05MB3153.eurprd05.prod.outlook.com (10.171.188.22) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2387.23; Tue, 29 Oct 2019 13:38:20 +0000
+Received: from AM4PR05MB3155.eurprd05.prod.outlook.com
+ ([fe80::f1ef:7eb8:f6bd:7e78]) by AM4PR05MB3155.eurprd05.prod.outlook.com
+ ([fe80::f1ef:7eb8:f6bd:7e78%7]) with mapi id 15.20.2387.027; Tue, 29 Oct 2019
+ 13:38:20 +0000
+From: Amandine DUCRUET <amandine.ducruet@edu.ece.fr>
+To: Aghiles DJOUDI <aghilesdjoudi@gmail.com>
+Subject: =?iso-8859-1?Q?TR:_PRJ502=A0:_PFE=5F_ETAPES-DATES-_ATTENDUS?=
+Thread-Topic: =?iso-8859-1?Q?PRJ502=A0:_PFE=5F_ETAPES-DATES-_ATTENDUS?=
+Thread-Index: AQHViZx7Ec+1n5PGVECSUYrpYBUHs6dxqPYw
+Date: Tue, 29 Oct 2019 13:38:20 +0000
+Message-ID:
+ <AM4PR05MB31551A31443F7DCDD8BE2B41B6610@AM4PR05MB3155.eurprd05.prod.outlook.com>
+References:
+ <8e4925c20a7ad3483396084c4cf9d43a210ed09bd5da6dd22defa149aa9e32a1@pedago-ece.campusonline.me>
+In-Reply-To:
+ <8e4925c20a7ad3483396084c4cf9d43a210ed09bd5da6dd22defa149aa9e32a1@pedago-ece.campusonline.me>
+Accept-Language: fr-FR, en-US
+Content-Language: fr-FR
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: spf=none (sender IP is )
+ smtp.mailfrom=amandine.ducruet@edu.ece.fr; 
+x-originating-ip: [91.199.6.243]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 6c86b290-3541-41bf-8d93-08d75c75435a
+x-ms-traffictypediagnostic: AM4PR05MB3153:
+x-ms-exchange-purlcount: 7
+x-microsoft-antispam-prvs:
+ <AM4PR05MB3153D31D66407FA0554E3724B6610@AM4PR05MB3153.eurprd05.prod.outlook.com>
+x-ms-oob-tlc-oobclassifiers: OLM:1227;
+x-forefront-prvs: 0205EDCD76
+x-forefront-antispam-report:
+ SFV:NSPM;SFS:(10009020)(136003)(346002)(396003)(366004)(39850400004)(376002)(199004)(189003)(1411001)(8936002)(52536014)(71200400001)(74316002)(2906002)(6916009)(5660300002)(81166006)(71190400001)(6436002)(25786009)(81156014)(66066001)(105004)(16799955002)(19627405001)(733005)(6506007)(7736002)(86362001)(26005)(4744005)(446003)(11346002)(102836004)(76176011)(55016002)(7696005)(6306002)(256004)(347745004)(476003)(54896002)(966005)(606006)(9686003)(478600001)(99286004)(76116006)(66556008)(486006)(14454004)(236005)(66446008)(66476007)(66946007)(64756008)(33656002)(3846002)(6116002)(316002)(786003)(186003);DIR:OUT;SFP:1101;SCL:1;SRVR:AM4PR05MB3153;H:AM4PR05MB3155.eurprd05.prod.outlook.com;FPR:;SPF:None;LANG:fr;PTR:InfoNoRecords;A:0;MX:1;
+received-spf: None (protection.outlook.com: edu.ece.fr does not designate
+ permitted sender hosts)
+x-ms-exchange-senderadcheck: 1
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ 1dAtLU5Z+eqTnjS2k6VwHcg5avECDX9PSQVqLIRn2PzLWXUUQmWTB3unjZNKMsWF+q+Gb36sISs3G1EpQ/5LwX4sAeUOB+o7q+8w4pW2AMN2iWklPQrDLZbDdhajcAuAvF2ZspvYTSL0/4qRAPyAibfv1NaXWguLU+6VML4TOk93/WaYTyfpUTL/Vmppg5eiJevyS0ngzttk1LRmsi+Zc0hZyjjFIU9n3DFtm7ec4YOPflreVS3pm9Oyv5YgZisWsBVwuUaByKiFTyYy3YU2l6rs5fC7LxKjObrDDw+lsp5cOFvVnIRjIAumaparvxc2Vtd51IekWhKD0xZdatOZ53Y8HgPQaqBQJEte4wcKN1rIIRP1+p2xoNeMwA0eSxi6hHyUsP44OrCw+hpXRoxzntIDklJWRNav2lunQizTOHG/MxF3Hty3hipMmPAcVY7TUODYV9Ucnp+HWV813NNn4ph+aCr2S7FqjUv+0mGcyUg=
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/alternative;
+	boundary="_000_AM4PR05MB31551A31443F7DCDD8BE2B41B6610AM4PR05MB3155eurp_"
+MIME-Version: 1.0
+X-OriginatorOrg: edu.ece.fr
+X-MS-Exchange-CrossTenant-Network-Message-Id: 6c86b290-3541-41bf-8d93-08d75c75435a
+X-MS-Exchange-CrossTenant-originalarrivaltime: 29 Oct 2019 13:38:20.6142
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: a2697119-66c5-4126-9991-b0a8d15d367f
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: AUnOSmL2FLSi5tDi2BfgAW1p6oqovn2qlKSyIFODHBLvqYOi9QJ5xaOGhJ/9wFPOJVXHDAaqYBXOLAwh8wIHkOH6/zYJeypwEcdz3CUEmgI=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM4PR05MB3153
+
+--_000_AM4PR05MB31551A31443F7DCDD8BE2B41B6610AM4PR05MB3155eurp_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+________________________________
+De : OLIVIER GIRINSKY (via pedago-ece.campusonline.me) <noreply@inseec.com>
+Envoy=E9 : mercredi 23 octobre 2019 14:22
+=C0 : Amandine DUCRUET <amandine.ducruet@edu.ece.fr>
+Objet : PRJ502 : PFE_ ETAPES-DATES- ATTENDUS
+
+PRJ502<https://pedago-ece.campusonline.me/course/view.php?id=3D32> =BB Foru=
+ms<https://pedago-ece.campusonline.me/mod/forum/index.php?id=3D32> =BB PFE =
+News<https://pedago-ece.campusonline.me/mod/forum/view.php?f=3D44> =BB PFE_=
+ ETAPES-DATES- ATTENDUS<https://pedago-ece.campusonline.me/mod/forum/discus=
+s.php?d=3D22086>
+[Avatar OLIVIER GIRINSKY]<https://pedago-ece.campusonline.me/user/view.php?=
+id=3D31555&course=3D32>
+PFE_ ETAPES-DATES- ATTENDUS
+par OLIVIER GIRINSKY<https://pedago-ece.campusonline.me/user/view.php?id=3D=
+31555&course=3D32>, mercredi 23 octobre 2019, 14:03
+
+
+Bonjour,
+
+ Veuillez trouver sur le lien ci-dessous, un r=E9capitulatif des principale=
+s =E9tapes, dates des projets  PPE   ainsi que les attendus par VALO
+
+https://documentcloud.adobe.com/link/track?uri=3Durn%3Aaaid%3Ascds%3AUS%3A5=
+ff45a72-6138-4ab7-9c42-35318797d42e
+
+ Cordialement
+
+  Pole Projet
+
+Voir ce message dans son contexte <https://pedago-ece.campusonline.me/mod/f=
+orum/discuss.php?d=3D22086#p28199>
+________________________________
+Modifier vos pr=E9f=E9rences pour les courriels quotidiens<https://pedago-e=
+ce.campusonline.me/mod/forum/index.php?id=3D32>
+
+--_000_AM4PR05MB31551A31443F7DCDD8BE2B41B6610AM4PR05MB3155eurp_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div id=3D"appendonsend"></div>
+<hr tabindex=3D"-1" style=3D"display:inline-block; width:98%">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" co=
+lor=3D"#000000" style=3D"font-size:11pt"><b>De :</b> OLIVIER GIRINSKY (via =
+pedago-ece.campusonline.me) &lt;noreply@inseec.com&gt;<br>
+<b>Envoy=E9 :</b> mercredi 23 octobre 2019 14:22<br>
+<b>=C0 :</b> Amandine DUCRUET &lt;amandine.ducruet@edu.ece.fr&gt;<br>
+<b>Objet :</b> PRJ502&nbsp;: PFE_ ETAPES-DATES- ATTENDUS</font>
+<div>&nbsp;</div>
+</div>
+<div>
+<div class=3D"navbar"><a target=3D"_blank" href=3D"https://pedago-ece.campu=
+sonline.me/course/view.php?id=3D32">PRJ502</a> =BB
+<a target=3D"_blank" href=3D"https://pedago-ece.campusonline.me/mod/forum/i=
+ndex.php?id=3D32">
+Forums</a> =BB <a target=3D"_blank" href=3D"https://pedago-ece.campusonline=
+.me/mod/forum/view.php?f=3D44">
+PFE News</a> =BB <a target=3D"_blank" href=3D"https://pedago-ece.campusonli=
+ne.me/mod/forum/discuss.php?d=3D22086">
+PFE_ ETAPES-DATES- ATTENDUS</a> </div>
+<table border=3D"0" cellpadding=3D"3" cellspacing=3D"0" class=3D"forumpost"=
+>
+<tbody>
+<tr class=3D"header">
+<td width=3D"35" valign=3D"top" class=3D"picture left"><a href=3D"https://p=
+edago-ece.campusonline.me/user/view.php?id=3D31555&amp;course=3D32"><img al=
+t=3D"Avatar OLIVIER GIRINSKY" title=3D"Avatar OLIVIER GIRINSKY" class=3D"us=
+erpicture defaultuserpic" width=3D"35" height=3D"35" src=3D"https://pedago-=
+ece.campusonline.me/theme/image.php/_s/igreen/core/1570600096/u/f2"></a>
+</td>
+<td class=3D"topic starter">
+<div class=3D"subject">PFE_ ETAPES-DATES- ATTENDUS </div>
+<div class=3D"author">par <a target=3D"_blank" href=3D"https://pedago-ece.c=
+ampusonline.me/user/view.php?id=3D31555&amp;course=3D32">
+OLIVIER GIRINSKY</a>, mercredi 23 octobre 2019, 14:03 </div>
+</td>
+</tr>
+<tr>
+<td class=3D"left side" valign=3D"top">&nbsp; </td>
+<td class=3D"content">
+<p>Bonjour, </p>
+<p>&nbsp;Veuillez trouver sur le lien ci-dessous, un r=E9capitulatif des pr=
+incipales =E9tapes, dates des projets &nbsp;PPE&nbsp;&nbsp; ainsi que les a=
+ttendus par VALO</p>
+<p><a href=3D"https://documentcloud.adobe.com/link/track?uri=3Durn%3Aaaid%3=
+Ascds%3AUS%3A5ff45a72-6138-4ab7-9c42-35318797d42e">https://documentcloud.ad=
+obe.com/link/track?uri=3Durn%3Aaaid%3Ascds%3AUS%3A5ff45a72-6138-4ab7-9c42-3=
+5318797d42e</a><br>
+</p>
+<p></p>
+<p>&nbsp;Cordialement </p>
+<p>&nbsp; Pole Projet</p>
+<br>
+<div class=3D"commands"></div>
+<div class=3D"link"><a target=3D"_blank" href=3D"https://pedago-ece.campuso=
+nline.me/mod/forum/discuss.php?d=3D22086#p28199">Voir ce message dans son c=
+ontexte
+</a></div>
+</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<div class=3D"mdl-align unsubscribelink"><a href=3D"https://pedago-ece.camp=
+usonline.me/mod/forum/index.php?id=3D32">Modifier vos pr=E9f=E9rences pour =
+les courriels quotidiens</a>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--_000_AM4PR05MB31551A31443F7DCDD8BE2B41B6610AM4PR05MB3155eurp_--

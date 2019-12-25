@@ -1,0 +1,522 @@
+Received: from AM0PR05MB6196.eurprd05.prod.outlook.com (2603:10a6:7:2a::16) by
+ HE1PR05MB3353.eurprd05.prod.outlook.com with HTTPS via
+ HE1PR08CA0045.EURPRD08.PROD.OUTLOOK.COM; Thu, 19 Dec 2019 15:48:01 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=pass;
+ b=WFlN141GYQ5Y831wFvQUvaZovufZqzWymmQwldFoI4N8BLTqC/oHdG4O54Lliq+CKuj0jWUXC3k/fZRTDsxSQZJyykr8Q2+qSGLeKJPTfm9W6sAMzDqWo/mcStvwg0uQz3p0tfTt/85ktg0rUI6r42YEbgHiEQTAzbVdypZfngHlxS5yAANSbsvIFHnjoV751Cz2LMA7R8ReGSpYhISMr6I7qo/1MUO00cIrpxXcys44UNq9Yeit8Au9DOdiUbCj9IlEJoHoMB80fnFnoIf0WH+xa9qTWb/OFx+FwFDXWeSCZMmS/EqAex9rGxTWqYJqf7Z39Bmgfv/b+0q0G1FbZA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=IffJM9+ft0ITOMZuM5Jk0MYea40ja8b2EH/B8o4+BL0=;
+ b=g4Adn9jNzP3A1AjZ1ZP7KoWoBYPLcWLwB3fu77qYl7TBJn6FVNkBNCO0/txJHgcXc2p3j3vOA929EcyiFxv5Huan6mZb2GU9qcNJtjeJTXl/DYsklEDLJecW1gKajBNDHgEpvJyutx07uwfCRnQIZvU3xb/QxXo2t98ev9KvVesfhZQu/6T41FzQfE+wc4qN5kzl+nUGVUjEsIWRb2zN+m654i6NYXDcuHdIOGMrbSR3MGf+NstYTAvuuNxQRY+RgYnBwqF62tZxqWus1LEkrBVj0RYu28ReDyTO+VpQJXP9GdACQyiNryemC8zlHkw0usCE6l2mGCBHUWbaTyR1XQ==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 40.107.7.50) smtp.rcpttodomain=inseec-edu.com smtp.mailfrom=inseec.com;
+ dmarc=pass (p=none sp=none pct=100) action=none header.from=inseec.com;
+ dkim=pass (signature was verified) header.d=inseec.com; arc=pass (0 oda=1
+ ltdi=1 spf=[1,1,smtp.mailfrom=inseec.com] dkim=[1,1,header.d=inseec.com]
+ dmarc=[1,1,header.from=inseec.com])
+Received: from AM0PR05CA0007.eurprd05.prod.outlook.com (2603:10a6:208:55::20)
+ by AM0PR05MB6196.eurprd05.prod.outlook.com (2603:10a6:208:11b::26) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2538.15; Thu, 19 Dec
+ 2019 15:48:00 +0000
+Received: from DB5EUR03FT015.eop-EUR03.prod.protection.outlook.com
+ (2a01:111:f400:7e0a::202) by AM0PR05CA0007.outlook.office365.com
+ (2603:10a6:208:55::20) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2559.14 via Frontend
+ Transport; Thu, 19 Dec 2019 15:48:00 +0000
+Authentication-Results: spf=pass (sender IP is 40.107.7.50)
+ smtp.mailfrom=inseec.com; inseec-edu.com; dkim=pass (signature was verified)
+ header.d=inseec.com;inseec-edu.com; dmarc=pass action=none
+ header.from=inseec.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of inseec.com designates
+ 40.107.7.50 as permitted sender) receiver=protection.outlook.com;
+ client-ip=40.107.7.50; helo=EUR04-HE1-obe.outbound.protection.outlook.com;
+Received: from EUR04-HE1-obe.outbound.protection.outlook.com (40.107.7.50) by
+ DB5EUR03FT015.mail.protection.outlook.com (10.152.20.145) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2559.14 via Frontend Transport; Thu, 19 Dec 2019 15:48:00 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=SAUsJzSufL4+HDt4J55GhS3b5NnFS3GPETdJ4HS8bgE9AZI3c8GpsnoECvI7tBHr3JDf0ahUPzrpUKTiOuKEcVfqCbOtRUDpgJFy1CEVFOt94eBNN1UfjOmiP+cgoDbRmv7iQj92taicZqabgir9Dvjo6prZrS9Fqy1+nLQQPUkOfuJVyEAZIMAeggl7NnqTq3PdpvV/LPMs5KKLtbOzIxqkkOY7fNfo5mE2kGzfiNc4j/TW/NsvUP5eg3TKN7SgJs/ETgw5Cv6dP369/5/GvuwBCG77knkC853ciOZRAFrf8SkSCAOqepT+r/QCzh2PsPhjVhYyGpXbYTI6v5Ra1A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=IffJM9+ft0ITOMZuM5Jk0MYea40ja8b2EH/B8o4+BL0=;
+ b=J62mkcXg3V+k90Dfpee7x8gzD4f2qEQs2tVcxshg9nzrKjQjRCIhyEqEHYIDTJiSmk0NMwLENac+U1jWe9Oq4O0qGBRlBeN+4zrwsqKYmJfLXeNGRbzOVkb/v5qZG/IUFahPjgmPL0DeLqtQZXCSlGNRejqHpBquWRDxR61x+Nx7frZzd4X++35HBbA20AOmLoL97W/G+7Gn4mkEnfuAOtxcoLfl3X/eGEKknoDiH4pz3Wy351KXkftckUZGdqpB0q27BIkdmtqD5Of1Uo/bbZ78amQOOb3ZaOxWuurYXG6NpzC1XmZGhg7j3GFLlbXXUb3JAGZA8iTwYhwGHrF0Kg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=inseec.com; dmarc=pass action=none header.from=inseec.com;
+ dkim=pass header.d=inseec.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=inseec.com;
+ s=selector2;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=IffJM9+ft0ITOMZuM5Jk0MYea40ja8b2EH/B8o4+BL0=;
+ b=fiH8aJ/vNNvfsisTRCRgDQ/sjPCdzQpwBnanrUzHcjmX01CnKysEcpYgJ60obnN35e0+2WM2oycZtHvN/6Oe+oBTAenfBPGeF2/7D48fvLepRGlbekYpKPwQCuJJIqLrEdD5tAXMJQk6f3bzXaoCK/pQPwtC1QiQiAGgHy5L13U=
+Received: from DB3PR0402MB3913.eurprd04.prod.outlook.com (52.134.65.143) by
+ DB3PR0402MB3644.eurprd04.prod.outlook.com (52.134.70.17) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2538.18; Thu, 19 Dec 2019 15:47:53 +0000
+Received: from DB3PR0402MB3913.eurprd04.prod.outlook.com
+ ([fe80::3dcb:df30:e9a0:a302]) by DB3PR0402MB3913.eurprd04.prod.outlook.com
+ ([fe80::3dcb:df30:e9a0:a302%5]) with mapi id 15.20.2538.019; Thu, 19 Dec 2019
+ 15:47:53 +0000
+From: CHANU Fany <fchanu@inseec.com>
+CC: BARTH Isabelle <ibarth@inseec.com>, BEN AMEUR Hachmi
+	<hbenameur@inseec.com>, RIVA Angelo <angelo.riva@ebs-paris.com>, TRIKI Dorra
+	<dora.triki@esce.fr>, SOUKANE Assia <assia.soukane@ece.fr>, TORCHIA
+ Mariateresa <mtorchia@inseec.com>, ALLANIC Thomas <tallanic@inseec.com>,
+	BAUJAULT Christophe <christophe.baujault@ece.fr>, BOISSEAU Christophe
+	<christophe.boisseau@esce.fr>, AUDOUARD Jean <jean.audouard@esce.fr>, ROUAI
+ Lamia <lamia.rouai@ebs-paris.com>, MUHLBACHER Hans <hmuhlbacher@inseec.com>
+Subject: NEWS DE LA RECHERCHE | Lancement du site INSEEC U. Research Center !
+Thread-Topic: NEWS DE LA RECHERCHE | Lancement du site INSEEC U. Research
+ Center !
+Thread-Index: AdW2guzRXtv7DdZ3R1O9I+rUXwEXJw==
+Date: Thu, 19 Dec 2019 15:47:52 +0000
+Message-ID:
+ <DB3PR0402MB39137A530359B0945F0C717EB5520@DB3PR0402MB3913.eurprd04.prod.outlook.com>
+Accept-Language: fr-FR, en-US
+Content-Language: fr-FR
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+Authentication-Results-Original: spf=none (sender IP is )
+ smtp.mailfrom=fchanu@inseec.com; 
+x-originating-ip: [92.103.57.242]
+x-ms-publictraffictype: Email
+X-MS-Office365-Filtering-Correlation-Id: 94162e56-8557-411d-eb59-08d7849ad39a
+X-MS-TrafficTypeDiagnostic: DB3PR0402MB3644:|AM0PR05MB6196:
+x-ms-exchange-transport-forked: True
+x-microsoft-antispam-prvs:
+ <DB3PR0402MB364491BAA84C4DABE0AC9D1AB5520@DB3PR0402MB3644.eurprd04.prod.outlook.com>
+x-ms-oob-tlc-oobclassifiers: OLM:7691;OLM:7691;
+x-forefront-prvs: 0256C18696
+X-Forefront-Antispam-Report-Untrusted:
+ SFV:NSPM;SFS:(10001)(10009020)(366004)(39860400002)(396003)(136003)(376002)(346002)(189003)(199004)(66556008)(5660300002)(66476007)(66574012)(478600001)(52536014)(16799955002)(8676002)(8936002)(66946007)(64756008)(81166006)(66616009)(54906003)(186003)(81156014)(109986005)(6506007)(86362001)(316002)(861006)(4326008)(26005)(966005)(76116006)(786003)(55016002)(9686003)(33656002)(71200400001)(107886003)(7696005)(66446008)(2906002)(19620135002);DIR:OUT;SFP:1101;SCL:1;SRVR:DB3PR0402MB3644;H:DB3PR0402MB3913.eurprd04.prod.outlook.com;FPR:;SPF:None;LANG:fr;PTR:InfoNoRecords;MX:1;A:1;
+received-spf: None (protection.outlook.com: inseec.com does not designate
+ permitted sender hosts)
+x-ms-exchange-senderadcheck: 1
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ 1iFT1GFJ3ShPOXlxFvJXabC0U8QWJVtBLVW9kH4R9NzIgF1RdR8Ncq1V3hvCKpXCK+FcI94LKXEu1nPGuS66G38OlPHM0NQnNg4qtZDltzEw1uoEVgrRk45H2m8zDIjT6AMiO79hKmyaxdHvTUVEvO8ztHkmaJPgiViU9/EMRvYykiDrYHqNBNcJTwXN7mITBUXCaNGgjok9qVj/TZwamX56WcgPr0n9Ru5vpeMz7NkClha1bnQ47hLPIh2Rq/do0x27N6O0T33SdCFxV5ez9MIxEs5c9oJ3RLSAw5eQLO0NBRGQZXL1cHPExLkc+wsTvwNYImIA+tgux45qBXYK2qiW32roWgHZN4lREr1BhS9difHiTgwZ1I+QffU0UJ9AyNvy3V/caXtcsRErxGtte/QlHtgUWxjOwdNktQJLBp8gzWO7mx9AhmBsCnztIBajbY8ZbFm+Plo6QdhvjWGZ5tfAJZ5x4FDYhZsSvbzKZkkMi7iQ59A2VpaT4NoTMpWD/LYNrqojWXkJeWWGBtxoKjmdninO7KFbt3H29ZjljZqIpIWsrDWIZJZ777bcEFKL39WM3B3kcb+ufnS/OsOzixUA8mWWgBGjMYJ0ajNxS7s=
+Content-Type: multipart/related;
+	boundary="_004_DB3PR0402MB39137A530359B0945F0C717EB5520DB3PR0402MB3913_";
+	type="multipart/alternative"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB3PR0402MB3644
+Return-Path: fchanu@inseec.com
+X-MS-Exchange-Organization-ExpirationStartTime: 19 Dec 2019 15:48:00.6189
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 94162e56-8557-411d-eb59-08d7849ad39a
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: a2697119-66c5-4126-9991-b0a8d15d367f:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ DB5EUR03FT015.eop-EUR03.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted:
+ DB5EUR03FT015.eop-EUR03.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:40.107.7.50;IPV:;CTRY:FI;EFV:NLI;SFV:NSPM;SFS:(10001)(189003)(199004)(5660300002)(966005)(7636002)(15974865002)(34756004)(7696005)(52536014)(9686003)(1096003)(8676002)(33656002)(66574012)(86362001)(4326008)(109986005)(107886003)(55016002)(8636004)(54906003)(246002)(26005)(16799955002)(356004)(336012)(6506007)(19620135002);DIR:INB;SFP:;SCL:1;SRVR:AM0PR05MB6196;H:EUR04-HE1-obe.outbound.protection.outlook.com;FPR:;SPF:Pass;LANG:fr;PTR:mail-eopbgr70050.outbound.protection.outlook.com;MX:1;A:1;
+X-MS-Exchange-Organization-AuthSource:
+ DB5EUR03FT015.eop-EUR03.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ 0605afb0-f3f7-4c97-3b8d-08d7849acf1e
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 19 Dec 2019 15:48:00.4628
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 94162e56-8557-411d-eb59-08d7849ad39a
+X-MS-Exchange-CrossTenant-Id: a2697119-66c5-4126-9991-b0a8d15d367f
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM0PR05MB6196
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.3937944
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2538.017
+Importance: high
+X-Priority: 1
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:0;dest:I;ENG:(20160514016)(750127)(520011016)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?6oCsEL2tuLaIxB9Zen+KcdGZznaW6pDFZR2X0JdebBZbjrCFjEZtDS3j?=
+ =?Windows-1252?Q?GwyNxeCPT2TZzzIlrcCa2YB0DC9M3MKH7ZOrTy/4OkEtb2g2tGd3w1EC?=
+ =?Windows-1252?Q?ByeCbbQpu5UTYe+AMpVqFGM2YYdggvFN5swj7/zRtTMk9XZoXq9nKxQ9?=
+ =?Windows-1252?Q?SfDN3LtTDZTYwW7cQQ3zw6cQH47IqUzEx6pv649q7mkiLaDpcjiDUYAq?=
+ =?Windows-1252?Q?jGqvxQl2lswQ30rmEABaRPPENYNYTnKP1iSdzBz6AWCG9Ev/bhMXSwFO?=
+ =?Windows-1252?Q?X7iDpihvUo2GCstQodOYRq9a/2Ag4aGEZiJggvPxjSNg8ftxIUK4YG7q?=
+ =?Windows-1252?Q?w1pDwrZj4tn1FQpX6J4pzo1OIpn2uZ7lNqPw6nEFmKjzjWEpCBU9cqfY?=
+ =?Windows-1252?Q?CsdGFCQhYOyhMOIkKS6GByOPRQdVVH5hGL+WoROlyLoSohaH/v4vLxTM?=
+ =?Windows-1252?Q?O1VYi1tmo2WMviJoW+82aXwGC6/tllNNfGP/loHTBc2ofZPeazZKUMKV?=
+ =?Windows-1252?Q?rXr1Vz8+UgmtbrCttyoa5ut6XchkAi85xJpcbSYKccS4I7Xr3hxyf0q+?=
+ =?Windows-1252?Q?0ocb8T41vw712lgZG1/CtDcVSLs+oJpAWDMrkIYzuWCdSGexlDVvd+kK?=
+ =?Windows-1252?Q?BRk2YqMHWK8WUwAqLmTmTlWfzjYOi3Ez1H/6LZeIOd9EZMPsg9iC0hEH?=
+ =?Windows-1252?Q?Lq+8f0Dwddg66Y6kn0QmcMCfjrOEDEXdB4TG82fErk8OSf0dqzRXKM6F?=
+ =?Windows-1252?Q?JQppMmAPVdooeNvFy+5Q8wMINg0CtWoMN4ojzhLbAlDQWY70kvHicXHk?=
+ =?Windows-1252?Q?EujB/I2mS+V5dOLhHLldsJh2PGYi81dKW9nM+8aNUwxbFc2TKn1bgCiS?=
+ =?Windows-1252?Q?cRuQ4uNyoPwFgKHJ+CrTtOfzEIjxp3WsWx3a7n75jNNqNX71MRehlDVM?=
+ =?Windows-1252?Q?U1Xwmsb4eHzut/JtdBw3VIWp7JCPKsWdMWCuhVIwHPcX6Z6Uv/ckh3EZ?=
+ =?Windows-1252?Q?TqCznccpIZqoEcpAmhCS5fdfPEm7nAERO98C1mQFpGi5qIj8uZ3aG5H/?=
+ =?Windows-1252?Q?Sz40/X0CrTyJV6fxgdHSaLw9E9X6JFQbeuTOnlHsKpKFm0Fh1IzbspP/?=
+ =?Windows-1252?Q?6/xPlzCD7U+RFpDxGI0Ecg/FSTCtUFQN+aLkXA+ZTnGmXroEzP33rsyT?=
+ =?Windows-1252?Q?hQW1YVk+QpPZ5fGfiaOUKdCLCS7CCdDbShqLs5fI2LB4MCcJmU71uE4a?=
+ =?Windows-1252?Q?BGQKRnaEPg2qw97TSb4=3D?=
+MIME-Version: 1.0
+
+--_004_DB3PR0402MB39137A530359B0945F0C717EB5520DB3PR0402MB3913_
+Content-Type: multipart/alternative;
+	boundary="_000_DB3PR0402MB39137A530359B0945F0C717EB5520DB3PR0402MB3913_"
+
+--_000_DB3PR0402MB39137A530359B0945F0C717EB5520DB3PR0402MB3913_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour,
+
+Nous avons le plaisir de vous informer de l'ouverture du site INSEEC U. Res=
+earch Center : https://recherche.inseec.com/
+
+Nous vous invitons =E0 le parcourir, et pour les enseignants-chercheurs, =
+=E0 compl=E9ter leur page personnelle avec les identifiants qui vous ont =
+=E9t=E9 attribu=E9s via le lien suivant : https://recherche.inseec.com/wp/w=
+p-login.php
+
+Toutes suggestions, remarques, compl=E9ments d'informations sont =E0 commun=
+iquer =E0 notre Charg=E9e de Communication Fany Chanu (fchanu@inseec.com<ma=
+ilto:fchanu@inseec.com>) de fa=E7on =E0 avoir un site refl=E9tant toute la =
+recherche et la diversit=E9 d'INSEEC U. Research Center. Il s'agit bien s=
+=FBr d'un projet en constante =E9volution, sa version anglaise sera en lign=
+e d=E8s janvier 2020.
+
+Nous vous souhaitons une bonne d=E9couverte de site !
+
+L'ensemble de l'=E9quipe INSEEC U. Research Center vous souhaite de belles =
+f=EAtes de fin d'ann=E9e.
+Bien =E0 vous,
+
+Isabelle Barth, Hachmi Ben Ameur, Angelo Riva, Dora Triki, Assia Soukane, M=
+ariateresa Torchia, Hans Muhlbacher
+
+Hello,
+
+We are pleased to inform you of the launching of the INSEEC U. Research Cen=
+ter site: https://recherche.inseec.com/
+
+We invite you to browse it, and for researchers, to complete their personal=
+ page with the identifiers which have been assigned to you via the followin=
+g link: https://recherche.inseec.com/wp/wp-login.php
+
+Any suggestions, remarks, additional information should be communicated to =
+our Communication Officer Fany Chanu (fchanu@inseec.com<mailto:fchanu@insee=
+c.com>) so as to have a site reflecting all the research and diversity of I=
+NSEEC U. Research Center. This is of course a constantly evolving project, =
+its English version will be online from January 2020.
+
+We wish you a good site discovery!
+
+The entire INSEEC U. Research Center team wishes you happy holidays.
+Best regards,
+
+Isabelle Barth, Hachmi Ben Ameur, Angelo Riva, Dora Triki, Assia Soukane, M=
+ariateresa Torchia, Hans Muhlbacher
+
+Communication Office INSEEC U. Research Center
+T=E9l. +33 (0)1 42 09 91 32
+[Inseec_U_Research_Center]
+
+Visit INSEEC's Research Website !
+www.recherche.inseec.com<http://www.recherche.inseec.com/>
+
+
+--_000_DB3PR0402MB39137A530359B0945F0C717EB5520DB3PR0402MB3913_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"FR" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif">Bonjour,
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif">Nous avons le plaisir de vous informer de l&#8217;ouv=
+erture du site INSEEC U. Research Center&nbsp;:
+<a href=3D"https://recherche.inseec.com/">https://recherche.inseec.com/</a>=
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif">Nous vous invitons =E0 le parcourir, et pour les ense=
+ignants-chercheurs, =E0 compl=E9ter leur page personnelle avec les identifi=
+ants qui vous ont =E9t=E9 attribu=E9s via le lien suivant&nbsp;:
+<span style=3D"color:#1F497D"><a href=3D"https://recherche.inseec.com/wp/wp=
+-login.php">https://recherche.inseec.com/wp/wp-login.php</a><o:p></o:p></sp=
+an></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif">Toutes suggestions, remarques, compl=E9ments d&#8217;=
+informations sont =E0 communiquer =E0 notre Charg=E9e de Communication Fany=
+ Chanu (</span><span class=3D"MsoHyperlink"><a href=3D"mailto:fchanu@inseec=
+.com"><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-se=
+rif">fchanu@inseec.com</span></a>)</span><span style=3D"font-size:10.0pt;fo=
+nt-family:&quot;Arial&quot;,sans-serif">
+ de fa=E7on =E0 avoir un site refl=E9tant toute la recherche et la diversit=
+=E9 d&#8217;INSEEC U. Research Center. Il s&#8217;agit bien s=FBr d&#8217;u=
+n projet en constante =E9volution, sa version anglaise sera en ligne d=E8s =
+janvier 2020.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif">Nous vous souhaitons une bonne d=E9couverte de site&n=
+bsp;!<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif">L&#8217;ensemble de l&#8217;=E9quipe INSEEC U. Resear=
+ch Center vous souhaite de belles f=EAtes de fin d&#8217;ann=E9e.<o:p></o:p=
+></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif">Bien =E0 vous,
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif">Isabelle Barth, Hachmi Ben Ameur, Angelo Riva, Dora T=
+riki, Assia Soukane, Mariateresa Torchia, Hans Muhlbacher<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif">Hello,<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif">We are pleased to inform you of the launching of the =
+INSEEC U. Research Center site:
+<a href=3D"https://recherche.inseec.com/">https://recherche.inseec.com/</a>=
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif">We invite you to browse it, and for researchers, to c=
+omplete their personal page with the identifiers which have been assigned t=
+o you via the following link:
+<a href=3D"https://recherche.inseec.com/wp/wp-login.php">https://recherche.=
+inseec.com/wp/wp-login.php</a><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif">Any suggestions, remarks, additional information shou=
+ld be communicated to our Communication Officer Fany Chanu (<a href=3D"mail=
+to:fchanu@inseec.com">fchanu@inseec.com</a>) so
+ as to have a site reflecting all the research and diversity of INSEEC U. R=
+esearch Center. This is of course a constantly evolving project, its Englis=
+h version will be online from January 2020.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif">We wish you a good site discovery!<o:p></o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif">The entire INSEEC U. Research Center team wishes you =
+happy holidays.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif">Best regards,<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif">Isabelle Barth, Hachmi Ben Ameur, Angelo Riva, Dora T=
+riki, Assia Soukane, Mariateresa Torchia, Hans Muhlbacher<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif;color:#002D72;mso-fareast-language:FR">Communication Office INSEEC U=
+. Research Center<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:#002D72;mso-fareast-language:FR">T=E9l. &#43;33 =
+(0)1 42 09 91 32<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D;mso-fareast-language:FR=
+"><img border=3D"0" width=3D"264" height=3D"50" style=3D"width:2.75in;heigh=
+t:.5208in" id=3D"Image_x0020_1" src=3D"cid:image001.jpg@01D5B68B.B2AA1CE0" =
+alt=3D"Inseec_U_Research_Center"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><i><span lang=3D"EN-US" style=3D"font-size:10.0pt=
+;color:#1F497D;mso-fareast-language:FR"><o:p>&nbsp;</o:p></span></i></b></p=
+>
+<p class=3D"MsoNormal"><b><i><span lang=3D"EN-US" style=3D"font-size:10.0pt=
+;font-family:&quot;Arial&quot;,sans-serif;color:#1F497D;mso-fareast-languag=
+e:FR">Visit INSEEC&#8217;s Research Website&nbsp;!</span></i></b><span styl=
+e=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#1F497=
+D;mso-fareast-language:FR"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:#1F497D;mso-fareast-language:FR"><a href=3D"http=
+://www.recherche.inseec.com/"><span lang=3D"EN-US" style=3D"color:#1F497D">=
+www.recherche.inseec.com</span></a></span><span style=3D"mso-fareast-langua=
+ge:FR"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_DB3PR0402MB39137A530359B0945F0C717EB5520DB3PR0402MB3913_--
+
+--_004_DB3PR0402MB39137A530359B0945F0C717EB5520DB3PR0402MB3913_
+Content-Type: image/jpeg; name="image001.jpg"
+Content-Description: image001.jpg
+Content-Disposition: inline; filename="image001.jpg"; size=5356;
+	creation-date="Thu, 19 Dec 2019 15:47:52 GMT";
+	modification-date="Thu, 19 Dec 2019 15:47:52 GMT"
+Content-ID: <image001.jpg@01D5B68B.B2AA1CE0>
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMg
+IyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCAAyAQgDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0f/hO
+vDX/AEG7L/v4Ks2HinRNUufs9jqdtcTbS2yN8nA6mvmqux+Ff/I6r/16zfyFd9TCRjFyuc0azbtY
+6vxR8X4Yd9t4djE0nQ3Uo+Qf7q9T9TgfWl+GHiGSWz17U9d1BmCSRb5p34UEEAegGT0FeRdzXZeH
+P+SZ+Lf963/9CFazoQjT5V1t+ZMaknK7PWv+E68Nf9Buy/7+CtHTNa07WkkfTLyG6WMhXMTZ2k+t
+fMVeu/BP/kG6t/13T/0GsK2FjTg5JmlOq5SselySJDE8kjBUQFmY9AB1NU9N1zTNYWVtNvoLpYsb
+zE4bbnpn8jTta/5Ad/8A9e0n/oJrzX4Kf8eOt/8AbL+T1zxppwcuxo5WkkegWfivQ9Qu0trPVbSa
+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
+
+--_004_DB3PR0402MB39137A530359B0945F0C717EB5520DB3PR0402MB3913_--

@@ -1,0 +1,32 @@
+#!/bin/sh
+
+
+installx awesome
+installx lxappearance
+installx sxhkd
+installx tilix
+installx qutebrowser
+installx zsh
+installx xcompmgr
+
+# Nuit
+	installx arandr 
+	installx redshift
+	installx shntool
+
+
+
+#Printer
+	installx task-print-server
+
+#mathpix
+sudo snap install mathpix-snipping-tool # https://extensions.gnome.org/extension/615/appindicator-support/
+
+
+#Traduction
+installx translate-shell
+installx xsel 
+installx mpg123
+installx shnjoin shntool
+installx hunspell-fr
+installx poppler-utils

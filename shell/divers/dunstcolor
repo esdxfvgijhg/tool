@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+. "$HOME/.config/wpg/formats/colors.sh"
+
+dunst \
+  -lb  "${background:-#FFFFFF}" \
+  -nb  "${background:-#FFFFFF}" \
+  -cb  "${background:-#FFFFFF}" \
+  -lf  "${foreground:-#000000}" \
+  -nf  "${foreground:-#000000}" \
+  -cf  "${foreground:-#000000}" \
+  -cfr "${color1:-#000000}" \
+  -nf  "${foreground:-#000000}" \
+  -lto 2 \
+  -nto 2 \
+  -cto 5 \
+  -geometry "300x5-10+34"

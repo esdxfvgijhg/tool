@@ -1,0 +1,228 @@
+#!/bin/bash
+
+alias installx="sudo apt -y install"
+alias vgh="convert -delay 12 -loop 0 *.jpg animated.gif"
+alias ap="ansible-playbook"
+alias assh="autossh -M 0"
+alias aud="pulsemixer"
+alias bcdl="bandcamp-dl"
+alias ccat="highlight --out-format=ansi"
+alias ccat="highlight --out-format=xterm256"
+alias cchat="mkdir -p ~/Logs/irc ; sic -h chat.freenode.com | tee ~/Logs/irc/$(date +%m%d)$(date +%H%M)chat.log | lolcat"
+alias chat="mkdir -p ~/Logs/irc ; sic -h chat.freenode.com | tee ~/Logs/irc/$(date +%m%d)$(date +%H%M)chat.log"
+alias d="amixer sset Master 2-%"
+alias df="df -h"
+alias diff="diff --color=auto"
+alias dnsflush="sudo dscacheutil -flushcache"
+alias dus="du -hd 1 | sort -h"
+alias ffmpeg="ffmpeg -hide_banner"
+alias fs="findstring"
+alias jabber="mcabber -f ~/.config/mcabber/mcabberrc"
+alias jpegoptim="for i (*.jpg) mozjpeg -copy none -optimize -scans ~/dotfiles/other/scans.txt -outfile $i $i"
+alias jpg25="mogrify -format jpg -resize 25% -strip -quality 80 *.jpg"
+alias jpg50="mogrify -format jpg -resize 50% -strip -quality 80 *.jpg"
+alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+alias lsexts="find . -type f -name \"*.*\" -printf \"%f\n\"|sed \"s/.*\.\([^.]*\)$/\1/\"|sort|uniq"
+alias lsp="pacman -Qett --color=always | less"
+alias mapscii="telnet mapscii.me"
+alias mcabber="mcabber -f ~/.config/mcabber/mcabberrc"
+alias mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)"
+alias mus="ncmpcpp"
+alias npmre="rm -f package-lock.json && rm -rf node_modules && npm install"
+alias orphans="pacman -Qdt"
+alias pacrepo="sudo reflector -l 20 -f 10 --save /etc/pacman.d/mirrorlist"
+alias pacu="sudo pacman -Syu --noconfirm"
+alias path="echo -e "${PATH//:/\n}""
+alias png25="mogrify -format png -resize 25% -strip -quality 80 *.png"
+alias png50="mogrify -format png -resize 50% -strip -quality 80 *.png"
+alias progs="pacman -Qet"
+alias psref="gpg-connect-agent RELOADAGENT /bye"
+alias pwgen="genpw"
+alias reddit="rtv"
+alias rs="replacespaces"
+alias speedtest="speedtest | lolcat"
+alias te="timeentry"
+alias tf="terraform"
+alias trem="transmission-remote"
+alias u="amixer sset Master 2+%"
+alias udu="udiskie-umount"
+alias upc="sudo pacman -Syu; pkill -RTMIN+8 i3blocks"
+alias upgr="neofetch && sudo pacman -Syyu --noconfirm && unix && notify-send \"📦 Update complete.\" && echo Update complete. | figlet"
+alias webimg="mogrify -format jpg -resize 1600x1600 -strip -quality 70"
+alias xpull="syncworkflow down"
+alias xpush="syncworkflow up"
+alias yre="rm -f yarn.lock && rm -rf node_modules && yarn"
+alias yta="yt -x -f bestaudio/best"
+alias ytdl="youtube-dl"
+alias yt="youtube-dl --add-metadata -i -o \"%(upload_date)s-%(title)s.%(ext)s\""
+alias YT="youtube-viewer"
+
+
+
+
+# DISPLAY
+alias blank="DISPLAY=:0 xset dpms force off"
+alias zap="DISPLAY=:0 xwarppointer relpos 10 10"
+
+
+
+# APP
+alias zotero=$TOOLSPATH/zotero/zotero
+alias mu="neomutt"
+alias office="cd ~ && mbsync -a && mu index --maildir ~/Mail && vdirsyncer sync"
+
+alias matlab="LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25 $TOOLSPATH/matlab/bin/matlab"
+alias www="$BROWSER"
+alias calcurse="calcurse -C ~/.config/calcurse/ -D ~/.config/calcurse/"
+alias news="newsboat"
+alias x="sxiv -ft *"
+alias term="tilix"
+alias wafo='waf --cwd=$PWD --run '
+alias wafvo='waf --cwd=$PWD --visualize --run '
+
+
+
+#Install
+alias mi="clear && sudo make clean install"
+
+
+alias aptup="sudo apt update && sudo apt upgrade && sudo apt autoremove"
+alias mkd="mkdir -p"
+alias ka="killall"
+alias q="exit"
+alias o="xdg-open"
+alias ssh="TERM=xterm-256color ssh"
+alias passwd_gen="openssl rand -base64 32"
+alias ref="shortcuts >/dev/null; source ~/.config/shortcutrc"
+alias newnet="sudo systemctl restart NetworkManager"
+alias systemctl="sudo systemctl"
+alias rf="source ~/.bashrc"
+alias pushkey="ssh-copy-id -i ~/.ssh/id_rsa.pub"
+alias netcfg="sudo netcfg"
+alias netctl="sudo netctl"
+alias atltime="sudo timedatectl set-timezone America/New_York"
+alias journalctl="sudo journalctl"
+alias apt="sudo apt"
+alias reboot="checkout ; sudo reboot now"
+alias sdn="checkout ; sudo shutdown -h now"
+alias disks="gnome-disks"
+alias clip="nc localhost 8377"
+
+alias trans='trans -b -t fr'
+alias xd='tracker tag -ts'
+
+
+# GREP
+alias crep="grep --color=always"
+alias grep="grep --color=auto"
+alias rawcode="grep -cv ^#\|^$"
+
+# LS
+alias lal="ls -aFl"
+alias la="ls -aF"
+alias ll="ls -lF"
+alias l="ls -alGp"
+alias lsds="ls -d .*" # ls dot files only
+alias lsa="ls -alGp"
+alias ls="ls -Fc --color=auto --group-directories-first"
+
+
+# NPM
+alias nb="npm run build"
+alias np="npm run production"
+alias nr="npm run"
+alias ns="npm start"
+
+
+# XINPUT
+alias xi="xinput       set-prop 8 \"Device Enabled\" 1 && xinput set-prop 10 \"Device Enabled\" 1"
+alias no_touch="xinput set-prop \"SynPS/2 Synaptics TouchPad\" \"Device Enabled\" 0"
+alias nxi="xinput      set-prop 8 \"Device Enabled\" 0 && xinput set-prop 10 \"Device Enabled\" 0"
+
+
+# MPC
+alias n="mpc -h $_SECRET_MPD_HOST --no-status next; np"
+alias np="mpc --format \"%title% - %artist% #[%album%#]\" | head -n1"
+alias p="mpc -h $_SECRET_MPD_HOST --no-status prev; np"
+alias P="mpc -h $_SECRET_MPD_HOST --no-status toggle; np"
+alias s="mpc -h $_SECRET_MPD_HOST --no-status stop; np"
+alias addall="mpc update > /dev/null && mpc --no-status clear && mpc ls | mpc --no-status add && mpc --no-status play; np"
+
+
+#EDITOR
+alias a="tmux a"
+alias tmux="tmux -f ~/.config/tmux/tmux.conf"
+alias t="tmux -u -2"
+alias ta="tmux -u attach"
+alias v="$EDITOR"
+alias vdiff="$EDITOR -d"
+alias vi=$EDITOR
+alias vim=$EDITOR
+alias vimdiff="$EDITOR -d"
+alias cfa="$EDITOR ~/.config/aliasrc"
+alias cfb="$EDITOR ~/.bashrc"
+alias cfB="$EDITOR ~/.config/i3blocks/config"
+alias bd="$EDITOR ~/.config/bmdirs"
+alias bf="$EDITOR ~/.config/bmfiles"
+alias cfd="$EDITOR ~/.Xdefaults"
+alias cfi="$EDITOR ~/.config/i3/config"
+alias cfk="$EDITOR ~/.config/sxhkd/sxhkdrc"
+alias cfm="$EDITOR ~/.config/mutt/muttrc"
+alias cfmb="$EDITOR ~/.config/ncmpcpp/bindings"
+alias cfmc="$EDITOR ~/.config/ncmpcpp/config"
+alias cfn="$EDITOR ~/.config/newsboat/config"
+alias cfu="$EDITOR ~/.config/newsboat/urls"
+alias cfv="$EDITOR ~/.config/nvim/init.vim"
+alias cfz="$EDITOR ~/.zshrc"
+alias cv="$EDITOR ~/Documents/LaTeX/cv.tex"
+alias e="$EDITOR"
+alias eb="$EDITOR ~/Documents/LaTeX/uni.bib"
+alias er="$EDITOR ~/Documents/referbib"
+alias vim="vim -u ~/.config/vim/init.vim"
+alias v="vim"
+alias sv="sudo vim"
+alias magit="nvim -c MagitOnly"
+alias note="vim ~/Documents/Note.md"
+alias css=$EDITOR
+alias scss=$EDITOR
+alias js=$EDITOR
+alias html=$EDITOR
+alias md=$EDITOR
+alias txt=$EDITOR
+
+#CD
+alias vv="cd ~/Videos && ls -a"
+alias .....="cd ../../../.."
+alias ....="cd ../../.."
+alias ...="cd ../.."
+alias ..="cd .."
+alias ~="cd ~"
+alias cf="cd ~/.config && ls -a"
+alias D="cd ~/Downloads && ls -a"
+alias h="cd ~/ && ls -a"
+alias m="cd ~/Music && ls -a"
+alias mn="cd /mnt && ls -a"
+alias n="cd ~/Documents/networks && ls -a"
+alias P="cd ~/Projects && ls -a"
+alias pp="cd ~/Pictures && ls -a"
+alias s="cd ~/.local/bin && ls -a"
+alias web="cd ~/Sites && ls"
+alias rep="cd ~/Repositories && ls"
+alias dot="cd ~/Dotfiles && ls"
+
+#GIT
+alias gd="git diff"
+alias gf="git-flow"
+alias g="git"
+alias ggpl="git pull origin $(current_branch)"
+alias ggpnp="git pull origin $(current_branch) && git push origin $(current_branch)"
+alias ggps="git push origin $(current_branch)"
+#alias gmo="$EDITOR $(git ls-files -m)"
+alias gs="git status"
+alias gsmu="git submodule init && git submodule update"
+alias gsmuu="git submodule foreach git pull origin master"
+alias gst="git status"
+alias gua="git remote | xargs -L1 git push --all"
+
+
+

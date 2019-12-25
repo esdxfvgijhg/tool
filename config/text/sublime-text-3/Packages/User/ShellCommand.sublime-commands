@@ -1,0 +1,21 @@
+[
+	{
+	    "caption": "aghilesuuu",
+	    "command": "shell_command",
+	    "args": {
+	      "command": ["sed -zr 's/\\n\\n+/ŧ/g' | sed -zr 's/(%[^\\n]+)/\\1þ/g' | sed -zr 's/\\.[ \\t]*\\n/vgyhn/g' | sed -zr 's/}[ \\t]*\\n/pvkglyhn/g' | sed -zr 's/\\n[\\t ]*/ /g' | sed -zr 's/\\t+//g' | sed -zr 's/(\\.)[ \\t]+([^0-9])/\\1\\n\\2/g' | sed -zr 's/([,:;])[ \\t]+([^0-9])/\\1\\n\\t\\2/g' | sed -zr 's/vgyhn/\\.\\n/g' | sed -zr 's/pvkglyhn/\\}\\n/g' | sed -zr 's/ŧ/\\n\\n/g' | sed -zr 's/þ[ \\t]*/\\n/g' | sed -zr 's/\\- //g'"],
+	      "region": "stdin"
+	    }
+	},
+	{
+    "caption": "rrrte",
+    "command": "external_program",
+    "args": {
+        "executable": "/home/aghiles/Aghiles/Tool/config/subrid/Packages/MyCustomFilterPipes/script.sh",
+        "source": "selected_text",
+        "through": "stdin",
+        "destination": "insert_replace",
+        "panels": "reset"
+     }
+	}
+]

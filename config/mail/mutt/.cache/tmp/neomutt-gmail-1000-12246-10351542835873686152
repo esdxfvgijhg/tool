@@ -1,0 +1,193 @@
+Return-Path: <aghilesdjoudi@gmail.com>
+Received: from gmail.com (gw-wl-qg.ece.fr. [91.199.6.246])
+        by smtp.gmail.com with ESMTPSA id h18sm11153127wrr.78.2019.10.16.00.54.23
+        for <steve@iaria.org>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 16 Oct 2019 00:54:24 -0700 (PDT)
+Date: Wed, 16 Oct 2019 08:54:23 +0100
+From: Aghiles DJOUDI <aghilesdjoudi@gmail.com>
+To: Steve <steve@iaria.org>
+Subject: Re: 20048 || ICSNC 2019
+Message-ID: <20191016075423.gmebmzmign7nmevq@gmail.com>
+References: <99632d03-cfdc-3c96-9c4c-563d8a85ced5@iaria.org>
+ <EE68B75C-B621-45C1-A8B5-71F02B7DF341@getmailspring.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+In-Reply-To: <EE68B75C-B621-45C1-A8B5-71F02B7DF341@getmailspring.com>
+
+Dear Steve,
+
+Did you receive my email ?
+
+Regards.
+
+Aghiles
+
+On 2019-10-08 09:20, Aghiles DJOUDI wrote:
+>Dear Steve,
+>
+>Attached the paper updated with reviewers comments.
+>Regards,
+>Aghiles,PhD ESIEE/ECE Schools Paris
+>
+>On Oct 2 2019, at 6:39 pm, Steve <steve@iaria.org> wrote:
+>> Dear Aghiles,
+>>
+>> This is an email concerning your contribution with title 'Genetic Algorithm For LoRa Transmission Parameter Selection' submitted to ICSNC 2019 and having contribution id 20048.
+>> Please:
+>> - Consider these comments, in turn, aka, one-by-one.
+>> - Highlight the text in the paper body where the comments were fixed [only the updated parts, not all the paragraphs]
+>> - Other comments will come, after the first fixing.
+>> - MUST:
+>> - Update the paper
+>> - Sent back to me an updated version with highlights of the corrections.
+>>
+>> !! keep the comments and the current Subject topic in the reply email.
+>> !! let us close with the first fixings in ~10 days and finish everything in about 20 days!
+>>
+>> !! replies will vary, as depending on the other papers in line
+>> !! in any case, even we are late, do not upload it on the publisher's site until we finish the cross-validation, regardless the camera-ready deadline.
+>> !! take additional space (granted, no extra fees), if needed, to satisfy the reviewers' comments.
+>> !! legend of signs used for reviews
+>> -- current text
+>> --> suggested fixing
+>> !! additional comments
+>>
+>> ++
+>> Steve
+>>
+>> == From the Chairs and Logistics - mandatory to be published ==
+>> !! Carefully consider the editorial rules: http://www.iaria.org/editorialrules.html
+>> !! Have a carefully proofreading the updated version; an English specialist, or a native English speaker is recommended.
+>> !! Carefully observe the required format (see http://www.iaria.org/format.html) on text style and size, captions, references, etc.
+>> !! More detailed editorial comments will come after the first update
+>> Note
+>> - editorial (format, punctuation) and English comments are mandatory, as imposed by the Publisher
+>> - content comments pointing to mistakes/errors should be fixed or statement removed to keep the quality of the paper high
+>> - content comments which are not the real target or asking more difficulty to be added should be kindly indicated in CONCLUSION AND FUTURE WORK with some technical details; this will show a 'thank you to those suggesting them', but also showing your strengths.
+>>
+>>
+>>
+>> == reviewer 1 ==
+>> This article proposes a multi-criteria decision system based on a genetic algorithm to select the best LoRa transmission configuration.
+>>
+>> The topic is interesting and the paper is well written.
+>> However, the paper only presents the high level architecture of their solution. The authors claim to have implemented their solution and also tested the performance using NS3. If so, it would have been more interesting to get preliminary performance results for example instead of two pictures that provide few information. Also, the paper is titled Genetic Algorithm For LoRa Transmission Parameter Selection. Nevertheless, there is very few information about the genetic algorithm (in the abstract only). You shouls take extra space and details it.
+>> Nonetheless, I think this poster can launch an interesting discussion during the conference. Thus I suggest to accept it.
+>> Other comment:
+>> there is 6720 possible settings => there are
+>>
+>>
+>> ------------
+>> == reviewer 2 ==
+>> This paper proposed a tuning method (for choosing the configurations) based on genetic algorithm for optimizing data transmission performance in IoT applications.
+>> I have the following concerns and questions:
+>> 1) As mentioned in the paper, the current inefficiency is mainly "due to the lack of tools that could take both applications requirements and external environment", if this is the case, i.e., environment factors are involved, I wonder if reinforcement learning methods would have done better than genetic algorithms?! A discussion is useful
+>> 2) It would be better if the effects of each of the four parameters could be explained. How would their changes affect the transmission performance? Some profiling results would be appreciated in camera-ready version
+>> ----------------------
+>> == reviewer 3 ==
+>> The paper deals with the Trasmission parameter selection problem in heterogeneous networks of IoT devices based on LoRa technology. Authors propose a genetic algorithm to select the transmission parameters needed by the application, considering application requirements and external environment. Authors present an experimental platform composed by real boards and ns-3 simulator; are there some preliminary results than can be provided in camera-ready version? This will be great.
+>> Furthermore, authors should consider only one manner to refer to LoRa technology: in some cases, it is written like "Lora."
+>> ------------------
+>> == reviewer 4 ==
+>> The authors applied genetic algorithm to find the optimal parameters for LoRa transmission, which is a crucial problem in IoT research. They tested three types of applications, namely text, voice, and image transmission. In addition to using a simulator (NS-3), the authors tested on real environment using Rasberry-pi and Arduino. The organization and presentation of the paper is very good. Contribution is appropriate for a poster. Image quality in Figure should be improved in the final version.
+>> --------------------
+>> == reviewer 5 ==
+>> The idea to use genetic algorithms to select transmission parameters sounds interesting, but from the submission, I cannot see how you implemented that. Although it is only a poster, at least some preliminary evaluations or some details about the implementation of the genetic algorithm should be presented.
+>> Also you should defend some of your claims better, e.g., that the diversity of LoRa Gateway models make SNR measurement complicated. SNR also typically stands for "signal-to-noise ratio". Some rferences are not acceptable in this form: CongducPham/LowCostLoRaGw? Maybe this is a part of some URL?
+>> The references section does not use a uniform font, some blank areas/white spaces exist in the entries. Some author given names are written completely, others not. GA and FL are not formatted a ADR and SNR etc. in the text.
+>> Why do you mention 868 MHz? WAN is using 433 MHz using LoRa?
+>> In the conclusion you state that you measured something. But it is neither shown nor explained in the poster, no figures, no tables, no text. Also the three applications/services you mention are not defined. What are they using? What are their characteristics? This would be important for the context of the ICSNC in my opinion. Please revisit and add some figures.tables/explanations
+>> The submission contains a lot of spelling errors. "in wireless sensor network_s_". "in _an_ edge computing"? "to be selected to match better" "these five last years". "i.e." has to be followed by a comma.
+>> The 6720 configuration options in the abstract are not clarified. They are "explained" later in the paper, but in the abstract its unclear what is meant.
+>> ---------------
+>> == reviewer 6 ==
+>> The paper formatting needs some adjustments:
+>>
+>> !! Correct the title; it is written using different font type and size – see template - Use 14 point Times New Roman in Bold
+>>
+>> !! Eliminate all page numbers
+>>
+>> !! add, after Abstract
+>> !! Keywords-text; text; text.
+>> !! ALL keywords must be Bold and Italic
+>> !! no more than 4-5 keywords
+>>
+>>
+>> !! Avoid starting or ending a section using a figure or a table; introduce some text at the beginning of a new section, before a table/figure; introduce some text at the end of a section, after a table/figure; correct: Figure 1, Figure 2
+>>
+>> !! use a uniform figure capture, e.g., "Figure 1. The proposed scheme..."
+>> !! Apply to all
+>>
+>>
+>> !! Use 8 point Times New Roman for ALL (table and figure) captions.
+>>
+>> !! Figure 1 is not mentioned in text. Please, introduce explicit notations in the comments for each figure: 'in Figure x'
+>>
+>> !! correct the format for all the References (see template):
+>>
+>> - The references must use the correct format (abbreviated-firstname lastname):
+>> A. B. Name1, C. D. Name2, and E. F. Name3 ...
+>> - use a space between the abbreviated firstnames "C.C." -> "C. C."
+>> - the abbreviation comes first, and the last name comes after
+>> - use the punctuation separators (commas and breaks) as indicated in the template; for example, replace the '.' between the authors names and the title by a ','
+>> !! Correct all
+>>
+>>
+>> !! Reduce the indentation in [1]
+>>
+>> - list all the authors, if less than 6 [otherwise, use 'et al.' after the first author name] -> correct: [2]
+>>
+>> !! Correct the format / grammar / punctuation errors. Some examples:
+>>
+>> !! expand all the acronyms, even trivial, when firstly used (even in the abstract); examples: IoT, NB-IoT, etc.
+>>
+>> -- The need of Low power wide area networks (LPWAN)
+>> Must be:
+>> --> The need of Low Power Wide Area Networks (LPWAN)
+>> !! Apply this definition rule for all acronyms.
+>>
+>>
+>> -- networks (i.e. when each
+>> --> networks (i.e., when each
+>> !! hereafter, across the entire paper; always e.g., and i.e., have a ',' before (when inside a sentence) and after
+>>
+>>
+>> -- For that purpose we have
+>> --> For that purpose, we have
+>> !! always this way, in similar constructions, across the whole paper
+>>
+>>
+>> -- In section III, we propose our
+>> --> In Section III, we propose our
+>> !! Capitalize word 'Section' in all such comments across the paper
+>>
+>>
+>> -- configuration mechanisms such as
+>> --> configuration mechanisms, such as
+>>
+>>
+>> -- static data
+>> rate [2], [3].
+>> --> static data rate [2][3].
+>>
+>>
+>> -- For our experimentation we use both real
+>> --> For our experimentation, we use both real
+>>
+>>
+>> !! etc., etc.
+>> ---------------------
+>> ====================
+>>
+>>
+>>
+>>
+>> --
+>> Best regards,
+>> Steve
+
+
+---end quoted text---

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+rstudio /home/aghiles/Aghiles/Research/Program/Empirical/r/distributions.r

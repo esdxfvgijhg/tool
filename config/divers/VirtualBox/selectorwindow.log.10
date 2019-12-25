@@ -1,0 +1,16 @@
+00:00:00.262445 VirtualBox GUI VM Selector Window 6.0.14 r133895 linux.amd64 (Oct 14 2019 15:00:23) release log
+00:00:00.262447 Log opened 2019-10-19T13:51:39.683785000Z
+00:00:00.262448 Build Type: release
+00:00:00.262454 OS Product: Linux
+00:00:00.262455 OS Release: 4.19.0-6-amd64
+00:00:00.262456 OS Version: #1 SMP Debian 4.19.67-2+deb10u1 (2019-09-20)
+00:00:00.262485 DMI Product Name: Latitude 7480
+00:00:00.262494 DMI Product Version: 
+00:00:00.262537 Host RAM: 31809MB (31.0GB) total, 28028MB (27.3GB) available
+00:00:00.262547 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.262548 Process ID: 30798
+00:00:00.262548 Package type: LINUX_64BITS__DEBIAN_10
+00:00:00.262586 Qt version: 5.6.1
+00:00:00.275146 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.275165 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:00.514600 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 0x14 x 960x527

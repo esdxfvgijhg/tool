@@ -1,0 +1,17 @@
+#!/bin/bash
+
+source ~/.config/wpg/formats/colors.sh
+
+command=dmenu
+
+if [[ "$1" == "-c" ]]; then
+  while getopts 'c:' option; do
+    case $option in
+      c) command=$OPTARG && break;;
+    esac
+  done
+
+  shift $(($OPTIND - 1))
+fi
+
+$command -i -nb "$background" -nf "$foreground" -sb "$foreground" -sf "$background" -fn "mono-10" "$@"

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+GY=~/Downloads
+gnome-terminal --title "`basename $GY`" --command="bash -c 'vifm $GY; $SHELL'"
+
+

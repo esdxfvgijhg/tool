@@ -1,0 +1,249 @@
+Delivered-To: aghilesdjoudi@gmail.com
+Received: by 2002:ac0:e08d:0:0:0:0:0 with SMTP id i13csp5006796imm;
+        Sat, 21 Dec 2019 10:18:20 -0800 (PST)
+X-Google-Smtp-Source: APXvYqwYCAGKMJa0qf0DAhxAo2tr3NlxNrehxEFaaI0K+TDMxIg3mSBfzScAByXoIjvGUUDQfGR3
+X-Received: by 2002:a17:906:a84a:: with SMTP id dx10mr22888387ejb.61.1576952299908;
+        Sat, 21 Dec 2019 10:18:19 -0800 (PST)
+ARC-Seal: i=2; a=rsa-sha256; t=1576952299; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=MjqPcvQgyGOjCzpMbstXZ/cou7J/SiRzXJlvqoyu3y79Ug0Fxhkrbc5KiSOS2G/pU4
+         ZKD6VHUkipGqOu+DcLOFrrpoRd5TOtLNPFamzFigwDkhrODpxRXV82tbnwvuY0QKO/NW
+         4TcMr/3zfrqOpk5cAcgJ3VADPG2tFATgR4UXtSxO3dHPYqppJGOJx66VngknpWGX1qs4
+         dykA0cKcAv7LG034Qvo4BqEJ2nFiQxE8kJYEE4anPS1dG3jkWMEaEkDQ/Z2S9uglAkHT
+         wMXvgRgg42aFg+aYqKEhJolnZIaAsVH32I5gd3S71KupcX5xQ7bQRqPivD2FnDPqnZXy
+         1MFA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:content-language:accept-language:message-id:date
+         :thread-index:thread-topic:subject:to:from:dkim-signature;
+        bh=BSDfnrjr+M52hwAFc1VAbm5hZ7dE0tgC5yjMDDQGKs4=;
+        b=ikrWTNfEqCzH11LlejLGYO4c8DSlhUyCVy6NGNwzmxUjsgzIy1Gsnh8AwVoqFsWOSx
+         IH3c0ORTsbm6cNaROJjpVHm76Wp+fyfuSEjgU3Re2dDsm7dlUyfg7FkqApGe0KcHSSHz
+         WtGrZK2PALIB7wnu1W611eH+hdQH37KQEhFY8nj0G2wlSirRv6Q3Nr5GW16Gy5OJifxb
+         zCBgbPutXxGUWBhpiRD/tSIXx0Mk1eukwSwNKTKm3xP6r+S+6oTj9Z/l8Byp2RyrSDDe
+         3RS0tCu7XGUOGc1b46CCFy0UA+dTXSICK+tZXzqAWtfO3M/EjzxojMmaDeosKNCgtvpQ
+         fb7g==
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@poce.onmicrosoft.com header.s=selector2-poce-onmicrosoft-com header.b=ehcQ3mDu;
+       arc=pass (i=1 spf=pass spfdomain=edu.ece.fr dkim=pass dkdomain=edu.ece.fr dmarc=pass fromdomain=edu.ece.fr);
+       spf=pass (google.com: domain of amandine.ducruet@edu.ece.fr designates 40.107.13.49 as permitted sender) smtp.mailfrom=amandine.ducruet@edu.ece.fr
+Return-Path: <amandine.ducruet@edu.ece.fr>
+Received: from EUR01-HE1-obe.outbound.protection.outlook.com (mail-eopbgr130049.outbound.protection.outlook.com. [40.107.13.49])
+        by mx.google.com with ESMTPS id g16si10341786edv.63.2019.12.21.10.18.19
+        for <aghilesdjoudi@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 21 Dec 2019 10:18:19 -0800 (PST)
+Received-SPF: pass (google.com: domain of amandine.ducruet@edu.ece.fr designates 40.107.13.49 as permitted sender) client-ip=40.107.13.49;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@poce.onmicrosoft.com header.s=selector2-poce-onmicrosoft-com header.b=ehcQ3mDu;
+       arc=pass (i=1 spf=pass spfdomain=edu.ece.fr dkim=pass dkdomain=edu.ece.fr dmarc=pass fromdomain=edu.ece.fr);
+       spf=pass (google.com: domain of amandine.ducruet@edu.ece.fr designates 40.107.13.49 as permitted sender) smtp.mailfrom=amandine.ducruet@edu.ece.fr
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=KP5Q4Yo+pfKxGQoSo9sQyN73zd0+bUdpDNNsk6BMdobvZOTGjhHYA5JnJPtNfSAQJ26szq9j4LX89w8ZSe/zy88j2tD5/5wsPcc1XvYI5nPvZDwBX4oAUsbQ7Z/Qygg5xcVIix+DIZYV1YhTe5S4EbCJ93chH81H1woqQXKqSpzQIENc00xt+xPApBq3B8CovOPnKDm9b2TW5AVu1SD4nmiilgO6pt7fI5cILkM+1USNLEpqY8WJ0/YsXPaVRWEU8f0Rb51R8TxBWFgJeQ5ZZKc0xW5gQX5E6b5W8eGIXEv7kibvvGW15NG5+Avaj6QRvDorueVeZ1BQBaT3o22zqg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=BSDfnrjr+M52hwAFc1VAbm5hZ7dE0tgC5yjMDDQGKs4=;
+ b=HAveU32/k2f98ht/qUUa++Bk9FcYg0MWY85LnNG2YraeBKCQMfI8pAlUaO6OuIMuF4Rj99S+Zy+LmQ7WSpK3D/gsBGdaDJy9dybHK5K3UwwudF/SqxY9lVQOzZofJ1QkM9JpLhMwZaqPBx8dD2H1XzN4Fadg/inI5J2mq7LLyVCeYhBjaJ2rgW9+uZkJu1BfaGHx0PjJ0cJAPpIdL7A5l2u2XM1UkB4Z7xCq9+/saRO9VeGAzRGMW+4gG78vA3FhTRpRlTTB4FCPQBBf11M1Ijzi7Z32xz1EyfFVsqG8KygVx19LmMBY+zjl2CT4TPBQRoGbIqxQR7qI6IWivNBd2w==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=edu.ece.fr; dmarc=pass action=none header.from=edu.ece.fr;
+ dkim=pass header.d=edu.ece.fr; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=poce.onmicrosoft.com;
+ s=selector2-poce-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=BSDfnrjr+M52hwAFc1VAbm5hZ7dE0tgC5yjMDDQGKs4=;
+ b=ehcQ3mDuGJQD3vpgupnrKi/UOnYZWclzYoJDZ1sTVtQgWoe3RwCqjbOzskruM4q6Pb+tCwYfv1asgMSLd3il+hPS31bSXHAE4H91ffWQlsFWs1mW/aekyI5tIA89cWiAjcG21ycKEj++z5oyufPWtvOO+7gsRayocOdpE9ou9Tc=
+Received: from DB6PR05MB3157.eurprd05.prod.outlook.com (10.170.220.25) by
+ DB6PR05MB4759.eurprd05.prod.outlook.com (10.168.21.28) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2559.15; Sat, 21 Dec 2019 18:18:18 +0000
+Received: from DB6PR05MB3157.eurprd05.prod.outlook.com
+ ([fe80::e803:f01b:b4d7:e301]) by DB6PR05MB3157.eurprd05.prod.outlook.com
+ ([fe80::e803:f01b:b4d7:e301%7]) with mapi id 15.20.2559.017; Sat, 21 Dec 2019
+ 18:18:18 +0000
+From: Amandine DUCRUET <amandine.ducruet@edu.ece.fr>
+To: Aghiles DJOUDI <aghilesdjoudi@gmail.com>,
+	=?iso-8859-1?Q?Sol=E8ne_CONSTEN?= <solene.consten@edu.ece.fr>, Aurelio
+ ROGNETTA <aurelio.rognetta@edu.ece.fr>, Marie YAHIAOUI
+	<marie.yahiaoui@edu.ece.fr>, Martin LE MINTIER DE LA MOTTE BASSE
+	<martin.le-mintier-de-la-motte-basse@edu.ece.fr>, Agetha SUGUNAPARAJAN
+	<agetha.sugunaparajan@edu.ece.fr>, Manar AGGOUN <manar.aggoun@edu.ece.fr>
+Subject: =?iso-8859-1?Q?[PFE_Smart_Construction]_Conf=E9rence?=
+Thread-Topic: =?iso-8859-1?Q?[PFE_Smart_Construction]_Conf=E9rence?=
+Thread-Index: AQHVuCjI/u5U4cCbo0GIF1ZJ/txejg==
+Date: Sat, 21 Dec 2019 18:18:18 +0000
+Message-ID:
+ <AM4PR05MB31555AA3DA7A3E33AED7F390B62C0@AM4PR05MB3155.eurprd05.prod.outlook.com>
+Accept-Language: fr-FR, en-US
+Content-Language: fr-FR
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: spf=none (sender IP is )
+ smtp.mailfrom=amandine.ducruet@edu.ece.fr; 
+x-originating-ip: [78.229.186.35]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 1bdb8772-af14-40a0-0dfe-08d786422774
+x-ms-traffictypediagnostic: DB6PR05MB4759:
+x-ms-exchange-transport-forked: True
+x-microsoft-antispam-prvs:
+ <DB6PR05MB47592EFB781835E94ED60B54B62C0@DB6PR05MB4759.eurprd05.prod.outlook.com>
+x-ms-oob-tlc-oobclassifiers: OLM:2803;
+x-forefront-prvs: 0258E7CCD4
+x-forefront-antispam-report:
+ SFV:NSPM;SFS:(10001)(10009020)(366004)(376002)(136003)(346002)(39850400004)(396003)(189003)(199004)(66446008)(66556008)(64756008)(66476007)(110136005)(966005)(786003)(6486002)(66946007)(86362001)(4744005)(52536014)(186003)(19627405001)(2906002)(316002)(6512007)(9686003)(6636002)(224303003)(33656002)(76116006)(5660300002)(8936002)(71200400001)(26005)(6506007)(81166006)(478600001)(81156014)(91830200002);DIR:OUT;SFP:1101;SCL:1;SRVR:DB6PR05MB4759;H:DB6PR05MB3157.eurprd05.prod.outlook.com;FPR:;SPF:None;LANG:fr;PTR:InfoNoRecords;MX:1;A:0;
+received-spf: None (protection.outlook.com: edu.ece.fr does not designate
+ permitted sender hosts)
+x-ms-exchange-senderadcheck: 1
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ nPFaLpII21LigAkFlNcc/0EglGN1DsceY1FNzr1/x2lbmOfWToVdzmqRcf/8zRLpZT/p5/dJuHi73iq1amADIMovEzV5oLgBM2k9zbv3CljM22pJQUBJ2rjKMxmr9CKpgrEgUZV8apsbhtdDhAWIvBVAzUize7Lo95mJdaIk/ldQsMUuX4JEU4omS0neBQfZfyB4q48h79GhUoBLtfvz6ZEpBMhcgmKQVsLlmAK/jXbgWQtIxstgKXV1G1ThfGsBYi8QY6k4QZCMvlR/XASxSUiO5abFwUPyL8swfZTDrPxr2f8+lvZ2ZNGmcUGxUoFLHvazcdDJmTTiV5OXVycaDMX4AAZnn8dqK2a+zzX6mEXI54OI2h56SNayEj01SNbG4yD6gfdW65je43/bfL2lkE/57AlCu9NC/cuQNt2o/EtByyrzaBf85eyYoRPbZNr4JQUpelHZ+oDxp9vqJrZiM19h5Ddb16xHsENFpWtGO/CWsxU5Ri5bq5hQEt9zJHBOFsyJDIxMIhemE+EZM+66JdJXYw1mQi6btIpxbLjVNundnuNSYm+ij12XVYg7HQHq42OiU6ahnJVQuUB0Bw4gKBR8jOJrSaPfLpgh8eq5wyM=
+Content-Type: multipart/alternative;
+	boundary="_000_AM4PR05MB31555AA3DA7A3E33AED7F390B62C0AM4PR05MB3155eurp_"
+MIME-Version: 1.0
+X-OriginatorOrg: edu.ece.fr
+X-MS-Exchange-CrossTenant-Network-Message-Id: 1bdb8772-af14-40a0-0dfe-08d786422774
+X-MS-Exchange-CrossTenant-originalarrivaltime: 21 Dec 2019 18:18:18.2616
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: a2697119-66c5-4126-9991-b0a8d15d367f
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: AHlfYM2p2sitd6gSyjg/otRJfp1q6N9nwNnYIskzpDZSJsUSXIF9sqBhhYm5iwg0GGFbix1O4iIRRJRgSMrUV7eDnKS6NykUJxJcDEFyxRA=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB6PR05MB4759
+
+--_000_AM4PR05MB31555AA3DA7A3E33AED7F390B62C0AM4PR05MB3155eurp_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour Monsieur,
+
+Nous avons cherch=E9 des conf=E9rences mais il est difficiles d'en trouver.
+Parmi les conf=E9rences que vous nous avez envoy=E9es, la plupart sont =E0 =
+l'=E9tranger.
+
+Nous avons donc retenu celles-ci :
+https://cores-algotel-2020.imag.fr/?page_id=3D40
+https://conferences.imt-atlantique.fr/iscc2020/
+N=E9anmoins, j'ai l'impression qu'il faut faire un article et non pas un po=
+ster. Qu'en pensez-vous ?
+
+Sinon nous avons =E9galement trouv=E9 des salons :
+https://www.salon-iot-mtom.com/
+Et celui-ci mais il est =E0 Londres : https://www.smau.it/london19/pages/ev=
+ent/?lang=3Den
+Que pensez-vous du fait que nous participions =E0 un salon plut=F4t qu'une =
+conf=E9rence ?
+
+Sinon avez-vous des conseils sur comment trouver une conf=E9rence ?
+Et si nous pouvons la faire =E0 l'=E9tranger ou pas ? Car je ne suis pas s=
+=FBre que l'=E9cole soit d'accord pour payer les frais qui en d=E9couleraie=
+nt (logement, transport etc.).
+
+Dans l'attente de votre r=E9ponse,
+Bonne soir=E9e,
+Amandine Ducruet
+
+
+--_000_AM4PR05MB31555AA3DA7A3E33AED7F390B62C0AM4PR05MB3155eurp_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Bonjour Monsieur,</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Nous avons cherch=E9 des conf=E9rences mais il est difficiles d'en trouver.=
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Parmi les conf=E9rences que vous nous avez envoy=E9es, la plupart sont =E0 =
+l'=E9tranger.</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Nous avons donc retenu celles-ci :</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<a href=3D"https://cores-algotel-2020.imag.fr/?page_id=3D40" style=3D"font-=
+family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt;">https://co=
+res-algotel-2020.imag.fr/?page_id=3D40</a></div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<a href=3D"https://conferences.imt-atlantique.fr/iscc2020/" id=3D"LPlnk8133=
+36" style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size:=
+ 12pt;">https://conferences.imt-atlantique.fr/iscc2020/</a><br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<span style=3D"color: rgb(0, 0, 0); font-family: Calibri, Arial, Helvetica,=
+ sans-serif; font-size: 12pt;">N=E9anmoins, j'ai l'impression qu'il faut fa=
+ire un article et non pas un poster. Qu'en pensez-vous ?</span><br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Sinon nous avons =E9galement trouv=E9 des salons :</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<b style=3D"font-weight:normal"><span style=3D"font-size:11pt; font-family:=
+Arial; color:#000000; font-weight:400"><a href=3D"https://www.salon-iot-mto=
+m.com/" id=3D"LPNoLP584949">https://www.salon-iot-mtom.com/</a></span></b><=
+br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Et celui-ci mais il est =E0 Londres :&nbsp;<a href=3D"https://www.smau.it/l=
+ondon19/pages/event/?lang=3Den" id=3D"LPlnk265308" style=3D"font-family: Ca=
+libri, Arial, Helvetica, sans-serif; font-size: 12pt;">https://www.smau.it/=
+london19/pages/event/?lang=3Den</a></div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Que pensez-vous du fait que nous participions =E0 un salon plut=F4t qu'une =
+conf=E9rence ?</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Sinon avez-vous des conseils sur comment trouver une conf=E9rence ?</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Et si nous pouvons la faire =E0 l'=E9tranger ou pas ? Car je ne suis pas s=
+=FBre que l'=E9cole soit d'accord pour payer les frais qui en d=E9couleraie=
+nt (logement, transport etc.).</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Dans l'attente de votre r=E9ponse,</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Bonne soir=E9e,</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Amandine Ducruet</div>
+<br>
+</body>
+</html>
+
+--_000_AM4PR05MB31555AA3DA7A3E33AED7F390B62C0AM4PR05MB3155eurp_--

@@ -1,0 +1,116 @@
+Delivered-To: djaghiles@gmail.com
+Received: by 2002:a9d:64c6:0:0:0:0:0 with SMTP id n6csp2134860otl;
+        Thu, 10 Jan 2019 09:51:19 -0800 (PST)
+X-Received: by 2002:adf:80a9:: with SMTP id 38mr9600691wrl.137.1547142439140;
+        Thu, 10 Jan 2019 09:47:19 -0800 (PST)
+X-Google-Smtp-Source: ALg8bN6EJua5Rui6IG5n9+/wgSEIVmu+Oo6RaA5UBucvYV3J6Irer9nCDcamptgTsyhN5KYL9W4E
+X-Received: by 2002:adf:80a9:: with SMTP id 38mr9600641wrl.137.1547142438113;
+        Thu, 10 Jan 2019 09:47:18 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1547142438; cv=none;
+        d=google.com; s=arc-20160816;
+        b=cKrpTArLwB5JSc8lCVt2ybWghJnSZ0+z2ZqfIA+4X6CWhiG17m/YgtCpdHWW58Dapf
+         df4Nsxq9fFb57RmdlRNFNO/hkC62JQKMoK5QLl3d6pAXnIqMcoIHqlNTgkq0Ce6QGcpZ
+         BQF5O6QlYCxcnmAZuRwMNbJEc9VAgOVx+/Eh3ZRtoCKbP1TwxhDh+uRNVgr7BDlbWoBH
+         TxyzfQWPnqn2KjWblWE3JIAZut49/NAR8UF3DbudBX6VB3Aof4oZ+42gn+jJTG6ccAT3
+         JA7nlKRbLIY46P0UyXL27kIKzTB5/5UXeYdjvlm8E7RLG0dHn0jwa1aTfP6h6RUZ83yy
+         0TRg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:spamdiagnosticmetadata:spamdiagnosticoutput
+         :content-language:accept-language:message-id:date:thread-index
+         :thread-topic:subject:to:from:dkim-signature;
+        bh=7ILDM/6OW66twIzQozvlWaNm81lWuk3E4SSX/80baZE=;
+        b=JtPhv9xmW/ZTgdICxLhAkuN8xjRn317VX0TR5R9+3JcUziKpURYxUDwAzIencV4oac
+         DSpECy+MfpBziyWjb2IX8y7GzbKPtASXmAXx9YE18l3QjksIMof1lb/aElrgFpw7MBTv
+         iYxlhMhE+LM+cjbNpzeZ731603+CQbGoEz5Zcb31XKqBAWJjmqO+84gl9kmSaKm3CckF
+         /9HAlubnYhRpLKHiHRnkEFGF2yBl8OGdME3L8za3WdOWFS/MIuvmdfCe/WhqTFXPM1oh
+         JysP8EWXM8bfixBFEbj6nRrBI6ucRwzVzhFQw2JoULzVjf4BhfanoFQXoTTmoNR3rK5D
+         21EA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@inseecadmin.onmicrosoft.com header.s=selector1-inseecadmin-onmicrosoft-com header.b=O7Mde33y;
+       spf=pass (google.com: domain of sebti.mouelhi@ece.fr designates 40.107.13.74 as permitted sender) smtp.mailfrom=sebti.mouelhi@ece.fr
+Return-Path: <sebti.mouelhi@ece.fr>
+Received: from EUR01-HE1-obe.outbound.protection.outlook.com (mail-eopbgr130074.outbound.protection.outlook.com. [40.107.13.74])
+        by mx.google.com with ESMTPS id f12si46658702wrg.356.2019.01.10.09.47.17
+        for <djaghiles@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Thu, 10 Jan 2019 09:47:18 -0800 (PST)
+Received-SPF: pass (google.com: domain of sebti.mouelhi@ece.fr designates 40.107.13.74 as permitted sender) client-ip=40.107.13.74;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@inseecadmin.onmicrosoft.com header.s=selector1-inseecadmin-onmicrosoft-com header.b=O7Mde33y;
+       spf=pass (google.com: domain of sebti.mouelhi@ece.fr designates 40.107.13.74 as permitted sender) smtp.mailfrom=sebti.mouelhi@ece.fr
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=inseecadmin.onmicrosoft.com; s=selector1-inseecadmin-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=7ILDM/6OW66twIzQozvlWaNm81lWuk3E4SSX/80baZE=;
+ b=O7Mde33y1ravR3sj2tgtT6oVt15CxZRTECFS29iaj/2bhlYW+mygoqhhY4K83GEqDuGnOSwDKK3WZkWWEAk0tmUX/O916WlRbpwva7TWGSm+pYJtF2kTofO3QudR5a/JXFyNxnxMJ3+kYHqXrzWP61+ofx+Hej7pZ7YyzCtGqmA=
+Received: from DB3PR0402MB3929.eurprd04.prod.outlook.com (52.134.70.31) by
+ DB3PR0402MB3882.eurprd04.prod.outlook.com (52.134.72.33) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.1516.14; Thu, 10 Jan 2019 17:47:16 +0000
+Received: from DB3PR0402MB3929.eurprd04.prod.outlook.com
+ ([fe80::9436:45fd:e067:cec5]) by DB3PR0402MB3929.eurprd04.prod.outlook.com
+ ([fe80::9436:45fd:e067:cec5%3]) with mapi id 15.20.1516.015; Thu, 10 Jan 2019
+ 17:47:16 +0000
+From: MOUELHI Sebti <sebti.mouelhi@ece.fr>
+To: "djaghiles@gmail.com" <djaghiles@gmail.com>
+Subject: Lien cups
+Thread-Topic: Lien cups
+Thread-Index: AQHUqQyGWNebS6N9cUKOFQZTsDkSJg==
+Date: Thu, 10 Jan 2019 17:47:16 +0000
+Message-ID: <1547142434.1731.0.camel@ece.fr>
+Accept-Language: fr-FR, en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: spf=none (sender IP is )
+ smtp.mailfrom=sebti.mouelhi@ece.fr; 
+x-originating-ip: [91.199.6.240]
+x-ms-publictraffictype: Email
+x-microsoft-exchange-diagnostics:
+ 1;DB3PR0402MB3882;6:NhhA4cfG8uDYKc39ksTcAaTAaTyhtZi+ULfzUCSUPAh8FJ2gCltTedtJfMmQJBxWiXhrMAICyLkGsHrj2KVRRwETzA9Avw/NGEqCCc9u+MH/mYPeS7E8J+G06j0Ed1P6nB+449FG3NF52cfWpx7cOPHzH/hquO/8/Z0EdspqKSNANWpBfJoSirClelJhGhWpG1cBCyJ8ML7rTMrqqOBpmRNlVY77QlSUXOTsFYimZMoEoOxoj0ArQt3nbktdvqyOKi5FmWzsdaSTxHpJp/vI1uYEN5dAsognjBPDSGHXxtCE66vjzU74gtTHyJgNbVBP94vK5lV+Js0aRRVLOC/ApwYrTIZza/PrP+c0XcPh9J3dbRB//BUJgrMdKTF4UXOdyirXQVp+KCgbh4dtFPpkzaTM9tzKDGVscnTxfHauLXZfgNo2yCIL3Sf6vhBQu1A2HlIxBlt1PjewJRnhXls0Iw==;5:DfuqXplGGgo5EVg27Lw2wGcJ+GikbR7bz0EGw7P7T+LcEuVP8kLvvIF9Ka2B2nM8NC11CeO351KrkUu8o0SA181FYAAVsj20NtBz75N7+aJCLk9bSOTvYpZ9B/igc7WXXkkW2YRmafYk//FAm5ZMi5EHFyHXBTTEigxen0IMYYCMn+NlwXe1ZhoaQyH+qQ++ZnCkt5Rochv1AYPkrxO0TA==;7:B9HWSLI7I+mt55nTsGYNUmUeTSHwLoBWn9hGwpaBpLa5ewH/3nh52/fjnFk9vkQEHmSgaJ3FYg9u5COq1iZpb+CN5TV+mwdEdR8xi+jw/8WoLW3P3PJ910ejGwm5EmrrwBXXX8Mph7CxYBDJY5DYUA==
+x-ms-exchange-antispam-srfa-diagnostics: SOS;
+x-ms-office365-filtering-correlation-id: 20be7b1d-54b1-4e96-5a3f-08d67723a924
+x-microsoft-antispam:
+ BCL:0;PCL:0;RULEID:(2390118)(7020095)(4652040)(8989299)(4534185)(4627221)(201703031133081)(201702281549075)(8990200)(5600109)(711020)(2017052603328)(7153060)(7193020);SRVR:DB3PR0402MB3882;
+x-ms-traffictypediagnostic: DB3PR0402MB3882:
+x-microsoft-antispam-prvs:
+ <DB3PR0402MB388218BEA4FDBBBA3C6965799B840@DB3PR0402MB3882.eurprd04.prod.outlook.com>
+x-exchange-antispam-report-cfa-test:
+ BCL:0;PCL:0;RULEID:(3230021)(908002)(999002)(5005026)(6040522)(8220060)(2401047)(8121501046)(10201501046)(93006095)(93001095)(3231475)(944501520)(52105112)(3002001)(6041310)(20161123560045)(20161123564045)(201703131423095)(201702281528075)(201702281529075)(20161123555045)(201703061421075)(201703061406153)(20161123558120)(20161123562045)(201708071742011)(7699051)(76991095);SRVR:DB3PR0402MB3882;BCL:0;PCL:0;RULEID:;SRVR:DB3PR0402MB3882;
+x-forefront-prvs: 0913EA1D60
+x-forefront-antispam-report:
+ SFV:NSPM;SFS:(10009020)(136003)(396003)(366004)(39860400002)(376002)(346002)(189003)(199004)(2690700001)(186003)(256004)(7736002)(26005)(102836004)(14454004)(478600001)(3846002)(2906002)(5660300001)(99286004)(6116002)(476003)(2616005)(8936002)(1730700003)(81156014)(81166006)(8676002)(71200400001)(6506007)(71190400001)(33896004)(486006)(1361003)(786003)(3480700005)(7116003)(316002)(6486002)(5640700003)(6512007)(6436002)(53936002)(103116003)(54896002)(221733001)(2351001)(36756003)(86362001)(6916009)(74482002)(39060400002)(2501003)(105586002)(106356001)(25786009)(1411001)(558084003)(66066001)(551214005)(68736007)(97736004);DIR:OUT;SFP:1101;SCL:1;SRVR:DB3PR0402MB3882;H:DB3PR0402MB3929.eurprd04.prod.outlook.com;FPR:;SPF:None;LANG:fr;PTR:InfoNoRecords;MX:1;A:1;
+received-spf: None (protection.outlook.com: ece.fr does not designate
+ permitted sender hosts)
+x-ms-exchange-senderadcheck: 1
+x-microsoft-antispam-message-info:
+ 0b4InFGMMHpSoJreN+3Z9wygnx9AKsUcJ4ZbGB4U2f0+95fkBXNBYMT3aqxCrmIIWs4Sqzes8/a/M1PpaTzUr1lyRUhBBi4c1xZ87XsznRA+8u97inZvtK36iL3Lzq7tdnPkTpL0nSKDbHNRGQ9C2aQHC8fa5y5dQciXt7CO20oZDtnSrGNX+1NhjAPy8WZYXWgC2vT/S+UgwtVcWWfQQspUZSKC8BtQxApGNX08vsuh+gB2mnTCoRfQ9hjACKhK1r/jqb2kkVP48vMWFtKzqL4creO69kobosjZLrqaw8ZTnmI5fQzzpxfi2KKTcS1W
+spamdiagnosticoutput: 1:99
+spamdiagnosticmetadata: NSPM
+Content-Type: multipart/alternative;
+	boundary="_000_154714243417310camelecefr_"
+MIME-Version: 1.0
+X-OriginatorOrg: ece.fr
+X-MS-Exchange-CrossTenant-Network-Message-Id: 20be7b1d-54b1-4e96-5a3f-08d67723a924
+X-MS-Exchange-CrossTenant-originalarrivaltime: 10 Jan 2019 17:47:16.4483
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 1eb34f73-38dd-42db-98db-53b54e749d52
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB3PR0402MB3882
+
+--_000_154714243417310camelecefr_
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+aXBwOi8vZWlmZmVsLWltcDI0LnBybnMuZWNlLmZyDQo=
+
+--_000_154714243417310camelecefr_
+Content-Type: text/html; charset="utf-8"
+Content-ID: <E5A075991BB927439470D6351340AB2A@eurprd04.prod.outlook.com>
+Content-Transfer-Encoding: base64
+
+PGh0bWw+DQo8aGVhZD4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIgY29udGVudD0i
+dGV4dC9odG1sOyBjaGFyc2V0PXV0Zi04Ij4NCjwvaGVhZD4NCjxib2R5Pg0KPGRpdj5pcHA6Ly9l
+aWZmZWwtaW1wMjQucHJucy5lY2UuZnI8L2Rpdj4NCjwvYm9keT4NCjwvaHRtbD4NCg==
+
+--_000_154714243417310camelecefr_--

@@ -1,0 +1,24 @@
+00:00:00.233643 VirtualBox GUI VM Selector Window 6.0.14 r133895 linux.amd64 (Oct 14 2019 15:00:23) release log
+00:00:00.233645 Log opened 2019-10-22T18:36:29.009487000Z
+00:00:00.233645 Build Type: release
+00:00:00.233650 OS Product: Linux
+00:00:00.233650 OS Release: 4.19.0-6-amd64
+00:00:00.233651 OS Version: #1 SMP Debian 4.19.67-2+deb10u1 (2019-09-20)
+00:00:00.233673 DMI Product Name: Latitude 7480
+00:00:00.233679 DMI Product Version: 
+00:00:00.233717 Host RAM: 31809MB (31.0GB) total, 29000MB (28.3GB) available
+00:00:00.233721 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.233722 Process ID: 27537
+00:00:00.233722 Package type: LINUX_64BITS__DEBIAN_10
+00:00:00.233745 Qt version: 5.6.1
+00:00:00.251776 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.474316 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:00.479531 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 0x14 x 960x527
+00:00:07.275393 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:07.302280 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:58.767301 GUI: UIMediumEnumerator: Medium with key={{476e9293-55e9-4f2d-a08a-0a55a8f5940a}} created
+00:01:10.828781 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:01:34.636993 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:01:34.737706 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:01:35.351727 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:01:46.076872 GUI: UIMediumEnumerator: Medium-enumeration finished!

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [[ -e /dev/video2 ]]; then
+  cam=/dev/video2
+else
+  cam=/dev/video0
+fi
+
+pkill -f /dev/video || mpv --no-osc --no-input-default-bindings --geometry=-5-5 --autofit=30% $cam

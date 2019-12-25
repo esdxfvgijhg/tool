@@ -1,0 +1,6 @@
+#!/bin/sh
+
+installx gedit-plugins 
+installx gedit-source-code-browser-plugin
+installx gedit-latex-plugin
+

@@ -1,0 +1,114 @@
+[general]
+ui = ttyui
+accounts = djaghiles, aghilesdjoudi, isiee, inseec, upe
+starttls = yes
+ssl = yes
+autorefresh = 1
+pythonfile = $HOME/.config/offlineimap/offlineimap.py
+
+# djaghiles ----------------------------------------------------------------------
+[Account djaghiles]
+localrepository = djaghiles-Local
+remoterepository = djaghiles-Remote
+#postsynchook = notmuch new
+
+[Repository djaghiles-Local]
+type = Maildir
+localfolders = ~/Aghiles/Mail/djaghiles@gmail.com
+sep = /
+
+[Repository djaghiles-Remote]
+type = Gmail
+#type = IMAP
+remotehost = imap.gmail.com
+remoteuser = djaghiles@gmail.com
+remotepass = AghilesD35JG
+#folderfilter = lambda foldername: foldername not in ['[Gmail]/All Mail']
+realdelete = no
+maxconnections = 3
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+#createfolders = False
+
+# aghilesdjoudi ----------------------------------------------------------------------
+[Account aghilesdjoudi]
+localrepository = aghilesdjoudi-Local
+remoterepository = aghilesdjoudi-Remote
+
+[Repository aghilesdjoudi-Local]
+type = Maildir
+localfolders = ~/Aghiles/Mail/aghilesdjoudi@gmail.com
+sep = /
+
+[Repository aghilesdjoudi-Remote]
+type = Gmail
+#type = IMAP
+remotehost = imap.gmail.com
+remoteuser = aghilesdjoudi@gmail.com
+remotepass = AghilesD35JGD
+realdelete = no
+maxconnections = 3
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+#createfolders = False
+
+# isiee ----------------------------------------------------------------------
+[Account isiee]
+localrepository = isiee-Local
+remoterepository = isiee-Remote
+
+[Repository isiee-Local]
+type = Maildir
+localfolders = ~/Aghiles/Mail/aghiles.djoudi@esiee.fr
+sep = /
+
+[Repository isiee-Remote]
+type = Gmail
+#type = IMAP
+remotehost = imap.gmail.com
+remoteuser = aghiles.djoudi@esiee.fr
+remotepass = aghilesDJ35B
+realdelete = no
+maxconnections = 3
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+#createfolders = False
+
+# inseec ----------------------------------------------------------------------
+[Account inseec]
+localrepository = inseec-Local
+remoterepository = inseec-Remote
+
+[Repository inseec-Local]
+type = Maildir
+localfolders = ~/Aghiles/Mail/adjoudi@inseec-edu.com
+sep = /
+
+[Repository inseec-Remote]
+#type = Gmail
+type = IMAP
+remotehost = outlook.office365.com
+remoteuser = adjoudi@inseec-edu.com
+remotepass = 2SHPTdYET
+realdelete = no
+maxconnections = 3
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+#createfolders = False
+
+# upe ----------------------------------------------------------------------
+[Account upe]
+localrepository = upe-Local
+remoterepository = upe-Remote
+
+[Repository upe-Local]
+type = Maildir
+localfolders = ~/Aghiles/Mail/aghiles.djoudi@univ-paris-est.fr
+sep = /
+
+[Repository upe-Remote]
+type = Gmail
+#type = IMAP
+remotehost = imap.gmail.com
+remoteuser = aghiles.djoudi@univ-paris-est.fr
+remotepass = aghilesDJ35B
+realdelete = no
+maxconnections = 3
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+#createfolders = False

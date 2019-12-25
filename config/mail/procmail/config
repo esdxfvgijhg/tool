@@ -1,0 +1,25 @@
+
+
+PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin
+SHELL=/bin/sh
+MAILDIR="$HOME/Aghiles/Mail/djaghiles@gmail.com/"
+DEFAULT=$MAILDIR/
+LOGFILE=$MAILDIR/procmail.`date +%Y.%m`.log
+
+
+:0
+* ^djaghiles@gmail.com
+Test/
+
+#:0
+#* ^TO_misc@openbsd.org
+#Account/
+
+
+
+
+
+#:0	New recipe
+#:0:	Create a local lockfile while running
+#:0c	Continue processing this email even if this recipe matches
+#:0fhw	Filter using a pipe processing just the headers and wait

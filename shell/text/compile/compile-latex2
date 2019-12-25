@@ -1,0 +1,25 @@
+#!/bin/bash
+mypath=`realpath .`
+directory=`dirname "$mypath"`
+filename=`basename "$mypath"`
+
+#export TEXINPUTS=res/tikz:$TEXINPUTS
+latexmk -f -cd -lualatex -output-directory=.bin -shell-escape -synctex=1 -jobname=$1 main.tex
+cp .bin/$1.pdf $1.pdf
+evince $1.pdf
+
+#rm .*
+#rm src/.*
+#rm src/*/.*
+#for f in *.tex ; do
+#echo "[LATEX]
+#master-filename = $filename.tex" > "`dirname "$f"`/.`basename "$f"`.ini" ; 
+#done
+#for f in src/*.tex ; do
+#echo "[LATEX]
+#master-filename = ../$filename.tex" > "`dirname "$f"`/.`basename "$f"`.ini" ; 
+#done
+#for f in src/*/*.tex ; do
+#echo "[LATEX]
+#master-filename = ../../$filename.tex" > "`dirname "$f"`/.`basename "$f"`.ini" ; 
+#done

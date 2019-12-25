@@ -1,0 +1,9 @@
+#!/bin/sh
+
+
+
+installx openjdk-11-jdk
+
+
+
+

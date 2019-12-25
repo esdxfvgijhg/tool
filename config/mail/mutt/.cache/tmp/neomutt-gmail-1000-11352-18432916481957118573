@@ -1,0 +1,80 @@
+Delivered-To: aghilesdjoudi@gmail.com
+Received: by 2002:ac0:ee16:0:0:0:0:0 with SMTP id q22csp1341806imw;
+        Sat, 16 Nov 2019 16:19:32 -0800 (PST)
+X-Google-Smtp-Source: APXvYqw5WSqsXSpMSVCunl5zMVtMTyAqP76sHlZuWGEu4juhNzgOTRKL6R73q87d7spWEZlQIvp0
+X-Received: by 2002:adf:ea92:: with SMTP id s18mr8655455wrm.327.1573949972234;
+        Sat, 16 Nov 2019 16:19:32 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1573949972; cv=none;
+        d=google.com; s=arc-20160816;
+        b=CDlaseoGs0o1Rn2VkdVftbaz59hJpE4rQ2IKFzb9mSkBIN2BrFxIEiqEgKTiH7Uats
+         WHkPtQlV3NtNFercY132x63Cjc+6XHQeRWYFQnwJRZO7TLF9wX5+z5Nxx1LnR6G2sp34
+         v7xZlDZh6+paqqH+ZYDSk55eFauDyqtkBs670Hk7bZDREYNe2uKNn8RGNKJYBG6kBc7b
+         ZwpMyANWS1bsGtjDlDADPymW/VinCXy87NnU12cKo2gzs619xhpaq+WYs4uyetAVHsGo
+         8eDHRkoiXPqX2DfHVbBosO5kU8ZTZ47NVc5Lzx1zmQigoW3hqMyJL6Y2HmjREFWEIe6w
+         wOAg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:from:to:subject:date:content-transfer-encoding
+         :content-disposition:mime-version;
+        bh=4qOkbHvAOEAf1+EFTvg/sJL8fuSYhSL+qe4vxy2dW/I=;
+        b=o2vXYjeoPIHCx1NVhn7kt/jWhOMizNwDt8fbxfnvSCUjfIQWmwBjvhig96nOVt6koq
+         WVXTR0lVEH5BzvWCRW9PZWE94au17waUKPBHPeNY065JfeWY/qhQxJvPSHrgMpsz0t71
+         E8k6ElVq6CI6yF7U4gywf8g5casr9kra1BqnljXJcsMpxjVYi8WNwwTAgoJTIPLk2T2/
+         tNCTpXix/rV46TqjFRnkD3nSI77YvNBVFDSJpmIsbfEKAIXpdIlK1GIHBEfKstYNSua8
+         qHrgUdY+YXfhgUE4A8UZbvNzh0TdGCqzzR7p1jqbv6uAsEs1C7XM9HP8tRV2rxt3JmQx
+         /M6g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of noreply@adum.fr designates 162.38.101.229 as permitted sender) smtp.mailfrom=noreply@adum.fr
+Return-Path: <noreply@adum.fr>
+Received: from mailhub-out2.univ-montp2.fr (mailhub-out2.univ-montp2.fr. [162.38.101.229])
+        by mx.google.com with ESMTPS id b4si12851062wmj.44.2019.11.16.16.19.31
+        for <aghilesdjoudi@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 16 Nov 2019 16:19:32 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@adum.fr designates 162.38.101.229 as permitted sender) client-ip=162.38.101.229;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of noreply@adum.fr designates 162.38.101.229 as permitted sender) smtp.mailfrom=noreply@adum.fr
+Received: from zunobox.assocontact.clients.teambox.fr ([162.38.120.32])
+	by mailhub-out2.univ-montp2.fr (8.15.1/8.15.1) with ESMTPS id xAH0JV9N026129
+	(version=TLSv1.2 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256 verify=FAIL);
+	Sun, 17 Nov 2019 01:19:31 +0100
+Received: from adum-2019.clients.teambox.fr (unknown [192.168.100.5])
+	(using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by zunobox.assocontact.clients.teambox.fr (Postfix) with ESMTPSA id 0A000E776B7;
+	Sun, 17 Nov 2019 01:19:31 +0100 (CET)
+	(envelope-from noreply@adum.fr)
+Received: by teambox.adum-2019.clients.teambox.fr (Postfix, from userid 0)
+	id C76D8415F10C; Sun, 17 Nov 2019 01:19:30 +0100 (CET)
+MIME-Version: 1.0
+Content-Disposition: inline
+Content-Transfer-Encoding: binary
+Content-Type: text/html; charset=ISO-8859-1
+X-Mailer: MIME::Lite 3.023 (F2.85; T1.26; A2.14; B3.15; Q3.13)
+Date: Sun, 17 Nov 2019 01:19:30 +0100
+Subject: =?UTF-8?B?W1JBUFBFTF0gSW5zY3JpcHRpb24gw6AgbGEgZm9ybWF0aW9uIDogTU9ETyA2IC0=?=
+  =?UTF-8?B?IEV4cG9zZXIgc2FucyBzJ2V4cG9zZXIgOiBtYcOudHJpc2VyIHNhIGNvbW11bmk=?=
+  =?UTF-8?B?Y2F0aW9uIGxvcnMgZGUgc2VzIHByw6lzZW50YXRpb25zIFBvd2VyUG9pbnQ=?=
+To: aghilesdjoudi@gmail.com
+From: Doctorat <noreply@adum.fr>
+Message-Id: <20191117001930.C76D8415F10C@teambox.adum-2019.clients.teambox.fr>
+X-Virus-Scanned: clamav-milter 0.101.2 at mailhub-out2.univ-montp2.fr
+X-Virus-Status: Clean
+
+Bonjour Aghiles DJOUDI,
+
+<br>Vous êtes inscrit à la formation MODO 6 - Exposer sans s'exposer : maîtriser sa communication lors de ses présentations PowerPoint.
+
+<br>La formation commence le 27 novembre 2019
+
+<br>Nous vous demandons d'assister à l'ensemble de la formation afin de ne pas pénaliser d'autres doctorants que nous n'avons pu inscrire par manque de place.
+
+<br>Les doctorants ne se présentant pas le jour de la formation ne seront pas prioritaires pour les autres formations demandées pour l’année en cours. 
+<br>Ci-dessous le calendrier de la formation, merci d'être pontuel:
+<br>Bien cordialement
+    
+    <br>DEPARTEMENT ETUDES DOCTORALES
+    <br>formations.ded@univ-paris-est.fr
+    <br> 
+    <hr>
+    
+    <br>Séance n° 1 : <br>Date : 27-11-2019<br>Horaire : 9h00 à 12h00<br>Intervenant : Jean-Luc PASSIN<br>Lieu : INSPE, Rue Jean Macé, 94380 Bonneuil-sur-Marne<br>Intitulé séance :  Exposer sans s'exposer : maîtriser sa communication lors de ses présentations PowerPoint<br>-------------------------------------------------------<br>Séance n° 2 : <br>Date : 18-12-2019<br>Horaire : 09h00 à 16h00<br>Intervenant : Jean-Luc PASSIN<br>Lieu : INSPE, Rue Jean Macé, 94380 Bonneuil-sur-Marne<br>Intitulé séance :  Exposer sans s'exposer : maîtriser sa communication lors de ses présentations PowerPoint<br>-------------------------------------------------------

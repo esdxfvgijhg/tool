@@ -1,0 +1,34 @@
+#!/bin/sh
+
+
+sudo apt update && sudo apt upgrade
+
+installx git
+installx make
+installx automake
+installx curl
+installx python-pip
+
+installx dirmngr --install-recommends
+installx software-properties-common
+installx apt-transport-https
+
+#Divers
+installx apt-transport-https
+installx dconf-editor
+installx notify-osd
+
+#gsettings set org.gnome.desktop.wm.preferences num-workspaces 8
+#gsettings get org.gnome.desktop.wm.preferences num-workspaces 
+
+sudo usermod -a -G dialout $USER
+
+
+#firefox https://github.com/settings/keys
+#cd ~ && ssh-keygen -t rsa
+
+#keyboard
+#	setxkbmap fr
+#	loadkeys fr
+	
+#sudo dpkg-reconfigure tzdata

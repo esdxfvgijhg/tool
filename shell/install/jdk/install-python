@@ -1,0 +1,32 @@
+#!/bin/sh
+
+file=`dirname $0`
+
+installx $(apt-cache pkgnames python3- | grep -Fvx -f $file/python3.txt)
+
+installx $(apt-cache pkgnames python- | grep -Fvx -f $file/python.txt)
+
+#Scikit-learn
+	sudo pip install -U scikit-learn
+	installx build-essential python-dev python-numpy python-numpy-dev python-scipy libatlas-dev g++ python-matplotlib ipython
+	installx build-essential python3-dev python3-numpy python3-numpy-dev python3-scipy libatlas-dev g++ python3-matplotlib ipython
+
+#Jupiter
+sudo apt update
+installx build-essential python-dev unzip python-numpy python-matplotlib
+installx python-pip python-scipy python-h5py
+sudo pip install jupyter
+
+#Tanserflow
+	sudo pip3 install celery tensorflow keras matplotlib numpy sklearn
+
+#Sentillo
+	installx python-pip
+	sudo pip install --upgrade pip
+	sudo pip install paho-mqtt
+	sudo python -m pip install pyserial
+	sudo python -m pip install networkx
+
+sudo pip install neurolab
+sudo pip3 install -I urlscan
+sudo pip install -I urlscan

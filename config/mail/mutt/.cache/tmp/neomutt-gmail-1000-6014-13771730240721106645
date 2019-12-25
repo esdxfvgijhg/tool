@@ -1,0 +1,170 @@
+Delivered-To: aghiles.djoudi@esiee.fr
+Received: by 2002:ab3:5193:0:0:0:0:0 with SMTP id x19csp617251ltg;
+        Sun, 3 Nov 2019 07:42:48 -0800 (PST)
+X-Google-Smtp-Source: APXvYqxkBkEZXf7ZrtpMH6kNL874ETM5Pt/dIzwq4B35KziCF2vXdMPI+EtKLD9Ki+hQ5kvNXHK0
+X-Received: by 2002:a5d:570a:: with SMTP id a10mr9093106wrv.107.1572795768768;
+        Sun, 03 Nov 2019 07:42:48 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1572795768; cv=none;
+        d=google.com; s=arc-20160816;
+        b=wa1AVYsTOJgP1tUJJqCGQUuQQ8wFOaWuFeBhoWYBEunQURRkddFRH03zb2YRSX/NPZ
+         Fz5cITxBBRr8eJivOvCRdT1ESmd1PU38CH1JTy0YeDbLgHvRUl9kIN1HNn5Zv8EzrdXg
+         wgGs7cRiBWbK8Wm3ZstoJ45EgcBH9oQcmCf/lnpUIMPyggQbSGqZOciO1WAp7OU7DC8Y
+         DEdQEbieT24U9H7blnNA4Dwvpc/vxA7dfzAH8WEjeQdrnHfI/0uqf5cBTTl8NEg42uFN
+         IU6LjB549vLvXtMOvS5bku31ZZQ3Ui/n1VvsaRCbHqdPcXoYAR1SiexUfMJRONR0gzPE
+         A+5Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:list-subscribe:list-post:list-owner:list-help
+         :list-archive:list-id:sender:precedence:precedence:errors-to
+         :reply-to:subject:mime-version:user-agent:date:message-id:cc:to:from
+         :ironport-phdr:delivered-to;
+        bh=y9ChhGdxCvG2ONK9H9hdj1ElW08e5/FwRRqMZUmbnFY=;
+        b=d/vdYEi3h6a7rl2wfGijkvB382xyN9etPyW5sXVs2c7HcuVeqq7+6e37u4N7tWG4SD
+         65PZJQYDdtXf52TSex2k3dWIiT4ZdimSrPr87DYzCQCXypiUIyafQ6emc39MA6Hsmq1E
+         urbAefKCNuJggHTqs58NF5ELlGb/rhm1gMW3PCgeSu/P6FBprqT38SVTqnOPl9ZxtUFz
+         VZuicxLJDK2cRFJgmb0IdInBEZOFia9h2jvg6h9bzkJfSZ0LWn0UFHZVTEsckR0gpHrr
+         1N8FIEjbwVa2OssSkDxZvZF6JM6qL1cAzdbpSkOF7OUWYe1EwKfc/W0lJ1ChO5szur4Y
+         tazw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of iot-lab-users-owner@inria.fr designates 192.134.164.83 as permitted sender) smtp.mailfrom=iot-lab-users-owner@inria.fr;
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=telecom-paristech.fr
+Return-Path: <iot-lab-users-owner@inria.fr>
+Received: from mail2-relais-roc.national.inria.fr (mail2-relais-roc.national.inria.fr. [192.134.164.83])
+        by mx.google.com with ESMTP id y11si14176897wmb.25.2019.11.03.07.42.48
+        for <aghiles.djoudi@esiee.fr>;
+        Sun, 03 Nov 2019 07:42:48 -0800 (PST)
+Received-SPF: pass (google.com: domain of iot-lab-users-owner@inria.fr designates 192.134.164.83 as permitted sender) client-ip=192.134.164.83;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of iot-lab-users-owner@inria.fr designates 192.134.164.83 as permitted sender) smtp.mailfrom=iot-lab-users-owner@inria.fr;
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=telecom-paristech.fr
+X-IronPort-AV: E=Sophos;i="5.68,263,1569276000"; 
+   d="scan'208";a="410060174"
+Received: from sympa.inria.fr ([193.51.193.213])
+  by mail2-relais-roc.national.inria.fr with ESMTP; 03 Nov 2019 16:42:47 +0100
+Received: by sympa.inria.fr (Postfix, from userid 20132)
+	id DADA87ED1F; Sun,  3 Nov 2019 16:42:47 +0100 (CET)
+X-Original-To: iot-lab-users@sympa.inria.fr
+Delivered-To: iot-lab-users@sympa.inria.fr
+Received: from mail2-relais-roc.national.inria.fr (mail2-relais-roc.national.inria.fr [192.134.164.83])
+	by sympa.inria.fr (Postfix) with ESMTPS id C0D6B7ED1F;
+	Sun,  3 Nov 2019 16:42:42 +0100 (CET)
+Authentication-Results: mail2-smtp-roc.national.inria.fr; spf=None smtp.pra=martins@telecom-paristech.fr; spf=Pass smtp.mailfrom=SRS0=0OBr=Y3=telecom-paristech.fr=martins@mx3.nameshield.com; spf=Pass smtp.helo=postmaster@mx3.nameshield.com
+IronPort-PHdr: =?us-ascii?q?9a23=3Ah5CoLRcYIs4eeVW2vaPcMQMglGMj4u6mDksu8pMi?=
+ =?us-ascii?q?zoh2WeGdxcWyYR7h7PlgxGXEQZ/co6odzbaP6Oa5ADVLsc7JmUtBWaQEbwUCh8?=
+ =?us-ascii?q?QSkl5oK+++Imq/EsTXaTcnFt9JTl5v8iLzG0FUHMHjew+a+SXqvnYdFRrlKAV6?=
+ =?us-ascii?q?OPn+FJLMgMSrzeCy/IDYbxlViDanbr5+MRu7oR/MusULnIduJaU8xgfUqXZUZu?=
+ =?us-ascii?q?pawn9lK0iOlBjm/Mew+5Bj8yVUu/0/8sNLTLv3caclQ7FGFToqK2866tHluhnF?=
+ =?us-ascii?q?VguP+2ATUn4KnRpSAgjK9w/1U5HsuSbnrOV92S2aPcrrTbAoXDmp8qlmRAP0hC?=
+ =?us-ascii?q?oBKjU09nzchM5tg6JBuB+vpwFxzZDXbo+bOvVxcb/Sc9wBSGpdXMtcTTBNDp+y?=
+ =?us-ascii?q?YoYNCecKIOZWr5P6p1sLtRawHwmsBOLryj9Jnn/2xbM12PkmHw7cxgwgA9MOsH?=
+ =?us-ascii?q?LPrN7oM6oSVPq6zLPUzTXCafNWwizw6JTWfRAlv/6DQbVwcc/IxUk3DQzFlFSQ?=
+ =?us-ascii?q?qZf5PzyLyusNs3KX7+R6Ve+2jWMstgJ/oiC3y8ovl4XFnIYYxk7e+Sh6z4s5P8?=
+ =?us-ascii?q?C0RUpmbdK8DpdfrT2WO5ZzT8w+WG5kpDo2x7gatpKleSUKxogrywLaZvCafYWH?=
+ =?us-ascii?q?/BfuWemTLDhjhX9ofa+wiAiy/Ee9z+DxUsm53VJOoydDj9LCrGoC1wbJ5ciCUv?=
+ =?us-ascii?q?Z9/lmu2TKI1w3L7+FFLk45mbDdK5E7x74/iIETsUTCHiDonEX5kbWaeVkj+uit?=
+ =?us-ascii?q?8+jnY7PmqYGAN4JsiQzyL74il8ihDegiMQUDUHKX9fm42bH+5UH5Ra9Fjvwykq?=
+ =?us-ascii?q?nXqpDaIsEbq7akDQFJz4gv9w6yAyu/3tkFh3kKNFBKdRyfgoj1JV7OJO73Auu4?=
+ =?us-ascii?q?g1SpiTtr3+rJPqfgApXWMnjMjqvufbZn505S0go+1dVf6IhOCrEdIfLzXFTxuc?=
+ =?us-ascii?q?fdDh42PQG42eDnB8941owAQmKPAq6ZP73WsVCV/O4gP+6MZIoNtDbnN/cl/+Lu?=
+ =?us-ascii?q?jWM+mVIFfKmp2ocXZGm8Hvt8OEqVeGDjjcoEEWcLuAozV/fqiV2HUT5LfXm+Ra?=
+ =?us-ascii?q?M85jchCIKnF4jPXI6tgKaZ1iehApJWfnxGCkyLEXrwdoWEXOsMZDuWIsB7iTMI?=
+ =?us-ascii?q?TKWhS5Q/2hG0rw/30KFnL+rR+i0Ar53vztl15+vJlREz7zN4Fcqd03veB11zyy?=
+ =?us-ascii?q?kVXDIsx4h+plA4zl6Jl6l+jfsSXYhO/P5TSS87MoKZy+VwTdH0VAWXLfmTT1Pz?=
+ =?us-ascii?q?etWnBTApVt955tYUf0d7AJ32ixnZwyusGJcJmriGD5sxt7rVxXnqO8t2yzDIzv?=
+ =?us-ascii?q?9y3BEdXsJTODj+1eZE/A/JCtuRyhTLp+ORba0ZmRX12iKGxGuKsltfVVQoA6DV?=
+ =?us-ascii?q?BjYZb07bttT460fOCbSpDOZ+a1cT+Yu5MqJPL+bRoxBeXv65YobCbma8kGC1QA?=
+ =?us-ascii?q?6B3LKXcIfheyMTxneFURVWo0Uo5X+DcDMGKGKhrmbZVmQ8EEK0JUXl9ORlqHK2?=
+ =?us-ascii?q?SkNyxAaPPRRs?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A0BcGAAI9b5dSb9UXFFlHgELHIF/gTUCA?=
+ =?us-ascii?q?RFVJmY2HwMHCIRTiCVeh3OZUROBcAEDATkCAQGIWgYBBDgCDQIOAQEEAQEBAgE?=
+ =?us-ascii?q?CAwQBBgEBFhcGhWkLgjsigx4VQTUCJgJDAhoNCAEBgx6CeAEDsD2BMhSFOoUEg?=
+ =?us-ascii?q?Q4mAwEBjCiBf4E4DIcqg0iCXgSWOog0jwSBP2+CM5J9IYIsAYQ1kwOGQogAmzB?=
+ =?us-ascii?q?PgWMzGggfEYMoYBSRTUEBgTUjjUYBAQ?=
+X-IPAS-Result: =?us-ascii?q?A0BcGAAI9b5dSb9UXFFlHgELHIF/gTUCARFVJmY2HwMHCIR?=
+ =?us-ascii?q?TiCVeh3OZUROBcAEDATkCAQGIWgYBBDgCDQIOAQEEAQEBAgECAwQBBgEBFhcGh?=
+ =?us-ascii?q?WkLgjsigx4VQTUCJgJDAhoNCAEBgx6CeAEDsD2BMhSFOoUEgQ4mAwEBjCiBf4E?=
+ =?us-ascii?q?4DIcqg0iCXgSWOog0jwSBP2+CM5J9IYIsAYQ1kwOGQogAmzBPgWMzGggfEYMoY?=
+ =?us-ascii?q?BSRTUEBgTUjjUYBAQ?=
+X-IronPort-AV: E=Sophos;i="5.68,263,1569276000"; 
+   d="scan'208";a="410060141"
+X-MGA-submission: =?us-ascii?q?MDEYr9VGMcRG7Y/4XfJMb1jJEvIbcE9Plg5mTb?=
+ =?us-ascii?q?oy90O3T7rnpIkmIzNeKmXgvAa5yh4N2sQa8LxuZMFdxs15LgZWMkca9r?=
+ =?us-ascii?q?BPIGGbLZ+WF+j74lQ3NdTC48givJOtklktqe4kXq99PkSl0anmpsOE8Z?=
+ =?us-ascii?q?I2ejdtRvSEwZgUJx6kldGtdQ=3D=3D?=
+Received: from mx3.perf1.com (HELO mx3.nameshield.com) ([81.92.84.191])
+  by mail2-smtp-roc.national.inria.fr with ESMTP; 03 Nov 2019 16:42:42 +0100
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by mx3.nameshield.com (Postfix) with ESMTP id 6EC9DA8518;
+	Sun,  3 Nov 2019 16:42:41 +0100 (CET)
+X-Virus-Scanned: Mx mail scanner
+Received: from mx3.nameshield.com ([127.0.0.1])
+	by localhost (mx3.perf1.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id FwPYlrRPIlpD; Sun,  3 Nov 2019 16:42:39 +0100 (CET)
+Received: from smtp1.enst.fr (smtp1.enst.fr [137.194.2.138])
+	by mx3.nameshield.com (Postfix) with ESMTP id 31831A8517;
+	Sun,  3 Nov 2019 16:42:39 +0100 (CET)
+Received: from macbookpro-1.home (2a01cb0000c20f00013e47b6de5d9599.ipv6.abo.wanadoo.fr [IPv6:2a01:cb00:c2:f00:13e:47b6:de5d:9599])
+	by smtp1.enst.fr (Postfix) with ESMTPSA id 12854201A2;
+	Sun,  3 Nov 2019 16:42:32 +0100 (CET)
+From: Philippe Martins <martins@telecom-paristech.fr>
+To: "users@iot-lab.info" <users@iot-lab.info>
+Cc: "admin@iot-lab.info" <admin@iot-lab.info>
+Message-ID: <7e0a4b1e-9101-730f-22ed-4c6986ea6775@telecom-paristech.fr>
+Date: Sun, 3 Nov 2019 16:42:31 +0100
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:60.0)
+ Gecko/20100101 Thunderbird/60.9.0
+MIME-Version: 1.0
+Subject: [iot-lab-users] Paris Site
+Reply-To: Philippe Martins <martins@telecom-paristech.fr>
+X-Loop: iot-lab-users@inria.fr
+X-Sequence: 182
+Errors-to: iot-lab-users-owner@inria.fr
+Precedence: list
+Precedence: bulk
+Sender: iot-lab-users-request@inria.fr
+X-no-archive: yes
+List-Id: <iot-lab-users.inria.fr>
+List-Archive: <http://sympa.inria.fr/sympa/arc/iot-lab-users>
+List-Help: <mailto:sympa_inria@inria.fr?subject=help>
+List-Owner: <mailto:iot-lab-users-request@inria.fr>
+List-Post: <mailto:iot-lab-users@inria.fr>
+List-Subscribe: <mailto:sympa_inria@inria.fr?subject=subscribe%20iot-lab-users>
+List-Unsubscribe: <mailto:sympa_inria@inria.fr?subject=unsubscribe%20iot-lab-users>
+Content-type: multipart/mixed; boundary="----------=_1572795764-15530-1179"
+
+This is a multi-part message in MIME format...
+
+------------=_1572795764-15530-1179
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Transfer-Encoding: 7bit
+Content-Language: en-US
+
+Dear IoT-LAB users.
+
+The Paris Site will be shutdown tomorrow morning at 9:30. The platform 
+will be moved
+
+to our new building in Palaiseau. This process will take several weeks.
+
+We will keep you informed about the status of the installation of the 
+platform in the new building and will activate
+
+it as soon as possible.
+
+
+Best regards
+
+--
+
+Philippe Martins
+
+
+------------=_1572795764-15530-1179
+Content-Type: text/plain; charset="UTF-8"
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+
+FIT IoT-LAB users mailing-list - users@iot-lab.info
+Manage your subscription at https://sympa.inria.fr/sympa/info/iot-lab-users
+Post issues at https://github.com/iot-lab/iot-lab/issues
+------------=_1572795764-15530-1179--

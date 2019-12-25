@@ -1,0 +1,30 @@
+#!/bin/sh
+
+#Allegro
+installx liballegro4-dev
+installx gdebi-core
+installx clang-format # C format
+
+#Riot
+	installx libc6 libc6-dev
+	installx openocd
+
+
+#Contiki Tool chain
+	#git clone --recursive https://github.com/contiki-os/contiki.git
+	installx git curl graphviz unzip wget zip build-essential automake gettext automake software-properties-common libc6-dev-i386
+	installx lib32z1 gcc-arm-none-eabi gdb-arm-none-eabi gcc libc6-i386 net-tools 
+#	lib32ncurses5 gcc-msp430
+	sudo apt -y -o Dpkg::Options::="--force-overwrite" install gdb-arm-none-eabi
+	installx openjdk-8-jdk
+	#export PATH=${PATH}:/path/to/arm-none-eabi-gcc
+
+
+#Calcurse
+	installx asciidoc
+	installx autopoint
+
+#6lbr
+	installx libncurses5-dev bridge-utils libssl-dev ares.dev libwebsockets.dev uuid.dev
+	installx cmake g++ libc-ares-dev uuid-dev xsltproc docbook-xsl
+

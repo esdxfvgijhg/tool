@@ -1,0 +1,4 @@
+#!/bin/bash
+
+xdg-open https://www.statista.com
+#gnome-terminal --working-directory=Aghiles/Ubuntu -e "sh commit"

@@ -1,0 +1,36 @@
+#!/bin/bash
+
+ps cax|grep i3lock > /dev/null
+if [ $? -eq 0 ]; then
+  exit 0
+fi
+
+lock() {
+  . $HOME/.config/wpg/formats/colors.sh
+
+  killall -SIGUSR1 dunst
+
+   i3lock -n -e -B 8 \
+     --radius=110 --ring-width=5 \
+     --insidecolor=${color0:1:6}ff --line-uses-inside \
+     --insidevercolor=${color0:1:6}ff \
+     --insidewrongcolor=${color0:1:6}ff \
+     --ringcolor=${color7:1:6}ff \
+     --separatorcolor=${color0:1:6}ff \
+     --keyhlcolor=${color0:1:6}ff \
+     --bshlcolor=${color7:1:6}ff \
+     --ringvercolor=${color7:1:6}ff \
+     --ringwrongcolor=${color2:1:6}ff \
+     --timecolor=${color7:1:6}ff \
+     --time-font="Hack Nerd Font" \
+     --timesize=50 \
+     --timestr="%H:%M" \
+     --timepos="ix:iy+15" \
+     --datestr="" \
+     --clock \
+     --indicator
+
+  killall -SIGUSR2 dunst
+}
+
+lock &

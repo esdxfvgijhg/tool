@@ -1,0 +1,10 @@
+{{
+["command"]={2},
+},
+{
+[1]=":tabopen luakit.org",
+[2]=":open google.com",
+[3]=":tabopen luakit.org",
+[4]=":q",
+},
+}

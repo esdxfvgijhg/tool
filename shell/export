@@ -1,0 +1,108 @@
+#!/bin/bash
+
+# FOLDERS --------------------------------------------------
+export AGHILESPATH=/home/aghiles/Aghiles
+
+	export ADMINPATH=$AGHILESPATH/admin
+	
+	export JOBPATH=$AGHILESPATH/job
+		export TEACHINGPATH=$JOBPATH/ece
+		export PROGRAMPATH=$JOBPATH/cod
+		export READINGPATH=$JOBPATH/doc
+		export WRITINGPATH=$JOBPATH/txt
+	
+	export TOOLPATH=$AGHILESPATH/tool
+		export TOOLSPATH=$TOOLPATH/tools
+			export DATAPATH=$TOOLSPATH/data
+
+export TMPPATH=/home/aghiles/Downloads/tmp
+
+# SHELL --------------------------------------------------
+export PATH=$(find $TOOLPATH/shell/ -type d -printf "%p:")$PATH
+#export PATH=$PATH:$(du "$TOOLPATH/scripts/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')
+
+# TOOLS --------------------------------------------------
+export PATH=$TOOLSPATH/matlab/bin:$PATH
+export PATH=$TOOLSPATH/data:$PATH
+export PATH=$TOOLSPATH/zotero:$PATH
+export PATH=$TOOLSPATH/packages:$PATH
+export PATH=/home/aghiles/.local/share/nautilus/scripts:$PATH
+export PATH=/home/aghiles/Downloads/Software/omnetpp-5.5.1/bin:$PATH
+export PATH=/usr/local/wsnet-2.0/bin:$PATH
+export PATH=/home/aghiles/.vim/bundle/vim-live-latex-preview/bin:$PATH
+export PATH="/usr/local/bin:$PATH"
+export PATH=/usr/local/opt/ruby/bin:$PATH
+export PATH=/usr/local/opt/curl/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=~/.config/nvim/bundle/vim-live-latex-preview/bin:$PATH
+export MANPATH=/usr/local/share/man:$MANPATH
+
+# APP --------------------------------------------------
+export EDITOR="nvim"
+export VISUAL="pager"
+export PAGER="less"
+export TERMINAL="tilix"
+export BROWSER="qutebrowser"
+export READER="evince"
+export FILE="ranger"
+
+export BIB="$HOME/Documents/LaTeX/uni.bib"
+export REFER="$HOME/Documents/referbib"
+
+export SUDO_ASKPASS="$HOME/.local/bin/tools/dmenupass"
+export NOTMUCH_CONFIG="$HOME/.config/notmuch-config"
+export GTK2_RC_FILES="$HOME/.config/gtk-2.0/gtkrc-2.0"
+
+
+# SYSTEM --------------------------------------------------
+export DISABLE_AUTO_TITLE=true
+export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
+export COPYFILE_DISABLE=true
+#export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+export HISTSIZE=HISTFILESIZE= # Infinite history
+export SHELL=/usr/local/bin/zsh
+export LC_ALL=fr_FR.UTF-8
+export LANG=fr_FR.UTF-8
+export LC_CTYPE=$LANG
+
+# LATEX --------------------------------------------------
+export TEXINPUTS=.:~/.config/latex:$TEXINPUTS
+#WSNET --------------------------------------------------
+export WSNET_MODDIR=/home/aghiles/Aghiles/Program/boards/simulation/wsnet/lib
+# SDN ---------------------------------------------------
+export ONOS_ROOT="$TOOLSPATH/sdn/onos"
+source $ONOS_ROOT/tools/dev/bash_profile
+#NS3 --------------------------------------------------
+waf=/home/aghiles/Downloads/bin/ns-3/
+NetAnim=/home/aghiles/Downloads/bin/ns-3/src/netanim/
+PATH=$PATH:$waf:$NetAnim
+# node --------------------------------------------------
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+
+# less/man colors --------------------------------------------------
+export LESS=-R
+export LESS_TERMCAP_mb="$(printf '%b' '[1;31m')"; a="${a%_}"
+export LESS_TERMCAP_md="$(printf '%b' '[1;36m')"; a="${a%_}"
+export LESS_TERMCAP_me="$(printf '%b' '[0m')"; a="${a%_}"
+export LESS_TERMCAP_so="$(printf '%b' '[01;44;33m')"; a="${a%_}"
+export LESS_TERMCAP_se="$(printf '%b' '[0m')"; a="${a%_}"
+export LESS_TERMCAP_us="$(printf '%b' '[1;32m')"; a="${a%_}"
+export LESS_TERMCAP_ue="$(printf '%b' '[0m')"; a="${a%_}"
+
+## Start graphical server if i3 not already running.
+#[ "$(tty)" = "/dev/tty1" ] && ! pgrep -x i3 >/dev/null && exec startx
+## Switch escape and caps if tty:
+#sudo -n loadkeys ~/.local/bin/ttymaps.kmap 2>/dev/null
+
+
+
+
+
+
+
+
+
+
+
+
+

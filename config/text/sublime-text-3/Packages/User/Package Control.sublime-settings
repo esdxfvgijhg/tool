@@ -1,0 +1,48 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"AlignTab",
+		"AutoAligner",
+		"ColorSchemeEditor",
+		"E-Mail",
+		"EML (E-Mail)",
+		"External Command",
+		"External_Programs",
+		"ExternalTools",
+		"File Navigator",
+		"FileBrowser",
+		"FileFinder",
+		"FileList",
+		"FileManager",
+		"FileSystem Autocompletion",
+		"FilterPipes",
+		"FolderFiles",
+		"Gmail",
+		"LanguageTool",
+		"LaTeX Blindtext",
+		"LaTeX Snippets",
+		"LaTeXSmartQuotes",
+		"LaTeXTools",
+		"Non Text Files",
+		"OpenedFiles",
+		"OpenPath",
+		"Package Control",
+		"PackageResourceViewer",
+		"QuickSearchEnhanced",
+		"ShellCommand",
+		"SnippetManager",
+		"StatusMessage",
+		"Theme - Cobalt2",
+		"Theme - DefaultPlus"
+	],
+	"repositories":
+	[
+		"https://github.com/greneholt/SublimeExternalCommand/",
+		"https://github.com/greneholt/SublimeExternalCommand.git"
+	]
+}

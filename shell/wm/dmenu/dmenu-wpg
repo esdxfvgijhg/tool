@@ -1,0 +1,11 @@
+#!/bin/bash
+
+dmenu=$HOME/.config/Scripts/dmenucolor
+
+pgrep -x dmenu && exit
+
+walls=$(wpg -l)
+[[ "$walls" = "" ]] && exit 1
+chosen=$(echo "$walls"|$dmenu -i -p "Wallpapers:"|awk '{print $1}')
+[[ "$chosen" = "" ]] && exit 1
+setbackground $chosen wal

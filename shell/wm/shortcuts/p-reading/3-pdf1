@@ -1,0 +1,12 @@
+#!/bin/sh
+
+INPUTb=`xsel`
+INPUT=`echo $INPUTb | tr -d '\n'`
+echo $INPUT
+
+paper="${INPUT#* }"
+
+cd $READINGPATH/iot/storage
+echo $paper
+evince "$paper"
+

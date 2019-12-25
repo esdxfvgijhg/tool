@@ -1,0 +1,12 @@
+#!/bin/bash
+
+line="$(amixer sget Master | grep 'Right:')"
+
+stat="$(echo $line | awk -F'[][]' '{ print $4 }')"
+level="$(echo $line | awk -F'[][]' '{ print $2 }')"
+
+if [[ "$stat" == "off" ]]; then
+  echo "婢 0%"
+else
+  echo "墳 $level"
+fi

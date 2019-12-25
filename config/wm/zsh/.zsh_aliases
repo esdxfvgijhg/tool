@@ -1,0 +1,193 @@
+#!/usr/bin/zsh
+
+USER=`whoami`
+ZSHDIR=$HOME/.oh-my-zsh
+TMUXINATORDIR=$HOME/.tmuxinator
+
+# default applications
+alias -s c=nvim
+alias -s cpp=nvim
+alias -s java=nvim
+alias -s md=nvim
+alias -s tex=nvim
+alias -s log="less -MN"
+
+# aliases for Tmux
+alias tmux='tmux -2'
+alias ta='tmux attach -t'
+alias tnew='tmux new -s'
+alias tls='tmux ls'
+alias tkill='tmux kill-session -t'
+alias mux='tmuxinator'
+alias tmuxlayout='tmux list-windows|sed "s/^.*\[layout \(.*\)\] @.*$/\1/"'
+
+# weather aliases
+wttrf()
+{
+  curl -H "Accept-Language: ${LANG%_*}" wttr.in/"$1"
+}
+wttr()
+{
+  wttrf "$1?u"
+}
+wttrm()
+{
+  wttrf "$1?m"
+}
+wt()
+{
+  wttr "$1?0"
+}
+
+# email aliases
+alias m='neomutt'
+alias msmtpqm='msmtpq --q-mgmt'
+# calendar aliases
+alias kl='khal'
+alias ikl='ikhal'
+alias kla='khal -c $HOME/.config/khal/academicconfig'
+alias ikla='ikhal -c $HOME/.config/khal/academicconfig'
+
+# addressbook aliases
+alias kd='khard'
+alias kdd='khard details'
+
+# sync aliases
+alias oimap='offlineimap'
+alias vd='vdirsyncer'
+alias vds='vdirsyncer sync'
+
+# various app aliases
+alias nb='newsboat'
+alias nf='neofetch'
+alias yt="mpsyt"
+alias vi='nvim'
+alias vim='nvim'
+alias arc='aria2c'
+alias sc='scim'
+
+# pass aliases
+alias pshow='pass show'
+alias pedit='pass edit'
+alias pupdate='pass update -p'
+alias ptail='pass tail'
+alias ptedit='pass tailedit'
+pnew() {
+  pass cp template $1 && pass edit $1
+}
+
+# git aliases
+alias g='git'
+alias gb='git branch'
+alias gcm='git commit --message'
+alias gco='git checkout'
+alias gf='git fetch'
+alias gfc='git clone'
+alias gfm='git pull'
+alias gia='git add'
+alias gp='git push'
+alias gr='git rebase'
+alias gS='git submodule'
+alias gSa='git submodule add'
+alias gSi='git submodule init'
+alias gSI='git submodule update --init --recursive'
+alias gws='git status --short'
+alias gwS='git status'
+alias glv="git log --graph --pretty=format:'%h - %d %s (%cr) <%an>' | nvim -R -c 'set hidden nowrap keywordprg=:enew\ \|\ terminal\ \git\ --no-pager\ show | nnoremap q :bd!<cr>' -"
+# git pull, merge master into branch
+gpmm() { git checkout $1 && git pull && git merge master && git push }
+
+# dirs aliases
+da() { pushd $1 > /dev/null && dirs -v }
+dr() { pushd +$1 > /dev/null && dirs -v }
+alias db='popd > /dev/null && dirs -v'
+alias dv='dirs -v'
+
+# various utilities
+if [ -x /usr/bin/dircolors ]; then
+  test -r $HOME/.dircolors && eval "$(dircolors -b $HOME/.dircolors)" || eval "$(dircolors -b)"
+  alias ls='ls --color=auto'
+  alias grep='grep --color=auto'
+  alias fgrep='fgrep --color=auto'
+  alias egrep='egrep --color=auto'
+fi
+alias httpstart='python -m http.server 8080'
+alias dmenu='$HOME/.config/Scripts/dmenucolor'
+alias systemctlu='systemctl --user'
+
+# cp -> rsync
+alias cp='rsync -ah --partial --inplace --info=progress2'
+
+alias pip='pip3'
+alias Rupdate='sudo Rscript -e '"'"'update.packages(checkBuilt=TRUE, ask=FALSE, repos="https://cran.rstudio.com")'"'"
+alias chmox='chmod +x'
+alias maketags='ctags -R .'
+alias l='ls'
+alias sl='ls'
+alias ll='ls -alF'
+alias la='ls -A'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias todo='vi $HOME/.todo.md'
+alias makescript="fc -rnl | head -1 >"
+alias histg='history | grep'
+alias cmount='mount | column -t'
+alias meminfo='free -m -l -t'
+alias psg='ps aux | grep'
+alias ipinfo="curl ifconfig.me && curl ifconfig.me/host"
+alias alert='notify-send -i "$([ $? = 0 ] && echo terminal || echo error)" "$(cat $HOME/.zsh_history|tail -n1|cut -d'\'';'\'' -f2-|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias fuck='sudo /usr/bin/zsh -c "$(fc -rnl| head -1)"'
+mcd() { mkdir -p -- "$@"; cd -- "$@";}
+cls() { cd "$1"; ls;}
+crun() { make "$1"; ./$1;}
+backup() { cp "$1"{,.bak};}
+md5check() { md5sum "$1" | grep "$2";}
+
+# function to control web sync services
+websync() { systemctl --user $1 offlineimap-oneshot.timer; systemctl --user $1 vdirsyncer-oneshot.timer }
+
+filetemplate() {
+  template=$1
+  file=$2
+  tempbase=$(basename -- "$template")
+  ext="${tempbase##*.}"
+  if [[ $file != '' ]]; then
+    if [[ ! $file =~ \.$ext$ ]]; then
+      file=$file.$ext
+    fi
+    [ ! -f $file ] && cp $template $file;
+    vi $file;
+  fi
+}
+
+# LaTeX Template aliases
+alias txa="filetemplate $HOME/Documents/latex/templates/article.tex"
+alias txb="filetemplate $HOME/Documents/latex/templates/beamer.tex"
+alias txm="filetemplate $HOME/Documents/latex/templates/mla.tex"
+
+# Markdown Template aliases
+alias mda="filetemplate $HOME/Documents/markdown/templates/article.md"
+alias mdb="filetemplate $HOME/Documents/markdown/templates/beamer.md"
+alias rmda="filetemplate $HOME/Documents/markdown/templates/article.rmd"
+alias rmdb="filetemplate $HOME/Documents/markdown/templates/beamer.rmd"
+
+# C compiling shortcuts for gcc
+gccc() {
+  if [[ $1 =~ \.c$ ]]; then
+    gcc -std=c99 -Wall -pedantic -Wextra -Werror -O2 -g $1 -o ${1%%.*};
+  else
+    echo "$1 is not a c file"
+  fi
+}
+gcclm() {
+  if [[ $1 =~ \.c$ ]]; then
+    gcc -std=c99 -g $1 -o ${1%%.*} -lm;
+  else
+    echo "$1 is not a c file"
+  fi
+}
+
+# unused aliases
+#alias gohome='sudo openvpn --script-security 2 --config $HOME/.openvpn/halter_home.ovpn'
+#alias dataBackup='$HOME/backupScript/backup.sh'
+#alias dataBackupUmount='$HOME/backupScript/backup.sh && sleep 5 && sudo umount /dev/sdd1'

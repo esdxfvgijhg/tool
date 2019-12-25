@@ -1,0 +1,11 @@
+#!/bin/sh
+
+
+mkdir $TMPPATH
+
+# Arduino
+mkdir $TOOLSPATH/arduino
+cd $TOOLSPATH/arduino
+#Arduino-cli
+#	wget https://downloads.arduino.cc/arduino-1.8.9-linux64.tar.xz -P $TOOLSPATH/arduino
+curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | BINDIR=$TOOLSPATH/arduino sh

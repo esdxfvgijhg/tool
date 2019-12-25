@@ -1,0 +1,34 @@
+#!/bin/bash
+
+file=$1
+filename="${file%.*}"
+
+ls /dev | grep ACM
+	read -p "Port: " usb
+	echo $usb
+	
+	options=("arduino-uno" "..." "..." "Quit")
+	select opt in "${options[@]}"
+	do
+		  case $opt in
+		      "arduino-uno")
+		          targ="arduino-uno"
+		          ;;
+		      "...")
+		          echo "you chose choice $REPLY which is $opt"
+		          ;;
+		      "...")
+		          echo "you chose choice $REPLY which is $opt"
+		          ;;
+		      "Quit")
+		          break
+		          ;;
+		      *) echo "invalid option $REPLY";;
+		  esac
+	
+	make flash TARGET=$targ PORT=/dev/ttyACM$usb
+	make term  TARGET=$targ PORT=/dev/ttyACM$usb
+
+	done
+
+#arduino-uno

@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+i3-msg reload > /dev/null
+systemctl --user restart dunst.service
+qutebrowser_reload

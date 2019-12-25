@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo mv /var/lib/dpkg/info/$1.* /tmp

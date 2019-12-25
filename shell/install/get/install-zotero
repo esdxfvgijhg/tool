@@ -1,0 +1,11 @@
+#!/bin/sh
+
+
+mkdir $TMPPATH
+
+# Zotero
+wget https://download.zotero.org/client/release/5.0.66/Zotero-5.0.66_linux-x86_64.tar.bz2 -O $TMPPATH/Zotero-5.0.66_linux-x86_64.tar.bz2
+extract $TMPPATH/Zotero-5.0.66_linux-x86_64.tar.bz2
+mv $TMPPATH/Zotero-5.0.66_linux-x86_64.tar/* $TOOLSPATH/zotero
+#run-parts --regex '^install-\.*' $TOOLPATH/scripts/install/program
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#for file in *.desktop; do     mv "$file" "$(basename "$file" .desktop).w"; done
+
+for f in $1; do     mv "$f" "$2"; done
+
+#for file in *.png; do mv "$file" "${file/_h.png/_half.png}"; done

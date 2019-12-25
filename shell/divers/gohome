@@ -1,0 +1,7 @@
+#!/bin/bash
+
+pass OpenVpn/micah | sudo openvpn --config ~/.openvpn/micah.ovpn --askpass /dev/stdin --script-security 2 \
+  --setenv PATH '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin' \
+  --up /etc/openvpn/scripts/update-systemd-resolved \
+  --down /etc/openvpn/scripts/update-systemd-resolved \
+  --down-pre --dhcp-option DOMAIN-ROUTE .

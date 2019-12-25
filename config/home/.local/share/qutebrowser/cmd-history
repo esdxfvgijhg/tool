@@ -1,0 +1,88 @@
+:open google.com
+:q
+:quickmark-load -t 
+:zotero
+:set aliases zotero "spawn --userscript zotero"
+:spawn --userscript
+:open-ed
+:config-sou
+:q
+:zotero
+:set aliases zotero "spawn --userscript zotero"
+:spwan --zotero
+:spwn --zotero
+:spawn --zotero
+:open -t https://www.google.com/
+:open -t 
+:set aliases Zotero "hint links userscript zotero"
+:zotero
+:set aliases Zotero "hint links userscript zotero"
+:set aliases zotero "spawn --userscript zotero"
+:spawn --userscript zotero
+:set aliases zotero "spawn --userscript zotero"
+:spawn --userscript zotero
+:hint links userscript zotero
+:set aliases Zotero "hint links userscript zotero"
+:set aliases Zotero 'hint links userscript zotero'
+:set aliases zotero "spawn --userscript zotero"
+:spawn --userscript zotero
+:open https://start.duckduckgo.com/ogle 
+:spawn --userscript zotero
+:hint links userscript zotero
+:spawn --userscript zotero
+:open https://dacemirror.sci-hub.tw/proceedings-article/591a2bc59a3c7204e5516a6def27e03c/irio2019.pdf?rand=5dd50d534b3d6#view=FitH
+:set aliases zotero "spawn --userscript zotero"
+:spawn --userscript zotero
+:set aliases zotero "spawn --userscript zotero"
+:spawn --userscript zotero
+:open
+:spawn --userscript zotero
+:q
+:spawn --userscript zotero
+:hint links userscript zotero
+:spawn --userscript zotero
+:spawn --userscript qute-pass
+:messages
+:q
+:spawn --userscript qute-pass
+:messages
+:spawn --userscript qute-pass
+:messages
+:open connect.axa.fr
+:spawn --userscript qute-pass
+:messages
+:spawn --userscript qute-pass
+:search
+:search souve
+:search vos
+:spawn --userscript qute-pass
+:config-edit
+:pass
+:message-info foo
+:âss
+:pass
+:config-source
+:pass
+:config-source
+:zotero
+:Zotero
+:zotero
+:config-source
+:open connect.axa.fr
+:open youtube.com
+:q
+:open https://www.google.fr/maps/place/AXA+Assurance+LUDOVIC+ROCHE/@48.8488191,2.296592,19z/data=!4m8!1m2!2m1!1saxa+paris!3m4!1s0x0:0xa4ff493523a331f5!8m2!3d48.8486088!4d2.2968721
+:q
+:open elseiver
+:open https://www.mendeley.com/suggest/?pageLoadId=26549b04-c057-4799-b8a2-49fbf6bed38f&ref=raven&highlight=4306372c-4a44-3da9-8a8f-7612e5a61d84&highlightTrace=AAABoHsLRfED9SPtz6zJ9KZgU4LLGFyiNwa-KdSY5mZtpptSko7BD-mwyXRShprOrnd7RkyAc6xnfQ2fsnWqPcTLpMwu2xQU0gfu9XSnq5dpdpFGgCUSM557cDvRMI6T7bJe21iDpLqP8DFlkFItckVjCuDSSH19eZsrRtucdx9s4J6KQqIxqY9GYNAjx4v_ha_YZBR02CswL9HFWNDdeoIL056BgkHNv4RvN1SFNlvkfS-rG1h72oBL14thZIYhB2yyatzAEO4u4Jv-2NoZ54lJXxtiwES76TQeqrQ97gC3q-j7Vll0vRceh74lEdo2cECmCd9Yt2sjZ0H_si3mKN5w84MK4cZ7ElpJ1KiIankPLubXtT2hPIHYglkJOtToO-mN0WqwkPPkZE1A3HzTHr2NNHKxYqoy6q-NmnjibADeEijaj-ttEhAKLPSfdjRpmfo3sO1Ob0XMmeLB5NBQ1hVO4eSk8KK_u9gfT0b-Wwb5aDNC5eBjxo_ygZaQq4I9Kz9HKLII-iy1SmJh04Gc62vCv-xPRi44twK74M77SezVLNrPQB6YWTR7m07M-ywC3W0HnXfXwi8&dgcid=raven_md_suggest_email
+:open https://academic.microsoft.com/home
+:q
+:open overleaf
+:open https://login.oracle.com/mysso/signon.jsp
+:open https://login.oracle.com
+:open https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html
+:q
+:open sigfox ns3
+:q
+:open google.com
+:q

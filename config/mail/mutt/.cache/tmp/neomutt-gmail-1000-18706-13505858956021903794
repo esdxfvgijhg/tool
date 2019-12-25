@@ -1,0 +1,741 @@
+Delivered-To: aghilesdjoudi@gmail.com
+Received: by 2002:ab3:5a8c:0:0:0:0:0 with SMTP id l12csp2112379lte;
+        Sun, 27 Oct 2019 08:15:46 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqzsfnS1tDqQH29DIuBBm5zgglWbxejcW+jxWQbjF1piDsYq5hmzGdLzFeVT0hLZt3510d32
+X-Received: by 2002:a05:620a:131b:: with SMTP id o27mr185777qkj.281.1572189346035;
+        Sun, 27 Oct 2019 08:15:46 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1572189346; cv=none;
+        d=google.com; s=arc-20160816;
+        b=H+4hMB/0a9XJV41AhkBRI3eZKsWWqXvhpq7xJ2N31l4CyeRSbIr0XmWhscPy6OKPTt
+         Ly0AlVZK5EsX7hzIClLzltsZKoWpsF6XnPHNxFCU+sxsHiwA1W8OQfeSWWetxl1lg/wt
+         uCFS9CfeV6sdnNees+CUCl/a9zqcCLLz7bbjqg0epuy+trMoP3aX6jJuauHhGPOcBDBp
+         oEB2dOgR0yQE64B/5HxmfzTRhGtWmJHa+JA0H+7XOwpJIYr4lxKLo8KUrli4U5GUgnqf
+         h24NyYfWoxM+9FMNCyTPwDxiWI2cRL66VT5ky4lfnpCVj8sHumuWK8Cy0/6ryelPC5f9
+         qd2w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:content-transfer-encoding:mime-version:subject
+         :message-id:to:from:date:dkim-signature:dkim-signature;
+        bh=ORVEGLnUXV+06YrjYJxs8O6oNdXf0gDq8wUJc1NWEg8=;
+        b=UThDEugx9dHeAc/axtWv/UiXo0xtBzlRF3j5zVPY2se9ADQhMpV9Mq/oYbRzjjyUoZ
+         5ipc3M9zGrTCYHtcEP9sOaumheXVuqlHEUZ6JtN7h3U1gaGflFUdLNc1rF6tBeASMzmc
+         J8flCYC6dm6OG4Lk7koQ1c4/dBlAUhQPmyMfLxE20t47fLWLSWCEsVHwnlFOUdJEa3W7
+         xynyi8g32dmlJzybCEbppFHvFRq02XfQvQLpgRHCr3QAjwSe+VJDjlk3OtHgIRErMGg2
+         zR3TKGZqgzk5Aw22W6o/NTXjOYjRomn1JMF9qYz9DPhlxNRIH/e/IlJD6YGSaeGqITip
+         Q5SQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@notification.elsevier.com header.s=cepxspr2ynbt6bs3gqpsw6h6trz7f3vw header.b=p7k0hkrx;
+       dkim=pass header.i=@amazonses.com header.s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw header.b=QjOMUl8m;
+       spf=pass (google.com: domain of 0100016e0dc995e2-71103905-71d6-43ad-aa65-c5a4f8535ec6-000000@amazonses.com designates 54.240.10.75 as permitted sender) smtp.mailfrom=0100016e0dc995e2-71103905-71d6-43ad-aa65-c5a4f8535ec6-000000@amazonses.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=elsevier.com
+Return-Path: <0100016e0dc995e2-71103905-71d6-43ad-aa65-c5a4f8535ec6-000000@amazonses.com>
+Received: from a10-75.smtp-out.amazonses.com (a10-75.smtp-out.amazonses.com. [54.240.10.75])
+        by mx.google.com with ESMTPS id i3si4142013qki.69.2019.10.27.08.15.45
+        for <aghilesdjoudi@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Sun, 27 Oct 2019 08:15:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 0100016e0dc995e2-71103905-71d6-43ad-aa65-c5a4f8535ec6-000000@amazonses.com designates 54.240.10.75 as permitted sender) client-ip=54.240.10.75;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@notification.elsevier.com header.s=cepxspr2ynbt6bs3gqpsw6h6trz7f3vw header.b=p7k0hkrx;
+       dkim=pass header.i=@amazonses.com header.s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw header.b=QjOMUl8m;
+       spf=pass (google.com: domain of 0100016e0dc995e2-71103905-71d6-43ad-aa65-c5a4f8535ec6-000000@amazonses.com designates 54.240.10.75 as permitted sender) smtp.mailfrom=0100016e0dc995e2-71103905-71d6-43ad-aa65-c5a4f8535ec6-000000@amazonses.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=elsevier.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=cepxspr2ynbt6bs3gqpsw6h6trz7f3vw; d=notification.elsevier.com;
+	t=1572189345;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding;
+	bh=FXlenfOlG3w9yyaYfh7Divk+2DpQvvSV2hDq8ty3p0Q=;
+	b=p7k0hkrx7AhDYexN8Rmv1aS9I6vu6eESZy+oTZo9irfxMwCdHBj+ipjgzzaAw44d
+	7v8JJQUI8TxcCeiA12P7G2kWsDmZT+vhIllfM8C2uCDdn9PStLyxfW3/VtfVPii2/ZU
+	kOOb5PUMfxt3QfxljTIzAW/Oh++npVqhAxn7ycM8=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw; d=amazonses.com; t=1572189345;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding:Feedback-ID;
+	bh=FXlenfOlG3w9yyaYfh7Divk+2DpQvvSV2hDq8ty3p0Q=;
+	b=QjOMUl8m5Kp8YPGuCH9fBmM/8aauZbEBbGajJ8ReLeRyN1CCKA/Ic3mGzJJZBhPs
+	c6cVjFdAYcrkhiiCjNSJUs4hD8UIJvCAtXCk64lVKZtbD5xkErAglboBVDZHx8H9wH+
+	gHEjzsrjnt0DOwufcRc3nLdE86fmQpkOTOP1R9/Q=
+Date: Sun, 27 Oct 2019 15:15:45 +0000
+From: Mendeley <mendeley@notification.elsevier.com>
+To: aghilesdjoudi@gmail.com
+Message-ID: <0100016e0dc995e2-71103905-71d6-43ad-aa65-c5a4f8535ec6-000000@email.amazonses.com>
+Subject: "Performance evaluation of lora considering..." and more articles
+ on Mendeley
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+X-SES-Outgoing: 2019.10.27-54.240.10.75
+Feedback-ID: 1.us-east-1.WKdLxUtVEKG8Z/TYCfHmqOc+iKAxEI3P94UBv6wDZko=:AmazonSES
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=3D"utf-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1">
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />
+    <title>Mendeley :: Article Recommendations Email</title>
+    <style type=3D"text/css">
+        /* CLIENT-SPECIFIC STYLES */
+        body, table, td, a{-webkit-text-size-adjust: 100%; -ms-text-size-ad=
+just: 100%;} /* Prevent WebKit and Windows mobile changing default text siz=
+es */
+        table, td{mso-table-lspace: 0pt; mso-table-rspace: 0pt;} /* Remove =
+spacing between tables in Outlook 2007 and up */
+        img{-ms-interpolation-mode: bicubic;} /* Allow smoother rendering o=
+f resized image in Internet Explorer */
+
+        /* RESET STYLES */
+        img{border: 0; height: auto; line-height: 100%; outline: none; text=
+-decoration: none;}
+        table{border-collapse: collapse !important;}
+        body{height: 100% !important; margin: 0 !important; padding: 0 !imp=
+ortant; width: 100% !important;}
+
+        /* iOS BLUE LINKS */
+        a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+        }
+
+        /* MOBILE STYLES */
+        @media screen and (max-width: 525px) {
+
+        /* ALLOWS FOR FLUID TABLES */
+        .wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        }
+
+        /* ADJUSTS LAYOUT OF LOGO IMAGE */
+        .logo img {
+        }
+
+        /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+        .mobile-hide {
+        display: none !important;
+        }
+
+        .img-max {
+        max-width: 100% !important;
+        width: 100% !important;
+        height: auto !important;
+        }
+
+        /* FULL-WIDTH TABLES */
+        .responsive-table {
+        width: 100% !important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+        .padding {
+        padding: 10px 5% 15px 5% !important;
+        }
+
+        .padding-meta {
+        padding: 30px 5% 0px 5% !important;
+        text-align: center;
+        }
+
+        .no-padding {
+        padding: 0 !important;
+        }
+
+        .section-padding {
+        }
+
+        /* ADJUST BUTTONS ON MOBILE */
+        .mobile-button-container {
+        margin: 0 auto;
+        width: 100% !important;
+        }
+
+        .mobile-button {
+        padding: 15px !important;
+        border: 0 !important;
+        font-size: 16px !important;
+        display: block !important;
+        }
+
+        }
+
+        /* ANDROID CENTER FIX */
+        div[style*=3D"margin: 16px 0;"] { margin: 0 !important; }
+    </style>
+</head>
+<body style=3D"margin: 0 !important; padding: 0 !important; font-family: 'L=
+ucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-=
+serif;">
+
+<!-- HIDDEN PREHEADER TEXT -->
+<div style=3D"display: none; font-size: 1px; color: #fefefe; line-height: 1=
+px; font-family: Helvetica, Arial, sans-serif; max-height: 0px; max-width: =
+0px; opacity: 0; overflow: hidden;">
+    Discover relevant research: here are your top suggestions for articles =
+you might want to read...
+</div>
+
+<!-- HEADER -->
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+    <tr>
+        <td bgcolor=3D"#FFFFFF" align=3D"center">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0" width=3D"500">
+                <tr>
+                    <td align=3D"center" valign=3D"top" width=3D"500">
+            <![endif]-->
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"max-width: 580px;" class=3D"wrapper">
+                <tr>
+                    <td align=3D"left" valign=3D"top" style=3D"padding: 15p=
+x 20px;" class=3D"logo">
+                        <a href=3D"http://cwhib9vv.r.us-east-1.awstrack.me/=
+L0/http:%2F%2Fwww.mendeley.com%3Fdgcid=3Draven_md_suggest_email/1/0100016e0=
+dc995e2-71103905-71d6-43ad-aa65-c5a4f8535ec6-000000/jMVJI08Vusk29uiN7MPO1FL=
+aI68=3D133" target=3D"_blank" style=3D"text-decoration:none;color:#474747;"=
+>
+                            <img alt=3D"Mendeley" src=3D"http:&#x2F;&#x2F;d=
+3fildg3jlcvty.cloudfront.net&#x2F;email&#x2F;graphics&#x2F;mails&#x2F;raven=
+/logo-black-full.png" width=3D"128" height=3D"25" style=3D"display: inline-=
+block; font-family: Helvetica, Arial, sans-serif; color: #000000; font-size=
+: 16px; vertical-align: middle;" border=3D"0">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor=3D"#F5F5F5" align=3D"center" style=3D"font-size: 12px;"=
+ class=3D"section-padding">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0" width=3D"500">
+                <tr>
+                    <td align=3D"center" valign=3D"top" width=3D"500">
+            <![endif]-->
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"max-width: 580px;" class=3D"wrapper">
+                <tr>
+                    <td align=3D"left" valign=3D"top" style=3D"padding: 15p=
+x 20px; color: #969696; font-size: 12px;">
+                            Discover relevant research and save time.
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->           =20
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor=3D"#F5F5F5" align=3D"center" style=3D"padding-top: 20px=
+;" class=3D"section-padding">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0" width=3D"500">
+                <tr>
+                    <td align=3D"center" valign=3D"top" width=3D"500">
+            <![endif]-->
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"max-width: 580px;" class=3D"responsive-table">
+                <tr>
+                    <td bgcolor=3D"#FFFFFF" style=3D"padding: 20px; color: =
+#404040">
+                        <table width=3D"100%" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0">
+                            <tr>
+                                <td style=3D"font-size: 20px;">Hi Aghiles,<=
+/td>
+                            </tr>
+                            <tr>
+                                <td style=3D"padding-top: 25px; font-size: =
+16px; line-height: 25px;">
+                                =09
+                                =09=09Here are personalised suggestions for=
+ articles to read based on your Mendeley library
+                                =09
+=09=09=09=09=09=09=09=09</td>
+                            </tr>
+                            =20
+                                <tr>
+                                    <td style=3D"padding-top: 25px;">
+                                        <table>
+                                            <tr>
+                                                <td style=3D"padding-bottom=
+: 8px;">
+                                                    <a href=3D"https://cwhi=
+b9vv.r.us-east-1.awstrack.me/L0/https:%2F%2Fwww.mendeley.com%2Fsuggest%2Fra=
+ven%2Ffeedback%3FarticleId=3D69976d20-bdf4-338c-bb5b-939c8e9676d4%26article=
+Trace=3DAAABoO-2wcKzRw-Xp1B9ZcnCfJYRy2wBay5rI1izA2MStLn9Y3SYiwfxuNLVH5pigHW=
+gdFX4uiLHGGf2YZJoiyHhS89mR8nbq9KrUSDbwsLXuaTzqVZhyOidAaftgfYrRHLNZ8dH4J4kBI=
+cHZuhm4Nb32ZPjAVexEfRKfaSY8JKj-2TiakzUI0f2eLEWAfo-OVJA-_-A_28XbZRunu_oTe8hx=
+YIGTXFJUXzzmb1Zzeg41rq0ONXINy1WdEJCpwVfJoT9TDtoEwtdpkl0iPKu7CGT54NBeqv6VoJc=
+pRh7LYAPcRObDVPrFiVmZTvCRCSH_-nbOSdN8nb3txGHXqnfkfU9ZWD4rcdTxvHUAOvjhQpNTAV=
+Y08jF-q6_gxDJx9j-tnxidhyPBmNeCxIEe3wsDG1TMC7veVEzEmdWAj3hh9FJEd3OVRgSCG-Qxi=
+UwyWf-sHVSDbMy0lwj-Orj6vuxJrTO4iTwEY_pqo6NJiDP2ouBDR7zBVjV_Pe4A9DJjFtU_EJz5=
+yUVUS3CB72z1mVKv9JQshVIzbeXQRoSIoKuHCg_O8GzuVmPm2iQbzwlFbG630zm9WIwXwU%26pa=
+geLoadId=3Df9d0588f-8222-4a2d-a49f-7f3e02c53a27%26ref=3Draven%26position=3D=
+1%26dgcid=3Draven_md_suggest_email/1/0100016e0dc995e2-71103905-71d6-43ad-aa=
+65-c5a4f8535ec6-000000/qHQYA4LY4vhUUzL2gbLTvjj5Miw=3D133" _label=3D"title" =
+_type=3D"mail" target=3D"_blank" style=3D"color:#4071A3; font-size: 20px; l=
+ine-height: 150%; font-weight:normal; text-decoration:none; font-family: Ge=
+orgia,serif">
+=09=09=09=09=09=09=09=09=09=09=09=09=09Performance evaluation of lora consi=
+dering scenario conditions
+=09=09=09=09=09=09=09=09=09=09=09=09=09</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style=3D"color: #969696=
+; line-height:120%;padding-bottom: 5px;">
+                                                    <span class=3D"author">=
+Ramon Sanchez-Iborra, Jesus Sanchez-Gomez, Juan Ballesta-Vi=C3=B1as et al.<=
+/span>
+                                                </td>
+                                            </tr>
+=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"color: #969696; padd=
+ing-bottom: 5px;">Sensors (Switzerland) (2018)</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09
+                      =20
+=09=09=09=09=09=09=09=09=09=09=09<!--
+=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"document-abstract" styl=
+e=3D"line-height:150%;padding-top: 4px; font-size: 14;">New verticals withi=
+n the Internet of Things (IoT) paradigm such as smart cities, smart farming=
+, or goods monitoring, among many others, are demanding strong requirements=
+ to the Radio Access Network (RAN) in terms of coverage, end-node=E2=80=99s=
+ power consumption, and scalability. The technologies employed so far to pr=
+ovide IoT scenarios with connectivity, e.g., wireless sensor network and ce=
+llular technologies, are not able to simultaneously cope with these three r=
+equirements. Thus, a novel solution ...</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09-->
+=09=09=09=09=09=09=09=09=09=09=09
+                                            <tr>
+                                                <td>
+                                                    <a class=3D"button-prim=
+ary button-large save-ref-button" href=3D"https://cwhib9vv.r.us-east-1.awst=
+rack.me/L0/https:%2F%2Fwww.mendeley.com%2Fsuggest%2Fraven%2Ffeedback%3Farti=
+cleId=3D69976d20-bdf4-338c-bb5b-939c8e9676d4%26articleTrace=3DAAABoO-2wcKzR=
+w-Xp1B9ZcnCfJYRy2wBay5rI1izA2MStLn9Y3SYiwfxuNLVH5pigHWgdFX4uiLHGGf2YZJoiyHh=
+S89mR8nbq9KrUSDbwsLXuaTzqVZhyOidAaftgfYrRHLNZ8dH4J4kBIcHZuhm4Nb32ZPjAVexEfR=
+KfaSY8JKj-2TiakzUI0f2eLEWAfo-OVJA-_-A_28XbZRunu_oTe8hxYIGTXFJUXzzmb1Zzeg41r=
+q0ONXINy1WdEJCpwVfJoT9TDtoEwtdpkl0iPKu7CGT54NBeqv6VoJcpRh7LYAPcRObDVPrFiVmZ=
+TvCRCSH_-nbOSdN8nb3txGHXqnfkfU9ZWD4rcdTxvHUAOvjhQpNTAVY08jF-q6_gxDJx9j-tnxi=
+dhyPBmNeCxIEe3wsDG1TMC7veVEzEmdWAj3hh9FJEd3OVRgSCG-QxiUwyWf-sHVSDbMy0lwj-Or=
+j6vuxJrTO4iTwEY_pqo6NJiDP2ouBDR7zBVjV_Pe4A9DJjFtU_EJz5yUVUS3CB72z1mVKv9JQsh=
+VIzbeXQRoSIoKuHCg_O8GzuVmPm2iQbzwlFbG630zm9WIwXwU%26pageLoadId=3Df9d0588f-8=
+222-4a2d-a49f-7f3e02c53a27%26ref=3Draven%26position=3D1%26dgcid=3Draven_md_=
+suggest_email%26saveRef=3Dtrue/1/0100016e0dc995e2-71103905-71d6-43ad-aa65-c=
+5a4f8535ec6-000000/BS8hO63qpLY_eGP0GbGa92gcsx8=3D133" style=3D"-ms-text-siz=
+e-adjust: 100%; -webkit-text-size-adjust: 100%; color: #4071A3; font-size: =
+16px; font-weight: normal; text-decoration: none; display: inline-block; le=
+tter-spacing: 1px; margin: 10px 0 0 0; text-align: center; white-space: now=
+rap;">
+                                                       =20
+                                                        <span style=3D"font=
+-size: 20px">+ </span>
+                                                        <span class=3D"hove=
+r-underline">Save reference</span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                           =20
+                                <tr>
+                                    <td style=3D"padding-top: 25px;">
+                                        <table>
+                                            <tr>
+                                                <td style=3D"padding-bottom=
+: 8px;">
+                                                    <a href=3D"https://cwhi=
+b9vv.r.us-east-1.awstrack.me/L0/https:%2F%2Fwww.mendeley.com%2Fsuggest%2Fra=
+ven%2Ffeedback%3FarticleId=3D602f0c9c-7148-3a89-bb9f-bc98551c8825%26article=
+Trace=3DAAABoD3tfBLIIX472ywTXSzq0jfnKZXi_ZhT0Whr3pmG3roU36sD7vGbbqwcO-z_rOM=
+Wi2pffc1mlKV5SbieytW0TZZA7L9Fh8D4kB4rIT7PN6G9ZYpxdhCwQMGKQ4MPpX7vgn5P6Vs_wN=
+bnsvwmcAuudicLFv5OIHpJJ5-3MiiKFRfTyHBb0_AQvUvRc_hSB-lextI7GcLa5StbtvXzX1mmF=
+EmAshJiykxigH4DJjIdnnrW_t87SjJuoKGLnNkcwlNbaeT-7i8VruP7oN_O0_megvVPIznyZK6W=
+CQVpSvmbehh50SlNrfCkFGZ6dNPXt84vxGp2JjMJxyhxdheWCq9_cxuOgkmLrvx0FZsvQLUyWQ_=
+U3u6H_82YAzO9Ss2Wq5WzPbjkYZ_Yx-ARrUNUA8P__vM-3ZqIVeO0bRku-taQp6NP9eaV8I0Clr=
+QeouCtAcggdZqekoa_I7bcw2mhtzjizTurBnabJLPbeCgknKxdgHn5Gxv88yhAqE9BmXjhVaswp=
+I7Y51EskjDuqmnztYvhk3Rla3laSU38DJjY4gqx4y82yv-qcf26j1wMY6usHrOlXuHaAPA%26pa=
+geLoadId=3Df9d0588f-8222-4a2d-a49f-7f3e02c53a27%26ref=3Draven%26position=3D=
+2%26dgcid=3Draven_md_suggest_email/1/0100016e0dc995e2-71103905-71d6-43ad-aa=
+65-c5a4f8535ec6-000000/bI3TCQm5ALzBuvxfUTaKUo28oPg=3D133" _label=3D"title" =
+_type=3D"mail" target=3D"_blank" style=3D"color:#4071A3; font-size: 20px; l=
+ine-height: 150%; font-weight:normal; text-decoration:none; font-family: Ge=
+orgia,serif">
+=09=09=09=09=09=09=09=09=09=09=09=09=09LoRa indoor coverage and performance=
+ in an industrial environment: Case study
+=09=09=09=09=09=09=09=09=09=09=09=09=09</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style=3D"color: #969696=
+; line-height:120%;padding-bottom: 5px;">
+                                                    <span class=3D"author">=
+Jetmir Haxhibeqiri, Abdulkadir Karaagac, Floris Van Den Abeele et al.</span=
+>
+                                                </td>
+                                            </tr>
+=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"color: #969696; padd=
+ing-bottom: 5px;">IEEE International Conference on Emerging Technologies an=
+d Factory Automation, ETFA (2018)</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09
+                      =20
+=09=09=09=09=09=09=09=09=09=09=09<!--
+=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"document-abstract" styl=
+e=3D"line-height:150%;padding-top: 4px; font-size: 14;">LoRa is a long rang=
+e, low power, low bit rate, single hop wireless communication technology. I=
+t is intended to be used for Internet of Things (IoT) networks, where devic=
+es are battery powered and limited bandwidth is needed. In combination with=
+ its scalability and the low end device price, LoRa is a candidate technolo=
+gy for low bandwidth industrial applications with a high number of communic=
+ation devices spread across large areas. The use case for this paper is tak=
+en from the flower industry,...</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09-->
+=09=09=09=09=09=09=09=09=09=09=09
+                                            <tr>
+                                                <td>
+                                                    <a class=3D"button-prim=
+ary button-large save-ref-button" href=3D"https://cwhib9vv.r.us-east-1.awst=
+rack.me/L0/https:%2F%2Fwww.mendeley.com%2Fsuggest%2Fraven%2Ffeedback%3Farti=
+cleId=3D602f0c9c-7148-3a89-bb9f-bc98551c8825%26articleTrace=3DAAABoD3tfBLII=
+X472ywTXSzq0jfnKZXi_ZhT0Whr3pmG3roU36sD7vGbbqwcO-z_rOMWi2pffc1mlKV5SbieytW0=
+TZZA7L9Fh8D4kB4rIT7PN6G9ZYpxdhCwQMGKQ4MPpX7vgn5P6Vs_wNbnsvwmcAuudicLFv5OIHp=
+JJ5-3MiiKFRfTyHBb0_AQvUvRc_hSB-lextI7GcLa5StbtvXzX1mmFEmAshJiykxigH4DJjIdnn=
+rW_t87SjJuoKGLnNkcwlNbaeT-7i8VruP7oN_O0_megvVPIznyZK6WCQVpSvmbehh50SlNrfCkF=
+GZ6dNPXt84vxGp2JjMJxyhxdheWCq9_cxuOgkmLrvx0FZsvQLUyWQ_U3u6H_82YAzO9Ss2Wq5Wz=
+PbjkYZ_Yx-ARrUNUA8P__vM-3ZqIVeO0bRku-taQp6NP9eaV8I0ClrQeouCtAcggdZqekoa_I7b=
+cw2mhtzjizTurBnabJLPbeCgknKxdgHn5Gxv88yhAqE9BmXjhVaswpI7Y51EskjDuqmnztYvhk3=
+Rla3laSU38DJjY4gqx4y82yv-qcf26j1wMY6usHrOlXuHaAPA%26pageLoadId=3Df9d0588f-8=
+222-4a2d-a49f-7f3e02c53a27%26ref=3Draven%26position=3D2%26dgcid=3Draven_md_=
+suggest_email%26saveRef=3Dtrue/1/0100016e0dc995e2-71103905-71d6-43ad-aa65-c=
+5a4f8535ec6-000000/VivQqnO4841e2KogT9LefdADlj4=3D133" style=3D"-ms-text-siz=
+e-adjust: 100%; -webkit-text-size-adjust: 100%; color: #4071A3; font-size: =
+16px; font-weight: normal; text-decoration: none; display: inline-block; le=
+tter-spacing: 1px; margin: 10px 0 0 0; text-align: center; white-space: now=
+rap;">
+                                                       =20
+                                                        <span style=3D"font=
+-size: 20px">+ </span>
+                                                        <span class=3D"hove=
+r-underline">Save reference</span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                           =20
+                                <tr>
+                                    <td style=3D"padding-top: 25px;">
+                                        <table>
+                                            <tr>
+                                                <td style=3D"padding-bottom=
+: 8px;">
+                                                    <a href=3D"https://cwhi=
+b9vv.r.us-east-1.awstrack.me/L0/https:%2F%2Fwww.mendeley.com%2Fsuggest%2Fra=
+ven%2Ffeedback%3FarticleId=3De0a9f875-aa3b-35d0-8709-197ea178e60d%26article=
+Trace=3DAAABoHE5UHzwyhnVPERQRuBlW3-e1xtpd8WdP1Enk64irw7d0Qal8zBi2XbFazjLde4=
+YuTElMQ8ZtEOxUNC1ste-yjPeiAyi7hdGImK4kn7J055FEk4IrpXeay3hsUj0UV_2-sqhW_G0Vi=
+edZw3hYvYcI-V1xV3fdlurkIa6TIjlNt-uLVKYvwAeFpn9EEYusEhcHOqIQ7q53VuCMUOJdwJ_e=
+-0Q-Va9dCC6P8kpq0vv1g3TYFPLkAcd8wNmCTDs74jni_g5yM4ArWqNrvcCNsMpU3Vd8JKKhFbi=
+0nZ1AlxpxG2r1vSEu3ZM9NJnaid7PLFhhD21ZWT4BZh1I5c1Tm4Ak2JJdEe0M2z7AmAt9uKY6bj=
+fkuckqPkJpIcScW68S6bLy6svqVpvKKQoYrpnIN3kFqZJ4mogEILhzznbRh7K-tSl8EuqTrVVOh=
+Jf4hzlaqcS8_yXRbvf3eYkmYBgTovUIsKLLf2Ug2PaZyycr6ltzQbLTUzBeZh--oXbNBxJCnz0c=
+0wUQ3byqsWGeTzqLu6JNt5C0zIF9ojE47LBoF_73MI6zcl_92sdKglkzl9twKMyCWs9dqo%26pa=
+geLoadId=3Df9d0588f-8222-4a2d-a49f-7f3e02c53a27%26ref=3Draven%26position=3D=
+3%26dgcid=3Draven_md_suggest_email/1/0100016e0dc995e2-71103905-71d6-43ad-aa=
+65-c5a4f8535ec6-000000/VcQRAOV2jRmTOX9FoP36ZzNV2Ro=3D133" _label=3D"title" =
+_type=3D"mail" target=3D"_blank" style=3D"color:#4071A3; font-size: 20px; l=
+ine-height: 150%; font-weight:normal; text-decoration:none; font-family: Ge=
+orgia,serif">
+=09=09=09=09=09=09=09=09=09=09=09=09=09An Internet of Energy Things Based o=
+n Wireless LPWAN
+=09=09=09=09=09=09=09=09=09=09=09=09=09</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style=3D"color: #969696=
+; line-height:120%;padding-bottom: 5px;">
+                                                    <span class=3D"author">=
+Yonghua Song, Jin Lin, Ming Tang et al.</span>
+                                                </td>
+                                            </tr>
+=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"color: #969696; padd=
+ing-bottom: 5px;">Engineering (2017)</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09
+                      =20
+=09=09=09=09=09=09=09=09=09=09=09<!--
+=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"document-abstract" styl=
+e=3D"line-height:150%;padding-top: 4px; font-size: 14;">Under intense envir=
+onmental pressure, the global energy sector is promoting the integration of=
+ renewable energy into interconnected energy systems. The demand-side manag=
+ement (DSM) of energy systems has drawn considerable industrial and academi=
+c attention in attempts to form new flexibilities to respond to variations =
+in renewable energy inputs to the system. However, many DSM concepts are st=
+ill in the experimental demonstration phase. One of the obstacles to DSM us=
+age is that the current info...</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09-->
+=09=09=09=09=09=09=09=09=09=09=09
+                                            <tr>
+                                                <td>
+                                                    <a class=3D"button-prim=
+ary button-large save-ref-button" href=3D"https://cwhib9vv.r.us-east-1.awst=
+rack.me/L0/https:%2F%2Fwww.mendeley.com%2Fsuggest%2Fraven%2Ffeedback%3Farti=
+cleId=3De0a9f875-aa3b-35d0-8709-197ea178e60d%26articleTrace=3DAAABoHE5UHzwy=
+hnVPERQRuBlW3-e1xtpd8WdP1Enk64irw7d0Qal8zBi2XbFazjLde4YuTElMQ8ZtEOxUNC1ste-=
+yjPeiAyi7hdGImK4kn7J055FEk4IrpXeay3hsUj0UV_2-sqhW_G0ViedZw3hYvYcI-V1xV3fdlu=
+rkIa6TIjlNt-uLVKYvwAeFpn9EEYusEhcHOqIQ7q53VuCMUOJdwJ_e-0Q-Va9dCC6P8kpq0vv1g=
+3TYFPLkAcd8wNmCTDs74jni_g5yM4ArWqNrvcCNsMpU3Vd8JKKhFbi0nZ1AlxpxG2r1vSEu3ZM9=
+NJnaid7PLFhhD21ZWT4BZh1I5c1Tm4Ak2JJdEe0M2z7AmAt9uKY6bjfkuckqPkJpIcScW68S6bL=
+y6svqVpvKKQoYrpnIN3kFqZJ4mogEILhzznbRh7K-tSl8EuqTrVVOhJf4hzlaqcS8_yXRbvf3eY=
+kmYBgTovUIsKLLf2Ug2PaZyycr6ltzQbLTUzBeZh--oXbNBxJCnz0c0wUQ3byqsWGeTzqLu6JNt=
+5C0zIF9ojE47LBoF_73MI6zcl_92sdKglkzl9twKMyCWs9dqo%26pageLoadId=3Df9d0588f-8=
+222-4a2d-a49f-7f3e02c53a27%26ref=3Draven%26position=3D3%26dgcid=3Draven_md_=
+suggest_email%26saveRef=3Dtrue/1/0100016e0dc995e2-71103905-71d6-43ad-aa65-c=
+5a4f8535ec6-000000/x60HpZDkr9KzOO2hzKmc7w6aeRk=3D133" style=3D"-ms-text-siz=
+e-adjust: 100%; -webkit-text-size-adjust: 100%; color: #4071A3; font-size: =
+16px; font-weight: normal; text-decoration: none; display: inline-block; le=
+tter-spacing: 1px; margin: 10px 0 0 0; text-align: center; white-space: now=
+rap;">
+                                                       =20
+                                                        <span style=3D"font=
+-size: 20px">+ </span>
+                                                        <span class=3D"hove=
+r-underline">Save reference</span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                           =20
+                            <tr>
+                                <td style=3D"padding-top: 20px">
+                                    <p>There are more suggestions waiting f=
+or you.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style=3D"text-align: left; padding-top:=
+ 20px;">
+                                    <h2 style=3D"margin: 0 0 5px 0; padding=
+: 0 0 10px 0; color: #333333 !important; display: block; font-style: normal=
+; font-weight: normal; letter-spacing: normal; line-height: 100%; text-alig=
+n: left;" class=3D"extra-top">
+
+=09=09=09=09=09=09=09=09=09=09<a class=3D"button-primary button-large" targ=
+et=3D"_blank" href=3D"https://cwhib9vv.r.us-east-1.awstrack.me/L0/https:%2F=
+%2Fwww.mendeley.com%2Fsuggest%2Fraven%2Ffeedback%3FpageLoadId=3Df9d0588f-82=
+22-4a2d-a49f-7f3e02c53a27%26ref=3Draven%26dgcid=3Draven_md_suggest_email/1/=
+0100016e0dc995e2-71103905-71d6-43ad-aa65-c5a4f8535ec6-000000/IDQjZkb24SQu45=
+ne7ErL_Bkxgdg=3D133" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size=
+-adjust: 100%; color: #ffffff; font-size: 16px; font-weight: normal; text-d=
+ecoration: none; background-color: #407196; border-color: #407196; border-s=
+tyle: solid; border-width: 8px 12px; display: inline-block; letter-spacing:=
+ 1px; margin: 4px 0; text-align: center; white-space: nowrap;">See more sug=
+gested articles</a>
+                                  =20
+=09=09=09=09=09=09=09=09=09</h2>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor=3D"#F5F5F5" align=3D"center" style=3D"padding: 20px 0px=
+;">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0" width=3D"500">
+                <tr>
+                    <td align=3D"center" valign=3D"top" width=3D"500">
+            <![endif]-->
+            <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" align=3D"center" style=3D"max-width: 580px;" class=3D"responsive-ta=
+ble">
+                <tr>
+                    <td align=3D"right">
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" id=3D"PretemplateFooter" width=3D"100%" style=3D"-ms-text-size-adjus=
+t: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-r=
+space: 0pt; border-collapse: collapse !important; background-color: #F5F5F5=
+;">
+                            <tr>
+                                <td valign=3D"middle" class=3D"PrefooterCon=
+tent" style=3D"font-size: 14px; -ms-text-size-adjust: 100%; -webkit-text-si=
+ze-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #4747=
+47; padding: 0 10px 15px 0; border-bottom: 1px solid #B9B9B9; line-height: =
+150%; text-align: right;">
+                                    <span>Follow us&nbsp;&nbsp;&nbsp;</span=
+>
+                                    <a href=3D"https://cwhib9vv.r.us-east-1=
+.awstrack.me/L0/https:%2F%2Ftwitter.com%2Fmendeley_com/1/0100016e0dc995e2-7=
+1103905-71d6-43ad-aa65-c5a4f8535ec6-000000/yW4bwnCblAvFtuQ1v0OAZSLE3S8=3D13=
+3" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; col=
+or: #474747; text-decoration: none; vertical-align: middle;">
+                                        <img alt=3D"Twitter" src=3D"http:&#=
+x2F;&#x2F;d3fildg3jlcvty.cloudfront.net&#x2F;email&#x2F;graphics&#x2F;mails=
+&#x2F;raven/twitter-logo.png" _label=3D"Follow us on Twitter" _type=3D"twit=
+terLink" target=3D"_blank" style=3D"-ms-interpolation-mode: bicubic; border=
+: 0; height: 16px; line-height: 16px; outline: none; text-decoration: none;=
+ width: 16px; ">
+                                    </a>&nbsp;&nbsp;&nbsp;
+                                    <a href=3D"https://cwhib9vv.r.us-east-1=
+.awstrack.me/L0/https:%2F%2Fwww.facebook.com%2Fmendeley%2F/1/0100016e0dc995=
+e2-71103905-71d6-43ad-aa65-c5a4f8535ec6-000000/h-Uqg1zlbmyBkofTf85LstPKxKs=
+=3D133" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%=
+; text-decoration: none; vertical-align: middle;">
+                                        <img alt=3D"Facebook" src=3D"http:&=
+#x2F;&#x2F;d3fildg3jlcvty.cloudfront.net&#x2F;email&#x2F;graphics&#x2F;mail=
+s&#x2F;raven/facebook-logo.png" _label=3D"Follow us on Facebook" _type=3D"f=
+acebookLink" target=3D"_blank" style=3D"-ms-interpolation-mode: bicubic; bo=
+rder: 0; height: 16px; line-height: 16px; outline: none; text-decoration: n=
+one; width: 16px; ">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" id=3D"templateFooter" style=3D"-ms-text-size-adjust: 100%; -webkit-t=
+ext-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border=
+-collapse: collapse !important; font-size: 14px;">
+                            <tr>
+                                <td valign=3D"top" class=3D"footerContent" =
+style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt; line-height: 150%; padding-bottom: =
+8px; padding-left: 20px; padding-right: 20px; padding-top: 20px; text-align=
+: left; color: #969696;">
+                                    <a href=3D"https://cwhib9vv.r.us-east-1=
+.awstrack.me/L0/https:%2F%2Fwww.mendeley.com%2Fcontact-us%2F%3Fdgcid=3Drave=
+n_md_suggest_email/1/0100016e0dc995e2-71103905-71d6-43ad-aa65-c5a4f8535ec6-=
+000000/RU3VwdzM7ddCWT9T0Y1JDGq0QbA=3D133" style=3D"color:#007398; text-deco=
+ration: none; display: inline-block; margin-right: 16px;">Contact Us</a>
+                                    <a href=3D"https://cwhib9vv.r.us-east-1=
+.awstrack.me/L0/https:%2F%2Fservice.elsevier.com%2Fapp%2Fhome%2Fsupporthub%=
+2Fmendeley%2F/1/0100016e0dc995e2-71103905-71d6-43ad-aa65-c5a4f8535ec6-00000=
+0/3BNvZIauitMfwFII4ZjpZABE0NY=3D133" style=3D"color:#007398; text-decoratio=
+n: none;">Support</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign=3D"top" class=3D"footerContent" =
+style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt; line-height: 150%; padding-bottom: =
+8px; padding-left: 20px; padding-right: 20px; padding-top: 20px; text-align=
+: left; color: #969696;">
+                                    You are receiving this  email because y=
+ou have registered with Mendeley.com using the email address aghilesdjoudi@=
+gmail.com.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign=3D"top" class=3D"footerContent" =
+style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt; line-height: 150%; padding-bottom: =
+8px; padding-left: 20px; padding-right: 20px; padding-top: 20px; text-align=
+: left; color: #969696;">
+                                    If you do not wish to receive suggested=
+ articles from us in the future, please=20
+                                    <a href=3D"https://cwhib9vv.r.us-east-1=
+.awstrack.me/L0/https:%2F%2Fwww.mendeley.com%2Fsettings%2Fnotifications%2Fu=
+nsubscribe%3FpageLoadId=3Df9d0588f-8222-4a2d-a49f-7f3e02c53a27%26subscripti=
+onID=3D4f0aa377-1863-442a-aec5-bc4c7b70d5c8%26hash=3D1353f2097725281cac93f2=
+dfbcc9529c0a59e995%26dgcid=3Draven_md_suggest_email/1/0100016e0dc995e2-7110=
+3905-71d6-43ad-aa65-c5a4f8535ec6-000000/SZ4BtNRg_QZsx2404C_mpty1yO8=3D133" =
+_label=3D"unsubscribe here" _type=3D"optout" target=3D"_blank" style=3D"-ms=
+-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #007398; fo=
+nt-weight: normal; text-decoration: none;">click here</a> =20
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign=3D"top" class=3D"footerContent" =
+style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt; line-height: 150%; padding-bottom: =
+8px; padding-left: 20px; padding-right: 20px; padding-top: 20px; text-align=
+: left; color: #969696;">
+                                    Copyright =C2=A9 2019 Mendeley Ltd.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign=3D"top" class=3D"footerContent" =
+style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt; line-height: 150%; padding-bottom: =
+8px; padding-left: 20px; padding-right: 20px; padding-top: 8px; text-align:=
+ left; color: #969696;">
+                                    Mendeley Limited. Registered office The=
+ Boulevard, Langford Lane, Kidlington, Oxford, OX5 1GB, United Kingdom.
+                                    Registered in England and Wales. Regist=
+ration number 06419015.
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+</table>
+<img alt=3D"" src=3D"http://cwhib9vv.r.us-east-1.awstrack.me/I0/0100016e0dc=
+995e2-71103905-71d6-43ad-aa65-c5a4f8535ec6-000000/0egPKZBNz0oofOnlLYQTPB7PZ=
+l4=3D133" style=3D"display: none; width: 1px; height: 1px;">
+</body>
+</html>

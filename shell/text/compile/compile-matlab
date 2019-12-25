@@ -1,0 +1,8 @@
+#!/bin/bash
+
+	filename=$(basename -- "$1")
+#	extension="${filename##*.}"
+	filename="${filename%.*}"
+	
+	LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25 $TOOLSPATH/matlab/bin/matlab -nodesktop -nosplash -r $filename
+

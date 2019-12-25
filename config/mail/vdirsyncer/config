@@ -1,0 +1,120 @@
+[general]
+status_path = "~/.config/vdirsyncer/status/"
+
+
+[pair djaghiles]
+a = "djaghiles_Local"
+b = "djaghiles_Remote"
+collections = ["from a", "from b"]
+
+[storage djaghiles_Local]
+type = "filesystem"
+path = "~/Aghiles/Tool/config/office/mail/khard/Contactes/"
+fileext = ".vcf"
+
+[storage djaghiles_Remote]
+type = "carddav"
+url = "https://dav.mailbox.org"
+username = "djaghiles@gmail.com"
+password.fetch = ["command", "pass djaghiles"]
+
+
+
+[pair cal]
+a = "cal_remote"
+b = "cal_local"
+collections = ["from a", "from b"]
+conflict_resolution = "a wins"
+
+[storage cal_local]
+type = "filesystem"
+path = "~/.Calendar/mehalter"
+fileext = ".ics"
+
+[storage cal_remote]
+type = "caldav"
+url = "https://drive.mehalter.com/remote.php/dav/"
+username = "mehalter"
+password.fetch = ["command", "~/.config/vdirsyncer/password.sh"]
+
+
+
+
+
+
+
+[pair addr]
+a = "addr_local"
+b = "addr_remote"
+collections = ["from a", "from b"]
+conflict_resolution = "b wins"
+
+[storage addr_local]
+type = "filesystem"
+path = "~/.Contacts/mehalter"
+fileext = ".vcf"
+
+[storage addr_remote]
+type = "carddav"
+url = "https://drive.mehalter.com/remote.php/dav/addressbooks/users/mehalter/contacts/"
+username = "mehalter"
+password.fetch = ["command", "~/.config/vdirsyncer/password.sh"]
+
+
+
+
+
+
+[pair chloe]
+a = "chloe_remote"
+b = "chloe_local"
+collections = null
+
+[storage chloe_local]
+type = "filesystem"
+path = "~/.Calendar/chloe"
+fileext = ".ics"
+
+[storage chloe_remote]
+type = "http"
+url = "https://calendar.google.com/calendar/ical/chloe.fang97%40gmail.com/private-e7934960836d6bb1c719309c79e03cfa/basic.ics"
+
+
+
+
+
+
+
+[pair tribe]
+a = "tribe_remote"
+b = "tribe_local"
+collections = null
+
+[storage tribe_local]
+type = "filesystem"
+path = "~/.Calendar/tribe"
+fileext = ".ics"
+
+[storage tribe_remote]
+type = "http"
+url = "https://calendar.google.com/calendar/ical/gt.mens.ultimate%40gmail.com/public/basic.ics"
+
+
+
+
+
+
+
+[pair holidays]
+a = "holidays_remote"
+b = "holidays_local"
+collections = null
+
+[storage holidays_local]
+type = "filesystem"
+path = "~/.Calendar/holidays"
+fileext = ".ics"
+
+[storage holidays_remote]
+type = "http"
+url = "https://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics"

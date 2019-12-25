@@ -1,0 +1,8 @@
+#!/bin/sh
+
+sed -ir 's/CONTIKI *= *..\/...*/CONTIKI=\$\(shell targetos\)\/contiki/' */Makefile
+sed -ir 's/CONTIKI *= *..\/...*/CONTIKI=\$\(shell targetos\)\/contiki/' */*/Makefile
+sed -ir 's/CONTIKI *= *..\/...*/CONTIKI=\$\(shell targetos\)\/contiki/' */*/*/Makefile
+sed -ir 's/CONTIKI *= *..\/...*/CONTIKI=\$\(shell targetos\)\/contiki/' */*/*/*/Makefile
+
+

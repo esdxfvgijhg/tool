@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+cmd="calcurse"
+gnome-terminal --title="$cmd"    --command="bash -ci '$cmd; $SHELL'" 
+
+
+

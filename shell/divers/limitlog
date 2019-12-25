@@ -1,0 +1,49 @@
+#!/bin/bash
+
+LIMIT=5000000
+LINES=10000
+
+showusage() {
+  echo "Usage:"
+  echo "  limitlog [options] <file>"
+  echo ""
+  echo "Options:"
+  echo "  -s <bytes>  Allowed size of the log file (Default: 5000000)"
+  echo "  -n <lines>  Number of lines to delete on trim (Default: 10000)"
+  echo "  -h          Show this screen"
+}
+
+while getopts "s:n:h" opt; do
+  case ${opt} in
+    s )
+      LIMIT="$OPTARG"
+      ;;
+    n )
+      LINES="$OPTARG"
+      ;;
+    h )
+      showusage
+      exit 0
+      ;;
+    \? )
+      echo "Invalid Option: -$OPTARG" 1>&2
+      showusage
+      exit 1
+      ;;
+  esac
+done
+shift $((OPTIND - 1))
+
+file=$1
+
+[[ ! -e "$(dirname $file)" ]] && mkdir -p $(dirname $file)
+
+while read input; do
+  echo $input >> $file
+done < /dev/stdin
+
+SIZE=$(wc -c $file|awk '{print $1}')
+
+if [ "$SIZE" -gt "$LIMIT" ]; then
+  sed -i "1,${LINES}d" $file
+fi

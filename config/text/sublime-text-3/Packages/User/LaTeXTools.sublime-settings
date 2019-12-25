@@ -1,0 +1,5 @@
+{
+	"copy_output_on_build": [".pdf", ".synctex.gz"],
+	"output_directory": ".bin",
+	"aux_directory": ".bin"
+}

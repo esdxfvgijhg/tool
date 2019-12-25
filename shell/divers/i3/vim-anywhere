@@ -1,0 +1,17 @@
+#!/bin/bash
+
+function setclip {
+  xclip -selection c
+}
+
+function getclip {
+  xclip -selection clipboard -o
+}
+
+file=$(mktemp).md
+$TERMINAL -e '/home/micah/.config/Scripts/i3-runner "$EDITOR '$file'"' # replace with your favorite terminal
+
+cat $file | setclip
+rm $file
+
+xdotool key ctrl+v

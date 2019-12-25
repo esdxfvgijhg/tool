@@ -1,0 +1,7 @@
+#!/bin/sh
+
+installx dspdfviewer
+installx pdfgrep
+installx inkscape
+installx plotutils
+

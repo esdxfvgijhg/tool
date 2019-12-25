@@ -1,0 +1,9 @@
+
+# Sidebar ----------------------------------------------------------------
+color sidebar_indicator     brightblue                brightblack
+color	sidebar_highlight	    white               brightblack
+color sidebar_divider       color243            default
+color sidebar_flagged       color243            default
+color sidebar_new           green               default
+color sidebar_ordinary      color243            default
+

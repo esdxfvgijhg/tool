@@ -1,0 +1,10 @@
+#!/bin/sh
+
+
+mkdir $TMPPATH
+
+#ns3
+	git clone https://github.com/nsnam/ns-3-dev-git.git $TOOLSPATH/ns-3/ns-3
+	git clone https://github.com/wyllianbs/ns3install.git $TOOLSPATH/ns-3/ns3install
+
+

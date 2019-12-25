@@ -1,0 +1,12 @@
+#!/bin/sh
+
+for arg in $NAUTILUS_SCRIPT_SELECTED_FILE_PATHS
+do
+	dir=`dirname $arg`
+	file=`basename $arg`
+
+	cmd="compile-contiki $filename"
+	gnome-terminal --title="$filename" --command="bash -ci 'cd $dir; $cmd; $SHELL'"
+done
+
+

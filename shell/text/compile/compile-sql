@@ -1,0 +1,19 @@
+#!/bin/bash
+
+mypath="$1"
+directory=`dirname "$mypath"`
+file=`basename "$mypath"`
+extension="${file##*.}"
+filename="${file%.*}"
+echo $filename
+
+cmd1="create database $filename"
+sudo mysql -uroot -p -e "$cmd1" < "$mypath"
+
+#gnome-terminal --tab --title="Serveur Mysql" --command="bash -c 'cd "$directory"; $cmd2'"
+
+
+
+#xdg-open http://localhost:8000/$filename
+#gnome-terminal --tab --title="Serveur web" --command="bash -c 'sudo php -S localhost:8000 -t $directory; $SHELL'"
+

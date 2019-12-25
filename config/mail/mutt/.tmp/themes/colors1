@@ -1,0 +1,323 @@
+# attributes when using a mono terminal
+mono header underline ^(From|Subject):
+mono quoted bold
+
+
+macro index \cb "<pipe-message> urlview<Enter>"	# simulate the old browse-url function
+# Mairix
+#macro generic ,f "<shell-escape>mairix " "search via mairix"
+macro generic S "<enter-command>set my_cmd = \`mairix-search\`<return><enter-command>push \$my_cmd<return>
+
+
+
+
+bind pager G bottom	# just like vi and less
+
+# Aliases
+#	alias <name> <address> [ , <address> ... ]
+
+#alias exam "\# to annoy michael" <user@host>
+#alias me Michael Elkins <me@mutt.org> # me!
+alias mutt-dev Mutt Development List <mutt-dev@mutt.org> # power users
+
+
+mailboxes ! +mutt-dev +mutt-users +open-pgp +wmaker +hurricane +vim +ietf  +drums
+#mailboxes `echo $HOME/Mail/*`
+
+
+unhdr_order *				# forget the previous settings
+hdr_order date from subject to cc
+
+
+auto_view application/x-gunzip
+auto_view application/x-gzip
+
+
+
+
+
+
+
+
+
+
+
+
+set edit_headers                          # I want to edit the message headers.
+set fast_reply          # skip initial prompts when replying
+set nohelp          # don't show the help line at the top
+
+#set mime_forward		# use message/rfc822 type to forward messages
+set mime_forward_rest=yes # Forward with attachments
+
+
+
+
+set nosmart_wrap                          # Don't want smart wrapping.
+set nomarkers                             # Don't want any wrap markers.
+
+set nostrict_threads                      # Lets have some fuzzy threading.
+
+set tilde                                 # Fill out messages with '~'.
+
+set noconfirmappend                       # Just append, don't hassle me.
+set pager_stop                            # Don't skip msgs on next page.
+
+set maildir_trash=yes
+
+
+
+
+set edit_headers=yes
+set pgp_verify_sig=yes
+set charset=utf-8
+
+set imap_check_subscribed=yes
+set imap_idle=yes
+
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/bodies
+set certificate_file=~/.mutt/certificates
+
+set pager_context=5
+set pager_index_lines=3
+set pager_stop=yes
+
+set allow_8bit
+set ascii_chars
+set noconfirmappend
+set indent_string="> "
+set tilde
+
+set sort_aux=last-date-received # date of the last message in thread
+set sort_browser=date
+set sort=threads
+set quote_regexp="^( {0,4}[>|:%#]| {0,4}[a-z0-9]+[>|]+)+"
+set reply_regexp="^((re(\\^[0-9])? ?:|a(nt)?w(ort)?:|\\(fwd\\))[ \t]+)*"
+set smileys="(>From )|(:[-^]?[][)(><}{|/DP])"
+
+set index_format="%4C %Z %{%b %d} %-15.15F %s"
+set folder_format="%N %3C   %9s bytes   %N %f"
+set menu_scroll
+
+set implicit_autoview
+set ispell="hunspell"
+
+macro pager c '<change-folder>?<toggle-mailboxes>'
+macro index c '<change-folder>?<toggle-mailboxes>'
+
+macro pager \cu <pipe-entry>'urlview'<enter> 'Follow links with urlview'
+
+
+
+auto_view text/x-vcard text/html
+alternative_order text/plain text/html
+
+
+
+# COLORS
+# (default, white, black, green, magenta, blue, cyan, yellow, red)
+# used in all screens
+color indicator black       white
+color search    yellow      black
+color status    brightcyan  blue
+
+# index
+color index    brightwhite black "~N" # new messages
+color index    brightwhite black "~O" # new messages
+color index    black       black "~D" # deleted messages
+
+#index. // colorize
+#  Coloring quoted text - coloring the first 7 levels:
+color quoted    cyan black
+color quoted1   yellow black
+color quoted2   red black
+color quoted3   green black
+color quoted4   cyan black
+color quoted5   yellow black
+color quoted6   red black
+color quoted7   green black
+
+#  Colorize smileys:  :-)  ;-)  :-/  :-(
+color body  yellow black "[;:]-[)/(|]"
+color body  yellow black "[;:][)/(|]"
+color body  green black "[[:alpha:]]\+://[^ ]*"
+
+color index brightwhite black ~N      # New
+#color index yellow black ~O              # Old
+color index black magenta ~F
+color index blue black ~T
+color index red black ~D
+
+#color index               red  black "~f 'root@'"
+#color index         brightred  default "~h 'system check'"
+#color index         brightred  black "~C 'nagios@'"
+#color index         red black "~C 'info@'"
+
+# Usually important things
+#color index             green  black ~Chostmaster
+#color index             green  black ~Cwebmaster
+#color index             green  black ~Cpostmaster
+
+# Warrings are yellow
+#color index      brightyellow  black "~C 'nagios-admin@'"
+#color index      brightyellow  black "~f 'MAILER-DAEMON@'"
+#color index            yellow  black "~s 'Cron'"
+
+# pager
+color bold        brightwhite default
+color underline   brightwhite default
+color quoted      cyan        default
+color quoted1     yellow      default
+color quoted2     cyan        default
+color quoted3     yellow      default
+color quoted4     cyan        default
+color quoted5     yellow      default
+color signature   brightblue  default
+color markers     brightred   default
+color tilde       brightblue  default
+color attachment  brightgreen default
+
+# pager: message headers
+color hdrdefault white    default
+color header blue         yellow "^Subject:"
+color header brightcyan   default "^Date:"
+color header brightgreen  default "^From[: ]"
+color header brightyellow default "^To:|^Cc:|^Bcc:"
+color header brightred    default "^(Reply|Mail-Followup)-To:"
+color header brightblue   default "^[^:]*-Agent:|^[^:]*-Mailer:"
+color header yellow       default "^X-[^:]*:"
+color header blue         yellow "^List-Id:"
+
+# URLs
+color body brightcyan default "(finger|ftp|https?|news|telnet):[^ >)\"\t]+"
+color body brightcyan default "www\\.[-.a-z0-9]+\\.[a-z][a-z][a-z]?([-_./~a-z0-9]+)?"
+color body brightcyan default "[-a-z_0-9.+]+@[-a-z_0-9.]+"
+
+# *bold* _underlined_ /italic/ text (imperfect)
+color body brightwhite default "(^|[^[:alnum:]])[*_/][-_&!.,[:alnum:]]+[*_/]($|[^[:alnum:]])"
+
+# smileys (imperfect)
+color body brightyellow default "(^| )[;:8]-?[][)(PDp/|\]+($| )"
+color body brightyellow default "<[Bb]?[Gg]>"
+
+color header brightyellow blue "linevich.com"
+color index  brightyellow blue "linevich.com"
+
+color header brightcyan default "root-"
+#color index  red brightyellow "webparking."
+
+color index             brightgreen    default "~F"
+
+color body        red        default "^gpg: BAD signature from.*"
+color body        blue       default "^gpg: Good signature from.*"
+color body        brightblue default "^gpg: encrypted with.*"
+
+
+
+#bind pager :  enter-command
+#bind pager t  tag-message
+
+bind  index g       group-reply
+bind  pager g       group-reply
+
+
+#set folder=~/Mail		# where i keep my mailboxes
+
+#set abort_unmodified=yes	# automatically abort replies if I don't
+				# change the message
+set alias_file=~/.mail_aliases	# where I keep my aliases
+set sort_alias= alias
+set reverse_alias=yes
+source $alias_file
+
+# discussion.  Mutt will draw a nice tree showing how the discussion flows.
+# groups messages on the same subject to make it easier to follow a
+# I subscribe to a lot of mailing lists, so this is _very_ useful.  This
+
+set allow_8bit                                      #never do Q-P encoding on legal 8-bit chars          
+set arrow_cursor                                    #use -> instead of hiliting the whole line           
+set ascii_chars                                     #use ASCII instead of ACS chars for threads          
+set askbcc
+set askcc
+set attribution="On %d, %n wrote:"                  #how to attribute replies                            
+set autoedit                                        #go to the editor right away when composing          
+set auto_tag                                        #always operate on tagged messages                   
+set bounce=yes                                      #don't ask about bouncing messages, just do it       
+set charset="utf-8"                                 #character set for your terminal                     
+set confirmcreate                                   #prompt when creating new files                      
+set copy=yes                                        #always save a copy of outgoing messages             
+set delete=yes                                      #purge deleted messages without asking               
+set edit_headers                                    #let me edit the message header when composing       
+set fast_reply                                      #skip initial prompts when replying                  
+set fcc_attach                                      #keep attachments in copies of sent messages?        
+set force_name                                      #fcc by recipient, create if mailbox doesn't exist   
+set forward_decode                                  #weed and MIME decode forwaded messages              
+set forward_format="[%a: %s]"                       #subject to use when forwarding messages             
+set forward_quote                                   #quote the header and body of forward msgs           
+set hdrs                                            #include `my_hdr' lines in outgoing messages         
+set header                                          #include message header when replying                
+set history=20                                      #number of lines of history to remember              
+set hostname="mutt.org"                             #my DNS domain                                       
+set implicit_autoview=yes                           #pager shows parts having a mailcap viewer           
+set include                                         #always include messages when replying               
+set indent_string="> "                              #how to quote replied text                           
+set index_format="%4C %Z %{%m/%d} %-15.15F (%4c) %s"#format of the index                                 
+set locale="C"                                      #locale to use for printing time                     
+set mailcap_path="/Users/chexov/.mailcap"           #:/usr/local/share/mailcap"                          
+set mail_check=10                                   #how often to poll for new mail                      
+set mbox=+mbox                                      #where to store read messages                        
+set menu_scroll                                     #no implicit next-page/prev-page                     
+set metoo                                           #remove my address when replying                     
+set move=yes                                        #don't ask about moving messages, just do it         
+set noconfirmappend                                 #don't ask me if i want to append to mailboxes       
+set nomark_old                                      #i don't care about whether a message is old         
+set noprompt_after                                  #ask me for a command after the external pager exits 
+set nosave_empty                                    #remove files when no messages are left              
+set nouse_domain                                    #don't qualify local addresses with $domain          
+set nowait_key                                      #prompt when a pipe returns normal status            
+set pager_context=3                                 #no. of lines of context to give when scrolling      
+set pager_format="-%S- %-20.20f %s"                 #format of the pager status bar                      
+set pager_index_lines=6                             #how many index lines to show in the pager           
+set pager=less                                      #some people prefer an external pager                
+set pager_stop                                      #don't move to the next message on next-page         
+set pgp_strict_enc                                  #use Q-P encoding when needed for PGP                
+set pgp_verify_sig=no                               #don't automatically verify message signatures       
+set post_indent_string='---end quoted text---'
+set postponed=+postponed                            #mailbox to store postponed messages in              
+set print=ask-yes                                   #ask me if I really want to print messages           
+set print_command=/bin/false                        #how to print things (I like to save trees)          
+set quote_regexp="^ *[a-zA-Z]*[>:                   #}]"                                                 #how to catch quoted text
+set read_inc=25                                     #show progress when reading a mailbox                
+set recall                                          #prompt to recall postponed messages                 
+set record=+outbox                                  #default location to save outgoing mail              
+set reply_regexp="^(re:[ \t]*)+"                    #how to identify replies in the subject:             
+set reply_to                                        #always use reply-to if present                      
+set resolve                                         #move to the next message when an action is performed
+set reverse_alias                                   #attempt to look up my names for people              
+set reverse_name                                    #use my address as it appears in the message         
+set save_name                                       #save outgoing messages by recipient, if the         
+set sendmail="/usr/lib/sendmail -oi -oem"           #how to deliver mail                                 
+set shell="/bin/zsh"                                #program to use for shell escapes                    
+set signature="~/.signature"                        #file which contains my signature                    
+set sort_aux=last-date                              #date of the last message in thread                  
+set sort_aux=reverse-date-received                  #how to sort subthreads                              
+set sort_browser=reverse-date                       #how to sort files in the dir browser                
+set sort=threads                                    #primary sorting method                              
+set spoolfile='~/mailbox'                           #where my new mail is located                        
+set status_format="-%r-Mutt: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?  %l]---(%s)-%>-(%P)---"
+set status_on_top                                   #some people prefer the status bar on top            
+set strict_threads                                  #don't thread by subject                             
+set tilde                                           #virtual lines to pad blank lines in the pager       
+set timeout=0                                       #timeout for prompt in the index menu                
+set tmpdir=~/tmp                                    #where to store temp files                           
+set to_chars=" +TCF"
+set use_8bitmime                                    #enable the -B8BITMIME sendmail flag                 
+set use_from                                        #always generate the `From:' header field            
+set visual=vim                                      #editor invoked by ~v in the builtin editor          
+set write_inc=25                                    #show progress while writing mailboxes               
+
+
+#source ~/code/mutt-colors-solarized/mutt-colors-solarized-dark-16.muttrc
+source ~/.muttrc-local	# config commands local to this site
+#source ~/.muttrc-imap	# config commands local to this site

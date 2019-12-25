@@ -1,0 +1,84 @@
+Delivered-To: aghilesdjoudi@gmail.com
+Received: by 2002:ad5:54e6:0:0:0:0:0 with SMTP id q6csp8104783imm;
+        Mon, 2 Dec 2019 06:01:46 -0800 (PST)
+X-Google-Smtp-Source: APXvYqyxIMXQMWAYh3mdh3myLUGUOkPNgLHTmv1/u9D4GNp9dgpwjIHuzPZ0ZBJliLfuloEGx6Mj
+X-Received: by 2002:a05:620a:102c:: with SMTP id a12mr31571929qkk.95.1575295306360;
+        Mon, 02 Dec 2019 06:01:46 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1575295306; cv=none;
+        d=google.com; s=arc-20160816;
+        b=cX/EzpaFEaAUhCzPpHsJz0cJqm6EBqCpKuiQCI7F7MUvUhBIwWGfh8j6Uh7tW7z/a2
+         5JPkp0NJpKsSxTPtHS8eKp34kB+vBRE54yLROBC4auMw16GlXC5LQsfyCXq7k1QOlFVN
+         uhaKzh2tEnB1GWXig6FYDl5Cc/CSsN0Axg3Nx1OC1zgaKjGMkoFLFClbIZ9AkEBiNBOT
+         f26DqT1snLwhruXojtC3RZhGey7FK9Fxa5MvBxcdcc8G5kWY/ub4f1Jdl3UJUXgotMGG
+         q+GDUPqS/4QKxwijNU8r50Ncyjyr9nfXiS6KbkUNJRwCA97Bo7DA9IQZGShy7U+UodRv
+         s3zA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=keywords:reply-to:sender:cc:to:date:subject:message-id:from
+         :content-transfer-encoding:mime-version:dkim-signature:dkim-filter;
+        bh=Muj2IIh8eb2qkIKKJ+EjF6Ymtz8biT2QALreThW/8P0=;
+        b=Zjhcflwhv13uZbAEua698rlJBvNJW91OueUsa69NfBLUBQx+LuETRuiMGgnKrSSq5e
+         5J0Hd/eOY9g4k7QbtvcLEsrRjS41Cl0xXusngysJkeNp0+8ApLZbMn7uzK8Zw55TdFq5
+         LxkPZgpatXgLUMp4mkNEFz61Bk8FgxIf8vKM4/EAUkXEHl8ZF+aEsDnPcV5nCi+sKvi/
+         Ak5+4w+7ykd1a/9TJ2NSU76Ky/eyQmhFvDsLiCAGno05B08gGZ0QE/GDkk/r4S7TCTCR
+         sAiqk6rnMC7qD1wxRB0vMCs+bM4+rS80dwXqLoPiLWOkZSMsqAZ24BSeVfIm6B61onh5
+         E1Ew==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=fail header.i=@edas.info header.s=default header.b=C+EXKU87;
+       spf=pass (google.com: domain of bounce+33562782a9@edas.info designates 2600:1f18:21:600:f42b:d25:7567:eee2 as permitted sender) smtp.mailfrom=bounce+33562782a9@edas.info
+Return-Path: <bounce+33562782a9@edas.info>
+Received: from alpha.edas.info (alpha.edas.info. [2600:1f18:21:600:f42b:d25:7567:eee2])
+        by mx.google.com with ESMTPS id m45si6129095qta.380.2019.12.02.06.01.46
+        for <aghilesdjoudi@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 02 Dec 2019 06:01:46 -0800 (PST)
+Received-SPF: pass (google.com: domain of bounce+33562782a9@edas.info designates 2600:1f18:21:600:f42b:d25:7567:eee2 as permitted sender) client-ip=2600:1f18:21:600:f42b:d25:7567:eee2;
+Authentication-Results: mx.google.com;
+       dkim=fail header.i=@edas.info header.s=default header.b=C+EXKU87;
+       spf=pass (google.com: domain of bounce+33562782a9@edas.info designates 2600:1f18:21:600:f42b:d25:7567:eee2 as permitted sender) smtp.mailfrom=bounce+33562782a9@edas.info
+Received: from localhost (ip-172-30-0-206.ec2.internal [172.30.0.206])
+	by alpha.edas.info (8.14.4/8.14.4) with ESMTP id xB2E1jg8007493;
+	Mon, 2 Dec 2019 14:01:45 GMT
+DKIM-Filter: OpenDKIM Filter v2.11.0 alpha.edas.info xB2E1jg8007493
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=edas.info;
+	s=default; t=1575295305;
+	bh=Muj2IIh8eb2qkIKKJ+EjF6Ymtz8biT2QALreThW/8P0=;
+	h=From:Subject:Date:To:Cc:Reply-To:From;
+	b=C+EXKU87k8CrvWc8KnelV4Y9MWS6Ba1L/M1MEnelbfoFFmcQo5Pk1+87WMDz/BWp+
+	 /yp2/Sj3v6KxsD0Ft3SI9+3gG+4akBpRgathGcL9niW8WD27yLRE/194yAmR0vV60l
+	 9136pV8xmV9+EuVBPAfAB0Rmxeuzpg9KIBEahXtY=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+From: ict-dm19-chairs@edas.info
+Message-ID: <20191202-140145-937@edas.info>
+Subject: [ICT-DM'19] Information about paper #1570616437 (Do IoT LoRa Networks
+ Support Emergency Evacuation Systems =?UTF-8?Q?=3F=29=20has=20been=20chan?=
+ =?UTF-8?Q?ged?=
+Date: Mon, 02 Dec 2019 14:01:45 +0000
+To: "Nawel Zangar" <nawel.zangar@esiee.fr>,
+        "Aghiles Djoudi"
+ <aghilesdjoudi@gmail.com>
+Cc: yassine.hadjadj-aoul@irisa.fr
+Sender: EDAS Conference Manager <help@edas.info>
+Reply-To: "ICT-DM'19" <ict-dm19-chairs@edas.info>
+Keywords: paper_edited
+
+Dear Prof. Nawel Zangar:
+              
+Information about your paper #1570616437 ('Do IoT LoRa Networks Support Emergency Evacuation Systems ?') for ICT-DM'19 was changed by Nawel Zangar ():
+
+Aghiles Djoudi added as author
+
+No further action is required from you.
+
+If you have already submitted your manuscript, you can change it at any time before the deadline by [web form upload](https://www.edas.info/uploadPaper.php?m=1570616437).
+
+You can [see all your submissions](https://www.edas.info/index.php?c=26340), using the EDAS user name . From there, you can see the current status of the papers, whether a manuscript has been submitted and can edit the paper information.
+
+You can directly view information about your [paper](https://www.edas.info/showPaper.php?m=1570616437).
+
+Once you update your manuscript, you will receive another email confirmation.
+
+Best regards,
+Nawel Zangar, Yassine Hadjadj-Aoul, General Chairs
+Marouane Kessentini, Celimuge Wu, ,Technical Program Chairs

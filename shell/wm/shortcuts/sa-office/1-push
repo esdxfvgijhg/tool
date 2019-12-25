@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+cd $ADMINPATH && push
+cd $TEACHINGPATH && push
+cd $PROGRAMPATH && push
+cd $READINGPATH && push
+cd $WRITINGPATH && push
+cd $TOOLPATH && push

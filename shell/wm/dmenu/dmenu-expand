@@ -1,0 +1,17 @@
+#!/bin/bash
+
+lookup=$1
+action=$2
+prompt=$3
+alternate=$4
+
+dmenu=$HOME/.config/Scripts/dmenucolor
+
+chosen=$(sed -n 's/^\([^:]*\):.*$/\1/p' $lookup|$dmenu -i -p "$prompt")
+
+expanded=$(sed -n "s/^${chosen}:\(.*\)$/\1/p" $lookup)
+if [ "$expanded" != "" ]; then
+  $action $expanded
+elif [ "$alternate" != "" ] && [ "$chosen" != "" ]; then
+  $alternate "$chosen"
+fi

@@ -1,0 +1,7 @@
+[
+	{ "keys": ["ctrl+e"], "command": "external_tools_run", "args": {"cmd": ["firefox", "$file"]}},
+	{ "keys": ["ctrl+alt+f"], "command": "surround_selection" },
+	{ "keys": ["super+k", "super+s"], "command": "open_file", "args": { "file": "${packages}/User/Default ($platform).sublime-keymap" } },
+  { "keys": ["ctrl+enter"], "command": "filter_through_command", "args": { "cmdline": "sed -zr 's/\\n\\n+/ŧ/g' | sed -zr 's/(%[^\\n]+)/\\1þ/g' | sed -zr 's/\\.[ \\t]*\\n/vgyhn/g' | sed -zr 's/}[ \\t]*\\n/pvkglyhn/g' | sed -zr 's/\\n[\\t ]*/ /g' | sed -zr 's/\\t+//g' | sed -zr 's/(\\.)[ \\t]+([^0-9])/\\1\\n\\2/g' | sed -zr 's/([,:;])[ \\t]+([^0-9])/\\1\\n\\t\\2/g' | sed -zr 's/vgyhn/\\.\\n/g' | sed -zr 's/pvkglyhn/\\}\\n/g' | sed -zr 's/ŧ/\\n\\n/g' | sed -zr 's/þ[ \\t]*/\\n/g' | sed -zr 's/\\- //g'" } }
+
+]

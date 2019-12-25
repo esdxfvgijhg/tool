@@ -1,0 +1,37 @@
+[default]
+default_calendar = Micah
+timedelta = 7d
+highlight_event_days = True
+
+[calendars]
+  [[Micah]]
+    path = $HOME/.Calendar/mehalter/personal
+    color = light green
+
+  [[Chloe]]
+    path = $HOME/.Calendar/chloe
+    color = light magenta
+    readonly = True
+
+  [[Tribe]]
+    path = $HOME/.Calendar/tribe
+    color = dark blue
+    readonly = True
+
+  [[Holidays]]
+    path = $HOME/.Calendar/holidays
+    color = yellow
+    readonly = True
+
+[locale]
+default_timezone = EST
+local_timezone = EST
+timeformat = %H:%M
+dateformat = %m/%d/%Y
+longdateformat = %m/%d/%Y
+datetimeformat = %m/%d/%Y %H:%M
+longdatetimeformat = %m/%d/%Y %H:%M
+firstweekday = 6
+
+[view]
+frame = color

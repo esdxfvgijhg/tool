@@ -1,0 +1,17 @@
+python3-bitcoinlib
+python3-caffe-cpu
+python3-caffe-cuda
+python3-chargebee
+python3-chargebee2
+python3-cysignals-bare
+python3-cysignals-pari
+python3-eccodes
+python3-gribapi
+python3-memoize
+python3-ptable
+python3-xattr
+python3-nvidia-cuda-dev
+python3-glance
+python3-softlayer
+python3-neutron-fwaas
+python3-mailman3-web

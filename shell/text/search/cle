@@ -1,0 +1,39 @@
+#!/bin/bash
+
+
+#grep -ric "$1" --include \*.pdf | sed -r "s/\.\///g" | awk -v d="$2" -F ":"  '$2 > d {print "\033[32m" $2,"\033[31m" $1}' | sort -n 
+#| sed -r "s/\/[^:]+//g"
+
+#echo ${@:1:$#-2}
+#echo ${@:$#}
+#echo ${*: -2:1}
+
+
+#for y in ${@:1:$#-2}; do
+#grep -ricE "$y" --include \*.txt | sed -r "s/\.\///g" | sed -r "s/\.txt/\.pdf/g" | sort -nr -k2 -t':' | awk -v d="${@:$#}" -F ":"  '$2 > d {print "\033[32m" $2, "\033[39m" $1}' | sort - | uniq -c | sort -nr | awk -v d="${*: -2:1}" '$1 > d {print "\033[32m" $0}' ;
+#done;
+
+#echo "2 22 GCGZA5KI/Toussaint et al. - 2016 - Performance analysis of the on-the-air activation .pdf" > tmp
+#echo "hghhg" >> tmp
+#echo "3 22 GCGZA5KI/Toussaint et al. - 2016 - Performance analysis of the on-the-air activation .pdf" >> tmp
+#cat tmp| sort -r | uniq -c -s3
+
+
+tt=`expr $# - 2`
+cle1 $@ | sort -k 2 -k 1 -V | uniq -c -f1 | sed -r -e 's/^ +([0-9]+) /\1\:/g' | sort -Vr | awk -v d="$tt" -F ":"  '$1 > d {print "\033[39m" $2}'
+
+#awk ' { tot[$2]++ } END { for (i in tot) print tot[i], i} '
+#cle1 ${@:1:$#-2} ${*: -2:1} | sort -nr | uniq -c | sort -nr
+#| sort - | uniq -c -s34
+
+#| sort - | uniq -c | sort -nr -k5 -t' ' -
+#| sort -nr -k5 -t' ' - | awk -v d="${@:$#}" '$1 > d {print "\033[32m" $0}'
+
+#${@:$#}
+#${@:1:$#-1}
+
+#"\033[31m"
+
+#| sort - | uniq -c | sort -nr -k2 -k1 -t' ' | awk -v d="${@:$#}" '$1 > d {print "\033[32m" $0}';
+
+

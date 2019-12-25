@@ -1,0 +1,10 @@
+[Plugin]
+Loader=python3
+Module=Titivullus
+IAge=3
+Name=Titivullus
+Description=A Language Tool module for Gedit
+Authors=Giovanni Ornaghi <giovanni.ornaghi@gmail.com>
+Copyright=Copyleft © 2013 Giovanni Ornaghi
+Website=https://sourceforge.net/p/titivullus/
+Version=0.0.1

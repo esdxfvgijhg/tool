@@ -1,0 +1,61 @@
+#!/bin/sh
+
+echo "
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path=\"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+aghiles	ALL=(ALL:ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo	ALL=(ALL:ALL) ALL
+
+# See sudoers(5) for more information on \"#include\" directives:
+
+#includedir /etc/sudoers.d
+
+" > /etc/sudoers
+
+echo "# 
+# 
+
+# deb cdrom:[Debian GNU/Linux 9.8.0 _buster_ - Official i386 NETINST 20190216-12:51]/ buster main
+# deb cdrom:[Debian GNU/Linux 9.8.0 _buster_ - Official i386 NETINST 20190216-12:51]/ buster main
+
+deb http://ftp.us.debian.org/debian/ buster main contrib non-free
+deb-src http://ftp.us.debian.org/debian/ buster main contrib non-free
+
+deb http://ftp.us.debian.org/debian/ buster-updates main contrib non-free
+deb-src http://ftp.us.debian.org/debian/ buster-updates main contrib non-free
+
+deb http://security.debian.org/debian-security buster/updates main contrib non-free
+deb-src http://security.debian.org/debian-security buster/updates main contrib non-free
+
+deb http://deb.debian.org/debian buster main
+deb-src http://deb.debian.org/debian buster main 
+
+" > /etc/apt/sources.list
+
+
+file=`dirname $0`
+
+apt install $file/firmware-iwlwifi_20161130-5_all.deb
+
+
+

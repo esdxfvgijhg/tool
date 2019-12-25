@@ -1,0 +1,11 @@
+#!/bin/sh
+
+
+mkdir $TMPPATH
+
+
+
+#Eclipse
+	wget http://ftp.fau.de/eclipse/oomph/epp/2019-03/R/eclipse-inst-linux64.tar.gz -P $TOOLSPATH
+
+

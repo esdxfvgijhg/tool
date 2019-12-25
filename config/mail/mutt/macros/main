@@ -1,0 +1,112 @@
+## Shortcuts
+
+source $my_path/macros/binds
+
+
+macro generic,index,pager,editor        ,<Space>       ":source ~/.config/mutt/muttrc\n" "Reload mutt's configuration file"
+
+# Account -------------------------------------------------------
+macro generic,index,pager <f2> '<sync-mailbox><refresh><enter-command>source $my_path/accounts/$my_account0<return><change-folder>!<return><check-stats>'
+macro generic,index,pager <f3> '<sync-mailbox><refresh><enter-command>source $my_path/accounts/$my_account1<return><change-folder>!<return><check-stats>'
+macro generic,index,pager <f4> '<sync-mailbox><refresh><enter-command>source $my_path/accounts/$my_account2<return><change-folder>!<return><check-stats>'
+macro generic,index,pager <f5> '<sync-mailbox><refresh><enter-command>source $my_path/accounts/$my_account3<return><change-folder>!<return><check-stats>'
+macro generic,index,pager <f6> '<sync-mailbox><refresh><enter-command>source $my_path/accounts/$my_account4<return><change-folder>!<return><check-stats>'
+
+# Sync -------------------------------------------------------
+#macro index                               o           "<shell-escape>mailsync -V $my_account0<return>" "run mbsync to sync $my_account0"
+#macro index                               o           "<shell-escape>mbsync $my_account0<return>" "run mbsync to sync mail for this account"
+#macro index,pager                          O           "<shell-escape>mbsync -a<return>"    "run mbsync to sync all mail" # or >mailsync -Va<
+#macro generic                            ,f           "<shell-escape>mairix " "search via mairix"
+#macro index                               F           "<shell-escape>mu find --clearlinks --format=links --linksdir=~/.mu/results " "mu find"
+#macro index                               P           "<shell-escape>check-mail.sh >/dev/null 2>&1 &<return>" "Check for new mails"
+
+# Save -------------------------------------------------------
+#macro attach                               s           <save-entry><kill-line>~/downloads/<return>y "Save entry"
+
+# Mark -------------------------------------------------------
+macro index                                !           w!        "Mark email as unread"
+macro index                                ,!          W!        "Mark as read, then go to next"
+
+# Delete -------------------------------------------------------
+macro index                                d           "<delete-message>"                                                                                                                               #DELETE
+#macro index,pager                         d           "<save-message>=trash<return>"                                                                   "Trash" #ARCHIVE
+
+# Compose -------------------------------------------------------
+#macro compose                              Y            pfy                 "send mail without GPG"
+#macro compose                             E           "qy<shell-escape>termite -e "zsh -c \"/usr/bin/mutt -F <(cat ~/.config/mutt/muttrc ~/.config/mutt/external-editor.muttrc) -p\"" >/dev/null 2>&1 &<return>" "Edit in new window"
+
+
+
+
+# Adresses ------------------------------------------------------------
+macro index,pager                          a           "<pipe-message>goobook add<return>" "add sender to google contacts"
+macro index,pager                          a           "|abook --add-email\n" "add sender to abook"
+macro index,pager                          a           "mutt4abook\n\n!abookadd.pl\n" "create an alias from a message sender"
+macro index,pager                        "\Ca"         "<pipe-message>lbdb-fetchaddr<return>"
+macro pager                                a            |'mail2muttalias.py ~/.mutt-aliases'\n
+macro index,pager                         \ck           <pipe-entry>'mutt2calcurse'<return> 'Add ical events to calcurse'
+macro pager                               \Ck          "!/usr/bin/khal --new $(~/Scripts/mutt2khal ~/.mutt/temp/caldata)"
+macro index                               \cb           |urlview\n "Extract a URL, and queue for later download"
+macro index,pager                          h           ":toggle edit_headers<return>:set ?edit_headers<return>"
+macro index,pager                          H           "<pipe-message>htmail-decode<return>"                                                                  "render html mail using htmail-view"
+macro index,pager                          H            view-mailcap #HTML
+macro index                                T           tn   # Search for
+
+
+
+# Command -------------------------------------------------------
+#macro index                               \Cf          "<enter-command>unset wait_key<return><shell-escape>read -p 'Enter a search term to find with notmuch: ' x; echo \$x >~/.cache/mutt_terms<return><limit>~i \"\`notmuch search --output=messages \$(cat ~/.cache/mutt_terms) | head -n 600 | perl -le '@a=<>;s/\^id:// for@a;$,=\"|\";print@a' | perl -le '@a=<>; chomp@a; s/\\+/\\\\+/ for@a;print@a' \`\"<return>" "show only messages matching a notmuch pattern"
+#macro index,pager                          y           "<enter-command>set editor=\"~/bin/editlabel append\"\n<edit><sync-mailbox><next-undeleted><enter-command>set editor=vim\n" "Append label"
+##macro index,pager                          Y          "<enter-command>set editor=\"~/bin/editlabel menu\"  \n<edit><sync-mailbox><next-undeleted><enter-command>set editor=vim\n" "Edit labels"
+#macro generic                              S           "<enter-command>set my_cmd = \`mairix-search\`<return><enter-command>push \$my_cmd<return>
+#macro index,pager                         J            "<enter-command>set my_old_resolve=\$resolve noresolve<return><tag-prefix><clear-flag>n<enter-command>set resolve=\$my_old_resolve<return><save-message>+$my_account0/junk<return>" "mark as read and move to junk folder"
+
+# Pip entry -------------------------------------------------------
+#macro attach                               V           "<pipe-entry>iconv -c --to-code=UTF8 > ~/.cache/mutt/mail.html<return><shell-escape>$BROWSER ~/.cache/mutt/mail.html<return>"
+#macro index,pager                         A            "<modify-labels>+archive -unread -inbox\\n"
+#macro index                               \\           "<vfolder-from-query>"
+#macro index                               \Cr          "T~U<return><tag-prefix><clear-flag>N<untag-pattern>.<return>" "mark all messages as read"
+
+
+
+
+
+# Folder -------------------------------------------------------
+#macro index                               ,cp         "cimap://localhost/pcgen/"    "Change to the pcgen folder"
+#macro index                                gi         "c=INBOX<return>"       "Go to Inbox"
+#macro index                               ,cr         "c=received"       "Change to the =received folder"
+#macro pager                                S          "s=SPAM"
+
+
+
+# Limit --------------------------------------------------------------
+# Project
+	set my_project          ="~Lece|~Lesiee|~Llip6" # or ~h
+# Copil
+	set my_copil            ="~Ladum|~Luniv-paris-est|~Luniv-mlv|~Lu-pem|~Lu-pec|~Lu-bourgogne" # or ~h
+# List job
+	set my_listjobnetwork   ="~Labg|~Lindeed|~Llinkedin |~Lresearchgatemai|~s rsd-forum|~s \"GDR Sécurité\"|~Ltalents-network"
+	set my_listlab          ="~Lacm|~Lapec|~Lcea|~Lcnrs|~Lirisa|~Linria|~Llri|~Lupmc "
+	set my_listcompany      ="~Lorange|~Lcisco|~Lmicrosoft|~Loracle|~Lthalesgroup|~Lmathworks"
+	set my_listlecture      ="~Lelsevier|~Lmachinelearningmastery|~Ledx|~Labaenglish|~Lacademia-mail"
+# Need
+	set my_listneed         ="~Lgouv|~Lairfrance|~Lairalgerie|~Lgovoyages|~Lpaypal|~Lbnpparibas|~Lenquetesenligne|~Lfree|~Limagine-r|~Lcaf.fr"
+# Useless
+	set my_useless          ="!~Limmoj!~Lpole-emploi!~Llogicimmo!~Lpap!~Lfac-habitat!~Ldirect-en!~Lpyimagesearch!~Lorpi!~Lairbnb!~Lamadeus!~Ldiplomeo!~Lsncf!~Laxa!~Lgo-sport!~Lalibaba!~Llouispion!~Ldeezer!~Ltwitter!~Lfacebookmail!~Linstagram!~Lculture!~Lgoogle!~Lincontrolproductions!~Lubuntu!~Lzotero!~Lgithub!~Lgitlab!~Loverleaf!~Lpinterest!~Lnylas!~Lobjectaid!~Lplagscan!~Lplatform.sh!~Lrapidminer!~Lreadcube!~Lsas!~Lsharelatex!~Lskype!~Lslack!~Ldoodle!~Ldropboxmail!~Lmodule25!~Lopenclassrooms!~Lyoufid!~Ltalend!~Ltalendinc!~Ltrello!~Lubidots!~Lyoutube!~Lzamzar" 
+
+
+macro index                               œ          ":set status_format= All$my_status_format<return><limit>all\n<collapse-all>"                "Limit view All"
+macro index                               \&         ":set status_format= Project$my_status_format<return><limit> $my_project\n<collapse-all>"            "Limit view to Job"
+macro index                               é          ":set status_format= Copil$my_status_format<return><limit>$my_copil|$my_listjobnetwork|$my_listlab|$my_listcompany|$my_listlecture\n<collapse-all>" "Limit view to Administration
+macro index                               \"         ":set status_format= \"List Need\"$my_status_format<return><limit>$my_listneed\n"           "Limit view Job Lists"
+macro index                               \'         ":set status_format= \"List job\"$my_status_format<return><limit>!($my_listjobnetwork) !($my_project)!($my_copil)!($my_listlab)!($my_listcompany)!($my_listlecture)!($my_listneed)$my_useless\n<collapse-all>"       "Limit view to Teaching"
+#macro index                               \(        ":set status_format= Project$my_status_format<return><limit>$my_service\n"        "Limit view Services"
+
+#macro index                               \-         ":set my_folder=Project<return><limit>all\n"                "Limit view Remaining"
+macro index                               \è         ":set status_format= Remaining$my_status_format<return><limit>"                "Limit view Remaining"
+#macro index                               \_         ":set my_folder=Project<return><limit>all\n"                "Limit view Remaining"
+macro index                               \ç         ":set my_folder=Project<return><limit>all\n"                "Limit view Remaining"
+macro index                               \à         ":set my_folder=Project<return><limit>all\n"                "Limit view Remaining"
+macro index                               \)         ":set my_folder=Project<return><limit>all\n"                "Limit view Remaining"
+
+

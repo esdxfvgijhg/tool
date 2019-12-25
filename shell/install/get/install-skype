@@ -1,0 +1,12 @@
+#!/bin/sh
+
+
+mkdir $TMPPATH
+
+
+#Skype
+wget https://repo.skype.com/latest/skypeforlinux-64.deb -O $TMPPATH/skypeforlinux-64.deb
+installx $TMPPATH/skypeforlinux-64.deb
+#installx skype
+
+

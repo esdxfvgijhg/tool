@@ -1,0 +1,65 @@
+
+	house:
+		actionlogement
+		axa
+		caf
+		directenergie
+		free
+		List:
+			rbnb
+
+	Job:
+		ece
+		esiee
+		univ-paris-est
+		univ-mlv
+		adum
+		upmc
+		sorbonne
+		upec
+		List: set my_alist = "~f abg ! ~f acm ! ~f apec ! ~f cea ! ~f cnrs ! ~f irisa ! ~f indeed ! ~f inria ! ~f letudiant ! ~f linkedin ! ~f lri ! ~f elsevier ! ~f orange ! ~f researchgate ! ~s rsd-forum ! ~t gdr-securite ! ~f thalesgroup ! ~f talents-network ! ~f twitter ! ~f upmc ! ~f cisco ! ~s docs-labinfo"
+
+
+
+set my_alist    = "~f adum ! ~f univ-paris-est ! ~f univ-mlv ! ~f abg ! ~f acm ! ~f apec ! ~f cea ! ~f cnrs ! ~f irisa ! ~f indeed ! ~f inria ! ~f letudiant ! ~f linkedin ! ~f lri ! ~f elsevier ! ~f orange ! ~f researchgatemai ! ~s rsd-forum ! ~t gdr-securite ! ~f thalesgroup ! ~f talents-network ! ~f twitter ! ~f upmc ! ~f cisco ! ~s docs-labinfo"
+set my_aservice ="~f culture ! ~f govoyages ! ~f free ! ~f alibaba ! ~f doodle ! ~f dropboxmail ! ~f go-sport ! ~f google ! ~f incontrolproductions ! ~f ubuntu ! ~f zotero ! ~f abaenglish ! ~f academia-mail ! ~f caliopen ! ~f deezer ! ~f microsoft ! ~f edx ! ~f facebookmail ! ~f github ! ~f gitlab ! ~f instagram ! ~f louispion ! ~f mathworks ! ~f elsevier ! ~f machinelearningmastery ! ~f module25 ! ~f nylas ! ~f objectaid ! ~f openclassrooms ! ~f oracle ! ~f youfid ! ~f overleaf ! ~f pinterest ! ~f plagscan ! ~f platform.sh ! ~f rapidminer ! ~f readcube ! ~f sas ! ~f sharelatex ! ~f skype ! ~f slack ! ~f talend ! ~f talendinc ! ~f trello ! ~f ubidots ! ~f youtube ! ~f zamzar ! ~f enquetesenligne ! ~f paypal! ~f bnpparibas"
+
+
+
+
+	Service: 
+		alibaba, doodle
+set my_aservice ="~f culture ! ~f govoyages ! ~f free ! ~f alibaba ! ~f doodle ! ~f dropboxmail ! ~f go-sport ! ~f google ! ~f incontrolproductions ! ~f ubuntu ! ~f zotero ! ~f abaenglish ! ~f academia-mail ! ~f caliopen ! ~f deezer ! ~f microsoft ! ~f edx ! ~f facebookmail ! ~f github ! ~f gitlab ! ~f instagram ! ~f louispion ! ~f mathworks ! ~f elsevier ! ~f machinelearningmastery ! ~f module25 ! ~f nylas ! ~f objectaid ! ~f openclassrooms ! ~f oracle ! ~f youfid ! ~f overleaf ! ~f pinterest ! ~f plagscan ! ~f platform.sh ! ~f rapidminer ! ~f readcube ! ~f sas ! ~f sharelatex ! ~f skype ! ~f slack ! ~f talend ! ~f talendinc ! ~f trello ! ~f ubidots ! ~f youtube ! ~f zamzar ! ~f enquetesenligne ! ~f paypal! ~f bnpparibas"
+
+	State: 
+		set my_astate ="gouv.fr ~f paypal  ~f bnpparibas"
+
+
+	Transport: 
+		set my_aservice ="~f govoyages "
+		airalgerie
+		airfrance
+		govoyages
+		transilien
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

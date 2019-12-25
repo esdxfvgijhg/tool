@@ -1,0 +1,9 @@
+#!/bin/sh
+
+#Gnome
+	installx gnome-control-center
+	installx gnome-todo
+	#installx gnome-tweak-tool
+
+
+

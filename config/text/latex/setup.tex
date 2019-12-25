@@ -1,0 +1,157 @@
+%% Fonts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{xstring}
+% \usepackage{geometry}
+\usepackage{mathtools}
+\usepackage{pifont}
+\usepackage{multicol}
+\usepackage{blkarray}
+\usepackage{subfiles}
+
+%\usepackage[draft]{todonotes}
+
+%\newcommand{\mytitle}[1]{#1}
+
+\newcommand{\mysetup}[1]{
+%	\def{\mytitle}[1]{#1}
+	\title{#1}
+%	\part{#1}
+}
+
+\def\ESIEE{LIGM, UMR 8049, École des Ponts, UPEM, ESIEE Paris, CNRS,UPE, France}
+\def\ECE{ECE Research Lab Paris, 37 Quai de Grenelle, 75015 Paris, France}
+
+\usepackage{xparse}
+  \ExplSyntaxOn
+    \NewDocumentCommand{\xinput}{m}{%
+      \azimut_xinput:n { #1 }
+    }
+    \ior_new:N \g_azimut_xinput_stream
+    \cs_new_protected:Nn \azimut_xinput:n{
+      \ior_open:Nn \g_azimut_xinput_stream { "|ls ~ #1" }
+      \ior_map_inline:Nn \g_azimut_xinput_stream { \file_input:n { \tl_trim_spaces:n {##1} } }
+    }
+  \ExplSyntaxOff
+  
+%% Path %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\LIBPATH{/home/aghiles/.config/latex}
+\def\RESPATH{/home/aghiles/Aghiles/job/txt/Resources}
+
+\def\REFPATH{\RESPATH/bib}
+\def\PLOTPATH{\RESPATH/plot}
+\def\DATAPATH{\RESPATH/data}
+
+\input{\LIBPATH/rgb}
+\input{\LIBPATH/plot}
+
+
+
+% Algorithms --------------------------------------------------------------------------------
+\usepackage[lined,linesnumbered,commentsnumbered,ruled]{algorithm2e}
+% \usepackage{verbatim,algorithmic}
+% \usepackage{algorithm,algpseudocode}
+% \usepackage{algorithm,algorithmic}
+\usepackage{listings}
+
+
+
+% Tableaux ----------------------------------------------------------------------------------
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{threeparttable}
+\usepackage{etoolbox}
+\usepackage{tabulary}
+\usepackage{tabularx}
+	% \appto\TPTnoteSettings{\footnotesize}
+\usepackage{array}
+	\usepackage{ragged2e}
+	% \newcolumntype{lj}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+	% \newcolumntype{j}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+	% \newcolumntype{rj}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+	\newcolumntype{P}{@{\hspace{1pt}}>{\RaggedLeft}m{0.22cm}}
+	\newcolumntype{?}{!{\vrule width 1pt}}
+	%\renewcommand{\arraystretch}{1.5}
+
+
+
+% Hyperref ---------------------------------------------------------------------------------
+\usepackage{hyperref}
+	\hypersetup{
+	%	pdftex,
+	%	pdfpagemode=FullScreen,
+	%	hyperfootnotes=true,
+	%	breaklinks=true,
+	%	bookmarksopen=true,
+	%	backref=page
+	%	pdftitle={title},	% title
+	%	pdfauthor={Salvatore Mazzarino},	 % author
+	%	pdfsubject={Subject},   % subject of the document
+	%	pdfcreator={Salvatore Mazzarino},   % creator of the document
+	%	pdfproducer={Salvatore Mazzarino}, % producer of the document
+	%	pdfkeywords={Green Networking} {Mobile Cloud} {Network Coding} {Energy}, % list of keywords
+	%	pdfborder={0 0 0},
+		pdftoolbar=true,		% show Acrobat’s toolbar?
+		pdfmenubar=true,		% show Acrobat’s menu?
+		pdffitwindow=true,	 % window fit to page when opened
+		pdfstartview={FitH},	% fits the width of the page to the window
+		pdfnewwindow=true,	  % links in new window
+		colorlinks=true,	   % false: boxed links; true: colored links
+		linkcolor=beamer@blendedblue,		  % color of internal links (change box color with linkbordercolor)
+		citecolor=beamer@blendedblue,		% color of links to bibliography
+		filecolor=beamer@blendedblue,	  % color of file links
+		urlcolor=beamer@blendedblue		   % color of external links
+	}
+
+
+% Figures --------------------------------------------------------------------------------
+\usepackage{graphicx}
+	\graphicspath{{\RESPATH/plot/}{\RESPATH/img/icon/}{\RESPATH/img/}{\RESPATH/img/1-social/}{\RESPATH/img/2-utlc/}{\RESPATH/img/A-Application/}{\RESPATH/img/B-CN/}{\RESPATH/img/C-RAN/}{\RESPATH/img/Framework/}{\RESPATH/img/Model//}{\RESPATH/img/Picture/}{\RESPATH/plot/bin/}{\RESPATH/plot/pdf/}}
+\usepackage{subcaption}
+\usepackage[labelsep=period]{caption}
+	\captionsetup{justification=centering}
+	\captionsetup[table]{skip=10pt}
+	%\captionsetup{labelfont=it,textfont={bf,it},justification=centering}
+	\captionsetup{font={footnotesize}}
+	\renewcommand{\thesubfigure}{\alph{subfigure}}
+	\renewcommand{\thefigure}{\arabic{figure}}
+
+
+% Item -------------------------------------------------------------------------------------
+\usepackage{enumitem}
+	\setlist[enumerate]{topsep=-0.5cm,itemsep=0ex,partopsep=0ex,parsep=0ex}
+	\setlist[itemize]{topsep=-0.5cm,itemsep=0ex,partopsep=0ex,parsep=0ex}
+	\setlistdepth{9}
+	\setlist[itemize,1]{label=\violet{\ding{224}}}
+	\setlist[itemize,2]{label=\violet{\ding{223}}}
+	\setlist[itemize,3]{label=\violet{\ding{84}}}
+	\setlist[itemize,4]{label=\violet{\Rightarrow}}
+	\setlist[itemize,5]{label=\violet{$\gg$}}
+	\setlist[itemize,6]{label=\violet{$\leadsto$}}
+	\setlist[itemize,7]{label=\violet{$\bullet$}}
+	\setlist[itemize,8]{label=\violet{$\bullet$}}
+	\setlist[itemize,9]{label=\violet{$\bullet$}}
+	\renewlist{itemize}{itemize}{9}
+%\usepackage{etoc}
+% \renewcommand\labelitemi{\violet{\ding{224}}}
+% \renewcommand\labelitemii{\violet{\ding{223}}}
+% \renewcommand\labelitemii{\violet{\ding{84}}}
+%\renewcommand\labelitemi{--}
+
+
+% Bibliography ------------------------------------------------------------------------------
+\usepackage[sorting=none,backref=false,backend=biber, doi=false,url=false,isbn=false, style=ieee]{biblatex}%sorting=nyt, sorting=rasha
+	\addbibresource{\REFPATH/iot.bib}%
+	\addbibresource{\REFPATH/iotbis.bib}%
+	\addbibresource{\REFPATH/privacy.bib}%
+	\addbibresource{\REFPATH/petri.bib}%
+	\def\bibfont{\small}
+
+
+\input{\LIBPATH/commands}
+\input{\LIBPATH/nomenclature}
+
+
+

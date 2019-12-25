@@ -1,0 +1,46 @@
+{
+    "Mailboxs": [
+
+                    {
+                        "identity": "aghilesdjoudi@gmail.com",
+                        "authentication": "oauth",
+
+                        "parameters": {
+
+                                        "name": "djoudi",
+                                        "signature": "Aghiles",
+                                        "client_id": "702091535259-4rsarn13nsksk3lpo2ti8uajpcr01b49.apps.googleusercontent.com",
+                                        "client_secret": "seCgMxpxGlgctr7IrjXYHra9",
+                                        "tls": "yes",
+                                        "default": "yes"
+                                      }
+                    },
+
+                    {
+                        "identity": "XXXX@outlook.com",
+                        "authentication": "password",
+                        "parameters": {
+
+                                        "name": "XXXX",
+                                        "client_id": "XXXXX",
+                                        "client_secret": "XXXXX",
+                                        "tls": "yes",
+                                        "default": "no"
+                                     }
+                    },
+                    {
+                        "identity": "xxxx@xxxx.com",
+                        "authentication": "password",
+                        "parameters": {
+                                        "imap_server": "xxxxxxx",
+                                        "imap_port": 993,
+                                        "smtp_server": "xxxxxxx",
+                                        "smtp_port": 587,
+                                        "tls": "yes",
+                                        "default": "no"
+                                      }
+                    }
+
+                ],
+    "List Period": 4
+}

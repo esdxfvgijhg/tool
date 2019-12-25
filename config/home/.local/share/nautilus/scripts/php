@@ -1,0 +1,15 @@
+#!/bin/bash
+
+mypath="$NAUTILUS_SCRIPT_SELECTED_FILE_PATHS"
+directory=`dirname "$mypath"`
+filename=`basename "$mypath"`
+
+echo $directory
+
+cmd1="sudo php -S localhost:8000 -t ."
+
+xdg-open http://localhost:8000/$filename
+
+cd "$directory"
+gnome-terminal --title="Serveur web" -e "$cmd1"
+

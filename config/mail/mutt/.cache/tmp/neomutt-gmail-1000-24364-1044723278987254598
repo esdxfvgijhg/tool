@@ -1,0 +1,136 @@
+Delivered-To: aghilesdjoudi@gmail.com
+Received: by 2002:ac0:ee16:0:0:0:0:0 with SMTP id q22csp869010imw;
+        Tue, 19 Nov 2019 07:37:10 -0800 (PST)
+X-Google-Smtp-Source: APXvYqxDlKBTf5cK9rvdHSE6yKI8HZg66vwUk4O1pY7jpzV6xfbInWjrrAFEZ0PTZzGYPIrh472u
+X-Received: by 2002:a63:a449:: with SMTP id c9mr6248820pgp.53.1574177830749;
+        Tue, 19 Nov 2019 07:37:10 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1574177830; cv=none;
+        d=google.com; s=arc-20160816;
+        b=g5nrvcWFy3QHzBP8S+VsPRbvNaCP/3XklAujHqR0f8ATVUFqovw5CUrdSbCced1GSM
+         T1AGnBFB8DwVCTH805y1+nzA4N9ikHaPGLjAEyGYdl/8C/XkDDnb93Jc1GiNypeeTXPA
+         hPCnIZDQVXBFxXNXdK1Woi5J38ZsIlaq/dLMgjh6LC5nwFz7kbz6gatBT25JiySz5hRj
+         RnWKvMysnTySbEo8qqfICXbOLNp/sag4KV1s48LTR9ketAlYlFNqeVtpXfOfVQdzqaNR
+         hjmgM4Q955EIbnpakL9A4WCVX0UJmHWEG0Isanm/7htaitqtmej/p2sT35JJT5j73lRM
+         RmHQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:date:message-id:subject:mime-version:from:dkim-signature;
+        bh=o51RjSDaN6e3y722oRd0c5jtAyLkVu3HSRNZk1qCS1s=;
+        b=SUaeFHR3ltW/c5Up1tTibdamsMynVi4DIjgWEjRNYXfXf9eXf8uwBN192TRhjFpfRj
+         20cD5sDOmV3/FCewG6L3G3LN/r1uGq5xxV5Mzd7g4yBG2hVFT04oXlLmbybv/35m2Wqu
+         t1zGCYVAihBBkiLOEq3V2fxK9RA7Dg8qUPMUJWH0VyUoYAQtQ7WxSPwLAbsl3rmPH3SB
+         UrUCaZ1Wbb7Mt8mUwiMpqSt90ttJB+XEPFgB8U8jHz1wyuEM4FVVkD0xEzql8OZVWKmV
+         Ar49YHEmr3Wsyd9re8KEFixTPJkTbYkr9GAVyWeKRz65nE1Hrz4IeaUBAhoGhvZRdBpC
+         YiIg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mac.com header.s=1a1hai header.b=kOICx7Yv;
+       spf=pass (google.com: domain of cox.j@mac.com designates 17.58.38.52 as permitted sender) smtp.mailfrom=cox.j@mac.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=mac.com
+Return-Path: <cox.j@mac.com>
+Received: from ms11p00im-qufo17281501.me.com (ms11p00im-qufo17281501.me.com. [17.58.38.52])
+        by mx.google.com with ESMTPS id r14si26625810pfl.76.2019.11.19.07.37.10
+        for <aghilesdjoudi@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 19 Nov 2019 07:37:10 -0800 (PST)
+Received-SPF: pass (google.com: domain of cox.j@mac.com designates 17.58.38.52 as permitted sender) client-ip=17.58.38.52;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mac.com header.s=1a1hai header.b=kOICx7Yv;
+       spf=pass (google.com: domain of cox.j@mac.com designates 17.58.38.52 as permitted sender) smtp.mailfrom=cox.j@mac.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=mac.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mac.com; s=1a1hai;
+	t=1574177830; bh=o51RjSDaN6e3y722oRd0c5jtAyLkVu3HSRNZk1qCS1s=;
+	h=From:Content-Type:Subject:Message-Id:Date:To;
+	b=kOICx7YvvpH8fOCSagy1m0l13uQbZ/giSrgVO+VZliXjJgRcAkv+lGCjS7pcwgNMK
+	 fiswmRBCWcQ57Gc3BmrX44RURCdoDKwmm4LoexdoJHmoEM0B/0w6ICMWuSoFnrESg/
+	 8o/a0YqFy1/MiolFrj9pFpo9Vui9Dke1o/oniOwMkE6yT1mKafhxX6Y0wHQQBfwGgg
+	 GmfBTagJmuyLjL5HB6TiuB6Bs33IEiI4uOdXDmsd79S0Nz1GePPHxuBy4uF/5zb7WI
+	 +K3xRPNVC4kNSMQPmvowY1ng6JHoyMZPl1tDeAFlX46fD6+WEdOV0dV+5xSbMY9A7E
+	 A7FGlGzGFs2gA==
+Received: from [192.168.1.42] (64.203.67.86.rev.sfr.net [86.67.203.64])
+	by ms11p00im-qufo17281501.me.com (Postfix) with ESMTPSA id AF85BB41006;
+	Tue, 19 Nov 2019 15:37:03 +0000 (UTC)
+From: James COX <cox.j@mac.com>
+Content-Type: multipart/alternative;
+	boundary="Apple-Mail=_25CFA6F2-F95E-4A28-B46C-05E4D309DADE"
+Mime-Version: 1.0 (Mac OS X Mail 13.0 \(3601.0.10\))
+Subject: Documentary I told you about this morning
+Message-Id: <CF8DD0F0-691E-4D76-A31B-87893D56A4B8@mac.com>
+Date: Tue, 19 Nov 2019 16:37:00 +0100
+To: Joffrey DUMONT LE BRAZIDEC <joffreydumont@hotmail.fr>,
+ Dasha TIEPLOVA <dtieplova@yahoo.com>,
+ Amed MVOULANA <amed.mvoulana@gmail.com>,
+ Agustin DEI <agustindei@gmx.com>,
+ Anna VOSKOBOYNIKOVA <anna.voskoboynikova@enpc.fr>,
+ Philippe SIN <mel.philippe.sin@gmail.com>,
+ Joseph MEYE <joseph-meye@live.fr>,
+ Mendjelani FAWI <jeanfawi@gmail.com>,
+ Mohamed El Hacen JED <hassenjid9@gmail.com>,
+ Abdellah OUHAB <ouhab.abdellah@gmail.com>,
+ =?utf-8?Q?Am=C3=A9lie_ARNOULT?= <amelie.arnoult@gmail.com>,
+ =?utf-8?Q?Z=C3=A9lie_WUTHRICH?= <zelie.wuthrich@laposte.net>,
+ Hamidou SAWADOGO <hmdsawadogo17@gmail.com>,
+ Yohann GARCIA <garcia.yohann@gmx.fr>,
+ Meriem TAMART <meriem.tamart.92@gmail.com>,
+ Meryem AFENDI <meryem.afendi@u-pec.fr>,
+ Myriam MANSOUR <myriam_mansour@hotmail.fr>,
+ Assia MOKSSIT <a.mokssit@gmail.com>,
+ Lina PENAGOS SANCHEZ <linamarie24@gmail.com>,
+ Marianne FOISELLE <marianne.foiselle@gmail.com>,
+ =?utf-8?Q?Fran=C3=A7ois-Olivier_BAUDOT?= <francois-olivier.baudot@u-pec.fr>,
+ Quitterie ROCCASERRA <quitterie.rcs@hotmail.fr>,
+ Lu ZHAO <luzhao0513@hotmail.com>,
+ Philippe FABIAN <philippe.fabian@u-pem.fr>,
+ Heriberto MARTINEZ <heriberto.martinez@ifsttar.fr>,
+ Murad SHOMAN <murad.shoman90@gmail.com>,
+ Sarra CHENIGLE <sarra.chenigle@yahoo.fr>,
+ Demeng FAN <fan634856714@gmail.com>,
+ =?utf-8?Q?Rapha=C3=ABl_PELLET?= <icraph@gmail.com>,
+ Aghiles DJOUDI <aghilesdjoudi@gmail.com>,
+ Mehdi SEHAKI <sehaki.mehdi.emp@gmail.com>,
+ Estelle DARREAU <estelle.darrau@gmail.com>,
+ Asma BAGHDADI <asma.baghdadi@ieee.org>
+X-Mailer: Apple Mail (2.3601.0.10)
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:,, definitions=2019-11-19_05:,,
+ signatures=0
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 suspectscore=0 malwarescore=0
+ phishscore=0 bulkscore=0 spamscore=0 clxscore=1015 mlxscore=0
+ mlxlogscore=823 adultscore=0 classifier=spam adjust=0 reason=mlx
+ scancount=1 engine=8.0.1-1908290000 definitions=main-1911190141
+
+
+--Apple-Mail=_25CFA6F2-F95E-4A28-B46C-05E4D309DADE
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset=utf-8
+
+You should be able to download it here. Let me know if there=E2=80=99s a =
+problem.
+
+
+=
+https://www.icloud.com/iclouddrive/0hxJZkW4HrNAKWvO4LehFbFkw#The.Americas.=
+with.Simon.Reeve.S01E01.480p.x264-mSD%5Beztv%5D =
+<https://www.icloud.com/iclouddrive/0hxJZkW4HrNAKWvO4LehFbFkw#The.Americas=
+.with.Simon.Reeve.S01E01.480p.x264-mSD[eztv]>
+
+
+
+
+--Apple-Mail=_25CFA6F2-F95E-4A28-B46C-05E4D309DADE
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset=utf-8
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Dutf-8"></head><body style=3D"word-wrap: break-word; =
+-webkit-nbsp-mode: space; line-break: after-white-space;" class=3D""><div =
+class=3D"">You should be able to download it here. Let me know if =
+there=E2=80=99s a problem.</div><div class=3D""><br class=3D""></div><div =
+class=3D""><br class=3D""></div><a =
+href=3D"https://www.icloud.com/iclouddrive/0hxJZkW4HrNAKWvO4LehFbFkw#The.A=
+mericas.with.Simon.Reeve.S01E01.480p.x264-mSD[eztv]" =
+class=3D"">https://www.icloud.com/iclouddrive/0hxJZkW4HrNAKWvO4LehFbFkw#Th=
+e.Americas.with.Simon.Reeve.S01E01.480p.x264-mSD%5Beztv%5D</a><div =
+class=3D""><br class=3D""></div><div class=3D""><br class=3D""></div><div =
+class=3D""><br class=3D""></div></body></html>=
+
+--Apple-Mail=_25CFA6F2-F95E-4A28-B46C-05E4D309DADE--

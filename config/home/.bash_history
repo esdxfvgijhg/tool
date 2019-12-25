@@ -1,0 +1,1 @@
+/home/aghiles/Aghiles/tool/config/home/.bash_history

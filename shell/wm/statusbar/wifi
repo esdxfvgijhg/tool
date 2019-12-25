@@ -1,0 +1,7 @@
+#!/bin/bash
+
+device=wlp3s0
+ssid="$(iw dev $device info|grep -oP '(?<=ssid ).*')"
+if [ "$ssid" != "" ]; then
+  echo "說 $ssid"
+fi

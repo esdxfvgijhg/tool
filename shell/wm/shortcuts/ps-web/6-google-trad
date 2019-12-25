@@ -1,0 +1,3 @@
+#!/bin/bash
+
+xdg-open "https://translate.google.com/?hl=fr#view=home&op=translate&sl=en&tl=fr"

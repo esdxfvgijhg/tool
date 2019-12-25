@@ -1,0 +1,10 @@
+name: music
+root:
+
+windows:
+    - music:
+        layout: 0f06,213x57,0,0[213x43,0,0{106x43,0,0,54,106x43,107,0,55},213x13,0,44,56]
+        panes:
+            - gpymusic
+            - mpsyt
+            - cava

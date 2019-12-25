@@ -1,0 +1,15 @@
+#!/bin/sh
+
+
+mkdir $TMPPATH
+
+
+
+#Calcurse
+	cd $TMPPATH && git clone https://github.com/lfos/calcurse.git
+	cd calcurse/
+	sudo ./autogen.sh
+	sudo ./configure
+	sudo make
+	sudo make install
+

@@ -1,0 +1,10 @@
+// ExternalTools Commands - User
+[
+	{
+		"caption": "The display name of your command",
+		"command":"external_tools_run",
+		"args": { 
+	      "cmd": ["sed -zr 's/\\n\\n+/ŧ/g' | sed -zr 's/(%[^\\n]+)/\\1þ/g' | sed -zr 's/\\.[ \\t]*\\n/vgyhn/g' | sed -zr 's/}[ \\t]*\\n/pvkglyhn/g' | sed -zr 's/\\n[\\t ]*/ /g' | sed -zr 's/\\t+//g' | sed -zr 's/(\\.)[ \\t]+([^0-9])/\\1\\n\\2/g' | sed -zr 's/([,:;])[ \\t]+([^0-9])/\\1\\n\\t\\2/g' | sed -zr 's/vgyhn/\\.\\n/g' | sed -zr 's/pvkglyhn/\\}\\n/g' | sed -zr 's/ŧ/\\n\\n/g' | sed -zr 's/þ[ \\t]*/\\n/g' | sed -zr 's/\\- //g'"]
+	}
+	}
+]

@@ -1,0 +1,90 @@
+
+# object can be one of:
+#   * attachment
+#   * body              (match regexp in the body of messages)
+#   * bold              (hiliting bold patterns in the body of messages)
+#   * error             (error messages printed by Mutt)
+#   * header            (match regexp in the message header)
+#   * hdrdefault        (default color of the message header in the pager)
+#   * index             (match pattern in the message index)
+#   * indicator         (arrow or bar used to indicate the current item in a menu)
+#   * markers           (the '+' markers at the beginning of wrapped lines in the pager)
+#   * message           (informational messages)
+#   * normal            (normal (not quoted) text
+#   * quoted            (text matching $quote_regexp in the body of a message)
+#   * quoted1, quotedN  (higher levels of quoting)
+#   * search            (hiliting of words in the pager)
+#   * signature
+#   * status            (mode lines used to display info about the mailbox or message)
+#   * tilde             (the '~' used to pad blank lines in the pager)
+#   * tree              (thread tree drawn in the message index and attachment menu)
+#   * underline         (hiliting underlined patterns in the body of messages)
+#
+# foreground and background can be one of the following:
+#   * white
+#   * black
+#   * green
+#   * magenta
+#   * blue
+#   * cyan
+#   * yellow
+#   * red
+#   * default
+# foreground can optionally be prefixed with the keyword bright to make the
+# foreground color boldfaced (e.g., brightred) or colorX{,X,XX}
+#
+#  $ for i in {0..255} ; do printf "\x1b[38;5;${i}mcolour${i}\n" ; done | column
+#
+# NOTE: ** The last matching rule wins! **
+#
+
+
+
+# divers ----------------------------------------------------------------
+color bold             color255             default
+color error            color229             default
+color	hdrdefault       color81              default
+color indicator        color7               color237
+color markers          red                  white
+color message          cyan                 default
+color progress         white                color60
+color search           brightmagenta        default
+color signature        color81              default
+color status           cyan                 default
+color tilde            black                default
+color tree             color238             default
+color underline        color233             default
+color attachment       color6               default
+color prompt           color3               color0 
+
+
+
+#color	compose      header			          color81		      default
+#color	compose      security_both		    brightgreen	    default
+#color	compose      security_sign		    brightmagenta	  default
+#color	compose      security_encrypt	    brightyellow	  default
+#color	compose      security_none		    brightred	      default
+
+
+
+source $my_path/colors/body
+source $my_path/colors/header
+source $my_path/colors/quotes
+source $my_path/colors/sidebar
+source $my_path/colors/rules
+source $my_path/colors/index
+
+
+
+mono body bold "^gpg: BAD signature from.*"
+mono body bold "^gpg: Good signature"
+mono error bold
+mono indicator reverse
+mono underline underline
+mono bold bold
+mono header underline ^(From|Subject):
+mono quoted bold
+
+
+
+

@@ -1,0 +1,45 @@
+#!/bin/sh
+
+
+
+
+#Mail
+	installx neovim
+	installx neomutt
+	installx tmux
+  installx fasd
+	installx ranger
+	installx pass
+	#gpg --full-gen-key
+	#pass init djaghiles@gmail.com
+	#pass add djaghiles
+
+
+
+
+#installx procmail
+#installx khard
+#installx khal
+#installx mu
+#installx ripmime
+#installx w3m
+#installx w3m-img
+#installx vdirsyncer
+#installx ruby-notify
+#installx isync
+#installx imapsync
+#installx msmtp
+#installx mpack
+#installx offlineimap
+#installx notmuch
+##notmuch new 
+#installx passage
+#installx imapfilter
+#installx lbdb
+#installx khard
+#installx screen
+#installx exa
+  
+
+
+

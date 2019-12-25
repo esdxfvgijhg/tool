@@ -1,0 +1,6 @@
+#!/bin/sh
+
+#Mendelley
+#https://desktop-download.mendeley.com/download/apt/pool/main/m/mendeleydesktop/mendeleydesktop_1.19.4-stable_amd64.deb -P ~/Downloads
+#installx ~/Downloads/mendeleydesktop_1.19.4-stable_amd64.deb
+

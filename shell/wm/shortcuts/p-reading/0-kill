@@ -1,0 +1,4 @@
+#!/bin/bash
+
+pkill mpg123;pkill trans;pkill 4;pkill 5;pkill 6;pkill 7;pkill 8;pkill 9;
+

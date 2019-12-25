@@ -1,0 +1,72 @@
+# program launcher
+super + space
+	dmenu_run
+# Record audio or video
+super + Print
+	dmenurecord
+# kill active recording
+super + Delete
+	dmenurecord kill
+# Mount a USB drive or Android device
+super + F9
+	dmenumount
+# Unmount a USB drive or Android device
+super + F10
+	dmenuumount
+# edit common config files
+alt + ctrl + e
+	tilix dmenu-edit-configs.sh
+# surfraw
+alt + ctrl + s
+	tilix dmenu-surfraw.sh 
+# common system montoring programs
+alt + ctrl + m
+	tilix dmenu-sysmon.sh 
+# reddio Reddit viewer
+alt + ctrl + r
+	tilix dmenu-reddio.sh 
+# stock trading programs
+alt + ctrl + t
+	tilix dmenu-trading.sh 
+
+
+
+
+
+
+# launch ncpamixer
+super + alt + a
+	tilix -e ncpamixer
+# launch surf browser
+super + alt + b
+	surf www.youtube.com/c/DistroTube
+# launch cmus
+super + alt + c
+	tilix -e cmus
+# launch lynx web browser
+super + alt + l
+	tilix -e lynx -cfg=~/.lynx/lynx.cfg -lss=~/.lynx/lynx.lss -vikeys gopher://distro.tube
+# launch irssi chat client
+super + alt + i
+	tilix -e irssi
+# launch joplin
+super + alt + j
+	tilix -e joplin
+# launch toot cli
+super + alt + m
+	tilix -e toot curses
+# launch newsboat feed reeder
+super + alt + n
+	tilix -e newsboat
+# launch pianobar
+super + alt + p
+	tilix -e pianobar
+# launch rtv
+super + alt + r
+	tilix -e rtv
+# launch wopr
+super + alt + w
+	tilix -e wopr report.xml
+# launch youtube viewer
+super + alt + y
+	tilix -e youtube-viewer

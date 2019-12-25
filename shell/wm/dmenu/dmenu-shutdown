@@ -1,0 +1,13 @@
+#!/bin/bash
+
+dmenu=/home/aghiles/Aghiles/Tool/scripts/z/x/dmenucolor
+
+MESSAGE="lock\\nexit\\nreboot\\nshutdown"
+ACTION="$(printf "$MESSAGE" | $dmenu -i -p "Power Menu:")"
+
+case "$ACTION" in
+  "lock") lock ;;
+  "exit") i3-msg exit ;;
+  "reboot") systemctl reboot ;;
+  "shutdown") systemctl poweroff -i ;;
+esac

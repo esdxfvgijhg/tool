@@ -1,0 +1,4 @@
+#! /bin/bash
+
+firefox "https://www.overleaf.com/project/5d9ec3ba78049300018ca8a2"
+

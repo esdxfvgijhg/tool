@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#gtk-launch firefox ~/Aghiles/Firefox/Tool/english_Grammarly.desktop
+#xdg-open ~/Aghiles/Firefox/Tool/text_editor.desktop
+xdg-open https://www.mytextarea.com/

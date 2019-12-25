@@ -1,0 +1,33 @@
+#!/bin/bash
+
+#xdg-settings set default-web-browser qutebrowser
+
+
+source /home/aghiles/Aghiles/tool/shell/export
+
+
+# Config
+ln -sf $TOOLPATH/config/*/* /home/aghiles/.config/
+ln -sf $TOOLPATH/config/home/.* /home/aghiles/
+chmod -R u+x ~/.local/share/nautilus/scripts
+
+# Scripts
+chmod -R u+x $TOOLPATH/shell
+
+
+# Program
+ln -sf /media/aghiles/Aghiles $READINGPATH
+chmod -R u+x $PROGRAMPATH/engineering/*
+
+
+# Tools
+ln -sf $TOOLSPATH/ns-3/ns-3-dev/examples/aghiles $PROGRAMPATH/simulation/ns3/src
+ln -sf $TOOLSPATH/ns-3/ns-3-dev/src/lorawan $PROGRAMPATH/simulation/ns3/lib
+
+chmod -R u+x $TOOLSPATH/matlab/bin
+
+chmod -R u+x $TOOLSPATH/zotero/zotero $TOOLSPATH/zotero/zotero-bin
+#sudo mv /usr/bin/pdftotext /usr/bin/pdftotext2
+#sudo ln -sf $TOOLSPATH/zotero/pdftotext /usr/bin/pdftotext
+
+sudo ln -sf /media/aghiles/Aghiles $READINGPATH/doc

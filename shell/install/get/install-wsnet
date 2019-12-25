@@ -1,0 +1,17 @@
+#!/bin/sh
+
+
+mkdir $TMPPATH
+
+
+
+
+#WSNet
+	svn checkout svn://scm.gforge.inria.fr/svn/wsnet $TMPPATH/wsnet
+	cd $TMPPATH/wsnet/
+	./bootstrap
+	./configure
+	make
+	make install
+	#wsnet -c /usr/local/wsnet-2.0/demo/cbr.xml
+

@@ -1,0 +1,809 @@
+Delivered-To: aghilesdjoudi@gmail.com
+Received: by 2002:ac0:e08d:0:0:0:0:0 with SMTP id i13csp217573imm;
+        Thu, 12 Dec 2019 19:20:13 -0800 (PST)
+X-Google-Smtp-Source: APXvYqxTHHTR+B0CjCDpbS0a3pMstGJpAbjSMNk+Nz8zkDiS6sCX8BeiJrRYfoGE693V3ZWV/1IW
+X-Received: by 2002:a19:4b87:: with SMTP id y129mr8123714lfa.32.1576207213000;
+        Thu, 12 Dec 2019 19:20:13 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1576207212; cv=none;
+        d=google.com; s=arc-20160816;
+        b=HqVqZYlE2989tIY4Jn8QObTwsqgdUPMLBhZMesSEXJsgT46auzJ3LRmU58rz3rFbv4
+         WJm2+5bbRkJWSKT0uTR85rVSgEgqLMfMqm2RwDjfHuXgbdZEUMLdlC9o8um/I7FVl9dK
+         hFROT6RTqvf2mShuE7Rxzn159QGu0DCu1h5mA106VI6yYq8zboAaLs5QYqrj5Xn4Yzax
+         zaxt9I8Egrs8rJ8kFCuAs2G+UeTyXDVyoccWVfATv1Ga6xWGTY6CgdujVce07s0PxXE+
+         uz/zO0FDERuQRi7hw4RzvSat0zrVC6sIVZNRb+RuXAxSfbW1Ncm6CcmeiZaMoYQGhFTE
+         K12g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-language:in-reply-to:to:mime-version:user-agent:date
+         :message-id:from:references:subject;
+        bh=obbCW0ZlQylvKILCzKYKOtYyW1wY1zvi7lM9GbQ6Gv4=;
+        b=LjkN61J3s77EZaI2e8qalwxX/svA+4a8Ie0WtHk6Vnpenp7g4LHlJMxtiePpxAE/HS
+         X4JiZKy8q57Wo+YofiLCwRzToZJ5m7lcWxbLUslezY/lDGvpOpl8h8xEuLNP42ulByP5
+         rmEWZ3Qm6dROXt1XzF7K6zQhTL8J132IcxUmjBVfAUZTTbDrww+EgHFoopA1CwYIXutz
+         Pn4cWE/FZWAmEtfj77EFA/RKyanFDMnirG0xdEHxprFnH15TXap0xeYqwDj6KxKIKrvd
+         FNan6k57DlycNO5yPMnGjNDh+1o3VcqtWrSQ8+wc8ESinrpNNw47CHPDpoeqVfUta8Mb
+         gJ+Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 194.57.247.88 is neither permitted nor denied by best guess record for domain of sylvie.cach@univ-paris-est.fr) smtp.mailfrom=sylvie.cach@univ-paris-est.fr
+Return-Path: <sylvie.cach@univ-paris-est.fr>
+Received: from boyer6.enpc.fr (boyer6.enpc.fr. [194.57.247.88])
+        by mx.google.com with ESMTPS id c4si6475956ljn.66.2019.12.12.19.20.07
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 12 Dec 2019 19:20:12 -0800 (PST)
+Received-SPF: neutral (google.com: 194.57.247.88 is neither permitted nor denied by best guess record for domain of sylvie.cach@univ-paris-est.fr) client-ip=194.57.247.88;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 194.57.247.88 is neither permitted nor denied by best guess record for domain of sylvie.cach@univ-paris-est.fr) smtp.mailfrom=sylvie.cach@univ-paris-est.fr
+Received: from boyer2.enpc.fr (boyer2.enpc.fr [194.57.247.92])
+	(using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by boyer6.enpc.fr (Postfix) with ESMTPS id 25BCF201149;
+	Thu, 12 Dec 2019 14:12:55 +0100 (CET)
+Received: from localhost (localhost [127.0.0.1])
+	by boyer2.enpc.fr (Postfix) with ESMTP id C0F5AC8D95;
+	Thu, 12 Dec 2019 14:12:54 +0100 (CET)
+Received: from boyer2.enpc.fr ([127.0.0.1])
+	by localhost (boyer2.enpc.fr [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id qQ1CR58A705A; Thu, 12 Dec 2019 14:12:54 +0100 (CET)
+Received: from localhost (localhost [127.0.0.1])
+	by boyer2.enpc.fr (Postfix) with ESMTP id 00089C8D87;
+	Thu, 12 Dec 2019 14:12:53 +0100 (CET)
+X-Virus-Scanned: amavisd-new at boyer2.enpc.fr
+Received: from boyer2.enpc.fr ([127.0.0.1])
+	by localhost (boyer2.enpc.fr [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id KX_A6hUMdOJA; Thu, 12 Dec 2019 14:12:53 +0100 (CET)
+Received: from [172.21.6.48] (upe-de0215008.enpc.fr [172.21.6.48])
+	by boyer2.enpc.fr (Postfix) with ESMTPSA id 0C43EC8D8F;
+	Thu, 12 Dec 2019 14:12:52 +0100 (CET)
+Subject: =?UTF-8?Q?Univ_Paris_Est_ED_MSTIC_annonce_de_soutenance_de_th=c3=a8?=
+ =?UTF-8?Q?se_=3a_Xu_HU_le_19_d=c3=a9cembre_2019?=
+References: <2885db37-9c20-29af-d275-0c0a9e802fdb@univ-paris-est.fr>
+From: Sylvie CACH <sylvie.cach@univ-paris-est.fr>
+X-Forwarded-Message-Id: <2885db37-9c20-29af-d275-0c0a9e802fdb@univ-paris-est.fr>
+Message-ID: <c48128e7-b777-9975-8fb3-4d9ce1af363d@univ-paris-est.fr>
+Date: Thu, 12 Dec 2019 14:12:51 +0100
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:60.0) Gecko/20100101
+ Thunderbird/60.4.0
+MIME-Version: 1.0
+To: destinataires inconnus: ;
+In-Reply-To: <2885db37-9c20-29af-d275-0c0a9e802fdb@univ-paris-est.fr>
+Content-Type: multipart/alternative;
+ boundary="------------A940D475AD1BB48EBC435F38"
+Content-Language: fr
+
+This is a multi-part message in MIME format.
+--------------A940D475AD1BB48EBC435F38
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Transfer-Encoding: quoted-printable
+
+Avis de Soutenance
+
+Monsieur Xu HU
+
+Math=C3=A9matiques
+
+Soutiendra publiquement ses travaux de th=C3=A8se intitul=C3=A9s /Vers un=
+=20
+apprentissage efficace des mod=C3=A8les graphiques et des r=C3=A9seaux de=
+ neurones=20
+avec des techniques variationnelles/
+
+dirig=C3=A9s par Monsieur Nikos KOMODAKIS
+
+Soutenance pr=C3=A9vue le/*jeu*/*/di 19 d=C3=A9cembre 2019/*=C3=A0 14h00 =
+Amphi Caquot 1=20
+b=C3=A2timent Coriolis, =C3=89cole des Ponts ParisTech, 6-8 avenue Blaise=
+ Pascal,=20
+Champs-sur-Marne
+
+*Composition du jury propos=C3=A9*
+
+
+M. Nikos KOMODAKIS 	Ecole des Ponts ParisTech 	Directeur de th=C3=A8se
+M. Simon LACOSTE-JULIEN 	Universit=C3=A9 de Montr=C3=A9al 	Rapporteur
+M. Matthew BLASCHKO 	KU Leuven 	Rapporteur
+Mme Nathalie PEYRARD 	INRA Toulouse 	Rapporteur
+M. Guillaume OBOZINSKI 	EPFL 	Examinateur
+M. Jakob VERBEEK 	Inria Grenoble 	Examinateur
+
+
+*R=C3=A9sum=C3=A9 : *
+
+Dans cette th=C3=A8se, je me concentrerai principalement sur l=E2=80=99in=
+f=C3=A9rence=20
+variationnelle et les mod=C3=A8les probabilistes. En particulier, je=20
+couvrirai plusieurs projets sur lesquels j'ai travaill=C3=A9 pendant ma t=
+h=C3=A8se=20
+sur l'am=C3=A9lioration de l'efficacit=C3=A9 des syst=C3=A8mes AI / ML av=
+ec des=20
+techniques variationnelles. La th=C3=A8se comprend deux parties. Dans la=20
+premi=C3=A8re partie, l=E2=80=99efficacit=C3=A9 des mod=C3=A8les probabil=
+istes graphiques est=20
+=C3=A9tudi=C3=A9e. Dans la deuxi=C3=A8me partie, plusieurs probl=C3=A8mes=
+ d=E2=80=99apprentissage=20
+des r=C3=A9seaux de neurones profonds sont examin=C3=A9s, qui sont li=C3=A9=
+s =C3=A0=20
+l=E2=80=99efficacit=C3=A9 =C3=A9nerg=C3=A9tique ou =C3=A0 l=E2=80=99effic=
+acit=C3=A9 des =C3=A9chantillons.
+
+
+
+Sylvie CACH  -  =C3=89D MSTIC
+COMUE - Universit=C3=A9 Paris-Est
+Aile Vicat - Bureau V426
+6-8 avenue Blaise-Pascal
+Cit=C3=A9 Descartes, Champs-sur-Marne
+77455 Marne-la-Vall=C3=A9e
+T=C3=A9l : +33 (0)1 64 15 38 49
+https://www.univ-paris-est.fr/ecoles-doctorales/ecole-doctorale-mathemati=
+ques-et-stic-mstic/accueil/
+
+
+------------------------------------------------------------------------
+
+--------------A940D475AD1BB48EBC435F38
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+  <head>
+
+    <meta http-equiv=3D"content-type" content=3D"text/html; charset=3DUTF=
+-8">
+  </head>
+  <body text=3D"#000000" bgcolor=3D"#FFFFFF">
+    <font face=3D"Times New Roman, Times, serif"><span style=3D"color:
+        rgb(0, 36, 110); background-color: rgb(255, 255, 255)
+        !important; line-height: 1.5em; font-size: 15pt; font-weight:
+        bold;">Avis de Soutenance</span></font><br style=3D"color: rgb(0,
+      36, 110); background-color: rgb(255, 255, 255) !important;
+      line-height: 1.5em; font-size: 10pt;">
+    <font face=3D"Times New Roman, Times, serif"> </font>
+    <div class=3D"moz-forward-container">
+      <div class=3D"moz-forward-container">
+        <div class=3D"moz-forward-container"><font face=3D"Times New Roma=
+n,
+            Times, serif"> </font>
+          <div class=3D"moz-forward-container"><font face=3D"Times New
+              Roman, Times, serif"> </font>
+            <div class=3D"moz-forward-container"><font face=3D"Times New
+                Roman, Times, serif"> </font>
+              <div class=3D"moz-forward-container"><font face=3D"Times Ne=
+w
+                  Roman, Times, serif"> </font>
+                <center style=3D"color: rgb(0, 36, 110); background-color=
+:
+                  rgb(255, 255, 255); font-family: &quot;Trebuchet MS
+                  Bold&quot;, Verdana, Arial; line-height: 1.5em;
+                  font-size: 13.3333px; font-style: normal;
+                  font-variant-ligatures: normal; font-variant-caps:
+                  normal; font-weight: 400; letter-spacing: normal;
+                  orphans: 2; text-indent: 0px; text-transform: none;
+                  white-space: normal; widows: 2; word-spacing: 0px;
+                  -webkit-text-stroke-width: 0px; text-decoration-style:
+                  initial; text-decoration-color: initial;"><font
+                    face=3D"Times New Roman, Times, serif"> </font>
+                  <div align=3D"left"><font face=3D"Courier New, Courier,
+                      monospace"><font face=3D"Times New Roman, Times,
+                        serif"> <br style=3D"color: rgb(0, 36, 110);
+                          background-color: rgb(255, 255, 255)
+                          !important; line-height: 1.5em; font-size:
+                          10pt;">
+                        <span style=3D"color: rgb(0, 36, 110);
+                          background-color: rgb(255, 255, 255);
+                          line-height: 1.5em; font-size: 15pt;
+                          font-style: normal; font-variant-ligatures:
+                          normal; font-variant-caps: normal;
+                          font-weight: 400; letter-spacing: normal;
+                          text-indent: 0px; text-transform: none;
+                          white-space: normal; word-spacing: 0px;
+                          -webkit-text-stroke-width: 0px;
+                          text-decoration-style: initial;
+                          text-decoration-color: initial;">Monsieur Xu
+                          HU</span><br style=3D"color: rgb(0, 36, 110);
+                          background-color: rgb(255, 255, 255);
+                          line-height: 1.5em; font-size: 13.3333px;
+                          font-style: normal; font-variant-ligatures:
+                          normal; font-variant-caps: normal;
+                          font-weight: 400; letter-spacing: normal;
+                          text-indent: 0px; text-transform: none;
+                          white-space: normal; word-spacing: 0px;
+                          -webkit-text-stroke-width: 0px;
+                          text-decoration-style: initial;
+                          text-decoration-color: initial;">
+                        <br style=3D"color: rgb(0, 36, 110);
+                          background-color: rgb(255, 255, 255);
+                          line-height: 1.5em; font-size: 13.3333px;
+                          font-style: normal; font-variant-ligatures:
+                          normal; font-variant-caps: normal;
+                          font-weight: 400; letter-spacing: normal;
+                          text-indent: 0px; text-transform: none;
+                          white-space: normal; word-spacing: 0px;
+                          -webkit-text-stroke-width: 0px;
+                          text-decoration-style: initial;
+                          text-decoration-color: initial;">
+                        <span style=3D"color: rgb(0, 36, 110);
+                          background-color: rgb(255, 255, 255);
+                          line-height: 1.5em; font-size: 14pt;
+                          font-style: normal; font-variant-ligatures:
+                          normal; font-variant-caps: normal;
+                          font-weight: 400; letter-spacing: normal;
+                          text-indent: 0px; text-transform: none;
+                          white-space: normal; word-spacing: 0px;
+                          -webkit-text-stroke-width: 0px;
+                          text-decoration-style: initial;
+                          text-decoration-color: initial;">Math=C3=A9mati=
+ques</span></font><font
+                        face=3D"Times New Roman, Times, serif"><span
+                          style=3D"color: rgb(0, 36, 110); font-size:
+                          13.3333px; font-style: normal;
+                          font-variant-ligatures: normal;
+                          font-variant-caps: normal; font-weight: 400;
+                          letter-spacing: normal; text-indent: 0px;
+                          text-transform: none; white-space: normal;
+                          word-spacing: 0px; -webkit-text-stroke-width:
+                          0px; background-color: rgb(255, 255, 255);
+                          text-decoration-style: initial;
+                          text-decoration-color: initial; display:
+                          inline !important; float: none;"></span><br
+                          style=3D"color: rgb(0, 36, 110);
+                          background-color: rgb(255, 255, 255);
+                          line-height: 1.5em; font-size: 13.3333px;
+                          font-style: normal; font-variant-ligatures:
+                          normal; font-variant-caps: normal;
+                          font-weight: 400; letter-spacing: normal;
+                          text-indent: 0px; text-transform: none;
+                          white-space: normal; word-spacing: 0px;
+                          -webkit-text-stroke-width: 0px;
+                          text-decoration-style: initial;
+                          text-decoration-color: initial;">
+                      </font></font><br style=3D"color: rgb(0, 36, 110);
+                      background-color: rgb(255, 255, 255); font-family:
+                      &quot;Trebuchet MS Bold&quot;, Verdana, Arial;
+                      line-height: 1.5em; font-size: 13.3333px;
+                      font-style: normal; font-variant-ligatures:
+                      normal; font-variant-caps: normal; font-weight:
+                      400; letter-spacing: normal; orphans: 2;
+                      text-align: -webkit-center; text-indent: 0px;
+                      text-transform: none; white-space: normal; widows:
+                      2; word-spacing: 0px; -webkit-text-stroke-width:
+                      0px; text-decoration-style: initial;
+                      text-decoration-color: initial;">
+                    <span style=3D"color: rgb(0, 36, 110); font-family:
+                      &quot;Trebuchet MS Bold&quot;, Verdana, Arial;
+                      font-size: 13.3333px; font-style: normal;
+                      font-variant-ligatures: normal; font-variant-caps:
+                      normal; font-weight: 400; letter-spacing: normal;
+                      orphans: 2; text-align: -webkit-center;
+                      text-indent: 0px; text-transform: none;
+                      white-space: normal; widows: 2; word-spacing: 0px;
+                      -webkit-text-stroke-width: 0px; background-color:
+                      rgb(255, 255, 255); text-decoration-style:
+                      initial; text-decoration-color: initial; display:
+                      inline !important; float: none;">Soutiendra
+                      publiquement ses travaux de th=C3=A8se intitul=C3=A9=
+s </span><i
+                      style=3D"color: rgb(0, 36, 110); background-color:
+                      rgb(255, 255, 255); font-family: &quot;Trebuchet
+                      MS Bold&quot;, Verdana, Arial; line-height: 1.5em;
+                      font-size: 13.3333px; font-variant-ligatures:
+                      normal; font-variant-caps: normal; font-weight:
+                      400; letter-spacing: normal; orphans: 2;
+                      text-align: -webkit-center; text-indent: 0px;
+                      text-transform: none; white-space: normal; widows:
+                      2; word-spacing: 0px; -webkit-text-stroke-width:
+                      0px; text-decoration-style: initial;
+                      text-decoration-color: initial;">Vers un
+                      apprentissage efficace des mod=C3=A8les graphiques =
+et
+                      des r=C3=A9seaux de neurones avec des techniques
+                      variationnelles</i><span style=3D"color: rgb(0, 36,
+                      110); font-family: &quot;Trebuchet MS Bold&quot;,
+                      Verdana, Arial; font-size: 13.3333px; font-style:
+                      normal; font-variant-ligatures: normal;
+                      font-variant-caps: normal; font-weight: 400;
+                      letter-spacing: normal; orphans: 2; text-align:
+                      -webkit-center; text-indent: 0px; text-transform:
+                      none; white-space: normal; widows: 2;
+                      word-spacing: 0px; -webkit-text-stroke-width: 0px;
+                      background-color: rgb(255, 255, 255);
+                      text-decoration-style: initial;
+                      text-decoration-color: initial; display: inline
+                      !important; float: none;"></span><br style=3D"color=
+:
+                      rgb(0, 36, 110); background-color: rgb(255, 255,
+                      255); font-family: &quot;Trebuchet MS Bold&quot;,
+                      Verdana, Arial; line-height: 1.5em; font-size:
+                      13.3333px; font-style: normal;
+                      font-variant-ligatures: normal; font-variant-caps:
+                      normal; font-weight: 400; letter-spacing: normal;
+                      orphans: 2; text-align: -webkit-center;
+                      text-indent: 0px; text-transform: none;
+                      white-space: normal; widows: 2; word-spacing: 0px;
+                      -webkit-text-stroke-width: 0px;
+                      text-decoration-style: initial;
+                      text-decoration-color: initial;">
+                    <br style=3D"color: rgb(0, 36, 110); background-color=
+:
+                      rgb(255, 255, 255); font-family: &quot;Trebuchet
+                      MS Bold&quot;, Verdana, Arial; line-height: 1.5em;
+                      font-size: 13.3333px; font-style: normal;
+                      font-variant-ligatures: normal; font-variant-caps:
+                      normal; font-weight: 400; letter-spacing: normal;
+                      orphans: 2; text-align: -webkit-center;
+                      text-indent: 0px; text-transform: none;
+                      white-space: normal; widows: 2; word-spacing: 0px;
+                      -webkit-text-stroke-width: 0px;
+                      text-decoration-style: initial;
+                      text-decoration-color: initial;">
+                    <span style=3D"color: rgb(0, 36, 110); font-family:
+                      &quot;Trebuchet MS Bold&quot;, Verdana, Arial;
+                      font-size: 13.3333px; font-style: normal;
+                      font-variant-ligatures: normal; font-variant-caps:
+                      normal; font-weight: 400; letter-spacing: normal;
+                      orphans: 2; text-align: -webkit-center;
+                      text-indent: 0px; text-transform: none;
+                      white-space: normal; widows: 2; word-spacing: 0px;
+                      -webkit-text-stroke-width: 0px; background-color:
+                      rgb(255, 255, 255); text-decoration-style:
+                      initial; text-decoration-color: initial; display:
+                      inline !important; float: none;">dirig=C3=A9s par
+                      Monsieur Nikos KOMODAKIS</span><span style=3D"color=
+:
+                      rgb(0, 36, 110); font-family: &quot;Trebuchet MS
+                      Bold&quot;, Verdana, Arial; font-size: 13.3333px;
+                      font-style: normal; font-variant-ligatures:
+                      normal; font-variant-caps: normal; font-weight:
+                      400; letter-spacing: normal; orphans: 2;
+                      text-align: -webkit-center; text-indent: 0px;
+                      text-transform: none; white-space: normal; widows:
+                      2; word-spacing: 0px; -webkit-text-stroke-width:
+                      0px; background-color: rgb(255, 255, 255);
+                      text-decoration-style: initial;
+                      text-decoration-color: initial; display: inline
+                      !important; float: none;"></span><span
+                      style=3D"color: rgb(0, 36, 110); font-family:
+                      &quot;Trebuchet MS Bold&quot;, Verdana, Arial;
+                      font-size: 13.3333px; font-style: normal;
+                      font-variant-ligatures: normal; font-variant-caps:
+                      normal; font-weight: 400; letter-spacing: normal;
+                      orphans: 2; text-align: -webkit-center;
+                      text-indent: 0px; text-transform: none;
+                      white-space: normal; widows: 2; word-spacing: 0px;
+                      -webkit-text-stroke-width: 0px; background-color:
+                      rgb(255, 255, 255); text-decoration-style:
+                      initial; text-decoration-color: initial; display:
+                      inline !important; float: none;"></span><br
+                      style=3D"color: rgb(0, 36, 110); background-color:
+                      rgb(255, 255, 255); font-family: &quot;Trebuchet
+                      MS Bold&quot;, Verdana, Arial; line-height: 1.5em;
+                      font-size: 13.3333px; font-style: normal;
+                      font-variant-ligatures: normal; font-variant-caps:
+                      normal; font-weight: 400; letter-spacing: normal;
+                      orphans: 2; text-align: -webkit-center;
+                      text-indent: 0px; text-transform: none;
+                      white-space: normal; widows: 2; word-spacing: 0px;
+                      -webkit-text-stroke-width: 0px;
+                      text-decoration-style: initial;
+                      text-decoration-color: initial;">
+                    <br style=3D"color: rgb(0, 36, 110); background-color=
+:
+                      rgb(255, 255, 255); font-family: &quot;Trebuchet
+                      MS Bold&quot;, Verdana, Arial; line-height: 1.5em;
+                      font-size: 13.3333px; font-style: normal;
+                      font-variant-ligatures: normal; font-variant-caps:
+                      normal; font-weight: 400; letter-spacing: normal;
+                      orphans: 2; text-align: -webkit-center;
+                      text-indent: 0px; text-transform: none;
+                      white-space: normal; widows: 2; word-spacing: 0px;
+                      -webkit-text-stroke-width: 0px;
+                      text-decoration-style: initial;
+                      text-decoration-color: initial;">
+                    <span style=3D"color: rgb(0, 36, 110); font-family:
+                      &quot;Trebuchet MS Bold&quot;, Verdana, Arial;
+                      font-size: 13.3333px; font-style: normal;
+                      font-variant-ligatures: normal; font-variant-caps:
+                      normal; font-weight: 400; letter-spacing: normal;
+                      orphans: 2; text-align: -webkit-center;
+                      text-indent: 0px; text-transform: none;
+                      white-space: normal; widows: 2; word-spacing: 0px;
+                      -webkit-text-stroke-width: 0px; background-color:
+                      rgb(255, 255, 255); text-decoration-style:
+                      initial; text-decoration-color: initial; display:
+                      inline !important; float: none;">Soutenance pr=C3=A9=
+vue
+                      le<span> <i><b>jeu</b></i></span></span><b
+                      style=3D"color: rgb(0, 36, 110); background-color:
+                      rgb(255, 255, 255); font-family: &quot;Trebuchet
+                      MS Bold&quot;, Verdana, Arial; line-height: 1.5em;
+                      font-size: 13.3333px; font-weight: bold;
+                      font-style: normal; font-variant-ligatures:
+                      normal; font-variant-caps: normal; letter-spacing:
+                      normal; orphans: 2; text-align: -webkit-center;
+                      text-indent: 0px; text-transform: none;
+                      white-space: normal; widows: 2; word-spacing: 0px;
+                      -webkit-text-stroke-width: 0px;
+                      text-decoration-style: initial;
+                      text-decoration-color: initial;"><i style=3D"color:
+                        rgb(0, 36, 110); background-color: rgb(255, 255,
+                        255) !important; font-family: &quot;Trebuchet MS
+                        Bold&quot;, Verdana, Arial; line-height: 1.5em;
+                        font-size: 10pt;">di 19 d=C3=A9cembre 2019<span>=C2=
+=A0</span></i></b><span
+                      style=3D"color: rgb(0, 36, 110); font-family:
+                      &quot;Trebuchet MS Bold&quot;, Verdana, Arial;
+                      font-size: 13.3333px; font-style: normal;
+                      font-variant-ligatures: normal; font-variant-caps:
+                      normal; font-weight: 400; letter-spacing: normal;
+                      orphans: 2; text-align: -webkit-center;
+                      text-indent: 0px; text-transform: none;
+                      white-space: normal; widows: 2; word-spacing: 0px;
+                      -webkit-text-stroke-width: 0px; background-color:
+                      rgb(255, 255, 255); text-decoration-style:
+                      initial; text-decoration-color: initial; display:
+                      inline !important; float: none;">=C3=A0 14h00 </spa=
+n><span
+                      style=3D"color: rgb(0, 36, 110); font-family:
+                      &quot;Trebuchet MS Bold&quot;, Verdana, Arial;
+                      font-size: 13.3333px; font-style: normal;
+                      font-variant-ligatures: normal; font-variant-caps:
+                      normal; font-weight: 400; letter-spacing: normal;
+                      orphans: 2; text-align: -webkit-center;
+                      text-indent: 0px; text-transform: none;
+                      white-space: normal; widows: 2; word-spacing: 0px;
+                      -webkit-text-stroke-width: 0px; background-color:
+                      rgb(255, 255, 255); text-decoration-style:
+                      initial; text-decoration-color: initial; display:
+                      inline !important; float: none;">Amphi Caquot 1
+                      b=C3=A2timent Coriolis</span><span style=3D"color: =
+rgb(0,
+                      36, 110); font-family: &quot;Trebuchet MS
+                      Bold&quot;, Verdana, Arial; font-size: 13.3333px;
+                      font-style: normal; font-variant-ligatures:
+                      normal; font-variant-caps: normal; font-weight:
+                      400; letter-spacing: normal; orphans: 2;
+                      text-align: -webkit-center; text-indent: 0px;
+                      text-transform: none; white-space: normal; widows:
+                      2; word-spacing: 0px; -webkit-text-stroke-width:
+                      0px; background-color: rgb(255, 255, 255);
+                      text-decoration-style: initial;
+                      text-decoration-color: initial; display: inline
+                      !important; float: none;">,=C2=A0<font size=3D"-1">=
+ =C3=89cole
+                        des Ponts ParisTech, 6-8 avenue Blaise Pascal,
+                        Champs-sur-Marne</font></span><span
+                      style=3D"color: rgb(0, 36, 110); font-family:
+                      &quot;Trebuchet MS Bold&quot;, Verdana, Arial;
+                      font-size: 13.3333px; font-style: normal;
+                      font-variant-ligatures: normal; font-variant-caps:
+                      normal; font-weight: 400; letter-spacing: normal;
+                      orphans: 2; text-align: -webkit-center;
+                      text-indent: 0px; text-transform: none;
+                      white-space: normal; widows: 2; word-spacing: 0px;
+                      -webkit-text-stroke-width: 0px; background-color:
+                      rgb(255, 255, 255); text-decoration-style:
+                      initial; text-decoration-color: initial; display:
+                      inline !important; float: none;"></span><br
+                      style=3D"color: rgb(0, 36, 110); background-color:
+                      rgb(255, 255, 255) !important; font-family:
+                      &quot;Trebuchet MS Bold&quot;, Verdana, Arial;
+                      line-height: 1.5em; font-size: 10pt;">
+                    <br style=3D"color: rgb(0, 36, 110); background-color=
+:
+                      rgb(255, 255, 255) !important; font-family:
+                      &quot;Trebuchet MS Bold&quot;, Verdana, Arial;
+                      line-height: 1.5em; font-size: 10pt;">
+                    <b style=3D"color: rgb(0, 36, 110); background-color:
+                      transparent; font-family: &quot;Trebuchet MS
+                      Bold&quot;, Verdana, Arial; line-height: 1.5em;
+                      font-size: 10pt; font-weight: bold;">Composition
+                      du jury propos=C3=A9</b></div>
+                </center>
+                <br class=3D"Apple-interchange-newline">
+                <table style=3D"color: rgb(0, 36, 110); background-color:
+                  rgb(255, 255, 255); font-family: &quot;Trebuchet MS
+                  Bold&quot;, Verdana, Arial; line-height: 1.5em;
+                  font-size: 13.3333px; font-style: normal;
+                  font-variant-ligatures: normal; font-variant-caps:
+                  normal; font-weight: 400; letter-spacing: normal;
+                  orphans: 2; text-align: start; text-indent: 0px;
+                  text-transform: none; white-space: normal; widows: 2;
+                  word-spacing: 0px; -webkit-text-stroke-width: 0px;
+                  text-decoration-style: initial; text-decoration-color:
+                  initial;" width=3D"70%" cellpadding=3D"2" border=3D"0">
+                  <tbody style=3D"color: rgb(0, 36, 110);
+                    background-color: rgb(255, 255, 255) !important;
+                    font-family: &quot;Trebuchet MS Bold&quot;, Verdana,
+                    Arial; line-height: 1.5em; font-size: 10pt;">
+                    <tr style=3D"color: rgb(0, 36, 110); background-color=
+:
+                      rgb(255, 255, 255) !important; font-family:
+                      &quot;Trebuchet MS Bold&quot;, Verdana, Arial;
+                      line-height: 1.5em; font-size: 10pt;">
+                      <td style=3D"color: rgb(0, 36, 110);
+                        background-color: rgb(255, 255, 255) !important;
+                        font-family: &quot;Trebuchet MS Bold&quot;,
+                        Verdana, Arial; line-height: 1.5em; font-size:
+                        10pt;">M. Nikos=C2=A0<span style=3D"color: rgb(0,=
+ 36,
+                          110); background-color: rgb(255, 255, 255)
+                          !important; font-family: &quot;Trebuchet MS
+                          Bold&quot;, Verdana, Arial; line-height:
+                          1.5em; font-size: 10pt; text-transform:
+                          uppercase;">KOMODAKIS</span>=C2=A0</td>
+                      <td style=3D"color: rgb(0, 36, 110);
+                        background-color: rgb(255, 255, 255) !important;
+                        font-family: &quot;Trebuchet MS Bold&quot;,
+                        Verdana, Arial; line-height: 1.5em; font-size:
+                        10pt;">Ecole des Ponts ParisTech=C2=A0</td>
+                      <td style=3D"color: rgb(0, 36, 110);
+                        background-color: rgb(255, 255, 255) !important;
+                        font-family: &quot;Trebuchet MS Bold&quot;,
+                        Verdana, Arial; line-height: 1.5em; font-size:
+                        10pt;">Directeur de th=C3=A8se</td>
+                    </tr>
+                    <tr style=3D"color: rgb(0, 36, 110); background-color=
+:
+                      rgb(255, 255, 255) !important; font-family:
+                      &quot;Trebuchet MS Bold&quot;, Verdana, Arial;
+                      line-height: 1.5em; font-size: 10pt;">
+                      <td style=3D"color: rgb(0, 36, 110);
+                        background-color: rgb(255, 255, 255) !important;
+                        font-family: &quot;Trebuchet MS Bold&quot;,
+                        Verdana, Arial; line-height: 1.5em; font-size:
+                        10pt;">M. Simon=C2=A0<span style=3D"color: rgb(0,=
+ 36,
+                          110); background-color: rgb(255, 255, 255)
+                          !important; font-family: &quot;Trebuchet MS
+                          Bold&quot;, Verdana, Arial; line-height:
+                          1.5em; font-size: 10pt; text-transform:
+                          uppercase;">LACOSTE-JULIEN</span>=C2=A0</td>
+                      <td style=3D"color: rgb(0, 36, 110);
+                        background-color: rgb(255, 255, 255) !important;
+                        font-family: &quot;Trebuchet MS Bold&quot;,
+                        Verdana, Arial; line-height: 1.5em; font-size:
+                        10pt;">Universit=C3=A9 de Montr=C3=A9al=C2=A0</td=
+>
+                      <td style=3D"color: rgb(0, 36, 110);
+                        background-color: rgb(255, 255, 255) !important;
+                        font-family: &quot;Trebuchet MS Bold&quot;,
+                        Verdana, Arial; line-height: 1.5em; font-size:
+                        10pt;">Rapporteur</td>
+                    </tr>
+                    <tr style=3D"color: rgb(0, 36, 110); background-color=
+:
+                      rgb(255, 255, 255) !important; font-family:
+                      &quot;Trebuchet MS Bold&quot;, Verdana, Arial;
+                      line-height: 1.5em; font-size: 10pt;">
+                      <td style=3D"color: rgb(0, 36, 110);
+                        background-color: rgb(255, 255, 255) !important;
+                        font-family: &quot;Trebuchet MS Bold&quot;,
+                        Verdana, Arial; line-height: 1.5em; font-size:
+                        10pt;">M. Matthew=C2=A0<span style=3D"color: rgb(=
+0, 36,
+                          110); background-color: rgb(255, 255, 255)
+                          !important; font-family: &quot;Trebuchet MS
+                          Bold&quot;, Verdana, Arial; line-height:
+                          1.5em; font-size: 10pt; text-transform:
+                          uppercase;">BLASCHKO</span>=C2=A0</td>
+                      <td style=3D"color: rgb(0, 36, 110);
+                        background-color: rgb(255, 255, 255) !important;
+                        font-family: &quot;Trebuchet MS Bold&quot;,
+                        Verdana, Arial; line-height: 1.5em; font-size:
+                        10pt;">KU Leuven=C2=A0</td>
+                      <td style=3D"color: rgb(0, 36, 110);
+                        background-color: rgb(255, 255, 255) !important;
+                        font-family: &quot;Trebuchet MS Bold&quot;,
+                        Verdana, Arial; line-height: 1.5em; font-size:
+                        10pt;">Rapporteur</td>
+                    </tr>
+                    <tr style=3D"color: rgb(0, 36, 110); background-color=
+:
+                      rgb(255, 255, 255) !important; font-family:
+                      &quot;Trebuchet MS Bold&quot;, Verdana, Arial;
+                      line-height: 1.5em; font-size: 10pt;">
+                      <td style=3D"color: rgb(0, 36, 110);
+                        background-color: rgb(255, 255, 255) !important;
+                        font-family: &quot;Trebuchet MS Bold&quot;,
+                        Verdana, Arial; line-height: 1.5em; font-size:
+                        10pt;">Mme Nathalie=C2=A0<span style=3D"color: rg=
+b(0,
+                          36, 110); background-color: rgb(255, 255, 255)
+                          !important; font-family: &quot;Trebuchet MS
+                          Bold&quot;, Verdana, Arial; line-height:
+                          1.5em; font-size: 10pt; text-transform:
+                          uppercase;">PEYRARD</span>=C2=A0</td>
+                      <td style=3D"color: rgb(0, 36, 110);
+                        background-color: rgb(255, 255, 255) !important;
+                        font-family: &quot;Trebuchet MS Bold&quot;,
+                        Verdana, Arial; line-height: 1.5em; font-size:
+                        10pt;">INRA Toulouse=C2=A0</td>
+                      <td style=3D"color: rgb(0, 36, 110);
+                        background-color: rgb(255, 255, 255) !important;
+                        font-family: &quot;Trebuchet MS Bold&quot;,
+                        Verdana, Arial; line-height: 1.5em; font-size:
+                        10pt;">Rapporteur</td>
+                    </tr>
+                    <tr style=3D"color: rgb(0, 36, 110); background-color=
+:
+                      rgb(255, 255, 255) !important; font-family:
+                      &quot;Trebuchet MS Bold&quot;, Verdana, Arial;
+                      line-height: 1.5em; font-size: 10pt;">
+                      <td style=3D"color: rgb(0, 36, 110);
+                        background-color: rgb(255, 255, 255) !important;
+                        font-family: &quot;Trebuchet MS Bold&quot;,
+                        Verdana, Arial; line-height: 1.5em; font-size:
+                        10pt;">M. Guillaume=C2=A0<span style=3D"color: rg=
+b(0,
+                          36, 110); background-color: rgb(255, 255, 255)
+                          !important; font-family: &quot;Trebuchet MS
+                          Bold&quot;, Verdana, Arial; line-height:
+                          1.5em; font-size: 10pt; text-transform:
+                          uppercase;">OBOZINSKI</span>=C2=A0</td>
+                      <td style=3D"color: rgb(0, 36, 110);
+                        background-color: rgb(255, 255, 255) !important;
+                        font-family: &quot;Trebuchet MS Bold&quot;,
+                        Verdana, Arial; line-height: 1.5em; font-size:
+                        10pt;">EPFL=C2=A0</td>
+                      <td style=3D"color: rgb(0, 36, 110);
+                        background-color: rgb(255, 255, 255) !important;
+                        font-family: &quot;Trebuchet MS Bold&quot;,
+                        Verdana, Arial; line-height: 1.5em; font-size:
+                        10pt;">Examinateur</td>
+                    </tr>
+                    <tr style=3D"color: rgb(0, 36, 110); background-color=
+:
+                      rgb(255, 255, 255) !important; font-family:
+                      &quot;Trebuchet MS Bold&quot;, Verdana, Arial;
+                      line-height: 1.5em; font-size: 10pt;">
+                      <td style=3D"color: rgb(0, 36, 110);
+                        background-color: rgb(255, 255, 255) !important;
+                        font-family: &quot;Trebuchet MS Bold&quot;,
+                        Verdana, Arial; line-height: 1.5em; font-size:
+                        10pt;">M. Jakob=C2=A0<span style=3D"color: rgb(0,=
+ 36,
+                          110); background-color: rgb(255, 255, 255)
+                          !important; font-family: &quot;Trebuchet MS
+                          Bold&quot;, Verdana, Arial; line-height:
+                          1.5em; font-size: 10pt; text-transform:
+                          uppercase;">VERBEEK</span>=C2=A0</td>
+                      <td style=3D"color: rgb(0, 36, 110);
+                        background-color: rgb(255, 255, 255) !important;
+                        font-family: &quot;Trebuchet MS Bold&quot;,
+                        Verdana, Arial; line-height: 1.5em; font-size:
+                        10pt;">Inria Grenoble=C2=A0</td>
+                      <td style=3D"color: rgb(0, 36, 110);
+                        background-color: rgb(255, 255, 255) !important;
+                        font-family: &quot;Trebuchet MS Bold&quot;,
+                        Verdana, Arial; line-height: 1.5em; font-size:
+                        10pt;">Examinateur</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br style=3D"color: rgb(0, 36, 110); background-color:
+                  rgb(255, 255, 255); font-family: &quot;Trebuchet MS
+                  Bold&quot;, Verdana, Arial; line-height: 1.5em;
+                  font-size: 13.3333px; font-style: normal;
+                  font-variant-ligatures: normal; font-variant-caps:
+                  normal; font-weight: 400; letter-spacing: normal;
+                  orphans: 2; text-align: start; text-indent: 0px;
+                  text-transform: none; white-space: normal; widows: 2;
+                  word-spacing: 0px; -webkit-text-stroke-width: 0px;
+                  text-decoration-style: initial; text-decoration-color:
+                  initial;">
+                =C2=A0<font face=3D"Times New Roman, Times, serif"><span>=
+<span
+                      style=3D"color: rgb(0, 36, 110); font-family:
+                      &quot;Trebuchet MS Bold&quot;, Verdana, Arial;
+                      font-size: 13.3333px; font-style: normal;
+                      font-variant-ligatures: normal; font-variant-caps:
+                      normal; font-weight: 400; letter-spacing: normal;
+                      orphans: 2; text-align: justify; text-indent: 0px;
+                      text-transform: none; white-space: normal; widows:
+                      2; word-spacing: 0px; -webkit-text-stroke-width:
+                      0px; background-color: rgb(255, 255, 255);
+                      text-decoration-style: initial;
+                      text-decoration-color: initial; display: inline
+                      !important; float: none;"></span></span></font><spa=
+n
+                  style=3D"color: rgb(0, 36, 110); font-family:
+                  &quot;Trebuchet MS Bold&quot;, Verdana, Arial;
+                  font-size: 13.3333px; font-style: normal;
+                  font-variant-ligatures: normal; font-variant-caps:
+                  normal; font-weight: 400; letter-spacing: normal;
+                  orphans: 2; text-align: justify; text-indent: 0px;
+                  text-transform: none; white-space: normal; widows: 2;
+                  word-spacing: 0px; -webkit-text-stroke-width: 0px;
+                  background-color: rgb(255, 255, 255);
+                  text-decoration-style: initial; text-decoration-color:
+                  initial; display: inline !important; float: none;"><b>R=
+=C3=A9sum=C3=A9
+                    :=C2=A0</b></span><span style=3D"color: rgb(0, 36, 11=
+0);
+                  font-family: &quot;Trebuchet MS Bold&quot;, Verdana,
+                  Arial; font-size: 13.3333px; font-style: normal;
+                  font-variant-ligatures: normal; font-variant-caps:
+                  normal; font-weight: 400; letter-spacing: normal;
+                  orphans: 2; text-align: justify; text-indent: 0px;
+                  text-transform: none; white-space: normal; widows: 2;
+                  word-spacing: 0px; -webkit-text-stroke-width: 0px;
+                  background-color: rgb(255, 255, 255);
+                  text-decoration-style: initial; text-decoration-color:
+                  initial; display: inline !important; float: none;"></sp=
+an></div>
+              <div class=3D"moz-forward-container"><br>
+                <span style=3D"color: rgb(0, 36, 110); font-family:
+                  &quot;Trebuchet MS Bold&quot;, Verdana, Arial;
+                  font-size: 13.3333px; font-style: normal;
+                  font-variant-ligatures: normal; font-variant-caps:
+                  normal; font-weight: 400; letter-spacing: normal;
+                  orphans: 2; text-align: justify; text-indent: 0px;
+                  text-transform: none; white-space: normal; widows: 2;
+                  word-spacing: 0px; -webkit-text-stroke-width: 0px;
+                  background-color: rgb(255, 255, 255);
+                  text-decoration-style: initial; text-decoration-color:
+                  initial; display: inline !important; float: none;"><spa=
+n
+                    style=3D"color: rgb(0, 36, 110); font-family:
+                    &quot;Trebuchet MS Bold&quot;, Verdana, Arial;
+                    font-size: 13.3333px; font-style: normal;
+                    font-variant-ligatures: normal; font-variant-caps:
+                    normal; font-weight: 400; letter-spacing: normal;
+                    orphans: 2; text-align: justify; text-indent: 0px;
+                    text-transform: none; white-space: normal; widows:
+                    2; word-spacing: 0px; -webkit-text-stroke-width:
+                    0px; background-color: rgb(255, 255, 255);
+                    text-decoration-style: initial;
+                    text-decoration-color: initial; display: inline
+                    !important; float: none;">Dans cette th=C3=A8se, je m=
+e
+                    concentrerai principalement sur l=E2=80=99inf=C3=A9re=
+nce
+                    variationnelle et les mod=C3=A8les probabilistes. En
+                    particulier, je couvrirai plusieurs projets sur
+                    lesquels j'ai travaill=C3=A9 pendant ma th=C3=A8se su=
+r
+                    l'am=C3=A9lioration de l'efficacit=C3=A9 des syst=C3=A8=
+mes AI / ML
+                    avec des techniques variationnelles. La th=C3=A8se
+                    comprend deux parties. Dans la premi=C3=A8re partie,
+                    l=E2=80=99efficacit=C3=A9 des mod=C3=A8les probabilis=
+tes graphiques
+                    est =C3=A9tudi=C3=A9e. Dans la deuxi=C3=A8me partie, =
+plusieurs
+                    probl=C3=A8mes d=E2=80=99apprentissage des r=C3=A9sea=
+ux de neurones
+                    profonds sont examin=C3=A9s, qui sont li=C3=A9s =C3=A0=
+ l=E2=80=99efficacit=C3=A9
+                    =C3=A9nerg=C3=A9tique ou =C3=A0 l=E2=80=99efficacit=C3=
+=A9 des =C3=A9chantillons.</span></span>
+                <p><font face=3D"Times New Roman, Times, serif"><font
+                      color=3D"#00246e"><br>
+                    </font></font></p>
+                <p><font face=3D"Times New Roman, Times, serif"><font
+                      color=3D"#00246e"><br>
+                    </font></font></p>
+                <pre class=3D"moz-signature" cols=3D"72">Sylvie CACH  -  =
+=C3=89D MSTIC
+COMUE - Universit=C3=A9 Paris-Est
+Aile Vicat - Bureau V426
+6-8 avenue Blaise-Pascal
+Cit=C3=A9 Descartes, Champs-sur-Marne
+77455 Marne-la-Vall=C3=A9e
+T=C3=A9l : +33 (0)1 64 15 38 49
+<a class=3D"moz-txt-link-freetext" href=3D"https://www.univ-paris-est.fr/=
+ecoles-doctorales/ecole-doctorale-mathematiques-et-stic-mstic/accueil/" m=
+oz-do-not-send=3D"true">https://www.univ-paris-est.fr/ecoles-doctorales/e=
+cole-doctorale-mathematiques-et-stic-mstic/accueil/</a></pre>
+                <div class=3D"moz-forward-container"><br>
+                  <hr width=3D"100%" size=3D"2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+--------------A940D475AD1BB48EBC435F38--
+
+

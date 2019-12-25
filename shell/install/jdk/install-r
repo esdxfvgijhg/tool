@@ -1,0 +1,8 @@
+#!/bin/sh
+
+#R
+	installx r-base
+#	installx r-cran-*
+
+
+installx $(apt-cache pkgnames r-cran- | grep -Fvx -f $TOOLPATH/shell/install/jdk/r.txt)

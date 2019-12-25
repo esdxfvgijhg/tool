@@ -1,0 +1,80 @@
+
+# ======================================================================
+# INDEX OBJECT     PATTERN?      pattern description
+# index            pattern               default highlighting of the entire index line
+# index_date                             the date field
+# index_flags      pattern       %S %Z   the message flags
+# index_number                   %C      the message number
+# index_collapsed                %M      the number of messages in a collapsed thread
+# index_author     pattern       %AaFLn  the author name
+# index_subject    pattern       %s      the subject line
+# index_size                     %c %l   the message size
+# index_label                    %y %Y   the message label
+# index_tags                     %g      the transformed message tags
+# index_tag        pattern/tag   %G      an individual message tag
+# ======================================================================
+
+
+
+# index_author ----------------------------------------------------------------
+#color index_author        brightgreen      default         '~N'     # new messages
+#color index_author        red              color236        '~l'     # mailing list
+#color index_author        color03         default          '~F'     # flags
+#color index_author        color244        default          '~R'     # not-new messages
+#color index_author        red             default          '.*'
+# index_subject ----------------------------------------------------------------
+#color index_subject       brightgreen     default          "~N"
+# index divers----------------------------------------------------------------
+color	index_label         brightred        default
+color	index_tags          brightred        default
+color	index_tag           brightred        default		"encrypted"
+color	index_tag           brightred        default		"signed"
+color	index_tag           brightred        default		"attachment"
+#color	index_collapsed     cyan           default
+#color index_date          brightcolor244  default
+#color index_flags         white           default 	%A
+#color index_number        blue            default
+#color index_size          color243        default
+#color index color243      default         ".*"
+#color index red           default         "~A"           # all messages
+#color index color243      default         "~R"           # read messages
+
+
+
+
+# index ----------------------------------------------------------------
+#color index brightyellow  default         "~v"           # collapsed thread
+
+color index_author yellow        default         "~P"           # messages from me
+
+
+color index magenta       default         "~T"           # tagged
+color index color243      default         "~l"           # mailing list
+color index brightgreen   default         "~U"           # unread messages
+color index brightgreen   default         "~N"           # new messages
+color index brightwhite   default         "~D"           # deleted messages
+color index brightred     default         "~F"           # flagged messages
+
+
+#color index brightred    default         "~Q"           # messages that have been replied to
+color index brightred     default         "~E"           # expired messages
+color index brightred     default         "~O"           # old messages
+color index brightred     default         "~k"           # GPG
+
+
+#color index yellow        default         "~s'Cron'"
+#color index brightyellow  default         "~f 'MAILER-DAEMON@'"
+#color index brightyellow  default         "~C 'nagios-admin@'" # mail from myself *and* to myself
+#color index green         default         "~Chostmaster"
+#color index green         default         "~Cwebmaster"
+#color index green         default         "~Cpostmaster"
+#color index brightyellow  default         "linevich.com"
+#color index red           default         "webparking."
+
+
+
+
+
+
+
+

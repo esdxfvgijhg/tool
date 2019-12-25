@@ -1,0 +1,375 @@
+Delivered-To: aghilesdjoudi@gmail.com
+Received: by 2002:ab3:5a8c:0:0:0:0:0 with SMTP id l12csp2676664lte;
+        Sun, 3 Nov 2019 00:39:59 -0700 (PDT)
+X-Received: by 2002:a5d:5011:: with SMTP id e17mr17975943wrt.160.1572766799037;
+        Sun, 03 Nov 2019 00:39:59 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1572766799; cv=none;
+        d=google.com; s=arc-20160816;
+        b=GrTAGCrvAeXB3pG46wkrUweiGsw1vsoKWj/cacw3uNdCXokHfsVdv4S7jADGtbvqzk
+         AfNDi6g/k2di9PXJhxJKpZo87TkaWANawnxkVGHJ/dFX7GAIuMyz5fiSqSXd09mMlsCS
+         /urImHvhqH+UZi3JKFjcow81bZiXZqOu9JXhPwf8zoXeeUS0YY7lKGkpnQq4CW3X8VUV
+         SSPXjl85W+APSYOgbIROBDB2iFnJP5oM5zvMN9LtowNcFkkQ6tK6WddtAuvGGRPYrBbN
+         Fbn/XCi4H2tM6vAkdSSYDzbLxBS1YRjCr0ejVWX85fzouZMUDpTQ3i9YZD81I83RyOiw
+         PYIw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=in-reply-to:references:subject:from:date:message-id:auto-submitted
+         :to:dkim-signature;
+        bh=GaWgwICLc8XOWLQzTErSbKj6M8o6xJG4zHpbYHZdk70=;
+        b=IU1UFmKrCO99jsxe2ie23wAxAoCXOYs1PkBplBlF8TM7vUkbgS9IO3do/JIBDPdPpX
+         3SBQ1PxWrf05j8PZ//zu0HAHtosDK8ZfECV7euZDhsDVxBtZ/WTDUKDOekOwDpWvGXVu
+         scMiDQqWCdzinve01Hh5feIcPStk1E9jxflfChevZcr6vL36LFKdE7zx1wj4i060IdAL
+         Rq9YkCCGai7TfaPdeEg9gXaFehTxnOmNESY4/4r+Nnf3pPMI0VULIlT1VwlrY1h5voTx
+         BUG1dENdKWkLf9u4neSZB+Ifyp6I55ucYkMq2ShBhOncVxWX3XU+qlifEh+Nl8Hu0xjG
+         djJg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@googlemail.com header.s=20161025 header.b=XutFLWBC;
+       spf=pass (google.com: best guess record for domain of postmaster@mail-sor-f69.google.com designates 209.85.220.69 as permitted sender) smtp.helo=mail-sor-f69.google.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=googlemail.com
+Return-Path: <>
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id b73sor8534558wme.6.2019.11.03.00.39.58
+        for <aghilesdjoudi@gmail.com>
+        (Google Transport Security);
+        Sun, 03 Nov 2019 00:39:59 -0700 (PDT)
+Received-SPF: pass (google.com: best guess record for domain of postmaster@mail-sor-f69.google.com designates 209.85.220.69 as permitted sender) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@googlemail.com header.s=20161025 header.b=XutFLWBC;
+       spf=pass (google.com: best guess record for domain of postmaster@mail-sor-f69.google.com designates 209.85.220.69 as permitted sender) smtp.helo=mail-sor-f69.google.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=googlemail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlemail.com; s=20161025;
+        h=to:auto-submitted:message-id:date:from:subject:references
+         :in-reply-to;
+        bh=GaWgwICLc8XOWLQzTErSbKj6M8o6xJG4zHpbYHZdk70=;
+        b=XutFLWBCaJu9z0SwncqgHROTMJ54XmkowP7WVldvOJ2QS829sg2CHNUM8qYLX4ngA4
+         hHeiDtQ0d0ZvOgfl4i4pukjUQU9npwE1XgdjyVJ0VZm4aU4A9Tg1Qp683sRC9aXi/Ihz
+         JyqD9BrgG1jw5IK6vXzakbCdpmPYiVzDsupv288Y+mQinKqWhWG0jn5J4tx6a9/S6sBC
+         BB+pIuWr6E2X+QRsVcEn5bZV89OCYW1N8Cay0GpNuh+hPeI401khkfNRfN75TFMH9r84
+         BZ+wGk1kDmUjBrE+iMADilyaEnzBTDoaAD21b2ZLtuh0HvEOCkIUEw53fZYRHHms4kq9
+         Sb6w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:to:auto-submitted:message-id:date:from:subject
+         :references:in-reply-to;
+        bh=GaWgwICLc8XOWLQzTErSbKj6M8o6xJG4zHpbYHZdk70=;
+        b=sc5gAJ2tSsxhQo//Q0NKeGaHc8H4ORWKkvWzxNY5f5howGQAxDlVQNlwuPDoCBUQSh
+         tHqaQjRcxaMa4sZaI7JF/u4e84PssCCISjhqBkTeLyIrTc2D7gswRBtq37ewMHh5s5Jb
+         jf6usJRCF0NjaajCkqqqmN198LfsiFJTIj8DRANZUIDNcBB3UQ2dXZl4Bwx9ALM6Vh08
+         XkrJDlHMqsaeFjT6PF3C62fDA2M/yMXoueP8QYE6/D9jpD8v/epudGz/wfDDX8HJyJ36
+         4QHsgyBTdG16RONlG9zOHsMoHJMPe5lo/OI+tPoHN3d+pKyN6xwsJ1CFc1Hf75Xv5hcO
+         UMgg==
+X-Gm-Message-State: APjAAAV08QxggtKijEHMJkRu7th92RXG5xw0sfMfa99W3grLYuzgcgVi
+	jebu9ZTvU+iUh35QMhweSgi+MqX0C/7VG5NoBwZr
+X-Google-Smtp-Source: APXvYqz8rB/ezCbdmj2sLZmbEJo4nxygSjZUWst/BrFxRfrnClehi0dl72y3DPbysLh1Dza5NvFLe4xmZivvzr41i3z5M+rdHjmP6w==
+X-Received: by 2002:a1c:9804:: with SMTP id a4mr6373330wme.57.1572766798794;
+        Sun, 03 Nov 2019 00:39:58 -0700 (PDT)
+Content-Type: multipart/report; boundary="0000000000005b3fa305966c4ee1"; report-type=delivery-status
+To: aghilesdjoudi@gmail.com
+Received: by 2002:a1c:9804:: with SMTP id a4mr3930132wme.57; Sun, 03 Nov 2019
+ 00:39:58 -0700 (PDT)
+Return-Path: <>
+Auto-Submitted: auto-replied
+Message-ID: <5dbe844e.1c69fb81.b7dc5.e008.GMR@mx.google.com>
+Date: Sun, 03 Nov 2019 00:39:58 -0700 (PDT)
+From: Mail Delivery Subsystem <mailer-daemon@googlemail.com>
+Subject: Delivery Status Notification (Delay)
+References: <20191102070843.xlyaqpfrhha7a3rx@gmail.com>
+In-Reply-To: <20191102070843.xlyaqpfrhha7a3rx@gmail.com>
+
+--0000000000005b3fa305966c4ee1
+Content-Type: multipart/related; boundary="0000000000005b4b8105966c4eec"
+
+--0000000000005b4b8105966c4eec
+Content-Type: multipart/alternative; boundary="0000000000005b4b8805966c4eed"
+
+--0000000000005b4b8805966c4eed
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+** Message non distribu=C3=A9 **
+
+Un probl=C3=A8me temporaire est survenu lors de la distribution de votre me=
+ssage =C3=A0 rafik.zitouni@gmail.fr. D'autres tentatives vont =C3=AAtre eff=
+ectu=C3=A9es pendant 47=C2=A0heures. Vous recevrez une notification si l'=
+=C3=A9chec est permanent.
+
+
+
+
+--0000000000005b4b8805966c4eed
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+<html>
+<head>
+<style>
+* {
+font-family:Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+</style>
+</head>
+<body>
+<table cellpadding=3D"0" cellspacing=3D"0" class=3D"email-wrapper" style=3D=
+"padding-top:32px;background-color:#ffffff;"><tbody>
+<tr><td>
+<table cellpadding=3D0 cellspacing=3D0><tbody>
+<tr><td style=3D"max-width:560px;padding:24px 24px 32px;background-color:#f=
+afafa;border:1px solid #e0e0e0;border-radius:2px">
+<img style=3D"padding:0 24px 16px 0;float:left" width=3D72 height=3D72 alt=
+=3D"Ic=C3=B4ne=C2=A0Erreur" src=3D"cid:icon.png">
+<table style=3D"min-width:272px;padding-top:8px"><tbody>
+<tr><td><h2 style=3D"font-size:20px;color:#212121;font-weight:bold;margin:0=
+">
+Message non distribu=C3=A9
+</h2></td></tr>
+<tr><td style=3D"padding-top:20px;color:#757575;font-size:16px;font-weight:=
+normal;text-align:left">
+Un probl=C3=A8me temporaire est survenu lors de la distribution de votre me=
+ssage =C3=A0 <a style=3D'color:#212121;text-decoration:none'><b>rafik.zitou=
+ni@gmail.fr</b></a>. D'autres tentatives vont =C3=AAtre effectu=C3=A9es pen=
+dant 47=C2=A0heures. Vous recevrez une notification si l'=C3=A9chec est per=
+manent.
+</td></tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+</td></tr>
+<tr style=3D"border:none;background-color:#fff;font-size:12.8px;width:90%">
+<td align=3D"left" style=3D"padding:48px 10px">
+</td>
+</tr>
+</tbody></table>
+</body>
+</html>
+
+--0000000000005b4b8805966c4eed--
+--0000000000005b4b8105966c4eec
+Content-Type: image/png; name="icon.png"
+Content-Disposition: attachment; filename="icon.png"
+Content-Transfer-Encoding: base64
+Content-ID: <icon.png>
+
+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
+--0000000000005b4b8105966c4eec--
+--0000000000005b3fa305966c4ee1
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; googlemail.com
+Received-From-MTA: dns; aghilesdjoudi@gmail.com
+Arrival-Date: Sat, 02 Nov 2019 00:08:45 -0700 (PDT)
+X-Original-Message-ID: <20191102070843.xlyaqpfrhha7a3rx@gmail.com>
+
+Final-Recipient: rfc822; rafik.zitouni@gmail.fr
+Action: delayed
+Status: 4.0.0
+Last-Attempt-Date: Sun, 03 Nov 2019 00:39:58 -0700 (PDT)
+Will-Retry-Until: Mon, 04 Nov 2019 23:08:46 -0800 (PST)
+
+--0000000000005b3fa305966c4ee1
+Content-Type: message/rfc822
+
+X-Google-Smtp-Source: APXvYqxpZp6h/Tw4oFTLKbf+/xI7cQo2oEo6wg6Iodi22PiKT5uNPUgyPt2or+7EP2XtRaiqvpUYbA==
+X-Received: by 2002:a1c:9804:: with SMTP id a4mr2377682wme.57.1572678526682;
+        Sat, 02 Nov 2019 00:08:46 -0700 (PDT)
+Return-Path: <aghilesdjoudi@gmail.com>
+Received: from gmail.com (eth-west-pareq2-46-193-3-65.wb.wifirst.net. [46.193.3.65])
+        by smtp.gmail.com with ESMTPSA id r19sm10666818wrr.47.2019.11.02.00.08.45
+        for <rafik.zitouni@gmail.fr>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Sat, 02 Nov 2019 00:08:45 -0700 (PDT)
+Date: Sat, 2 Nov 2019 07:08:45 +0000
+From: Aghiles DJOUDI <aghilesdjoudi@gmail.com>
+To: rafik.zitouni@gmail.fr
+Subject: Fwd: [Inscription =?utf-8?Q?=C3=A0_la_formation=5D_Developing_Flu?=
+ =?utf-8?Q?enc?= =?utf-8?Q?y?= in English: Intermediate - Advanced level in
+ English (B2-C2)
+Message-ID: <20191102070843.xlyaqpfrhha7a3rx@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+
+Bonjour Rafik,
+
+Pour ne pas perdre 3h de trajet pour aller à l'ECE puis à Marne la vallée. Je pars direct à Marne le matin.
+
+Bien à toi.
+Aghiles.
+
+----- Forwarded message from Doctorat <noreply@adum.fr> -----
+
+>Date: Mon, 14 Oct 2019 14:12:49 +0200
+>From: Doctorat <noreply@adum.fr>
+>To: aghilesdjoudi@gmail.com
+>X-Mailer: MIME::Lite 3.023 (F2.85; T1.26; A2.14; B3.15; Q3.13)
+>Subject: [Inscription à la formation] Developing Fluency in English: Intermediate - Advanced level in English (B2-C2)
+>
+>Bonjour,
+>
+>Nous vous confirmons votre inscription à la formation " Developing Fluency in English: Intermediate - Advanced level in English (B2-C2)".
+>
+>Votre présence est obligatoire à l'ensemble de la formation.
+>
+>Tout désistement devra être signalé au plus tard 10 jours avant le début de la formation, par email à formations.ded@univ-paris-est.fr, afin dattribuer votre place à un-e doctorant-e sur liste dattente.
+>
+>Au-delà de ce délai, vous serez considéré-e comme absent-e.
+>
+>                                          &#8710; IMPORTANT &#8710;
+>                En cas d'absence non signalée, votre acceptation
+>                sur d'autres formations ne sera pas prioritaire.
+>
+>Bien cordialement,
+>
+>Nabila MESSALHI
+>Gestionnaire Administrative
+>Département des Etudes Doctorales
+>Université Paris-Est
+>----------------------
+>
+>ETUDES DOCTORALES DEPARTEMENT
+>formations.ded@univ-paris-est.fr
+>
+>
+>
+>
+>Récapitulatif de votre formation :
+>Séance n° 1 :
+>Date : 05-11-2019
+>Horaire : 11h00 à 12h30
+>Intervenant : James Cox
+>Lieu : ENPC, aile Vicat, salle V204 - Champs sur Marne
+>-------------------------------------------------------
+>Séance n° 2 :
+>Date : 12-11-2019
+>Horaire : 11h00 à 12h30
+>Intervenant : James Cox
+>Lieu : ENPC, aile Vicat, salle V204 - Champs sur Marne
+>-------------------------------------------------------
+>Séance n° 3 :
+>Date : 19-11-2019
+>Horaire : 11h00 à 12h30
+>Intervenant : James Cox
+>Lieu : ENPC, aile Vicat, salle V327 - Champs sur Marne
+>-------------------------------------------------------
+>Séance n° 4 :
+>Date : 26-11-2019
+>Horaire : 11h00 à 12h30
+>Intervenant : James Cox
+>Lieu : ENPC, aile Vicat, salle V002 - Champs sur Marne
+>-------------------------------------------------------
+>Séance n° 5 :
+>Date : 03-12-2019
+>Horaire : 11h00 à 12h30
+>Intervenant : James Cox
+>Lieu : ENPC, aile Vicat, salle V002 - Champs sur Marne
+>-------------------------------------------------------
+>Séance n° 6 :
+>Date : 10-12-2019
+>Horaire : 11h00 à 12h30
+>Intervenant : James Cox
+>Lieu : ENPC, aile Vicat, salle V002 - Champs sur Marne
+>-------------------------------------------------------
+>Séance n° 7 :
+>Date : 17-12-2019
+>Horaire : 11h00 à 12h30
+>Intervenant : James Cox
+>Lieu : ENPC, aile Vicat, salle V002 - Champs sur Marne
+>-------------------------------------------------------
+>Séance n° 8 :
+>Date : 07-01-2020
+>Horaire : 11h00 à 12h30
+>Intervenant : James Cox
+>Lieu : ENPC, aile Vicat, salle V404 - Champs sur Marne
+>-------------------------------------------------------
+>Séance n° 9 :
+>Date : 14-01-2020
+>Horaire : 11h00 à 12h30
+>Intervenant : James Cox
+>Lieu : ENPC, aile Vicat, salle V002 - Champs sur Marne
+>-------------------------------------------------------
+>Séance n° 10 :
+>Date : 21-01-2020
+>Horaire : 11h00 à 12h30
+>Intervenant : James Cox
+>Lieu : ENPC, aile Vicat, salle V002 - Champs sur Marne
+>-------------------------------------------------------
+>Séance n° 11 :
+>Date : 28-01-2020
+>Horaire : 11h00 à 12h30
+>Intervenant : James Cox
+>Lieu : ENPC, aile Vicat, salle V002 - Champs sur Marne
+>-------------------------------------------------------
+
+----- End forwarded message -----
+
+--0000000000005b3fa305966c4ee1--

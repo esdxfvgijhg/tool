@@ -1,0 +1,29 @@
+
+set my_project ="~L ece | ~L esiee" # or ~h
+set my_copil   ="~L adum | ~L univ-paris-est | ~L univ-mlv | ~L u-pem" # or ~h
+
+
+set my_joblist     ="~L abg | ~L acm | ~L apec | ~L cea | ~L cnrs | ~L irisa | ~L indeed | ~L inria | ~L letudiant | ~L linkedin | ~L lri | ~L elsevier | ~L orange | ~L researchgatemai | ~L rsd-forum | ~t gdr-securite | ~L thalesgroup | ~L talents-network | ~L twitter | ~L upmc | ~L cisco | ~L docs-labinfo"
+set my_servicelist ="~L culture | ~L govoyages | ~L free | ~L alibaba | ~L doodle | ~L dropboxmail | ~L go-sport | ~L google | ~L incontrolproductions | ~L ubuntu | ~L zotero | ~L abaenglish | ~L academia-mail | ~L caliopen | ~L deezer | ~L microsoft | ~L edx | ~L facebookmail | ~L github | ~L gitlab | ~L instagram | ~L louispion | ~L mathworks | ~L elsevier | ~L machinelearningmastery | ~L module25 | ~L nylas | ~L objectaid | ~L openclassrooms | ~L oracle | ~L youfid | ~L overleaf | ~L pinterest | ~L plagscan | ~L platform.sh | ~L rapidminer | ~L readcube | ~L sas | ~L sharelatex | ~L skype | ~L slack | ~L talend | ~L talendinc | ~L trello | ~L ubidots | ~L youtube | ~L zamzar | ~L enquetesenligne | ~L paypal | ~L bnpparibas | ~L airfrance | ~L cisco"
+set my_state       ="gouv.fr"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

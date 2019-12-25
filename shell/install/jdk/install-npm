@@ -1,0 +1,28 @@
+#!/bin/sh
+
+mkdir $TOOLSPATH/npm
+cd $TOOLSPATH/npm
+
+#NPM
+installx nodejs
+installx yarn
+
+curl -L https://git.io/n-install | bash
+
+sudo npm install -g npm@latest
+sudo npm update -g
+sudo npm install -g diff-so-fancy
+sudo npm install -g eslint
+sudo npm install -g eslint-config-xo-space
+sudo npm install -g fkill-cli
+sudo npm install -g htmlhint
+sudo npm install -g jsonlint
+sudo npm install -g neovim
+sudo npm install -g npm-check-updates
+sudo npm install -g prettier
+sudo npm install -g pure-prompt
+sudo npm install -g sass-lint
+sudo npm install -g trash-cli
+sudo npm install -g yarn
+
+cd $TOOLSPATH

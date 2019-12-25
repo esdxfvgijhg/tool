@@ -1,0 +1,79 @@
+#defaults
+#auth	on
+#tls	on
+#tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+#logfile	~/.config/msmtp/msmtp.log
+
+
+# djaghiles ----------------------------------------------------------------------------
+account djaghiles
+host smtp.gmail.com
+port 465
+#port 587
+protocol smtp
+auth on
+user djaghiles@gmail.com
+from djaghiles@gmail.com
+passwordeval "pass djaghiles"
+tls on
+tls_starttls off
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+
+# aghilesdjoudi ----------------------------------------------------------------------------
+account aghilesdjoudi
+host smtp.gmail.com
+port 465
+#port 587
+protocol smtp
+auth on
+user aghilesdjoudi@gmail.com
+from aghilesdjoudi@gmail.com
+passwordeval "pass aghilesdjoudi"
+tls on
+tls_starttls off
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+
+# isiee ----------------------------------------------------------------------------
+account isiee
+host smtp.gmail.com
+port 465
+#port 587
+protocol smtp
+auth on
+user aghiles.djoudi@isiee.com
+from aghiles.djoudi@isiee.com
+passwordeval "pass isiee"
+tls on
+tls_starttls off
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+
+# upe ----------------------------------------------------------------------------
+account upe
+host smtp.gmail.com
+port 465
+#port 587
+protocol smtp
+auth on
+user aghiles.djoudi@univ-paris-est.fr
+from aghiles.djoudi@univ-paris-est.fr
+passwordeval "pass upe"
+tls on
+tls_starttls off
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+
+# inseec ----------------------------------------------------------------------------
+account inseec
+host smtp.office365.com
+port 465
+#port 587
+protocol smtp
+auth on
+user adjoudi@inseec-edu.com
+from adjoudi@inseec-edu.com
+passwordeval "pass inssec"
+tls on
+tls_starttls off
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+
+#account default : username
+

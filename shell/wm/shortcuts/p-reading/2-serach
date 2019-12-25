@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd $READINGPATH/iot/storage
+$TERMINAL

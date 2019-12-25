@@ -1,0 +1,10 @@
+#!/bin/bash
+
+tilix -a app-new-window -e "neomutt" &
+sleep 0.5
+tilix -a session-add-right -e "ranger" &
+sleep 0.5
+tilix -a session-add-down -e "calendarx" &
+#sleep 1
+#tilix -a session-add-down -e "neomutt" &
+
