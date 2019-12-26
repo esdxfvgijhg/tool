@@ -1,0 +1,204 @@
+#!/bin/bash
+
+function set-title() {
+  if [[ -z "$ORIG" ]]; then
+    ORIG=$PS1
+  fi
+  TITLE="\[\e]2;$*\a\]"
+  PS1=${ORIG}${TITLE}
+#  or
+  #mytitle="Lights 1"
+	#echo -e '\033]2;'$mytitle'\007'
+}
+
+# Arduino  ----------------------------------------------------
+function arduino-compile() {
+	arduino-cli compile --fqbn arduino:avr:uno `basename $PWD.ino` -o `basename $PWD.arduino.avr.uno`
+}
+function arduino-exec() {
+	arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:avr:uno $PWD
+#	arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:avr:uno $1
+}
+function arduino-log() {
+	set-title Arduino && screen /dev/ttyACM0 38400 $1
+}
+function arduino-update() {
+	arduino-cli core update-index
+}
+function arduino-install() {
+	arduino-cli core update-index
+	arduino-cli core install arduino:avr
+}
+
+
+function search() {
+	cd $BIBPATH/storage
+}
+
+function waff {
+    CWD="$PWD"
+    cd $TOOLSPATH/ns-3/ns-3-dev >/dev/null
+    ./waf --cwd="$CWD" $*
+    cd - >/dev/null
+  }
+
+
+
+
+function paper {
+	cd $WRITINGPATH
+	latexmk -f -cd -pvc -jobname=paper main
+}
+function these {
+	cd $WRITINGPATH
+	latexmk -f -cd -pvc -jobname=these main
+}
+function slide {
+	cd $WRITINGPATH
+	latexmk -f -cd -pvc -jobname=slide main
+}
+function report {
+	cd $WRITINGPATH
+	latexmk -f -cd -pvc -jobname=report main
+}
+
+
+#function waf {
+#    CWD="$PWD"
+#    cd $NS3CUR >/dev/null
+#    waf --cwd="$CWD" $*
+#    cd - >/dev/null
+#}
+
+#function wafr {
+#    waf --run "$*"
+#}
+
+# convert a video to mp4 + webm in one go for web
+function webvideo() {
+  ffmpeg -i $1 -acodec libvorbis -ac 2 -b:a 128k -ar 44100 -vcodec libvpx -pix_fmt yuv420p -r 25 -qmin 10 -qmax 42 -cpu-used 0 -threads 2 -quality good -b:v 2M -maxrate 2M -bufsize 4M -s 1280x720 $1.webm
+  ffmpeg -i $1 -movflags +faststart -acodec libfdk_aac -ac 2 -b:a 128k -ar 44100 -vcodec libx264 -vprofile high -preset slow -pix_fmt yuv420p -r 25 -b:v 2M -maxrate 2M -bufsize 4M -s 1280x720 $1.mp4
+}
+
+function webvideohigh() {
+  ffmpeg -i $1 -acodec libvorbis -ac 2 -b:a 160k -ar 44100 -vcodec libvpx -pix_fmt yuv420p -r 25 -qmin 10 -qmax 42 -cpu-used 0 -threads 2 -quality good -b:v 3M -maxrate 3M -bufsize 6M -s 1280x720 $1--high.webm
+  ffmpeg -i $1 -movflags +faststart -acodec libfdk_aac -ac 2 -b:a 160k -ar 44100 -vcodec libx264 -vprofile high -preset slow -pix_fmt yuv420p -r 25 -b:v 3M -maxrate 3M -bufsize 6M -s 1280x720 $1--high.mp4
+}
+
+function webvideolow() {
+  ffmpeg -i $1 -acodec libvorbis -ac 2 -b:a 96k -ar 44100 -vcodec libvpx -pix_fmt yuv420p -r 25 -qmin 10 -qmax 42 -cpu-used 0 -threads 2 -quality good -b:v 1M -maxrate 1M -bufsize 2M -s 1280x720 $1--low.webm
+  ffmpeg -i $1 -movflags +faststart -acodec libfdk_aac -ac 2 -b:a 96k -ar 44100 -vcodec libx264 -vprofile high -preset slow -pix_fmt yuv420p -r 25 -b:v 1M -maxrate 1M -bufsize 2M -s 1280x720 $1--low.mp4
+}
+
+# convert a video to mp4 + webm in one go for web
+function webvideonoaudio() {
+  ffmpeg -i $1 -an -vcodec libvpx -pix_fmt yuv420p -r 25 -qmin 10 -qmax 42 -cpu-used 0 -threads 2 -quality good -b:v 2M -maxrate 2M -bufsize 4M -s 1280x720 $1--no-audio.webm
+  ffmpeg -i $1 -movflags +faststart -an -vcodec libx264 -vprofile high -preset slow -pix_fmt yuv420p -r 25 -b:v 2M -maxrate 2M -bufsize 4M -s 1280x720 $1--no-audio.mp4
+}
+
+function webvideohighnoaudio() {
+  ffmpeg -i $1 -an -vcodec libvpx -pix_fmt yuv420p -r 25 -qmin 10 -qmax 42 -cpu-used 0 -threads 2 -quality good -b:v 3M -maxrate 3M -bufsize 6M -s 1280x720 $1--high--no-audio.webm
+  ffmpeg -i $1 -movflags +faststart -an -vcodec libx264 -vprofile high -preset slow -pix_fmt yuv420p -r 25 -b:v 3M -maxrate 3M -bufsize 6M -s 1280x720 $1--high--no-audio.mp4
+}
+
+function webvideolownoaudio() {
+  ffmpeg -i $1 -an -vcodec libvpx -pix_fmt yuv420p -r 25 -qmin 10 -qmax 42 -cpu-used 0 -threads 2 -quality good -b:v 1M -maxrate 1M -bufsize 2M -s 1280x720 $1--low--no-audio.webm
+  ffmpeg -i $1 -movflags +faststart -an -vcodec libx264 -vprofile high -preset slow -pix_fmt yuv420p -r 25 -b:v 1M -maxrate 1M -bufsize 2M -s 1280x720 $1--low--no-audio.mp4
+}
+
+# create and change to directory/folder
+function take() {
+  mkdir -p $1
+  cd $1
+}
+
+# a function to get the current branch for git shortcuts etc
+function current_branch() {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || \
+  ref=$(git rev-parse --short HEAD 2> /dev/null) || return
+  echo ${ref#refs/heads/}
+}
+
+# easy vim/terminal switch
+fancy-ctrl-z () {
+  if [[ $#BUFFER -eq 0 ]]; then
+    BUFFER="fg"
+    zle accept-line
+  else
+    zle push-input
+    zle clear-screen
+  fi
+}
+
+# creates an archive from given directory
+mktar() { tar cvf  "${1%%/}.tar" "${1%%/}"; }
+mktgz() { tar cvzf "${1%%/}.tgz" "${1%%/}"; }
+mkzip() { zip -r   "${1%%/}"     "${1%%/}"; }
+
+# easy extract
+extract () {
+  if [ -f $1 ] ; then
+    case $1 in
+      *.tar.bz2)   tar xvjf $1    ;;
+      *.tar.gz)    tar xvzf $1    ;;
+      *.bz2)       bunzip2 $1     ;;
+      *.rar)       rar x $1       ;;
+      *.gz)        gunzip $1      ;;
+      *.tar)       tar xvf $1     ;;
+      *.tgz)       tar xvzf $1    ;;
+      *.tbz2)      tar xvjf $1    ;;
+      *.tbz)       tar xvjf $1    ;;
+      *.zip)       unzip $1       ;;
+      *.Z)         uncompress $1  ;;
+      *.7z)        7z x $1        ;;
+      *)           echo "don't know how to extract '$1'..." ;;
+    esac
+  else
+    echo "'$1' is not a valid file!"
+  fi
+}
+
+
+vf() { $EDITOR $(fzf) ; }
+se() { cd ~/.local/bin ; $EDITOR $(fzf) ;}
+vf() { fzf | xargs -r -I % $EDITOR % ;}
+gh(){
+   path=${*: -1}
+   if [[ $path != */* ]]
+   then path=SimSaladin/$path
+   fi
+   cmd=${*: 1:$(( ${#@} - 1 ))}
+   git ${cmd} https://github.com/${path}
+}
+agit(){
+   for x in $(cat .repos); do
+      echo
+      echo $x
+      git -C "$x" "$@"
+   done
+}
+glmr(){
+   git fetch origin merge-requests/$1/head:mr-$1 && git checkout mr-$1
+}
+glh(){
+   git lg "$@" | head
+}
+pathapp(){ PATH=$1:$PATH;}
+
+
+stty -ixon # Disable ctrl-s and ctrl-q
+#shopt -s autocd # Allows you to cd to a dir just by typing the dir name
+#shopt -s checkwinsize # Line wrap on window resize
+
+pathapp $HOME/bin/lennartcl-gitl
+pathapp $HOME/.local/bin
+pathapp $HOME/.gem/ruby/2.3.0/bin
+pathapp $HOME/.opam/system/bin
+
+command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d" # Use neovim for vim if present.
+
+[ -f "$HOME/.secrets" ] && source "$HOME/.secrets"
+[[ -b "/dev/sr0" ]] && alias eject="eject -T /dev/sr0"
+
+
+

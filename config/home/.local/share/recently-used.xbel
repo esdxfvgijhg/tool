@@ -3,641 +3,6 @@
       xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
       xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
 >
-  <bookmark href="file:///media/aghiles/Aghiles/ML/IA/cours_DSC00102.JPG" added="2019-12-13T17:18:36Z" modified="2019-12-13T17:18:36Z" visited="2019-12-13T17:18:37Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/jpeg"/>
-        <bookmark:groups>
-          <bookmark:group>Graphics</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2019-12-13T17:18:36Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/aghiles/Aghiles/ML/IA/cours_DSC00103.JPG" added="2019-12-13T17:18:36Z" modified="2019-12-13T17:18:36Z" visited="2019-12-13T17:18:37Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/jpeg"/>
-        <bookmark:groups>
-          <bookmark:group>Graphics</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2019-12-13T17:18:36Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/aghiles/Aghiles/ML/IA/cours_DSC00104.JPG" added="2019-12-13T17:18:36Z" modified="2019-12-13T17:18:36Z" visited="2019-12-13T17:18:37Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/jpeg"/>
-        <bookmark:groups>
-          <bookmark:group>Graphics</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2019-12-13T17:18:36Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/aghiles/Aghiles/ML/IA/cours_DSC00105.JPG" added="2019-12-13T17:18:37Z" modified="2019-12-13T17:18:37Z" visited="2019-12-13T17:18:37Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/jpeg"/>
-        <bookmark:groups>
-          <bookmark:group>Graphics</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2019-12-13T17:18:37Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/aghiles/Aghiles/ML/AN/u-ctn.pdf" added="2019-12-13T17:23:24Z" modified="2019-12-13T17:23:24Z" visited="2019-12-13T17:23:24Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/pdf"/>
-        <bookmark:applications>
-          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2019-12-13T17:23:24Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/aghiles/Aghiles/ML/Data%20science/images/cute_panda.jpg" added="2019-12-13T17:24:48Z" modified="2019-12-13T17:24:53Z" visited="2019-12-13T17:24:48Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/jpeg"/>
-        <bookmark:groups>
-          <bookmark:group>Graphics</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-13T17:24:48Z" count="1"/>
-          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2019-12-13T17:24:53Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/aghiles/Aghiles/ML/Data%20science/images/grouplens.jpg" added="2019-12-13T17:24:50Z" modified="2019-12-13T17:24:50Z" visited="2019-12-13T17:24:52Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/jpeg"/>
-        <bookmark:groups>
-          <bookmark:group>Graphics</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2019-12-13T17:24:50Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/aghiles/Aghiles/ML/Data%20science/images/ipython.png" added="2019-12-13T17:24:51Z" modified="2019-12-13T17:24:51Z" visited="2019-12-13T17:24:52Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:groups>
-          <bookmark:group>Graphics</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2019-12-13T17:24:51Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/aghiles/Aghiles/ML/Data%20science/images/pandas_book.jpg" added="2019-12-13T17:24:51Z" modified="2019-12-13T17:24:51Z" visited="2019-12-13T17:24:52Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/jpeg"/>
-        <bookmark:groups>
-          <bookmark:group>Graphics</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2019-12-13T17:24:51Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/aghiles/Aghiles/ML/Data%20science/images/robots_txt.jpg" added="2019-12-13T17:24:51Z" modified="2019-12-13T17:24:51Z" visited="2019-12-13T17:24:52Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/jpeg"/>
-        <bookmark:groups>
-          <bookmark:group>Graphics</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2019-12-13T17:24:51Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/aghiles/Aghiles/ML/Data%20science/images/wiz_oz.png" added="2019-12-13T17:24:52Z" modified="2019-12-13T17:24:52Z" visited="2019-12-13T17:24:52Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:groups>
-          <bookmark:group>Graphics</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2019-12-13T17:24:52Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/aghiles/Aghiles/ML/Probability/src/Aghiles/TP/1&amp;2.png" added="2019-12-13T17:26:03Z" modified="2019-12-13T17:26:03Z" visited="2019-12-13T17:26:03Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:groups>
-          <bookmark:group>Graphics</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-13T17:26:03Z" count="1"/>
-          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2019-12-13T17:26:03Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/aghiles/Aghiles/ML/Probability/C1.pdf" added="2019-12-13T17:26:36Z" modified="2019-12-13T17:26:36Z" visited="2019-12-13T17:26:36Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/pdf"/>
-        <bookmark:applications>
-          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2019-12-13T17:26:36Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/aghiles/Aghiles/ML/Probability/AnalyseOperationnelle.pdf" added="2019-12-13T17:26:47Z" modified="2019-12-13T17:26:47Z" visited="2019-12-13T17:26:47Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/pdf"/>
-        <bookmark:applications>
-          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2019-12-13T17:26:47Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/aghiles/Aghiles/ML/Probability/IMG_20190616_115300501.jpg" added="2019-12-13T17:26:55Z" modified="2019-12-13T17:26:56Z" visited="2019-12-13T17:26:56Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/jpeg"/>
-        <bookmark:groups>
-          <bookmark:group>Graphics</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-13T17:26:55Z" count="1"/>
-          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2019-12-13T17:26:56Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/aghiles/Aghiles/ML/Probability/C14pp.pdf" added="2019-12-13T17:26:59Z" modified="2019-12-13T17:26:59Z" visited="2019-12-13T17:27:00Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/pdf"/>
-        <bookmark:applications>
-          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2019-12-13T17:26:59Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/aghiles/Aghiles/ML/Probability/C6+7.pdf" added="2019-12-13T17:27:05Z" modified="2019-12-13T17:27:05Z" visited="2019-12-13T17:27:05Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/pdf"/>
-        <bookmark:applications>
-          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2019-12-13T17:27:05Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/aghiles/Aghiles/ML/Probability/C5_4pp.pdf" added="2019-12-13T17:27:12Z" modified="2019-12-13T17:27:12Z" visited="2019-12-13T17:27:12Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/pdf"/>
-        <bookmark:applications>
-          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2019-12-13T17:27:12Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/aghiles/Aghiles/ML/Probability/C5.pdf" added="2019-12-13T17:27:19Z" modified="2019-12-13T17:27:19Z" visited="2019-12-13T17:27:20Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/pdf"/>
-        <bookmark:applications>
-          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2019-12-13T17:27:19Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/aghiles/Aghiles/ML/Probability/C4_4pp.pdf" added="2019-12-13T17:27:28Z" modified="2019-12-13T17:27:28Z" visited="2019-12-13T17:27:28Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/pdf"/>
-        <bookmark:applications>
-          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2019-12-13T17:27:28Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/aghiles/Aghiles/Network/iot-lab/low-cost-LoRa.w" added="2019-12-13T21:19:37Z" modified="2019-12-13T21:19:45Z" visited="2019-12-13T21:19:37Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-13T21:19:45Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/aghiles/Aghiles/Network/iot-lab/usb.w" added="2019-12-13T21:19:54Z" modified="2019-12-13T21:19:54Z" visited="2019-12-13T21:19:54Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-13T21:19:54Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/txt/00/.bin/these.pdf" added="2019-12-13T21:27:07Z" modified="2019-12-13T21:27:07Z" visited="2019-12-13T21:27:07Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/pdf"/>
-        <bookmark:applications>
-          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2019-12-13T21:27:07Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/binary2gray.m" added="2019-12-14T07:30:02Z" modified="2019-12-14T08:31:15Z" visited="2019-12-14T07:30:02Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-objcsrc"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T08:31:15Z" count="3"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/gray2binary.m" added="2019-12-14T07:30:16Z" modified="2019-12-14T08:31:15Z" visited="2019-12-14T07:30:16Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-objcsrc"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T08:31:15Z" count="3"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/LoRa_Chirp_generation_01.m" added="2019-12-14T07:30:24Z" modified="2019-12-14T08:45:37Z" visited="2019-12-14T07:30:24Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-objcsrc"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T08:45:37Z" count="8"/>
-          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-14T08:45:35Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/LoRa_Decoding.m" added="2019-12-14T07:31:24Z" modified="2019-12-14T11:18:57Z" visited="2019-12-14T07:31:24Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-matlab"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T11:18:57Z" count="27"/>
-          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-14T09:15:03Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/LoRa_Decoding_01.m" added="2019-12-14T07:32:45Z" modified="2019-12-14T11:20:56Z" visited="2019-12-14T07:32:46Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-matlab"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T11:20:56Z" count="31"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/LoRa_Decoding_02.m" added="2019-12-14T07:56:08Z" modified="2019-12-14T11:21:11Z" visited="2019-12-14T07:56:08Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-matlab"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T11:21:11Z" count="28"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/LoRa_Modulation.m" added="2019-12-14T07:56:23Z" modified="2019-12-14T08:31:07Z" visited="2019-12-14T07:56:23Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-objcsrc"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T08:31:07Z" count="6"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/LoRa_Modulation_test.m" added="2019-12-14T07:56:39Z" modified="2019-12-14T08:46:13Z" visited="2019-12-14T07:56:40Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-objcsrc"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T08:46:13Z" count="7"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/LoRa_Symbol_Comparasion.m" added="2019-12-14T07:58:56Z" modified="2019-12-14T08:41:01Z" visited="2019-12-14T07:58:56Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-objcsrc"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T08:41:01Z" count="3"/>
-          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-14T08:41:00Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/Test_binary_gray.m" added="2019-12-14T07:59:10Z" modified="2019-12-14T09:36:42Z" visited="2019-12-14T07:59:10Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-objcsrc"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T09:36:42Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/Rayleigh_Fading_Channel.m" added="2019-12-14T07:59:13Z" modified="2019-12-14T08:35:57Z" visited="2019-12-14T07:59:14Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-objcsrc"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T08:35:57Z" count="4"/>
-          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-14T08:35:56Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/Lora_Symbol_Generation.m" added="2019-12-14T08:02:27Z" modified="2019-12-14T08:31:17Z" visited="2019-12-14T08:02:28Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-objcsrc"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T08:31:17Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/LoRa_Simulator_07_Wrong_SF.m" added="2019-12-14T08:02:38Z" modified="2019-12-14T09:59:44Z" visited="2019-12-14T08:02:39Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-matlab"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T09:59:44Z" count="13"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/LoRa_Simulator_06_BERvsSNR_RayleighFading_DopplerComp.m" added="2019-12-14T08:03:00Z" modified="2019-12-14T11:07:46Z" visited="2019-12-14T08:03:00Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-matlab"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T11:07:46Z" count="26"/>
-          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-14T10:28:28Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/LoRa_Simulator_05_BERvsSNR_SF_Compare.m" added="2019-12-14T08:03:31Z" modified="2019-12-14T11:07:53Z" visited="2019-12-14T08:03:31Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-matlab"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T11:07:53Z" count="31"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/LoRa_Simulator_04_BERvsSNR_GrayCoded.m" added="2019-12-14T08:03:52Z" modified="2019-12-14T10:53:47Z" visited="2019-12-14T08:03:52Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-matlab"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T10:53:47Z" count="26"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/LoRa_Orthogonality_Check.m" added="2019-12-14T08:05:20Z" modified="2019-12-14T08:47:31Z" visited="2019-12-14T08:05:20Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-matlab"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T08:47:31Z" count="6"/>
-          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-14T08:46:56Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/LoRa_random_number_generation.m" added="2019-12-14T08:05:27Z" modified="2019-12-14T08:17:02Z" visited="2019-12-14T08:05:27Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-matlab"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T08:17:02Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/LoRa_SF_Comparasion.m" added="2019-12-14T08:05:29Z" modified="2019-12-14T08:37:26Z" visited="2019-12-14T08:05:29Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-objcsrc"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T08:37:26Z" count="4"/>
-          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-14T08:37:25Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/LoRa_Simulator_01.m" added="2019-12-14T08:05:30Z" modified="2019-12-14T11:17:53Z" visited="2019-12-14T08:05:30Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-objcsrc"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T11:17:53Z" count="25"/>
-          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-14T09:23:10Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/LoRa_Simulator_02.m" added="2019-12-14T08:05:49Z" modified="2019-12-14T10:49:57Z" visited="2019-12-14T08:05:49Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-matlab"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T10:49:57Z" count="22"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/LoRa_Simulator_03_BERvsSNR.m" added="2019-12-14T08:06:08Z" modified="2019-12-14T10:48:33Z" visited="2019-12-14T08:06:08Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-matlab"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T10:48:33Z" count="25"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/LoRa_Symbol_Generation.m" added="2019-12-14T08:43:17Z" modified="2019-12-14T08:43:55Z" visited="2019-12-14T08:43:17Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-matlab"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-14T08:43:17Z" count="1"/>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T08:43:55Z" count="3"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/Comparasion_SF.m" added="2019-12-14T08:43:35Z" modified="2019-12-14T08:44:15Z" visited="2019-12-14T08:43:36Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-matlab"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T08:44:15Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/Test_Chirp_generation_01.m" added="2019-12-14T09:05:39Z" modified="2019-12-14T09:56:06Z" visited="2019-12-14T09:05:39Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-matlab"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T09:56:06Z" count="13"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/modulation.m" added="2019-12-14T09:05:46Z" modified="2019-12-14T09:32:57Z" visited="2019-12-14T09:05:47Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-objcsrc"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T09:32:57Z" count="5"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/Research/cod/simulation/matlab/random.m" added="2019-12-14T09:05:58Z" modified="2019-12-14T09:05:58Z" visited="2019-12-14T09:05:58Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-objcsrc"/>
-        <bookmark:groups>
-          <bookmark:group>gedit</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-14T09:05:58Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
   <bookmark href="file:///home/aghiles/Aghiles/Research/txt/00/these.pdf" added="2019-12-14T09:18:32Z" modified="2019-12-14T09:18:32Z" visited="2019-12-14T09:18:32Z">
     <info>
       <metadata owner="http://freedesktop.org">
@@ -6599,7 +5964,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/aghiles/.profile" added="2019-12-19T21:47:19Z" modified="2019-12-20T06:34:49Z" visited="2019-12-19T21:47:19Z">
+  <bookmark href="file:///home/aghiles/.profile" added="2019-12-19T21:47:19Z" modified="2019-12-26T10:35:40Z" visited="2019-12-19T21:47:19Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/plain"/>
@@ -6607,8 +5972,8 @@
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-20T06:34:48Z" count="4"/>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-20T06:34:49Z" count="4"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2019-12-26T10:35:39Z" count="11"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T10:35:40Z" count="8"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -6784,7 +6149,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/aghiles/.bashrc" added="2019-12-20T06:34:57Z" modified="2019-12-20T06:34:57Z" visited="2019-12-20T06:34:57Z">
+  <bookmark href="file:///home/aghiles/.bashrc" added="2019-12-20T06:34:57Z" modified="2019-12-26T12:20:06Z" visited="2019-12-20T06:34:57Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/plain"/>
@@ -6792,7 +6157,8 @@
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-20T06:34:57Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T12:20:06Z" count="21"/>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-26T12:20:05Z" count="14"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -7062,12 +6428,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/aghiles/.config/user-dirs.dirs" added="2019-12-20T07:11:43Z" modified="2019-12-20T07:11:43Z" visited="2019-12-20T07:59:02Z">
+  <bookmark href="file:///home/aghiles/.config/user-dirs.dirs" added="2019-12-20T07:11:43Z" modified="2019-12-26T10:03:09Z" visited="2019-12-20T07:59:02Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/octet-stream"/>
         <bookmark:applications>
-          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-20T07:11:43Z" count="1"/>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-26T10:03:09Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -7092,7 +6458,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/aghiles/.Xresources" added="2019-12-20T07:57:26Z" modified="2019-12-21T12:33:30Z" visited="2019-12-20T07:59:02Z">
+  <bookmark href="file:///home/aghiles/.Xresources" added="2019-12-20T07:57:26Z" modified="2019-12-26T10:30:10Z" visited="2019-12-20T07:59:02Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/plain"/>
@@ -7101,7 +6467,7 @@
         </bookmark:groups>
         <bookmark:applications>
           <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-20T08:01:44Z" count="3"/>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-21T12:33:30Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T10:30:10Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -7345,7 +6711,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/aghiles/.zshrc" added="2019-12-21T08:41:31Z" modified="2019-12-21T08:44:20Z" visited="2019-12-21T08:41:31Z">
+  <bookmark href="file:///home/aghiles/.zshrc" added="2019-12-21T08:41:31Z" modified="2019-12-26T07:04:03Z" visited="2019-12-21T08:41:31Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/plain"/>
@@ -7353,8 +6719,8 @@
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-21T08:41:45Z" count="2"/>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-21T08:44:20Z" count="2"/>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-26T07:03:44Z" count="4"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T07:04:03Z" count="4"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -8125,7 +7491,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/aghiles/.xinputrc" added="2019-12-22T08:56:44Z" modified="2019-12-22T08:56:45Z" visited="2019-12-22T08:56:44Z">
+  <bookmark href="file:///home/aghiles/.xinputrc" added="2019-12-22T08:56:44Z" modified="2019-12-26T10:30:03Z" visited="2019-12-22T08:56:44Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/plain"/>
@@ -8134,7 +7500,7 @@
         </bookmark:groups>
         <bookmark:applications>
           <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-22T08:56:44Z" count="1"/>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-22T08:56:45Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T10:30:03Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -9025,21 +8391,21 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/alias" added="2019-12-22T17:56:39Z" modified="2019-12-23T14:55:18Z" visited="2019-12-22T17:56:39Z">
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/alias" added="2019-12-22T17:56:39Z" modified="2019-12-26T11:39:20Z" visited="2019-12-22T17:56:39Z">
     <info>
       <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
+        <mime:mime-type type="application/x-shellscript"/>
         <bookmark:groups>
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-23T14:55:17Z" count="4"/>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-23T14:55:18Z" count="2"/>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-26T06:44:57Z" count="5"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T11:39:20Z" count="5"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/tool/config/home/.bashrc" added="2019-12-22T17:57:38Z" modified="2019-12-22T17:57:46Z" visited="2019-12-22T17:57:38Z">
+  <bookmark href="file:///home/aghiles/Aghiles/tool/config/home/.bashrc" added="2019-12-22T17:57:38Z" modified="2019-12-26T10:57:55Z" visited="2019-12-22T17:57:38Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/plain"/>
@@ -9047,7 +8413,8 @@
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-22T17:57:46Z" count="2"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T10:57:55Z" count="3"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2019-12-26T10:57:54Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -9062,12 +8429,13 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/job/txt/paper.pdf" added="2019-12-22T18:11:58Z" modified="2019-12-22T18:11:58Z" visited="2019-12-22T18:11:58Z">
+  <bookmark href="file:///home/aghiles/Aghiles/job/txt/paper.pdf" added="2019-12-22T18:11:58Z" modified="2019-12-26T12:06:16Z" visited="2019-12-22T18:11:58Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/pdf"/>
         <bookmark:applications>
           <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-22T18:11:58Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2019-12-26T12:06:16Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -9888,16 +9256,16 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/on" added="2019-12-23T14:40:18Z" modified="2019-12-25T09:38:34Z" visited="2019-12-23T14:40:18Z">
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/on" added="2019-12-23T14:40:18Z" modified="2019-12-26T12:17:47Z" visited="2019-12-23T14:40:18Z">
     <info>
       <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
+        <mime:mime-type type="application/x-shellscript"/>
         <bookmark:groups>
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-25T09:38:33Z" count="2"/>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-25T09:38:34Z" count="3"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2019-12-26T12:17:35Z" count="3"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T12:17:47Z" count="5"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -10041,7 +9409,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/functions" added="2019-12-23T14:56:45Z" modified="2019-12-23T14:58:19Z" visited="2019-12-23T14:56:45Z">
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/functions" added="2019-12-23T14:56:45Z" modified="2019-12-26T12:00:23Z" visited="2019-12-23T14:56:45Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/x-shellscript"/>
@@ -10049,7 +9417,7 @@
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-23T14:58:19Z" count="4"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T12:00:23Z" count="11"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -11263,7 +10631,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/tool/config/wm/sxhkd/sxhkdrc" added="2019-12-24T07:48:45Z" modified="2019-12-24T09:21:39Z" visited="2019-12-24T07:48:45Z">
+  <bookmark href="file:///home/aghiles/Aghiles/tool/config/wm/sxhkd/sxhkdrc" added="2019-12-24T07:48:45Z" modified="2019-12-26T06:40:54Z" visited="2019-12-24T07:48:45Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/plain"/>
@@ -11271,8 +10639,8 @@
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-24T09:21:38Z" count="5"/>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-24T09:21:39Z" count="4"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2019-12-26T06:40:45Z" count="9"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T06:40:54Z" count="9"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -11361,12 +10729,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/job/txt/.bin/paper.pdf" added="2019-12-24T08:51:38Z" modified="2019-12-25T10:04:56Z" visited="2019-12-24T08:51:38Z">
+  <bookmark href="file:///home/aghiles/Aghiles/job/txt/.bin/paper.pdf" added="2019-12-24T08:51:38Z" modified="2019-12-26T06:43:23Z" visited="2019-12-24T08:51:38Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/pdf"/>
         <bookmark:applications>
-          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2019-12-24T09:39:41Z" count="3"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2019-12-26T06:43:23Z" count="4"/>
           <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2019-12-25T10:04:56Z" count="1"/>
         </bookmark:applications>
       </metadata>
@@ -11396,21 +10764,21 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/wm/shortcuts/p-reading/1-zotero" added="2019-12-24T08:58:12Z" modified="2019-12-24T09:29:47Z" visited="2019-12-24T08:58:12Z">
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/wm/shortcuts/p-reading/1-zotero" added="2019-12-24T08:58:12Z" modified="2019-12-26T06:51:55Z" visited="2019-12-24T08:58:12Z">
     <info>
       <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/x-shellscript"/>
+        <mime:mime-type type="text/plain"/>
         <bookmark:groups>
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
           <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-24T09:28:03Z" count="5"/>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-24T09:29:47Z" count="15"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T06:51:55Z" count="16"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/wm/shortcuts/p-reading/2-serach" added="2019-12-24T09:24:01Z" modified="2019-12-24T09:24:38Z" visited="2019-12-24T09:24:02Z">
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/wm/shortcuts/p-reading/2-serach" added="2019-12-24T09:24:01Z" modified="2019-12-26T07:00:10Z" visited="2019-12-24T09:24:02Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/x-shellscript"/>
@@ -11418,7 +10786,8 @@
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-24T09:24:38Z" count="7"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T07:00:10Z" count="13"/>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-26T06:59:20Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -11951,6 +11320,645 @@
         <mime:mime-type type="inode/directory"/>
         <bookmark:applications>
           <bookmark:application name="Zotero" exec="&apos;zotero %u&apos;" modified="2019-12-25T19:55:52Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/job/cod/ml/Oxford/2015lab5/data/imag.pix.npy" added="2019-12-25T20:49:49Z" modified="2019-12-25T20:49:49Z" visited="2019-12-25T20:49:50Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-25T20:49:49Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/centralities_graph_cdf.pdf" added="2019-12-26T06:25:17Z" modified="2019-12-26T06:25:17Z" visited="2019-12-26T06:25:17Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2019-12-26T06:25:17Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/tilix.conf" added="2019-12-26T06:26:25Z" modified="2019-12-26T06:26:25Z" visited="2019-12-26T06:26:25Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-26T06:26:25Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/export" added="2019-12-26T06:44:35Z" modified="2019-12-26T12:00:40Z" visited="2019-12-26T06:44:36Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2019-12-26T06:44:35Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T12:00:40Z" count="10"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/wm/shortcuts/p-reading/3-pdf1" added="2019-12-26T06:50:50Z" modified="2019-12-26T06:51:04Z" visited="2019-12-26T06:50:50Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T06:51:04Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/wm/shortcuts/p-reading/4-pdf2" added="2019-12-26T06:51:07Z" modified="2019-12-26T06:51:15Z" visited="2019-12-26T06:51:07Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T06:51:15Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/wm/shortcuts/p-reading/5-fr-fr" added="2019-12-26T06:51:18Z" modified="2019-12-26T06:51:18Z" visited="2019-12-26T06:51:18Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T06:51:18Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/wm/shortcuts/p-reading/9-mp3" added="2019-12-26T06:51:26Z" modified="2019-12-26T06:51:44Z" visited="2019-12-26T06:51:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T06:51:44Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/wm/shortcuts/p-reading/7-en-fr" added="2019-12-26T06:51:51Z" modified="2019-12-26T06:51:51Z" visited="2019-12-26T06:51:51Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T06:51:51Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/wm/shortcuts/p-reading/0-kill" added="2019-12-26T06:51:56Z" modified="2019-12-26T06:51:56Z" visited="2019-12-26T06:51:57Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T06:51:56Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/wm/shortcuts/sa-office/5-dashboard" added="2019-12-26T07:01:12Z" modified="2019-12-26T07:01:12Z" visited="2019-12-26T07:01:12Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T07:01:12Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/.zprofile" added="2019-12-26T07:02:40Z" modified="2019-12-26T09:48:45Z" visited="2019-12-26T07:02:40Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2019-12-26T07:02:53Z" count="2"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T09:48:45Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/.zshenv" added="2019-12-26T09:44:10Z" modified="2019-12-26T12:41:44Z" visited="2019-12-26T09:44:11Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2019-12-26T12:41:36Z" count="7"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T12:41:44Z" count="34"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/config/wm/zsh3/path" added="2019-12-26T09:57:32Z" modified="2019-12-26T09:57:32Z" visited="2019-12-26T09:57:32Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-26T09:57:32Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/config/home/.profile" added="2019-12-26T10:11:18Z" modified="2019-12-26T10:13:04Z" visited="2019-12-26T10:11:18Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-26T10:11:18Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T10:13:04Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/.config/bash/.bashrc" added="2019-12-26T10:22:40Z" modified="2019-12-26T10:22:40Z" visited="2019-12-26T10:22:40Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T10:22:40Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/.bash_profile" added="2019-12-26T10:26:09Z" modified="2019-12-26T10:45:25Z" visited="2019-12-26T10:26:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2019-12-26T10:45:25Z" count="6"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T10:45:25Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/.xprofile" added="2019-12-26T10:29:41Z" modified="2019-12-26T10:29:42Z" visited="2019-12-26T10:29:41Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2019-12-26T10:29:41Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T10:29:42Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/.xinitrc" added="2019-12-26T10:29:58Z" modified="2019-12-26T10:29:58Z" visited="2019-12-26T10:29:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T10:29:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/.xsession" added="2019-12-26T10:30:11Z" modified="2019-12-26T10:30:11Z" visited="2019-12-26T10:30:11Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T10:30:11Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/.xsession-errors" added="2019-12-26T10:30:14Z" modified="2019-12-26T10:30:14Z" visited="2019-12-26T10:30:14Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T10:30:14Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/.config/bash/.bash_history" added="2019-12-26T10:32:48Z" modified="2019-12-26T10:32:48Z" visited="2019-12-26T10:32:48Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T10:32:48Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/.config/bash/.bash_profile" added="2019-12-26T10:33:03Z" modified="2019-12-26T10:33:03Z" visited="2019-12-26T10:33:04Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T10:33:03Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/.config/bash/.bash_logout" added="2019-12-26T10:33:22Z" modified="2019-12-26T10:33:22Z" visited="2019-12-26T10:33:23Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T10:33:22Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///etc/profile" added="2019-12-26T10:42:20Z" modified="2019-12-26T10:42:20Z" visited="2019-12-26T10:42:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T10:42:20Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/config/home/.profilekjkj" added="2019-12-26T10:54:28Z" modified="2019-12-26T10:55:50Z" visited="2019-12-26T10:54:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2019-12-26T10:55:49Z" count="2"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T10:55:50Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/config/home/.dmrc" added="2019-12-26T10:59:49Z" modified="2019-12-26T12:49:07Z" visited="2019-12-26T10:59:49Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2019-12-26T12:49:06Z" count="2"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T12:49:07Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/config/home/.jwmrc" added="2019-12-26T11:00:20Z" modified="2019-12-26T11:00:21Z" visited="2019-12-26T11:00:21Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2019-12-26T11:00:20Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T11:00:21Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/.gitconfig" added="2019-12-26T11:01:04Z" modified="2019-12-26T11:01:04Z" visited="2019-12-26T11:01:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-26T11:01:04Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/bash" added="2019-12-26T11:12:17Z" modified="2019-12-26T11:46:27Z" visited="2019-12-26T11:12:18Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2019-12-26T11:30:41Z" count="5"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T11:46:27Z" count="42"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/.bashrc" added="2019-12-26T11:13:17Z" modified="2019-12-26T11:24:17Z" visited="2019-12-26T11:13:17Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T11:24:17Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/bas" added="2019-12-26T11:15:49Z" modified="2019-12-26T11:15:55Z" visited="2019-12-26T11:15:50Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-26T11:15:49Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T11:15:55Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/bashrc" added="2019-12-26T11:21:59Z" modified="2019-12-26T12:18:14Z" visited="2019-12-26T11:21:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-26T12:18:14Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/config/wm/zsh/.zprofile" added="2019-12-26T11:47:47Z" modified="2019-12-26T11:54:11Z" visited="2019-12-26T11:47:47Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2019-12-26T11:51:32Z" count="3"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T11:54:11Z" count="9"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/config/wm/zsh/.zprofile2" added="2019-12-26T11:48:03Z" modified="2019-12-26T11:48:25Z" visited="2019-12-26T11:48:03Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-26T11:48:03Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T11:48:25Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/config/wm/zsh/.zshrc" added="2019-12-26T11:48:43Z" modified="2019-12-26T11:58:22Z" visited="2019-12-26T11:48:43Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2019-12-26T11:48:43Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T11:58:22Z" count="13"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/config/wm/zsh/.zshrc2" added="2019-12-26T11:48:47Z" modified="2019-12-26T11:53:26Z" visited="2019-12-26T11:48:47Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T11:53:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/config/wm/zsh/zshrc" added="2019-12-26T11:49:10Z" modified="2019-12-26T11:53:34Z" visited="2019-12-26T11:49:10Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T11:53:34Z" count="3"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2019-12-26T11:53:20Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/config/wm/zsh/.zsh_aliases" added="2019-12-26T11:52:04Z" modified="2019-12-26T11:52:04Z" visited="2019-12-26T11:52:04Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T11:52:04Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/config/wm/zsh/.zcompdump" added="2019-12-26T12:01:34Z" modified="2019-12-26T12:01:35Z" visited="2019-12-26T12:01:34Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2019-12-26T12:01:34Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T12:01:35Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/config/wm/zsh/zsh3/aliases" added="2019-12-26T12:01:53Z" modified="2019-12-26T12:01:53Z" visited="2019-12-26T12:01:53Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-26T12:01:53Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/config/wm/zsh/zsh3/functions" added="2019-12-26T12:04:10Z" modified="2019-12-26T12:04:10Z" visited="2019-12-26T12:04:10Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-26T12:04:10Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/job/txt/slide.pdf" added="2019-12-26T12:06:27Z" modified="2019-12-26T12:06:27Z" visited="2019-12-26T12:06:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2019-12-26T12:06:27Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/zsh/bash" added="2019-12-26T12:16:49Z" modified="2019-12-26T12:17:04Z" visited="2019-12-26T12:16:50Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2019-12-26T12:16:49Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T12:17:04Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/zsh/export" added="2019-12-26T12:37:55Z" modified="2019-12-26T12:38:41Z" visited="2019-12-26T12:37:56Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T12:38:41Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/zsh/.zprofile" added="2019-12-26T12:39:37Z" modified="2019-12-26T12:45:46Z" visited="2019-12-26T12:39:37Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T12:45:46Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/zsh/.zshrc" added="2019-12-26T12:40:44Z" modified="2019-12-26T12:45:51Z" visited="2019-12-26T12:40:44Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T12:45:51Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/shell/zsh/aliases" added="2019-12-26T12:45:24Z" modified="2019-12-26T12:45:25Z" visited="2019-12-26T12:45:25Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-26T12:45:24Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T12:45:25Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/config/home/.inputrc" added="2019-12-26T12:49:26Z" modified="2019-12-26T12:49:27Z" visited="2019-12-26T12:49:27Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2019-12-26T12:49:26Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-12-26T12:49:27Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/aghiles/Aghiles/tool/config/home/.sublimeexternalcommand_history" added="2019-12-26T12:50:01Z" modified="2019-12-26T12:50:01Z" visited="2019-12-26T12:50:02.154782Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2019-12-26T12:50:01Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>

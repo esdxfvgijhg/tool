@@ -6,6 +6,6 @@ echo $INPUT
 
 paper="${INPUT}"
 
-cd $READINGPATH/iot/storage
+cd $BIBPATH/storage
 evince $paper/*.pdf
 

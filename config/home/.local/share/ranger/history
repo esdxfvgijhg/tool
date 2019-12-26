@@ -44,7 +44,7 @@ shell %s
 shell nvim %s
 shell 
 rename Agiwal et al. - 2016 - Next Generation 5G Wireless Networks A Comprehens.wav
-open_with 
 delete
 open_with t  gedit %s
 open_with t  gedir "$@"
+open_with 

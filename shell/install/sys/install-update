@@ -4,6 +4,7 @@
 sudo apt update && sudo apt upgrade
 
 installx git
+installx git-lfs
 installx make
 installx automake
 installx curl

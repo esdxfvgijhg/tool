@@ -292,7 +292,7 @@ super + alt + equal
 
 
 # terminal emulator
-super + Return
+ctrl + :
 	tilix
 super + n
 	nautilus

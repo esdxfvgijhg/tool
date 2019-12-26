@@ -3651,7 +3651,7 @@
   <component type="shell-extension">
     <id>arc-menu_linxgem33.com</id>
     <name>Arc Menu</name>
-    <description><p>A Traditional Application Menu for GNOME</p><p>== DEPENDENCIES ==</p><p>Please note: For ArcMenu to work properly, your GNOME Desktop must have the following dependencies installed (please see below).</p><p>sudo apt install gnome-shell-extensions</p><p>sudo apt install gnome-tweak-tool</p><p>sudo apt install gnome-menus</p><p>sudo apt install gir1.2-gmenu-3.0 (Maybe required on some distro’s)</p><p>== REPORTING ISSUES ==</p><p>Please Note: We do not offer support on extensions.gnome.org, so please open a issue on our GitLab issue tracker for support (Extension homepage URL below).</p></description>
+    <description><p>A Traditional Application Menu for GNOME</p><p>== DEPENDENCIES ==</p><p>Please note: For ArcMenu to work properly, your GNOME Desktop must have the following dependencies installed (please see below).</p><p>sudo apt install gnome-shell-extensions gnome-menus gir1.2-gmenu-3.0</p><p>== REPORTING ISSUES ==</p><p>Please Note: We do not offer support on extensions.gnome.org, so please open a issue on our GitLab issue tracker for support (Extension homepage URL below).</p></description>
     <icon type="stock">application-x-addon-symbolic</icon>
     <project_license>GPL-2.0+</project_license>
     <url type="homepage">https://extensions.gnome.org/extension/1228/arc-menu/</url>
@@ -10997,7 +10997,7 @@
       </screenshot>
     </screenshots>
     <releases>
-      <release version="11"/>
+      <release version="12"/>
     </releases>
     <metadata>
       <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
@@ -15967,10 +15967,15 @@
   <component type="shell-extension">
     <id>unix-timestamp-clock_se1exin.github.com</id>
     <name>Unix Timestamp Clock</name>
-    <description><p>Show the current unix timestamp as a clock in the top bar</p></description>
+    <description><p>Show the current unix timestamp as a clock in the top bar.</p><p>Copy-paste currently shown timestamp (left mouse button) or current timestamp (any other mouse button) to clipboard</p></description>
     <icon type="stock">application-x-addon-symbolic</icon>
     <project_license>GPL-2.0+</project_license>
     <url type="homepage">https://extensions.gnome.org/extension/1375/unix-timestamp-clock/</url>
+    <screenshots>
+      <screenshot type="default">
+        <image type="source">https://extensions.gnome.org/extension-data/screenshots/screenshot_1375.png</image>
+      </screenshot>
+    </screenshots>
     <metadata>
       <value key="GnomeSoftware::OriginHostnameUrl">https://extensions.gnome.org/</value>
       <value key="GnomeSoftware::Plugin">shell-extensions</value>

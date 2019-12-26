@@ -1,4 +1,4 @@
 #!/bin/sh
 
-cd $READINGPATH/iot/storage
-$TERMINAL
+
+tilix -e cd "$BIBPATH/storage"

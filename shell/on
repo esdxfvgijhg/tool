@@ -3,7 +3,7 @@
 #xdg-settings set default-web-browser qutebrowser
 
 
-source /home/aghiles/Aghiles/tool/shell/export
+source /home/aghiles/Aghiles/tool/shell/zsh/export
 
 
 # Config

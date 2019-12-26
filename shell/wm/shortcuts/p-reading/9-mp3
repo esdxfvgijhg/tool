@@ -6,7 +6,7 @@ echo $INPUT
 
 paper="${INPUT#* }"
 paper=`echo "$paper" | sed -r "s/\.pdf/\.txt/g"`
-path="$READINGPATH/iot/storage/$paper"
+path="$BIBPATH/storage/$paper"
 echo "$path"
 
 

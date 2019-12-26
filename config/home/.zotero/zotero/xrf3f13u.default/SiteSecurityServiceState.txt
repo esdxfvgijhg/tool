@@ -10,7 +10,7 @@ arxiv.org:HSTS	3	18225	1606224433994,1,0
 hal.archives-ouvertes.fr:HSTS	0	18225	1590461644910,1,0
 duckduckgo.com:HSTS	0	18237	1607271321120,1,0,2
 www.mdpi.com:HSTS	0	18225	1590248903229,1,1
-repo.zotero.org:HSTS	82	18255	1608839829191,1,1,2
+repo.zotero.org:HSTS	83	18256	1608879957740,1,1,2
 raw.githubusercontent.com:HSTS	52	18255	1608839794426,1,0
 pdf.sciencedirectassets.com:HSTS	0	18225	1574691129818,1,0
 www.zotero.org:HSTS	62	18255	1608839794472,1,1

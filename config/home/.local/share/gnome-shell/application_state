@@ -1,23 +1,20 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.gnome.FileRoller.desktop" open-window-count="0" score="5" last-seen="1576733088"/>
-    <application id="gnome-control-center.desktop" open-window-count="0" score="65" last-seen="1576831590"/>
+    <application id="gnome-control-center.desktop" open-window-count="0" score="69" last-seen="1577348750"/>
     <application id="yelp.desktop" open-window-count="0" score="0" last-seen="1576829388"/>
-    <application id="firefox-esr.desktop" open-window-count="1" score="15268.41015625" last-seen="1577287987"/>
+    <application id="firefox-esr.desktop" open-window-count="0" score="15268.41015625" last-seen="1577287987"/>
     <application id="libreoffice-startcenter.desktop" open-window-count="0" score="0" last-seen="1576753518"/>
     <application id="org.gnome.Nautilus.desktop" open-window-count="0" score="10608.6484375" last-seen="1576943114"/>
-    <application id="rstudio.desktop" open-window-count="0" score="221" last-seen="1576728949"/>
     <application id="eog.desktop" open-window-count="0" score="5" last-seen="1576824716"/>
-    <application id="chromium.desktop" open-window-count="0" score="1" last-seen="1576743136"/>
     <application id="org.gnome.gedit.desktop" open-window-count="0" score="8193.796875" last-seen="1576943106"/>
     <application id="libreoffice-calc.desktop" open-window-count="0" score="423" last-seen="1576753517"/>
     <application id="sublime_text.desktop" open-window-count="0" score="99" last-seen="1576828896"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="0" score="22657.09375" last-seen="1577287987"/>
     <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="11103" last-seen="1575995407"/>
     <application id="com.gexperts.Tilix.desktop" open-window-count="0" score="166" last-seen="1577287975"/>
     <application id="org.gnome.Evince.desktop" open-window-count="0" score="8011.31640625" last-seen="1576926657"/>
     <application id="org.gnome.Totem.desktop" open-window-count="0" score="0" last-seen="1576782168"/>
-    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="22657.09375" last-seen="1577287987"/>
     <application id="qutebrowser.desktop" open-window-count="0" score="1163" last-seen="1576765067"/>
   </context>
 </application-state>
