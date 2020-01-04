@@ -6,6 +6,21 @@
 #alias la='ls -A'
 #alias l='ls -CF'
 
+## exceptions to auto-correction
+#alias bundle='nocorrect bundle'
+#alias cabal='nocorrect cabal'
+#alias man='nocorrect man'
+#alias mkdir='nocorrect mkdir'
+#alias mv='nocorrect mv'
+#alias stack='nocorrect stack'
+#alias sudo='nocorrect sudo'
+
+
+alias ble="bluetoothctl"
+alias airpods="ble connect $airpods"
+alias audio="pavucontrol"
+
+alias inst="$TOOLPATH/shell/install"
 
 alias installx="sudo apt -y install"
 alias vgh="convert -delay 12 -loop 0 *.jpg animated.gif"
@@ -84,9 +99,6 @@ alias calcurse="calcurse -C ~/.config/calcurse/ -D ~/.config/calcurse/"
 alias news="newsboat"
 alias x="sxiv -ft *"
 alias term="tilix"
-alias wafo='waf --cwd=$PWD --run '
-alias wafvo='waf --cwd=$PWD --visualize --run '
-
 
 
 #Install
@@ -114,6 +126,9 @@ alias reboot="checkout ; sudo reboot now"
 alias sdn="checkout ; sudo shutdown -h now"
 alias disks="gnome-disks"
 alias clip="nc localhost 8377"
+
+
+alias eclipse=$TOOLSPATH/eclipse/eclipse/eclipse
 
 alias trans='trans -b -t fr'
 alias xd='tracker tag -ts'
@@ -221,9 +236,9 @@ alias dot="cd ~/Dotfiles && ls"
 alias gd="git diff"
 alias gf="git-flow"
 alias g="git"
-alias ggpl="git pull origin $(current_branch)"
-alias ggpnp="git pull origin $(current_branch) && git push origin $(current_branch)"
-alias ggps="git push origin $(current_branch)"
+#alias ggpl="git pull origin $(current_branch)"
+#alias ggpnp="git pull origin $(current_branch) && git push origin $(current_branch)"
+#alias ggps="git push origin $(current_branch)"
 #alias gmo="$EDITOR $(git ls-files -m)"
 alias gs="git status"
 alias gsmu="git submodule init && git submodule update"
@@ -231,5 +246,209 @@ alias gsmuu="git submodule foreach git pull origin master"
 alias gst="git status"
 alias gua="git remote | xargs -L1 git push --all"
 
+
+## default applications
+#alias -s c=nvim
+#alias -s cpp=nvim
+#alias -s java=nvim
+#alias -s md=nvim
+#alias -s tex=nvim
+#alias -s log="less -MN"
+
+# aliases for Tmux
+alias tmux='tmux -2'
+alias ta='tmux attach -t'
+alias tnew='tmux new -s'
+alias tls='tmux ls'
+alias tkill='tmux kill-session -t'
+alias mux='tmuxinator'
+alias tmuxlayout='tmux list-windows|sed "s/^.*\[layout \(.*\)\] @.*$/\1/"'
+
+
+# email aliases
+alias m='neomutt'
+alias msmtpqm='msmtpq --q-mgmt'
+# calendar aliases
+alias kl='khal'
+alias ikl='ikhal'
+alias kla='khal -c $HOME/.config/khal/academicconfig'
+alias ikla='ikhal -c $HOME/.config/khal/academicconfig'
+
+# addressbook aliases
+alias kd='khard'
+alias kdd='khard details'
+
+# sync aliases
+alias oimap='offlineimap'
+alias vd='vdirsyncer'
+alias vds='vdirsyncer sync'
+
+# various app aliases
+alias nb='newsboat'
+alias nf='neofetch'
+alias yt="mpsyt"
+alias vi='nvim'
+alias vim='nvim'
+alias arc='aria2c'
+alias sc='scim'
+
+# pass aliases
+alias pshow='pass show'
+alias pedit='pass edit'
+alias pupdate='pass update -p'
+alias ptail='pass tail'
+alias ptedit='pass tailedit'
+
+
+# git aliases
+alias g='git'
+alias gb='git branch'
+alias gcm='git commit --message'
+alias gco='git checkout'
+alias gf='git fetch'
+alias gfc='git clone'
+alias gfm='git pull'
+alias gia='git add'
+alias gp='git push'
+alias gr='git rebase'
+alias gS='git submodule'
+alias gSa='git submodule add'
+alias gSi='git submodule init'
+alias gSI='git submodule update --init --recursive'
+alias gws='git status --short'
+alias gwS='git status'
+alias glv="git log --graph --pretty=format:'%h - %d %s (%cr) <%an>' | nvim -R -c 'set hidden nowrap keywordprg=:enew\ \|\ terminal\ \git\ --no-pager\ show | nnoremap q :bd!<cr>' -"
+alias db='popd > /dev/null && dirs -v'
+alias dv='dirs -v'
+alias httpstart='python -m http.server 8080'
+alias dmenu='dmenucolor'
+alias systemctlu='systemctl --user'
+
+# cp -> rsync
+alias cp='rsync -ah --partial --inplace --info=progress2'
+
+alias pip='pip3'
+alias Rupdate='sudo Rscript -e '"'"'update.packages(checkBuilt=TRUE, ask=FALSE, repos="https://cran.rstudio.com")'"'"
+alias chmox='chmod +x'
+alias maketags='ctags -R .'
+alias l='ls'
+alias sl='ls'
+alias ll='ls -alF'
+alias la='ls -A'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias todo='vi $HOME/.todo.md'
+alias makescript="fc -rnl | head -1 >"
+alias histg='history | grep'
+alias cmount='mount | column -t'
+alias meminfo='free -m -l -t'
+alias psg='ps aux | grep'
+alias ipinfo="curl ifconfig.me && curl ifconfig.me/host"
+alias alert='notify-send -i "$([ $? = 0 ] && echo terminal || echo error)" "$(cat $HOME/.zsh_history|tail -n1|cut -d'\'';'\'' -f2-|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias fuck='sudo /usr/bin/zsh -c "$(fc -rnl| head -1)"'
+
+
+# LaTeX Template aliases
+alias txa="filetemplate $HOME/Documents/latex/templates/article.tex"
+alias txb="filetemplate $HOME/Documents/latex/templates/beamer.tex"
+alias txm="filetemplate $HOME/Documents/latex/templates/mla.tex"
+
+# Markdown Template aliases
+alias mda="filetemplate $HOME/Documents/markdown/templates/article.md"
+alias mdb="filetemplate $HOME/Documents/markdown/templates/beamer.md"
+alias rmda="filetemplate $HOME/Documents/markdown/templates/article.rmd"
+alias rmdb="filetemplate $HOME/Documents/markdown/templates/beamer.rmd"
+
+
+
+# unused aliases
+#alias gohome='sudo openvpn --script-security 2 --config $HOME/.openvpn/halter_home.ovpn'
+#alias dataBackup='$HOME/backupScript/backup.sh'
+#alias dataBackupUmount='$HOME/backupScript/backup.sh && sleep 5 && sudo umount /dev/sdd1'
+
+
+
+#
+# Command aliases
+#
+
+alias ....='cd ../..'
+alias :e=vim
+alias :qa=exit
+alias :sp='test -n "$TMUX" && tmux split-window'
+alias :vs='test -n "$TMUX" && tmux split-window -h'
+alias :wq=exit
+alias a=ag
+alias b=bundle
+alias be='bundle exec'
+alias cd..='cd ..'
+alias clip='nc -U ~/.clipper.sock'
+alias d='hash -d'
+alias e=exit
+alias f='find . -name'
+alias g=git
+alias groot='cd $(git rev-parse --show-toplevel 2> /dev/null || echo -n ".")'
+alias h=history
+alias j=jump
+alias l='ls -F'
+alias ll='ls -laF'
+alias o='git oneline'
+alias p='git patch'
+alias prettyjson='python -m json.tool'
+alias oo='git oneline -10'
+alias s=ssh
+alias serve='python -m SimpleHTTPServer' # optional arg: port (defaults to 8000)
+alias t=tmux
+alias v=vim
+
+
+#
+# Suffix aliases
+# (eg. "foo.md" to open Markdown files in "Marked 2.app")
+#
+#alias -s md='open -a "Marked 2.app"'
+
+#
+# Global aliases
+# (work at any position within the command line)
+#
+
+## Mnemonic: "[C]lip"
+#alias -g C="|clip"
+
+## Mnemonic: "[G]rep"
+#alias -g G="|grep"
+
+## Mnemonic: "[H]ead"
+#alias -g H="|head"
+
+## Pretty-print JSON.
+## Mnemonic: "[J]SON"
+#alias -g J="|python -m json.tool"
+
+## Mnemonic: "[L]ess"
+#alias -g L="|less"
+
+## Mnemonic: "[R]eset"
+#alias -g R=";clear;test -n "$TMUX" && tmux clear-history;"
+
+## Mnemonic: "[W]c"
+#alias -g W="|wc -l"
+
+
+
+stty -ixon # Disable ctrl-s and ctrl-q
+#shopt -s autocd # Allows you to cd to a dir just by typing the dir name
+#shopt -s checkwinsize # Line wrap on window resize
+
+pathapp $HOME/bin/lennartcl-gitl
+pathapp $HOME/.local/bin
+pathapp $HOME/.gem/ruby/2.3.0/bin
+pathapp $HOME/.opam/system/bin
+
+command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d" # Use neovim for vim if present.
+
+[ -f "$HOME/.secrets" ] && source "$HOME/.secrets"
+[[ -b "/dev/sr0" ]] && alias eject="eject -T /dev/sr0"
 
 

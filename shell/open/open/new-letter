@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#read -p "name: " filex
+cp ~/.config/ranger/templates/lettre-fr.tex $1.tex
+
+
+
+
+
+
+
+

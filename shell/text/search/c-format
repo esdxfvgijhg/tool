@@ -1,4 +1,0 @@
-#!/bin/bash
-
-clang-format -i *.c *.cpp *.cc
-sed -i 's/  /\t/g' *.c *.cpp *.cc

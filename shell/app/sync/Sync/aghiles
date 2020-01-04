@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+frt=`dirname $0`
+sudo $frt/FreeFileSync

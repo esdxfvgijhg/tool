@@ -1,0 +1,7 @@
+#!/bin/bash
+
+service=$1
+
+systemctl --user is-active $service 2&> /dev/null && systemctl --user stop $service && notify-send "$service off" && exit
+
+systemctl --user start $service && notify-send "$service on"

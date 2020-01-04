@@ -1,8 +1,0 @@
-#!/bin/sh
-
-file=$1
-filename="${file%.*}"
-	
-mkdir $filename
-$TOOLSPATH/ns-3/ns-3-dev/waf --cwd=$PWD --run $filename
-mv *.tr *.pcap $filename/ 2>~/nul

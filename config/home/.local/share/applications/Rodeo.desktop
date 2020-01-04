@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Rodeo
+Comment=Rodeo: An IDE for data science
+Exec=env GTK_THEME=Adwaita:dark /opt/Rodeo/rodeo
+Terminal=false
+Type=Application
+Icon=rodeo

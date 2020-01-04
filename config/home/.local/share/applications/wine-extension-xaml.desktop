@@ -5,4 +5,4 @@ MimeType=application/xaml+xml;
 Exec=env WINEPREFIX="/home/aghiles/.wine" wine-stable start /ProgIDOpen Windows.XamlDocument %f
 NoDisplay=true
 StartupNotify=true
-Icon=00EF_PresentationHost.0
+Icon=E86F_PresentationHost.0

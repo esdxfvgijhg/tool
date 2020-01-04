@@ -3,7 +3,7 @@
 	[
 	],
 	"last_version": 3211,
-	"last_window_id": 209,
+	"last_window_id": 217,
 	"log_indexing": false,
 	"settings":
 	{
@@ -202,6 +202,17 @@
 			},
 			"file_history":
 			[
+				"/home/aghiles/Aghiles/job/txt/main.tex",
+				"/home/aghiles/Aghiles/job/txt/05-ICC/04_approach.tex",
+				"/home/aghiles/Aghiles/job/txt/these.tex",
+				"/home/aghiles/Aghiles/job/txt/A-Protocols/09_divers.tex",
+				"/home/aghiles/Aghiles/job/txt/03-ICSNC-2019/17_discussion.tex",
+				"/home/aghiles/Aghiles/job/txt/01-Introduction/10_introduction.tex",
+				"/home/aghiles/Aghiles/job/txt/03-ICSNC-2019/04_approach.tex",
+				"/home/aghiles/Aghiles/job/txt/05-ICC/06_results.tex",
+				"/home/aghiles/Aghiles/job/txt/05-ICC/05_experimentation.tex",
+				"/home/aghiles/Aghiles/job/txt/04-ICT-DM/05_experimentation.tex",
+				"/home/aghiles/Aghiles/job/txt/05-ICC/07_conclusion.tex",
 				"/home/aghiles/Aghiles/Research/Writing/02-Survey/00_all.tex",
 				"/home/aghiles/Aghiles/Research/Writing/main.tex",
 				"/home/aghiles/Aghiles/Research/Writing/A-Protocols/04_frame.tex",
@@ -318,22 +329,11 @@
 				"/home/aghiles/Aghiles/Redaction/slide/src/11/1_introduction.tex",
 				"/home/aghiles/Aghiles/Redaction/slide/src/1/2_0_related.tex",
 				"/home/aghiles/Aghiles/Redaction/slide/src/11/7_conclusion.tex",
-				"/home/aghiles/Aghiles/Redaction/slide/src/11/5_results.tex",
-				"/home/aghiles/Aghiles/Redaction/slide/src/11/2_related.tex",
-				"/home/aghiles/Aghiles/Redaction/slide/bin/slide.vrb",
-				"/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.code.tex",
-				"/home/aghiles/Aghiles/Redaction/paper/paper.tex",
-				"/home/aghiles/Aghiles/Redaction/paper/src/4/1_introduction.tex",
-				"/home/aghiles/Aghiles/Redaction/paper/src/4/4_approach.tex",
-				"/home/aghiles/Aghiles/Redaction/paper/src/4/2_related.tex",
-				"/home/aghiles/Aghiles/Redaction/paper/src/4/7_conclusion.tex",
-				"/home/aghiles/Aghiles/Redaction/paper/src/4/0_abstract.tex",
-				"/home/aghiles/Aghiles/Redaction/paper/src/4/5_experimentation.tex",
-				"/home/aghiles/Aghiles/Redaction/setup/setup_tikz.tex"
+				"/home/aghiles/Aghiles/Redaction/slide/src/11/5_results.tex"
 			],
 			"find":
 			{
-				"height": 38.0
+				"height": 25.0
 			},
 			"find_in_files":
 			{
@@ -347,16 +347,6 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"kim_adaptive_2017-1",
-					"augustin_study_2016-1",
-					"petajajarvi_evaluation_2017-1",
-					"petajajarvi",
-					"\\[[A-Za-z]",
-					"LoRa spe",
-					"\\[[a-zA-Z\\]",
-					"&",
-					"_",
-					"paper"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -364,12 +354,6 @@
 				"regex": true,
 				"replace_history":
 				[
-					"kim_adaptive_2017",
-					"augustin_study_2016",
-					"petajajarvi_evaluation_2017",
-					"\\\\&",
-					"\\&",
-					"-"
 				],
 				"reverse": false,
 				"show_context": true,
@@ -392,12 +376,12 @@
 			},
 			"output.latextools":
 			{
-				"height": 430.0
+				"height": 95.0
 			},
 			"pinned_build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
 			"replace":
 			{
-				"height": 72.0
+				"height": 46.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -648,27 +632,23 @@
 				"side_bar_visible": false,
 				"status_bar_visible": false
 			},
+			"expanded_folders":
+			[
+				"/home/aghiles/Aghiles/job/txt"
+			],
 			"file_history":
 			[
-				"/home/aghiles/.sh_history",
 				"/home/aghiles/Aghiles/job/txt/main.tex",
-				"/home/aghiles/Aghiles/job/txt/03-ICSNC-2019/00_abstract.tex",
-				"/home/aghiles/Aghiles/job/txt/088/07_conclusion.tex",
-				"/home/aghiles/Aghiles/job/txt/05-ICC/01_introduction.tex",
-				"/home/aghiles/Aghiles/Research/txt/02-Survey/00_all.tex",
-				"/home/aghiles/Aghiles/Job/txt/05-ICC/01_introduction.tex",
-				"/home/aghiles/Aghiles/Job/txt/05-ICC/07_conclusion.tex",
-				"/home/aghiles/Aghiles/Job/txt/04-ICT-DM/01_introduction.tex",
-				"/home/aghiles/Aghiles/Research/txt/06-InfoCom/01_introduction.tex",
-				"/home/aghiles/Aghiles/Research/txt/04-ICT-DM/02_related.tex",
-				"/home/aghiles/Aghiles/Research/txt/04-ICT-DM/00_abstract.tex",
-				"/home/aghiles/Aghiles/Job/txt/04-ICT-DM/07_conclusion.tex",
-				"/home/aghiles/.Xauthority2",
-				"/home/aghiles/Aghiles/Job/txt/04-ICT-DM/21_poster.tex",
-				"/home/aghiles/Aghiles/Research/txt/03-ICSNC-2019/07_conclusion.tex",
-				"/home/aghiles/Aghiles/Research/txt/03-ICSNC-2019/01_introduction.tex",
-				"/home/aghiles/Aghiles/Research/txt/04-ICT-DM/these.tex",
-				"/home/aghiles/Aghiles/Research/txt/these.tex",
+				"/home/aghiles/Aghiles/job/txt/05-ICC/04_approach.tex",
+				"/home/aghiles/Aghiles/job/txt/these.tex",
+				"/home/aghiles/Aghiles/job/txt/A-Protocols/09_divers.tex",
+				"/home/aghiles/Aghiles/job/txt/03-ICSNC-2019/17_discussion.tex",
+				"/home/aghiles/Aghiles/job/txt/01-Introduction/10_introduction.tex",
+				"/home/aghiles/Aghiles/job/txt/03-ICSNC-2019/04_approach.tex",
+				"/home/aghiles/Aghiles/job/txt/05-ICC/06_results.tex",
+				"/home/aghiles/Aghiles/job/txt/05-ICC/05_experimentation.tex",
+				"/home/aghiles/Aghiles/job/txt/04-ICT-DM/05_experimentation.tex",
+				"/home/aghiles/Aghiles/job/txt/05-ICC/07_conclusion.tex",
 				"/home/aghiles/Aghiles/Research/Writing/02-Survey/00_all.tex",
 				"/home/aghiles/Aghiles/Research/Writing/main.tex",
 				"/home/aghiles/Aghiles/Research/Writing/A-Protocols/04_frame.tex",
@@ -777,11 +757,19 @@
 				"/home/aghiles/Aghiles/Redaction/slide.tex",
 				"/home/aghiles/Aghiles/Redaction/slide/slide.tex",
 				"/home/aghiles/Aghiles/Redaction/slide/src/1/3_0_method.tex",
-				"/home/aghiles/Aghiles/Redaction/common/setup/setup_tikz.tex"
+				"/home/aghiles/Aghiles/Redaction/common/setup/setup_tikz.tex",
+				"/home/aghiles/Aghiles/Redaction/setup/setup.tex",
+				"/home/aghiles/Aghiles/Redaction/slide/src/11/3_method.tex",
+				"/home/aghiles/Aghiles/Redaction/res/accronyme/nomenclature.tex",
+				"/home/aghiles/Aghiles/Redaction/slide/src/1_introduction.tex",
+				"/home/aghiles/Aghiles/Redaction/slide/src/11/1_introduction.tex",
+				"/home/aghiles/Aghiles/Redaction/slide/src/1/2_0_related.tex",
+				"/home/aghiles/Aghiles/Redaction/slide/src/11/7_conclusion.tex",
+				"/home/aghiles/Aghiles/Redaction/slide/src/11/5_results.tex"
 			],
 			"find":
 			{
-				"height": 38.0
+				"height": 25.0
 			},
 			"find_in_files":
 			{
@@ -795,9 +783,6 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"ac{CF",
-					"sea",
-					"algor"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -857,11 +842,11 @@
 			},
 			"output.latextools":
 			{
-				"height": 25.0
+				"height": 95.0
 			},
 			"pinned_build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
-			"position": "0,0,0,0,0,0,19,958,1058,1920,1080",
-			"project": "/home/aghiles/Aghiles/Research/txt/.main.sublime-project",
+			"position": "0,0,0,0,0,960,19,1918,537,1920,1080",
+			"project": "/home/aghiles/Aghiles/job/txt/.main.sublime-project",
 			"replace":
 			{
 				"height": 46.0
@@ -919,7 +904,7 @@
 			"template_settings":
 			{
 			},
-			"window_id": 209,
+			"window_id": 217,
 			"workspace_name": ""
 		}
 	],
@@ -927,15 +912,7 @@
 	{
 		"recent_workspaces":
 		[
-			"/home/aghiles/Aghiles/Research/txt/.main.sublime-workspace",
-			"/home/aghiles/Aghiles/Research/Writing/.main.sublime-workspace",
-			"/home/aghiles/Aghiles/Research/Writing/These/.these.sublime-workspace",
-			"/home/aghiles/Aghiles/Research/Writing/Plot/.plot.sublime-workspace",
-			"/home/aghiles/Aghiles/Research/Writing/Report/.report.sublime-workspace",
-			"/home/aghiles/Aghiles/Research/Writing/CV/.cl.sublime-workspace",
-			"/home/aghiles/Aghiles/Research/Writing/CV/.cv.sublime-workspace",
-			"/home/aghiles/Aghiles/Research/Writing/plot.sublime-workspace",
-			"/home/aghiles/Aghiles/Research/Writing/main.sublime-workspace"
+			"/home/aghiles/Aghiles/job/txt/.main.sublime-workspace"
 		]
 	}
 }

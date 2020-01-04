@@ -1,0 +1,10 @@
+#!/bin/sh
+
+toupdate=$(pip list --outdated --format freeze | cut -d'=' -f1)
+
+if [ -z "$toupdate" ]
+then
+    sudo pip install -U $toupdate
+else
+    echo "No new updates"
+fi

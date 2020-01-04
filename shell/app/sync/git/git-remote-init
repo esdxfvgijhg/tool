@@ -1,0 +1,16 @@
+#!/bin/sh
+
+account1="https://esdxfvgijhg@github.com/esdxfvgijhg"
+account2="https://esxdwqzpml@github.com/esxdwqzpml"
+localx="/media/aghiles/Aghiles"
+
+#cd $ADMINPATH    && git remote add admin      $localx/admin
+#cd $TOOLPATH     && git remote add tool       $localx/tool
+
+cd $PROGRAMPATH  && git init && git lfs install
+cd $TEACHINGPATH && git init && git lfs install
+#cd $READINGPATH  && git init && git lfs install
+cd $WRITINGPATH  && git init && git lfs install
+cd $TOOLPATH     && git init &&  git lfs install
+
+

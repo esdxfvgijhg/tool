@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source ~/.config/wpg/formats/colors.sh
-
 command=dmenu
 
 if [[ "$1" == "-c" ]]; then

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "$1" | xsel -i
+echo "$1" | xsel --clipboard
+

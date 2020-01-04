@@ -1,0 +1,29 @@
+#!/bin/sh
+# updates an arch-linux system
+# dependency: aur/trizen
+
+printf ":: Updating mirrors...\n"
+sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+sudo reflector -l 5 --sort rate --save /etc/pacman.d/mirrorlist
+
+sudo pacman -Syu
+
+dip=$(trizen -Qdtq)
+if [ -z $dip ]
+then
+	printf "\n:: No dependencies to remove\n\n"
+else
+	printf "\n:: Removing unnecessary dependencies\n\n"
+	sudo pacman -Rs $dip
+fi
+
+sudo pacman -Sc
+
+printf "\n:: Updating AUR packages\n\n"
+
+trizen -Sc
+
+printf "\n:: Updating TeX Live\n\n"
+
+sudo tlmgr option repository ctan
+sudo tlmgr update --self --all

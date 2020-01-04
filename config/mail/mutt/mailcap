@@ -54,13 +54,13 @@
 
 
 text/calendar; vcalendar-filter; copiousoutput
-text/html; openfile %s "qutebrowser";
+text/html; openfile-html %s "qutebrowser";
 
 application/ics; printics.sh %s; copiousoutput; print=khal import --batch -a email@somewhere.com %s
 application/*; openfile %s "xdg-open";
 
 
 
-
+text/enriched   ; w3m -I %{charset} -T text/enriched ; copiousoutput ;
 
 

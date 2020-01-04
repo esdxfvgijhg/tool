@@ -6,7 +6,12 @@ echo $INPUT
 
 paper="${INPUT#* }"
 
-cd $BIBPATH/storage
-echo $paper
-evince "$paper"
+#cd $BIBPATH/storage
+
+name=`cat "$TMPFILE"`
+
+name="$name/$paper"
+echo $name 
+
+evince "$name"
 

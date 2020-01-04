@@ -1,0 +1,8 @@
+#!/bin/sh
+
+INPUTb=`xsel`
+#INPUT=`echo $INPUTb | tr -d '\n'`
+cmd="${INPUTb}"
+gnome-terminal --title="---"    --command="bash -ci '$cmd; $SHELL'" 
+
+

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+adb backup -noapk com.coffeebeanventures.easyvoicerecorder
+java.exe -jar abe.jar unpack backup.ab test.tar ""
+
+
+#https://sourceforge.net/projects/adbextractor/

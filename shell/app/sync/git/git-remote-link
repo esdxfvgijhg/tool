@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# Git
+#ln -sf /home/aghiles/Aghiles/Tools/Git/Administration /home/aghiles/Aghiles/Administration/.git
+#ln -sf /home/aghiles/Aghiles/Tools/Git/Teaching       /home/aghiles/Aghiles/Teaching/.git
+#ln -sf /home/aghiles/Aghiles/Tools/Git/Tool           /home/aghiles/Aghiles/Tool/.git
+#ln -sf /home/aghiles/Aghiles/Tools/Git/Program /home/aghiles/Aghiles/Research/Program/.git
+#ln -sf /home/aghiles/Aghiles/Tools/Git/Reading /home/aghiles/Aghiles/Research/Reading/.git
+#ln -sf /home/aghiles/Aghiles/Tools/Git/Writing /home/aghiles/Aghiles/Research/Writing/.git
+
+#rm -rf ~/.local/share/nautilus/scripts
+#ln -sf $TOOLPATH/home/local/share/*         /home/aghiles/.local/share/
+#ln -sf $TOOLPATH/home/config/*              /home/aghiles/.config/
+

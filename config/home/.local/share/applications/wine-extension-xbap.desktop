@@ -5,4 +5,4 @@ MimeType=application/x-ms-xbap;
 Exec=env WINEPREFIX="/home/aghiles/.wine" wine-stable start /ProgIDOpen Windows.Xbap %f
 NoDisplay=true
 StartupNotify=true
-Icon=00EF_PresentationHost.0
+Icon=E86F_PresentationHost.0

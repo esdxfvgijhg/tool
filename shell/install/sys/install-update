@@ -13,7 +13,7 @@ installx python-pip
 installx dirmngr --install-recommends
 installx software-properties-common
 installx apt-transport-https
-
+installx pavucontrol
 #Divers
 installx apt-transport-https
 installx dconf-editor

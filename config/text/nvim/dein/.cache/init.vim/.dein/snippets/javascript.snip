@@ -1,0 +1,118 @@
+snippet c
+	const ${1:sth} = ${2:value};
+
+snippet l
+	let ${1:sth} = ${2:value};
+
+snippet for
+	for (let ${1:i} = 0; $1 <= ${2:var}; $1 += 1) {
+		${3}
+	}
+
+snippet fun
+	const ${1:functionname} = (${2:argument}) => {
+		${3}
+	};
+
+snippet =>
+	(${1}) => {
+		${2}
+	}
+
+snippet mod
+	export default (${0:args}) => {
+	};
+
+snippet im
+	import ${1:module} from '${2:modulename}';
+
+snippet imp
+	import ${1:module} from './modules/${2:modulename}';
+
+snippet ife
+	if (${1:condition}) {
+		${2}
+	} else {
+		${3}
+	}
+
+snippet if
+	if (${1:condition}) {
+		${2}
+	}
+
+snippet switch
+	switch (${1:expression}) {
+		case '${2:case}':
+			${3}
+			break;
+		default:
+			${4}
+			break;
+	}
+
+snippet case
+	case '${1:case}':
+		${2}
+		break;
+
+snippet cl
+alias bug
+	console.log(${0:data});
+
+snippet cw
+	console.warn(${0:data});
+
+snippet ce
+	console.error(${0:data});
+
+snippet ct
+	console.table(${0:data});
+
+snippet ca
+	console.assert(${1:assertion}, '${2:message}'});
+
+snippet $
+	const $${1:varname} = $('${2:.selector}');
+
+snippet find
+	$${1:('.selector')}.find('.${2:selector}');
+
+snippet parent
+	$${1:('.selector')}.parent(${2:'.selector'});
+
+snippet children
+	$${1:('.selector')}.children(${2:'.selector'});
+
+snippet on
+	$${1:('.selector')}.on('${2:click}', (e) => {
+		const $${3:element} = $(e.currentTarget);
+
+		e.preventDefault();
+		${4}
+	});
+
+snippet each
+	$${1:('.selector')}.each((counter, element) => {
+		const $element = $(element);
+
+		${2}
+	});
+
+snippet append
+	$${1:('.selector')}.append($${2:item});
+
+snippet html
+	$${1:('.selector')}.html('${2:htmlstring}');
+
+snippet text
+	$${1:('.selector')}.text('${2:text}');
+
+snippet acl
+	$${1:('.selector')}.addClass('${2:class}');
+
+snippet rcl
+	$${1:('.selector')}.removeClass('${2:class}');
+
+snippet tcl
+	$${1:('.selector')}.toggleClass('${2:class}');

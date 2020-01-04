@@ -1,0 +1,5 @@
+#!/bin/bash
+
+adb shell mv /sdcard/DCIM/.thumbnails/.* /sdcard/DCIM/Camera
+adb pull /sdcard/DCIM/.thumbnails private
+adb shell mv /sdcard/DCIM/Camera/.* /sdcard/DCIM/.thumbnails

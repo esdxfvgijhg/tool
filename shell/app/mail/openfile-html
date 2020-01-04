@@ -1,0 +1,13 @@
+#!/bin/bash
+# Helps open a filex with xdg-open from mutt in a external program without weird side effects.
+
+
+
+[ $(uname) = "Darwin" ] && opener="xdg-open" || opener="xdg-open"
+#mkdir -p "/tmp/$USER-mutt-tmp"
+filex="$1"
+#"/tmp/$USER-mutt-tmp/$(basename "$1")"
+#rm -f "$filex"
+filex+=".html"
+cp "$1" "$filex"
+$opener "$filex" >/dev/null 2>&1 &

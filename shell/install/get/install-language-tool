@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd $TOOLSPATH
+curl -L https://raw.githubusercontent.com/languagetool-org/languagetool/master/install.sh | sudo bash
+
+

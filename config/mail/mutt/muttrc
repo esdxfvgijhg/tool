@@ -25,7 +25,7 @@ source $my_path/colors/main
 
 
 #Path -----------------------------------------------------------------------
-set tmpdir           =$my_path/.cache/tmp
+set tmpdir           =/tmp/mutt
 set message_cachedir =$my_path/.cache/bodies
 set header_cache     =$my_path/.cache/headers
 set alias_file       =$my_path/alias

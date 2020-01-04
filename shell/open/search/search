@@ -1,0 +1,19 @@
+#!/bin/bash
+
+
+read -p "1) zotero 2) doc 3) IARIA: " gfd
+case "$gfd" in
+	1) cd $SEARCH2/storage && echo $SEARCH2/storage > $TMPFILE  ;;
+	2) cd $SEARCH1 && echo $SEARCH1 > $TMPFILE  ;;
+	3) cd $SEARCH3 && echo $SEARCH3 > $TMPFILE  ;;
+	*) cd $SEARCH2/storage && echo $SEARCH2/storage > $TMPFILE  ;;
+esac
+
+read -p "cle 1) key 2): " gf
+case "$gf" in
+	1) cle "$@" ;;
+	2) key "$@" ;;
+	*) cle "$@" ;;
+esac
+
+

@@ -7,7 +7,7 @@ set status_format = $my_status_format
 
 # IMAP
 set imap_user       = $my_account0
-set imap_pass       = "AghilesD35JGD"
+set imap_pass       = `pass aghilesdjoudi@gmail.com`
 set folder          = "imaps://imap.gmail.com:993"
 
 # Offline IMAP
@@ -21,7 +21,7 @@ set signature        =  $my_path/accounts/signatures/work
 
 #SMTP
 set smtp_url        = "smtps://$my_account0@smtp.gmail.com:465"
-set smtp_pass       = "AghilesD35JGD"
+set smtp_pass       = `pass aghilesdjoudi@gmail.com`
 
 # Folder
 set spoolfile        ="+[Gmail]/Tous les messages"

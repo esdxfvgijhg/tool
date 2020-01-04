@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd $HOME/aur
+
+for arg
+do
+    auracle download -r $arg && auracle buildorder $arg
+done

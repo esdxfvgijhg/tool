@@ -1,0 +1,43 @@
+#!/bin/bash
+
+
+secondtodate() {
+    echo "$(date -u --date @$1 +%H:%M:%S)"
+}
+
+date0=0
+date1=`date +%s`
+totaltime=0
+paused=1
+
+# print keys
+echo "[space]: start/pause, [tab]: lap, [esc]: quit"
+echo
+
+while true; do
+  # calculate new time
+  [[ $paused -eq 1 ]] && date2="$((`date +%s` - $date1 + $date0))"
+
+  # print time
+  echo -ne "\r$(secondtodate $(($totaltime+$date2)))"
+  [[ $totaltime -gt 0 ]] && echo -ne "\t$(secondtodate $date2)"
+
+  read -s -n 1 -t 0.1
+  if [[ $REPLY = $'\x1b' ]]; then
+    echo
+    break
+  elif [[ $REPLY = $'\x9' ]] && [[ $paused -eq 1 ]]; then
+    totaltime=$(($totaltime+$date2))
+    date1=`date +%s`
+    date0=0
+    echo -e
+  elif [[ $REPLY = $'\x20' ]]; then
+    if [[ $paused -eq 0 ]]; then
+      date1=`date +%s`
+      paused=1
+    else
+      paused=0
+      date0=$date2
+    fi
+  fi
+done

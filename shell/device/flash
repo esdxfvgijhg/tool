@@ -1,0 +1,5 @@
+#!/bin/bash
+
+	sudo umount $21
+	sudo mkfs.vfat -n 'Debian' $21
+	sudo dd if=$1 of=$2 bs=4M status=progress && sync

@@ -10,6 +10,7 @@ source /home/aghiles/Aghiles/tool/shell/zsh/export
 ln -sf $TOOLPATH/config/*/* /home/aghiles/.config/
 ln -sf $TOOLPATH/config/home/.* /home/aghiles/
 chmod -R u+x ~/.local/share/nautilus/scripts
+chmod -R u+x ~/.local/share/qutebrowser/userscripts
 
 # Scripts
 chmod -R u+x $TOOLPATH/shell
@@ -21,8 +22,9 @@ chmod -R u+x $PROGRAMPATH/engineering/*
 
 
 # Tools
-ln -sf $TOOLSPATH/ns-3/ns-3-dev/examples/aghiles $PROGRAMPATH/simulation/ns3/src
-ln -sf $TOOLSPATH/ns-3/ns-3-dev/src/lorawan $PROGRAMPATH/simulation/ns3/lib
+ln -sf $TOOLSPATH/ns-3/ns-3/examples/lorawan $PROGRAMPATH/simulation/ns3/src1
+ln -sf $TOOLSPATH/ns-3/ns-3/examples/aghiles $PROGRAMPATH/simulation/ns3/src2
+ln -sf $TOOLSPATH/ns-3/ns-3/src/lorawan $PROGRAMPATH/simulation/ns3/lib
 
 chmod -R u+x $TOOLSPATH/matlab/bin
 

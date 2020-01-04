@@ -1,0 +1,27 @@
+#!/bin/bash
+
+dmenu=$HOME/.config/Scripts/dmenucolor
+
+pgrep -x dmenu && exit
+
+mountable=$(lsblk -lp -o NAME,FSTYPE,SIZE,TYPE,MOUNTPOINT|grep 'part\|lvm'|grep -v "\(part\|lvm\)[[:space:]]\+/\|t[[:space:]]\+\[SWAP\]\|crypto_LUKS"|awk '{print $1, "(" $3 ")"}')
+[[ "$mountable" = "" ]] && exit 1
+
+chosen=$(echo "$mountable"|$dmenu -i -p "Unmounted Drives:"|awk '{print $1}')
+[[ "$chosen" = "" ]] && exit 1
+
+sudo mount "$chosen" && exit 0
+
+already_mounted=$(lsblk -nrpo "name,type,mountpoint" | awk '$2=="part"&&$3!~/\/boot|\/home$|SWAP/&&length($3)>1{printf "-not \( -path *%s -prune \) \ \n",$3}')
+
+dirs=$(find /mnt /media /mount /home -type d -maxdepth 5 $already_mounted 2>/dev/null)
+
+mountpoint=$(echo "$dirs"|$dmenu -i -p "Mount Point:")
+
+[[ "$mountpoint" = "" ]] && exit 1
+if [[ ! -d "$mountpoint" ]]; then
+  mkdiryn=$(echo -e "No\nYes" | $dmenu -i -p "Create?")
+  [[ "$mkdiryn" = Yes ]] && sudo mkdir -p "$mountpoint"
+fi
+
+sudo mount $chosen $mountpoint && notify-send "$chosen mounted to $mountpoint"

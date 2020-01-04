@@ -1,0 +1,16 @@
+#!/bin/sh
+
+$file=$1
+
+for file in "$@"; do 
+	directory=`dirname "$file"`
+	filename=`basename "$file"`
+	echo $filename
+	extension="${filename##*.}"
+	filename="${filename%.*}"
+	mv "$file" "$directory/$filename"; 
+done
+
+
+#echo $file
+#mv $file "$(basename "$file" .so.1).so"

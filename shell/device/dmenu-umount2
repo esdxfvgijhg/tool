@@ -1,0 +1,12 @@
+#!/bin/bash
+
+dmenu=$HOME/.config/Scripts/dmenucolor
+
+pgrep -x dmenu && exit
+
+exclusionregex="\(/boot\|/home\|/\)$"
+drives=$(lsblk -lp | grep "\(part\|lvm\)[[:space:]]\+/" | grep -v "$exclusionregex" | awk '{print $1, "(" $4 ")", "on", $7}')
+[[ "$drives" = "" ]] && exit
+chosen=$(echo "$drives" | $dmenu -i -p "Unmount:" | awk '{print $1}')
+[[ "$chosen" = "" ]] && exit
+sudo umount $chosen && notify-send "$chosen unmounted."

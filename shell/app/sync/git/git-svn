@@ -1,0 +1,8 @@
+#!/bin/bash
+
+logfile=`echo $1 | sed -r -z "s/\/[^\/]+\/master/\/trunk/g"`
+
+echo $logfile
+
+svn export $logfile
+

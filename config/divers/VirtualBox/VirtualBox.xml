@@ -9,18 +9,21 @@
   <Global>
     <ExtraData>
       <ExtraDataItem name="GUI/Details/Elements" value="general,system,preview,display,storage,audio,network,usb,sharedFolders,description"/>
-      <ExtraDataItem name="GUI/GroupDefinitions/" value="m=c61821e6-b052-4339-b17a-95c558d9e220"/>
-      <ExtraDataItem name="GUI/LastItemSelected" value="m=Rescom19"/>
-      <ExtraDataItem name="GUI/LastWindowPosition" value="189,146,480,270"/>
-      <ExtraDataItem name="GUI/RecentFolderHD" value="/home/aghiles/Aghiles/Tools/vm/RESCOM2019-HYON-JEANMARIE"/>
-      <ExtraDataItem name="GUI/RecentListHD" value="/home/aghiles/Aghiles/Tools/vm/RESCOM2019-HYON-JEANMARIE/Rescom2019_TP.vdi"/>
-      <ExtraDataItem name="GUI/SplitterSizes" value="106,373"/>
+      <ExtraDataItem name="GUI/GroupDefinitions/" value="m=c61821e6-b052-4339-b17a-95c558d9e220,m=1b0a72c1-69b1-42eb-84b3-f65094c58fb0,m=4c0b2d41-b7e3-48db-b18d-0048e616c30f,m=55dd5ee8-7285-4100-8b9f-26329d42bbe7"/>
+      <ExtraDataItem name="GUI/LastItemSelected" value="m=xp"/>
+      <ExtraDataItem name="GUI/LastWindowPosition" value="1,10,479,520"/>
+      <ExtraDataItem name="GUI/RecentFolderHD" value="/home/aghiles/Aghiles/Tools/vm/Windows XP Professional"/>
+      <ExtraDataItem name="GUI/RecentListHD" value="/home/aghiles/Aghiles/Tools/vm/Windows XP Professional/Windows XP Professional.vmdk,/home/aghiles/Aghiles/Tools/vm/RESCOM2019-HYON-JEANMARIE/Rescom2019_TP.vdi"/>
+      <ExtraDataItem name="GUI/SplitterSizes" value="105,373"/>
       <ExtraDataItem name="GUI/Tools/LastItemsSelected" value="Welcome,Details"/>
-      <ExtraDataItem name="GUI/UpdateCheckCount" value="3"/>
-      <ExtraDataItem name="GUI/UpdateDate" value="1 d, 2019-10-23, stable, 6.0.14"/>
+      <ExtraDataItem name="GUI/UpdateCheckCount" value="4"/>
+      <ExtraDataItem name="GUI/UpdateDate" value="1 d, 2019-12-30, stable, 6.0.14"/>
     </ExtraData>
     <MachineRegistry>
       <MachineEntry uuid="{c61821e6-b052-4339-b17a-95c558d9e220}" src="/home/aghiles/Aghiles/Tools/vm/Rescom19/Rescom19.vbox"/>
+      <MachineEntry uuid="{1b0a72c1-69b1-42eb-84b3-f65094c58fb0}" src="/home/aghiles/Aghiles/Tools/vm/Windows7/Windows7.vbox"/>
+      <MachineEntry uuid="{4c0b2d41-b7e3-48db-b18d-0048e616c30f}" src="/home/aghiles/Aghiles/Tools/vm/WindowXP/WindowXP.vbox"/>
+      <MachineEntry uuid="{55dd5ee8-7285-4100-8b9f-26329d42bbe7}" src="/home/aghiles/Aghiles/Tools/vm/Windows XP Professional/xp/xp.vbox"/>
     </MachineRegistry>
     <NetserviceRegistry>
       <DHCPServers>

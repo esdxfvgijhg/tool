@@ -2,9 +2,21 @@
 
 
 mkdir $TMPPATH
-
-#ns3
-	git clone https://github.com/nsnam/ns-3-dev-git.git $TOOLSPATH/ns-3/ns-3
-	git clone https://github.com/wyllianbs/ns3install.git $TOOLSPATH/ns-3/ns3install
+mkdir -p $TOOLSPATH/ns-3
 
 
+
+git clone https://github.com/nsnam/ns-3-dev-git.git $TOOLSPATH/ns-3/ns-3
+git clone https://github.com/signetlabdei/lorawan $TOOLSPATH/ns-3/ns-3/src/lorawan
+cd $TOOLSPATH/ns-3/ns-3
+
+echo "
+#! /usr/bin/env python
+modules_enabled = ['all_modules']
+#modules_enabled = ['lorawan']
+examples_enabled = True
+tests_enabled = False
+" > .ns3rc
+
+./waf configure --enable-tests --enable-examples
+./waf build

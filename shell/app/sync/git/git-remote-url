@@ -1,0 +1,16 @@
+#!/bin/sh
+
+
+account1="https://esdxfvgijhg@github.com/esdxfvgijhg"
+account2="https://esxdwqzpml@github.com/esxdwqzpml"
+localx="/media/aghiles/Aghiles"
+
+#cd $ADMINPATH    && git remote set-url admin      $localx/admin
+#cd $TOOLPATH     && git remote set-url tool       $localx/tool
+
+cd $PROGRAMPATH  && git remote set-url cod        $account1/cod.git
+cd $TEACHINGPATH && git remote set-url ece        $account1/ece.git
+#cd $READINGPATH  && git remote set-url doc        $accoun2/doc.git
+cd $WRITINGPATH  && git remote set-url txt        $account1/txt.git
+cd $TOOLPATH     && git remote set-url tool       $account1/tool.git
+

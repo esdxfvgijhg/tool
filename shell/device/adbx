@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "step 1"
+adb -d tcpip 5555
+sleep 4
+echo "step 2"
+ip=`adb -d shell ip -f inet addr show wlan0 | grep -o "[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*" | head -1`
+echo $ip > .ip
+echo $ip
+echo "Unplug the phone"
+read
+

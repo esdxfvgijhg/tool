@@ -1,0 +1,9 @@
+#!/bin/sh
+
+#git update-ref -d refs/original/refs/heads/master
+git filter-branch -f --tree-filter "rm -rf $1" HEAD
+git commit --amend -CHEAD
+#git filter-branch --tree-filter 'rm -rf config/dreget/edgehill.db' HEAD
+
+
+

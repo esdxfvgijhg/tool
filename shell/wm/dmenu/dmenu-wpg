@@ -1,7 +1,5 @@
 #!/bin/bash
 
-dmenu=$HOME/.config/Scripts/dmenucolor
-
 pgrep -x dmenu && exit
 
 walls=$(wpg -l)

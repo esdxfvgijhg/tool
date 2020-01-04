@@ -5,6 +5,8 @@
 
 #Mail
 	installx neovim
+	nvim +PlugInstall +qall
+	nvim +PluginInstall +qall
 	installx neomutt
 	installx tmux
   installx fasd

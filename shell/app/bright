@@ -1,0 +1,28 @@
+#!/bin/sh
+
+#xrandr -q | grep ' connected' | head -n 1 | cut -d ' ' -f1
+
+#xrandr --output eDP-1 --brightness 0.$1
+
+
+qs=$1
+qz=$2
+
+#redshift -O 2000 -g 1
+
+
+ygt="500"
+echo $ygt
+
+
+if [ $# -eq 0 ]
+  then
+    qs=2
+    qz=7
+  redshift -t $qs$ygt:$qs$ygt -b .$qz:.$qz
+elif [ $1 -eq 0 ]
+  then
+    redshift -x
+else
+	redshift -t $qs$ygt:$qs$ygt -b .$qz:.$qz
+fi

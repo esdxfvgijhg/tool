@@ -425,6 +425,15 @@
                     </uint32>
                 </key>
             </settings>
+            <settings name="H706246353073568">
+                <key name="ever_crashed_in_graphics" anytype="true">
+                </key>
+                <key name="opengl_preference">
+                    <uint32>
+                        <value>0</value>
+                    </uint32>
+                </key>
+            </settings>
         </settings>
     </settings>
     <settings name="imshow">

@@ -1,0 +1,10 @@
+#!/bin/bash
+#echo "step 3"
+ip=`cat .ip`
+adb connect $ip
+echo "connected"
+read
+#sleep 4
+#echo "step 4"
+#adb -s $ip shell
+

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cmd="${@:2}"
+title="$1"
+tilix -e "bash -ci '$cmd; $SHELL'" >/dev/null

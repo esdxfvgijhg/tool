@@ -1,26 +1,8 @@
 \RequirePackage[OT1]{fontenc}
 \documentclass[conference]{IEEEtran}
 \input{setup}
+\usepackage{titling}
 
-%\usepackage{xparse}
-%  \ExplSyntaxOn
-%    \NewDocumentCommand{\xinput}{m}{%
-%      \azimut_xinput:n { #1 }
-%    }
-%    \ior_new:N \g_azimut_xinput_stream
-%    \cs_new_protected:Nn \azimut_xinput:n{
-%      \ior_open:Nn \g_azimut_xinput_stream { "|ls ~ #1" }
-%      \ior_map_inline:Nn \g_azimut_xinput_stream { \file_input:n { \tl_trim_spaces:n {##1} } }
-%    }
-%  \ExplSyntaxOff
-
-
-% \setcounter{secnumdepth}{5}
-% \setcounter{tocdepth}{5}
-\newcounter{subparagraph}[paragraph]
-% \setcounter{tocdepth}{5}
-% \newcommand{\subparagraph}{}
-% \usepackage{titlesec}
 \makeatletter
 \newcommand\subparagraph{\@startsection{subparagraph}{5}{\parindent}%
                                        {3.25ex \@plus1ex \@minus .2ex}%
@@ -120,21 +102,15 @@
 \makeatother
 
 
-% \newcommand\firstpage{}
-% \newcommand\preface{}
-% \newcommand\body{}
-% \newcommand\Appendix{}
-
-\newcommand\epigraph[1]{}
-\date{}
-
-% \input{src/0_0_authors}
-\usepackage{titling}
-\pagestyle{plain}
+% \usepackage{titlesec}
+  % \setcounter{secnumdepth}{5}
+  % \setcounter{tocdepth}{5}
+  \newcounter{subparagraph}[paragraph]
+  % \setcounter{tocdepth}{5}
+  % \newcommand{\subparagraph}{}
 
 
-
-\pagenumbering{gobble}
+%\pagenumbering{gobble} % remove page numbering
 
 
 \def\Keywords#1{
@@ -142,9 +118,11 @@
     #1
   \end{IEEEkeywords}
 }
-
-
-\def\biblio{
-  \printbib
-}
+% \newcommand\firstpage{}
+% \newcommand\preface{}
+% \newcommand\body{}
+% \newcommand\Appendix{}
+\newcommand\epigraph[1]{}
+\date{}
+\def\biblio{\printbib}
 

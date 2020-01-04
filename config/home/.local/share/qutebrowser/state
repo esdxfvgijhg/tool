@@ -1,8 +1,8 @@
 [general]
 version = 1.6.1
 quickstart-done = 1
-qt_version = 5.12.5
+webkit-warning-shown = 1
 
 [geometry]
-mainwindow = AdnQywACAAAAAAAAAAAAEwAAA78AAAQjAAAAAQAAABQAAAO+AAAEIgAAAAAAAAAAB4A=
+mainwindow = AdnQywACAAAAAAAAAAAAEwAAB38AAAQjAAAAAAAAABMAAAd/AAAEIwAAAAAAAAAAB4A=
 

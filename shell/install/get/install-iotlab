@@ -4,9 +4,9 @@
 mkdir $TMPPATH
 
 # IoT-lab
-cd $TOOLSPATH
-git clone https://github.com/iot-lab/iot-lab.git $TOOLSPATH/iot-lab
-cd $TOOLSPATH/iot-lab
+mkdir -p $TOOLSPATH/iot-lab
+git clone https://github.com/iot-lab/iot-lab.git $TOOLSPATH/iot-lab/iot-lab
+cd $TOOLSPATH/iot-lab/iot-lab
 make \
 	setup-aggregation-tools \
 	setup-cli-tools \

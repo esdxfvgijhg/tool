@@ -1,0 +1,15 @@
+#!/bin/bash
+
+directory=`dirname "$1"`
+filename=`basename "$1"`
+cd "$directory"
+
+echo $directory
+echo $filename
+
+/opt/Rodeo/rodeo $directory >/dev/null &
+
+
+
+
+

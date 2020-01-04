@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#read -p "name: " filex
+cp -r ~/.config/ranger/templates/article $1
+
+
+
+
+
+
+
+

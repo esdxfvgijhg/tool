@@ -1,0 +1,4 @@
+#!/bin/bash
+
+calcurse -C ~/.config/calcurse/ -D ~/.config/calcurse/
+

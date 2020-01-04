@@ -1,0 +1,9 @@
+#!/bin/bash
+
+DRIVE="$1"
+DRIVE_NAME="$(basename $DRIVE)"
+
+sudo umount /media/$DRIVE_NAME
+if [ $? == 0 ]; then
+  sudo cryptsetup luksClose ${DRIVE_NAME}-OPEN
+fi

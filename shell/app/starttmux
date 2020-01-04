@@ -1,0 +1,20 @@
+#!/bin/sh
+
+tmux new-session -d -s foo 
+tmux rename-window 'Foo'
+
+tmux send-keys 'calcurse' 'C-m'
+
+tmux split-window -h -t 1
+tmux send-keys 'neomutt' 'C-m'
+
+tmux split-window -v -t 2
+tmux send-keys 'search' 'C-m'
+
+tmux split-window -v -t 1
+tmux send-keys 'ranger' 'C-m'
+
+tmux -2 attach-session -t foo
+
+
+#tmux new-session \; split-window -h -t 1 \; split-window -v -t 1 \; split-window -v -t 3 \;

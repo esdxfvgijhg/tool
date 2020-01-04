@@ -1,7 +1,5 @@
 #!/bin/bash
 
-dmenu=$HOME/.config/Scripts/dmenucolor
-
 _bluetoothctl() {
   LC_ALL=C timeout 30 bluetoothctl
 }

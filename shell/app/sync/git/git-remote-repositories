@@ -1,0 +1,17 @@
+#!/bin/sh
+
+USER1='esdxfvgijhg'
+account1="https://esdxfvgijhg@github.com/esdxfvgijhg"
+
+USER2='esxdwqzpml'
+account2="https://esxdwqzpml@github.com/esxdwqzpml"
+localx="/media/aghiles/Aghiles"
+
+
+curl -u $USER1 https://api.github.com/user/repos -d '{"name":"cod"}'
+curl -u $USER1 https://api.github.com/user/repos -d '{"name":"ece"}'
+curl -u $USER1 https://api.github.com/user/repos -d '{"name":"txt"}'
+curl -u $USER1 https://api.github.com/user/repos -d '{"name":"tool"}'
+
+
+

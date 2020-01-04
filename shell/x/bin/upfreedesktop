@@ -1,0 +1,3 @@
+#!/bin/sh
+
+upaur $HOME/.config/awesome/freedesktop $HOME/aur/awesome-freedesktop-git

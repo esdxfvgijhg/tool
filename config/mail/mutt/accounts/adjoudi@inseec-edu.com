@@ -7,7 +7,7 @@ set status_format = $my_status_format
 
 # IMAP
 set imap_user       = $my_account2
-set imap_pass       = "2SHPTdYET"
+set imap_pass       = `pass adjoudi@inseec-edu.com`
 set folder          = "imaps://outlook.office365.com"
 #set folder          = "imaps://outlook.office365.com:993"
 
@@ -22,7 +22,7 @@ set signature        =  $my_path/accounts/signatures/work
 
 #SMTP
 set smtp_url        = "smtp://$my_account2@outlook.office365.com:587/"
-set smtp_pass       = "2SHPTdYET"
+set smtp_pass       = `pass adjoudi@inseec-edu.com`
 
 # Folder
 set spoolfile        ="+INBOX""

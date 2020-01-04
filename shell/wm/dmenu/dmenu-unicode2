@@ -1,10 +1,8 @@
 #!/bin/sh
 
-dmenu=$HOME/.config/Scripts/dmenucolor
-
 xclip -h >/dev/null || exit
 
-chosen=$(grep -v "#" $HOME/.config/Scripts/emoji | $dmenu -i -l 20)
+chosen=$(grep -v "#" emoji | $dmenu -i -l 20)
 
 [ "$chosen" != "" ] || exit
 

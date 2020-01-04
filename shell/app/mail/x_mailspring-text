@@ -1,0 +1,51 @@
+#!/bin/bash
+
+#sudo ln -s /home/aghiles/Aghiles/Tool/scripts/targetos /usr/bin
+
+#eval echo "/home/aghiles/Aghiles/Program/boards/iot-lab/parts"
+
+
+urltmp=`xsel -b`
+subject=`echo $urltmp | sed -e 's/mailspring\:\/\/thread.subject=//'`
+subject=`echo $subject | python -c "import sys, urllib as ul; print ul.unquote(sys.stdin.read());"`
+
+#mailsp=`echo $urltmp | cut -d'=' -f1`
+#uurl=`echo $urltmp | cut -d'=' -f2`
+#uurl=`echo $uurl | cut -d'&' -f1`
+#ddate=`echo $urltmp | cut -d'&' -f2`
+
+#unsubject=`echo $uurl | python -c "import sys, urllib as ul; print ul.quote(sys.stdin.read());"`
+#unsubject="mailspring://thread.subject=${unsubject}&${ddate}"
+#subject=`echo $urltmp | sed -e 's/mailspring\:\/\/thread.subject=//' | sed -e 's/\%20/ /g' | sed -e 's/&.*/ /g'`
+
+
+read -p "Year" year
+read -p "Mounth" mounth
+read -p "Day" day
+read -p "Hours" hours
+read -p "minute" minute
+start="${year}${mounth}${day}T${hours}${minute}00"
+echo $start
+
+erry="
+BEGIN:VEVENT
+DTSTAMP:20190917T081046Z
+DTSTART;VALUE=DATE:$start
+DUE;VALUE=DATE:$start
+DTEND;VALUE=DATE:$start
+SUMMARY:$subject
+SEQUENCE:2
+CREATED:20190917T081046Z
+LAST-MODIFIED:20190917T081115Z
+X-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION 
+ property. Removing entire property:
+DESCRIPTION:$urltmp
+END:VEVENT
+END:VCALENDAR
+"
+echo "$erry"
+sed -i "s/END\:VCALENDAR//g" /home/aghiles/Aghiles/Tool/config/Calendar/Administration.ics
+echo "$erry" >> /home/aghiles/Aghiles/Tool/config/Calendar/Administration.ics
+
+
+#UID:20190917T081046Z-18127-1000-18119-0@dell

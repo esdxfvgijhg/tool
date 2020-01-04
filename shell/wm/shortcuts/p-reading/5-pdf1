@@ -1,0 +1,11 @@
+#!/bin/sh
+
+INPUTb=`xsel`
+INPUT=`echo $INPUTb | tr -d '\n'`
+echo $INPUT
+
+paper="${INPUT#* }"
+
+cd $TOOLSPATH/resources
+evince "$paper"
+

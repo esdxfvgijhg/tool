@@ -1,0 +1,10 @@
+#!/bin/sh
+
+INPUTb=`xsel`
+INPUT=`echo $INPUTb | tr -d '\n'`
+echo $INPUT
+
+paper="${INPUT}"
+
+mailspring "$paper"
+

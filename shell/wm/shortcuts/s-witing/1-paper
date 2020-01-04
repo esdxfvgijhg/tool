@@ -9,5 +9,8 @@
 #folder=".main"
 
 #ty="$folder.sublime-project"
-subl -n --project $WRITINGPATH/.main.sublime-project $WRITINGPATH/these.tex
+subl -n --project $WRITINGPATH/.main.sublime-project $WRITINGPATH/main.tex
+
+
+
 

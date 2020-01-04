@@ -20,6 +20,7 @@ installx xcompmgr
 	installx task-print-server
 
 #mathpix
+installx snapd
 sudo snap install mathpix-snipping-tool # https://extensions.gnome.org/extension/615/appindicator-support/
 
 

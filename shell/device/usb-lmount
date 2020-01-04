@@ -1,0 +1,10 @@
+#!/bin/bash
+
+DRIVE="$1"
+DRIVE_NAME="$(basename $DRIVE)"
+
+sudo cryptsetup luksOpen $DRIVE ${DRIVE_NAME}-OPEN
+if [ $? == 0 ]; then
+  sudo mkdir -p /media/$DRIVE_NAME
+  sudo mount /dev/mapper/${DRIVE_NAME}-OPEN /media/$DRIVE_NAME
+fi

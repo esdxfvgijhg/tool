@@ -6,10 +6,15 @@ installx $(apt-cache pkgnames python3- | grep -Fvx -f $file/python3.txt)
 
 installx $(apt-cache pkgnames python- | grep -Fvx -f $file/python.txt)
 
+installx libgconf-2-4
+installx rodeo
+
+
+
 #Scikit-learn
-	sudo pip install -U scikit-learn
-	installx build-essential python-dev python-numpy python-numpy-dev python-scipy libatlas-dev g++ python-matplotlib ipython
-	installx build-essential python3-dev python3-numpy python3-numpy-dev python3-scipy libatlas-dev g++ python3-matplotlib ipython
+sudo pip install -U scikit-learn
+installx build-essential python-dev python-numpy python-numpy-dev python-scipy libatlas-dev g++ python-matplotlib ipython
+installx build-essential python3-dev python3-numpy python3-numpy-dev python3-scipy libatlas-dev g++ python3-matplotlib ipython
 
 #Jupiter
 sudo apt update
@@ -18,15 +23,20 @@ installx python-pip python-scipy python-h5py
 sudo pip install jupyter
 
 #Tanserflow
-	sudo pip3 install celery tensorflow keras matplotlib numpy sklearn
+sudo pip3 install celery tensorflow keras matplotlib numpy sklearn
 
 #Sentillo
-	installx python-pip
-	sudo pip install --upgrade pip
-	sudo pip install paho-mqtt
-	sudo python -m pip install pyserial
-	sudo python -m pip install networkx
+installx python-pip
+sudo pip install --upgrade pip
+sudo pip install paho-mqtt
+sudo pip install pyserial
+sudo pip install networkx
 
 sudo pip install neurolab
 sudo pip3 install -I urlscan
 sudo pip install -I urlscan
+
+sudo pip install tensorflow
+
+
+

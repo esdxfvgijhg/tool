@@ -1,0 +1,6 @@
+#!/bin/bash
+
+tilix -a session-add-right -e "neomutt" &
+tilix -a session-add-down -e "calendarx" &
+tilix -a session-add-down -e "ranger" &
+

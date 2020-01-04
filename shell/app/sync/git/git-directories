@@ -1,0 +1,13 @@
+#!/bin/sh
+
+#git config --global user.email "githubfortyuds@gmail.com"
+
+git clone /media/aghiles/Aghiles/Administration                       $ADMINPATH
+git clone /media/aghiles/Aghiles/Tool                                 $TOOLPATH
+
+git clone https://ygtfrdes@github.com/ygtfrdes/Program.git        $PROGRAMPATH
+git clone https://ygtfrdes@github.com/ygtfrdes/Reading.git        $READINGPATH
+
+git clone https://ygtfrdes@github.com/ygtfrdes/Writing.git        $WRITINGPATH
+git clone https://ygtfrdes@github.com/ygtfrdes/Teaching.git       $TEACHINGPATH
+

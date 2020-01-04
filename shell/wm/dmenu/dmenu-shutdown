@@ -1,7 +1,5 @@
 #!/bin/bash
 
-dmenu=/home/aghiles/Aghiles/Tool/scripts/z/x/dmenucolor
-
 MESSAGE="lock\\nexit\\nreboot\\nshutdown"
 ACTION="$(printf "$MESSAGE" | $dmenu -i -p "Power Menu:")"
 

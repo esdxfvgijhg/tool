@@ -1,0 +1,11 @@
+#!/bin/sh
+
+usb=/media/aghiles/Aghiles
+filename=`basename "$PWD"`
+
+git init
+
+mkdir -p $usb/$filename
+cd $usb/$filename
+git init --bare
+
