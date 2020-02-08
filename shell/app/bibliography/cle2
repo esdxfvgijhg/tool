@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+#grep -ric "$1" --include \*.pdf | sed -r "s/\.\///g" | awk -v d="$2" -F ":"  '$2 > d {print "\033[32m" $2,"\033[31m" $1}' | sort -n 
+#| sed -r "s/\/[^:]+//g"
+
+#echo ${@:1:$#-2}
+#echo ${@:$#}
+#echo ${*: -2:1}
+
+
+for y in ${@:1:$#-1}; do
+#echo $y
+grep -riE "$y" --include \*.xtxt | sed -r "s/\.\///g" | sed -r "s/\.xtxt/\.pdf/g" | sort -nr -k2 -t':' | awk -v d="${@:$#}" -F ":"  '$2 > d {print "\033[32m" $2, "\033[39m" $1}';
+done;
+
+
+
+
+#${@:$#}
+#${@:1:$#-1}
+
+#"\033[31m"

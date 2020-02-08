@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cmd="${@:2}"
+tilix -t "$1" -e "zsh -ci '$cmd; $SHELL'" >/dev/null

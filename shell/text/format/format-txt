@@ -1,0 +1,17 @@
+#!/bin/zsh
+
+#xdotool key ctrl+c Return
+#oldclip="$(xclip -o -sel clip)"
+oldclip=`xsel | tr -d '\n'`
+
+
+echo $oldclip | sed -zr 's/\n\n+/ŧ/g' | sed -zr 's/(%[^\n]+)/\1þ/g' | sed -zr 's/\.[ \t]*\n/vgyhn/g' | sed -zr 's/}[ \t]*\n/pvkglyhn/g' | sed -zr 's/\n[\t ]*/ /g' | sed -zr 's/\t+//g' | sed -zr 's/(\.)[ \t]+([^0-9])/\1\n\2/g' | sed -zr 's/([,:;])[ \t]+([^0-9])/\1\n\t\2/g' | sed -zr 's/vgyhn/\.\n/g' | sed -zr 's/pvkglyhn/\}\n/g' | sed -zr 's/ŧ/\n\n/g' | sed -zr 's/þ[ \t]*/\n/g' | sed -zr 's/\- //g' > /tmp/oldclip
+
+oldclip=`cat /tmp/oldclip`
+echo $oldclip
+echo -n "$oldclip" | xclip -i -sel clip
+
+#xdotool key ctrl+v Return
+
+#Bonjour, comment cava. Le besard es hgf.
+#wmctrl -R Engineering &&

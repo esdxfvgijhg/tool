@@ -1,7 +1,0 @@
-#!/bin/bash
-
-# Ignore hidden
-find . -type f -not -path '*/\.*' -exec sed -i "s/$1/$2/g" {} +
-
-#Particular name 
-#find . -type f -name '**' -exec sed -i 's/$1/$2/g' {} +

@@ -3,12 +3,12 @@
 #xdg-settings set default-web-browser qutebrowser
 
 
-source /home/aghiles/Aghiles/tool/shell/zsh/export
+source /home/aghiles/Aghiles/tool/shell/system/export
 
 
 # Config
 ln -sf $TOOLPATH/config/*/* /home/aghiles/.config/
-ln -sf $TOOLPATH/config/home/.* /home/aghiles/
+ln -sf $TOOLPATH/config/system/.* /home/aghiles/
 chmod -R u+x ~/.local/share/nautilus/scripts
 chmod -R u+x ~/.local/share/qutebrowser/userscripts
 
@@ -18,17 +18,19 @@ chmod -R u+x $TOOLPATH/shell
 
 # Program
 ln -sf /media/aghiles/Aghiles $READINGPATH
-chmod -R u+x $PROGRAMPATH/engineering/*
+chmod -R u+x $PROGRAMPATH/*
+
+#sudo ln -s /home/aghiles/Aghiles/Tool/scripts/targetos /usr/bin
 
 
 # Tools
-ln -sf $TOOLSPATH/ns-3/ns-3/examples/lorawan $PROGRAMPATH/simulation/ns3/src1
-ln -sf $TOOLSPATH/ns-3/ns-3/examples/aghiles $PROGRAMPATH/simulation/ns3/src2
-ln -sf $TOOLSPATH/ns-3/ns-3/src/lorawan $PROGRAMPATH/simulation/ns3/lib
+ln -sf $TOOLSPATH/n-ns-3/ns-3-dev/examples/lorawan $SIMULATIONPATH/ns3/src1
+ln -sf $TOOLSPATH/n-ns-3/ns-3-dev/examples/aghiles $SIMULATIONPATH/ns3/src2
+ln -sf $TOOLSPATH/n-ns-3/ns-3-dev/src/lorawan $SIMULATIONPATH/ns3/lib
 
-chmod -R u+x $TOOLSPATH/matlab/bin
+chmod -R u+x $TOOLSPATH/c-matlab/bin
 
-chmod -R u+x $TOOLSPATH/zotero/zotero $TOOLSPATH/zotero/zotero-bin
+chmod -R u+x $TOOLSPATH/r-zotero/zotero $TOOLSPATH/r-zotero/zotero-bin
 #sudo mv /usr/bin/pdftotext /usr/bin/pdftotext2
 #sudo ln -sf $TOOLSPATH/zotero/pdftotext /usr/bin/pdftotext
 

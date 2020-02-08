@@ -1,0 +1,3 @@
+#!/bin/bash
+
+eval echo "$TOOLSPATH/iot-lab/iot-lab/parts"

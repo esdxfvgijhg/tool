@@ -1,4 +1,5 @@
 
+noremap <F3> :Autoformat<CR>
 cmap w!! w !sudo tee % >/dev/null " For when you forget to sudo.. Really Write the file.
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit! " Save file as sudo on files that require root permission
 command! TogglePrettier call s:TogglePrettier()
@@ -19,6 +20,9 @@ map <C-j> <C-w>j " Shortcutting split navigation, saving a keypress:
 map <C-k> <C-w>k " Shortcutting split navigation, saving a keypress:
 map <C-l> <C-w>l " Shortcutting split navigation, saving a keypress:
 map <C-n> :NERDTreeToggle<CR>
+map <C-q> :q!<Enter>
+map <C-S> :w
+map <C-s> :w<Enter>
 map <C-p> "+P
 map <leader>b :vsp<space>$BIB<CR> " Open my bibliography file in split
 map <leader>c :w! \| !compiler <c-r>%<CR> " Compile document, be it groff/LaTeX/markdown/etc.

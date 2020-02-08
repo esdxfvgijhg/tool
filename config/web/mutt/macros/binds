@@ -1,0 +1,147 @@
+bind generic,alias,attach,browser,editor,index,compose,pager,pgp,postpone ':' noop
+bind generic,index,pager     :            enter-command
+bind generic,pager,attach    q            exit
+bind pager,attach            <left>       exit
+
+
+bind pager                T               noop # Normally <toggle-quoted>.
+bind index                  Q             noop # Normally <query>. 
+bind index,pager           O              noop # Normally <sort-reverse>. 
+bind index,pager            .             noop # Normally <buffy-list>. 
+bind index,pager         <Esc>k           noop # Normally <mail-key>. 
+#bind index,pager            &            noop # Normally <link-threads>. 
+
+# Divers ------------------------------------------------------
+bind index                  c             change-folder
+bind index,pager            X             change-vfolder
+bind index                  _             collapse-all
+bind pager                  a             create-alias
+bind pager                h               display-toggle-weed
+bind index                 \Cv            forget-passphrase
+bind index                  G             imap-fetch-mail
+bind index,pager            y             modify-labels
+#bind pager                 \C32          next-undeleted
+#bind index                  \031         previous-undeleted
+bind generic,index,pager      /           search
+bind index,pager            N             search-opposite # Usually toggles/marks "New" status, but we have U/I for that.
+bind index                  x             toggle-read
+bind attach,index,pager     .             edit-type
+bind attach,index,pager     .             extract-keys 
+
+
+# Compose editor -----------------------------------------------
+bind compose               \cR            rename-attachment
+bind compose               \CO            rename-file
+bind compose                p             pgp-menu
+
+bind editor                 <Tab>         complete-query
+bind editor                \C?            backspace
+#bind editor                \cy           eol  # make ^Y jump to the end of the line
+bind editor                 <delete>      delete-char
+bind editor               <space>         noop # So line-editor can accept folders with spaces in their names.
+bind editor                \CT            complete 
+
+# Message ---------------------------------------------------------
+bind index                  -             collapse-thread
+#bind index,pager            +             entire-thread
+bind index                  j           tag-thread
+#bind index                  D             delete-thread
+bind index                  <right>       read-thread
+
+bind index                  <right>      display-message
+bind index                  \Cd          undelete-message
+bind index,pager            <delete>    purge-message
+bind index                  <delete>    delete-message
+bind pager                  f             forward-message
+bind index,pager            F            flag-message
+bind pager                  t             tag-message
+bind pager                  b             bounce-message
+bind index                  u            recall-message
+bind compose                P             postpone-message
+bind pager,index            k            save-message
+bind pager                  P             print-message
+bind pager                  |             pipe-message 
+
+bind attach                 <Right>       view-text
+bind attach                 <right>       view-mailcap
+bind pager                  <right>       view-attachments
+bind attach                 <right>       view-attach
+
+bind index,pager            R            group-reply
+bind pager                  r             reply
+bind pager                  m             mail
+bind index,pager            @            compose-to-sender
+bind index                  W            clear-flag
+bind index                  w            set-flag
+bind pager                  L             list-reply
+#bind pager                 k             browse-url
+
+bind index                  J            tag-pattern
+bind index                 \CJ           untag-pattern
+
+
+# MailBox ------------------------------------------------------------
+bind pager                 o              sort-mailbox
+bind index,pager           \Co           sync-mailbox
+
+
+# Search new ------------------------------------------------------------
+bind browser                \Cn           check-new
+bind browser                \Cn           select-new
+bind index,pager            \Cn           next-new
+bind index,pager            \Cn           previous-new
+bind index                  \Cn           next-new-then-unread
+bind index                  \Cn           previous-new-then-unread
+bind index,pager            \Cn           next-unread
+bind index,pager            \Cn           previous-unread
+bind index,pager            \Cn           sidebar-next-new
+bind index,pager            \Cn           sidebar-prev-new
+bind index                  \Cn           toggle-new
+bind index                  %             noop # Normally <toggle-write>.
+
+
+# Navigation ------------------------------------------------------
+
+bind attach                 S             save-entry
+bind index                  <Down>        next-entry
+bind index,attach           j             tag-entry
+bind index                  <Up>          previous-entry
+bind index                  \C<           first-entry
+bind index                  \C>           last-entry
+#bind browser, attach        x            select-entry
+#bind attach,index,pager     .             delete-entry
+#bind attach,index,pager     .             print-entry
+
+
+bind index                  <left>        sidebar-toggle-visible
+bind index                  *             sidebar-open
+bind index,pager            <PageDown>    sidebar-next
+bind index,pager            <PageUp>      sidebar-prev
+
+bind pager                  <Down>        next-line
+bind pager                  <Up>          previous-line
+
+bind pager                  <             bottom
+bind pager                  >             top
+bind index,pager            <             previous-page
+bind index,pager            >             next-page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

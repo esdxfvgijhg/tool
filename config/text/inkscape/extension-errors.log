@@ -1,20 +1,20 @@
-Extension "Sketch Input" failed to load because a dependency was not met.
-Dependency:
-  type: executable
-  location: path
-  string: skconvert
+L'extension « Sketch Input » n'a pas été chargée, car une dépendance est manquante.
+Dépendance :
+  type : executable
+  emplacement : chemin
+  chaîne : skconvert
 
-Extension "Dia Input" failed to load because a dependency was not met.
-Dependency:
-  type: executable
-  location: path
-  string: dia
-  description: In order to import Dia files, Dia itself must be installed.  You can get Dia at http://live.gnome.org/Dia
+L'extension « Win32 Vector Print » n'a pas été chargée, car l'extension ne fonctionne qu'avec Windows. C'est le résultat d'un fichier .inx incorrect pour cette extension. Un fichier .inx incorrect peut être dû à un problème dans l'installation d'Inkscape.
+L'extension « Dia Input » n'a pas été chargée, car une dépendance est manquante.
+Dépendance :
+  type : executable
+  emplacement : chemin
+  chaîne : dia
+  description : Pour pouvoir importer des fichiers Dia, le logiciel Dia doit être installé. Vous pouvez obtenir Dia sur http://live.gnome.org/Dia
 
-Extension "Win32 Vector Print" failed to load because the extension is designed for Windows only.  This is caused by an improper .inx file for this extension.  An improper .inx file could have been caused by a faulty installation of Inkscape.
-Extension "GIMP XCF" failed to load because a dependency was not met.
-Dependency:
-  type: executable
-  location: path
-  string: gimp
+L'extension « GIMP XCF » n'a pas été chargée, car une dépendance est manquante.
+Dépendance :
+  type : executable
+  emplacement : chemin
+  chaîne : gimp
 

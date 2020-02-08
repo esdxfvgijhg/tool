@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="gnome-control-center.desktop" open-window-count="0" score="1" last-seen="1579199465"/>
+    <application id="mathpix-snipping-tool_mathpix-snipping-tool.desktop" open-window-count="0" score="37" last-seen="1579197608"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="0" score="10762.6484375" last-seen="1578908114"/>
+    <application id="eog.desktop" open-window-count="0" score="18" last-seen="1578907693"/>
+    <application id="chromium.desktop" open-window-count="0" score="7" last-seen="1579197671"/>
+    <application id="org.gnome.gedit.desktop" open-window-count="0" score="8387.796875" last-seen="1578907806"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="23200.09375" last-seen="1579199585"/>
+    <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="11103" last-seen="1575995407"/>
+    <application id="skypeforlinux.desktop" open-window-count="0" score="126" last-seen="1579197603"/>
+    <application id="com.gexperts.Tilix.desktop" open-window-count="0" score="269" last-seen="1578907448"/>
+    <application id="org.gnome.Evince.desktop" open-window-count="0" score="8231.31640625" last-seen="1578478874"/>
+    <application id="qutebrowser.desktop" open-window-count="0" score="0" last-seen="1579199589"/>
+  </context>
+</application-state>

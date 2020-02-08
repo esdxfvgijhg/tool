@@ -1,0 +1,30 @@
+### Applications used
+
+* urxvtd
+* unclutter
+* skype
+* mopidy
+* numlockx
+* nm-applet
+* dropbox
+* thunderbird
+* xterm
+* zsh
+* bash
+* alsamixer
+* xset
+* i3lock
+* firefox
+* firefox-aurora
+* chromium
+* nautilus
+* subl
+* ginp
+* ncmpcpp
+* top
+* wunderline
+* spectacle
+* setxkbmap
+* redshift
+* mpd
+* xsel

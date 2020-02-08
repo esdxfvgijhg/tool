@@ -1,4 +1,0 @@
-#! /bin/sh
-
-GY=$READINGPATH
-gnome-terminal --title "`basename $GY`" --command="bash -c 'vifm $GY; $SHELL'"

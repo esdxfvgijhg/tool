@@ -117,7 +117,7 @@
 
 %\setbeamertemplate{bibliography item}{\insertbiblabel}
 
-\usepackage{algorithm2e}
+%\usepackage{algorithm2e}
 \makeatletter
 \setbeamertemplate{footline}{
 	\leavevmode%
@@ -153,6 +153,7 @@
 \setbeamersize{sidebar width left=1pt}
 \setbeamersize{sidebar width right=1pt}
 
+
 \addtobeamertemplate{navigation symbols}{}{
     \usebeamerfont{footline}%
     \usebeamercolor[fg]{footline}%
@@ -186,6 +187,7 @@
 \BeforeBeginEnvironment{frame}{
 	\setbeamertemplate{background canvas}[mydefault]
 	\setbeamercolor{frametitle}{bg=white}
+%	\setbeamerfont{frametitle}{size=\tiny}
 }
 
 \makeatletter
@@ -194,6 +196,10 @@
 	\setbeamercolor{frametitle}{bg=lightgray!40}
 }
 \makeatother
+
+
+\addtobeamertemplate{frametitle}{\vspace*{-.1cm}}{\vspace*{-.2cm}}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

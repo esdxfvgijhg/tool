@@ -1,0 +1,5 @@
+#!/bin/sh
+
+
+xdotool key --clearmodifiers Ctrl+W key --clearmodifiers KP_Enter
+

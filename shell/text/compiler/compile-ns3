@@ -1,0 +1,23 @@
+#!/bin/sh
+
+#file=$(basename "$1")
+#dir=$(dirname "$1")
+#dir=$(realpath "$dir")
+
+#filename="${file%.*}"
+
+#echo $filename
+#echo $dir
+
+#cd $dir
+#mkdir $filename
+#$TOOLSPATH/ns-3/ns-3/waf $filename
+#mv *.tr *.pcap $filename/ 2>~/nul
+
+
+file=$1
+filename="${file%.*}"
+	mkdir $filename
+$TOOLSPATH/ns-3/ns-3-dev/waf --cwd=$PWD --run $filename --vis
+mv *.tr *.pcap $filename/ 2>~/null
+

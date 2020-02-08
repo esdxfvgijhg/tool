@@ -1,0 +1,8 @@
+#!/bin/sh
+
+INPUTb=`xsel`
+INPUT=`echo $INPUTb | tr -d '\n'`
+echo $INPUT
+
+google $INPUT
+

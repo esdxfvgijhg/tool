@@ -19,12 +19,12 @@ if ! filereadable(expand('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/plugged')
-	Plug 'bling/vim-airline'
 	Plug 'honza/vim-snippets'
 	Plug 'jreybert/vimagit'
 	Plug 'junegunn/goyo.vim'
 	Plug 'Konfekt/FastFold'
 	Plug 'kovetskiy/sxhkd-vim'
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'lervag/vimtex'
 	Plug 'LukeSmithxyz/vimling'
 	Plug 'matze/vim-tex-fold'
@@ -39,6 +39,17 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'vifm/vifm.vim'
 	Plug 'vimwiki/vimwiki'
 	Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+  Plug 'chriskempson/base16-vim' " UI related
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'Yggdroot/indentLine' " Better Visual Guide
+  Plug 'w0rp/ale' " syntax check
+  Plug 'ncm2/ncm2' " Autocomplete
+  Plug 'roxma/nvim-yarp'
+  Plug 'ncm2/ncm2-bufword'
+  Plug 'ncm2/ncm2-path'
+  Plug 'ncm2/ncm2-jedi'
+  Plug 'Chiel92/vim-autoformat' " Formater
 call plug#end()
 
 
@@ -73,7 +84,7 @@ call dein#begin(expand('~/.config/nvim/dein'))
   call dein#add('junegunn/gv.vim')
   call dein#add('maxbrunsfeld/vim-yankstack')
   call dein#add('moll/vim-node')
-  call dein#add('sheerun/vim-polyglot')
+"  call dein#add('sheerun/vim-polyglot')
   call dein#add('Shougo/dein.vim')
   call dein#add('Shougo/deol.nvim', { 'rev': 'a1b5108fd' })
   call dein#add('Shougo/deoplete.nvim')
@@ -103,14 +114,15 @@ endif
 endif
 
 
-
 execute pathogen#infect()
+
+execute pathogen#helptags()
+
 syntax enable
 syntax on
 filetype plugin indent on
 startinsert
 language en_US.UTF-8
-execute pathogen#helptags()
 
 
 source ~/.config/nvim/functions.vim
@@ -118,5 +130,7 @@ source ~/.config/nvim/set.vim
 source ~/.config/nvim/autocmd.vim
 source ~/.config/nvim/map.vim
 source ~/.config/nvim/let.vim
+"source ~/.config/nvim/coc.vim
+
 
 

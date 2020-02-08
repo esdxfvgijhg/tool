@@ -1,0 +1,19 @@
+windows:
+- active: true
+  geometry: !!binary |
+    AdnQywACAAAAAAAAAAAAEwAAB38AAAQjAAAAAAAAABMAAAd/AAAEIwAAAAAAAAAAB4A=
+  tabs:
+  - active: true
+    history:
+    - pinned: false
+      title: DuckDuckGo — Privacy, simplified.
+      url: https://start.duckduckgo.com/
+    - active: true
+      original-url: qute://settings
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 11821
+      title: settings
+      url: qute://settings/
+      zoom: 1.0

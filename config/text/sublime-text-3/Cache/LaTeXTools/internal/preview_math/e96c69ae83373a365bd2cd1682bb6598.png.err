@@ -1,0 +1,1423 @@
+Failed to run 'pdflatex' to create pdf to preview.
+
+
+Errors:
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:17: Missing $ inserted. []
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:17: Display math should end with $$. []
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:18: Undefined control sequence. [\Matrix]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:18: Missing $ inserted. [\Matrix{[\textbf{Q}_]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:18: Extra }, or forgotten $. [\Matrix{[\textbf{Q}_{\textbf{n,m}}]}]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:19: Misplaced alignment tab character &. [		\                   &]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:19: Misplaced alignment tab character &. [		\                   & \textbf{App~1}    &]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:19: Misplaced alignment tab character &. [...  & \textbf{App~1}    & \textbf{\ldots}  &]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:19: Misplaced \cr. [...  & \textbf{\ldots}  & \textbf{App~M}  \cr]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:20: Misplaced alignment tab character &. [		\textbf{setting 1}                 &]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:20: Misplaced alignment tab character &. [...setting 1}                 & q_{11}      &]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:20: Misplaced alignment tab character &. [...                 & q_{11}      & \ldots  &]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:20: Misplaced \cr. [...   & q_{11}      & \ldots  & q_{1M}    \cr]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:21: Misplaced alignment tab character &. [		\textbf{setting 2}                 &]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:21: Misplaced alignment tab character &. [...setting 2}                 & q_{21}      &]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:21: Misplaced alignment tab character &. [...                 & q_{21}      & \ldots  &]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:21: Misplaced \cr. [...   & q_{21}      & \ldots  & q_{2M}    \cr]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:22: Misplaced alignment tab character &. [		\textbf{~~~\vdots}            &]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:22: Misplaced alignment tab character &. [...xtbf{~~~\vdots}            & \vdots      &]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:22: Misplaced alignment tab character &. [...dots}            & \vdots      & \ddots  &]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:22: Misplaced \cr. [...   & \vdots      & \ddots  & \vdots    \cr]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:23: Misplaced alignment tab character &. [		\textbf{setting N}                 &]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:23: Misplaced alignment tab character &. [...setting N}                 & q_{N1}      &]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:23: Misplaced alignment tab character &. [...                 & q_{N1}      & \ldots  &]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:23: Misplaced \cr. [...   & q_{N1}      & \ldots  & q_{NM}    \cr]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:25: Missing $ inserted. []
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:29: Undefined control sequence. [\Equation]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:29: LaTeX Error: \mathbf allowed only in math mode. [\Equation{centers}{\mathbf]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:29: Missing $ inserted. [\Equation{centers}{\mathbf{v}_]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:29: Extra }, or forgotten $. [...G_{\partial}\left(\mathbf{U}_{t-1}\right)}]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:30: Missing $ inserted. []
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:33: Undefined control sequence. [	The objective of the \ac]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:34: Undefined control sequence. [	\Equation]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:34: Missing $ inserted. [	\Equation{obj}{\min]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:34: Extra }, or forgotten $. [...m_{i=1}^{n} u_{ij}^{m} d_{ij}^{2}\right\}}]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:36: Undefined control sequence. [	\Equation]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:37: Undefined control sequence. [	\Equation]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:38: Undefined control sequence. [	\Equation]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:39: Missing $ inserted. []
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:43: Undefined control sequence. [	\Equation]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:43: Missing $ inserted. [	\Equation{index}{\min]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:43: Extra }, or forgotten $. [...ne{\mathbf{x}}\right\|^{2}\right)\right\}}]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:45: Undefined control sequence. [	\Equation]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:46: Missing $ inserted. []
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:55: LaTeX Error: Environment algorithm undefined. [\begin{algorithm}]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:56: Undefined control sequence. [	\DontPrintSemicolon]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:57: Undefined control sequence. [	\KwInput]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:58: Undefined control sequence. [	\KwOutput]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:60: Undefined control sequence. [	\While]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:66: LaTeX Error: \caption outside float. [	\caption]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:67: LaTeX Error: \begin{equation*} on input line 13 ended by \end{algorithm}. [\end{algorithm}]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:71: LaTeX Error: Environment tikzpicture undefined. [\begin{tikzpicture}]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:72: Undefined control sequence. [  \node]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:73: Undefined control sequence. [  \node]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:74: Undefined control sequence. [  \node]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:75: Undefined control sequence. [  \node]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:76: Undefined control sequence. [  \node]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:77: Undefined control sequence. [  \node]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:78: Undefined control sequence. [  \draw]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:79: Undefined control sequence. [  \draw]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:80: Undefined control sequence. [  \draw]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:81: Undefined control sequence. [  \draw]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:82: Undefined control sequence. [  \draw]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:83: Undefined control sequence. [  \draw]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:84: LaTeX Error: \begin{center} on input line 70 ended by \end{tikzpicture}. [\end{tikzpicture}]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:85: Undefined control sequence. [...Membership values with \ac{FCM} algorithm}]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:85: Undefined control sequence. [...Membership values with \ac{FCM} algorithm}]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:93: Undefined control sequence. [... deffirent parameters presented in \reftab]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:93: Missing $ inserted. [...rent parameters presented in \reftab{lora_]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:93: Extra }, or forgotten $. [...meters presented in \reftab{lora_settings}]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:94: Undefined control sequence. [	it converts the quantitative values of \ac]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:94: Undefined control sequence. [... represent level of membership to each \ac]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:95: Undefined control sequence. [The second component is a \ac]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:96: Undefined control sequence. [	it aims to update the values of \ac]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:97: Undefined control sequence. [The third component is a \ac]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:102: Missing $ inserted. []
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:214: Missing } inserted. [\end{document}]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:214: Missing } inserted. [\end{document}]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:214: Missing } inserted. [\end{document}]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:214: Missing } inserted. [\end{document}]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:214: Missing } inserted. [\end{document}]
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:214: You can't use `\end' in internal vertical mode. [\end{document}]
+Warnings:
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex:28: LaTeX Warning: Reference `centers' on page 1 undefined on input line 28.
+/home/aghiles/Aghiles/tool/config/text/sublime-text-3/Cache/LaTeXTools/internal/preview_math/e96c69ae83373a365bd2cd1682bb6598.tex: LaTeX Warning: There were undefined references.
+
+LaTeX document:
+-----BEGIN DOCUMENT-----
+
+\documentclass[preview,border=0.3pt]{standalone}
+% import xcolor if available and not already present
+\IfFileExists{xcolor.sty}{\usepackage{xcolor}}{}%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\IfFileExists{latexsym.sty}{\usepackage{latexsym}}{}
+\IfFileExists{mathtools.sty}{\usepackage{mathtools}}{}
+
+\begin{document}
+% set the foreground color
+\IfFileExists{xcolor.sty}{\color[HTML]{CCCCCC}}{}%
+\[
+\label{1-eq:membershipf}
+		\mathbf{u}_{ij}=\left[\sum_{j'=1}^{c}\left(\frac{d_{ij}}{d_{ij'}}\right)^{\frac{2}{m-1}}\right]^{-1}, \forall j, i \sim \mathbf{U}_{t}=F_{\partial}\left(\mathbf{V}_{t-1}\right)
+	\
+
+\Matrix{[\textbf{Q}_{\textbf{n,m}}]}{
+		\                   & \textbf{App~1}    & \textbf{\ldots}  & \textbf{App~M}  \cr
+		\textbf{setting 1}                 & q_{11}      & \ldots  & q_{1M}    \cr
+		\textbf{setting 2}                 & q_{21}      & \ldots  & q_{2M}    \cr
+		\textbf{~~~\vdots}            & \vdots      & \ddots  & \vdots    \cr
+		\textbf{setting N}                 & q_{N1}      & \ldots  & q_{NM}    \cr
+}
+
+
+
+Cluster centers are the optimal measured metrics that are close to all the measured metrics of each cluster and are computed using \refeq{centers}.
+\Equation{centers}{\mathbf{v}_{j}=\left[\frac{\sum_{i=1}^{n} u_{ij}^{m} \mathbf{x}_{i}}{\sum_{i=1}^{n} u_{ij}^{m}}\right], \forall j \sim \mathbf{V}_{t}=G_{\partial}\left(\mathbf{U}_{t-1}\right)}
+
+\subsection{Objective function:}
+
+	The objective of the \ac{FCM} algorithm is to find a set of membership values U and a set of cluster centers V that minimize the objective function in 
+	\Equation{obj}{\min_{(\mathbf{U}, \mathbf{V})}\left\{M_{m}(\mathbf{U}, \mathbf{V})=\sum_{j=1}^{c} \sum_{i=1}^{n} u_{ij}^{m} d_{ij}^{2}\right\}}
+	such that:
+	\Equation{constraint}{sum_{j=1}^{c} u_{ij}=1,\forall i}
+	\Equation{Distance}{d_{ij}^{2}=\left\|\mathbf{x}_{i}-\mathbf{v}_{j}\right\|^{2}} %,  \quad\|\mathbf{x}\|_{\mathrm{a}}=\sqrt{\langle\mathbf{x}, \mathbf{x}\rangle_{\mathrm{A}}}=\sqrt{\mathbf{x}^{\mathrm{r}} \mathbf{A} \mathbf{x}}$
+	\Equation{fuzzification}{m \geq  1}
+
+
+
+\subsection{Performance Index:}
+	\Equation{index}{\min _{(c)}\left\{P(c)=\sum_{j=1}^{c} \sum_{i=1}^{n} u_{ij}^{m}\left(\left\|\mathbf{x}_{i}-\mathbf{v}_{j}\right\|^{2}-\left\|\mathbf{v}_{j}-\overline{\mathbf{x}}\right\|^{2}\right)\right\}}
+	where: 
+	\Equation{index2}{\overline{\mathbf{x}}=\frac{1}{n} \sum_{i=1}^{n} \mathbf{x}_{i}}
+
+% \subsection{Initialization:}
+% 	We assume in this paper 
+% 	p: number of clusters
+% 	T: maximum number of iterations (Typ.: 100)
+% 	m: weighting exponent (Fuzziness degree)
+% 	e: termination threshold (Typ. 0.01)
+
+
+\begin{algorithm}
+	\DontPrintSemicolon
+	\KwInput{$V=[v_{11}, ..., v_{cp}]$}
+	\KwOutput{$(\mathbf{U},\mathbf{V})$}
+	t = 0\\
+	\While{$\left\|\mathbf{v}_{i}-\overline{\mathbf{x}}\right\| \geq \mathrm{e} \textbf{ or } t\leq T$}{
+		t = t +1 \\
+		$\mathbf{U}_{t}=F_{\partial}\left(\mathbf{V}_{t-1}\right)$\\
+		$\mathbf{V}_{t}=G_{\partial}\left(\mathbf{U}_{t-1}\right)$
+	}
+	$(\mathbf{U},\mathbf{V}) = (\mathbf{U}_{t},\mathbf{V}_{t})$
+	\caption{FCM}
+\end{algorithm}
+
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[node distance=1cm, every node/.style={fill=white, font=\sffamily,scale=0.8}, align=center]
+  \node (start)       [activityStarts]                     {Parameter initialization};
+  \node (fitness)     [selection, below of=start]          {Initialize memberships};
+  \node (crossover)   [selection, below of=fitness]        {Update clusterheads};
+  \node (mutation)    [selection, below of=crossover]      {Update memberships};
+  \node (selection)   [selection, below of=mutation]       {Cost function};
+  \node (end)         [activityStarts, below of=selection] {Final membership values};
+  \draw[->]     (start)     -- (fitness);
+  \draw[->]     (fitness)   -- (crossover);
+  \draw[->]     (crossover) -- (mutation);
+  \draw[->]     (mutation)  -- (selection);
+  \draw[->]     (selection) -- (end);
+  \draw[->] (selection.east) to[bend right] (crossover.east);
+\end{tikzpicture}
+\caption{Membership values with \ac{FCM} algorithm}
+\end{center}
+\end{figure}
+
+
+Our simulation has 3 components.
+The first component is a LoRa transmiter and receiver tool wich represent the end-devices.
+To generate the QoS metrics offred by each setting,
+	we transmite packets with deffirent parameters presented in \reftab{lora_settings}
+	it converts the quantitative values of \ac{LoRa} transmission performance to qualitative values that represent level of membership to each \ac{FL} subsystem.
+The second component is a \ac{GA} Component,
+	it aims to update the values of \ac{MCDM} to converge to a stable values that represent the final membership values.
+The third component is a \ac{MCDM}.
+	it is a matrix of n setting over k applications,
+	their values represent the membership of each setting to each application.
+	when the value is equal to one,
+	this means that the corespondent setting fits well the application that belongs to.
+
+
+
+
+
+
+
+% %---------------------------------------------------------------------
+
+% The \ac{FCM} algorithm is a class of adaptive stochastic optimization algorithms involving search and optimization.
+% Beside the \ac{FCM} advantages that are related in literature,
+% our decision to use \ac{FCM} was based on the nature of our objective functions that have several dynamic and stochastic aspects,
+% where any other derivative-based optimization method cannot perform well.
+% Another important issue that encouraged the selection of \ac{FCM} to our problem is the high interaction between different variables.
+% Since the \ac{ADR} is a multi criteria problem in nature,
+% 	different QoS metrics need to be optimized.
+
+% In this paper,
+% three different objective functions are proposed to cover the different and opposite objectives and requirements of applications in terms of QoS.
+% The proposed objective functions are outlined in the following points.
+
+% The different steps of the selection process could be summarized as follow:
+
+% When studying a parameter all the other parameters and operators are kept constant.
+% Only a sample for the experiments results achieved is given in this paper as shown in \reftab{hgfd}.
+
+% \subsection{Objective function}
+
+% In general,
+% clustering algorithms are classified into two categories,
+% hard clustering algorithms and fuzzy clustering algorithms.
+% Each object in hard clustering belongs to one and only one cluster.
+% On the contrary,
+% in the fuzzy clustering each object is allowed to have membership functions to all clusters rather than exactly one cluster.
+% Mathematically,
+% a fuzzy clustering problem can be represented as an optimization problem
+
+% In this paper we use the fuzzy clustering to map a set of settings to clusters applications that need such settings to operate well..
+
+
+% \Equation{1a}{\min _{W, Z} F(W, Z)=\sum_{l=1}^{k} \sum_{i=1}^{n} w_{l i}^{x} d\left(\mathbf{z}_{l}, \mathbf{x}_{i}\right)}
+% such that
+% \Equation{1a}{0 \leq w_{l i} \leq 1, \quad 1 \leq l \leq k, \quad 1 \leq i \leq n}
+% \Equation{2a}{\sum_{l=1}^{k} w_{l i}=1, \quad 1 \leq i \leq n}
+% \Equation{3a}{0<\sum_{i=1}^{n} w_{l i}<n, \quad 1 \leq l \leq k}
+
+% where:
+% \Itemize{
+% \item  n is the number of possible configurations $x_{i}$ with 1<i<n.
+% \item  k is the number of applications (clusters) $c_{l}$ with 1<l<k.
+
+% \item  d is the number of metrics $a_{j}$ of each object $x_{i}$ with 1<j<d.
+% \item  c is the number of metrics categories (physical, mac) $c_{m}$ with 1<m<c.
+
+% \item  A={$A_{1}$, ..., $A_{d}$} is a set of categorical attributes with $A_{(1<j<d)}$={$a_{j1}$, ..., $a_{jc}$}
+
+% \item  D={$x_{1}$, ..., $x_{n}$} is a set of n objects.
+% \item  D={$x_{1}$, ..., $x_{n}$} categorical data set with $x_{(1<i<n)}$ \in $A_{(1<j<d)}$
+
+% \item  $Z_{l}$={$z_{l1}$, ..., $z_{ld}$} is a set of cluster centers.
+
+% \item  W=$w_{li}$ is a k x n fuzzy membership matrix.
+% \item  \alpha \in[1, ] is a weighting exponent.
+% % \item  d($z_{l}$, $x_{i}$) is a certain distance measure between cluster center $z_{l}$ and the object $x_{i}$.
+% }
+
+
+% The objective function starts with an initial values of W,
+% then repeatedly iterates between estimating cluster centers Z given W and estimating the membership matrix W given Z until two successive values of W or Z are equal.
+
+% that is,
+% users who are assigned to a network of their preference ($P_{u}$ ):
+% since the algorithm considers multiple criteria,
+% it may assign a user to a network different from his/her original preference.
+% $P_{u}$ is considered appropriate for performance evaluation from the user point of view.
+% To maximize $P_{u}$ ,
+% the objective function ObjFun1 shown in Algorithm 1 is used.
+
+
+
+
+% The weights of the input criteria {$W_{v}$,
+% $W_{s}$,
+% $W_{t}$,
+% $W_{u}$} have been encoded using real encoding method.
+% The length of the real-valued encoding is 4 real floating numbers.
+% The length of each floating number depends on the internal precision and roundoff used by the computer to define the precision of the floating numbers.
+% The results achieved by extensive comparisons of GA performance as a function of the different GA parameters (i.e.,
+% the population size,
+% the mutation rate,
+% and the crossover fraction) and the different GA operators (i.e.,
+% the selection and crossover operators) have been summarized by [27].
+
+
+% They have concluded that crossover fraction,
+% selection operator,
+% and crossover operator are not of much importance.
+% On the other side,
+% the population size and the mutation rate have the most significant impact on the ability of the GA to find better minimum value for objective function.
+% Based on that,
+% several sets of experiments to determine good population size and mutation rate for our proposed objective functions have been carried out.
+% Each experiment has been repeated several iterations while the performance is recorded.
+% The results from all the iterations are then combined by calculating the average (and standard deviation) for each experiment.
+% Usually,
+% testing GAs includes mainly two issues;
+% how far the result obtained by GA is from the benchmark results,
+% which can be measured by average fitness value.
+% The second issue is how fast GA is in finding the best solution,
+% which can be measured by the total number of function evaluations.
+
+
+
+\end{document}
+
+-----END DOCUMENT-----
+
+Log file:
+-----BEGIN LOG-----
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.12.25)  2 FEB 2020 20:46
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**e96c69ae83373a365bd2cd1682bb6598.tex
+(./e96c69ae83373a365bd2cd1682bb6598.tex
+LaTeX2e <2018-12-01>
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
+Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
+dalone
+(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 69.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks14
+\XKV@tempa@toks=\toks15
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count80
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\sa@internal=\count81
+\c@sapage=\count82
+
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cfg
+File: standalone.cfg 2018/03/26 v1.3a Default configuration file for 'standalon
+e' class
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count83
+\c@section=\count84
+\c@subsection=\count85
+\c@subsubsection=\count86
+\c@paragraph=\count87
+\c@subparagraph=\count88
+\c@figure=\count89
+\c@table=\count90
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf/tex/latex/preview/preview.sty
+Package: preview 2017/04/24 11.91 (AUCTeX/preview-latex)
+
+(/usr/share/texlive/texmf-dist/tex/generic/luatex85/luatex85.sty
+Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
+)
+(/usr/share/texmf/tex/latex/preview/prtightpage.def
+\PreviewBorder=\dimen103
+)
+\pr@snippet=\count91
+\pr@box=\box27
+\pr@output=\toks16
+))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen104
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen105
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
+\dotsspace@=\muskip10
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks18
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks19
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count104
+\calc@Bcount=\count105
+\calc@Adimen=\dimen113
+\calc@Bdimen=\dimen114
+\calc@Askip=\skip46
+\calc@Bskip=\skip47
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count106
+\calc@Cskip=\skip48
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count107
+\l_MT_multwidth_dim=\dimen115
+\origjot=\skip49
+\l_MT_shortvdotswithinadjustabove_dim=\dimen116
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen117
+\l_MT_above_intertext_sep=\dimen118
+\l_MT_below_intertext_sep=\dimen119
+\l_MT_above_shortintertext_sep=\dimen120
+\l_MT_below_shortintertext_sep=\dimen121
+)
+No file e96c69ae83373a365bd2cd1682bb6598.aux.
+\openout1 = `e96c69ae83373a365bd2cd1682bb6598.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+Preview: Fontsize 10pt
+Preview: PDFoutput 1
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count108
+\scratchdimen=\dimen122
+\scratchbox=\box30
+\nofMPsegments=\count109
+\nofMParguments=\count110
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count111
+\MPscratchDim=\dimen123
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
+\everyMPtoPDFconversion=\toks23
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+)
+\Gin@req@height=\dimen124
+\Gin@req@width=\dimen125
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 13.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 13.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 13.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+! Missing $ inserted.
+<inserted text> 
+                $
+l.17 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.17 
+     
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+! Undefined control sequence.
+l.18 \Matrix
+            {[\textbf{Q}_{\textbf{n,m}}]}{
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.18 \Matrix{[\textbf{Q}_
+                         {\textbf{n,m}}]}{
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.18 \Matrix{[\textbf{Q}_{\textbf{n,m}}]}
+                                         {
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Misplaced alignment tab character &.
+l.19 		\                   &
+                             \textbf{App~1}    & \textbf{\ldots}  & \textbf{...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.19 		\                   & \textbf{App~1}    &
+                                                 \textbf{\ldots}  & \textbf{...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.19 ...  & \textbf{App~1}    & \textbf{\ldots}  &
+                                                   \textbf{App~M}  \cr
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \cr.
+l.19 ...  & \textbf{\ldots}  & \textbf{App~M}  \cr
+                                                  
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.20 		\textbf{setting 1}                 &
+                                            q_{11}      & \ldots  & q_{1M}  ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.20 ...setting 1}                 & q_{11}      &
+                                                   \ldots  & q_{1M}    \cr
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.20 ...                 & q_{11}      & \ldots  &
+                                                   q_{1M}    \cr
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \cr.
+l.20 ...   & q_{11}      & \ldots  & q_{1M}    \cr
+                                                  
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.21 		\textbf{setting 2}                 &
+                                            q_{21}      & \ldots  & q_{2M}  ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.21 ...setting 2}                 & q_{21}      &
+                                                   \ldots  & q_{2M}    \cr
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.21 ...                 & q_{21}      & \ldots  &
+                                                   q_{2M}    \cr
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \cr.
+l.21 ...   & q_{21}      & \ldots  & q_{2M}    \cr
+                                                  
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.22 		\textbf{~~~\vdots}            &
+                                       \vdots      & \ddots  & \vdots    \cr
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.22 ...xtbf{~~~\vdots}            & \vdots      &
+                                                   \ddots  & \vdots    \cr
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.22 ...dots}            & \vdots      & \ddots  &
+                                                   \vdots    \cr
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \cr.
+l.22 ...   & \vdots      & \ddots  & \vdots    \cr
+                                                  
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.23 		\textbf{setting N}                 &
+                                            q_{N1}      & \ldots  & q_{NM}  ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.23 ...setting N}                 & q_{N1}      &
+                                                   \ldots  & q_{NM}    \cr
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.23 ...                 & q_{N1}      & \ldots  &
+                                                   q_{NM}    \cr
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \cr.
+l.23 ...   & q_{N1}      & \ldots  & q_{NM}    \cr
+                                                  
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.25 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (82.21086pt too wide) in paragraph at lines 18--25
+[]\OT1/cmr/m/n/10 [\OT1/cmr/bx/n/10 Q$[]\OT1/cmr/m/n/10 ][]$ 
+ []
+
+
+LaTeX Warning: Reference `centers' on page 1 undefined on input line 28.
+
+! Undefined control sequence.
+l.29 \Equation
+              {centers}{\mathbf{v}_{j}=\left[\frac{\sum_{i=1}^{n} u_{ij}^{m}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \Equation{centers}{\mathbf
+                               {v}_{j}=\left[\frac{\sum_{i=1}^{n} u_{ij}^{m}...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.29 \Equation{centers}{\mathbf{v}_
+                                   {j}=\left[\frac{\sum_{i=1}^{n} u_{ij}^{m}...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.29 ...G_{\partial}\left(\mathbf{U}_{t-1}\right)}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.30 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.33 	The objective of the \ac
+                              {FCM} algorithm is to find a set of membership...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.34 	\Equation
+               {obj}{\min_{(\mathbf{U}, \mathbf{V})}\left\{M_{m}(\mathbf{U},...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.34 	\Equation{obj}{\min
+                         _{(\mathbf{U}, \mathbf{V})}\left\{M_{m}(\mathbf{U},...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.34 ...m_{i=1}^{n} u_{ij}^{m} d_{ij}^{2}\right\}}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+l.36 	\Equation
+               {constraint}{sum_{j=1}^{c} u_{ij}=1,\forall i}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.37 	\Equation
+               {Distance}{d_{ij}^{2}=\left\|\mathbf{x}_{i}-\mathbf{v}_{j}\ri...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.38 	\Equation
+               {fuzzification}{m \geq  1}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.39 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 3557) in paragraph at lines 33--39
+\OT1/cmr/m/n/10 The ob-jec-tive of the FCM al-go-rithm is to find a set of mem-
+ber-
+ []
+
+
+Underfull \hbox (badness 1728) in paragraph at lines 33--39
+\OT1/cmr/m/n/10 ship val-ues U and a set of clus-ter cen-ters V that min-i-mize
+ the ob-
+ []
+
+! Undefined control sequence.
+l.43 	\Equation
+               {index}{\min _{(c)}\left\{P(c)=\sum_{j=1}^{c} \sum_{i=1}^{n} ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.43 	\Equation{index}{\min
+                            _{(c)}\left\{P(c)=\sum_{j=1}^{c} \sum_{i=1}^{n} ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.43 ...ne{\mathbf{x}}\right\|^{2}\right)\right\}}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+l.45 	\Equation
+               {index2}{\overline{\mathbf{x}}=\frac{1}{n} \sum_{i=1}^{n} \ma...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.46 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--46
+\OT1/cmr/m/n/10 index$[][] [] \OML/cmm/m/it/10 where \OT1/cmr/m/n/10 :
+ []
+
+
+! LaTeX Error: Environment algorithm undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 \begin{algorithm}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.56 	\DontPrintSemicolon
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.57 	\KwInput
+              {$V=[v_{11}, ..., v_{cp}]$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.58 	\KwOutput
+               {$(\mathbf{U},\mathbf{V})$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \While 
+                       
+l.60 	\While
+            {$\left\|\mathbf{v}_{i}-\overline{\mathbf{x}}\right\| \geq \math...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 	\caption
+              {FCM}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{equation*} on input line 13 ended by \end{algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 \end{algorithm}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 \begin{tikzpicture}
+                        [node distance=1cm, every node/.style={fill=white, f...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.72   \node
+             (start)       [activityStarts]                     {Parameter i...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.73   \node
+             (fitness)     [selection, below of=start]          {Initialize ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.74   \node
+             (crossover)   [selection, below of=fitness]        {Update clus...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.75   \node
+             (mutation)    [selection, below of=crossover]      {Update memb...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.76   \node
+             (selection)   [selection, below of=mutation]       {Cost functi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.77   \node
+             (end)         [activityStarts, below of=selection] {Final membe...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.78   \draw
+            [->]     (start)     -- (fitness);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.79   \draw
+            [->]     (fitness)   -- (crossover);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.80   \draw
+            [->]     (crossover) -- (mutation);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.81   \draw
+            [->]     (mutation)  -- (selection);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.82   \draw
+            [->]     (selection) -- (end);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.83   \draw
+            [->] (selection.east) to[bend right] (crossover.east);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{center} on input line 70 ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 \end{tikzpicture}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+<argument> ...respaces Membership values with \ac 
+                                                  {FCM} algorithm}}{\thepage...
+l.85 ...Membership values with \ac{FCM} algorithm}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...respaces Membership values with \ac 
+                                                  {FCM} algorithm
+l.85 ...Membership values with \ac{FCM} algorithm}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.93 ... deffirent parameters presented in \reftab
+                                                  {lora_settings}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.93 ...rent parameters presented in \reftab{lora_
+                                                  settings}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.93 ...meters presented in \reftab{lora_settings}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+l.94 	it converts the quantitative values of \ac
+                                                {LoRa} transmission performa...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.94 ... represent level of membership to each \ac
+                                                  {FL} subsystem.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.95 The second component is a \ac
+                                  {GA} Component,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.96 	it aims to update the values of \ac
+                                         {MCDM} to converge to a stable valu...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.97 The third component is a \ac
+                                 {MCDM}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.102 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (2056.16101pt too wide) in paragraph at lines 90--102
+\OT1/cmr/m/n/10 lora$[]\OML/cmm/m/it/10 ettingsitconvertsthequantitativevalueso
+f[]transmissionperformancetoqualitativevaluesthatrepresentlevelofmembershiptoea
+ch[]subsystem:Thesecondcomponentisa[]Component; itaimstoupdatethevaluesof[]toco
+nvergetoastablevaluesthatrepresentthefinalmembershipvalues:Thethirdcomponentisa
+[]:itisamatrixofnsettingoverkapplications; theirvaluesrepresentthemembershipofe
+achsettingtoeachapplication:whenthevalueisequaltoone; thismeansthatthecorespond
+entsettingfitswelltheapplicationthatbelongsto:$ 
+ []
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.214 \end{document}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.214 \end{document}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.214 \end{document}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.214 \end{document}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.214 \end{document}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+(./e96c69ae83373a365bd2cd1682bb6598.aux)
+
+LaTeX Warning: There were undefined references.
+
+! You can't use `\end' in internal vertical mode.
+\enddocument ... \endgroup \deadcycles \z@ \@@end 
+                                                  
+l.214 \end{document}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Preview: Tightpage -19661 -19661 19661 19661
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1}Objective function
+:}{1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.2}Performance Index:
+}{1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Membershi
+p values with {FCM} algorithm}}{1}\protected@file@percent }
+
+])
+! Emergency stop.
+<*> e96c69ae83373a365bd2cd1682bb6598.tex
+                                        
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 3419 strings out of 492615
+ 47264 string characters out of 6131389
+ 122884 words of memory out of 5000000
+ 7285 multiletter control sequences out of 15000+600000
+ 7494 words of font info for 31 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 34i,8n,56p,274b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
+
+-----END LOG-----

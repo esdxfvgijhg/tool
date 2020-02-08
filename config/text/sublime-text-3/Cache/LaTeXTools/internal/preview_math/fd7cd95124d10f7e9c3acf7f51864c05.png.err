@@ -1,0 +1,516 @@
+Failed to run 'pdflatex' to create pdf to preview.
+
+
+Errors:
+TeX STOPPED: }= & \frac {2^{S F}}{B W}\left ((N P+4.25)+\left (S W+\max \left (\left \ETC.! File ended while scanning use of \textbfRunaway argu
+TeX reports the error was in file: fd7cd95124d10f7e9c3acf7f51864c05.tex
+
+LaTeX document:
+-----BEGIN DOCUMENT-----
+
+\documentclass[preview,border=0.3pt]{standalone}
+% import xcolor if available and not already present
+\IfFileExists{xcolor.sty}{\usepackage{xcolor}}{}%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\IfFileExists{latexsym.sty}{\usepackage{latexsym}}{}
+\IfFileExists{mathtools.sty}{\usepackage{mathtools}}{}
+
+\begin{document}
+% set the foreground color
+\IfFileExists{xcolor.sty}{\color[HTML]{CCCCCC}}{}%
+\(
+\textbf{\}=                                       & \frac{2^{S F}}{B W}\left((N P+4.25)+\left(S W+\max \left(\left\lceil\frac{8 PS-4 S F+28+16 C R C-20 I H}{4(S F-2 D E)}\right](C R+4), 0\right)\right)\right)\\
+\textbf{GFSK}=                                       & \frac{8}{D R}(N P+S W+P L+2 C R C)
+\end{align}
+
+\textbf{Where:}
+
+\Itemize{
+	\item NP = 8, if LoRa . 5, if GFSK
+	\item SW = 8, if LoRa . 3, if GFSK
+
+	\item CRC = 0 if downlink packet.        1 if uplink packet
+	\item IH  = 0 if header.                 1 if no header present
+	\item DE  = 1 if data rate optimization. 0 if not
+}
+
+\medskip
+
+\Itemize{
+	\item \ac{PS} = PHY\_Payload bytes
+	\item \ac{SF} = 7, 8, 9, 10, 11, 12
+	\item \ac{BW} = 125kHz, 250kHz, where BW is the bandwidth	
+	\item \ac{CR} = Indicates the Coding Rate
+}
+
+\end{frame}
+
+
+\begin{frame}{Multi criteria decision making}
+\begin{align}
+\ac{Sen}_{\textbf{[dBm]}}   = & -174+10 \log _{10} \green{BW} + NF + SNR                                                      \\
+\ac{PL}_{\textbf{[B]}}      = & |RSSI|+SNR+P_{TX}+G_{RX}                                                               \\
+\ac{SNR}_{\textbf{[dB]}}    = & 20.log(\frac{S}{N})                                                                           \\
+\ac{RSSI}_{\textbf{[dBm]}}  = & Tx_{power}.\frac{Rayleigh_{power}}{PL}                                                        \\
+\ac{SINR}_{\textbf{[dBm]}}  = \\
+\ac{BR}_{ \textbf{[bps]}}   = & \red{SF} * \frac{\frac{4}{4+\yellow{CR}}}{\frac{2 \red{SF}}{\green{BW}}}                      \\
+\ac{BER}_{\textbf{[bps]}}   = & \frac{8}{15}.\frac{1}{16}.\sum{k=2}{16}{-1^{k}(\frac{16}{k})e^{20.SINR(\frac{1}{k}-1)}}       \\
+\ac{PER}_{\textbf{[pps]}}   = & 1-(1-BER)^{n_{bits}}                                                                          \\
+\end{align}
+\end{frame}
+
+
+\begin{frame}{Multi criteria decision making}
+\begin{align}
+\ac{MSE}=                     & \frac{1}{n} \sum_{i=1}^{n}\left(p_{i}-r_{i}\right)^{2}                                        \\
+\ac{RMSE}=                    & \sqrt{\frac{1}{n} \sum_{i=1}^{n}\left(p_{i}-r_{i}\right)^{2}}                                 \\
+\ac{MAE}=                     & \frac{1}{n} \sum_{i=1}^{n}\left|p_{i}-r_{i}\right|                                            \\
+Recall=                       & \frac{T P}{T P+F N}                                                                           \\
+Precision=                    & \frac{T P}{T P+F P}                                                                           \\
+F1_{-}Score=                  & \frac{2 \times \text { Precision } \times \text { Recall}}{\text { precision }+\text {recall}}\\
+\ac{TPR} =                    & \frac{T P}{T P+F N}                                                                           \\
+\ac{FPR} =                    & \frac{F P}{F P+T N}                                                                           \\
+\ac{ROC}=                     & (TPR,FPR)                                                                                     \\
+Novelty=                      & \sum_{i \in L} \frac{\log _{2} P_{i}}{n} \text { where } \quad P_{i}=\frac{n-r a n k_{i}}{n-1}\\
+Serendipity=                  & \frac{1}{n} \sum_{i \in n} \max \left(P_{\text {user}}-P_{U}, 0\right) \times r e l_{i}       \\
+diversity=                    & \frac{a}{c} \sum_{i=1}^{c} \frac{1}{n} \sum_{j=1}^{n} i_{j}                                   \\
+Coverage=                     & 100 \times \frac{u}{U}                                                                        \\
+Stability=                    & \frac{1}{P_{2}} \sum_{i \in P_{2}}\left|P_{2, i}-P_{1, i}\right|                              \\
+DCG=                          & r e l_{1}+\sum_{i=2}^{\text {pos}} \frac{r e l_{i}}{\log _{2} i}                              \\
+IDCG=                         & r e l_{1}+\sum_{i=2}^{|h|-1} \frac{r e l_{i}}{\log _{2} i}                                    \\
+\ac{NDCG}=                    & \frac{D C G}{I D C G}                                                                         \\
+\ac{PRR} =                    & (1-\ac{BER})^{L}                                                                              \\
+\end{align}
+\end{frame}
+
+
+ \begin{frame}{LoRa Frame}{}
+ 	\includegraphics[width=1\columnwidth]{loraframe1}
+ 	\bigskip
+ 	\includegraphics[width=1\columnwidth]{loraframe2}
+ \end{frame}
+
+
+ \begin{frame}{LoRa Frame}{}
+\scriptsize
+\begin{multicols}{2}
+\Itemize{
+	\item \textbf{Modulation :}
+	\Itemize{
+		\item Lora:  8 Symbols, 0x34 (Sync Word)
+		\item FSK:  5 Bytes, 0xC194C1 (Sync Word)
+	}
+}
+\Itemize{
+	\item \textbf{Length :}
+	\item \textbf{Sync msg :}
+	\item \textbf{PHY Header :}  It contains:
+	\Itemize{
+		\item The Payload length (Bytes)
+		\item \textbf{The Code rate}
+		\item Optional 16bit CRC for payload 
+	}
+	\item \textbf{Phy Header :} CRC  It contains CRC of Physical Layer Header
+	\item \textbf{MType :}  is the message type (uplink or a downlink)
+	\Itemize{
+		\item whether or not it is a confirmed message (reqst ack)
+		\item 000 	Join Request
+		\item 001 	Join Accept
+		\item 010 	Unconfirmed Data Up
+		\item 011 	Unconfirmed Data Down
+		\item 100 	Confirmed Data Up
+		\item 101 	Confirmed Data Down
+		\item 110 	RFU
+		\item 111 	Proprietary
+	}
+	\item \textbf{RFU :} Reserved for Future Use
+	\item \textbf{Major :}  is the LoRaWAN version; currently, only a value of zero is valid
+	\Itemize{
+		\item 00 	LoRaWAN R1
+		\item 01-11 	RFU
+	}
+	\item \textbf{NwkID :} the short address of the device (Network ID): 31th to 25th
+	\item \textbf{NwkAddr :} the short address of the device (Network Address): 24th to 0th
+	\item \textbf{ADR :}  Network server will change the data rate through appropriate MAC commands
+	\Itemize{
+		\item 1  To change the data rate
+		\item 0  No change
+	}
+	\item \textbf{ADRACKReq :} (Adaptive Data Rate ACK Request): if network doesn't respont in 'ADR-ACK-DELAY' time, end-device switch to next lower data rate.
+	\Itemize{
+		\item 1  if (ADR-ACK-CNT) >= (ADR-ACK-Limit)
+		\item 0  otherwise
+	}
+	\item \textbf{ACK :} (Message Acknowledgement): If end-device is the sender then gateway will send the ACK in next receive window  else if gateway is the sender then end-device will send the ACK in next transmission.
+	\Itemize{
+		\item 1  if confirmed data message
+		\item 0  otherwise
+	}
+	\item \textbf{FPending$\downarrow$ /RFU $\uparrow$ :} (Only in downlink), if gateway has more data pending to be send then it asks end-device to open another receive window ASAP
+	\Itemize{
+		\item 1  to ask for more receive windows
+		\item 0  otherwise
+	}
+	\item \textbf{FOptsLen :} is the length of the FOpts field in bytes   0000 to 1111 
+	\item \textbf{FCnt :}  2 type of frame counters 
+	\Itemize{
+		\item FCntUp:  counter for uplink data frame, MAX-FCNT-GAP
+		\item FCntDown:  counter for downlink data frame, MAX-FCNY-GAP
+	}  
+	\item \textbf{FOpts :} is used to piggyback MAC commands on a data message	
+	\item \textbf{FPort :}  a multiplexing port field
+	\Itemize{
+		\item 0  the payload contains only MAC commands
+		 \item 1 to 223  Application Specific
+		 \item 224 \& 225  RFU
+	}
+    \item \textbf{FRMPayload :} (Frame Payload)  Encrypted (AES, 128 key length) Data                                 
+	\item \textbf{MIC :}  is a cryptographic message integrity code
+	\Itemize{
+		\item computed over the fields MHDR, FHDR, FPort and the encrypted FRMPayload.
+	}
+	\item \textbf{CRC :} (only in uplink), 
+	\Itemize{
+		\item CCITT  $x^{16} + x^{12} + x^{5} + 1$
+		\item IBM  $x^{16} + x^{15} + x^{5} + 1$
+	}
+}
+
+\end{multicols}
+ \end{frame}
+
+
+
+
+%  \begin{frame}{Network selection problem}{Related work}
+% 	 \Figure{h}{1}{slice2}{Network selection problem}
+%  \end{frame}
+
+%  \begin{frame}{Slice orchestration problem}{Related work}
+% 	 \Figure{h}{1}{slice1}{Slice orchestration problem}
+%  \end{frame}
+
+
+% \begin{frame}{End-to-end Network slicing}{One size fits all problem: 1) Many configurations, 2) Diversity of service requirements}
+% 	\Figure{!htb}{.6}{slicing}{Key barriers in adopting IoT in the industry \cite{sciancalepore_storns_2019}}
+
+% 	% \bey{How to adapt the network to applications ?}
+% 	% \stamp{blue}{30}{6.2, 5}{How to adapt network configurations to applications ?}{90}
+
+% \end{frame}
+
+% \subsection*{Motivation}
+% \begin{frame}{End-to-end Network slicing}{Exp: 4G/5G, Content provider (GAFA) want to be directly connected to users devices}
+% 	\Columns{0.5}{0.5}{
+% 		\Figure{!htb}{1}{slicing4}{Network slicing \cite{sciancalepore_storns_2019}}
+% 	}{
+% 		\FigureH{!htb}{1}{4G_slicing}{4G without network slicing}{5G_slicing}{5G with network slicing}{slicing3}{Network slicing concept \cite{sama_servicebased_2016}}
+% 	}
+% \end{frame}
+
+% \begin{frame}{Related work}{In the future, network administration function will disappear and will be replaced by a slice orchestrator}
+% 	% \tikz{\draw[red,thick,dashed] (2,2) circle (3cm);}
+% 	% \tikz{\draw[step=1cm,gray,very thin] (-1.9,-1.9) grid (5.9,5.9);}
+% 	\Figure{!htb}{.6}{slicing2}{Slice orchestrator \footcite{ksentini_toward_2017}}
+% 	% \bey{blue}{0}{6, 4}{\Huge Thank you !}
+% \end{frame}
+\)
+\end{document}
+
+-----END DOCUMENT-----
+
+Log file:
+-----BEGIN LOG-----
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.12.25)  7 JAN 2020 14:23
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**fd7cd95124d10f7e9c3acf7f51864c05.tex
+(./fd7cd95124d10f7e9c3acf7f51864c05.tex
+LaTeX2e <2018-12-01>
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
+Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
+dalone
+(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 69.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks14
+\XKV@tempa@toks=\toks15
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count80
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\sa@internal=\count81
+\c@sapage=\count82
+
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cfg
+File: standalone.cfg 2018/03/26 v1.3a Default configuration file for 'standalon
+e' class
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count83
+\c@section=\count84
+\c@subsection=\count85
+\c@subsubsection=\count86
+\c@paragraph=\count87
+\c@subparagraph=\count88
+\c@figure=\count89
+\c@table=\count90
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf/tex/latex/preview/preview.sty
+Package: preview 2017/04/24 11.91 (AUCTeX/preview-latex)
+
+(/usr/share/texlive/texmf-dist/tex/generic/luatex85/luatex85.sty
+Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
+)
+(/usr/share/texmf/tex/latex/preview/prtightpage.def
+\PreviewBorder=\dimen103
+)
+\pr@snippet=\count91
+\pr@box=\box27
+\pr@output=\toks16
+))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen104
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen105
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
+\dotsspace@=\muskip10
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks18
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks19
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count104
+\calc@Bcount=\count105
+\calc@Adimen=\dimen113
+\calc@Bdimen=\dimen114
+\calc@Askip=\skip46
+\calc@Bskip=\skip47
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count106
+\calc@Cskip=\skip48
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count107
+\l_MT_multwidth_dim=\dimen115
+\origjot=\skip49
+\l_MT_shortvdotswithinadjustabove_dim=\dimen116
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen117
+\l_MT_above_intertext_sep=\dimen118
+\l_MT_below_intertext_sep=\dimen119
+\l_MT_above_shortintertext_sep=\dimen120
+\l_MT_below_shortintertext_sep=\dimen121
+)
+No file fd7cd95124d10f7e9c3acf7f51864c05.aux.
+\openout1 = `fd7cd95124d10f7e9c3acf7f51864c05.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+Preview: Fontsize 10pt
+Preview: PDFoutput 1
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count108
+\scratchdimen=\dimen122
+\scratchbox=\box30
+\nofMPsegments=\count109
+\nofMParguments=\count110
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count111
+\MPscratchDim=\dimen123
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
+\everyMPtoPDFconversion=\toks23
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+)
+\Gin@req@height=\dimen124
+\Gin@req@width=\dimen125
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 13.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 13.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 13.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+))
+Runaway argument?
+{\}= & \frac {2^{S F}}{B W}\left ((N P+4.25)+\left (S W+\max \left (\left \ETC.
+! File ended while scanning use of \textbf .
+<inserted text> 
+                \par 
+<*> fd7cd95124d10f7e9c3acf7f51864c05.tex
+                                        
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+! Emergency stop.
+<*> fd7cd95124d10f7e9c3acf7f51864c05.tex
+                                        
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 3402 strings out of 492615
+ 46989 string characters out of 6131389
+ 114884 words of memory out of 5000000
+ 7278 multiletter control sequences out of 15000+600000
+ 5657 words of font info for 25 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 34i,4n,56p,260b,134s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
+
+-----END LOG-----

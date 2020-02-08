@@ -1,5 +1,0 @@
-#!/bin/bash
-
-
-gedit $TOOLPATH/scripts/install/apt-1-office
-

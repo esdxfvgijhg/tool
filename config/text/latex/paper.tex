@@ -2,7 +2,10 @@
 \documentclass[conference]{IEEEtran}
 \input{setup}
 \usepackage{titling}
+\usepackage[top=2cm, bottom=2.5cm, left=2cm, right=2cm]{geometry}
 
+
+% Subparagraph ---------------------------------------------------------------
 \makeatletter
 \newcommand\subparagraph{\@startsection{subparagraph}{5}{\parindent}%
                                        {3.25ex \@plus1ex \@minus .2ex}%
@@ -10,6 +13,7 @@
                                       {\normalfont\normalsize\bfseries}}
 \makeatother
 
+% Part -----------------------------------------------------------------
 \makeatletter
 \newcounter {part}
 \renewcommand \thepart {\@Roman\c@part}
@@ -64,15 +68,18 @@
          \everypar{\global\@nobreakfalse\everypar{}}%
       \fi
     \endgroup
-  \filetter}                                                                                                                                                                    
-\makeatother                                                                                                                                                                    
+  \filetter} 
+\makeatother   
 \renewcommand\partname{Part} 
 \usepackage{chngcntr}
 \counterwithin*{section}{part}
 \counterwithin*{figure}{part}
 \counterwithin*{table}{part}
+\counterwithin*{equation}{part}
+%\numberwithin{equation}{section}
 % \counterwithin*{page}{part}
 
+% Chapter -----------------------------------------------------------------------------
 \makeatletter
 \newcommand\stdchapter[1]{
   \printbib
@@ -110,6 +117,7 @@
   % \newcommand{\subparagraph}{}
 
 
+\pagestyle{plain}
 %\pagenumbering{gobble} % remove page numbering
 
 
@@ -118,10 +126,14 @@
     #1
   \end{IEEEkeywords}
 }
+
+
 % \newcommand\firstpage{}
 % \newcommand\preface{}
 % \newcommand\body{}
 % \newcommand\Appendix{}
+
+
 \newcommand\epigraph[1]{}
 \date{}
 \def\biblio{\printbib}

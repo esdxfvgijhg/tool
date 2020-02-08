@@ -1,0 +1,33 @@
+=============== Dec 9, 2019 (CET) ===============
+14:48:01.692993 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:48:01.696643 db@open opening
+14:48:01.700145 version@stat F·[] S·0B[] Sc·[]
+14:48:01.702030 db@janitor F·2 G·0
+14:48:01.702057 db@open done T·5.39114ms
+16:19:14.143678 db@close closing
+16:19:14.144419 db@close done T·730.293µs
+=============== Dec 9, 2019 (CET) ===============
+16:23:26.425109 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:23:26.428127 version@stat F·[] S·0B[] Sc·[]
+16:23:26.428259 db@open opening
+16:23:26.428928 journal@recovery F·1
+16:23:26.429586 journal@recovery recovering @1
+16:23:26.431560 memdb@flush created L0@2 N·9 S·299B "\x04de..can,v9":"\npr..ion,v3"
+16:23:26.432035 version@stat F·[1] S·299B[299B] Sc·[0.25]
+16:23:26.438437 db@janitor F·3 G·0
+16:23:26.438510 db@open done T·10.130523ms
+16:30:11.905370 db@close closing
+16:30:11.905474 db@close done T·102.229µs
+=============== Dec 18, 2019 (CET) ===============
+15:13:48.588844 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:13:48.589633 version@stat F·[1] S·299B[299B] Sc·[0.25]
+15:13:48.589650 db@open opening
+15:13:48.589920 journal@recovery F·1
+15:13:48.591350 journal@recovery recovering @3
+15:13:48.593798 memdb@flush created L0@5 N·1 S·144B "\x04de..can,v11":"\x04de..can,v11"
+15:13:48.594400 version@stat F·[2] S·443B[443B] Sc·[0.50]
+15:13:48.600991 db@janitor F·4 G·0
+15:13:48.601017 db@open done T·11.348536ms
+=============== Dec 19, 2019 (CET) ===============
+19:00:45.923378 db@close closing
+19:00:45.923483 db@close done T·103.149µs

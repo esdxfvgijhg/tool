@@ -1,0 +1,33 @@
+#!/bin/bash
+
+ls /dev | grep ACM
+
+read usb
+echo $usb
+
+arduino-cli compile --fqbn arduino:avr:uno `basename $PWD.ino` -o `basename $PWD.arduino.avr.uno`
+arduino-cli upload -p /dev/ttyACM$usb --fqbn arduino:avr:uno $PWD
+#screen /dev/ttyACM$usb 38400
+tio -b 38400 /dev/ttyACM$usb
+
+
+## Arduino  ----------------------------------------------------
+#function arduino-compile() {
+#	arduino-cli compile --fqbn arduino:avr:uno `basename $PWD.ino` -o `basename $PWD.arduino.avr.uno`
+#}
+#function arduino-exec() {
+#	arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:avr:uno $PWD
+##	arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:avr:uno $1
+#}
+#function arduino-log() {
+#	set-title Arduino && screen /dev/ttyACM0 38400 $1
+#}
+
+
+#function arduino-update() {
+#	arduino-cli core update-index
+#}
+#function arduino-install() {
+#	arduino-cli core update-index
+#	arduino-cli core install arduino:avr
+#}

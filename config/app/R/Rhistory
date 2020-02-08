@@ -1,0 +1,31 @@
+library("fitdistrplus")
+library("formattable")
+library("GGally")
+tmp=read.csv(file = "calc_cent.csv")
+calc_cent=as.list(tmp)
+calc.distribution <- function(calc_cent){
+dist_name <- c("norm", "exp", "weibull", "lnorm", "gamma", "logis", "cauchy", "gumbel", "triang", "binom")
+# calc_dist
+dgumbel <- function(x, a, b) 1/b*exp((a-x)/b)*exp(-exp((a-x)/b))
+pgumbel <- function(q, a, b) exp(-exp((a-q)/b))
+qgumbel <- function(p, a, b) a-b*log(-log(p))
+# Computation
+calc_dist <- list()
+for (i in names(calc_cent)[c(-1,-7)]) {
+print(i)
+dat <- abs(calc_cent[[i]])
+fit <- list()
+tryCatch({fit$norm    <- fitdist(dat,dist_name[1])} ,error = function(error_condition)                            {})
+tryCatch({fit$exp     <- fitdist(dat,dist_name[2])} ,error = function(error_condition)                            {})
+tryCatch({fit$weibull <- fitdist(dat,dist_name[3])} ,error = function(error_condition)                            {})
+tryCatch({fit$lnorm   <- fitdist(dat,dist_name[4])} ,error = function(error_condition)                            {})
+tryCatch({fit$gamma   <- fitdist(dat,dist_name[5])} ,error = function(error_condition)                            {})
+tryCatch({fit$logis   <- fitdist(dat,dist_name[6])} ,error = function(error_condition)                            {})
+tryCatch({fit$cauchy  <- fitdist(dat,dist_name[7])} ,error = function(error_condition)                            {})
+tryCatch({fit$gumbel  <- fitdist(dat,dist_name[8], start=list(a=10,b=5))} ,error = function(error_condition)      {})
+tryCatch({fit$triang  <- fitdist(dat,dist_name[9])} ,error = function(error_condition)                            {})
+tryCatch({fit$binom   <- fitdist(dat,dist_name[10] ,start=list(size=8, prob=mean(dat)/8))} ,error = function(error_condition)                            {})
+calc_dist[[i]] <- fit
+}
+return(calc_dist)
+}

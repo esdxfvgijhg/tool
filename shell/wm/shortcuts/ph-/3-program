@@ -1,9 +1,0 @@
-#!/bin/bash
-
-#oldclip="$(xclip -o -sel clip)"
-#echo -n "/home/aghiles/Aghiles/Program/Experimentation" | xclip -i -sel clip
-#nautilus "/home/aghiles/Aghiles/Program/Engineering" && wmctrl -R Engineering && xdotool key ctrl+t ctrl+l ctrl+v Return
-#echo -n "$oldclip" | xclip -i -sel clip
-
-GY=$PROGRAMPATH
-gnome-terminal --title "`basename $GY`" --command="bash -c 'vifm $GY; $SHELL'"

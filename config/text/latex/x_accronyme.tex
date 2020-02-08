@@ -6,11 +6,11 @@
 \usepackage{babel,csquotes}
 
 \usepackage[
-  style=authoryear,
+  style=ieee,
   hyperref=true
 ]{biblatex}
 %\bibliography{\jobname}
-\addbibresource{test.bib}
+\addbibresource{privacy.bib}
 
 \DeclareCiteCommand{\cite}
   {\usebibmacro{prenote}}
@@ -99,21 +99,21 @@
 \usepackage{hyperref}
 
 \begin{document}
-cite: \cite{article,book,book2}
+cite: \cite{boukoros_measuring_2017}
 
-cite*: \cite*{book}
+cite*: \cite*{boukoros_measuring_2017}
 
-autocite: \autocite{book}
+autocite: \autocite{boukoros_measuring_2017}
 
-%textcite: \textcite[33]{article}
+%textcite: \textcite[33]{boukoros_measuring_2017}
 
-citeauthor/citeyear: \citeauthor{article} (\citeyear{article})
+citeauthor/citeyear: \citeauthor{boukoros_measuring_2017} (\citeyear{boukoros_measuring_2017})
 
-footcite: \footcite[21]{book}
+footcite: \footcite[21]{boukoros_measuring_2017}
 
-parencite: \parencite{book}
+parencite: \parencite{boukoros_measuring_2017}
 
-parencite*: \parencite*{article}
+parencite*: \parencite*{boukoros_measuring_2017}
 
 \printbibliography
 

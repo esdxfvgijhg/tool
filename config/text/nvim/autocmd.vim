@@ -66,6 +66,7 @@ autocmd FileType html inoremap ü &uuml;
 autocmd FileType html inoremap ,yl <font color="yellow"></font><Esc>F>a
 autocmd FileType html,php,twig setlocal omnifunc=htmlcomplete#CompleteTags " omnicompletion for some filetypes
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS " omnicompletion for some filetypes
+autocmd FileType json syntax match Comment +\/\/.\+$+
 autocmd FileType mail,markdown setlocal spelllang=en,de " spell correction on markdown files and mail (for mutt)
 autocmd FileType mail,markdown setlocal spell " spell correction on markdown files and mail (for mutt)
 autocmd FileType mail,markdown setlocal wrap " spell correction on markdown files and mail (for mutt)
@@ -142,5 +143,31 @@ autocmd FileType xml inoremap ,e <item><Enter><title><++></title><Enter><guid<sp
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags " omnicompletion for some filetypes
 autocmd VimLeave *.tex !texclear % " Runs a script that cleans out tex build files whenever I close out of a .tex file.
 autocmd VimResized * wincmd = " Autoresize windows/splits when vim resizes
+
+
+
+
+" NCM2
+augroup NCM2
+  autocmd!
+  " enable ncm2 for all buffers
+  autocmd BufEnter * call ncm2#enable_for_buffer()
+  " :help Ncm2PopupOpen for more information
+  set completeopt=noinsert,menuone,noselect
+  " When the <Enter> key is pressed while the popup menu is visible, it only
+  " hides the menu. Use this mapping to close the menu and also start a new line.
+  inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
+  " uncomment this block if you use vimtex for LaTex
+  " autocmd Filetype tex call ncm2#register_source({
+  "           \ 'name': 'vimtex',
+  "           \ 'priority': 8,
+  "           \ 'scope': ['tex'],
+  "           \ 'mark': 'tex',
+  "           \ 'word_pattern': '\w+',
+  "           \ 'complete_pattern': g:vimtex#re#ncm2,
+  "           \ 'on_complete': ['ncm2#on_complete#omni', 'vimtex#complete#omnifunc'],
+  "           \ })
+augroup END
+
 
 

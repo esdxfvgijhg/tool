@@ -1,0 +1,388 @@
+[Info   ] <Application::Application(int&, char**)> Starting Shotcut version 17.06.01 
+[Info   ] <Application::Application(int&, char**)> Linux version 
+[Info   ] <Application::Application(int&, char**)> number of logical cores = 4 
+[Info   ] <Application::Application(int&, char**)> locale = QLocale(French, Latin, France) 
+[Info   ] <Application::Application(int&, char**)> install dir = "/home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/bin" 
+[Info   ] <Application::Application(int&, char**)> device pixel ratio = 1 
+[Debug  ] <MainWindow::changeTheme> begin 
+[Debug  ] <MainWindow::changeTheme> end 
+[Debug  ] <MainWindow::MainWindow()> begin 
+[Info   ] <GLTestWidget::GLTestWidget(QWidget*)> OpenGL context version 3 0 
+[Debug  ] <Mlt::Controller::Controller()> begin 
+[Warning] <MLT> No LADSPA plugins were found!Check your LADSPA_PATH environment variable.
+[Debug  ] <Mlt::Controller::Controller()> end 
+[Debug  ] <Mlt::GLWidget::GLWidget(QObject*)> begin 
+[Debug  ] <Mlt::GLWidget::GLWidget(QObject*)> end 
+[Debug  ] <MainWindow::setupSettingsMenu> begin 
+[Warning] <MLT> [ 0x2bf5ed0] The DeckLink drivers not installed.
+[Debug  ] <MainWindow::setupSettingsMenu> end 
+[Debug  ] <MainWindow::readPlayerSettings> begin 
+[Debug  ] <MainWindow::readPlayerSettings> end 
+[Debug  ] <MainWindow::configureVideoWidget> begin 
+[Debug  ] <MainWindow::setProfile> "" 
+[Debug  ] <Mlt::Controller::setProfile> setting to profile "Automatic" 
+[Debug  ] <MainWindow::configureVideoWidget> end 
+[Debug  ] <ScopeController::ScopeController(QMainWindow*, QMenu*)> begin 
+[Debug  ] <ScopeWidget::ScopeWidget(const QString&)> begin true 
+[Debug  ] <ScopeWidget::ScopeWidget(const QString&)> end 
+[Debug  ] <AudioLoudnessScopeWidget::AudioLoudnessScopeWidget()> begin 
+[Debug  ] <AudioLoudnessScopeWidget::AudioLoudnessScopeWidget()> end 
+[Debug  ] <ScopeDock::ScopeDock(ScopeController*, ScopeWidget*)> begin 
+[Debug  ] <ScopeDock::ScopeDock(ScopeController*, ScopeWidget*)> end 
+[Debug  ] <ScopeWidget::ScopeWidget(const QString&)> begin true 
+[Debug  ] <ScopeWidget::ScopeWidget(const QString&)> end 
+[Debug  ] <AudioPeakMeterScopeWidget::AudioPeakMeterScopeWidget()> begin 
+[Debug  ] <AudioPeakMeterScopeWidget::AudioPeakMeterScopeWidget()> end 
+[Debug  ] <ScopeDock::ScopeDock(ScopeController*, ScopeWidget*)> begin 
+[Debug  ] <ScopeDock::ScopeDock(ScopeController*, ScopeWidget*)> end 
+[Debug  ] <ScopeWidget::ScopeWidget(const QString&)> begin true 
+[Debug  ] <ScopeWidget::ScopeWidget(const QString&)> end 
+[Debug  ] <AudioSpectrumScopeWidget::AudioSpectrumScopeWidget()> begin 
+[Debug  ] <AudioSpectrumScopeWidget::AudioSpectrumScopeWidget()> end 
+[Debug  ] <ScopeDock::ScopeDock(ScopeController*, ScopeWidget*)> begin 
+[Debug  ] <ScopeDock::ScopeDock(ScopeController*, ScopeWidget*)> end 
+[Debug  ] <ScopeWidget::ScopeWidget(const QString&)> begin true 
+[Debug  ] <ScopeWidget::ScopeWidget(const QString&)> end 
+[Debug  ] <AudioWaveformScopeWidget::AudioWaveformScopeWidget()> begin 
+[Debug  ] <AudioWaveformScopeWidget::AudioWaveformScopeWidget()> end 
+[Debug  ] <ScopeDock::ScopeDock(ScopeController*, ScopeWidget*)> begin 
+[Debug  ] <ScopeDock::ScopeDock(ScopeController*, ScopeWidget*)> end 
+[Debug  ] <ScopeController::ScopeController(QMainWindow*, QMenu*)> end 
+[Debug  ] <RecentDock::RecentDock(QWidget*)> begin 
+[Debug  ] <RecentDock::RecentDock(QWidget*)> end 
+[Debug  ] <PlaylistDock::PlaylistDock(QWidget*)> begin 
+[Debug  ] <PlaylistDock::PlaylistDock(QWidget*)> end 
+[Debug  ] <TimelineDock::TimelineDock(QWidget*)> begin 
+[Debug  ] <TimelineDock::TimelineDock(QWidget*)> end 
+[Debug  ] <FiltersDock::FiltersDock(MetadataModel*, AttachedFiltersModel*, QWidget*)> begin 
+[Debug  ] <FiltersDock::FiltersDock(MetadataModel*, AttachedFiltersModel*, QWidget*)> end 
+[Debug  ] <EncodeDock::EncodeDock(QWidget*)> begin 
+[Debug  ] <EncodeDock::EncodeDock(QWidget*)> end 
+[Debug  ] <JobsDock::JobsDock(QWidget*)> begin 
+[Debug  ] <JobsDock::JobsDock(QWidget*)> end 
+[Debug  ] <MainWindow::readWindowSettings> begin 
+[Debug  ] <MainWindow::readWindowSettings> end 
+[Debug  ] <LeapNetworkListener::start> begin 
+[Debug  ] <MainWindow::MainWindow()> end 
+[Debug  ] <Database::run> Database version is 1 
+[Debug  ] <Mlt::GLWidget::initializeGL> begin 
+[Info   ] <Mlt::GLWidget::initializeGL> OpenGL vendor "Intel Open Source Technology Center" 
+[Info   ] <Mlt::GLWidget::initializeGL> OpenGL renderer "Mesa DRI Intel(R) HD Graphics 520 (Skylake GT2) " 
+[Info   ] <Mlt::GLWidget::initializeGL> OpenGL threaded? false 
+[Info   ] <Mlt::GLWidget::initializeGL> OpenGL ES? false 
+[Debug  ] <Mlt::GLWidget::initializeGL> end 
+[Warning] <> qrc:/src/qml/vui_droparea.qml:1:1: module "QtQuick" is not installed
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "alpha_adjust" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/alpha_adjust/meta.qml:19 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "alpha_view" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/alpha_view/meta.qml:19 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "audio_balance" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/audio_balance/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "audio_bandpass" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/audio_bandpass/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "audio_basstreble" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/audio_basstreble/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "audio_channelcopy" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/audio_channelcopy/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "audio_compressor" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/audio_compressor/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "audio_delay" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/audio_delay/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "audio_expander" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/audio_expander/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "audio_fadein" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/audio_fadein/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "audio_fadeout" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/audio_fadeout/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "audio_gain" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/audio_gain/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "audio_highpass" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/audio_highpass/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "audio_limiter" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/audio_limiter/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "audio_lowpass" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/audio_lowpass/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "audio_mono" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/audio_mono/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "audio_mute" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/audio_mute/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "audio_normalize_1p" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/audio_normalize_1p/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "audio_normalize_2p" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/audio_normalize_2p/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "audio_notch" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/audio_notch/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "audio_pan" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/audio_pan/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "audio_reverb" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/audio_reverb/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "audio_swapchannels" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/audio_swapchannels/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "bluescreen0r" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/bluescreen0r/meta.qml:19 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "blur" "meta_boxblur.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/blur/meta_boxblur.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "blur" "meta_movit.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/blur/meta_movit.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "brightness" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/brightness/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "brightness" "meta_movit.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/brightness/meta_movit.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "color" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/color/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "color" "meta_frei0r_coloradj.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/color/meta_frei0r_coloradj.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "color" "meta_movit.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/color/meta_movit.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "contrast" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/contrast/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "contrast" "meta_movit.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/contrast/meta_movit.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "crop" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/crop/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "crop" "meta_movit.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/crop/meta_movit.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "dust" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/dust/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "dynamictext" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/dynamictext/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "fadein_brightness" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/fadein_brightness/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "fadein_movit" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/fadein_movit/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "fadeout_brightness" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/fadeout_brightness/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "fadeout_movit" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/fadeout_movit/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "glow" "meta_frei0r.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/glow/meta_frei0r.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "glow" "meta_movit.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/glow/meta_movit.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "grain" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/grain/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "invert" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/invert/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "keyspillm0pup" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/keyspillm0pup/meta.qml:19 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "lenscorrection" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/lenscorrection/meta.qml:18 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "lines" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/lines/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "lut3d" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/lut3d/meta.qml:18 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "mirror" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/mirror/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "mirror" "meta_movit.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/mirror/meta_movit.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "movit_diffusion" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/movit_diffusion/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "oldfilm" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/oldfilm/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "opacity" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/opacity/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "opacity" "meta_movit.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/opacity/meta_movit.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "rotate" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/rotate/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "saturation" "meta_frei0r.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/saturation/meta_frei0r.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "saturation" "meta_movit.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/saturation/meta_movit.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "select0r" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/select0r/meta.qml:19 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "sepia" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/sepia/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "sharpen" "meta_frei0r.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/sharpen/meta_frei0r.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "sharpen" "meta_movit.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/sharpen/meta_movit.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "size_position" "meta_affine.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/size_position/meta_affine.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "size_position" "meta_movit.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/size_position/meta_movit.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "smartblur" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/smartblur/meta.qml:19 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "spillsuppress" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/spillsuppress/meta.qml:19 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "stabilize" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/stabilize/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "tcolor" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/tcolor/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "vignette" "meta_movit.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/vignette/meta_movit.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "vignette" "meta_oldfilm.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/vignette/meta_oldfilm.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "wave" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/wave/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "webvfx" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/webvfx/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "webvfx_circular_frame" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/webvfx_circular_frame/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "webvfx_ruttetraizer" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/webvfx_ruttetraizer/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "webvfx_threejs_text" "meta.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/webvfx_threejs_text/meta.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "white" "meta_frei0r.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/white/meta_frei0r.qml:1 module \"QtQuick\" is not installed\n" 
+[Debug  ] <FilterController::loadFilterMetadata> reading filter metadata "white" "meta_movit.qml" 
+[Warning] <> QQmlComponent: Component is not ready
+[Warning] <FilterController::loadFilterMetadata> "file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/filters/white/meta_movit.qml:1 module \"QtQuick\" is not installed\n" 
+[Warning] <> libpng warning: iCCP: profile 'icc': 'RGB ': RGB color space not permitted on grayscale PNG
+[Debug  ] <LeapNetworkListener::onDisconnected> Disconnected from Leap Motion 
+[Debug  ] <LeapNetworkListener::onError> Leap Motion WebSocket error: "Connexion refusée" 
+[Debug  ] <MainWindow::open> "/home/aghiles/.local/share/Meltytech/Shotcut/__untitled__.mlt" 
+[Debug  ] <MltXmlChecker::MltXmlChecker()> decimal point ',' 
+[Debug  ] <MltXmlChecker::check> begin 
+[Debug  ] <MltXmlChecker::check> end 
+[Debug  ] <AudioLoudnessScopeWidget::resetQview> begin 
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:21:1: module "QtQuick.Controls.Styles" is not installed 
+     import QtQuick.Controls.Styles 1.4 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:19:1: module "QtQuick" is not installed 
+     import QtQuick 2.5 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:22:1: module "QtQuick.Layouts" is not installed 
+     import QtQuick.Layouts 1.0 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:20:1: module "QtQuick.Controls" is not installed 
+     import QtQuick.Controls 1.4 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:23:1: module "QtQuick.Extras" is not installed 
+     import QtQuick.Extras 1.4 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:21:1: module "QtQuick.Controls.Styles" is not installed 
+     import QtQuick.Controls.Styles 1.4 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:19:1: module "QtQuick" is not installed 
+     import QtQuick 2.5 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:22:1: module "QtQuick.Layouts" is not installed 
+     import QtQuick.Layouts 1.0 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:20:1: module "QtQuick.Controls" is not installed 
+     import QtQuick.Controls 1.4 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:23:1: module "QtQuick.Extras" is not installed 
+     import QtQuick.Extras 1.4 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:21:1: module "QtQuick.Controls.Styles" is not installed 
+     import QtQuick.Controls.Styles 1.4 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:19:1: module "QtQuick" is not installed 
+     import QtQuick 2.5 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:22:1: module "QtQuick.Layouts" is not installed 
+     import QtQuick.Layouts 1.0 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:20:1: module "QtQuick.Controls" is not installed 
+     import QtQuick.Controls 1.4 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:23:1: module "QtQuick.Extras" is not installed 
+     import QtQuick.Extras 1.4 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:21:1: module "QtQuick.Controls.Styles" is not installed 
+     import QtQuick.Controls.Styles 1.4 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:19:1: module "QtQuick" is not installed 
+     import QtQuick 2.5 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:22:1: module "QtQuick.Layouts" is not installed 
+     import QtQuick.Layouts 1.0 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:20:1: module "QtQuick.Controls" is not installed 
+     import QtQuick.Controls 1.4 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:23:1: module "QtQuick.Extras" is not installed 
+     import QtQuick.Extras 1.4 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:21:1: module "QtQuick.Controls.Styles" is not installed 
+     import QtQuick.Controls.Styles 1.4 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:19:1: module "QtQuick" is not installed 
+     import QtQuick 2.5 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:22:1: module "QtQuick.Layouts" is not installed 
+     import QtQuick.Layouts 1.0 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:20:1: module "QtQuick.Controls" is not installed 
+     import QtQuick.Controls 1.4 
+     ^
+[Warning] <> file:///home/aghiles/Aghiles/tool/tools/shotcut/Shotcut.app/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml:23:1: module "QtQuick.Extras" is not installed 
+     import QtQuick.Extras 1.4 
+     ^

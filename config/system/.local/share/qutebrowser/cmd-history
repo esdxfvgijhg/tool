@@ -1,0 +1,99 @@
+/ser
+:q
+/e
+:quickmark-load -t 
+:quickmark-load 
+:spawn mpv {url}
+:spawn qutebrowser {url}
+:spawn copyx {url}
+:open https://www.google.com/
+:open http://www.smiffy.de/data-analytics-2019/
+:open http://www.smiffy.de
+:open http://www.smiffy.de/data-analytics-2019/
+:open https://github.com/websense/lorasimulator
+:open https://github.com/websense/loraDatasets
+:open https://github.com/lcpz/dots/blob/master/bin
+/loc
+:open https://www.rfwireless-world.com/calculators/LoRa-Sensitivity-Calculator.html
+:open https://www.rfwireless-world.com/downloads/
+:set content.javascript.can_access_clipboard
+:open google.com
+/sampl
+:open https://esxdwqzpml@github.com/esxdwqzpml
+:open https://esxdwqzpml@github.com/
+:open https://github.com/esxdwqzpml
+:open https://github.com/esdxfvgijhg
+:open http://www.semtech.com/
+:open google.com
+:open ²
+/=
+/pa
+/
+/record
+:open https://www.google.com/
+/.pro
+/config
+/user
+:open https://www.amazon.fr/AZDelivery-NEO-6M-module-GPS-identique/dp/B01N38EMBF/ref=sr_1_1_sspa?keywords=Gps+Arduino&qid=1572362570&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExQU4yS1RCVjRMMFEmZW5jcnlwdGVkSWQ9QTA1NzQ2NjUyVFlKSDY2N1RJSUVLJmVuY3J5cHRlZEFkSWQ9QTA1OTAwMDcxUk9KV1gwMkRHM01IJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==
+/
+:history
+/citeauthor
+/first
+:open https://u2704495.ct.sendgrid.net/wf/click?upn=6UOKkUrqrAdwqHtYJMi-2BXkkOtlq3Nfxyy-2FVAFfMx3Qa02vRgq5SGqqvxSqoa6KLVVF2Ki9-2Fliy4bu02enaoQnb5wbxNJmKZ92lPkJo16lm7jQFMJXb5xVf29LrVqLP0i6C-2BRK019zggihn156lDBEKRmDI-2BBJsmtDS61Vl03Mdg-3D_ra3kOhYPxkPNScEbyqSbE0NPKDXuh4GSfAzWR7tDIj
+UQU-2FDA0FqgvpQSj87TCz0CvXAWhe8-2F35h229BVAkIaQimaOYklSTJya4LCEmsJWsSqSLuDyFiV39HEXEn7M6NODXsSxLZmu69GjnWayIbVcQbs4LYWVkQK9QlE7A6fOxPavtM2jpBgarpVQvGMzqve1xpZCdJATW6vdF4l6Tycrsg-2B-2BWopHcPUUJgoFwWoCubR3Ss2YjJfDfvcHKmR0uSO
+:open https://u2704495.ct.sendgrid.net/wf/click?upn=6UOKkUrqrAdwqHtYJMi-2BXkkOtlq3Nfxyy-2FVAFfMx3Qa02vRgq5SGqqvxSqoa6KLVVF2Ki9-2Fliy4bu02enaoQnb5wbxNJmKZ92lPkJo16lm7jQFMJXb5xVf29LrVqLP0i6C-2BRK019zggihn156lDBEKRmDI-2BBJsmtDS61Vl03Mdg-3D_ra3kOhYPxkPNScEbyqSbE0NPKDXuh4GSfAzWR7tDIjUQU-2FDA0FqgvpQSj87TCz0CvXAWhe8-2F35h229BVAkIaQimaOYklSTJya4LCEmsJWsSqSLuDyFiV39HEXEn7M6NODXsSxLZmu69GjnWayIbVcQbs4LYWVkQK9QlE7A6fOxPavtM2jpBgarpVQvGMzqve1xpZCdJATW6vdF4l6Tycrsg-2B-2BWopHcPUUJgoFwWoCubR3Ss2YjJfDfvcHKmR0uSO
+:open https://listes.services.cnrs.fr/wws/family_signoff_request/sntrs-cgt/aghiles.djoudi%40gmail.com
+:open https://docs.google.com/spreadsheets
+:open https://www.google.com/
+:open
+:open https://portal.wifirst.net/
+:open https://listes.services.cnrs.fr/wws/family_signoff_request/sgen-cfdt/aghiles.djoudi%40gmail.com
+:open https://listes.services.cnrs.fr/wws/family_signoff_request/snprees-fo/aghiles.djoudi%40gmail.com
+:open http://www.semtech.com/apps/filedown/down.php?
+file=SX1272LoRaCalculatorSetup1\%271.zip
+/genetic
+/local
+:open https://smartmakers.io/en/lorawan-range-part-1-the-most-important-factors-for-a-good-lorawan-signal-range/
+:open https://smartmakers.io/en/lorawan-range-part-1-the-most-important-factors-for-a-good-lorawan-signal-range
+:open https://smartmakers.io/en/lorawan-range-part-1-the-most-important-factors-for-a-good-lorawan-signal-range/
+/local
+:open youtube.com
+:open https://www.youtube.com/
+:open www.youtube.com
+:open https://www.youtube.com/
+:open  https://github.com/neoclide/coc.nvim/issues 
+:open https://listes.services.cnrs.fr/wws/family_signoff_request/sntrs-cgt/aghiles.djoudi%40gmail.com
+:open https://listes.services.cnrs.fr/wws/ticket/50608258574176
+:open https://portal.wifirst.net/
+/R_HOME
+/oun
+:open https://stackoverflow.com/questions/14577412/how-to-convert-variable-object-name-into-string
+/zq
+/colo
+:open github.com/amandine01
+:open https://github.com/Amandine01/SmartConstructionV2/tree/master/interface/api
+:open https://www.overleaf.com/login
+:q
+/tick
+/table
+:print
+:open http://localhost:631/admin
+/position
+:open sourceforge.net/p/madwiﬁ/svn/HEAD/tree/madwiﬁ/trunk/ ath rate/minstrel/minstrel.txt
+:open https://www.google.com/
+:history
+/cat
+:history
+:open https://github.com/Amandine01/SmartConstructionV2/commits?author=Amandine01
+:history
+/mcdm
+/
+/soit
+:open https://framaforms.org/prise-de-position-du-ligm-sur-les-reformes-en-cours-1580737793
+/hide
+/point meta 
+:open https://github.com/Amandine01/SmartConstructionV2/commits/master
+:set
+/duck
+:w
+:set

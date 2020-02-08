@@ -1,0 +1,35 @@
+## Receive options.
+
+set hostname         = "gmail.com"
+set my_status_format    = " $my_shortcut3 $my_account3$my_status"
+set status_format = $my_status_format
+#unmailboxes *
+
+# IMAP
+set imap_user       = $my_account3
+set imap_pass       = `pass aghiles.djoudi@esiee.fr`
+set folder          = "imaps://imap.gmail.com:993"
+
+# Offline IMAP
+#set mbox_type       = Maildir
+#set folder          = ~/Aghiles/Mail/$my_account3
+#mailboxes           `find ~/Aghiles/Mail/$my_account3 -type d -name cur -printf '%h '|sed 's/ \//\n\//g'|sed 's/ /_/g'|sort|xargs echo`
+
+# Divers
+set from             =  $my_account3
+set signature        =  $my_path/accounts/signatures/work
+my_hdr Bcc: $my_account3
+
+#SMTP
+set smtp_url        = "smtps://$my_account3@smtp.gmail.com:465"
+set smtp_pass       = `pass aghiles.djoudi@esiee.fr`
+
+# Folder
+set spoolfile        ="+[Gmail]/Tous les messages"
+set mbox            ="+[Gmail]/Tous les messages"
+set postponed       ="+[Gmail]/Brouillons"
+set record          ="+[Gmail]/Messages envoyés"
+set trash           ="+[Gmail]/Corbeille"
+mailboxes
+
+

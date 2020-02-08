@@ -1,0 +1,82 @@
+#!/bin/sh
+
+sed -Ezi 's/\\\\\n/ /g' $WRITINGPATH/resources/bib/iot.bib
+sed -Ezi 's/\n([^@ ])/\1/g' $WRITINGPATH/resources/bib/iot.bib
+sed -Ezi 's/\n([^@ ])/\1/g' $WRITINGPATH/resources/bib/iot.bib
+sed -Ei 's/\\textbackslash\{\}/\\/g' $WRITINGPATH/resources/bib/iot.bib
+sed -Ei 's/\\\{/\{/g' $WRITINGPATH/resources/bib/iot.bib
+sed -Ei 's/\\_/\_/g' $WRITINGPATH/resources/bib/iot.bib
+sed -Ei 's/\\\}/\}/g' $WRITINGPATH/resources/bib/iot.bib
+
+cd $WRITINGPATH/a-appendix
+library $WRITINGPATH/resources/bib/iot.bib > .l.txt
+
+
+
+library2 $WRITINGPATH/resources/bib/iot.bib | sort -r | sed -E "s/^(.*)/sed \-ie \'s\/\\1 \/ytre\/g\' .l.txt; sed \-ie \'0,\/ytre\/\{s\/ytre\/\\1 \\/\}\' .l.txt; sed \-ie \'s\/ytre\/ \/g\' .l.txt/g" > .m
+chmod u+x .m
+./.m
+
+
+echo "
+\\\newpage
+\\\newgeometry{top=.5cm, bottom=.5cm, left=.5cm, right=.5cm}
+\\onecolumn
+" > 02_papers.tex
+
+sed -E 's/^([^ ]+)/\\textbf{\1} \\newline /g' .l.txt >> 02_papers.tex
+
+
+echo "
+\\\restoregeometry" >> 02_papers.tex
+
+
+
+library2 $WRITINGPATH/resources/bib/iot.bib | sed -E "s/^(.*)/\\\aghiles{\1}/g" > $WRITINGPATH/resources/bib/ref.tex
+echo "\\printbibliography[heading=subbibliography," >> $WRITINGPATH/resources/bib/ref.tex
+library2 $WRITINGPATH/resources/bib/iot.bib | sed -E "s/^(.*)/notkeyword={\1},/g" >> $WRITINGPATH/resources/bib/ref.tex
+echo "title=Others]" >> $WRITINGPATH/resources/bib/ref.tex
+
+
+
+
+
+
+
+
+
+
+#echo "
+#\\\newgeometry{top=.5cm, bottom=.5cm, left=.5cm, right=.5cm}
+#\\onecolumn
+#" > 05_state.tex
+#awk  '{
+#				z1=$1; z2=$2; z3=$3; z4=$4; for(i=5;i<=NF;i++){z4=z4" "$i}; 
+#        a[z1][z2][z3] ? 
+#            a[z1][z2][z3]=a[z1][z2][z3]"\n\t\t\t"z4 :
+#            a[z1][z2][z3]=""z4 ;
+#      }
+#      END{
+#        for(cont in a){
+#            printf "\n\\textbf{%s}\\newline", cont;
+#            for(count in a[cont]){
+#                for(city in a[cont][count]){
+##                    printf "%s", count;
+#                    printf " " count " " city " " a[cont][count][city]
+#      }
+#      }}}' .l.txt | sort >> 05_state.tex
+#echo "
+#\\\restoregeometry" >> 05_state.tex
+
+
+
+
+
+
+
+
+
+
+#sed \-e \'s\/\\1\/ytre\/g\' \-e \'0,\/ytre\/\{s\/ytre\/\\1\\/\}\' \-e \'s\/ytre\/\/g\' .l.txt
+#sed -e 's/\1/ytre/g' -e '0,/ytre/{s/ytre/\1/}' -e 's/ytre//g' .l.txt
+

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+
+#function vvv () {
+#	for file in "$@"; do 
+#		directory=`dirname "$file"`
+#		filename=`basename "$file"`
+#		echo $filename
+#		extension="${filename##*.}"
+#		filename="${filename%.*}"
+#		$2 ${@:3:$#}
+##		pdftotext "$file" "$directory/$filename.txt"; 
+#	done 
+#}
+
+#echo "${@: -1}"
+#echo "${@:1:$#-1}"
+
+find . -maxdepth 6 -type f -name "${@:$#}" -print0 | xargs -0  "${@:1:$#-1}"
+
+
+
+#find . -maxdepth 6 -type f -name "*.pdf" -exec xpdf2txt {} +
+
+

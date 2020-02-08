@@ -1,0 +1,13 @@
+board_manager:
+  additional_urls: []
+daemon:
+  port: "50051"
+directories:
+  data: /home/aghiles/Aghiles/tool/tools/n-arduino/arduino-cli
+  downloads: /home/aghiles/Aghiles/tool/tools/n-arduino/arduino-cli/staging
+  user: /home/aghiles/Aghiles/tool/tools/n-arduino
+logging:
+  file: ""
+  format: text
+  level: info
+

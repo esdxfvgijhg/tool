@@ -1,0 +1,11 @@
+#!/bin/bash
+
+black -l 999999 .
+sed -Ei 's/(^[^\"]*)#.*/\1/g' $@
+sed -Ezi 's/\\[ \t]*\n[ \t]*/ /g' $@
+sed -Ezi 's/\n[\n \t]*\n/\n/g' $@
+sed -Ezi 's/\n[ \t]*(\#[^\n]*)(\n[^\n]*)/\2 \1/g' $@
+
+#sed -i  '1s/^/#!\/usr\/bin\/python\n/' $@
+#chmod -R u+x *
+

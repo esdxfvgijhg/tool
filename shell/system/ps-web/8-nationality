@@ -1,0 +1,3 @@
+#!/bin/bash
+
+chromium http://www.hauts-de-seine.gouv.fr/booking/create/13525

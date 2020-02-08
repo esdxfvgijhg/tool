@@ -1,0 +1,10 @@
+library <- function(v0){
+	v1 <- deparse(substitute(v0))
+	if (substr(v1, 1, 1)!="\"")
+		p <- v1
+	else
+		p <- v0
+  if (!is.element(p, installed.packages()[,1]))
+    install.packages(p, dep = TRUE)
+  require(p, character.only = TRUE)
+}

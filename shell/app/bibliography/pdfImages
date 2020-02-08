@@ -1,0 +1,17 @@
+#!/bin/bash
+
+
+imageDest=~/Downloads/Pictures/tmp_image
+mkdir -p $imageDest
+
+
+mkdir $imageDest
+# for d in *; do pdfimages -png $d/*.pdf pdfImages/$d; done
+for d in $BIBPATH/*; do 
+	filename=`basename $d`
+	pdfimages -png $d/*.pdf $imageDest/$filename; 
+done
+
+cd $imageDest
+find . -name "*.png" -size -1k -delete
+

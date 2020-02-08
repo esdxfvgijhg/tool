@@ -1,0 +1,357 @@
+#pa1
+ctrl + alt + ampersand
+	zsh -ci Aghiles/tool/shell/system/pa-*/1*
+# pa2
+ctrl + alt + eacute
+	zsh -ci Aghiles/tool/shell/system/pa-*/2*
+# pa3
+ctrl + alt + quotedbl
+	zsh -ci Aghiles/tool/shell/system/pa-*/3*
+# pa4
+ctrl + alt + apostrophe
+	zsh -ci Aghiles/tool/shell/system/pa-*/4*
+# pa5
+ctrl + alt + parenleft
+	zsh -ci Aghiles/tool/shell/system/pa-*/5*
+# pa6
+ctrl + alt + minus
+	zsh -ci Aghiles/tool/shell/system/pa-*/6*
+# pa7
+ctrl + alt + egrave
+	zsh -ci Aghiles/tool/shell/system/pa-*/7*
+# pa8
+ctrl + alt + underscore
+	zsh -ci Aghiles/tool/shell/system/pa-*/8*
+# pa9
+ctrl + alt + ccedilla
+	zsh -ci Aghiles/tool/shell/system/pa-*/9*
+# pa0
+ctrl + alt + agrave
+	zsh -ci Aghiles/tool/shell/system/pa-*/0*
+# pa10
+ctrl + alt + parenright
+	zsh -ci Aghiles/tool/shell/system/pa-*/)*
+# pa11
+ctrl + alt + equal
+	zsh -ci Aghiles/tool/shell/system/pa-*/=*
+# p1
+ctrl + ampersand
+	zsh -ci Aghiles/tool/shell/system/p-*/1*
+# p2
+ctrl + eacute
+	zsh -ci Aghiles/tool/shell/system/p-*/2*
+# p3
+ctrl + quotedbl
+	zsh -ci Aghiles/tool/shell/system/p-*/3*
+# p4
+ctrl + apostrophe
+	zsh -ci Aghiles/tool/shell/system/p-*/4*
+# p5
+ctrl + parenleft
+	zsh -ci Aghiles/tool/shell/system/p-*/5*
+# p6
+ctrl + minus
+	zsh -ci Aghiles/tool/shell/system/p-*/6*
+# p7
+ctrl + egrave
+	zsh -ci Aghiles/tool/shell/system/p-*/7*
+# p8
+ctrl + underscore
+	zsh -ci Aghiles/tool/shell/system/p-*/8*
+# p9
+ctrl + ccedilla
+	zsh -ci Aghiles/tool/shell/system/p-*/9*
+# p0
+ctrl + agrave
+	zsh -ci Aghiles/tool/shell/system/p-*/0*
+# phoe
+ctrl + shift + oe
+	zsh -ci Aghiles/tool/shell/system/ph-*/oe*
+# ph1
+ctrl + shift + ampersand
+	zsh -ci Aghiles/tool/shell/system/ph-*/1*
+# ph2
+ctrl + shift + eacute
+	zsh -ci Aghiles/tool/shell/system/ph-*/2*
+# ph3
+ctrl + shift + quotedbl
+	zsh -ci Aghiles/tool/shell/system/ph-*/3*
+# ph4
+ctrl + shift + apostrophe
+	zsh -ci Aghiles/tool/shell/system/ph-*/4*
+# ph5
+ctrl + shift + parenleft
+	zsh -ci Aghiles/tool/shell/system/ph-*/5*
+# ph6
+ctrl + shift + minus
+	zsh -ci Aghiles/tool/shell/system/ph-*/6*
+# ph7
+ctrl + shift + egrave
+	zsh -ci Aghiles/tool/shell/system/ph-*/7*
+# ph8
+ctrl + shift + underscore
+	zsh -ci Aghiles/tool/shell/system/ph-*/8*
+# ph9
+ctrl + shift + ccedilla
+	zsh -ci Aghiles/tool/shell/system/ph-*/9*
+# ph0
+ctrl + shift + agrave
+	zsh -ci Aghiles/tool/shell/system/ph-*/0*
+# ph10
+ctrl + shift + parenright
+	zsh -ci Aghiles/tool/shell/system/ph-*/)*
+# ph11
+ctrl + shift + equal
+	zsh -ci Aghiles/tool/shell/system/ph-*/=*
+# a1
+alt + ampersand
+	zsh -ci Aghiles/tool/shell/system/a-*/1*
+# a2
+alt + eacute
+	zsh -ci Aghiles/tool/shell/system/a-*/2*
+# a3
+alt + quotedbl
+	zsh -ci Aghiles/tool/shell/system/a-*/3*
+# a4
+alt + apostrophe
+	zsh -ci Aghiles/tool/shell/system/a-*/4*
+# a5
+alt + parenleft
+	zsh -ci Aghiles/tool/shell/system/a-*/5*
+# a6
+alt + minus
+	zsh -ci Aghiles/tool/shell/system/a-*/6*
+# a7
+alt + egrave
+	zsh -ci Aghiles/tool/shell/system/a-*/7*
+# a8
+alt + underscore
+	zsh -ci Aghiles/tool/shell/system/a-*/8*
+# a9
+alt + ccedilla
+	zsh -ci Aghiles/tool/shell/system/a-*/9*
+# a0
+alt + agrave
+	zsh -ci Aghiles/tool/shell/system/a-*/0*
+# s1
+super + ampersand
+	zsh -ci Aghiles/tool/shell/system/s-*/1*
+# s2
+super + eacute
+	zsh -ci Aghiles/tool/shell/system/s-*/2*
+# s3
+super + quotedbl
+	zsh -ci Aghiles/tool/shell/system/s-*/3*
+# s4
+super + apostrophe
+	zsh -ci Aghiles/tool/shell/system/s-*/4*
+# s5
+super + parenleft
+	zsh -ci Aghiles/tool/shell/system/s-*/5*
+# s6
+super + minus
+	zsh -ci Aghiles/tool/shell/system/s-*/6*
+# s7
+super + egrave
+	zsh -ci Aghiles/tool/shell/system/s-*/7*
+# s8
+super + underscore
+	zsh -ci Aghiles/tool/shell/system/s-*/8*
+# s9
+super + ccedilla
+	zsh -ci Aghiles/tool/shell/system/s-*/9*
+# s0
+super + agrave
+	zsh -ci Aghiles/tool/shell/system/s-*/0*
+# ps1
+ctrl + super + ampersand
+	zsh -ci Aghiles/tool/shell/system/ps-*/1*
+# ps2
+ctrl + super + eacute
+	zsh -ci Aghiles/tool/shell/system/ps-*/2*
+# ps3
+ctrl + super + quotedbl
+	zsh -ci Aghiles/tool/shell/system/ps-*/3*
+# ps4
+ctrl + super + apostrophe
+	zsh -ci Aghiles/tool/shell/system/ps-*/4*
+# ps5
+ctrl + super + parenleft
+	zsh -ci Aghiles/tool/shell/system/ps-*/5*
+# ps6
+ctrl + super + minus
+	zsh -ci Aghiles/tool/shell/system/ps-*/6*
+# ps7
+ctrl + super + egrave
+	zsh -ci Aghiles/tool/shell/system/ps-*/7*
+# ps8
+ctrl + super + underscore
+	zsh -ci Aghiles/tool/shell/system/ps-*/8*
+# ps9
+ctrl + super + ccedilla
+	zsh -ci Aghiles/tool/shell/system/ps-*/9*
+# ps0
+ctrl + super + agrave
+	zsh -ci Aghiles/tool/shell/system/ps-*/0*
+# hs1
+shift + super + ampersand
+	zsh -ci Aghiles/tool/shell/system/hs-*/1*
+# hs2
+shift + super + eacute
+	zsh -ci Aghiles/tool/shell/system/hs-*/2*
+# hs3
+shift + super + quotedbl
+	zsh -ci Aghiles/tool/shell/system/hs-*/3*
+# hs4
+shift + super + apostrophe
+	zsh -ci Aghiles/tool/shell/system/hs-*/4*
+# hs5
+shift + super + parenleft
+	zsh -ci Aghiles/tool/shell/system/hs-*/5*
+# hs6
+shift + super + minus
+	zsh -ci Aghiles/tool/shell/system/hs-*/6*
+# hs7
+shift + super + egrave
+	zsh -ci Aghiles/tool/shell/system/hs-*/7*
+# hs8
+shift + super + underscore
+	zsh -ci Aghiles/tool/shell/system/hs-*/8*
+# hs9
+shift + super + ccedilla
+	zsh -ci Aghiles/tool/shell/system/hs-*/9*
+# hs0
+shift + super + agrave
+	zsh -ci Aghiles/tool/shell/system/hs-*/0*
+# ha1
+shift + alt + ampersand
+	zsh -ci Aghiles/tool/shell/system/ha-*/1*
+# ha2
+shift + alt + eacute
+	zsh -ci Aghiles/tool/shell/system/ha-*/2*
+# ha3
+shift + alt + quotedbl
+	zsh -ci Aghiles/tool/shell/system/ha-*/3*
+# ha4
+shift + alt + apostrophe
+	zsh -ci Aghiles/tool/shell/system/ha-*/4*
+# ha5
+shift + alt + parenleft
+	zsh -ci Aghiles/tool/shell/system/ha-*/5*
+# ha6
+shift + alt + minus
+	zsh -ci Aghiles/tool/shell/system/ha-*/6*
+# ha7
+shift + alt + egrave
+	zsh -ci Aghiles/tool/shell/system/ha-*/7*
+# ha8
+shift + alt + underscore
+	zsh -ci Aghiles/tool/shell/system/ha-*/8*
+# ha9
+shift + alt + ccedilla
+	zsh -ci Aghiles/tool/shell/system/ha-*/9*
+# ha0
+shift + alt + agrave
+	zsh -ci Aghiles/tool/shell/system/ha-*/0*
+# sa1
+super + alt + ampersand
+	zsh -ci Aghiles/tool/shell/system/sa-*/1*
+# sa2
+super + alt + eacute
+	zsh -ci Aghiles/tool/shell/system/sa-*/2*
+# sa3
+super + alt + quotedbl
+	zsh -ci Aghiles/tool/shell/system/sa-*/3*
+# sa4
+super + alt + apostrophe
+	zsh -ci Aghiles/tool/shell/system/sa-*/4*
+# sa5
+super + alt + parenleft
+	zsh -ci Aghiles/tool/shell/system/sa-*/5*
+# sa6
+super + alt + minus
+	zsh -ci Aghiles/tool/shell/system/sa-*/6*
+# sa7
+super + alt + egrave
+	zsh -ci Aghiles/tool/shell/system/sa-*/7*
+# sa8
+super + alt + underscore
+	zsh -ci Aghiles/tool/shell/system/sa-*/8*
+# sa9
+super + alt + ccedilla
+	zsh -ci Aghiles/tool/shell/system/sa-*/9*
+# sa0
+super + alt + agrave
+	zsh -ci Aghiles/tool/shell/system/sa-*/0*
+# sa10
+super + alt + parenright
+	zsh -ci Aghiles/tool/shell/system/sa-*/)*
+# sa11
+super + alt + equal
+	zsh -ci Aghiles/tool/shell/system/sa-*/=*
+
+
+# terminal emulator
+ctrl + :
+	tilix
+super + n
+	nautilus
+super + w
+	zsh -ci qutebrowser
+# make sxhkd reload its configuration files:
+super + shift + r
+	pkill -USR1 -x sxhkd
+# Take screenshot
+Print
+	maim pic-full-$(date '+%y%m%d-%H%M-%S').png
+# Pick screenshot type
+shift + Print
+	maimpick
+
+
+# Pause audio
+super + {_,shift +} p
+	lmc {toggle,pause}
+# Changes to next/previous tracks
+super + {comma,period}
+	lmc {prev,next}
+# Restart track
+super + shift + less
+	lmc replay
+# Increase volume
+super + {equal,plus}
+	lmc up {5,15}
+# Decrease volume
+super {_,shift +} + minus
+	lmc down {5,15}
+# Seek foward in song
+super + {_,shift +} bracketright
+	lmc forward {10,120}
+# Seek backward in song
+super + {_,shift +} bracketleft
+	lmc back {10,120}
+
+
+
+# Change display
+super + F3
+	displayselect
+# Hibernate
+super + F4
+	prompt 'Hibernate computer?' 'sudo systemctl suspend'
+# Restart/rescan wifi/eth networks
+super + F5
+	sudo -A systemctl restart NetworkManager
+# Search with Duckduckgo
+super + F11
+	ducksearch
+# Network Manager interface
+super + F12
+	$TERMINAL -e sudo -A nmtui
+
+
+
+
+
+
+

@@ -1,3 +1,0 @@
-date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
-16:52:18	270/270	---M--	404	error ('Not%20Found')	text/html	date:Sat,%2005%20Oct%202019%2014:52:18%20GMT	http://www.mutt.org/robots.txt		(from )
-16:52:25	880966/880966	---MCZ	200	added ('OK')	text/html	etag:%22d7146-593156b00648c-gzip%22	http://www.mutt.org/doc/manual/	www.mutt.org/doc/manual/index.html	(from )

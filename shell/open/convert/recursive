@@ -1,9 +1,0 @@
-#!/bin/sh
-
-find . -maxdepth 6 -type f -name "*.pdf" -print0 | xargs -0 xpdf2txt
-
-
-
-#find . -maxdepth 6 -type f -name "*.pdf" -exec xpdf2txt {} +
-
-

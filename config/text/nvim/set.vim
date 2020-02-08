@@ -1,8 +1,11 @@
 au BufEnter *.org            call org#SetOrgFileType()
-au! BufRead,BufWrite,BufWritePost,BufNewFile *.org 
+au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
 au WinEnter * setlocal statusline=%!MyStatusLine('Enter')
 au WinLeave * setlocal statusline=%!MyStatusLine('Leave')
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit! " Save file as sudo on files that require root permission
+
+
+
 hi clear SpellBad
 hi CursorLineNr ctermfg=15
 hi LineNr ctermfg=242
@@ -14,6 +17,7 @@ hi StatusLineColor ctermbg=white ctermfg=black
 hi VertSplit ctermfg=8 ctermbg=0
 hi LanguageToolGrammarError  guisp=blue gui=undercurl guifg=NONE guibg=NONE ctermfg=white ctermbg=blue term=underline cterm=none
 hi LanguageToolSpellingError guisp=red  gui=undercurl guifg=NONE guibg=NONE ctermfg=white ctermbg=red  term=underline cterm=none
+hi NonText ctermfg=black guifg=black
 
 "ino <Down> <Nop> "Disable arrow keys in Insert mode
 "ino <Left> <Nop> "Disable arrow keys in Insert mode
@@ -24,6 +28,7 @@ nnoremap c "_c
 "no <Left> <Nop> "Disable arrow keys in Normal mode
 "no <Right> <Nop> "Disable arrow keys in Normal mode
 "no <Up> <Nop> "Disable arrow keys in Normal mode
+
 
 set autoindent
 set background=dark
@@ -64,8 +69,7 @@ set nohlsearch
 set noshowmode " Uncomment to prevent non-normal modes showing in powerline and below powerline.
 set noswapfile
 set nowrap
-set nowritebackup 
-set number relativenumber " Some basics:
+set nowritebackup
 set pastetoggle=<F2>
 set path+=**					" Searches current directory recursively.
 set relativenumber
@@ -93,5 +97,16 @@ set wildmenu					" Display all matches when tab complete.
 set wildmode=list:longest,list:full
 set wildmode=longest,list,full " Enable autocompletion:
 set wrapscan
+"set buftype=nowrite
+
+
+
+set number
+set relativenumber
+set noshowmatch
+set nolazyredraw
+set guicursor=n-v-c-sm:block,i-ci-ve:block,r-cr-o:blocks
+
+
 
 

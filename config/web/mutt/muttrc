@@ -1,0 +1,325 @@
+#https://myaccount.google.com/lesssecureapps
+set my_path = "~/.config/mutt"
+
+#set editor   = "vim -c 'helptags ~/.vim/doc' -c 'set spell spelllang=en_us' -c 'set colorcolumn=72' -c 'startinsert' -c 'set tw=72 et' -c 'set wrap' '+/^$'"  # +/^$/+1 +':noh'"
+set editor   = "nvim -c 'set spell spelllang=fr' -c 'startinsert'"
+#set editor = "nvim +/^$/+1 +':noh'"
+
+set realname         = "Aghiles DJOUDI"
+# Accounts -----------------------------------------------------------------------
+set my_account0 = "aghilesdjoudi@gmail.com"
+set my_account1 = "djaghiles@gmail.com"
+set my_account2 = "adjoudi@inseec-edu.com"
+set my_account3 = "aghiles.djoudi@esiee.fr"
+set my_account4 = "aghiles.djoudi@univ-paris-est.fr"
+
+set my_shortcut0 = F2
+set my_shortcut1 = F3
+set my_shortcut2 = F4
+set my_shortcut3 = F5
+set my_shortcut4 = F6
+
+#3rd parties -----------------------------------------------------------------------
+source $my_path/macros/main
+source $my_path/colors/main
+
+
+#Path -----------------------------------------------------------------------
+set tmpdir           =/tmp/mutt
+set message_cachedir =$my_path/.cache/bodies
+set header_cache     =$my_path/.cache/headers
+set alias_file       =$my_path/alias
+set mailcap_path     =$my_path/mailcap
+#lua-source           =folder-hook.lua
+set certificate_file =/etc/ssl/certs/ca-certificates.crt
+set ispell           =/usr/bin/ispell
+
+
+# Notmuch -----------------------------------------------------------------------
+set nm_default_uri = "notmuch:///home/Mail"
+#virtual-mailboxes "My INBOX" "notmuch://?query=tag:inbox"
+#set nm_hidden_tags = "inbox,unread,draft,flagged,passed,replied,signed,encrypted,attachment"
+
+
+## basic options -----------------------------------------------------------------------
+push <show-version>  # Shows mutt version at startup
+set imap_keepalive        = 300
+set mail_check            = 60
+set timeout               = 60
+set mail_check_stats_interval = 60
+set imap_passive          = no
+set confirmappend         = no     # Just append, don't hassle me.
+set move                  = no     # don't ask about moving messages, just do it
+set wait_key              = no		 # mutt won't ask "press key to continue"
+set mark_old              = no     # Unread mail stay unread until read
+set status_on_top         = yes     # Status bar on down.
+set delete                = no    # purge deleted messages without asking
+set bounce                = no    #don't ask about bouncing messages, just do it
+set menu_move_off         = no
+set virtual_spoolfile     = yes
+set mail_check_recent     = yes
+set envelope_from         = yes
+set ssl_force_tls         = yes
+set ssl_starttls          = yes
+set use_from              = yes
+set imap_list_subscribed  = yes
+set check_new             = yes
+set mail_check_stats      = yes
+set pipe_decode           = yes
+set quit                  = yes
+set thorough_search       = yes
+set smart_wrap            = yes   # Don't wrap mid-word
+set imap_check_subscribed = no # outlook
+set user_agent            = no
+set confirmcreate         = no                      #prompt when creating new files
+set maildir_trash         = yes
+set confirmappend=yes
+set delete=ask-yes
+set imap_idle
+#set wrap=0
+
+
+# http://codesorcery.net/old/mutt/mutt-gnupg-howto
+# GPG/PGP  -----------------------------------------------------------------------
+#set crypt_autosign              = yes
+#set crypt_replyencrypt          = yes
+#set crypt_replysignencrypted    = yes
+#set crypt_replysign             = yes
+#set crypt_timestamp             = yes
+#set crypt_use_gpgme             = yes
+#set crypt_verify_sig            = yes
+#set crypt_opportunistic_encrypt = yes
+
+#set pgp_autoinline              = no
+#set pgp_autosign                = yes
+#unset pgp_autoencrypt
+#unset pgp_autosign
+
+##set pgp_self_encrypt           = yes
+##set pgp_self_encrypt_as        = 2F283D0D
+#set pgp_timeout              = 300
+#set pgp_sign_as              = 2F283D0D # "0x5B7883F4"
+#set pgp_clearsign_command    = "gpg --no-verbose --batch --output - --passphrase-fd 0 --armor --textmode --clearsign %?a?-u %a? %f"
+#set pgp_decode_command       = "gpg %?p?--passphrase-fd 0? --no-verbose --batch --output - %f"
+#set pgp_decrypt_command      = "gpg --passphrase-fd 0 --no-verbose --batch --output - %f"
+#set pgp_encrypt_only_command = "pgpewrap gpg --batch --quiet --no-verbose --output - --encrypt --textmode --armor --always-trust --encrypt-to 0x5B7883F4 -- -r %r -- %f"
+#set pgp_encrypt_sign_command = "pgpewrap gpg --passphrase-fd 0 --batch --quiet --no-verbose --textmode --output - --encrypt --sign %?a?-u %a? --armor --always-trust --encrypt-to 0x5B7883F4 -- -r %r -- %f"
+#set pgp_getkeys_command      = "gpg --recv-keys %r"
+#set pgp_import_command       = "gpg --no-verbose --import -v %f"
+#set pgp_list_pubring_command = "gpg --no-verbose --batch --with-colons --list-keys %r"
+#set pgp_list_secring_command = "gpg --no-verbose --batch --with-colons --list-secret-keys %r"
+#set pgp_sign_command         = "gpg --no-verbose --batch --output - --passphrase-fd 0 --armor --detach-sign --textmode %?a?-u %a? %f"
+#set pgp_verify_command       = "gpg --no-verbose --batch --output - --verify %s %f"
+#set pgp_verify_key_command   = "gpg --no-verbose --batch --fingerprint --check-sigs %r"
+#set pgp_export_command       = "gpg --no-verbose --export --armor %r"
+#set pgp_replyencrypt
+#set pgp_replysign
+#set pgp_replysign
+#set pgp_replysignencrypted=yes
+#set pgp_strict_enc
+#set pgp_verify_sig=yes
+
+
+# Encoding  -----------------------------------------------------------------------
+set allow_8bit                      # never do Q-P encoding on legal 8-bit chars
+set ascii_chars                     # use ASCII instead of ACS chars for threads
+set to_chars              = " +TCFL"
+set charset               = "utf-8"
+set send_charset          = "utf-8:iso-8859-1:us-ascii"
+set assumed_charset       = "utf-8"
+
+# Sons   -----------------------------------------------------------------------
+set beep_new=yes # Beep when new mail arrives.
+
+# HTML -----------------------------------------------------------------------
+
+alternative_order text/plain text/html text/*
+#alternative_order text/plain text/html text/encriched
+#alternative_order multipart/mixed text/plain text/calendar application/ics text/html
+#set implicit_autoview     = yes   # pager shows parts having a mailcap viewer
+auto_view text/html
+auto_view text/calendar
+auto_view application/ics
+#auto_view application/x-gunzip
+#auto_view application/x-gzip
+#auto_view text/x-vcard
+#set show_multipart_alternative = "info"
+
+
+
+# Collapse -----------------------------------------------------------------------
+set uncollapse_jump      = yes # jump to unread message when uncollapse
+set collapse_all         = yes
+set uncollapse_new       = yes
+set collapse_unread      = no
+
+
+# Sidebar View -----------------------------------------------------------------------
+set sidebar_indent_string   = '  '
+set sidebar_divider_char    = ' '
+set sidebar_delim_chars     = '/'
+set sidebar_width           = 20
+set sidebar_visible         = no
+set sidebar_new_mail_only   = no
+set sidebar_on_right        = no
+set sidebar_sort_method     = 'path'
+set sidebar_short_path      = yes
+set sidebar_folder_indent   = yes
+set sidebar_next_new_wrap   = yes
+set mail_check_stats        = yes
+
+# Compose View -----------------------------------------------------------------------
+set nohelp                          # don't show the help line at the top
+set envelope_from                   #which from?
+unset edit_headers                  #show headers when composing
+set fast_reply                      #skip to compose when replying
+set askcc                           #ask for CC:
+unset fcc_attach                    #save attachments with the body
+set forward_decode                  #decode when forwarding
+set reply_to                        #reply to Reply to: field
+set reverse_name                    #reply as whomever it was to
+#set reverse_realname=yes
+unset include                       #include message in replies
+set autoedit                        #window, rather than mutt giving me 21 questions
+set forward_quote                   #include message in forwards
+set text_flowed
+unset sig_dashes                    #no dashes before sig
+set mime_forward                    #forward attachments as part of body
+set mime_forward_rest               # Forward with attachments
+set auto_tag			                  # always operate on tagged messages
+unset copy    			                # always save a copy of outgoing messages
+unset force_name			              # fcc by recipient, create if mailbox doesn't exist
+set hdrs			                    # include `my_hdr' lines in outgoing messages
+unset header			                  # include message header when replying
+#set history=20			                # number of lines of history to remember
+#set locale="C"			                # locale to use for printing time
+unset metoo			                    # remove my address when replying
+set print=ask-yes		                # ask me if I really want to print messages
+#set print_command=/bin/false	      # how to print things (I like to save trees)
+set print_command=muttprint
+set noprompt_after	                # ask me for a command after the external pager exits
+set read_inc=25			                # show progress when reading a mailbox
+unset recall			                  # prompt to recall postponed messages
+set reverse_alias		                # attempt to look up my names for people
+set nosave_empty		                # remove files when no messages are left
+set save_name			                  # save outgoing messages by recipient, if the
+#set use_8bitmime		                # enable the -B8BITMIME sendmail flag
+#set nouse_domain		                # don't qualify local addresses with $domain
+set visual=nvim			                # editor invoked by ~v in the builtin editor
+set write_inc=25		                # show progress while writing mailboxes
+
+
+# Pager View  -----------------------------------------------------------------------
+#set pager=less            # some people prefer an external pager
+set pager_index_lines = 5  # how many index lines to show in the pager
+set pager_context = 5      # no. of lines of context to give when scrolling
+set pager_stop             # Don't skip msgs on next page.
+set menu_scroll            # no implicit next-page/prev-page
+set tilde                  # virtual lines to pad blank lines in the pager
+set markers = no           # Disables the `+` displayed at line wraps
+set rfc2047_parameters
+set sleep_time = 0         # Don't wait to switch mailboxes
+set narrow_tree            # narrow threading trees
+
+
+# Format -----------------------------------------------------------------------
+set attribution     = "On %d, %n wrote:" #format of quoting header
+set date_format     = "!%F %R" # "%d.%m.%Y %H:%M"
+set index_format    = "%4C %Z %D %-15.15F %?M?(#%03M)&(%4l)? %?y?(%.20Y)?(%-4.4c) %s"
+set folder_format   = '%N %4C %4s bytes %2F %2f'
+set forward_format  = "Fwd: %s"      #format of subject when forwarding
+set my_status       = "[M:%?M?%M/?%m%?n? N:%n?%?o? O:%o?%?d? D:%d?%?F? F:%F?%?t? T:%t?%?p? P:%p?%?b? I:%b?%?l? %l?]- (%P)---%>---(%s/%S)-"
+set sidebar_format  = '%B %?N?(%N)?%* %S'
+#set sidebar_format = '%B%?F? [%F]?%* %?N?%N/? %?S?%S?'
+set attach_format   = "%u%D%I %t%4n %T%.100d%> [%.15m/%.15M, %.6e%?C?, %C?, %s] "
+set quote_regexp    = "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"  # how to catch quoted text
+set status_chars    = " *%A"
+#set reply_regexp    = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
+set reply_regexp    = "^((re(\\^[0-9])? ?:|a(nt)?w(ort)?:|\\(fwd\\))[ \t]+)*"
+set smileys="(>From )|(:[-^]?[][)(><}{|/DP])"
+#set pager_format="-%S- %-20.20f %s"	# format of the pager status bar
+set query_format    = "%5c %t %a %n %?e?(%e)?"
+tag-formats "attachment" "GA" "encrypted"  "GE" "signed"     "GS"
+
+set display_filter = "grep -v -- '--]'"
+
+# Sort -----------------------------------------------------------------------
+
+set sort          = reverse-threads
+set sort_aux      = last-date-received
+set sort_re
+set sort_browser  = date
+set sort_alias    = alias # sort aliases in alpha order by alias name
+
+# Addressbook
+#set smtp_authenticators="login"
+#set query_command      ="abook --mutt-query '%s'"
+#set query_command       ="( khard email --parsable '%s' | sed -n '1!p'; mu cfind --format=mutt-ab '%s' )"
+#set query_command      ="goobook query '%s'"
+set query_command       = "notmuch address %s"
+
+# Header -----------------------------------------------------------------------
+ignore *
+unignore from subject to cc Bcc Reply-To Bcc
+
+# Notification  -----------------------------------------------------------------------
+set new_mail_command="notify-send 'New Email in %f' '%n new messages, %u unread.' &"
+set resolve                     = "no"  # move to the next message when an action is performed
+
+#-----------------------------------------------------------------------------------------
+
+
+#timeout-hook 'exec sync-mailbox'
+#shutdown-hook 'exec sync-mailbox'
+
+
+#folder-hook . "exec collapse-all"
+#message-hook '!~g !~G ~b "^-----BEGIN PGP (SIGNED )?MESSAGE"' 'exec check-traditional-pgp'
+#alternates ^$my_account0$ ^$my_account1$ ^$my_account2$ ^$my_account3$ ^$my_account4$
+
+
+#folder-hook =inbox 'push \e1oi'
+#folder-hook =debian-inbox 'push \e2oi'
+#macro index I "c=inbox\n" "Switch to inbox"
+#folder-hook =inbox 'macro index I "c=debian-inbox\n" "Switch to debian-inbox"'
+#folder-hook =debian-inbox 'macro index I "c=inbox\n" "Switch to inbox"'
+
+# ## LISTES DE DIFFUSION
+#subscribe awesome@naquadah.org
+#subscribe dev@suckless.org
+#subscribe frugalware-devel@frugalware.org
+#subscribe arch-general arch-announce arch-projects arch-security
+#subscribe neomutt-users@neomutt.org
+
+
+# FILTRES POUR TRI
+#save-hook "~C dev@suckless.org" =Listes/suckless
+#save-hook "~C awesome@naquadah.org" =Listes/awesome
+#save-hook "~C frugalware-devel@frugalware.org" =Listes/frugal-dev
+
+
+
+account-hook $my_account0 'set imap_user=$my_account0'
+account-hook $my_account1 'set imap_user=$my_account1'
+account-hook $my_account2 'set imap_user=$my_account2'
+account-hook $my_account3 'set imap_user=$my_account3'
+account-hook $my_account4 'set imap_user=$my_account4'
+
+
+folder-hook $my_account0 'source $my_path/accounts/$my_account0'
+folder-hook $my_account1 'source $my_path/accounts/$my_account1'
+folder-hook $my_account2 'source $my_path/accounts/$my_account2'
+folder-hook $my_account3 'source $my_path/accounts/$my_account3'
+folder-hook $my_account4 'source $my_path/accounts/$my_account4'
+
+
+source $my_path/accounts/$my_account0
+
+
+
+# vim: syntax=muttrc textwidth=100 foldmethod=marker:foldlevel=0
+
+
+
+
+

@@ -1,0 +1,26 @@
+00:00:00.335010 VirtualBox GUI VM Selector Window 6.0.14 r133895 linux.amd64 (Oct 14 2019 15:00:23) release log
+00:00:00.335012 Log opened 2020-01-19T07:15:38.711099000Z
+00:00:00.335013 Build Type: release
+00:00:00.335017 OS Product: Linux
+00:00:00.335017 OS Release: 4.19.0-6-amd64
+00:00:00.335018 OS Version: #1 SMP Debian 4.19.67-2+deb10u2 (2019-11-11)
+00:00:00.335040 DMI Product Name: Latitude 7480
+00:00:00.335045 DMI Product Version: 
+00:00:00.335085 Host RAM: 15693MB (15.3GB) total, 13183MB (12.8GB) available
+00:00:00.335089 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.335090 Process ID: 27003
+00:00:00.335090 Package type: LINUX_64BITS__DEBIAN_10
+00:00:00.335111 Qt version: 5.6.1
+00:00:00.363427 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.363444 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:00.810362 Failed to open "/dev/vboxdrv", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:00:00.821038 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 0x10 x 960x521
+00:00:15.237258 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:01:17.899275 ERROR [COM]: aRC=NS_ERROR_UNEXPECTED (0x8000ffff) aIID={c0447716-ff5a-4795-b57a-ecd5fffa18a4} aComponent={SessionWrap} aText={The session is not locked (session state: Unlocked)}, preserve=false aResultDetail=0
+00:01:20.044826 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:01:20.085529 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:01:37.796955 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:01:37.825427 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:44.372710 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:57.822180 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:03:43.521514 ERROR [COM]: aRC=NS_ERROR_UNEXPECTED (0x8000ffff) aIID={c0447716-ff5a-4795-b57a-ecd5fffa18a4} aComponent={SessionWrap} aText={The session is not locked (session state: Unlocked)}, preserve=false aResultDetail=0

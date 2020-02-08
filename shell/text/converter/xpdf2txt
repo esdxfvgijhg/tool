@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+for file in "$@"; do 
+	directory=`dirname "$file"`
+	filename=`basename "$file"`
+	echo $filename
+	extension="${filename##*.}"
+	filename="${filename%.*}"
+	pdftotext "$file" "$directory/$filename.xtxt"; 
+done 
+

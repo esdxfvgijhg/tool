@@ -1,0 +1,1063 @@
+0:library("fitdistrplus")
+0:install.packages("lsei")
+0:library("formattable")
+0:library("GGally", quietly = TRUE)
+0:source("script/setup.r")
+0:library("fitdistrplus")
+0:library("mc2d")  ## needed for dtriang
+0:install.packages("mvtnorm")
+0:library("formattable")
+0:library("ggplot2")
+1571658445463:library("formattable")
+1571658458287:install.packages("formattable")
+1571658475122:install.packages("fitdistrplus")
+1571658502407:install.packages(c("fitdistrplus", "formattable", "mc2d"))
+1571658521841:install.packages(c("fitdistrplus", "formattable", "mc2d"))
+1576068955058:d <- Sys.getenv("PATH")
+1576068955885:d
+1576069766516:#R commands and output:
+1576069766517:d <- Sys.getenv("DATAPATH")
+1576069767381:#file <- paste(d, "zarr13.dat", sep="/")
+1576069767381:setwd(d)
+1576069769543:## Read data and compute summary statistics.
+1576069769544:y <- scan("zarr13.dat",skip=25)
+1576070515866:DATAPATH <- Sys.getenv("DATAPATH")
+1576070517884:## Input data and create variables.
+1576070517884:m <- matrix(scan(paste(DATAPATH, "splett3.dat", sep="/"),skip=25),ncol=5,byrow=T)
+1576070603986:getwd()
+1576070657698:setwd(paste(getwd(),DATAPATH, sep=":"))
+1576070670200:paste(getwd(),DATAPATH, sep=":")
+1576070757880:myfunction.path <- list.files(getwd(),
+1576070757880:recursive=TRUE,full.names=TRUE,
+1576070757880:pattern='^myfunction.R$')
+1576070769343:source(myfunction.path)
+1576070851937:list.files()
+1576070861747:list.files(full.names=TRUE)
+1576070876647:list.files("species1/", full.names=TRUE)
+1576070924355:list.files(DATAPATH, full.names=TRUE)
+1576070945335:list.files(DATAPATH)
+1576070952495:list.files(DATAPATH, full.names=TRUE)
+1576071567782:DATAPATH <- Sys.getenv("DATAPATH")
+1576071569565:## Read data and save variables.
+1576071569565:m <- matrix(scan(past(DATAPATH,"gear.dat"),skip=25),ncol=2,byrow=T)
+1576071587598:## Read data and save variables.
+1576071587599:m <- matrix(scan(paste(DATAPATH,"gear.dat"),skip=25),ncol=2,byrow=T)
+1576077937297:install.packages(c("fitdistrplus", "formattable", "mc2d"))
+1576077946057:library("fitdistrplus")
+1576078006974:install.packages("fitdistrplus")
+1576078142523:if (!require(package)) install.packages('fitdistrplus')
+1576078149196:if (!require(package)) install.packages('fitdistrplus')
+1576078153912:library(fitdistrplus)
+1576078157316:library("fitdistrplus")
+1576078165358:library("mc2d")  ## needed for dtriang
+1576078201506:library("fitdistrplus")
+1576078203844:library("formattable")
+1576078219477:require("fitdistrplus")
+1576078225243:install.packages(c("fitdistrplus", "formattable", "mc2d"))
+1576078263895:install.packages("fitdistrplus")
+1576078285345:library("fitdistrplus")
+1576078290707:library("formattable")
+1576078507896:usePackage <- function(p)
+1576078507896:{
+1576078507896:if (!is.element(p, installed.packages()[,1]))
+1576078507897:install.packages(p, dep = TRUE)
+1576078507897:require(p, character.only = TRUE)
+1576078507897:}
+1576078523788:usePackage("formattable")
+1576078558217:library("formattable")
+1576078562302:library("formattable")
+1576078575717:library <- function(p)
+1576078575718:{
+1576078575718:if (!is.element(p, installed.packages()[,1]))
+1576078575718:install.packages(p, dep = TRUE)
+1576078575718:require(p, character.only = TRUE)
+1576078575718:}
+1576078580190:library("GGally", quietly = TRUE)
+1576078588213:library("mc2d")  ## needed for dtriang
+1576078600489:library("mc2d")  ## needed for dtriang
+1576078603052:library("ggplot2")
+1576078609440:library("ggplot2")
+1576078614439:library("mc2d")  ## needed for dtriang
+1576079139653:library("fitdistrplus")
+1576096296966:library(RColorBrewer)
+1576096316557:install.packages("RColorBrewer")
+1576096324718:library(RColorBrewer)
+1576096349870:library(RColorBrewer)
+1576096441304:library("RColorBrewer")
+1578834666729:library("fitdistrplus")
+1578834671514:library("formattable")
+1578834780256:library("fitdistrplus")
+1578834785101:library("formattable")
+1578834787869:library("GGally")
+1578834813521:tmp=read.csv(file = "calc_cent.csv")
+1578834814313:calc_cent=as.list(tmp)
+1578834815339:calc.distribution <- function(calc_cent){
+1578834815339:dist_name <- c("norm", "exp", "weibull", "lnorm", "gamma", "logis", "cauchy", "gumbel", "triang", "binom")
+1578834815339:# calc_dist
+1578834815339:dgumbel <- function(x, a, b) 1/b*exp((a-x)/b)*exp(-exp((a-x)/b))
+1578834815340:pgumbel <- function(q, a, b) exp(-exp((a-q)/b))
+1578834815340:qgumbel <- function(p, a, b) a-b*log(-log(p))
+1578834815340:# Computation
+1578834815340:calc_dist <- list()
+1578834815341:for (i in names(calc_cent)[c(-1,-7)]) {
+1578834815341:print(i)
+1578834815341:dat <- abs(calc_cent[[i]])
+1578834815341:fit <- list()
+1578834815342:tryCatch({fit$norm    <- fitdist(dat,dist_name[1])} ,error = function(error_condition)                            {})
+1578834815342:tryCatch({fit$exp     <- fitdist(dat,dist_name[2])} ,error = function(error_condition)                            {})
+1578834815342:tryCatch({fit$weibull <- fitdist(dat,dist_name[3])} ,error = function(error_condition)                            {})
+1578834815343:tryCatch({fit$lnorm   <- fitdist(dat,dist_name[4])} ,error = function(error_condition)                            {})
+1578834815343:tryCatch({fit$gamma   <- fitdist(dat,dist_name[5])} ,error = function(error_condition)                            {})
+1578834815344:tryCatch({fit$logis   <- fitdist(dat,dist_name[6])} ,error = function(error_condition)                            {})
+1578834815344:tryCatch({fit$cauchy  <- fitdist(dat,dist_name[7])} ,error = function(error_condition)                            {})
+1578834815345:tryCatch({fit$gumbel  <- fitdist(dat,dist_name[8], start=list(a=10,b=5))} ,error = function(error_condition)      {})
+1578834815345:tryCatch({fit$triang  <- fitdist(dat,dist_name[9])} ,error = function(error_condition)                            {})
+1578834815345:tryCatch({fit$binom   <- fitdist(dat,dist_name[10] ,start=list(size=8, prob=mean(dat)/8))} ,error = function(error_condition)                            {})
+1578834815346:calc_dist[[i]] <- fit
+1578834815347:}
+1578834815347:return(calc_dist)
+1578834815348:}
+1579413907498:install.packages("Rcpp")
+1579414030269:install.packages("Rcpp")
+1579414073862:q
+1579414097072:install.packages("Rcpp")
+1579414541693:install.packages("markovchain")
+1579414682018:install.packages("igraph")
+1579414812495:install.packages("Rcpp")
+1579414883286:install.packages("RInside")
+1579414903129:install.packages("markovchain")
+1579457263291:install.packages("rattle")
+1579457414990:install.packages("rattle")
+1579952701175:q
+1579961241943:library(e1071)
+1579961245987:set.seed(123)
+1579961246772:# Load the data
+1579961246772:data("USArrests")
+1579961247386:# Subset of USArrests
+1579961247387:ss <- sample(1:50, 20)
+1579961248304:df <- scale(USArrests[ss,])
+1579961249037:# Compute fuzzy clustering
+1579961249038:library(e1071)
+1579961249924:cm <- cmeans(df, 3)
+1579961251209:cm
+1579961253007:# Visualize using corrplot
+1579961253008:library(corrplot)
+1579961254617:corrplot(cm$membership, is.corr = FALSE)
+1579961261030:# Observation groups/clusters
+1579961261030:cm$cluster
+1579961263100:library(factoextra)
+1579961279614:fviz_cluster(list(data     = df, cluster=cm$cluster),
+1579961279615:ellipse.type  = "norm",
+1579961279615:ellipse.level = 0.68,
+1579961279615:palette       = "jco",
+1579961279615:ggtheme       = theme_minimal())
+1579961285726:install.packages("factoextra")
+1579961485073:??ClusteredMutations
+1579961501130:?ClusteredMutations
+1579961516717:library(ClusteredMutations)
+1579961554366:??ClusteredMutations
+1579961569258:?ClusteredMutations
+1580481439780:library(e1071)
+1580481440678:library(corrplot)
+1580481441477:set.seed(123)
+1580481442772:df=read.csv(file = "X.csv")
+1580481444661:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 2)
+1580481447323:cm
+1580481449377:corrplot(cm$membership, is.corr = FALSE)
+1580481458731:library(factoextra)
+1580481460238:fviz_cluster(list(data     = df, cluster=cm$cluster),
+1580481460238:ellipse.type  = "norm",
+1580481460239:ellipse.level = 0.68,
+1580481460239:palette       = "jco",
+1580481460239:ggtheme       = theme_minimal())
+1580481549738:set.seed(123)
+1580481550668:df=read.csv(file = "X.csv")
+1580481551348:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 4)
+1580481551918:cm
+1580481553637:corrplot(cm$membership, is.corr = FALSE)
+1580481554960:library(factoextra)
+1580481556636:fviz_cluster(list(data     = df, cluster=cm$cluster),
+1580481556637:ellipse.type  = "norm",
+1580481556637:ellipse.level = 0.68,
+1580481556637:palette       = "jco",
+1580481556637:ggtheme       = theme_minimal())
+1580481581389:library(factoextra)
+1580481582048:fviz_cluster(list(data     = df[2:3], cluster=cm$cluster),
+1580481582049:ellipse.type  = "norm",
+1580481582049:ellipse.level = 0.68,
+1580481582050:palette       = "jco",
+1580481582050:ggtheme       = theme_minimal())
+1580481603840:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 1)
+1580481604800:cm
+1580481605481:corrplot(cm$membership, is.corr = FALSE)
+1580481610286:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 1.2)
+1580481610913:cm
+1580481611635:corrplot(cm$membership, is.corr = FALSE)
+1580481612281:library(factoextra)
+1580481614146:fviz_cluster(list(data     = df[2:3], cluster=cm$cluster),
+1580481614146:ellipse.type  = "norm",
+1580481614147:ellipse.level = 0.68,
+1580481614147:palette       = "jco",
+1580481614147:ggtheme       = theme_minimal())
+1580481637491:fviz_cluster(list(data     = df[2,3], cluster=cm$cluster),
+1580481637491:ellipse.type  = "norm",
+1580481637491:ellipse.level = 0.68,
+1580481637492:palette       = "jco",
+1580481637492:ggtheme       = theme_minimal())
+1580481647633:fviz_cluster(list(data     = df[1:2], cluster=cm$cluster),
+1580481647634:ellipse.type  = "norm",
+1580481647634:ellipse.level = 0.68,
+1580481647634:palette       = "jco",
+1580481647634:ggtheme       = theme_minimal())
+1580481668014:fviz_cluster(list(data     = df[2:3], cluster=cm$cluster),
+1580481668014:ellipse.type  = "norm",
+1580481668014:ellipse.level = 0.68,
+1580481668014:palette       = "jco",
+1580481668014:ggtheme       = theme_minimal())
+1580481703505:cm$withinerror
+1580481711503:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 2)
+1580481714247:cm$withinerror
+1580481719672:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 20)
+1580481721392:cm$withinerror
+1580481728739:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 2)
+1580481730266:cm$withinerror
+1580481734841:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 1.2)
+1580481737830:cm$withinerror
+1580481799559:df=read.csv(file = "X.csv")
+1580481800297:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 1.1)
+1580481800953:cm$withinerror
+1580481801872:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 1.2)
+1580481802070:cm$withinerror
+1580481802639:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 1.3)
+1580481802829:cm$withinerror
+1580481803360:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 1.4)
+1580481803594:cm$withinerror
+1580481804386:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 1.5)
+1580481804552:cm$withinerror
+1580481805511:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 1.6)
+1580481805659:cm$withinerror
+1580481806270:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 1.7)
+1580481806454:cm$withinerror
+1580481806984:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 1.8)
+1580481807180:cm$withinerror
+1580481807636:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 1.9)
+1580481807815:cm$withinerror
+1580481808382:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 2)
+1580481808564:cm$withinerror
+1580481845414:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 2.1)
+1580481845876:cm$withinerror
+1580481847871:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 2.2)
+1580481848287:cm$withinerror
+1580481849341:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 2.3)
+1580481849579:cm$withinerror
+1580481851028:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 2.4)
+1580481851257:cm$withinerror
+1580481851827:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 2.5)
+1580481852045:cm$withinerror
+1580481852519:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 2.6)
+1580481852724:cm$withinerror
+1580481853226:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 2.7)
+1580481853414:cm$withinerror
+1580481854119:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 2.8)
+1580481854341:cm$withinerror
+1580481854813:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 2.9)
+1580481855023:cm$withinerror
+1580481856536:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 3)
+1580481856938:cm$withinerror
+1580481899583:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 3.1)
+1580481900066:cm$withinerror
+1580481901275:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 3.2)
+1580481901468:cm$withinerror
+1580481901851:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 3.3)
+1580481901998:cm$withinerror
+1580481902403:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 3.4)
+1580481902548:cm$withinerror
+1580481902862:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 3.5)
+1580481903025:cm$withinerror
+1580481903229:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 3.6)
+1580481903387:cm$withinerror
+1580481903885:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 3.7)
+1580481904108:cm$withinerror
+1580481904683:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 3.8)
+1580481905168:cm$withinerror
+1580481906314:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 3.9)
+1580481906559:cm$withinerror
+1580481907097:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 4)
+1580481907937:cm$withinerror
+1580481914281:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 10)
+1580481914696:cm$withinerror
+1580481920013:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 13)
+1580481920242:cm$withinerror
+1580481924641:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 19)
+1580481924963:cm$withinerror
+1580481937783:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 190)
+1580481938168:cm$withinerror
+1580481946284:corrplot(cm$membership, is.corr = FALSE)
+1580481948542:library(factoextra)
+1580481949201:fviz_cluster(list(data     = df[2:3], cluster=cm$cluster),
+1580481949202:ellipse.type  = "norm",
+1580481949202:ellipse.level = 0.68,
+1580481949202:palette       = "jco",
+1580481949203:ggtheme       = theme_minimal())
+1580481979772:fviz_cluster(list(data     = df[1:2], cluster=cm$cluster),
+1580481979772:ellipse.type  = "norm",
+1580481979773:ellipse.level = 0.68,
+1580481979773:palette       = "jco",
+1580481979773:ggtheme       = theme_minimal())
+1580481996333:fviz_cluster(list(data     = df[c(1,2)], cluster=cm$cluster),
+1580481996334:ellipse.type  = "norm",
+1580481996334:ellipse.level = 0.68,
+1580481996334:palette       = "jco",
+1580481996334:ggtheme       = theme_minimal())
+1580482004281:fviz_cluster(list(data     = df[c(2,3)], cluster=cm$cluster),
+1580482004281:ellipse.type  = "norm",
+1580482004281:ellipse.level = 0.68,
+1580482004281:palette       = "jco",
+1580482004282:ggtheme       = theme_minimal())
+1580482009157:fviz_cluster(list(data     = df[c(1,3)], cluster=cm$cluster),
+1580482009157:ellipse.type  = "norm",
+1580482009157:ellipse.level = 0.68,
+1580482009158:palette       = "jco",
+1580482009158:ggtheme       = theme_minimal())
+1580482025195:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 1.1)
+1580482029566:fviz_cluster(list(data     = df[c(1,3)], cluster=cm$cluster),
+1580482029566:ellipse.type  = "norm",
+1580482029567:ellipse.level = 0.68,
+1580482029567:palette       = "jco",
+1580482029567:ggtheme       = theme_minimal())
+1580482047373:cm$call
+1580482058459:cm$withinerror
+1580482074597:??cmeans
+1580482244324:cm$weights
+1580482252066:cm$weights
+1580482259031:cm$withinerror
+1580482274895:cm$control
+1580482308065:cm$withinerror
+1580482323003:cm <- cmeans(df, 3, iter.max = 100, dist = "euclidean", m = 100)
+1580482323520:cm$withinerror
+1580482328960:library(factoextra)
+1580482329615:fviz_cluster(list(data     = df[c(1,3)], cluster=cm$cluster),
+1580482329616:ellipse.type  = "norm",
+1580482329616:ellipse.level = 0.68,
+1580482329617:palette       = "jco",
+1580482329617:ggtheme       = theme_minimal())
+1580482395035:cm <- cmeans(df, 3, dist = "euclidean", m = 100)
+1580482395570:cm$withinerror
+1580482401212:cm <- cmeans(df, 3, dist = "euclidean", m = 1.2)
+1580482402556:cm$withinerror
+1580482424087:corrplot(cm$membership, is.corr = FALSE)
+1580482433694:fviz_cluster(list(data     = df[c(1,3)], cluster=cm$cluster),
+1580482433695:ellipse.type  = "norm",
+1580482433695:ellipse.level = 0.68,
+1580482433695:palette       = "jco",
+1580482433695:ggtheme       = theme_minimal())
+1580482470392:cm <- cmeans(df, 3, dist = "euclidean", m = 2)
+1580482473080:fviz_cluster(list(data     = df[c(1,3)], cluster=cm$cluster),
+1580482473081:ellipse.type  = "norm",
+1580482473081:ellipse.level = 0.68,
+1580482473081:palette       = "jco",
+1580482473082:ggtheme       = theme_minimal())
+1580482523052:corrplot(cm$membership, is.corr = TRUE)
+1580482532325:cm <- cmeans(df, 3, dist = "euclidean", m = 2)
+1580482533183:cm$withinerror
+1580482533861:fviz_cluster(list(data     = df[c(1,3)], cluster=cm$cluster),
+1580482533861:ellipse.type  = "norm",
+1580482533862:ellipse.level = 0.68,
+1580482533862:palette       = "jco",
+1580482533862:ggtheme       = theme_minimal())
+1580482547371:fviz_cluster(list(data     = df[c(2,3)], cluster=cm$cluster),
+1580482547372:ellipse.type  = "norm",
+1580482547372:ellipse.level = 0.68,
+1580482547372:palette       = "jco",
+1580482547372:ggtheme       = theme_minimal())
+1580482562197:fviz_cluster(list(data     = df[c(1,3)], cluster=cm$cluster),
+1580482562197:ellipse.type  = "norm",
+1580482562198:ellipse.level = 0.68,
+1580482562198:palette       = "jco",
+1580482562198:ggtheme       = theme_minimal())
+1580482569501:fviz_cluster(list(data     = df[c(1,2)], cluster=cm$cluster),
+1580482569502:ellipse.type  = "norm",
+1580482569502:ellipse.level = 0.68,
+1580482569502:palette       = "jco",
+1580482569502:ggtheme       = theme_minimal())
+1580482588846:cm <- cmeans(df, 3, dist = "euclidean", m = 20)
+1580482590219:fviz_cluster(list(data     = df[c(1,2)], cluster=cm$cluster),
+1580482590219:ellipse.type  = "norm",
+1580482590220:ellipse.level = 0.68,
+1580482590220:palette       = "jco",
+1580482590220:ggtheme       = theme_minimal())
+1580482600235:cm <- cmeans(df, 3, dist = "euclidean", m = 1.2)
+1580482602112:cm$withinerror
+1580482603749:fviz_cluster(list(data     = df[c(1,2)], cluster=cm$cluster),
+1580482603749:ellipse.type  = "norm",
+1580482603749:ellipse.level = 0.68,
+1580482603749:palette       = "jco",
+1580482603750:ggtheme       = theme_minimal())
+1580482620464:fviz_cluster(list(data     = df[c(2,1)], cluster=cm$cluster),
+1580482620464:ellipse.type  = "norm",
+1580482620465:ellipse.level = 0.68,
+1580482620465:palette       = "jco",
+1580482620465:ggtheme       = theme_minimal())
+1580646329773:library(getopt)
+1580646330460:spec <- matrix(c(
+1580646330462:'file' ,'x',1,"character","input file", "calc_cent.csv",
+1580646330463:'help' ,'h',0,"logical"   ,"this help" , TRUE
+1580646330465:),ncol=6,byrow=T)
+1580646330466:opt = getopt(spec);
+1580646330497:if (!is.null(opt$help)) {cat(paste(getopt(spec, usage=T),"\n"));q();}
+1580646330559:j=1;for (i in spec[,1]){if(is.null(opt[[i]])) opt[[i]]=spec[j,6];j <- j+1;}
+1580646330746:library("fitdistrplus")
+1580646335998:library("formattable")
+1580646336547:library("GGally")
+1580646338599:#source("script/setup.r")
+1580646338600:library("mc2d")  ## needed for dtriang
+1580646339084:library("ggplot2")
+1580646339461:calc.distribution <- function(calc_cent){
+1580646339461:dist_name <- c("norm", "exp", "weibull", "lnorm", "gamma", "logis", "cauchy", "gumbel", "triang", "binom")
+1580646339461:# calc_dist
+1580646339462:dgumbel <- function(x, a, b) 1/b*exp((a-x)/b)*exp(-exp((a-x)/b))
+1580646339462:pgumbel <- function(q, a, b) exp(-exp((a-q)/b))
+1580646339462:qgumbel <- function(p, a, b) a-b*log(-log(p))
+1580646339462:# Computation
+1580646339463:calc_dist <- list()
+1580646339463:for (i in names(calc_cent)[c(-1,-7)]) {
+1580646339464:print(i)
+1580646339464:dat <- abs(calc_cent[[i]])
+1580646339464:fit <- list()
+1580646339465:tryCatch({fit$norm    <- fitdist(dat,dist_name[1])} ,error = function(error_condition)                            {})
+1580646339465:tryCatch({fit$exp     <- fitdist(dat,dist_name[2])} ,error = function(error_condition)                            {})
+1580646339465:tryCatch({fit$weibull <- fitdist(dat,dist_name[3])} ,error = function(error_condition)                            {})
+1580646339466:tryCatch({fit$lnorm   <- fitdist(dat,dist_name[4])} ,error = function(error_condition)                            {})
+1580646339467:tryCatch({fit$gamma   <- fitdist(dat,dist_name[5])} ,error = function(error_condition)                            {})
+1580646339467:tryCatch({fit$logis   <- fitdist(dat,dist_name[6])} ,error = function(error_condition)                            {})
+1580646339468:tryCatch({fit$cauchy  <- fitdist(dat,dist_name[7])} ,error = function(error_condition)                            {})
+1580646339468:tryCatch({fit$gumbel  <- fitdist(dat,dist_name[8], start=list(a=10,b=5))} ,error = function(error_condition)      {})
+1580646339468:tryCatch({fit$triang  <- fitdist(dat,dist_name[9])} ,error = function(error_condition)                            {})
+1580646339469:tryCatch({fit$binom   <- fitdist(dat,dist_name[10] ,start=list(size=8, prob=mean(dat)/8))} ,error = function(error_condition)                            {})
+1580646339469:calc_dist[[i]] <- fit
+1580646339470:}
+1580646339470:return(calc_dist)
+1580646339473:}
+1580646339474:calc.probability <- function(calc_cent){
+1580646339474:# calc_dist
+1580646339474:dgumbel <- function(x, a, b) 1/b*exp((a-x)/b)*exp(-exp((a-x)/b))
+1580646339474:pgumbel <- function(q, a, b) exp(-exp((a-q)/b))
+1580646339475:qgumbel <- function(p, a, b) a-b*log(-log(p))
+1580646339475:# Computation
+1580646339475:calc_prob <- list()
+1580646339475:for (i in names(calc_cent)[c(-1,-7)]){
+1580646339475:prob <- list()
+1580646339475:prob$norm <- pnorm(calc_cent[[i]])
+1580646339476:prob$exp <- pexp(calc_cent[[i]])
+1580646339476:prob$weibull <- pweibull(calc_cent[[i]],shape = 1)
+1580646339476:prob$lnorm <- plnorm(calc_cent[[i]])
+1580646339476:prob$gamma <- pgamma(calc_cent[[i]], shape = 1)
+1580646339477:prob$logis <- plogis(calc_cent[[i]])
+1580646339477:prob$cauchy <- pcauchy(calc_cent[[i]])
+1580646339477:prob$gumbel <- pgumbel(calc_cent[[i]], a = 1, b=1)
+1580646339477:prob$binom <- pbinom(calc_cent[[i]], size=2, prob = 0.5)
+1580646339478:prob$triang <- ptriang(calc_cent[[i]])
+1580646339478:prob$empirical <- ecdf(calc_cent[[i]])(calc_cent[[i]])
+1580646339478:calc_prob[[i]] <- prob
+1580646339479:}
+1580646339479:return(calc_prob)
+1580646339479:}
+1580646339480:plot.aic <- function(calc_dist, calc_cent){
+1580646339480:dist_name <- c("norm", "exp", "weibull", "lnorm", "gamma", "logis", "cauchy", "gumbel", "triang", "binom")
+1580646339480:length_dist <- length(dist_name)
+1580646339481:pdf("bin/AIC.pdf")
+1580646339481:# plot AIC
+1580646339481:loglik <-  matrix(nrow=length(calc_cent), ncol=length_dist)
+1580646339481:for (i in 1:length(calc_cent)){
+1580646339482:for (j in 1:length_dist)
+1580646339482:tryCatch({loglik[i,j] <- calc_dist[[i]][[j]]$loglik}   ,error = function(error_condition) {loglik[i,j] <- NA})
+1580646339482:}
+1580646339482:loglik <- as.data.frame(loglik)
+1580646339483:colnames(loglik)<- dist_name
+1580646339483:rownames(loglik)<- paste(c(1:length(calc_cent)),names(calc_cent))
+1580646339483:formattable(loglik, row.names=TRUE, list(norm = format, exp = format,weibull = format,lnorm = format,gamma = format,gamm = format,logis = format,cauchy = format))
+1580646339483:dev.off()
+1580646339484:}
+1580646339484:plot.pdf <- function(calc_dist, calc_cent){
+1580646339484:pdf("bin/PDF.pdf")
+1580646339485:layout(rbind(1:2, 3:4))
+1580646339485:lapply(seq_along(calc_dist), function(i) {
+1580646339485:tryCatch({denscomp(calc_dist[[i]], xlab=names(calc_cent)[i])}   ,error = function(error_condition) {})
+1580646339485:})
+1580646339485:dev.off()
+1580646339486:}
+1580646339486:plot.cdf2 <- function(calc_dist, calc_cent){
+1580646339486:pdf("bin/CDF.pdf")
+1580646339486:layout(rbind(1:2, 3:4))
+1580646339486:lapply(seq_along(calc_dist), function(i) {
+1580646339487:tryCatch({cdfcomp(calc_dist[[i]],ylab= "CDF (%)", xlab="Delay (ms)", xlim = c(200,500), main=names(calc_cent)[i])}   ,error = function(error_condition) {})
+1580646339487:})
+1580646339487:dev.off()
+1580646339487:}
+1580646339488:plot.cdf <- function(calc_dist, calc_cent){
+1580646339488:library(RColorBrewer)
+1580646339488:colors <- sort(brewer.pal(6, "Set1"), decreasing = F)
+1580646339488:pdf("cdf.eps", width=6, height=6)
+1580646339489:j=1
+1580646339490:plot(NA,xlim = c(200,500), ylim = c(0,1),xlab=NA,ylab=NA,main=NA) # Empty plot
+1580646339490:for (i in c(1,3,10,12)) {
+1580646339490:x <- calc_cent[[i]]
+1580646339490:curve(plogis(x, calc_dist[[i]]$logis$estimate[1], calc_dist[[i]]$logis$estimate[2]), 200, 450, col = colors[j], xlab='Delay (ms)', ylab='CDF (%)', cex.lab=1.5, lwd = 2, add = TRUE)
+1580646339490:j<-j+1
+1580646339491:}
+1580646339491:legend('bottomright', names(calc_cent)[c(1,3,10,12)] , lty=1, col=colors, bty='n', cex=1.2, lw=2)
+1580646339491:dev.off()
+1580646339491:}
+1580646339492:plot.hst <- function(data){
+1580646339492:pdf("bin/delay.pdf")
+1580646339492:layout(rbind(1:2, 3:4, 5:6))
+1580646339493:for (i in c(1,3,5,7,9,11)) {
+1580646339493:# par(mar=c(1,1,3,1))
+1580646339493:hist(data[[i]], xlab = "Delay (ms)", main=names(data)[i])
+1580646339493:}
+1580646339493:dev.off()
+1580646339494:}
+1580646339494:tmp=read.csv(file = opt$file)
+1580646339658:calc_cent=as.list(tmp)
+1580646340363:cprob <- calc.distribution(calc_cent)
+1580646356597:cdist <- calc.probability(calc_cent)
+1580646358861:plot.aic(cdist, calc_cent)
+1580646364008:plot.pdf(cdist, calc_cent)
+1580646367506:plot.cdf2(cdist, calc_cent)
+1580646431357:plot.aic(cdist, calc_cent)
+1580646434196:plot.pdf(cdist, calc_cent)
+1580646449019:dev.off()
+1580646500754:plot.pdf(cdist, calc_cent)
+1580646506026:plot(NA,xlim = c(200,500), ylim = c(0,1),xlab=NA,ylab=NA,main=NA) # Empty plot
+1580646517838:plot.cdf2(cdist, calc_cent)
+1580646562387:library(RColorBrewer)
+1580646563561:colors <- sort(brewer.pal(6, "Set1"), decreasing = F)
+1580646564834:#pdf("cdf.eps", width=6, height=6)
+1580646564834:j=1
+1580646566034:plot(NA,xlim = c(200,500), ylim = c(0,1),xlab=NA,ylab=NA,main=NA) # Empty plot
+1580646567465:for (i in c(1,3,10,12)) {
+1580646567465:x <- calc_cent[[i]]
+1580646567466:curve(plogis(x, cdist[[i]]$logis$estimate[1], cdist[[i]]$logis$estimate[2]), 200, 450, col = colors[j], xlab='Delay (ms)', ylab='CDF (%)', cex.lab=1.5, lwd = 2, add = TRUE)
+1580646567466:j<-j+1
+1580646567467:}
+1580646575281:#	pdf("bin/PDF.pdf")
+1580646575282:layout(rbind(1:2, 3:4))
+1580646576551:lapply(seq_along(cdist), function(i) {
+1580646576551:tryCatch({denscomp(cdist[[i]], xlab=names(calc_cent)[i])}   ,error = function(error_condition) {})
+1580646576551:})
+1580646595794:#	pdf("bin/CDF.pdf")
+1580646595794:layout(rbind(1:2, 3:4))
+1580646597790:lapply(seq_along(cdist), function(i) {
+1580646597791:tryCatch({cdfcomp(cdist[[i]],ylab= "CDF (%)", xlab="Delay (ms)", xlim = c(200,500), main=names(calc_cent)[i])}   ,error = function(error_condition) {})
+1580646597791:})
+1580646630842:denscomp(cdist[[1]], xlab=names(calc_cent)[1])
+1580646692188:cdist
+1580646702019:class(cdist)
+1580646710079:class(cdist[[1]])
+1580646719063:cdist[[1]]
+1580646751178:names(calc_cent)[1]
+1580646755835:names(calc_cent)[2]
+1580646760001:names(calc_cent)[3]
+1580646767671:denscomp(cdist[[3]], xlab=names(calc_cent)[3])
+1580646849513:cprob <- calc.distribution(calc_cent)
+1580646884783:calc_cent=as.list(tmp)
+1580646885835:cdist <- calc.distribution(calc_cent)
+1580646891650:cprob <- calc.probability(calc_cent)
+1580646893884:plot.pdf(cdist, calc_cent)
+1580646946984:denscomp(cdist[[3]], xlab=names(calc_cent)[3])
+1580646963097:plot.pdf(cdist, calc_cent)
+1580648329884:library(getopt)
+1580648330157:spec <- matrix(c(
+1580648330157:'file' ,'x',1,"character","input file", "calc_cent.csv",
+1580648330157:'help' ,'h',0,"logical"   ,"this help" , TRUE
+1580648330158:),ncol=6,byrow=T)
+1580648330335:opt = getopt(spec);
+1580648330509:if (!is.null(opt$help)) {cat(paste(getopt(spec, usage=T),"\n"));q();}
+1580648330688:j=1;for (i in spec[,1]){if(is.null(opt[[i]])) opt[[i]]=spec[j,6];j <- j+1;}
+1580648330846:library("fitdistrplus")
+1580648332195:library("formattable")
+1580648332302:library("GGally")
+1580648332760:#source("script/setup.r")
+1580648332761:library("mc2d")  ## needed for dtriang
+1580648332898:library("ggplot2")
+1580648332993:calc.distribution <- function(calc_cent){
+1580648332993:dist_name <- c("norm", "exp", "weibull", "lnorm", "gamma", "logis", "cauchy", "gumbel", "triang", "binom")
+1580648332993:# cdist
+1580648332994:dgumbel <- function(x, a, b) 1/b*exp((a-x)/b)*exp(-exp((a-x)/b))
+1580648332994:pgumbel <- function(q, a, b) exp(-exp((a-q)/b))
+1580648332994:qgumbel <- function(p, a, b) a-b*log(-log(p))
+1580648332994:# Computation
+1580648332994:cdist <- list()
+1580648332994:for (i in names(calc_cent)[c(-1,-7)]) {
+1580648332994:print(i)
+1580648332994:dat <- abs(calc_cent[[i]])
+1580648332995:fit <- list()
+1580648332995:tryCatch({fit$norm    <- fitdist(dat,dist_name[1])} ,error = function(error_condition)                            {})
+1580648332995:tryCatch({fit$exp     <- fitdist(dat,dist_name[2])} ,error = function(error_condition)                            {})
+1580648332995:tryCatch({fit$weibull <- fitdist(dat,dist_name[3])} ,error = function(error_condition)                            {})
+1580648332995:tryCatch({fit$lnorm   <- fitdist(dat,dist_name[4])} ,error = function(error_condition)                            {})
+1580648332996:tryCatch({fit$gamma   <- fitdist(dat,dist_name[5])} ,error = function(error_condition)                            {})
+1580648332996:tryCatch({fit$logis   <- fitdist(dat,dist_name[6])} ,error = function(error_condition)                            {})
+1580648332996:tryCatch({fit$cauchy  <- fitdist(dat,dist_name[7])} ,error = function(error_condition)                            {})
+1580648332996:tryCatch({fit$gumbel  <- fitdist(dat,dist_name[8], start=list(a=10,b=5))} ,error = function(error_condition)      {})
+1580648332997:tryCatch({fit$triang  <- fitdist(dat,dist_name[9])} ,error = function(error_condition)                            {})
+1580648332997:tryCatch({fit$binom   <- fitdist(dat,dist_name[10] ,start=list(size=8, prob=mean(dat)/8))} ,error = function(error_condition)                            {})
+1580648332997:cdist[[i]] <- fit
+1580648332997:}
+1580648332998:return(cdist)
+1580648332998:}
+1580648332999:calc.probability <- function(calc_cent){
+1580648332999:# cdist
+1580648332999:dgumbel <- function(x, a, b) 1/b*exp((a-x)/b)*exp(-exp((a-x)/b))
+1580648332999:pgumbel <- function(q, a, b) exp(-exp((a-q)/b))
+1580648332999:qgumbel <- function(p, a, b) a-b*log(-log(p))
+1580648332999:# Computation
+1580648332999:cprob <- list()
+1580648333000:for (i in names(calc_cent)[c(-1,-7)]){
+1580648333000:prob <- list()
+1580648333000:prob$norm <- pnorm(calc_cent[[i]])
+1580648333000:prob$exp <- pexp(calc_cent[[i]])
+1580648333000:prob$weibull <- pweibull(calc_cent[[i]],shape = 1)
+1580648333000:prob$lnorm <- plnorm(calc_cent[[i]])
+1580648333000:prob$gamma <- pgamma(calc_cent[[i]], shape = 1)
+1580648333001:prob$logis <- plogis(calc_cent[[i]])
+1580648333001:prob$cauchy <- pcauchy(calc_cent[[i]])
+1580648333001:prob$gumbel <- pgumbel(calc_cent[[i]], a = 1, b=1)
+1580648333001:prob$binom <- pbinom(calc_cent[[i]], size=2, prob = 0.5)
+1580648333001:prob$triang <- ptriang(calc_cent[[i]])
+1580648333001:prob$empirical <- ecdf(calc_cent[[i]])(calc_cent[[i]])
+1580648333002:cprob[[i]] <- prob
+1580648333002:}
+1580648333002:return(cprob)
+1580648333002:}
+1580648333003:plot.aic <- function(cdist, calc_cent){
+1580648333003:dist_name <- c("norm", "exp", "weibull", "lnorm", "gamma", "logis", "cauchy", "gumbel", "triang", "binom")
+1580648333003:length_dist <- length(dist_name)
+1580648333003:pdf("bin/AIC.pdf")
+1580648333003:# plot AIC
+1580648333004:loglik <-  matrix(nrow=length(calc_cent), ncol=length_dist)
+1580648333004:for (i in 1:length(calc_cent)){
+1580648333004:for (j in 1:length_dist)
+1580648333004:tryCatch({loglik[i,j] <- cdist[[i]][[j]]$loglik}   ,error = function(error_condition) {loglik[i,j] <- NA})
+1580648333004:}
+1580648333004:loglik <- as.data.frame(loglik)
+1580648333004:colnames(loglik)<- dist_name
+1580648333005:rownames(loglik)<- paste(c(1:length(calc_cent)),names(calc_cent))
+1580648333005:formattable(loglik, row.names=TRUE, list(norm = format, exp = format,weibull = format,lnorm = format,gamma = format,gamm = format,logis = format,cauchy = format))
+1580648333005:dev.off()
+1580648333005:}
+1580648333006:plot.pdf <- function(cdist, calc_cent){
+1580648333006:pdf("bin/PDF.pdf")
+1580648333006:layout(rbind(1:2, 3:4))
+1580648333006:lapply(seq_along(cdist), function(i) {
+1580648333006:tryCatch({denscomp(cdist[[i]], xlab=names(calc_cent)[i])}   ,error = function(error_condition) {})
+1580648333006:})
+1580648333006:dev.off()
+1580648333006:}
+1580648333007:plot.cdf2 <- function(cdist, calc_cent){
+1580648333007:pdf("bin/CDF.pdf")
+1580648333007:layout(rbind(1:2, 3:4))
+1580648333007:lapply(seq_along(cdist), function(i) {
+1580648333007:tryCatch({cdfcomp(cdist[[i]],ylab= "CDF (%)", xlab="Delay (ms)", xlim = c(200,500), main=names(calc_cent)[i])}   ,error = function(error_condition) {})
+1580648333007:})
+1580648333007:dev.off()
+1580648333007:}
+1580648333008:plot.cdf <- function(cdist, calc_cent){
+1580648333008:library(RColorBrewer)
+1580648333008:colors <- sort(brewer.pal(6, "Set1"), decreasing = F)
+1580648333008:pdf("cdf.eps", width=6, height=6)
+1580648333008:j=1
+1580648333008:plot(NA,xlim = c(200,500), ylim = c(0,1),xlab=NA,ylab=NA,main=NA) # Empty plot
+1580648333008:for (i in c(1,3,10,12)) {
+1580648333008:x <- calc_cent[[i]]
+1580648333009:curve(plogis(x, cdist[[i]]$logis$estimate[1], cdist[[i]]$logis$estimate[2]), 200, 450, col = colors[j], xlab='Delay (ms)', ylab='CDF (%)', cex.lab=1.5, lwd = 2, add = TRUE)
+1580648333009:j<-j+1
+1580648333009:}
+1580648333009:legend('bottomright', names(calc_cent)[c(1,3,10,12)] , lty=1, col=colors, bty='n', cex=1.2, lw=2)
+1580648333009:dev.off()
+1580648333009:}
+1580648333389:plot.hst <- function(data){
+1580648333390:pdf("bin/delay.pdf")
+1580648333390:layout(rbind(1:2, 3:4, 5:6))
+1580648333390:for (i in c(1,3,5,7,9,11)) {
+1580648333390:# par(mar=c(1,1,3,1))
+1580648333391:hist(data[[i]], xlab = "Delay (ms)", main=names(data)[i])
+1580648333391:}
+1580648333391:dev.off()
+1580648333391:}
+1580648333793:tmp=read.csv(file = opt$file)
+1580648334510:calc_cent=as.list(tmp)
+1580648336362:cdist <- calc.distribution(calc_cent)
+1580648343371:write.csv(cdist,"bin/cdist.csv", row.names = FALSE)
+1580648372045:cdist
+1580648406341:cprob
+1580648408435:cprob <- calc.probability(calc_cent)
+1580648411124:cprob
+1580648429153:write.csv(cprob,"bin/cprob.csv", row.names = FALSE)
+1580648769810:round(cprob, 2)
+1580648866688:round_df <- function(df, digits) {
+1580648866689:nums <- vapply(df, is.numeric, FUN.VALUE = logical(1))
+1580648866689:df[,nums] <- round(df[,nums], digits = digits)
+1580648866690:(df)
+1580648866690:}
+1580648872948:round_df(cprob, 2)
+1580648890806:cprob$Burt.s.Constraint
+1580648899336:round_df(cprob$Burt.s.Constraint, 2)
+1580648921320:round_df(cprob[1], 2)
+1580648926817:round(cprob[1], 2)
+1580648962415:round_df(cprob, digits=3)
+1580648992231:round_df <- function(df, digits) {
+1580648992232:nums <- vapply(df, is.numeric, FUN.VALUE = logical(1))
+1580648992232:nums
+1580648992232:df[,nums] <- round(df[,nums], digits = digits)
+1580648992233:(df)
+1580648992233:}
+1580648997236:round(cprob[1], 2)
+1580648999789:round_df(cprob, digits=3)
+1580649042634:head(cprob)
+1580649057143:head(cprob)
+1580649077327:cprob[1]
+1580649082318:cprob[2]
+1580649089872:cprob[[2]]
+1580649127582:cprob[,1]
+1580649135748:cprob[1]
+1580649148539:round_df <- function(df, digits) {
+1580649148539:nums <- vapply(df, is.numeric, FUN.VALUE = logical(1))
+1580649148539:nums
+1580649148540:df[nums] <- round(df[nums], digits = digits)
+1580649148540:(df)
+1580649148540:}
+1580649169629:round_df(cprob, digits=3)
+1580649177970:round_df(cprob[1], digits=3)
+1580649269889:library(dplyr)
+1580649272148:cprob %>%
+1580649272149:mutate_if(is.numeric, round)
+1580649364433:cprob.
+1580649370145:as
+1580649384285:as.matrix(cprob)
+1580649405506:dd[1,1]
+1580649408170:dd <- as.matrix(cprob)
+1580649408871:dd[1,1]
+1580649413057:dd[1,1]
+1580649422098:dd
+1580649430884:dd[,1]
+1580649559212:myData[] <- lapply(cprob,round,2)
+1580649565419:myData <- lapply(cprob,round,2)
+1580649647943:lapply(seq_along(cdist), function(i) {
+1580649647943:round(cdist[[i]],4)
+1580649647944:})
+1580649663055:lapply(seq_along(cprob), function(i) {
+1580649663056:round(cprob[[i]],4)
+1580649663056:})
+1580649738412:cprob[[1]]
+1580649752388:cprob$Burt.s.Constraint
+1580649825078:cprob[[1]][1]
+1580649848580:round(cprob[[1]][1],3)
+1580649865748:round(cprob[[1]][1,],3)
+1580649881510:cprob[[1]][1][1]
+1580649891264:cprob[[1]][1,2]
+1580649898207:cprob[[1]][2,1]
+1580649902314:cprob[[1]][1]
+1580649915557:cprob[[1]][1]
+1580649928510:cprob[[1]][[1]]
+1580649941766:cprob[[1]][[1]][1]
+1580649956114:round(cprob[[1]][[1]][1],4)
+1580650062697:lapply(seq_along(cprob), function(i) {
+1580650062698:lapply(seq_along(cprob[[i]]), function(j) {
+1580650062698:round(cprob[[i]][[j]],4)
+1580650062698:})
+1580650062699:})
+1580650084260:cprob2 <- lapply(seq_along(cprob), function(i) {
+1580650084260:lapply(seq_along(cprob[[i]]), function(j) {
+1580650084260:round(cprob[[i]][[j]],4)
+1580650084261:})
+1580650084261:})
+1580650095100:cprob2
+1580650127787:write.csv(cprob,"bin/cprob", row.names = FALSE)
+1580650197204:tmp=read.csv(file = opt$file)
+1580650197555:calc_cent=as.list(tmp)
+1580650198240:cdist <- calc.distribution(calc_cent)
+1580650203480:cprob <- calc.probability(calc_cent)
+1580650204878:cprob2 <- lapply(seq_along(cprob), function(i) {
+1580650204879:lapply(seq_along(cprob[[i]]), function(j) {
+1580650204879:round(cprob[[i]][[j]],4)
+1580650204879:})
+1580650204880:})
+1580650206501:write.csv(cprob2,"bin/cprob", row.names = FALSE)
+1580651533154:library(getopt)
+1580651533409:spec <- matrix(c(
+1580651533410:'file' ,'x',1,"character","input file", "X.csv",
+1580651533410:'help' ,'h',0,"logical"   ,"this help" , TRUE
+1580651533410:),ncol=6,byrow=T)
+1580651533563:opt = getopt(spec);
+1580651533735:if (!is.null(opt$help)) {cat(paste(getopt(spec, usage=T),"\n"));q();}
+1580651533903:j=1;for (i in spec[,1]){if(is.null(opt[[i]])) opt[[i]]=spec[j,6];j <- j+1;}
+1580651534061:library("fitdistrplus")
+1580651535561:library("formattable")
+1580651535812:library("GGally")
+1580651536276:#source("script/setup.r")
+1580651536276:library("mc2d")  ## needed for dtriang
+1580651536429:library("ggplot2")
+1580651536525:calc.distribution <- function(calc_cent){
+1580651536525:dist_name <- c("norm", "exp", "weibull", "lnorm", "gamma", "logis", "cauchy", "gumbel", "triang", "binom")
+1580651536525:# cdist
+1580651536525:dgumbel <- function(x, a, b) 1/b*exp((a-x)/b)*exp(-exp((a-x)/b))
+1580651536525:pgumbel <- function(q, a, b) exp(-exp((a-q)/b))
+1580651536526:qgumbel <- function(p, a, b) a-b*log(-log(p))
+1580651536526:# Computation
+1580651536526:cdist <- list()
+1580651536526:for (i in names(calc_cent)) {
+1580651536526:print(i)
+1580651536526:dat <- abs(calc_cent[[i]])
+1580651536526:fit <- list()
+1580651536527:tryCatch({fit$norm    <- fitdist(dat,dist_name[1])} ,error = function(error_condition)                            {})
+1580651536527:tryCatch({fit$exp     <- fitdist(dat,dist_name[2])} ,error = function(error_condition)                            {})
+1580651536527:tryCatch({fit$weibull <- fitdist(dat,dist_name[3])} ,error = function(error_condition)                            {})
+1580651536527:tryCatch({fit$lnorm   <- fitdist(dat,dist_name[4])} ,error = function(error_condition)                            {})
+1580651536527:tryCatch({fit$gamma   <- fitdist(dat,dist_name[5])} ,error = function(error_condition)                            {})
+1580651536528:tryCatch({fit$logis   <- fitdist(dat,dist_name[6])} ,error = function(error_condition)                            {})
+1580651536528:tryCatch({fit$cauchy  <- fitdist(dat,dist_name[7])} ,error = function(error_condition)                            {})
+1580651536528:tryCatch({fit$gumbel  <- fitdist(dat,dist_name[8], start=list(a=10,b=5))} ,error = function(error_condition)      {})
+1580651536528:tryCatch({fit$triang  <- fitdist(dat,dist_name[9])} ,error = function(error_condition)                            {})
+1580651536529:tryCatch({fit$binom   <- fitdist(dat,dist_name[10] ,start=list(size=8, prob=mean(dat)/8))} ,error = function(error_condition)                            {})
+1580651536529:cdist[[i]] <- fit
+1580651536529:}
+1580651536529:return(cdist)
+1580651536530:}
+1580651536530:calc.probability <- function(calc_cent){
+1580651536530:# cdist
+1580651536530:dgumbel <- function(x, a, b) 1/b*exp((a-x)/b)*exp(-exp((a-x)/b))
+1580651536531:pgumbel <- function(q, a, b) exp(-exp((a-q)/b))
+1580651536531:qgumbel <- function(p, a, b) a-b*log(-log(p))
+1580651536531:# Computation
+1580651536531:cprob <- list()
+1580651536531:for (i in names(calc_cent)){
+1580651536531:prob <- list()
+1580651536531:prob$norm <- pnorm(calc_cent[[i]])
+1580651536532:prob$exp <- pexp(calc_cent[[i]])
+1580651536532:prob$weibull <- pweibull(calc_cent[[i]],shape = 1)
+1580651536532:prob$lnorm <- plnorm(calc_cent[[i]])
+1580651536532:prob$gamma <- pgamma(calc_cent[[i]], shape = 1)
+1580651536532:prob$logis <- plogis(calc_cent[[i]])
+1580651536532:prob$cauchy <- pcauchy(calc_cent[[i]])
+1580651536532:prob$gumbel <- pgumbel(calc_cent[[i]], a = 1, b=1)
+1580651536533:prob$binom <- pbinom(calc_cent[[i]], size=2, prob = 0.5)
+1580651536533:prob$triang <- ptriang(calc_cent[[i]])
+1580651536533:prob$empirical <- ecdf(calc_cent[[i]])(calc_cent[[i]])
+1580651536533:cprob[[i]] <- prob
+1580651536533:}
+1580651536533:return(cprob)
+1580651536534:}
+1580651536534:plot.aic <- function(cdist, calc_cent){
+1580651536534:dist_name <- c("norm", "exp", "weibull", "lnorm", "gamma", "logis", "cauchy", "gumbel", "triang", "binom")
+1580651536534:length_dist <- length(dist_name)
+1580651536534:pdf("bin/AIC.pdf")
+1580651536535:# plot AIC
+1580651536535:loglik <-  matrix(nrow=length(calc_cent), ncol=length_dist)
+1580651536535:for (i in 1:length(calc_cent)){
+1580651536535:for (j in 1:length_dist)
+1580651536535:tryCatch({loglik[i,j] <- cdist[[i]][[j]]$loglik}   ,error = function(error_condition) {loglik[i,j] <- NA})
+1580651536535:}
+1580651536536:loglik <- as.data.frame(loglik)
+1580651536536:colnames(loglik)<- dist_name
+1580651536536:rownames(loglik)<- paste(c(1:length(calc_cent)),names(calc_cent))
+1580651536536:formattable(loglik, row.names=TRUE, list(norm = format, exp = format,weibull = format,lnorm = format,gamma = format,gamm = format,logis = format,cauchy = format))
+1580651536536:dev.off()
+1580651536536:}
+1580651536537:plot.pdf <- function(cdist, calc_cent){
+1580651536537:pdf("bin/PDF.pdf")
+1580651536537:layout(rbind(1:2, 3:4))
+1580651536537:lapply(seq_along(cdist), function(i) {
+1580651536537:tryCatch({denscomp(cdist[[i]], xlab=names(calc_cent)[i])}   ,error = function(error_condition) {})
+1580651536537:})
+1580651536538:dev.off()
+1580651536538:}
+1580651536538:plot.cdf2 <- function(cdist, calc_cent){
+1580651536538:pdf("bin/CDF.pdf")
+1580651536538:layout(rbind(1:2, 3:4))
+1580651536538:lapply(seq_along(cdist), function(i) {
+1580651536538:tryCatch({cdfcomp(cdist[[i]],ylab= "CDF (%)", xlab="Delay (ms)", xlim = c(200,500), main=names(calc_cent)[i])}   ,error = function(error_condition) {})
+1580651536538:})
+1580651536539:dev.off()
+1580651536539:}
+1580651536552:plot.cdf <- function(cdist, calc_cent){
+1580651536552:library(RColorBrewer)
+1580651536552:colors <- sort(brewer.pal(6, "Set1"), decreasing = F)
+1580651536552:pdf("cdf.eps", width=6, height=6)
+1580651536552:j=1
+1580651536552:plot(NA,xlim = c(200,500), ylim = c(0,1),xlab=NA,ylab=NA,main=NA) # Empty plot
+1580651536552:for (i in c(1,3,10,12)) {
+1580651536553:x <- calc_cent[[i]]
+1580651536553:curve(plogis(x, cdist[[i]]$logis$estimate[1], cdist[[i]]$logis$estimate[2]), 200, 450, col = colors[j], xlab='Delay (ms)', ylab='CDF (%)', cex.lab=1.5, lwd = 2, add = TRUE)
+1580651536553:j<-j+1
+1580651536553:}
+1580651536553:legend('bottomright', names(calc_cent)[c(1,3,10,12)] , lty=1, col=colors, bty='n', cex=1.2, lw=2)
+1580651536553:dev.off()
+1580651536554:}
+1580651537083:plot.hst <- function(data){
+1580651537083:pdf("bin/delay.pdf")
+1580651537083:layout(rbind(1:2, 3:4, 5:6))
+1580651537083:for (i in c(1,3,5,7,9,11)) {
+1580651537083:# par(mar=c(1,1,3,1))
+1580651537083:hist(data[[i]], xlab = "Delay (ms)", main=names(data)[i])
+1580651537084:}
+1580651537084:dev.off()
+1580651537084:}
+1580651538333:tmp=read.csv(file = opt$file)
+1580651538663:calc_cent=as.list(tmp)
+1580651539065:cdist <- calc.distribution(calc_cent)
+1580651541478:cprob <- calc.probability(calc_cent)
+1580651560126:round(cprob[[1]][[1]],4)
+1580651606957:lapply(seq_along(cprob), function(i) {
+1580651606957:lapply(seq_along(cprob[[i]]), function(j) {
+1580651606957:tmp <- round(cprob[[i]][[j]],4)
+1580651606958:write.csv(tmp,"bin/cprob.csv", row.names = FALSE)
+1580651606958:})
+1580651606958:})
+1580651651793:lapply(seq_along(cprob), function(i) {
+1580651651793:tmp <- lapply(seq_along(cprob[[i]]), function(j) {
+1580651651793:round(cprob[[i]][[j]],4)
+1580651651793:})
+1580651651793:write.csv(tmp,"bin/cprob.csv", row.names = FALSE)
+1580651651794:})
+1580651749860:lapply(seq_along(cprob), function(i) {
+1580651749860:tmp<-c()
+1580651749861:tmp2<-c()
+1580651749861:lapply(seq_along(cprob[[i]]), function(j) {
+1580651749861:tmp <- round(cprob[[i]][[j]],4)
+1580651749861:})
+1580651749861:tmp2<-cbind(tmp2,tmp)
+1580651749861:write.csv(tmp,"bin/cprob.csv", row.names = FALSE)
+1580651749861:})
+1580651802564:lapply(seq_along(cprob), function(i) {
+1580651802564:tmp<-c()
+1580651802565:tmp2<-c()
+1580651802565:lapply(seq_along(cprob[[i]]), function(j) {
+1580651802565:tmp2<-cbind(tmp2,round(cprob[[i]][[j]],4))
+1580651802565:})
+1580651802565:write.csv(tmp,"bin/cprob.csv", row.names = FALSE)
+1580651802565:})
+1580651818416:lapply(seq_along(cprob), function(i) {
+1580651818416:tmp<-c()
+1580651818417:tmp2<-c()
+1580651818417:lapply(seq_along(cprob[[i]]), function(j) {
+1580651818417:tmp2<-c(tmp2,round(cprob[[i]][[j]],4))
+1580651818417:})
+1580651818418:write.csv(tmp,"bin/cprob.csv", row.names = FALSE)
+1580651818418:})
+1580651857490:round(cprob[[2]][[2]],4)
+1580651884482:write.csv(round(cprob[[2]][[2]],4),"bin/cprob.csv", row.names = FALSE)
+1580651921065:class(round(cprob[[2]][[2]],4))
+1580651934234:as.array(round(cprob[[2]][[2]],4))
+1580651945397:as.list(round(cprob[[2]][[2]],4))
+1580651964732:cx<-as.list(round(cprob[[2]][[2]],4))
+1580651967993:cx
+1580651979564:write.csv(cx,"bin/cprob.csv", row.names = FALSE)
+1580651993967:cx<-as.array(round(cprob[[2]][[2]],4))
+1580651995419:cx
+1580651997455:write.csv(cx,"bin/cprob.csv", row.names = FALSE)
+1580652049328:lapply(seq_along(cprob), function(i) {
+1580652049328:lapply(seq_along(cprob[[i]]), function(j) {
+1580652049329:tmp[j] <- round(cprob[[i]][[j]],4)
+1580652049329:})
+1580652049329:write.csv(tmp,"bin/cprob.csv", row.names = FALSE)
+1580652049329:})
+1580652172806:lapply(seq_along(cprob), function(i) {
+1580652172806:tmp<-array()
+1580652172806:tmp <- matrix(ncol=length(cprob))
+1580652172806:lapply(seq_along(cprob[[i]]), function(j) {
+1580652172807:tmp[j] <- round(cprob[[i]][[j]],4)
+1580652172807:})
+1580652172807:write.csv(tmp,"bin/cprob.csv", row.names = FALSE)
+1580652172807:})
+1580652192691:lapply(seq_along(cprob), function(i) {
+1580652192691:tmp<-array()
+1580652192691:tmp <- matrix(ncol=22)
+1580652192691:lapply(seq_along(cprob[[i]]), function(j) {
+1580652192691:tmp[j] <- round(cprob[[i]][[j]],4)
+1580652192692:})
+1580652192692:write.csv(tmp,"bin/cprob.csv", row.names = FALSE)
+1580652192692:})
+1580652205562:lapply(seq_along(cprob), function(i) {
+1580652205562:tmp <- matrix(ncol=22)
+1580652205563:lapply(seq_along(cprob[[i]]), function(j) {
+1580652205563:tmp[j] <- round(cprob[[i]][[j]],4)
+1580652205563:})
+1580652205563:write.csv(tmp,"bin/cprob.csv", row.names = FALSE)
+1580652205563:})
+1580652242766:write.csv(cprob,"bin/cprob.csv", row.names = FALSE)
+1580652284430:lapply(seq_along(cprob), function(i) {
+1580652284430:lapply(seq_along(cprob[[i]]), function(j) {
+1580652284430:cprob[[i]][[j]] <- round(cprob[[i]][[j]],4)
+1580652284431:})
+1580652284431:})
+1580652288743:write.csv(cprob,"bin/cprob.csv", row.names = FALSE)
+1580652304231:cprob
+1580652343235:cprob[[2]][[2]] <- round(cprob[[2]][[2]],4)
+1580652348383:cprob[[2]][[2]]
+1580652368164:length(cprob)
+1580652420408:cprob <- calc.probability(calc_cent)
+1580652422601:length(cprob)
+1580652464671:seq_along(cprob)
+1580652549256:for(i in seq_along(cprob)){
+1580652549257:for(j in seq_along(cprob[[i]])){
+1580652549257:cprob[[i]][[j]] <- round(cprob[[i]][[j]],4)
+1580652549258:}
+1580652549258:}
+1580652553688:write.csv(cprob,"bin/cprob.csv", row.names = FALSE)
+1580652620982:cprob <- calc.probability(calc_cent)
+1580652622784:write.csv(cprob,"bin/cprob.csv", row.names = FALSE)
+1580652645054:for(i in seq_along(cprob)){
+1580652645055:for(j in seq_along(cprob[[i]])){
+1580652645055:cprob[[i]][[j]] <- round(cprob[[i]][[j]],4)
+1580652645055:}
+1580652645055:}
+1580652652184:write.csv(cprob,"bin/cprob.csv", row.names = FALSE)
+1580652757202:for(i in seq_along(cprob)){
+1580652757203:for(j in seq_along(cprob[[i]])){
+1580652757203:cprob[[i]][[j]] <- round(cprob[[i]][[j]],4)
+1580652757203:}
+1580652757203:write.csv(cprob[[i]],"bin/cprob.csv", row.names = FALSE)
+1580652757203:}
+1580652984508:calc.distribution <- function(calc_cent){
+1580652984509:dist_name <- c("norm", "exp", "weibull", "lnorm", "gamma", "logis", "cauchy", "gumbel", "triang", "binom")
+1580652984509:# cdist
+1580652984509:dgumbel <- function(x, a, b) 1/b*exp((a-x)/b)*exp(-exp((a-x)/b))
+1580652984510:pgumbel <- function(q, a, b) exp(-exp((a-q)/b))
+1580652984510:qgumbel <- function(p, a, b) a-b*log(-log(p))
+1580652984510:# Computation
+1580652984511:cdist <- list()
+1580652984511:for (distname in dist_name) {
+1580652984511:for (i in names(calc_cent)) {
+1580652984512:print(i)
+1580652984512:dat <- abs(calc_cent[[i]])
+1580652984513:fit <- list()
+1580652984513:tryCatch({fit$norm    <- fitdist(dat,distname)} ,error = function(error_condition)                            {})
+1580652984513:# tryCatch({fit$exp     <- fitdist(dat,dist_name[2])} ,error = function(error_condition)                            {})
+1580652984514:# tryCatch({fit$weibull <- fitdist(dat,dist_name[3])} ,error = function(error_condition)                            {})
+1580652984514:# tryCatch({fit$lnorm   <- fitdist(dat,dist_name[4])} ,error = function(error_condition)                            {})
+1580652984515:# tryCatch({fit$gamma   <- fitdist(dat,dist_name[5])} ,error = function(error_condition)                            {})
+1580652984515:# tryCatch({fit$logis   <- fitdist(dat,dist_name[6])} ,error = function(error_condition)                            {})
+1580652984515:# tryCatch({fit$cauchy  <- fitdist(dat,dist_name[7])} ,error = function(error_condition)                            {})
+1580652984516:# tryCatch({fit$gumbel  <- fitdist(dat,dist_name[8], start=list(a=10,b=5))} ,error = function(error_condition)      {})
+1580652984516:# tryCatch({fit$triang  <- fitdist(dat,dist_name[9])} ,error = function(error_condition)                            {})
+1580652984517:# tryCatch({fit$binom   <- fitdist(dat,dist_name[10] ,start=list(size=8, prob=mean(dat)/8))} ,error = function(error_condition)                            {})
+1580652984517:cdist[[i]] <- fit
+1580652984517:}
+1580652984518:}
+1580652984518:return(cdist)
+1580652984519:}
+1580653238420:for(i in seq_along(cprob)){
+1580653238420:for(j in seq_along(cprob[[i]])){
+1580653238420:cprob[[i]][[j]] <- round(cprob[[i]][[j]],4)
+1580653238420:}
+1580653238420:write.csv(cprob[[i]],c("bin/cprob",i,".csv"), row.names = FALSE)
+1580653238420:}
+1580653249631:c("bin/cprob",i,".csv")
+1580653277488:c<-"bin/cprob"+i+".csv"
+1580653318563:for(i in seq_along(cprob)){
+1580653318563:for(j in seq_along(cprob[[i]])){
+1580653318564:cprob[[i]][[j]] <- round(cprob[[i]][[j]],4)
+1580653318564:}
+1580653318564:write.csv(cprob[[i]],paste("bin/cprob",i,".csv"), row.names = FALSE)
+1580653318565:}

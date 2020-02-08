@@ -20,3 +20,11 @@ c.content.user_stylesheets = ['themes/solarized-dark.css','themes/custom_solariz
 
 c.content.cookies.store = False
 c.content.cookies.accept = 'all'
+
+c.backend = 'webengine'
+c.content.javascript.enabled = True
+c.content.headers.user_agent = 'Mozilla/5.0 (X11; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/77.0'
+
+c.url.default_page='https://google.com/'
+#c.url.searchengines="{'DEFAULT','https://google.com/?q={}'}"
+c.url.start_pages='https://google.com'

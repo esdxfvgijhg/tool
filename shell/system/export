@@ -1,0 +1,253 @@
+#!/bin/bash
+
+## Start graphical server if i3 not already running.
+#[ "$(tty)" = "/dev/tty1" ] && ! pgrep -x i3 >/dev/null && exec startx
+## Switch escape and caps if tty:
+#sudo -n loadkeys ~/.local/bin/ttymaps.kmap 2>/dev/null
+
+
+#selected_scheme scheme-infraonly
+#TEXDIR /tmp/texlive
+#TEXMFCONFIG ~/.texlive/texmf-config
+#TEXMFHOME ~/texmf
+#TEXMFLOCAL /tmp/texlive/texmf-local
+#TEXMFSYSCONFIG /tmp/texlive/texmf-config
+#TEXMFSYSVAR /tmp/texlive/texmf-var
+#TEXMFVAR ~/.texlive/texmf-var
+#option_doc 0
+#option_src 0
+
+#export TEXDIR=
+#export TEXMFCONFIG=
+#export TEXMFVAR=
+#export TEXMFDIST=
+#export TEXMFROOT=
+#export TEXMFLOCAL=
+#export BIBINPUTS=
+export dmenu="dmenu"
+export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+export DISPLAY=:0
+export R_CHECK_ENVIRON=~/.config/R
+export R_BUILD_ENVIRON=~/.config/R
+export R_ENVIRON_USER=~/.config/R/Renviron
+export R_PROFILE_USER=~/.config/R/Rprofile
+export PYTHONSTARTUP=~/.config/python/pythonrc
+export airpods="FC:B6:D8:F0:49:CF"
+export AIRPODS=FC:B6:D8:F0:49:CF
+# FOLDERS --------------------------------------------------
+export AGHILESPATH=/home/aghiles/Aghiles
+
+	export TOOLPATH=$AGHILESPATH/tool
+		export CONFIGFILE=$TOOLPATH/config
+		export SHELLPATH=$TOOLPATH/shell
+			export SYSTEMPATH=$SHELLPATH/system
+		export TOOLSPATH=$TOOLPATH/tools
+
+export SIMULATIONPATH=$PROGRAMPATH/00-simulation
+#			export PYTHONPATH=/usr/lib/python3/dist-packages-so:/usr/lib/python3/dist-packages:/usr/lib/python3/dist-packages-py:/usr/lib/python3/dist-packages-info
+
+			
+	export ADMINPATH=$AGHILESPATH/admin
+
+	export JOBPATH=$AGHILESPATH/job
+		export TEACHINGPATH=$JOBPATH/ece
+		export PROGRAMPATH=$JOBPATH/cod
+		export READINGPATH=$JOBPATH/doc
+      export SEARCH1=$READINGPATH
+		export WRITINGPATH=$JOBPATH/txt
+      export BIBPATH=$WRITINGPATH/resources/bib
+
+export SHORCUTSPATH=Aghiles/tool/shell/wm/shortcuts
+export TMPPATH=/home/aghiles/Downloads/tmp
+export TMPFILE=$TOOLSPATH/.tmp
+
+
+export LD_LIBRARY_PATH=/usr/local/lib
+
+
+
+# SHELL --------------------------------------------------
+export PATH=$(find $TOOLPATH/shell/ -type d -printf "%p:")$PATH #export PATH=$PATH:$(du "$TOOLPATH/scripts/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')
+
+# TOOLS --------------------------------------------------
+export PATH=$TOOLSPATH/c-data:$PATH
+export PATH=$TOOLSPATH/c-matlab/bin:$PATH
+export PATH=$TOOLSPATH/n-prism/bin:$PATH
+export PATH=$TOOLSPATH/r-zotero:$PATH
+export PATH=$TOOLSPATH/0-packages:$PATH
+export PATH=$TOOLSPATH/c-mlpack/build/bin/:${PATH}
+export SEARCH2=$TOOLSPATH/r-bibliography/storage
+export SEARCH3=$TOOLSPATH/r-bibliography/storage2
+export PIP_TARGET=$TOOLSPATH/c-python
+export PIP3_TARGET=$TOOLSPATH/c-python
+export DATAPATH=$TOOLSPATH/c-data
+export PYTHONPATH=$TOOLSPATH/c-python:/usr/lib/python3/dist-packages2
+export LANGUAGETOOLPATH=$TOOLSPATH/r-language-tool
+
+export LD_LIBRARY_PATH=$TOOLSPATH/c-mlpack/build/lib/:${LD_LIBRARY_PATH}
+
+export PATH=$PROGRAMPATH/shell:$PATH
+
+export PATH=$PATH:$HOME/.vim/pack/bundle/opt/vcs-jump/bin
+export PATH=/home/aghiles/Downloads/Software/omnetpp-5.5.1/bin:$PATH
+export PATH=/usr/local/wsnet-2.0/bin:$PATH
+
+export PATH=/home/aghiles/.vim/bundle/vim-live-latex-preview/bin:$PATH
+export PATH=/home/aghiles/.config/nvim/bundle/vim-live-latex-preview/bin:$PATH
+
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/opt/ruby/bin:$PATH
+export PATH=/usr/local/opt/curl/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+export MANPATH=/usr/local/share/man:$MANPATH
+export SYSTEM_PATH=$PATH
+
+
+export ONOS_ROOT="$TOOLSPATH/n-sdn/onos"
+#source $ONOS_ROOT/tools/dev/bash_profile
+
+
+#unset PATH
+
+
+
+export arien=
+export LANG=en_US.UTF-8 #fr_FR.UTF-8
+export LC_TIME=en_AU.UTF-8
+export LC_ALL=fr_FR.UTF-8
+export LC_CTYPE=$LANG
+#test -f $HOST_RC && source $HOST_RC
+#test -f $LOCAL_RC && source $LOCAL_RC
+#export LOCAL_RC=$HOME/.zshrc.local ## Local and host-specific overrides.
+#export HOST_RC=$HOME/.zsh/host/$(hostname -s)
+
+
+
+export CLICOLOR=true
+export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
+export COPYFILE_DISABLE=true
+export CORRECT_IGNORE_FILE='.*' # Stop (eg.) `git push github` from triggering: zsh: correct 'github' to '.github' [yes, no, edit, abort]?
+export DISABLE_AUTO_TITLE=true
+export KEYTIMEOUT=10
+export LARBSWM="$(cat ~/.local/share/larbs/wm 2>/dev/null)" && [ "$LARBSWM" = "dwm" ] || export LARBSWM="i3" # Get default LARBS WM from ~/.local/share/larbs/wm
+export RPROMPT=$RPROMPT_BASE
+export RPROMPT_BASE="\${vcs_info_msg_0_}%F{blue}%~%f"
+export SPROMPT="zsh: correct %F{red}'%R'%f to %F{red}'%r'%f [%B%Uy%u%bes, %B%Un%u%bo, %B%Ue%u%bdit, %B%Ua%u%bbort]? "
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+export STATUSBAR="${LARBSWM}blocks"
+export SUDO_ASKPASS="dmenu-pass"
+
+export TERMINFO=$HOME/share/terminfo # usually this means running on a machine with a statically-linked, hand-built tmux (and ncurses)
+export USER=`whoami`
+export ZDOTDIR="$SYSTEMPATH"
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+export GOBIN="$GOPATH/bin"
+export CPPFLAGS="-I/usr/local/opt/mysql@5.7/include"
+export DEFAULT_USER="aghiles"
+export DICS="/usr/share/stardict/dic/"
+export BIB="$HOME/Documents/LaTeX/uni.bib"
+export CDPATH=.:~:~/code #https://bitbucket.org/mercurialeclipse/update-site/raw/default/ don't export CDPATH (can cause problems with shell scripts etc)
+export CHRUBY=/usr/local/share/chruby
+export EC2_CERT=~/.ssh/ec2wincent_cert.pem
+export EC2_HOME=~/bin/ec2-api-tools
+export EC2_PRIVATE_KEY=~/.ssh/ec2wincent_cert_pk.pem
+#export fpath=($HOME/dotfiles/zsh/zsh-completions/src $fpath)
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=59'
+test -d $HOME/n && export N_PREFIX="$HOME/n"
+#test -e $HOME/.zsh/exports.private && source $HOME/.zsh/exports.private
+
+# DATAPLOT
+export DATAPLOT_FILES="$TOOLSPATH/c-dataplot/dplib"
+export XDP_FILE="$TOOLSPATH/c-dataplot/dplib/frmenus"
+export XDP_CODE="$TOOLSPATH/c-dataplot/dplib/frscript"
+export TCL_LIBRARY="/usr/lib/tcltk/x86_64-linux-gnu/tk8.6"
+export TK_LIBRARY="/usr/lib/tcltk/x86_64-linux-gnu/tk8.6"
+export PATH="$TOOLSPATH/c-dataplot/dplib/frscript:$PATH"
+export PATH="$TOOLSPATH/c-dataplot/dpsrc:$PATH"
+
+# Lib
+export WSNET_MODDIR=/home/aghiles/Aghiles/Program/boards/simulation/wsnet/lib
+export LDFLAGS="-L/usr/local/opt/mysql@5.7/lib"
+#export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+
+
+# Config
+export XDG_CURRENT_DESKTOP=GNOME
+export XDG_CONFIG_HOME="$HOME/.config"
+export ZSHDIR=$HOME/.config/zsh
+export TEXINPUTS=.:~/.config/latex:$TEXINPUTS
+export PKG_CONFIG_PATH="/usr/local/opt/mysql@5.7/lib/pkgconfig"
+export NOTMUCH_CONFIG="$HOME/.config/notmuch-config"
+export PASSWORD_STORE_DIR="$HOME/.config/password-store"
+export GTK2_RC_FILES="$HOME/.config/gtk-2.0/gtkrc-2.0"
+export INPUTRC="$HOME/.config/inputrc"
+export TMUXINATORDIR=$HOME/.config/tmuxinator
+
+# Open
+export SHELL=/usr/bin/zsh
+export READER="evince"
+export PAGER="less"
+export GOPATH="/home/micah/go"
+export GPG_TTY=$(tty)
+export EDITOR=$(which nvim)
+export BROWSER="qutebrowser"
+export ALTBROWSER="firefox"
+export FILE="ranger"
+export TERMINAL="tilix"
+export TRUEBROWSER="qutebrowser"
+export USE_EDITOR=$EDITOR
+export VISUAL="pager"
+
+export TEXMFHOME=~/.config/latexmk/texmf
+
+
+export LESS=iFMRSX
+export LESSPROMPT='?f%f .?ltLine %lt:?pt%pt\%:?btByte %bt:-...' # filename (if known), line number if known, falling back to percent if known, falling back to byte offset, falling back to dash
+export LESS=-R
+export LESS_TERMCAP_mb="$(printf '%b' '[1;31m')"; a="${a%_}"
+export LESS_TERMCAP_md="$(printf '%b' '[1;36m')"; a="${a%_}"
+export LESS_TERMCAP_me="$(printf '%b' '[0m')"; a="${a%_}"
+export LESS_TERMCAP_se="$(printf '%b' '[0m')"; a="${a%_}"
+export LESS_TERMCAP_so="$(printf '%b' '[01;44;33m')"; a="${a%_}"
+export LESS_TERMCAP_ue="$(printf '%b' '[0m')"; a="${a%_}"
+export LESS_TERMCAP_us="$(printf '%b' '[1;32m')"; a="${a%_}"
+
+
+export LF_ICONS="di=:fi=:ln=:or=:ex=:*.c=:*.cc=:*.clj=:*.coffee=:*.cpp=:*.css=:*.d=:*.dart=:*.erl=:*.exs=:*.fs=:*.go=:*.h=:*.hh=:*.hpp=:*.hs=:*.html=:*.java=:*.jl=:*.js=:*.json=:*.lua=:*.md=:*.php=:*.pl=:*.pro=:*.py=:*.rb=:*.rs=:*.scala=:*.ts=:*.vim=:*.cmd=:*.ps1=:*.sh=:*.bash=:*.zsh=:*.fish=:*.tar=:*.tgz=:*.arc=:*.arj=:*.taz=:*.lha=:*.lz4=:*.lzh=:*.lzma=:*.tlz=:*.txz=:*.tzo=:*.t7z=:*.zip=:*.z=:*.dz=:*.gz=:*.lrz=:*.lz=:*.lzo=:*.xz=:*.zst=:*.tzst=:*.bz2=:*.bz=:*.tbz=:*.tbz2=:*.tz=:*.deb=:*.rpm=:*.jar=:*.war=:*.ear=:*.sar=:*.rar=:*.alz=:*.ace=:*.zoo=:*.cpio=:*.7z=:*.rz=:*.cab=:*.wim=:*.swm=:*.dwm=:*.esd=:*.jpg=:*.jpeg=:*.mjpg=:*.mjpeg=:*.gif=:*.bmp=:*.pbm=:*.pgm=:*.ppm=:*.tga=:*.xbm=:*.xpm=:*.tif=:*.tiff=:*.png=:*.svg=:*.svgz=:*.mng=:*.pcx=:*.mov=:*.mpg=:*.mpeg=:*.m2v=:*.mkv=:*.webm=:*.ogm=:*.mp4=:*.m4v=:*.mp4v=:*.vob=:*.qt=:*.nuv=:*.wmv=:*.asf=:*.rm=:*.rmvb=:*.flc=:*.avi=:*.fli=:*.flv=:*.gl=:*.dl=:*.xcf=:*.xwd=:*.yuv=:*.cgm=:*.emf=:*.ogv=:*.ogx=:*.aac=:*.au=:*.flac=:*.m4a=:*.mid=:*.midi=:*.mka=:*.mp3=:*.mpc=:*.ogg=:*.ra=:*.wav=:*.oga=:*.opus=:*.spx=:*.xspf=:*.pdf="
+export FTP_PASSIVE=1
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_DEFAULT_COMMAND="fd --type f"
+export FZF_DEFAULT_OPS="--extended"
+export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
+
+
+export I3BLOCKS_LAYOUT="pkill -SIGRTMIN+10 i3blocks"
+export I3BLOCKS_MAIL="pkill -SIGRTMIN+13 i3blocks"
+export I3BLOCKS_POWERSAVER="pkill -SIGRTMIN+12 i3blocks"
+export I3BLOCKS_VOLUME="pkill -SIGRTMIN+11 i3blocks"
+
+
+export SPACESHIP_CHAR_SUFFIX=' '
+export SPACESHIP_CHAR_SYMBOL='➤'
+export SPACESHIP_DIR_PREFIX=''
+export SPACESHIP_EXEC_TIME_PREFIX=''
+export SPACESHIP_GIT_PREFIX=''
+export SPACESHIP_TIME_SHOW='true'
+export SPACESHIP_VI_MODE_COLOR=$SPACESHIP_CHAR_COLOR_SUCCESS
+export SPACESHIP_VI_MODE_INSERT='[I]'
+export SPACESHIP_VI_MODE_NORMAL='[N]'
+export SPACESHIP_VI_MODE_SUFFIX=' '
+
+
+#export HISTCMD= # $HISTCMD (the current history event number) is shared across all shells
+export HISTCMD_LOCAL=0
+export HISTCONTROL=ignoreboth # don't put duplicate lines or lines starting with space in the history.
+export HISTFILE="$SYSTEMPATH/.history"
+export HISTFILESIZE=52000
+export HISTIGNORE="&:ls:[bf]g:exit:reset:clear:cd:cd ..:cd.."
+export HISTSIZE=$HISTFILESIZE # Infinite history
+export SAVEHIST=$HISTSIZE
+export SHARE_HISTORY= # (due to SHARE_HISTORY). Maintain this local variable to count the number of commands run in this specific shell.
+export LESSHISTFILE="-"
+

@@ -1,0 +1,21 @@
+#!/bin/zsh
+
+
+#function xpdf2txt() {
+#	for file in "$@"; do 
+#		directory=`dirname "$file"`
+#		filename=`basename "$file"`
+#		echo $filename
+#		extension="${filename##*.}"
+#		filename="${filename%.*}"
+#		pdftotext "$file" "$directory/$filename.xtxt"; 
+#	done 
+#}
+
+find . -maxdepth 6 -type f -name "*.pdf" -print0 | xargs -0 xpdf2txt
+
+
+
+#find . -maxdepth 6 -type f -name "*.pdf" -exec xpdf2txt {} +
+
+

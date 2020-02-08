@@ -1,0 +1,25 @@
+# enable syntax completion
+try:
+    import readline
+except ImportError:
+    print("Module readline not available.")
+else:
+    import rlcompleter
+    readline.parse_and_bind("tab: complete")
+
+import argparse
+parser = argparse.ArgumentParser(description="")
+
+def add_param(opt2,name,value,help,required):
+    dest='--'+name
+    parser.add_argument(opt2, dest, 
+                        dest=name, 
+                        required=required,
+                        default=value,
+                        help=help,
+                        metavar='')
+                       
+
+args = parser.parse_args()
+
+

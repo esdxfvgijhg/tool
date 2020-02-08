@@ -1,0 +1,231 @@
+00:00:00.000950 main     VirtualBox XPCOM Server 6.0.14 r133895 linux.amd64 (Oct 14 2019 15:00:23) release log
+00:00:00.000955 main     Log opened 2020-01-19T07:15:38.513283000Z
+00:00:00.000956 main     Build Type: release
+00:00:00.000968 main     OS Product: Linux
+00:00:00.000969 main     OS Release: 4.19.0-6-amd64
+00:00:00.000970 main     OS Version: #1 SMP Debian 4.19.67-2+deb10u2 (2019-11-11)
+00:00:00.001019 main     DMI Product Name: Latitude 7480
+00:00:00.001028 main     DMI Product Version: 
+00:00:00.001084 main     Host RAM: 15693MB (15.3GB) total, 13184MB (12.8GB) available
+00:00:00.001090 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.001090 main     Process ID: 27026
+00:00:00.001091 main     Package type: LINUX_64BITS__DEBIAN_10
+00:00:00.002634 main     IPC socket path: /tmp/.vbox-aghiles-ipc/ipcd
+00:00:00.110337 nspr-2   VirtualBox: object creation starts
+00:00:00.110836 nspr-2   Home directory: '/home/aghiles/.config/VirtualBox'
+00:00:00.111861 nspr-2   Loading settings file "/home/aghiles/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.125597 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp2s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:00.128614 nspr-2   NAT: resolv.conf: nameserver 10.188.0.1
+00:00:00.128702 nspr-2   HostDnsMonitor::updateInfo
+00:00:00.128773 nspr-2   HostDnsMonitor: old information
+00:00:00.128795 nspr-2     no server entries
+00:00:00.128812 nspr-2     no domain set
+00:00:00.128827 nspr-2     no search string entries
+00:00:00.128843 nspr-2   HostDnsMonitor: new information
+00:00:00.128856 nspr-2     server 1: 10.188.0.1
+00:00:00.128875 nspr-2     no domain set
+00:00:00.128889 nspr-2     no search string entries
+00:00:00.136959 nspr-2   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:00:00.143358 nspr-2   rtldrNativeLoad: dlopen('/usr/lib/virtualbox/ExtensionPacks/Oracle_VM_VirtualBox_Extension_Pack/linux.amd64/VBoxPuelMain.so', RTLD_NOW | RTLD_LOCAL) failed: /usr/lib/virtualbox/ExtensionPacks/Oracle_VM_VirtualBox_Extension_Pack/linux.amd64/VBoxPuelMain.so: undefined symbol: RTVfsFileQuerySize
+00:00:00.144714 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:00.163010 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Rescom19/Rescom19.vbox' for reading: -102 (File not found.).
+00:00:00.163020 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.163274 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows7/Windows7.vbox' for reading: -102 (File not found.).
+00:00:00.163279 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.163447 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/WindowXP/WindowXP.vbox' for reading: -102 (File not found.).
+00:00:00.163450 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.163609 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows XP Professional/xp/xp.vbox' for reading: -102 (File not found.).
+00:00:00.163612 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.164005 nspr-2   VirtualBox: object created
+00:00:00.466350 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Rescom19/Rescom19.vbox' for reading: -102 (File not found.).
+00:00:00.466355 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.466606 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Rescom19/Rescom19.vbox' for reading: -102 (File not found.).
+00:00:00.466609 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.467157 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Rescom19/Rescom19.vbox' for reading: -102 (File not found.).
+00:00:00.467159 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.468755 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows7/Windows7.vbox' for reading: -102 (File not found.).
+00:00:00.468759 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.468978 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows7/Windows7.vbox' for reading: -102 (File not found.).
+00:00:00.468981 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.469486 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows7/Windows7.vbox' for reading: -102 (File not found.).
+00:00:00.469489 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.470232 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/WindowXP/WindowXP.vbox' for reading: -102 (File not found.).
+00:00:00.470236 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.470463 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/WindowXP/WindowXP.vbox' for reading: -102 (File not found.).
+00:00:00.470466 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.470993 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/WindowXP/WindowXP.vbox' for reading: -102 (File not found.).
+00:00:00.470996 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.471714 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows XP Professional/xp/xp.vbox' for reading: -102 (File not found.).
+00:00:00.471718 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.471932 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows XP Professional/xp/xp.vbox' for reading: -102 (File not found.).
+00:00:00.471934 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.472428 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows XP Professional/xp/xp.vbox' for reading: -102 (File not found.).
+00:00:00.472432 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.473086 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:00.473099 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:00.473105 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:00.473109 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:00.473114 nspr-3   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={Could not find a registered machine named 'xp'}, preserve=false aResultDetail=0
+00:00:01.821072 nspr-2   Saving settings file "/home/aghiles/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:01.836866 nspr-3   Saving settings file "/home/aghiles/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:15.081810 nspr-2   Loading settings file "/home/aghiles/Aghiles/tool/tools/vm/RESCOM2019-HYON-JEANMARIE/Rescom2019_TP.vbox" with version "1.16-linux"
+00:00:15.083076 nspr-2   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={Could not find a registered machine with UUID {e0c58861-14a1-4bd1-a48a-9017e86586d9}}, preserve=false aResultDetail=0
+00:00:15.084532 nspr-2   Saving settings file "/home/aghiles/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:15.090867 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={This machine does not have any snapshots}, preserve=false aResultDetail=0
+00:00:20.120917 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:20.126340 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Rescom19/Rescom19.vbox' for reading: -102 (File not found.).
+00:00:20.126347 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:20.135229 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Rescom19/Rescom19.vbox' for reading: -102 (File not found.).
+00:00:20.135235 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:20.159590 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Rescom19/Rescom19.vbox' for reading: -102 (File not found.).
+00:00:20.159596 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:20.160078 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:20.160728 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:20.161376 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:20.161921 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:20.163551 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Rescom19/Rescom19.vbox' for reading: -102 (File not found.).
+00:00:20.163554 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:20.165344 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Rescom19/Rescom19.vbox' for reading: -102 (File not found.).
+00:00:20.165348 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:20.166664 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Rescom19/Rescom19.vbox' for reading: -102 (File not found.).
+00:00:20.166667 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:20.167817 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Rescom19/Rescom19.vbox' for reading: -102 (File not found.).
+00:00:20.167821 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:20.170269 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Rescom19/Rescom19.vbox' for reading: -102 (File not found.).
+00:00:20.170272 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:20.172287 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Rescom19/Rescom19.vbox' for reading: -102 (File not found.).
+00:00:20.172290 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:25.474620 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Rescom19/Rescom19.vbox' for reading: -102 (File not found.).
+00:00:25.474643 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:26.831039 nspr-3   Saving settings file "/home/aghiles/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:28.917437 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:28.926841 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows7/Windows7.vbox' for reading: -102 (File not found.).
+00:00:28.926852 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:28.944946 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows7/Windows7.vbox' for reading: -102 (File not found.).
+00:00:28.944956 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:28.947384 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows7/Windows7.vbox' for reading: -102 (File not found.).
+00:00:28.947395 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:28.947947 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:28.949281 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:28.950832 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows7/Windows7.vbox' for reading: -102 (File not found.).
+00:00:28.950842 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:28.951564 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows7/Windows7.vbox' for reading: -102 (File not found.).
+00:00:28.951571 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:28.952126 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows7/Windows7.vbox' for reading: -102 (File not found.).
+00:00:28.952132 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:28.952951 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows7/Windows7.vbox' for reading: -102 (File not found.).
+00:00:28.952958 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:28.953955 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows7/Windows7.vbox' for reading: -102 (File not found.).
+00:00:28.953963 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:28.954878 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows7/Windows7.vbox' for reading: -102 (File not found.).
+00:00:28.954884 nspr-3   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:29.761131 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows7/Windows7.vbox' for reading: -102 (File not found.).
+00:00:29.761155 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:31.406333 nspr-3   Saving settings file "/home/aghiles/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:32.964278 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:32.969443 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/WindowXP/WindowXP.vbox' for reading: -102 (File not found.).
+00:00:32.969452 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:32.980513 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/WindowXP/WindowXP.vbox' for reading: -102 (File not found.).
+00:00:32.980520 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:32.981172 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/WindowXP/WindowXP.vbox' for reading: -102 (File not found.).
+00:00:32.981176 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:32.981379 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:32.981962 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:32.982698 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/WindowXP/WindowXP.vbox' for reading: -102 (File not found.).
+00:00:32.982701 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:32.982987 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/WindowXP/WindowXP.vbox' for reading: -102 (File not found.).
+00:00:32.982990 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:32.983296 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/WindowXP/WindowXP.vbox' for reading: -102 (File not found.).
+00:00:32.983299 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:32.983588 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/WindowXP/WindowXP.vbox' for reading: -102 (File not found.).
+00:00:32.983591 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:32.983875 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/WindowXP/WindowXP.vbox' for reading: -102 (File not found.).
+00:00:32.983877 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:32.984157 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/WindowXP/WindowXP.vbox' for reading: -102 (File not found.).
+00:00:32.984160 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:34.424621 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/WindowXP/WindowXP.vbox' for reading: -102 (File not found.).
+00:00:34.424643 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:36.147434 nspr-3   Saving settings file "/home/aghiles/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:37.578977 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:37.587361 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows XP Professional/xp/xp.vbox' for reading: -102 (File not found.).
+00:00:37.587371 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:37.599314 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows XP Professional/xp/xp.vbox' for reading: -102 (File not found.).
+00:00:37.599319 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:37.600052 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows XP Professional/xp/xp.vbox' for reading: -102 (File not found.).
+00:00:37.600058 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:37.600317 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:37.601008 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:37.601961 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows XP Professional/xp/xp.vbox' for reading: -102 (File not found.).
+00:00:37.601965 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:37.602295 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows XP Professional/xp/xp.vbox' for reading: -102 (File not found.).
+00:00:37.602298 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:37.602612 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows XP Professional/xp/xp.vbox' for reading: -102 (File not found.).
+00:00:37.602615 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:37.602914 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows XP Professional/xp/xp.vbox' for reading: -102 (File not found.).
+00:00:37.602917 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:37.603216 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows XP Professional/xp/xp.vbox' for reading: -102 (File not found.).
+00:00:37.603219 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:37.603505 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows XP Professional/xp/xp.vbox' for reading: -102 (File not found.).
+00:00:37.603508 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:38.901460 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={Runtime error opening '/home/aghiles/Aghiles/Tools/vm/Windows XP Professional/xp/xp.vbox' for reading: -102 (File not found.).
+00:00:38.901523 nspr-2   /home/vbox/vbox-6.0.14/src/VBox/Main/src-server/MachineImpl.cpp[752] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:39.938098 nspr-2   Saving settings file "/home/aghiles/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:42.151537 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:00:42.172610 nspr-3   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:00:42.205639 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:00:42.206400 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:01:02.665527 nspr-4   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:01:02.677930 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:01:02.678710 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:01:03.098060 Watcher  ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The virtual machine 'Rescom2019_TP' has terminated unexpectedly during startup with exit code 1 (0x1)}, preserve=false aResultDetail=0
+00:01:03.637224 nspr-3   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:01:03.651981 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:01:03.652692 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:01:19.849273 nspr-3   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:01:19.852327 nspr-3   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:01:19.983568 nspr-4   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:01:20.006807 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:01:20.007565 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:01:37.583021 nspr-3   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:01:37.586575 nspr-3   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:01:37.733970 nspr-3   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:01:37.752465 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:01:37.753250 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:02:44.154590 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:02:44.170295 nspr-3   Saving settings file "/home/aghiles/Aghiles/Tools/vm/HMM/HMM.vbox" with version "1.16-linux"
+00:02:44.174217 nspr-3   Saving settings file "/home/aghiles/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:02:44.188490 nspr-4   Saving settings file "/home/aghiles/Aghiles/Tools/vm/HMM/HMM.vbox" with version "1.16-linux"
+00:02:44.210256 nspr-4   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={This machine does not have any snapshots}, preserve=false aResultDetail=0
+00:02:44.235137 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:02:44.246521 nspr-4   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:02:44.256595 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:02:44.257327 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:02:50.842329 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:02:50.870364 nspr-2   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:02:50.881825 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:02:50.882572 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:02:57.154284 nspr-4   Saving settings file "/home/aghiles/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:02:57.157815 nspr-4   Saving settings file "/home/aghiles/Aghiles/Tools/vm/HMM/HMM.vbox" with version "1.16-linux"
+00:02:57.698592 nspr-4   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:02:57.708038 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:02:57.708798 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:03:12.442317 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:03:12.477377 nspr-4   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:03:12.493187 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:03:12.493983 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:03:13.701170 nspr-3   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:03:13.714759 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:03:13.715530 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:03:14.170240 Watcher  ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The virtual machine 'HMM' has terminated unexpectedly during startup with exit code 1 (0x1)}, preserve=false aResultDetail=0
+00:03:14.723915 nspr-4   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:03:14.737858 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:03:14.738504 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:04:02.893042 nspr-2   Saving settings file "/home/aghiles/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:04:02.925025 nspr-3   Saving settings file "/home/aghiles/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:04:02.939566 nspr-3   Saving settings file "/home/aghiles/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:04:02.946333 nspr-3   Saving settings file "/home/aghiles/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:04:08.456169 main     VirtualBox: object deletion starts
+00:04:08.456204 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/aghiles/Aghiles/tool/tools/vm/RESCOM2019-HYON-JEANMARIE/Rescom2019_TP.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:04:08.687763 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:04:13.456876 main     {00007fa7140210e0} HostPowerServiceLinux::~HostPowerServiceLinux: RTThreadWait() for 5000 ms failed with VERR_TIMEOUT
+00:04:13.457289 main     VirtualBox: object deleted

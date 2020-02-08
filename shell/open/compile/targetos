@@ -1,5 +1,0 @@
-#!/bin/bash
-
-#sudo ln -s /home/aghiles/Aghiles/Tool/scripts/targetos /usr/bin
-
-eval echo "$TOOLSPATH/iot-lab/iot-lab/parts"

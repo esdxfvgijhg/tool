@@ -1,7 +1,0 @@
-# HSTS 1.0 Known Hosts database for GNU Wget.
-# Edit at your own risk.
-# <hostname>	<port>	<incl. subdomains>	<created>	<max-age>
-ftp.gwdg.de	0	1	1576730359	63072000
-repo.skype.com	0	0	1576730455	31536000
-www.virtualbox.org	0	0	1576731925	31536000
-github.com	0	1	1576731593	31536000

@@ -3,7 +3,7 @@
 	[
 	],
 	"last_version": 3211,
-	"last_window_id": 217,
+	"last_window_id": 350,
 	"log_indexing": false,
 	"settings":
 	{
@@ -202,12 +202,59 @@
 			},
 			"file_history":
 			[
+				"/home/aghiles/Aghiles/job/txt/00/01-4-arabic.tex",
 				"/home/aghiles/Aghiles/job/txt/main.tex",
+				"/home/aghiles/Aghiles/job/txt/05-isncc/00_abstract.tex",
+				"/home/aghiles/Aghiles/job/txt/05-isncc/01_introduction.tex",
+				"/home/aghiles/Aghiles/job/txt/05-isncc/02_related.tex",
+				"/home/aghiles/Aghiles/job/txt/05-isncc/03_background.tex",
+				"/home/aghiles/Aghiles/job/txt/05-isncc/04_approach.tex",
+				"/home/aghiles/Aghiles/job/txt/05-isncc/05_experimentation.tex",
+				"/home/aghiles/Aghiles/job/txt/05-isncc/06_results.tex",
+				"/home/aghiles/Aghiles/job/txt/05-isncc/07_conclusion.tex",
+				"/home/aghiles/.config/latex/plot.tex",
+				"/usr/local/lib/R/site-library/imptree/R/imptree.rdb",
+				"/usr/local/lib/R/site-library/igraph/R/igraph.rdb",
+				"/home/aghiles/Aghiles/job/txt/a-appendix/52_papers.tex",
+				"/home/aghiles/Aghiles/job/txt/01-introduction/10_introduction.tex",
+				"/home/aghiles/Aghiles/job/txt/05-icc/10_lora-slice.tex",
+				"/home/aghiles/Aghiles/job/txt/09-conclusion/10_conclusion.tex",
+				"/home/aghiles/Aghiles/job/txt/03-technical-survey/02_standards.tex",
+				"/home/aghiles/Aghiles/job/txt/03-technical-survey/12_lora-slice.tex",
+				"/home/aghiles/Aghiles/job/txt/02-literature-survey/01_all.tex",
+				"/home/aghiles/Aghiles/job/txt/05-icc/12_related.tex",
+				"/home/aghiles/Aghiles/job/txt/05-icc/authors.tex",
+				"/home/aghiles/Aghiles/job/txt/a-appendix/02_papers.tex",
+				"/home/aghiles/Aghiles/job/txt/a-appendix/authors.tex",
+				"/home/aghiles/Aghiles/job/txt/05-icc/04_approach.tex",
+				"/home/aghiles/Aghiles/job/txt/a-appendix/01_frame.tex",
+				"/home/aghiles/Aghiles/job/txt/05-icc/00_abstract.tex",
+				"/home/aghiles/Aghiles/job/txt/05-icc/01_introduction.tex",
+				"/home/aghiles/Aghiles/job/txt/02-literature-survey/authors.tex",
+				"/home/aghiles/Aghiles/job/txt/03-technical-survey/authors.tex",
+				"/home/aghiles/Aghiles/job/txt/02-survey/00_all.tex",
+				"/home/aghiles/Aghiles/job/txt/a-protocols/04_frame.tex",
+				"/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty",
+				"/home/aghiles/Aghiles/job/txt/b-appendix/01_papers.tex",
+				"/home/aghiles/Aghiles/job/txt/b-appendix/ref.tex",
+				"/home/aghiles/Aghiles/job/txt/paper.tex",
+				"/home/aghiles/Aghiles/job/txt/.bin/paper.log",
+				"/home/aghiles/Aghiles/job/txt/05-icc/15_results.tex",
+				"/home/aghiles/Aghiles/job/txt/03-icsnc-2019/16_results.tex",
+				"/home/aghiles/.ICEauthority",
+				"/home/aghiles/Aghiles/job/txt/03-icsnc-2019/15_experimentation.tex",
+				"/home/aghiles/Aghiles/job/txt/03-icsnc-2019/17_discussion.tex",
+				"/home/aghiles/Aghiles/job/txt/03-icsnc-2019/13_background.tex",
+				"/home/aghiles/Aghiles/job/txt/05-icc/14_experimentation.tex",
+				"/home/aghiles/Aghiles/job/txt/.bin/slide.toc",
+				"/tmp/lu99886rjpe7.tmp/lu99886rjpqf.tmp",
+				"/home/aghiles/Aghiles/job/txt/05-icc/06_results.tex",
+				"/home/aghiles/Aghiles/job/txt/05-icc/05_experimentation.tex",
+				"/home/aghiles/Aghiles/job/txt/01-Introduction/10_introduction.tex",
 				"/home/aghiles/Aghiles/job/txt/05-ICC/04_approach.tex",
 				"/home/aghiles/Aghiles/job/txt/these.tex",
 				"/home/aghiles/Aghiles/job/txt/A-Protocols/09_divers.tex",
 				"/home/aghiles/Aghiles/job/txt/03-ICSNC-2019/17_discussion.tex",
-				"/home/aghiles/Aghiles/job/txt/01-Introduction/10_introduction.tex",
 				"/home/aghiles/Aghiles/job/txt/03-ICSNC-2019/04_approach.tex",
 				"/home/aghiles/Aghiles/job/txt/05-ICC/06_results.tex",
 				"/home/aghiles/Aghiles/job/txt/05-ICC/05_experimentation.tex",
@@ -282,54 +329,7 @@
 				"/home/aghiles/Aghiles/Research/Writing/res/plot/slice.tex",
 				"/home/aghiles/Aghiles/Research/Writing/res/plot/marcov.tex",
 				"/home/aghiles/Aghiles/Research/Writing/res/plot/genetic.tex",
-				"/home/aghiles/Aghiles/Research/Writing/res/plot/qlearning.tex",
-				"/home/aghiles/Aghiles/Research/Writing/lib/plot.tex",
-				"/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex",
-				"/home/aghiles/Aghiles/Research/Writing/src/plot.tex",
-				"/home/aghiles/Aghiles/Research/Writing/src/slide.tex",
-				"/home/aghiles/Aghiles/Research/Writing/lib/slide.tex",
-				"/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/graphs/tikzlibrarygraphs.standard.code.tex",
-				"/home/aghiles/Aghiles/Redaction/src/slide.tex",
-				"/home/aghiles/Downloads/calcursem/src/calcurse",
-				"/home/aghiles/.config/mutt/.cache/tmp/mutt-dell-1000-32431-5918117606302234234",
-				"/home/aghiles/.config/mutt/.cache/tmp/mutt-dell-1000-32431-3957175536653635214",
-				"/home/aghiles/Aghiles/Redaction/src/poster.tex",
-				"/home/aghiles/Downloads/IEEE_CS_Latex/bare_conf.tex",
-				"/home/aghiles/Downloads/IEEE_CS_Latex/bibtemplate.tex",
-				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/12_related.tex",
-				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/13_background.tex",
-				"/home/aghiles/Aghiles/Redaction/src/09-Conclusion/10_conclusion.tex",
-				"/home/aghiles/Aghiles/Redaction/src/01-Introduction/10_introduction.tex",
-				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/14_experimentation.tex",
-				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/15_results.tex",
-				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/13_method.tex",
-				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/11_introduction.tex",
-				"/home/aghiles/Aghiles/Redaction/src/08-UTLC/13_method.tex",
-				"/home/aghiles/Aghiles/Redaction/src/02-State of the art/16_discussion.tex",
-				"/home/aghiles/Aghiles/Redaction/src/99-PSE1/11_introduction.tex",
-				"/home/aghiles/Aghiles/Redaction/src/setup/setup_slide.tex",
-				"/home/aghiles/Aghiles/Redaction/src/setup/setup_tikz.tex",
-				"/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex",
-				"/home/aghiles/Aghiles/Redaction/src/setup/setup_command.tex",
-				"/home/aghiles/Aghiles/Redaction/src/02-State of the art/12_related.tex",
-				"/home/aghiles/untitled.tex",
-				"/home/aghiles/Aghiles/Redaction/src/05-x-Long paper/11_introduction.tex",
-				"/home/aghiles/Aghiles/Redaction/src/05-x-Long paper/12_related.tex",
-				"/home/aghiles/Aghiles/Redaction/src/03-x-Testbed/11_introduction.tex",
-				"/home/aghiles/Aghiles/Redaction/src/08-UTLC/14_experimentation.tex",
-				"/home/aghiles/Aghiles/Redaction/src/11-Privacy Framework/13_method.tex",
-				"/home/aghiles/Aghiles/Redaction/slide.tex",
-				"/home/aghiles/Aghiles/Redaction/slide/slide.tex",
-				"/home/aghiles/Aghiles/Redaction/slide/src/1/3_0_method.tex",
-				"/home/aghiles/Aghiles/Redaction/common/setup/setup_tikz.tex",
-				"/home/aghiles/Aghiles/Redaction/setup/setup.tex",
-				"/home/aghiles/Aghiles/Redaction/slide/src/11/3_method.tex",
-				"/home/aghiles/Aghiles/Redaction/res/accronyme/nomenclature.tex",
-				"/home/aghiles/Aghiles/Redaction/slide/src/1_introduction.tex",
-				"/home/aghiles/Aghiles/Redaction/slide/src/11/1_introduction.tex",
-				"/home/aghiles/Aghiles/Redaction/slide/src/1/2_0_related.tex",
-				"/home/aghiles/Aghiles/Redaction/slide/src/11/7_conclusion.tex",
-				"/home/aghiles/Aghiles/Redaction/slide/src/11/5_results.tex"
+				"/home/aghiles/Aghiles/Research/Writing/res/plot/qlearning.tex"
 			],
 			"find":
 			{
@@ -347,6 +347,18 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"\\\\\\\\",
+					"\\\\",
+					"\\\\\\\\",
+					"\\\\cr",
+					"\\\\citetauthor",
+					"et al",
+					"et al.in \\n\\\\cite",
+					"et al.\\n\\\\cite",
+					"bouzouita_estimating",
+					"bouzouita_random_2005",
+					"\\\\line ",
+					"\\line "
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -354,6 +366,13 @@
 				"regex": true,
 				"replace_history":
 				[
+					"\\\\\\\\\\n",
+					"\\\\cr\\n",
+					"\\\\citeauthor",
+					"\\citeauthor",
+					"\\\\citet",
+					"\\\\newline",
+					"\\newline"
 				],
 				"reverse": false,
 				"show_context": true,
@@ -374,14 +393,18 @@
 			{
 				"height": 0.0
 			},
+			"output.languagetool":
+			{
+				"height": 25.0
+			},
 			"output.latextools":
 			{
-				"height": 95.0
+				"height": 123.0
 			},
 			"pinned_build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
 			"replace":
 			{
-				"height": 46.0
+				"height": 72.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -427,7 +450,7 @@
 			"show_open_files": true,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 163.0,
+			"side_bar_width": 165.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
@@ -639,11 +662,59 @@
 			"file_history":
 			[
 				"/home/aghiles/Aghiles/job/txt/main.tex",
+				"/home/aghiles/Aghiles/job/txt/01-introduction/10_introduction.tex",
+				"/home/aghiles/Aghiles/job/txt/05-isncc/12_related.tex",
+				"/home/aghiles/Aghiles/job/txt/00/01-4-arabic.tex",
+				"/home/aghiles/Aghiles/job/txt/05-isncc/00_abstract.tex",
+				"/home/aghiles/Aghiles/job/txt/05-isncc/01_introduction.tex",
+				"/home/aghiles/Aghiles/job/txt/05-isncc/02_related.tex",
+				"/home/aghiles/Aghiles/job/txt/05-isncc/03_background.tex",
+				"/home/aghiles/Aghiles/job/txt/05-isncc/04_approach.tex",
+				"/home/aghiles/Aghiles/job/txt/05-isncc/05_experimentation.tex",
+				"/home/aghiles/Aghiles/job/txt/05-isncc/06_results.tex",
+				"/home/aghiles/Aghiles/job/txt/05-isncc/07_conclusion.tex",
+				"/home/aghiles/.config/latex/plot.tex",
+				"/usr/local/lib/R/site-library/imptree/R/imptree.rdb",
+				"/usr/local/lib/R/site-library/igraph/R/igraph.rdb",
+				"/home/aghiles/Aghiles/job/txt/a-appendix/52_papers.tex",
+				"/home/aghiles/Aghiles/job/txt/05-icc/10_lora-slice.tex",
+				"/home/aghiles/Aghiles/job/txt/09-conclusion/10_conclusion.tex",
+				"/home/aghiles/Aghiles/job/txt/03-technical-survey/02_standards.tex",
+				"/home/aghiles/Aghiles/job/txt/03-technical-survey/12_lora-slice.tex",
+				"/home/aghiles/Aghiles/job/txt/02-literature-survey/01_all.tex",
+				"/home/aghiles/Aghiles/job/txt/05-icc/12_related.tex",
+				"/home/aghiles/Aghiles/job/txt/05-icc/authors.tex",
+				"/home/aghiles/Aghiles/job/txt/a-appendix/02_papers.tex",
+				"/home/aghiles/Aghiles/job/txt/a-appendix/authors.tex",
+				"/home/aghiles/Aghiles/job/txt/05-icc/04_approach.tex",
+				"/home/aghiles/Aghiles/job/txt/a-appendix/01_frame.tex",
+				"/home/aghiles/Aghiles/job/txt/05-icc/00_abstract.tex",
+				"/home/aghiles/Aghiles/job/txt/05-icc/01_introduction.tex",
+				"/home/aghiles/Aghiles/job/txt/02-literature-survey/authors.tex",
+				"/home/aghiles/Aghiles/job/txt/03-technical-survey/authors.tex",
+				"/home/aghiles/Aghiles/job/txt/02-survey/00_all.tex",
+				"/home/aghiles/Aghiles/job/txt/a-protocols/04_frame.tex",
+				"/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty",
+				"/home/aghiles/Aghiles/job/txt/b-appendix/01_papers.tex",
+				"/home/aghiles/Aghiles/job/txt/b-appendix/ref.tex",
+				"/home/aghiles/Aghiles/job/txt/paper.tex",
+				"/home/aghiles/Aghiles/job/txt/.bin/paper.log",
+				"/home/aghiles/Aghiles/job/txt/05-icc/15_results.tex",
+				"/home/aghiles/Aghiles/job/txt/03-icsnc-2019/16_results.tex",
+				"/home/aghiles/.ICEauthority",
+				"/home/aghiles/Aghiles/job/txt/03-icsnc-2019/15_experimentation.tex",
+				"/home/aghiles/Aghiles/job/txt/03-icsnc-2019/17_discussion.tex",
+				"/home/aghiles/Aghiles/job/txt/03-icsnc-2019/13_background.tex",
+				"/home/aghiles/Aghiles/job/txt/05-icc/14_experimentation.tex",
+				"/home/aghiles/Aghiles/job/txt/.bin/slide.toc",
+				"/tmp/lu99886rjpe7.tmp/lu99886rjpqf.tmp",
+				"/home/aghiles/Aghiles/job/txt/05-icc/06_results.tex",
+				"/home/aghiles/Aghiles/job/txt/05-icc/05_experimentation.tex",
+				"/home/aghiles/Aghiles/job/txt/01-Introduction/10_introduction.tex",
 				"/home/aghiles/Aghiles/job/txt/05-ICC/04_approach.tex",
 				"/home/aghiles/Aghiles/job/txt/these.tex",
 				"/home/aghiles/Aghiles/job/txt/A-Protocols/09_divers.tex",
 				"/home/aghiles/Aghiles/job/txt/03-ICSNC-2019/17_discussion.tex",
-				"/home/aghiles/Aghiles/job/txt/01-Introduction/10_introduction.tex",
 				"/home/aghiles/Aghiles/job/txt/03-ICSNC-2019/04_approach.tex",
 				"/home/aghiles/Aghiles/job/txt/05-ICC/06_results.tex",
 				"/home/aghiles/Aghiles/job/txt/05-ICC/05_experimentation.tex",
@@ -717,55 +788,7 @@
 				"/home/aghiles/Aghiles/Research/Writing/res/plot/slice1.tex",
 				"/home/aghiles/Aghiles/Research/Writing/res/plot/slice.tex",
 				"/home/aghiles/Aghiles/Research/Writing/res/plot/marcov.tex",
-				"/home/aghiles/Aghiles/Research/Writing/res/plot/genetic.tex",
-				"/home/aghiles/Aghiles/Research/Writing/res/plot/qlearning.tex",
-				"/home/aghiles/Aghiles/Research/Writing/lib/plot.tex",
-				"/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex",
-				"/home/aghiles/Aghiles/Research/Writing/src/plot.tex",
-				"/home/aghiles/Aghiles/Research/Writing/src/slide.tex",
-				"/home/aghiles/Aghiles/Research/Writing/lib/slide.tex",
-				"/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/graphs/tikzlibrarygraphs.standard.code.tex",
-				"/home/aghiles/Aghiles/Redaction/src/slide.tex",
-				"/home/aghiles/Downloads/calcursem/src/calcurse",
-				"/home/aghiles/.config/mutt/.cache/tmp/mutt-dell-1000-32431-5918117606302234234",
-				"/home/aghiles/.config/mutt/.cache/tmp/mutt-dell-1000-32431-3957175536653635214",
-				"/home/aghiles/Aghiles/Redaction/src/poster.tex",
-				"/home/aghiles/Downloads/IEEE_CS_Latex/bare_conf.tex",
-				"/home/aghiles/Downloads/IEEE_CS_Latex/bibtemplate.tex",
-				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/12_related.tex",
-				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/13_background.tex",
-				"/home/aghiles/Aghiles/Redaction/src/09-Conclusion/10_conclusion.tex",
-				"/home/aghiles/Aghiles/Redaction/src/01-Introduction/10_introduction.tex",
-				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/14_experimentation.tex",
-				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/15_results.tex",
-				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/13_method.tex",
-				"/home/aghiles/Aghiles/Redaction/src/06-Genetic Algorithm For LoRa Transmission Parameter Selection/11_introduction.tex",
-				"/home/aghiles/Aghiles/Redaction/src/08-UTLC/13_method.tex",
-				"/home/aghiles/Aghiles/Redaction/src/02-State of the art/16_discussion.tex",
-				"/home/aghiles/Aghiles/Redaction/src/99-PSE1/11_introduction.tex",
-				"/home/aghiles/Aghiles/Redaction/src/setup/setup_slide.tex",
-				"/home/aghiles/Aghiles/Redaction/src/setup/setup_tikz.tex",
-				"/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex",
-				"/home/aghiles/Aghiles/Redaction/src/setup/setup_command.tex",
-				"/home/aghiles/Aghiles/Redaction/src/02-State of the art/12_related.tex",
-				"/home/aghiles/untitled.tex",
-				"/home/aghiles/Aghiles/Redaction/src/05-x-Long paper/11_introduction.tex",
-				"/home/aghiles/Aghiles/Redaction/src/05-x-Long paper/12_related.tex",
-				"/home/aghiles/Aghiles/Redaction/src/03-x-Testbed/11_introduction.tex",
-				"/home/aghiles/Aghiles/Redaction/src/08-UTLC/14_experimentation.tex",
-				"/home/aghiles/Aghiles/Redaction/src/11-Privacy Framework/13_method.tex",
-				"/home/aghiles/Aghiles/Redaction/slide.tex",
-				"/home/aghiles/Aghiles/Redaction/slide/slide.tex",
-				"/home/aghiles/Aghiles/Redaction/slide/src/1/3_0_method.tex",
-				"/home/aghiles/Aghiles/Redaction/common/setup/setup_tikz.tex",
-				"/home/aghiles/Aghiles/Redaction/setup/setup.tex",
-				"/home/aghiles/Aghiles/Redaction/slide/src/11/3_method.tex",
-				"/home/aghiles/Aghiles/Redaction/res/accronyme/nomenclature.tex",
-				"/home/aghiles/Aghiles/Redaction/slide/src/1_introduction.tex",
-				"/home/aghiles/Aghiles/Redaction/slide/src/11/1_introduction.tex",
-				"/home/aghiles/Aghiles/Redaction/slide/src/1/2_0_related.tex",
-				"/home/aghiles/Aghiles/Redaction/slide/src/11/7_conclusion.tex",
-				"/home/aghiles/Aghiles/Redaction/slide/src/11/5_results.tex"
+				"/home/aghiles/Aghiles/Research/Writing/res/plot/genetic.tex"
 			],
 			"find":
 			{
@@ -783,6 +806,8 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"P\\^{tx}",
+					"P^{tx}"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -790,6 +815,9 @@
 				"regex": true,
 				"replace_history":
 				[
+					"\\$P\\^{tx}\\$",
+					"\\$P^{tx}\\$",
+					"$P^{tx}$"
 				],
 				"reverse": false,
 				"show_context": true,
@@ -840,16 +868,20 @@
 			{
 				"height": 0.0
 			},
+			"output.languagetool":
+			{
+				"height": 25.0
+			},
 			"output.latextools":
 			{
-				"height": 95.0
+				"height": 123.0
 			},
 			"pinned_build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
-			"position": "0,0,0,0,0,960,19,1918,537,1920,1080",
+			"position": "0,0,0,0,0,0,19,1920,1060,1920,1080",
 			"project": "/home/aghiles/Aghiles/job/txt/.main.sublime-project",
 			"replace":
 			{
-				"height": 46.0
+				"height": 72.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -899,12 +931,12 @@
 			"show_open_files": true,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 163.0,
+			"side_bar_width": 165.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			},
-			"window_id": 217,
+			"window_id": 350,
 			"workspace_name": ""
 		}
 	],
@@ -912,7 +944,8 @@
 	{
 		"recent_workspaces":
 		[
-			"/home/aghiles/Aghiles/job/txt/.main.sublime-workspace"
+			"/home/aghiles/Aghiles/job/txt/.main.sublime-workspace",
+			"/home/aghiles/Aghiles/job/txt/resources/.plot.sublime-workspace"
 		]
 	}
 }

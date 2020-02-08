@@ -1,0 +1,3 @@
+#!/bin/bash
+
+perl -ne 'print "$3\n" while /@.*{(.*),\n*|.* +annotation = {(.*)},\n*|.*groups = {(.*)}/g' $1 | xargs -l echo | sed -E "s/([^ ]*) (.*) ([^ ]*)$/\3 \\\cite{\1} \2 \\\newline /g" | sort | uniq

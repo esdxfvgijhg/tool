@@ -4,11 +4,12 @@ account1="https://esdxfvgijhg@github.com/esdxfvgijhg"
 account2="https://esxdwqzpml@github.com/esxdwqzpml"
 localx="/media/aghiles/Aghiles"
 
-
+overleaf="https://git.overleaf.com/5e15f6d388f67a0001194cf2"
 
 #cd $ADMINPATH    && git remote add admin      $localx/admin
 #cd $TOOLPATH     && git remote add tool       $localx/tool
 
+cd 
 cd $PROGRAMPATH  && git remote add cod        $account1/cod.git
 cd $TEACHINGPATH && git remote add ece        $account1/ece.git
 #cd $READINGPATH  && git remote add doc        $accoun2/doc.git

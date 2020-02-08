@@ -1,0 +1,947 @@
+[ 39875.758] (--) Log file renamed from "/home/aghiles/.local/share/xorg/Xorg.pid-17340.log" to "/home/aghiles/.local/share/xorg/Xorg.0.log"
+[ 39875.758] 
+X.Org X Server 1.20.4
+X Protocol Version 11, Revision 0
+[ 39875.758] Build Operating System: Linux 4.9.0-8-amd64 x86_64 Debian
+[ 39875.758] Current Operating System: Linux dell 4.19.0-6-amd64 #1 SMP Debian 4.19.67-2+deb10u2 (2019-11-11) x86_64
+[ 39875.758] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.19.0-6-amd64 root=UUID=ebed8283-55c9-461e-8822-eb51ef8a6bd8 ro quiet
+[ 39875.758] Build Date: 05 March 2019  08:11:12PM
+[ 39875.758] xorg-server 2:1.20.4-1 (https://www.debian.org/support) 
+[ 39875.758] Current version of pixman: 0.36.0
+[ 39875.758] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[ 39875.758] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[ 39875.758] (==) Log file: "/home/aghiles/.local/share/xorg/Xorg.0.log", Time: Fri Feb  7 20:20:48 2020
+[ 39875.758] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[ 39875.758] (==) No Layout section.  Using the first Screen section.
+[ 39875.758] (==) No screen section available. Using defaults.
+[ 39875.758] (**) |-->Screen "Default Screen Section" (0)
+[ 39875.758] (**) |   |-->Monitor "<default monitor>"
+[ 39875.759] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[ 39875.759] (==) Automatically adding devices
+[ 39875.759] (==) Automatically enabling devices
+[ 39875.759] (==) Automatically adding GPU devices
+[ 39875.759] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[ 39875.759] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[ 39875.759] 	Entry deleted from font path.
+[ 39875.759] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/100dpi/:unscaled,
+	/usr/share/fonts/X11/75dpi/:unscaled,
+	/usr/share/fonts/X11/Type1,
+	/usr/share/fonts/X11/100dpi,
+	/usr/share/fonts/X11/75dpi,
+	built-ins
+[ 39875.759] (==) ModulePath set to "/usr/lib/xorg/modules"
+[ 39875.759] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[ 39875.759] (II) Loader magic: 0x55b823dc5e20
+[ 39875.759] (II) Module ABI versions:
+[ 39875.759] 	X.Org ANSI C Emulation: 0.4
+[ 39875.759] 	X.Org Video Driver: 24.0
+[ 39875.759] 	X.Org XInput driver : 24.1
+[ 39875.759] 	X.Org Server Extension : 10.0
+[ 39875.760] (++) using VT number 2
+
+[ 39875.762] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_37
+[ 39875.763] (II) xfree86: Adding drm device (/dev/dri/card0)
+[ 39875.764] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 12 paused 0
+[ 39875.766] (--) PCI:*(0@0:2:0) 8086:1916:1028:07a0 rev 7, Mem @ 0xeb000000/16777216, 0xa0000000/268435456, I/O @ 0x0000f000/64, BIOS @ 0x????????/131072
+[ 39875.766] (II) LoadModule: "glx"
+[ 39875.766] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[ 39875.767] (II) Module glx: vendor="X.Org Foundation"
+[ 39875.767] 	compiled for 1.20.4, module version = 1.0.0
+[ 39875.767] 	ABI class: X.Org Server Extension, version 10.0
+[ 39875.767] (==) Matched modesetting as autoconfigured driver 0
+[ 39875.767] (==) Matched fbdev as autoconfigured driver 1
+[ 39875.767] (==) Matched vesa as autoconfigured driver 2
+[ 39875.767] (==) Assigned the driver to the xf86ConfigLayout
+[ 39875.767] (II) LoadModule: "modesetting"
+[ 39875.767] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[ 39875.767] (II) Module modesetting: vendor="X.Org Foundation"
+[ 39875.767] 	compiled for 1.20.4, module version = 1.20.4
+[ 39875.767] 	Module class: X.Org Video Driver
+[ 39875.767] 	ABI class: X.Org Video Driver, version 24.0
+[ 39875.767] (II) LoadModule: "fbdev"
+[ 39875.767] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[ 39875.767] (II) Module fbdev: vendor="X.Org Foundation"
+[ 39875.767] 	compiled for 1.20.0, module version = 0.5.0
+[ 39875.767] 	Module class: X.Org Video Driver
+[ 39875.767] 	ABI class: X.Org Video Driver, version 24.0
+[ 39875.767] (II) LoadModule: "vesa"
+[ 39875.767] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[ 39875.767] (II) Module vesa: vendor="X.Org Foundation"
+[ 39875.767] 	compiled for 1.20.1, module version = 2.4.0
+[ 39875.767] 	Module class: X.Org Video Driver
+[ 39875.767] 	ABI class: X.Org Video Driver, version 24.0
+[ 39875.767] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[ 39875.767] (II) FBDEV: driver for framebuffer: fbdev
+[ 39875.767] (II) VESA: driver for VESA chipsets: vesa
+[ 39875.767] xf86EnableIOPorts: failed to set IOPL for I/O (Operation not permitted)
+[ 39875.767] (II) modeset(0): using drv /dev/dri/card0
+[ 39875.767] (WW) Falling back to old probe method for fbdev
+[ 39875.767] (II) Loading sub module "fbdevhw"
+[ 39875.767] (II) LoadModule: "fbdevhw"
+[ 39875.767] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[ 39875.767] (II) Module fbdevhw: vendor="X.Org Foundation"
+[ 39875.767] 	compiled for 1.20.4, module version = 0.0.2
+[ 39875.767] 	ABI class: X.Org Video Driver, version 24.0
+[ 39875.767] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[ 39875.768] (II) modeset(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[ 39875.768] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[ 39875.768] (==) modeset(0): RGB weight 888
+[ 39875.768] (==) modeset(0): Default visual is TrueColor
+[ 39875.768] (II) Loading sub module "glamoregl"
+[ 39875.768] (II) LoadModule: "glamoregl"
+[ 39875.768] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[ 39875.770] (II) Module glamoregl: vendor="X.Org Foundation"
+[ 39875.770] 	compiled for 1.20.4, module version = 1.0.1
+[ 39875.770] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[ 39875.782] (II) modeset(0): glamor X acceleration enabled on Mesa DRI Intel(R) HD Graphics 520 (Skylake GT2) 
+[ 39875.782] (II) modeset(0): glamor initialized
+[ 39875.783] (II) modeset(0): Output eDP-1 has no monitor section
+[ 39875.783] (II) modeset(0): Output DP-1 has no monitor section
+[ 39875.787] (II) modeset(0): Output HDMI-1 has no monitor section
+[ 39875.787] (II) modeset(0): Output DP-2 has no monitor section
+[ 39875.791] (II) modeset(0): Output HDMI-2 has no monitor section
+[ 39875.792] (II) modeset(0): EDID for output eDP-1
+[ 39875.792] (II) modeset(0): Manufacturer: BOE  Model: 6ee  Serial#: 0
+[ 39875.792] (II) modeset(0): Year: 2016  Week: 1
+[ 39875.792] (II) modeset(0): EDID Version: 1.4
+[ 39875.792] (II) modeset(0): Digital Display Input
+[ 39875.792] (II) modeset(0): 6 bits per channel
+[ 39875.792] (II) modeset(0): Digital interface is DisplayPort
+[ 39875.792] (II) modeset(0): Max Image Size [cm]: horiz.: 31  vert.: 17
+[ 39875.792] (II) modeset(0): Gamma: 2.20
+[ 39875.792] (II) modeset(0): No DPMS capabilities specified
+[ 39875.792] (II) modeset(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[ 39875.792] (II) modeset(0): First detailed timing is preferred mode
+[ 39875.792] (II) modeset(0): Preferred mode is native pixel format and refresh rate
+[ 39875.792] (II) modeset(0): redX: 0.648 redY: 0.346   greenX: 0.328 greenY: 0.622
+[ 39875.792] (II) modeset(0): blueX: 0.150 blueY: 0.063   whiteX: 0.312 whiteY: 0.328
+[ 39875.792] (II) modeset(0): Manufacturer's mask: 0
+[ 39875.792] (II) modeset(0): Supported detailed timing:
+[ 39875.792] (II) modeset(0): clock: 140.0 MHz   Image Size:  309 x 173 mm
+[ 39875.792] (II) modeset(0): h_active: 1920  h_sync: 1968  h_sync_end 2000 h_blank_end 2121 h_border: 0
+[ 39875.792] (II) modeset(0): v_active: 1080  v_sync: 1083  v_sync_end 1089 v_blanking: 1100 v_border: 0
+[ 39875.792] (II) modeset(0): Supported detailed timing:
+[ 39875.792] (II) modeset(0): clock: 113.1 MHz   Image Size:  309 x 173 mm
+[ 39875.792] (II) modeset(0): h_active: 1920  h_sync: 1968  h_sync_end 2000 h_blank_end 2142 h_border: 0
+[ 39875.792] (II) modeset(0): v_active: 1080  v_sync: 1083  v_sync_end 1089 v_blanking: 1100 v_border: 0
+[ 39875.792] (II) modeset(0):  6HY1W€NV14N47
+[ 39875.792] (II) modeset(0): Unknown vendor-specific block 0
+[ 39875.792] (II) modeset(0): EDID (in hex):
+[ 39875.792] (II) modeset(0): 	00ffffffffffff0009e5ee0600000000
+[ 39875.792] (II) modeset(0): 	011a0104951f11780a2190a658549f26
+[ 39875.792] (II) modeset(0): 	10505400000001010101010101010101
+[ 39875.792] (II) modeset(0): 	010101010101b03680c9703814403020
+[ 39875.792] (II) modeset(0): 	360035ad1000001a302c80de70381440
+[ 39875.792] (II) modeset(0): 	3020360035ad1000001a000000fe0036
+[ 39875.792] (II) modeset(0): 	48593157804e5631344e343700000000
+[ 39875.792] (II) modeset(0): 	000041119e000000000a010a20200048
+[ 39875.792] (II) modeset(0): Printing probed modes for output eDP-1
+[ 39875.793] (II) modeset(0): Modeline "1920x1080"x60.0  140.00  1920 1968 2000 2121  1080 1083 1089 1100 +hsync -vsync (66.0 kHz eP)
+[ 39875.793] (II) modeset(0): Modeline "1920x1080"x119.9  266.50  1920 1944 1960 2000  1080 1081 1084 1111 doublescan +hsync -vsync (133.2 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1920x1080"x60.0  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync (67.2 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1920x1080"x59.9  138.50  1920 1968 2000 2080  1080 1083 1088 1111 +hsync -vsync (66.6 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1920x1080"x48.0  113.12  1920 1968 2000 2142  1080 1083 1089 1100 +hsync -vsync (52.8 kHz e)
+[ 39875.793] (II) modeset(0): Modeline "1680x1050"x60.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1680x1050"x59.9  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1600x1024"x60.2  103.12  1600 1600 1656 1664  1024 1024 1029 1030 +hsync +vsync (62.0 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1400x1050"x60.0  122.00  1400 1488 1640 1880  1050 1052 1064 1082 +hsync +vsync (64.9 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1600x900"x120.0  246.00  1600 1728 1900 2200  900 901 904 932 doublescan -hsync +vsync (111.8 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1600x900"x119.9  186.50  1600 1624 1640 1680  900 901 904 926 doublescan +hsync -vsync (111.0 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1600x900"x59.9  118.25  1600 1696 1856 2112  900 903 908 934 -hsync +vsync (56.0 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1600x900"x59.8   97.50  1600 1648 1680 1760  900 903 908 926 +hsync -vsync (55.4 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1440x900"x59.9  106.50  1440 1520 1672 1904  900 903 909 934 -hsync +vsync (55.9 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1400x900"x60.0  103.50  1400 1480 1624 1848  900 903 913 934 -hsync +vsync (56.0 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1400x900"x59.9   86.50  1400 1448 1480 1560  900 903 913 926 +hsync -vsync (55.4 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1280x960"x60.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1440x810"x120.0  198.12  1440 1548 1704 1968  810 811 814 839 doublescan -hsync +vsync (100.7 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1440x810"x119.9  151.88  1440 1464 1480 1520  810 811 814 833 doublescan +hsync -vsync (99.9 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1368x768"x59.9   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync (47.8 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1368x768"x59.9   72.25  1368 1416 1448 1528  768 771 781 790 +hsync -vsync (47.3 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1360x768"x59.8   84.75  1360 1432 1568 1776  768 771 781 798 -hsync +vsync (47.7 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1360x768"x60.0   72.00  1360 1408 1440 1520  768 771 781 790 +hsync -vsync (47.4 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1280x800"x120.0  174.25  1280 1380 1516 1752  800 801 804 829 doublescan -hsync +vsync (99.5 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1280x800"x119.9  134.25  1280 1304 1320 1360  800 801 804 823 doublescan +hsync -vsync (98.7 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1280x800"x59.8   83.50  1280 1352 1480 1680  800 803 809 831 -hsync +vsync (49.7 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1280x800"x59.9   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1152x864"x60.0   81.62  1152 1216 1336 1520  864 865 868 895 -hsync +vsync (53.7 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1280x720"x120.0  156.12  1280 1376 1512 1744  720 721 724 746 doublescan -hsync +vsync (89.5 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1280x720"x120.0  120.75  1280 1304 1320 1360  720 721 724 740 doublescan +hsync -vsync (88.8 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1280x720"x59.9   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync (44.8 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1280x720"x59.7   63.75  1280 1328 1360 1440  720 723 728 741 +hsync -vsync (44.3 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1024x768"x120.1  133.47  1024 1100 1212 1400  768 768 770 794 doublescan -hsync +vsync (95.3 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "960x720"x120.0  117.00  960 1024 1128 1300  720 720 722 750 doublescan -hsync +vsync (90.0 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "928x696"x120.1  109.15  928 976 1088 1264  696 696 698 719 doublescan -hsync +vsync (86.4 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "896x672"x120.0  102.40  896 960 1060 1224  672 672 674 697 doublescan -hsync +vsync (83.7 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1024x576"x119.9   98.50  1024 1092 1200 1376  576 577 580 597 doublescan -hsync +vsync (71.6 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1024x576"x119.9   78.38  1024 1048 1064 1104  576 577 580 592 doublescan +hsync -vsync (71.0 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1024x576"x59.9   46.50  1024 1064 1160 1296  576 579 584 599 -hsync +vsync (35.9 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "1024x576"x59.8   42.00  1024 1072 1104 1184  576 579 584 593 +hsync -vsync (35.5 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "960x600"x119.9   96.62  960 1028 1128 1296  600 601 604 622 doublescan -hsync +vsync (74.6 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "960x600"x120.0   77.00  960 984 1000 1040  600 601 604 617 doublescan +hsync -vsync (74.0 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "960x540"x119.9   86.50  960 1024 1124 1288  540 541 544 560 doublescan -hsync +vsync (67.2 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "960x540"x120.0   69.25  960 984 1000 1040  540 541 544 555 doublescan +hsync -vsync (66.6 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "960x540"x59.6   40.75  960 992 1088 1216  540 543 548 562 -hsync +vsync (33.5 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "960x540"x59.8   37.25  960 1008 1040 1120  540 543 548 556 +hsync -vsync (33.3 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "800x600"x120.0   81.00  800 832 928 1080  600 600 602 625 doublescan +hsync +vsync (75.0 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "840x525"x120.0   73.12  840 892 980 1120  525 526 529 544 doublescan -hsync +vsync (65.3 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "840x525"x119.8   59.50  840 864 880 920  525 526 529 540 doublescan +hsync -vsync (64.7 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "864x486"x59.9   32.50  864 888 968 1072  486 489 494 506 -hsync +vsync (30.3 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "864x486"x59.6   30.50  864 912 944 1024  486 489 494 500 +hsync -vsync (29.8 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "800x512"x120.3   51.56  800 800 828 832  512 512 514 515 doublescan +hsync +vsync (62.0 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "700x525"x120.0   61.00  700 744 820 940  525 526 532 541 doublescan +hsync +vsync (64.9 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "800x450"x119.9   59.12  800 848 928 1056  450 451 454 467 doublescan -hsync +vsync (56.0 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "800x450"x119.6   48.75  800 824 840 880  450 451 454 463 doublescan +hsync -vsync (55.4 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "640x512"x120.0   54.00  640 664 720 844  512 512 514 533 doublescan +hsync +vsync (64.0 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "720x450"x119.8   53.25  720 760 836 952  450 451 454 467 doublescan -hsync +vsync (55.9 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "700x450"x119.9   51.75  700 740 812 924  450 451 456 467 doublescan -hsync +vsync (56.0 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "700x450"x119.8   43.25  700 724 740 780  450 451 456 463 doublescan +hsync -vsync (55.4 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "640x480"x120.0   54.00  640 688 744 900  480 480 482 500 doublescan +hsync +vsync (60.0 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "720x405"x59.5   22.50  720 744 808 896  405 408 413 422 -hsync +vsync (25.1 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "720x405"x59.0   21.75  720 768 800 880  405 408 413 419 +hsync -vsync (24.7 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "684x384"x119.8   42.62  684 720 788 892  384 385 390 399 doublescan -hsync +vsync (47.8 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "684x384"x119.7   36.12  684 708 724 764  384 385 390 395 doublescan +hsync -vsync (47.3 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "680x384"x119.6   42.38  680 716 784 888  384 385 390 399 doublescan -hsync +vsync (47.7 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "680x384"x119.9   36.00  680 704 720 760  384 385 390 395 doublescan +hsync -vsync (47.4 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "640x400"x119.8   41.75  640 676 740 840  400 401 404 415 doublescan -hsync +vsync (49.7 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "640x400"x120.0   35.50  640 664 680 720  400 401 404 411 doublescan +hsync -vsync (49.3 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "576x432"x120.1   40.81  576 608 668 760  432 432 434 447 doublescan -hsync +vsync (53.7 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "640x360"x119.7   37.25  640 672 736 832  360 361 364 374 doublescan -hsync +vsync (44.8 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "640x360"x119.7   31.88  640 664 680 720  360 361 364 370 doublescan +hsync -vsync (44.3 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "640x360"x59.8   18.00  640 664 720 800  360 363 368 376 -hsync +vsync (22.5 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "640x360"x59.3   17.75  640 688 720 800  360 363 368 374 +hsync -vsync (22.2 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "512x384"x120.0   32.50  512 524 592 672  384 385 388 403 doublescan -hsync -vsync (48.4 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "512x288"x120.0   23.25  512 532 580 648  288 289 292 299 doublescan -hsync +vsync (35.9 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "512x288"x119.8   21.00  512 536 552 592  288 289 292 296 doublescan +hsync -vsync (35.5 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "480x270"x119.3   20.38  480 496 544 608  270 271 274 281 doublescan -hsync +vsync (33.5 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "480x270"x119.6   18.62  480 504 520 560  270 271 274 278 doublescan +hsync -vsync (33.3 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "400x300"x120.6   20.00  400 420 484 528  300 300 302 314 doublescan +hsync +vsync (37.9 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "400x300"x112.7   18.00  400 412 448 512  300 300 301 312 doublescan +hsync +vsync (35.2 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "432x243"x119.8   16.25  432 444 484 536  243 244 247 253 doublescan -hsync +vsync (30.3 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "432x243"x119.1   15.25  432 456 472 512  243 244 247 250 doublescan +hsync -vsync (29.8 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "320x240"x120.1   12.59  320 328 376 400  240 245 246 262 doublescan -hsync -vsync (31.5 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "360x202"x119.0   11.25  360 372 404 448  202 204 206 211 doublescan -hsync +vsync (25.1 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "360x202"x118.3   10.88  360 384 400 440  202 204 206 209 doublescan +hsync -vsync (24.7 kHz d)
+[ 39875.793] (II) modeset(0): Modeline "320x180"x119.7    9.00  320 332 360 400  180 181 184 188 doublescan -hsync +vsync (22.5 kHz d)
+[ 39875.794] (II) modeset(0): Modeline "320x180"x118.6    8.88  320 344 360 400  180 181 184 187 doublescan +hsync -vsync (22.2 kHz d)
+[ 39875.794] (II) modeset(0): EDID for output DP-1
+[ 39875.797] (II) modeset(0): EDID for output HDMI-1
+[ 39875.797] (II) modeset(0): EDID for output DP-2
+[ 39875.801] (II) modeset(0): EDID for output HDMI-2
+[ 39875.801] (II) modeset(0): Output eDP-1 connected
+[ 39875.801] (II) modeset(0): Output DP-1 disconnected
+[ 39875.801] (II) modeset(0): Output HDMI-1 disconnected
+[ 39875.801] (II) modeset(0): Output DP-2 disconnected
+[ 39875.801] (II) modeset(0): Output HDMI-2 disconnected
+[ 39875.801] (II) modeset(0): Using exact sizes for initial modes
+[ 39875.801] (II) modeset(0): Output eDP-1 using initial mode 1920x1080 +0+0
+[ 39875.801] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[ 39875.801] (==) modeset(0): DPI set to (96, 96)
+[ 39875.801] (II) Loading sub module "fb"
+[ 39875.801] (II) LoadModule: "fb"
+[ 39875.801] (II) Loading /usr/lib/xorg/modules/libfb.so
+[ 39875.801] (II) Module fb: vendor="X.Org Foundation"
+[ 39875.801] 	compiled for 1.20.4, module version = 1.0.0
+[ 39875.801] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[ 39875.801] (II) UnloadModule: "fbdev"
+[ 39875.801] (II) Unloading fbdev
+[ 39875.801] (II) UnloadSubModule: "fbdevhw"
+[ 39875.801] (II) Unloading fbdevhw
+[ 39875.801] (II) UnloadModule: "vesa"
+[ 39875.801] (II) Unloading vesa
+[ 39875.805] (==) modeset(0): Backing store enabled
+[ 39875.805] (==) modeset(0): Silken mouse enabled
+[ 39875.841] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[ 39875.841] (==) modeset(0): DPMS enabled
+[ 39875.842] (II) modeset(0): [DRI2] Setup complete
+[ 39875.842] (II) modeset(0): [DRI2]   DRI driver: i965
+[ 39875.842] (II) modeset(0): [DRI2]   VDPAU driver: i965
+[ 39875.842] (II) Initializing extension Generic Event Extension
+[ 39875.842] (II) Initializing extension SHAPE
+[ 39875.843] (II) Initializing extension MIT-SHM
+[ 39875.843] (II) Initializing extension XInputExtension
+[ 39875.844] (II) Initializing extension XTEST
+[ 39875.844] (II) Initializing extension BIG-REQUESTS
+[ 39875.844] (II) Initializing extension SYNC
+[ 39875.845] (II) Initializing extension XKEYBOARD
+[ 39875.845] (II) Initializing extension XC-MISC
+[ 39875.845] (II) Initializing extension SECURITY
+[ 39875.846] (II) Initializing extension XFIXES
+[ 39875.846] (II) Initializing extension RENDER
+[ 39875.847] (II) Initializing extension RANDR
+[ 39875.847] (II) Initializing extension COMPOSITE
+[ 39875.847] (II) Initializing extension DAMAGE
+[ 39875.848] (II) Initializing extension MIT-SCREEN-SAVER
+[ 39875.848] (II) Initializing extension DOUBLE-BUFFER
+[ 39875.848] (II) Initializing extension RECORD
+[ 39875.849] (II) Initializing extension DPMS
+[ 39875.849] (II) Initializing extension Present
+[ 39875.849] (II) Initializing extension DRI3
+[ 39875.850] (II) Initializing extension X-Resource
+[ 39875.850] (II) Initializing extension XVideo
+[ 39875.851] (II) Initializing extension XVideo-MotionCompensation
+[ 39875.851] (II) Initializing extension SELinux
+[ 39875.851] (II) SELinux: Disabled on system
+[ 39875.851] (II) Initializing extension GLX
+[ 39875.861] (II) AIGLX: Loaded and initialized i965
+[ 39875.861] (II) GLX: Initialized DRI2 GL provider for screen 0
+[ 39875.861] (II) Initializing extension XFree86-VidModeExtension
+[ 39875.861] (II) Initializing extension XFree86-DGA
+[ 39875.861] (II) Initializing extension XFree86-DRI
+[ 39875.861] (II) Initializing extension DRI2
+[ 39875.865] (II) modeset(0): Damage tracking initialized
+[ 39875.865] (II) modeset(0): Setting screen physical size to 508 x 285
+[ 39875.915] (II) config/udev: Adding input device Power Button (/dev/input/event4)
+[ 39875.915] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[ 39875.915] (II) LoadModule: "libinput"
+[ 39875.915] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[ 39875.918] (II) Module libinput: vendor="X.Org Foundation"
+[ 39875.918] 	compiled for 1.20.4, module version = 0.28.2
+[ 39875.918] 	Module class: X.Org XInput Driver
+[ 39875.918] 	ABI class: X.Org XInput driver, version 24.1
+[ 39875.918] (II) Using input driver 'libinput' for 'Power Button'
+[ 39875.919] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 21 paused 0
+[ 39875.919] (**) Power Button: always reports core events
+[ 39875.919] (**) Option "Device" "/dev/input/event4"
+[ 39875.919] (**) Option "_source" "server/udev"
+[ 39875.921] (II) event4  - Power Button: is tagged by udev as: Keyboard
+[ 39875.921] (II) event4  - Power Button: device is a keyboard
+[ 39875.921] (II) event4  - Power Button: device removed
+[ 39875.921] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input4/event4"
+[ 39875.921] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[ 39875.921] (**) Option "xkb_model" "pc105"
+[ 39875.921] (**) Option "xkb_layout" "fr"
+[ 39875.921] (**) Option "xkb_variant" "latin9"
+[ 39875.936] (II) event4  - Power Button: is tagged by udev as: Keyboard
+[ 39875.936] (II) event4  - Power Button: device is a keyboard
+[ 39875.936] (II) config/udev: Adding input device Video Bus (/dev/input/event7)
+[ 39875.936] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[ 39875.936] (II) Using input driver 'libinput' for 'Video Bus'
+[ 39875.937] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 24 paused 0
+[ 39875.937] (**) Video Bus: always reports core events
+[ 39875.937] (**) Option "Device" "/dev/input/event7"
+[ 39875.937] (**) Option "_source" "server/udev"
+[ 39875.938] (II) event7  - Video Bus: is tagged by udev as: Keyboard
+[ 39875.938] (II) event7  - Video Bus: device is a keyboard
+[ 39875.938] (II) event7  - Video Bus: device removed
+[ 39875.938] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input7/event7"
+[ 39875.938] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[ 39875.938] (**) Option "xkb_model" "pc105"
+[ 39875.938] (**) Option "xkb_layout" "fr"
+[ 39875.938] (**) Option "xkb_variant" "latin9"
+[ 39875.939] (II) event7  - Video Bus: is tagged by udev as: Keyboard
+[ 39875.939] (II) event7  - Video Bus: device is a keyboard
+[ 39875.939] (II) config/udev: Adding input device Power Button (/dev/input/event2)
+[ 39875.939] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[ 39875.939] (II) Using input driver 'libinput' for 'Power Button'
+[ 39875.940] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 25 paused 0
+[ 39875.940] (**) Power Button: always reports core events
+[ 39875.940] (**) Option "Device" "/dev/input/event2"
+[ 39875.940] (**) Option "_source" "server/udev"
+[ 39875.941] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[ 39875.941] (II) event2  - Power Button: device is a keyboard
+[ 39875.941] (II) event2  - Power Button: device removed
+[ 39875.941] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input2/event2"
+[ 39875.941] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 8)
+[ 39875.941] (**) Option "xkb_model" "pc105"
+[ 39875.941] (**) Option "xkb_layout" "fr"
+[ 39875.941] (**) Option "xkb_variant" "latin9"
+[ 39875.942] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[ 39875.942] (II) event2  - Power Button: device is a keyboard
+[ 39875.942] (II) config/udev: Adding input device Lid Switch (/dev/input/event1)
+[ 39875.942] (II) No input driver specified, ignoring this device.
+[ 39875.942] (II) This device may have been added with another device file.
+[ 39875.943] (II) config/udev: Adding input device Sleep Button (/dev/input/event3)
+[ 39875.943] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[ 39875.943] (II) Using input driver 'libinput' for 'Sleep Button'
+[ 39875.943] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 26 paused 0
+[ 39875.943] (**) Sleep Button: always reports core events
+[ 39875.943] (**) Option "Device" "/dev/input/event3"
+[ 39875.944] (**) Option "_source" "server/udev"
+[ 39875.944] (II) event3  - Sleep Button: is tagged by udev as: Keyboard
+[ 39875.944] (II) event3  - Sleep Button: device is a keyboard
+[ 39875.944] (II) event3  - Sleep Button: device removed
+[ 39875.944] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input3/event3"
+[ 39875.944] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 9)
+[ 39875.944] (**) Option "xkb_model" "pc105"
+[ 39875.944] (**) Option "xkb_layout" "fr"
+[ 39875.944] (**) Option "xkb_variant" "latin9"
+[ 39875.945] (II) event3  - Sleep Button: is tagged by udev as: Keyboard
+[ 39875.945] (II) event3  - Sleep Button: device is a keyboard
+[ 39875.946] (II) config/udev: Adding input device Integrated_Webcam_HD: Integrate (/dev/input/event12)
+[ 39875.946] (**) Integrated_Webcam_HD: Integrate: Applying InputClass "libinput keyboard catchall"
+[ 39875.946] (II) Using input driver 'libinput' for 'Integrated_Webcam_HD: Integrate'
+[ 39875.947] (II) systemd-logind: got fd for /dev/input/event12 13:76 fd 27 paused 0
+[ 39875.947] (**) Integrated_Webcam_HD: Integrate: always reports core events
+[ 39875.947] (**) Option "Device" "/dev/input/event12"
+[ 39875.947] (**) Option "_source" "server/udev"
+[ 39875.948] (II) event12 - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[ 39875.948] (II) event12 - Integrated_Webcam_HD: Integrate: device is a keyboard
+[ 39875.948] (II) event12 - Integrated_Webcam_HD: Integrate: device removed
+[ 39875.948] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.0/input/input13/event12"
+[ 39875.948] (II) XINPUT: Adding extended input device "Integrated_Webcam_HD: Integrate" (type: KEYBOARD, id 10)
+[ 39875.948] (**) Option "xkb_model" "pc105"
+[ 39875.948] (**) Option "xkb_layout" "fr"
+[ 39875.948] (**) Option "xkb_variant" "latin9"
+[ 39875.949] (II) event12 - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[ 39875.949] (II) event12 - Integrated_Webcam_HD: Integrate: device is a keyboard
+[ 39875.949] (II) config/udev: Adding input device DLL07A0:01 044E:120B (/dev/input/event6)
+[ 39875.949] (**) DLL07A0:01 044E:120B: Applying InputClass "libinput touchpad catchall"
+[ 39875.949] (II) Using input driver 'libinput' for 'DLL07A0:01 044E:120B'
+[ 39875.982] (II) systemd-logind: got fd for /dev/input/event6 13:70 fd 28 paused 0
+[ 39875.983] (**) DLL07A0:01 044E:120B: always reports core events
+[ 39875.983] (**) Option "Device" "/dev/input/event6"
+[ 39875.983] (**) Option "_source" "server/udev"
+[ 39875.984] (II) event6  - DLL07A0:01 044E:120B: is tagged by udev as: Touchpad
+[ 39875.985] (II) event6  - DLL07A0:01 044E:120B: device is a touchpad
+[ 39875.985] (II) event6  - DLL07A0:01 044E:120B: device removed
+[ 39875.986] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-2/i2c-DLL07A0:01/0018:044E:120B.0001/input/input5/event6"
+[ 39875.986] (II) XINPUT: Adding extended input device "DLL07A0:01 044E:120B" (type: TOUCHPAD, id 11)
+[ 39875.986] (**) Option "AccelerationScheme" "none"
+[ 39875.986] (**) DLL07A0:01 044E:120B: (accel) selected scheme none/0
+[ 39875.986] (**) DLL07A0:01 044E:120B: (accel) acceleration factor: 2.000
+[ 39875.986] (**) DLL07A0:01 044E:120B: (accel) acceleration threshold: 4
+[ 39875.987] (II) event6  - DLL07A0:01 044E:120B: is tagged by udev as: Touchpad
+[ 39875.988] (II) event6  - DLL07A0:01 044E:120B: device is a touchpad
+[ 39875.989] (II) config/udev: Adding input device DLL07A0:01 044E:120B (/dev/input/mouse1)
+[ 39875.989] (II) No input driver specified, ignoring this device.
+[ 39875.989] (II) This device may have been added with another device file.
+[ 39875.990] (II) config/udev: Adding input device DualPoint Stick (/dev/input/event5)
+[ 39875.990] (**) DualPoint Stick: Applying InputClass "libinput pointer catchall"
+[ 39875.990] (II) Using input driver 'libinput' for 'DualPoint Stick'
+[ 39875.991] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 29 paused 0
+[ 39875.991] (**) DualPoint Stick: always reports core events
+[ 39875.991] (**) Option "Device" "/dev/input/event5"
+[ 39875.991] (**) Option "_source" "server/udev"
+[ 39875.993] (II) event5  - DualPoint Stick: is tagged by udev as: Mouse Pointingstick
+[ 39875.993] (II) event5  - DualPoint Stick: device is a pointer
+[ 39875.993] (II) event5  - DualPoint Stick: device removed
+[ 39875.993] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-2/i2c-DLL07A0:01/0018:044E:120B.0001/input/input6/event5"
+[ 39875.993] (II) XINPUT: Adding extended input device "DualPoint Stick" (type: MOUSE, id 12)
+[ 39875.993] (**) Option "AccelerationScheme" "none"
+[ 39875.993] (**) DualPoint Stick: (accel) selected scheme none/0
+[ 39875.993] (**) DualPoint Stick: (accel) acceleration factor: 2.000
+[ 39875.993] (**) DualPoint Stick: (accel) acceleration threshold: 4
+[ 39875.994] (II) event5  - DualPoint Stick: is tagged by udev as: Mouse Pointingstick
+[ 39875.995] (II) event5  - DualPoint Stick: device is a pointer
+[ 39875.995] (II) config/udev: Adding input device DualPoint Stick (/dev/input/mouse0)
+[ 39875.996] (II) No input driver specified, ignoring this device.
+[ 39875.996] (II) This device may have been added with another device file.
+[ 39875.996] (II) config/udev: Adding input device HDA Digital PCBeep (/dev/input/event13)
+[ 39875.996] (II) No input driver specified, ignoring this device.
+[ 39875.996] (II) This device may have been added with another device file.
+[ 39875.996] (II) config/udev: Adding input device HDA Intel PCH Headphone Mic (/dev/input/event14)
+[ 39875.996] (II) No input driver specified, ignoring this device.
+[ 39875.996] (II) This device may have been added with another device file.
+[ 39875.996] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=3 (/dev/input/event15)
+[ 39875.996] (II) No input driver specified, ignoring this device.
+[ 39875.996] (II) This device may have been added with another device file.
+[ 39875.997] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=7 (/dev/input/event16)
+[ 39875.997] (II) No input driver specified, ignoring this device.
+[ 39875.997] (II) This device may have been added with another device file.
+[ 39875.997] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=8 (/dev/input/event17)
+[ 39875.997] (II) No input driver specified, ignoring this device.
+[ 39875.997] (II) This device may have been added with another device file.
+[ 39875.997] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=9 (/dev/input/event18)
+[ 39875.997] (II) No input driver specified, ignoring this device.
+[ 39875.997] (II) This device may have been added with another device file.
+[ 39875.998] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=10 (/dev/input/event19)
+[ 39875.998] (II) No input driver specified, ignoring this device.
+[ 39875.998] (II) This device may have been added with another device file.
+[ 39875.998] (II) config/udev: Adding input device Intel HID events (/dev/input/event8)
+[ 39875.998] (**) Intel HID events: Applying InputClass "libinput keyboard catchall"
+[ 39875.998] (II) Using input driver 'libinput' for 'Intel HID events'
+[ 39876.000] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 30 paused 0
+[ 39876.000] (**) Intel HID events: always reports core events
+[ 39876.000] (**) Option "Device" "/dev/input/event8"
+[ 39876.000] (**) Option "_source" "server/udev"
+[ 39876.001] (II) event8  - Intel HID events: is tagged by udev as: Keyboard
+[ 39876.001] (II) event8  - Intel HID events: device is a keyboard
+[ 39876.001] (II) event8  - Intel HID events: device removed
+[ 39876.001] (**) Option "config_info" "udev:/sys/devices/platform/INT33D5:00/input/input8/event8"
+[ 39876.001] (II) XINPUT: Adding extended input device "Intel HID events" (type: KEYBOARD, id 13)
+[ 39876.001] (**) Option "xkb_model" "pc105"
+[ 39876.001] (**) Option "xkb_layout" "fr"
+[ 39876.001] (**) Option "xkb_variant" "latin9"
+[ 39876.002] (II) event8  - Intel HID events: is tagged by udev as: Keyboard
+[ 39876.002] (II) event8  - Intel HID events: device is a keyboard
+[ 39876.003] (II) config/udev: Adding input device Intel HID 5 button array (/dev/input/event9)
+[ 39876.003] (**) Intel HID 5 button array: Applying InputClass "libinput keyboard catchall"
+[ 39876.003] (II) Using input driver 'libinput' for 'Intel HID 5 button array'
+[ 39876.004] (II) systemd-logind: got fd for /dev/input/event9 13:73 fd 31 paused 0
+[ 39876.004] (**) Intel HID 5 button array: always reports core events
+[ 39876.004] (**) Option "Device" "/dev/input/event9"
+[ 39876.004] (**) Option "_source" "server/udev"
+[ 39876.005] (II) event9  - Intel HID 5 button array: is tagged by udev as: Keyboard
+[ 39876.005] (II) event9  - Intel HID 5 button array: device is a keyboard
+[ 39876.005] (II) event9  - Intel HID 5 button array: device removed
+[ 39876.005] (**) Option "config_info" "udev:/sys/devices/platform/INT33D5:00/input/input9/event9"
+[ 39876.005] (II) XINPUT: Adding extended input device "Intel HID 5 button array" (type: KEYBOARD, id 14)
+[ 39876.005] (**) Option "xkb_model" "pc105"
+[ 39876.005] (**) Option "xkb_layout" "fr"
+[ 39876.005] (**) Option "xkb_variant" "latin9"
+[ 39876.006] (II) event9  - Intel HID 5 button array: is tagged by udev as: Keyboard
+[ 39876.006] (II) event9  - Intel HID 5 button array: device is a keyboard
+[ 39876.007] (II) config/udev: Adding input device Dell WMI hotkeys (/dev/input/event11)
+[ 39876.007] (**) Dell WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[ 39876.007] (II) Using input driver 'libinput' for 'Dell WMI hotkeys'
+[ 39876.008] (II) systemd-logind: got fd for /dev/input/event11 13:75 fd 32 paused 0
+[ 39876.008] (**) Dell WMI hotkeys: always reports core events
+[ 39876.008] (**) Option "Device" "/dev/input/event11"
+[ 39876.008] (**) Option "_source" "server/udev"
+[ 39876.010] (II) event11 - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[ 39876.010] (II) event11 - Dell WMI hotkeys: device is a keyboard
+[ 39876.010] (II) event11 - Dell WMI hotkeys: device removed
+[ 39876.010] (**) Option "config_info" "udev:/sys/devices/platform/PNP0C14:01/wmi_bus/wmi_bus-PNP0C14:01/9DBB5994-A997-11DA-B012-B622A1EF5492/input/input11/event11"
+[ 39876.010] (II) XINPUT: Adding extended input device "Dell WMI hotkeys" (type: KEYBOARD, id 15)
+[ 39876.010] (**) Option "xkb_model" "pc105"
+[ 39876.010] (**) Option "xkb_layout" "fr"
+[ 39876.010] (**) Option "xkb_variant" "latin9"
+[ 39876.012] (II) event11 - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[ 39876.012] (II) event11 - Dell WMI hotkeys: device is a keyboard
+[ 39876.012] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event0)
+[ 39876.013] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[ 39876.013] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[ 39876.014] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 33 paused 0
+[ 39876.014] (**) AT Translated Set 2 keyboard: always reports core events
+[ 39876.014] (**) Option "Device" "/dev/input/event0"
+[ 39876.014] (**) Option "_source" "server/udev"
+[ 39876.015] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[ 39876.015] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[ 39876.016] (II) event0  - AT Translated Set 2 keyboard: device removed
+[ 39876.016] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input0/event0"
+[ 39876.016] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 16)
+[ 39876.016] (**) Option "xkb_model" "pc105"
+[ 39876.016] (**) Option "xkb_layout" "fr"
+[ 39876.016] (**) Option "xkb_variant" "latin9"
+[ 39876.017] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[ 39876.017] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[ 39876.018] (II) config/udev: Adding input device PC Speaker (/dev/input/event10)
+[ 39876.018] (II) No input driver specified, ignoring this device.
+[ 39876.018] (II) This device may have been added with another device file.
+[ 39894.994] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 40557.278] (II) config/udev: Adding input device FC:B6:D8:F0:49:CF (/dev/input/event20)
+[ 40557.278] (**) FC:B6:D8:F0:49:CF: Applying InputClass "libinput keyboard catchall"
+[ 40557.278] (II) Using input driver 'libinput' for 'FC:B6:D8:F0:49:CF'
+[ 40557.282] (II) systemd-logind: got fd for /dev/input/event20 13:84 fd 41 paused 0
+[ 40557.282] (**) FC:B6:D8:F0:49:CF: always reports core events
+[ 40557.282] (**) Option "Device" "/dev/input/event20"
+[ 40557.283] (**) Option "_source" "server/udev"
+[ 40557.286] (II) event20 - FC:B6:D8:F0:49:CF: is tagged by udev as: Keyboard
+[ 40557.286] (II) event20 - FC:B6:D8:F0:49:CF: device is a keyboard
+[ 40557.287] (II) event20 - FC:B6:D8:F0:49:CF: device removed
+[ 40557.287] (**) Option "config_info" "udev:/sys/devices/virtual/input/input20/event20"
+[ 40557.287] (II) XINPUT: Adding extended input device "FC:B6:D8:F0:49:CF" (type: KEYBOARD, id 17)
+[ 40557.287] (**) Option "xkb_model" "pc105"
+[ 40557.287] (**) Option "xkb_layout" "fr"
+[ 40557.287] (**) Option "xkb_variant" "latin9"
+[ 40557.287] (WW) Option "xkb_options" requires a string value
+[ 40557.290] (II) event20 - FC:B6:D8:F0:49:CF: is tagged by udev as: Keyboard
+[ 40557.290] (II) event20 - FC:B6:D8:F0:49:CF: device is a keyboard
+[ 40563.697] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 40912.930] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 41932.230] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42004.305] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42044.539] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42152.482] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42241.170] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42376.939] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42415.950] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42415.950] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42429.530] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42457.677] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42463.973] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42467.853] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42522.770] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42532.890] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42553.352] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42565.275] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42573.390] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42599.053] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42603.825] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42632.354] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42638.582] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42642.450] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42646.282] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42650.394] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42694.818] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42754.750] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42767.162] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42771.054] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42811.722] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 42816.781] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 43183.238] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 43216.130] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 43406.066] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 43408.350] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 43419.558] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 43439.822] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 43576.542] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 43644.854] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44010.418] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44063.173] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44201.122] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44251.442] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44256.839] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44262.094] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44304.330] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44308.410] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44310.853] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44394.626] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44412.877] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44439.661] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44443.736] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44446.485] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44451.898] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44477.886] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44507.777] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44526.343] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44547.078] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44576.614] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44581.618] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44583.646] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44608.718] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44656.449] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44814.381] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44839.464] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 44932.302] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 45031.270] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 45045.209] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 45089.762] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 45294.520] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 45310.851] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 45375.370] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 45441.766] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 45526.014] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 45599.490] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 45788.038] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 45883.232] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 45891.789] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 45999.555] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 46003.018] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 46246.790] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 46317.982] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 46375.618] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 46447.406] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 46897.156] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 46899.540] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 46958.051] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 46973.310] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 47005.946] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 47012.385] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 47313.534] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 47371.137] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 47412.728] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 47417.970] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 47421.426] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 47455.994] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 47563.657] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 47709.358] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 47751.090] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 47801.670] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 47803.510] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 47809.410] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 47829.386] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 47958.442] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 48140.054] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 48146.930] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 48610.927] (II) config/udev: removing device FC:B6:D8:F0:49:CF
+[ 48610.928] (**) Option "fd" "41"
+[ 48610.928] (II) event20 - FC:B6:D8:F0:49:CF: device removed
+[ 48610.929] (II) UnloadModule: "libinput"
+[ 48610.929] (II) systemd-logind: releasing fd for 13:84
+[ 54352.907] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 54640.394] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 54666.910] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 54673.189] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 54790.858] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 54825.930] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 54951.370] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 55063.374] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 55068.898] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 55196.186] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 55291.177] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 55294.366] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 55323.393] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 55451.753] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 55470.842] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 55475.026] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 55493.505] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 55509.978] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 55547.541] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 55692.358] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 55699.458] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 55958.077] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 56008.217] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 56062.550] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 56224.382] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 56238.170] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 56267.282] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 56366.815] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 56503.388] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 56531.630] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 56606.002] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 56761.073] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 56914.626] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 56959.557] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 56975.990] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 57182.218] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 57221.966] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 57320.846] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 57330.874] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 57335.397] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 57492.885] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 57662.641] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 57743.010] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 57832.289] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 57865.510] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 57991.529] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 58041.538] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 58180.826] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 58185.505] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 58196.558] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 58219.381] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 58296.010] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 58351.205] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 58412.833] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 58485.674] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 58617.454] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 58662.321] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 58668.062] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 58682.030] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 58737.561] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 58737.561] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 58759.301] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 58769.958] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 58810.682] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 58822.449] (EE) event6  - DLL07A0:01 044E:120B: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.12.6/touchpad-jumping-cursors.html for details
+[ 58878.588] (**) Option "fd" "21"
+[ 58878.588] (II) event4  - Power Button: device removed
+[ 58878.589] (**) Option "fd" "24"
+[ 58878.589] (II) event7  - Video Bus: device removed
+[ 58878.589] (**) Option "fd" "25"
+[ 58878.589] (II) event2  - Power Button: device removed
+[ 58878.589] (**) Option "fd" "26"
+[ 58878.589] (II) event3  - Sleep Button: device removed
+[ 58878.589] (**) Option "fd" "27"
+[ 58878.589] (II) event12 - Integrated_Webcam_HD: Integrate: device removed
+[ 58878.589] (**) Option "fd" "28"
+[ 58878.589] (II) event6  - DLL07A0:01 044E:120B: device removed
+[ 58878.589] (**) Option "fd" "29"
+[ 58878.589] (II) event5  - DualPoint Stick: device removed
+[ 58878.589] (**) Option "fd" "30"
+[ 58878.589] (II) event8  - Intel HID events: device removed
+[ 58878.589] (**) Option "fd" "31"
+[ 58878.589] (II) event9  - Intel HID 5 button array: device removed
+[ 58878.589] (**) Option "fd" "32"
+[ 58878.589] (II) event11 - Dell WMI hotkeys: device removed
+[ 58878.589] (**) Option "fd" "33"
+[ 58878.589] (II) event0  - AT Translated Set 2 keyboard: device removed
+[ 58878.603] (II) UnloadModule: "libinput"
+[ 58878.603] (II) systemd-logind: releasing fd for 13:64
+[ 58878.618] (II) UnloadModule: "libinput"
+[ 58878.618] (II) systemd-logind: releasing fd for 13:75
+[ 58878.622] (II) UnloadModule: "libinput"
+[ 58878.622] (II) systemd-logind: releasing fd for 13:73
+[ 58878.624] (II) UnloadModule: "libinput"
+[ 58878.624] (II) systemd-logind: releasing fd for 13:72
+[ 58878.627] (II) UnloadModule: "libinput"
+[ 58878.627] (II) systemd-logind: releasing fd for 13:69
+[ 58878.629] (II) UnloadModule: "libinput"
+[ 58878.630] (II) systemd-logind: releasing fd for 13:70
+[ 58878.631] (II) UnloadModule: "libinput"
+[ 58878.632] (II) systemd-logind: releasing fd for 13:76
+[ 58878.633] (II) UnloadModule: "libinput"
+[ 58878.633] (II) systemd-logind: releasing fd for 13:67
+[ 58878.634] (II) UnloadModule: "libinput"
+[ 58878.634] (II) systemd-logind: releasing fd for 13:66
+[ 58878.635] (II) UnloadModule: "libinput"
+[ 58878.635] (II) systemd-logind: releasing fd for 13:71
+[ 58878.637] (II) UnloadModule: "libinput"
+[ 58878.637] (II) systemd-logind: releasing fd for 13:68
+[ 58878.689] (II) Server terminated successfully (0). Closing log file.

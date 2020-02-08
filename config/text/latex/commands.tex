@@ -4,6 +4,7 @@
 \def\refsec#1{Section \ref{sec:#1}}
 \def\reffig#1{Figure \ref{fig:#1}}
 \def\reftab#1{Table \ref{tab:#1}}
+\def\refeq#1{Equation \oldref{eq:#1}}
 % \def\bf#1{\textbf{#1}}
 
 \def\blue#1{\textcolor{beamer@blendedblue}{#1}}
@@ -22,35 +23,16 @@
 \def\Mark#1{\textsuperscript#1}
 \def\idea#1{\textcolor{green}{#1}}
 
-%addchapter
-%\newcommand\addchapter[1]{
-%	\addcontentsline{toc}{chapter}{#1}
-%}
-
 \newcommand{\symbolfootnote}{\renewcommand{\thefootnote}{\fnsymbol{footnote}}}
 \newcommand{\normallinespacing}{\renewcommand{\baselinestretch}{1.5} \normalsize}
 \newcommand{\mediumlinespacing}{\renewcommand{\baselinestretch}{1.2} \normalsize}
 \newcommand{\narrowlinespacing}{\renewcommand{\baselinestretch}{1.0} \normalsize}
 
-
-
 \usepackage{bytefield}
   \newcommand{\y}[2]{\bitbox{#1}{#2}}
 
-% \usepackage{xparse}
-% 	\ExplSyntaxOn
-% 		\NewDocumentCommand{\xinput}{m}{%
-% 			\azimut_xinput:n { #1 }
-% 		}
-% 		\ior_new:N \g_azimut_xinput_stream
-% 		\cs_new_protected:Nn \azimut_xinput:n{
-% 			\ior_open:Nn \g_azimut_xinput_stream { "|ls ~ #1" }
-% 			\ior_map_inline:Nn \g_azimut_xinput_stream { \file_input:n { \tl_trim_spaces:n {##1} } }
-% 		}
-% 	\ExplSyntaxOff
 
-
-%todo
+% todo --------------------------------------------------
 \newcounter{todo}
 \usepackage{tcolorbox}
 	\newtcbox{\mytodobox}{colback=white,colframe=white!75!white}
@@ -64,6 +46,7 @@
 \makeatother
 %\def\todo{\textcolor{red}{ToDO}}
 
+% Figures  --------------------------------------------------------------
 \newcommand{\towFigure}[5]{
 	\medskip
 	\begin{figure}
@@ -94,19 +77,7 @@
 	\end{figure}
 }
 
-\newcommand{\Tickz}[4]{
-	\medskip
-	\begin{figure}[#1]
-			\centering
-			\begin{tikzpicture}[scale=#2,line width=1pt]
-				\input{\PLOTPATH/#3}
-			\end{tikzpicture}
-	\caption{#4.}\label{fig:#3}
-	\end{figure}
-	\medskip
-}
-
-\newcommand{\FigureS}[4]{
+\newcommand{\FigureT}[4]{
 	\medskip
 	\begin{figure}[#1]
 	\centering
@@ -116,7 +87,7 @@
 	\medskip
 }
 
-\newcommand{\FigureT}[3]{
+\newcommand{\FigureS}[3]{
 	\medskip
 	\begin{figure}[#1]
 	\centering
@@ -166,6 +137,21 @@
 		\caption{#8.}\label{fig:#7}
 	\end{figure}
 %	\medskip
+}
+
+
+
+% Tickz -------------------------------------------------------------
+\newcommand{\Tickz}[4]{
+	\medskip
+	\begin{figure}[#1]
+		\centering
+		\begin{tikzpicture}[scale=#2,line width=1pt]
+			\input{\PLOTPATH/#3}
+		\end{tikzpicture}
+	\caption{#4.}\label{fig:#3}
+	\end{figure}
+	\medskip
 }
 
 \newcommand{\TickzH}[9]{
@@ -219,16 +205,17 @@
 }
 
 
+% Equation -------------------------------------------------------------------------
 \newcommand{\Equation}[2]{
-	\begin{equation}\label{eq:#1}
+	\begin{equation}\oldlabel{eq:#1}
 		#2
 	\end{equation}
 }
 
 \newcommand{\EquationT}[2]{
-	\begin{equation*}\tag{\ref{eq:#1}}
+	\begin{equation*}
 		#2
-	\end{equation*}
+	\end{equation*}\tag{\ref{eq:#1}}
 }
 
 \newcommand{\EquationS}[1]{
@@ -237,6 +224,34 @@
 	\end{equation*}
 }
 
+
+\usepackage{etoolbox}
+\let\bbordermatrix\bordermatrix
+\patchcmd{\bbordermatrix}{8.75}{4.75}{}{}
+\patchcmd{\bbordermatrix}{\left(}{\left[}{}{}
+\patchcmd{\bbordermatrix}{\right)}{\right]}{}{}
+
+\newcommand{\Matrix}[2]{
+\abovedisplayskip=0pt\relax
+\[
+#1 = \bbordermatrix{
+#2
+}
+\]
+}
+
+
+\newcommand{\Acolade}[2]{
+\abovedisplayskip=0pt\relax
+\[
+#1 =
+\begin{cases}
+#2
+\end{cases}
+\]
+}
+
+% Itemize -----------------------------------------------------------------------
 \newcommand{\Itemize}[1]{
 	% \medskip
 	\begin{itemize}
@@ -254,6 +269,8 @@
 	\medskip
 }
 
+
+% Columns -----------------------------------------------------------------------------------
 \newcommand{\Columns}[4]{
 	\begin{columns}
 		\begin{column}{#1\textwidth}
@@ -265,6 +282,8 @@
 	\end{columns}
 }
 
+
+% Table -----------------------------------------------------------------------------------
 \newcommand{\Table}[4]{
 	\begin{table}[h!]
 		\centering
@@ -285,16 +304,7 @@
 	\end{table}
 }
 
-
-
-\newcommand{\compresslist}{%
-	\setlength{\itemsep}{0pt}%
-	\setlength{\parskip}{1pt}%
-	\setlength{\parsep}{0pt}%
-}
-
-
-
+% Label -------------------------------------------------------------------------------
 \AtBeginDocument{% ...if you're using hyperref
   \let\oldlabel\label% Copy original version of \label
   \let\oldref\ref% Copy original version of \ref
@@ -310,18 +320,18 @@
 
 
 
-% addab, addac
+% Nomenclature -------------------------------------------------------------------------------
 \usepackage{acro}
 %first-long-format=\itshape
 	\acsetup{hyperref=true}
 	\newcommand{\addac}[2]{
 		\DeclareAcronym{#1}{
-			short = \ensuremath{#1},
+			short = {\ensuremath{#1}},
 			long  = {#2},
 			sort  = {#1},
 			class = nomencl
 		}
-	}
+	} % \ensuremath
 	\newcommand{\addab}[2]{
 		\DeclareAcronym{#1}{
 			short = {#1} ,
@@ -330,6 +340,18 @@
 			class = abbrev
 		}
 	}
+
+
+
+
+% --------------------------------------------------------------------------------------------
+\newcommand{\compresslist}{%
+	\setlength{\itemsep}{0pt}%
+	\setlength{\parskip}{1pt}%
+	\setlength{\parsep}{0pt}%
+}
+
+
 
 
 

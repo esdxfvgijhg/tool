@@ -4,8 +4,8 @@ find . -size +100M | cat > .gitignore
 
 echo "
 tools
-config/home/.local/share/data
-config/home/.local/share/Trash
+config/system/.local/share/data
+config/system/.local/share/Trash
 tools
 " >> .gitignore
 

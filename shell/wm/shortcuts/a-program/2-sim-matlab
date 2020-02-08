@@ -1,7 +1,0 @@
-#!/bin/bash
-
-
-cmd="cd $PROGRAMPATH/Empirical/matlab; matlab"
-gnome-terminal --title="$cmd"    --command="bash -ci '$cmd; $SHELL'" 
-
-
